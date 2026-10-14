@@ -683,16 +683,35 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "soft-robot",
+   "label": "SOFT ROBOT",
+   "status": "idle",
+   "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
+   "statusLine": "module one under way",
+   "caption": "The soft healthcare companion:",
+   "stage": "active",
+   "images": [
+    "img/warm-skin-layers.jpg",
+    "img/paper-spread.jpg"
+   ],
+   "embed": "pages/soft-robot.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
    "status": "idle",
-   "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. The hardware half of a soft-robotics companion.",
+   "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · first breath Mon 10/19",
    "caption": "Warm Skin v1:",
    "stage": "active",
    "embed": "pages/robot-skin.html",
    "visibility": "public",
-   "parent": "mittens",
+   "parent": "soft-robot",
    "parked": false,
    "children": [
     {

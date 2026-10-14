@@ -113,11 +113,15 @@
             if (seen[seg].has(key)) return;
             seen[seg].add(key);
             item.seq = seq++;
+            if (seg === "needs" && item.urgent == null) item.urgent = true;
             const gid = groupId || "other";
             if (!segs[seg].has(gid)) segs[seg].set(gid, {
                 id: gid,
-                label: X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
-                items: []
+                label: gid === "minute" ? "GOT A MINUTE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
+                items: [],
+                ...gid === "minute" ? {
+                    minute: true
+                } : {}
             });
             segs[seg].get(gid).items.push(item);
         };
@@ -224,6 +228,34 @@
                 n: q.length
             });
         }
+        const later = map.later || null;
+        for (const l of later && later.items || []) {
+            const s = split(l.text, 84);
+            const act = l.action || {
+                kind: l.dot ? "dot" : "none",
+                target: l.dot || null,
+                label: l.dot ? "Open the dot" : "Mark done"
+            };
+            const WH = {
+                home: "at home",
+                mac: "at a Mac",
+                phone: "on your phone",
+                anywhere: "anywhere"
+            };
+            add("needs", "minute", {
+                name: s.name,
+                line: [ `~${l.minutes} min`, WH[l.where] || l.where, l.fit === false ? "not here" : "", s.line ].filter(Boolean).join(" · "),
+                open: l.dot && X.e[l.dot] ? l.dot : null,
+                kind: "minute",
+                urgent: false,
+                minutes: l.minutes,
+                where: l.where,
+                fit: l.fit !== false,
+                act: act,
+                laterId: l.id,
+                why: l.why || ""
+            });
+        }
         for (const x of Object.values(X.e)) {
             const n = x.node;
             if (!n || X.parked(x.id)) continue;
@@ -293,7 +325,7 @@
         doneRows.sort((a, b) => String(b.it.at).localeCompare(String(a.it.at))).forEach(r => add("done", r.g, r.it));
         const first = g => Math.min(...g.items.map(i => i.seq));
         const seg = (id, label) => {
-            const groups = [ ...segs[id].values() ].sort(id === "planned" ? (a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label) : (a, b) => first(a) - first(b));
+            const groups = [ ...segs[id].values() ].sort(id === "planned" ? (a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label) : (a, b) => !!a.minute - !!b.minute || first(a) - first(b));
             groups.forEach(g => g.items.sort((a, b) => (a.kind === "inbox") - (b.kind === "inbox") || a.seq - b.seq));
             return {
                 id: id,
@@ -302,7 +334,7 @@
                 groups: groups
             };
         };
-        const segments = [ seg("working", "WORKING"), seg("waiting", "WAITING ON THEM"), seg("needs", "NEEDS YOU"), seg("planned", "PLANNED, NOT ACTED ON"), seg("done", "DONE THIS WEEK") ];
+        const segments = [ seg("needs", "NEEDS YOU"), seg("planned", "PLANNED, NOT ACTED ON"), seg("working", "WORKING"), seg("waiting", "WAITING ON THEM"), seg("done", "DONE THIS WEEK") ];
         const by = id => segments.find(x => x.id === id);
         return {
             at: (new Date).toISOString(),
@@ -314,8 +346,13 @@
                 waiting: by("waiting").count,
                 needs: by("needs").count,
                 planned: by("planned").count,
-                done: by("done").count
+                done: by("done").count,
+                urgent: by("needs").groups.reduce((n, g) => n + g.items.filter(i => i.urgent && i.kind !== "inbox").length, 0),
+                minute: later && later.count || 0,
+                minuteMinutes: later && later.minutes || 0
             },
+            mode: later && later.mode || "unknown",
+            modeLine: later && later.line || "",
             segments: segments
         };
     }
@@ -333,8 +370,9 @@
         if (moving.length) parts.push(`In motion: ${moving.slice(0, top).map(say).join("; ")}${moving.length > top ? `; and ${moving.length - top} more` : ""}.`);
         if (waitDots.length) parts.push(`Waiting on others: ${waitDots.slice(0, 3).map(i => `${i.name.charAt(0) + i.name.slice(1).toLowerCase()} -- ${i.line}`).join("; ")}.`);
         if (waiting.length) parts.push(`Waiting on ${waiting.length} ${waiting.length === 1 ? "person" : "people"} to reply (${waiting.slice(0, 3).map(i => i.name).join(", ")}${waiting.length > 3 ? ", ..." : ""}).`);
-        const need = items(N).filter(i => i.kind !== "inbox"), inbox = items(N).filter(i => i.kind === "inbox");
+        const need = items(N).filter(i => i.kind !== "inbox" && i.urgent), inbox = items(N).filter(i => i.kind === "inbox"), minute = items(N).filter(i => !i.urgent);
         if (need.length) parts.push(`${need.length} need${need.length === 1 ? "s" : ""} you. Top: ${need.slice(0, top).map(say).join("; ")}.`);
+        if (minute.length) parts.push(`${minute.length} can wait for a spare minute (about ${minute.reduce((s, i) => s + (i.minutes || 0), 0)} min in all)${minute[0].fit ? `, quickest fit now: ${minute[0].name} (~${minute[0].minutes} min)` : ""}.`);
         const q = inbox.reduce((s, i) => s + (i.n || 0), 0);
         if (q) parts.push(`${q} questions in the inbox, most in ${title(inbox.slice().sort((a, b) => b.n - a.n)[0].group)}.`);
         if (Pl.count) parts.push(`${Pl.count} planned and not acted on, the biggest pile in ${title(Pl.groups[0].label)} (${Pl.groups[0].items.length}).`);
@@ -343,9 +381,39 @@
         if (today.length) parts.push(`Done today: ${today.slice(0, top).map(i => i.name.charAt(0) + i.name.slice(1).toLowerCase()).join(", ")}${today.length > top ? `, and ${today.length - top} more` : ""}.`);
         return parts.join(" ");
     }
+    function openNow(tree, {n: n = 2} = {}) {
+        const by = id => tree.segments.find(x => x.id === id), N = by("needs"), Pl = by("planned");
+        const all = N.groups.flatMap(g => g.items.map(i => ({
+            ...i,
+            group: g.label
+        }))).sort((a, b) => a.seq - b.seq);
+        const urgent = all.filter(i => i.urgent && i.kind !== "inbox"), minute = all.filter(i => !i.urgent);
+        const pick = [ urgent[0], minute.find(i => i.fit) || urgent[1] ].filter(Boolean).slice(0, n);
+        const title = s => s.split(" ").map(w => w.charAt(0) + w.slice(1).toLowerCase()).join(" ");
+        const one = i => i.urgent ? `${i.name}${i.line ? " -- " + clip(i.line, 60) : ""} (${title(i.group)})` : `${i.name}, about ${i.minutes} minute${i.minutes === 1 ? "" : "s"}${i.act && i.act.kind !== "none" ? " -- I can open it now" : ""}`;
+        const say = `${urgent.length} urgent, ${minute.length} for a spare minute, ${Pl.count} planned and not started.` + (pick.length ? ` Top: ${pick.map(one).join("; then ")}.` : " Nothing is waiting on you.");
+        return {
+            say: say,
+            top: pick.map(i => ({
+                name: i.name,
+                line: i.line,
+                urgent: !!i.urgent,
+                minutes: i.minutes || null,
+                open: i.open || null,
+                act: i.act || null,
+                laterId: i.laterId || null
+            })),
+            counts: {
+                urgent: urgent.length,
+                minute: minute.length,
+                planned: Pl.count
+            }
+        };
+    }
     G.NSTree = {
         build: build,
         spoken: spoken,
+        openNow: openNow,
         split: split,
         PROMOTE: [ ...PROMOTE ]
     };
