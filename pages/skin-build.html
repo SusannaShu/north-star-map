@@ -118,6 +118,11 @@ svg.sch{display:block;width:100%;height:auto;background:#0e131d;border:1px solid
 .tbl th{color:var(--faint);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;border-top:0}
 footer{color:var(--faint);font-size:12.5px;margin-top:34px;line-height:1.6}
 code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px}
+.pthumbs{float:right;display:flex;gap:4px;margin:0 0 6px 10px}
+.pthumbs .pt{width:58px;height:58px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+.lthumbs{display:flex!important;gap:4px;margin-top:6px}
+.lthumbs .lt{width:46px;height:46px;object-fit:contain;background:#fff;border:1px solid var(--line);border-radius:7px;cursor:pointer}
+.pthumbs .pt:hover,.lthumbs .lt:hover,.pthumbs .pt:focus,.lthumbs .lt:focus{border-color:var(--ink);outline:none}
 </style>
 </head>
 <body>
@@ -240,13 +245,13 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
 </div>
 <div class="card">
 <ul class="legend">
-  <li><i class="sw" style="background:#c9b9a3"></i><div><b>7 · Organic fabric top</b><span>The only part a hand ever touches, so it decides whether the thing reads as alive or as a gadget. Natural fibre, already owned. Her paper's long-term version is a knitted conductive-yarn skin (layers 7 and 6 become one fabric); v1 stitches the two separately.</span></div></li>
-  <li><i class="sw" style="background:#e0b43c"></i><div><b>6 · Capacitive strips + shield</b><span>4–6 strips cut from the OurSure silver fabric, sewn down with conductive thread, one ESP32-S3 touch pin each. They sense a hand <em>before</em> any force lands (approach, ~3–8 cm) and which strip fires first gives the stroke direction. Underneath, separated by a few mm of felt or fabric: a ground sheet of the ATMOSURE copper-nickel fabric, which stops the warm water and the pump motors from reading as a "hand".</span></div></li>
-  <li><i class="sw" style="background:#b06ad4"></i><div><b>5 · Velostat press zones (2×2)</b><span>Each Chibitronics sheet is only ~9.5×10 cm, so four of them tile the palm pad as four press zones. Each zone sits between a silver-fabric pad (to an ADC pin) and the shared ground sheet above. Resistance falls under force: press, squeeze, hold and <em>where</em>. Dry, flat, nothing to leak.</span></div></li>
-  <li><i class="sw" style="background:#4fbf74"></i><div><b>4 · McKibben fluid muscles</b><span>1/8" ID silicone tube inside 1/4" PET braid, zip-tied at both ends. Push water in, the tube swells, the braid turns that swell into a shortening pull. Optional for v1 — see the syringe test in Plan B.</span></div></li>
-  <li><i class="sw" style="background:#38a8d8"></i><div><b>3 · TPU water bladder (two chambers)</b><span>Heat-welded 0.3 mm TPU, ~5 mm thick, split into two chambers so the two pumps can make a travelling ripple. Holds the warmth, gives the pad the dead weight of a body, and — sealed — turns any press or breath against it into a pressure change the MPRLS can read through a short air-filled tube.</span></div></li>
-  <li><i class="sw" style="background:#e8713c"></i><div><b>2 · Heater film, 2 × 8 W 5 V</b><span>Two 50×50 mm polyimide films stuck to the outside of the bladder floor, each with a KSD301 40 °C cutoff on top and in series. Firmware holds the film at ≤38 °C so the hardware cutoff is only ever the backstop.</span></div></li>
-  <li><i class="sw" style="background:#7b8ce6"></i><div><b>1 · ESP32-S3 brain</b><span>Reads touch, Velostat, bladder pressure and temperature; drives two pumps (one DRV8833) and two heater MOSFETs. Already owned.</span></div></li>
+  <li><i class="sw" style="background:#c9b9a3"></i><div><b>7 · Organic fabric top</b><span>The only part a hand ever touches, so it decides whether the thing reads as alive or as a gadget. Natural fibre, already owned. Her paper's long-term version is a knitted conductive-yarn skin (layers 7 and 6 become one fabric); v1 stitches the two separately.</span><span class="lthumbs"><img class="lt" src="../img/parts/organic.jpg" data-part="organic" alt="Organic fabric (top skin)" loading="lazy" tabindex="0"></span></div></li>
+  <li><i class="sw" style="background:#e0b43c"></i><div><b>6 · Capacitive strips + shield</b><span>4–6 strips cut from the OurSure silver fabric, sewn down with conductive thread, one ESP32-S3 touch pin each. They sense a hand <em>before</em> any force lands (approach, ~3–8 cm) and which strip fires first gives the stroke direction. Underneath, separated by a few mm of felt or fabric: a ground sheet of the ATMOSURE copper-nickel fabric, which stops the warm water and the pump motors from reading as a "hand".</span><span class="lthumbs"><img class="lt" src="../img/parts/cuni.jpg" data-part="cuni" alt="Copper-nickel fabric + tape (electrodes + shield)" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/thread.jpg" data-part="thread" alt="Stainless conductive thread" loading="lazy" tabindex="0"></span></div></li>
+  <li><i class="sw" style="background:#b06ad4"></i><div><b>5 · Velostat press zones (2×2)</b><span>Each Chibitronics sheet is only ~9.5×10 cm, so four of them tile the palm pad as four press zones. Each zone sits between a silver-fabric pad (to an ADC pin) and the shared ground sheet above. Resistance falls under force: press, squeeze, hold and <em>where</em>. Dry, flat, nothing to leak.</span><span class="lthumbs"><img class="lt" src="../img/parts/velostat.jpg" data-part="velostat" alt="Velostat XL sheets" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/cuni.jpg" data-part="cuni" alt="Copper-nickel fabric + tape (electrodes + shield)" loading="lazy" tabindex="0"></span></div></li>
+  <li><i class="sw" style="background:#4fbf74"></i><div><b>4 · McKibben fluid muscles</b><span>1/8" ID silicone tube inside 1/4" PET braid, zip-tied at both ends. Push water in, the tube swells, the braid turns that swell into a shortening pull. Optional for v1 — see the syringe test in Plan B.</span><span class="lthumbs"><img class="lt" src="../img/parts/tube.jpg" data-part="tube" alt="Silicone tubing 1/8 in ID, 5 ft" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/braid.jpg" data-part="braid" alt="PET braided sleeving 1/4 + 1/2 in" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/luerbarb.jpg" data-part="luerbarb" alt="Female luer to 1/8 in barb" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/zip.jpg" data-part="zip" alt="Zip ties" loading="lazy" tabindex="0"></span></div></li>
+  <li><i class="sw" style="background:#38a8d8"></i><div><b>3 · TPU water bladder (two chambers)</b><span>Heat-welded 0.3 mm TPU, ~5 mm thick, split into two chambers so the two pumps can make a travelling ripple. Holds the warmth, gives the pad the dead weight of a body, and — sealed — turns any press or breath against it into a pressure change the MPRLS can read through a short air-filled tube.</span><span class="lthumbs"><img class="lt" src="../img/parts/tpu.jpg" data-part="tpu" alt="TPU fabric 1 yd" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/ptfe.jpg" data-part="ptfe" alt="PTFE sheets" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/luerbarb.jpg" data-part="luerbarb" alt="Female luer to 1/8 in barb" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/water.jpg" data-part="water" alt="Distilled water 1 gal" loading="lazy" tabindex="0"></span></div></li>
+  <li><i class="sw" style="background:#e8713c"></i><div><b>2 · Heater film, 2 × 8 W 5 V</b><span>Two 50×50 mm polyimide films stuck to the outside of the bladder floor, each with a KSD301 40 °C cutoff on top and in series. Firmware holds the film at ≤38 °C so the hardware cutoff is only ever the backstop.</span><span class="lthumbs"><img class="lt" src="../img/parts/heater.jpg" data-part="heater" alt="5 V 8 W heater film x2" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/ksd.jpg" data-part="ksd" alt="KSD301 40 C cutoff" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/mosfet.jpg" data-part="mosfet" alt="NOYITO LR7843 MOSFET module" loading="lazy" tabindex="0"></span></div></li>
+  <li><i class="sw" style="background:#7b8ce6"></i><div><b>1 · ESP32-S3 brain</b><span>Reads touch, Velostat, bladder pressure and temperature; drives two pumps (one DRV8833) and two heater MOSFETs. Already owned.</span><span class="lthumbs"><img class="lt" src="../img/parts/esp32.jpg" data-part="esp32" alt="ESP32-S3" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/ds18.jpg" data-part="ds18" alt="DS18B20 probes x4" loading="lazy" tabindex="0"><img class="lt" src="../img/parts/psens.jpg" data-part="psens" alt="SparkFun Qwiic MicroPressure (25 psi)" loading="lazy" tabindex="0"></span></div></li>
 </ul>
 </div>
 
@@ -424,40 +429,40 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </svg>
 
 <ul class="parts">
-<li><div class="ph"><span class="pn">Chibitronics Velostat/Linqstat</span><span class="pspec">5 sheets, each ~3.75×4"</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/velostat.jpg" data-part="velostat" alt="Velostat XL sheets" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Chibitronics Velostat/Linqstat</span><span class="pspec">5 sheets, each ~3.75×4"</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Four sheets tile the 15×15 cm pad as a 2×2 grid of press zones; one is spare. Each zone forms a divider with a 4.7 kΩ resistor into one ADC1 pin. Expect drift and hysteresis: filter it, don't measure force with it.</p></li>
 
 <li><div class="ph"><span class="pn">OurSure silver-nylon conductive fabric</span><span class="pspec">11.5×12.5"</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">One sheet (~29×32 cm, ~930 cm²) covers both the capacitive strips (~225 cm²) and the four Velostat bottom pads (~380 cm²), with a little spare. Cut carefully. Silver-nylon does not solder well: sew or snap the leads.</p></li>
 
-<li><div class="ph"><span class="pn">ATMOSURE copper-nickel Faraday fabric + tape</span><span class="pspec">44×36"</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/cuni.jpg" data-part="cuni" alt="Copper-nickel fabric + tape (electrodes + shield)" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">ATMOSURE copper-nickel Faraday fabric + tape</span><span class="pspec">44×36"</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">The ground sheet. One continuous piece is both the shared top electrode of all four Velostat zones (tied to GND) and the shield that keeps the warm water and pump motors out of the capacitive reading. Leave a few mm of felt or fabric between it and the cap strips, or the approach range collapses. There is plenty left over for spares and v2.</p></li>
 
-<li><div class="ph"><span class="pn">Adafruit stainless conductive thread</span><span class="pspec">23 m</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/thread.jpg" data-part="thread" alt="Stainless conductive thread" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Adafruit stainless conductive thread</span><span class="pspec">23 m</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Signal leads only (strips and zones to the header). It is resistive (tens of ohms per metre — verify), so it must <b>never</b> carry heater or pump current.</p></li>
 
-<li><div class="ph"><span class="pn">MECCANIXITY 5 V 8 W heater film ×2</span><span class="pspec">50×50 mm, adhesive, ~1.6 A each</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/heater.jpg" data-part="heater" alt="5 V 8 W heater film x2" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">MECCANIXITY 5 V 8 W heater film ×2</span><span class="pspec">50×50 mm, adhesive, ~1.6 A each</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Both films together cover only ~50×100 mm of the 150×150 pad. The water spreads the heat; that is why the bladder is there. Use one film at a time at full power (see the power budget).</p></li>
 
-<li><div class="ph"><span class="pn">Fielect KSD301 40 °C normally-closed ×5</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/ksd.jpg" data-part="ksd" alt="KSD301 40 C cutoff" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Fielect KSD301 40 °C normally-closed ×5</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">One on each film, in series with that film's MOSFET. Snap discs reset some 10–15 °C below the trip point (<b>verify</b> on this part), so if it trips the heater stays off for a while. That is the reason firmware should hold the film at ≤38 °C and never lean on the disc.</p></li>
 
-<li><div class="ph"><span class="pn">DS18B20 waterproof probes ×4</span><span class="pspec">1 m</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/ds18.jpg" data-part="ds18" alt="DS18B20 probes x4" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">DS18B20 waterproof probes ×4</span><span class="pspec">1 m</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">All four on one data pin with one 4.7 kΩ pull-up to 3.3 V (owned). Film, top surface, reservoir/ambient, spare. Do <b>not</b> push a probe through the bladder wall: the 6 mm steel can is a leak point. Tape it to the outside.</p></li>
 
-<li><div class="ph"><span class="pn">NOYITO isolated AOD4184 MOSFET module ×2</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/mosfet.jpg" data-part="mosfet" alt="NOYITO LR7843 MOSFET module" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">NOYITO isolated AOD4184 MOSFET module ×2</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
 <p class="pwhy">One per heater film. Listed as taking a 3 V or 5 V signal. Bench check: drive it from a 3.3 V pin at 1.6 A load and confirm less than ~0.1 V across the output. The optocoupler is slow, so run heater PWM at a few hundred Hz or slower (a 1 s time-proportioned cycle is fine for heat).</p></li>
 
-<li><div class="ph"><span class="pn">5 V 3 A USB-C supply + USB-C→screw-terminal adapter</span><span class="pspec">(5-pack)</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/supply.jpg" data-part="supply" alt="5 V 3 A USB-C supply" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/usbc.jpg" data-part="usbc" alt="USB-C to screw terminal" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">5 V 3 A USB-C supply + USB-C→screw-terminal adapter</span><span class="pspec">(5-pack)</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
 <p class="pwhy">The Pi supply has a captive USB-C plug, so it needs the female-to-terminal adapter. Check with the multimeter that the terminals read ~5 V under a heater load (that confirms the adapter's CC resistors and the supply agree). Then run the 5 V and GND buses in 22 AWG wire (see <a href="#adds" style="color:#79cdf5">Added after review</a>), not Dupont jumpers.</p></li>
 
-<li><div class="ph"><span class="pn">NOYITO MPR121 breakout</span><span class="chip c-cart">On the list · backup</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/mpr.jpg" data-part="mpr" alt="MPR121 capacitive breakout (backup)" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">NOYITO MPR121 breakout</span><span class="chip c-cart">On the list · backup</span></div>
 <p class="pwhy">Twelve more touch channels on I2C (0x5A, no clash with the MPRLS at 0x18). It is used only if the ESP32-S3's own touch pins are too noisy next to pumps and heater, or if the pin budget runs out.</p></li>
 
 <li><div class="ph"><span class="pn">HeatnBond Lite</span><span class="pspec">currently out of stock</span><span class="chip c-cart">On the list · optional</span></div>
 <p class="pwhy">It is insulating: <b>edges only</b>, never across a Velostat contact area or under a capacitive strip. It stops the dry layers sliding and making phantom presses. Stitching does the same job, so drop it if it stays out of stock.</p></li>
 
-<li><div class="ph"><span class="pn">ESP32-S3 · organic fabric · jumper wires · 4.7 kΩ resistors · soldering iron · multimeter</span><span class="chip c-own">Already owned</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/esp32.jpg" data-part="esp32" alt="ESP32-S3" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/organic.jpg" data-part="organic" alt="Organic fabric (top skin)" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/wire.jpg" data-part="wire" alt="Her own wire" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/resist.jpg" data-part="resist" alt="4.7 kOhm resistors" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/meter.jpg" data-part="meter" alt="Multimeter" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">ESP32-S3 · organic fabric · jumper wires · 4.7 kΩ resistors · soldering iron · multimeter</span><span class="chip c-own">Already owned</span></div>
 <p class="pwhy">All present. <b>Pin plan</b> (ESP32-S3 ADC1 pins are also touch pins, so plan it once): GPIO1–4 → Velostat zones (ADC1); GPIO5–10 → 6 capacitive strips; GPIO14 → shield/guard if used; I2C (MPRLS + MPR121) on non-touch pins, e.g. GPIO17/18; DRV8833 IN1–IN4 on GPIO15/16/21/38; heater MOSFETs on GPIO39/40; DS18B20 on GPIO41. Avoid ADC2 (unusable with Wi-Fi on) and the octal-PSRAM pins 35–37 on N16R8 boards.</p></li>
 </ul>
 
@@ -517,40 +522,40 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </svg>
 
 <ul class="parts">
-<li><div class="ph"><span class="pn">PH PandaHall black TPU fabric, 0.3 mm</span><span class="pspec">54" × 1 yd</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/tpu.jpg" data-part="tpu" alt="TPU fabric 1 yd" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">PH PandaHall black TPU fabric, 0.3 mm</span><span class="pspec">54" × 1 yd</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
 <p class="pwhy">The bladder. Check whether it is TPU on both faces or TPU-coated on one face; if coated, weld coated face to coated face. Weld test strips first and pull them apart by hand before cutting the real bladder. A yard is enough for many attempts.</p></li>
 
-<li><div class="ph"><span class="pn">Mini craft iron 80 W, adjustable + HTVRONT PTFE sheets</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/iron.jpg" data-part="iron" alt="Household iron" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/ptfe.jpg" data-part="ptfe" alt="PTFE sheets" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Mini craft iron 80 W, adjustable + HTVRONT PTFE sheets</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">TPU welds in a narrow temperature band and sticks to bare metal; PTFE gives a clean release. Note the temperature that gives a seam you can't peel, and reuse it.</p></li>
 
-<li><div class="ph"><span class="pn">Bladder ports: luer-to-barb fitting + a welded TPU flange</span><span class="pspec">in hand · no 3D print</span><span class="chip c-own">Make</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/luerbarb.jpg" data-part="luerbarb" alt="Female luer to 1/8 in barb" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/unions.jpg" data-part="unions" alt="1/8 in barb unions" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/tees.jpg" data-part="tees" alt="1/8 in barb tees" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Bladder ports: luer-to-barb fitting + a welded TPU flange</span><span class="pspec">in hand · no 3D print</span><span class="chip c-own">Make</span></div>
 <p class="pwhy"><b>Changed 14 Oct:</b> no printed nozzle -- the school printer cannot hold a 1.8 mm bore or the barb ridges. The nozzle is the female luer → 1/8" barb fitting already in hand. Cut a 20 mm disc from the same TPU fabric, hole a touch smaller than the fitting's neck, push the barb through, and iron it around the neck at the pouch seal setting with PTFE on both sides; the disc then welds into the bladder panel TPU to TPU. TPU does not fuse to the fitting's own plastic, so the seal is the disc gripping the neck: <b>leak-test every flanged fitting under a squeeze</b>. Barb unions and tees join the lines where needed. Backup: a urethane adhesive such as Aquaseal FD around the neck (see Added after review). Plan <b>three ports</b>: pump A → chamber A, pump B → chamber B, and a dedicated sensor port on A, so the MPRLS needs no tee.</p></li>
 
-<li><div class="ph"><span class="pn">FTVOGUE 6 V DC peristaltic pump ×2</span><span class="pspec">0–100 mL/min, reversible by polarity · 2 ×</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/pumps.jpg" data-part="pumps" alt="6 V peristaltic pumps x2" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">FTVOGUE 6 V DC peristaltic pump ×2</span><span class="pspec">0–100 mL/min, reversible by polarity · 2 ×</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Reversible, so the skin can inhale <em>and</em> exhale. When stopped, the rollers pinch the tube shut, which is exactly what lets chamber A "hold" and listen. At 5 V expect ~80 mL/min (<b>verify</b>), about 6–7 mL per 5 s inhale per pump. That is why chamber B is a small breath pocket. Similar 6 V pumps ship with 3 mm ID × 5 mm OD hose (<b>verify</b>), which pushes onto a 1/8" barb. Running current is listed around 0.1–0.3 A for this class; measure it. Add a 0.1 µF capacitor across each motor's terminals to keep brush noise out of the touch channels.</p></li>
 
-<li><div class="ph"><span class="pn">DRV8833 dual motor driver</span><span class="pspec">5-pack</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/drv.jpg" data-part="drv" alt="DRV8833 motor driver" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">DRV8833 dual motor driver</span><span class="pspec">5-pack</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">One board drives both pumps (2 × 1.5 A channels, 3–10 V); four boards are spares. VM goes to the 5 V rail, IN pins to 3.3 V GPIO, and the board's SLP/EEP pin is tied high if it is not already pulled up (<b>check the module</b>). Use slow-decay PWM for gentle low-speed breathing.</p></li>
 
-<li><div class="ph"><span class="pn">Adafruit MPRLS 0–25 PSI ported</span><span class="pspec">3965</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/psens.jpg" data-part="psens" alt="SparkFun Qwiic MicroPressure (25 psi)" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Adafruit MPRLS 0–25 PSI ported</span><span class="pspec">3965</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">The highest-value part: press, squeeze and the user's breath (and maybe pulse) from one sensor. It goes on an <b>air-pocket tube</b> off the top of chamber A, never wetted, and never on a McKibben line (range is only ~10 PSI above room pressure). The 2.5 mm port needs the 3/32" sleeve (Added after review).</p></li>
 
-<li><div class="ph"><span class="pn">Pure silicone tubing 1/8" ID × 1/4" OD</span><span class="pspec">5 ft</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/tube.jpg" data-part="tube" alt="Silicone tubing 1/8 in ID, 5 ft" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Pure silicone tubing 1/8" ID × 1/4" OD</span><span class="pspec">5 ft</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">All the plumbing runs, plus the McKibben inner tubes. Five feet is enough for both, but not generous: keep runs short.</p></li>
 
-<li><div class="ph"><span class="pn">Alex Tech PET braided sleeving, 1/4" + 1/2"</span><span class="pspec">50 ft</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/braid.jpg" data-part="braid" alt="PET braided sleeving 1/4 + 1/2 in" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Alex Tech PET braided sleeving, 1/4" + 1/2"</span><span class="pspec">50 ft</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">The 1/4" braid over the 1/4" OD tube is the McKibben actuator. It must be snug at rest; loose braid loses stroke. The 1/2" is cable management. Silicone tube with a 1.6 mm wall may need more pressure to contract than the pump makes. That is exactly what the syringe test answers.</p></li>
 
-<li><div class="ph"><span class="pn">Zip ties 4" ×200</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/zip.jpg" data-part="zip" alt="Zip ties" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Zip ties 4" ×200</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Clamp braid <em>and</em> tube together at both ends of each muscle, and every barb joint. If the braid can slide, nothing shortens.</p></li>
 
-<li><div class="ph"><span class="pn">60 mL luer-lock syringes ×10</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/syringe.jpg" data-part="syringe" alt="60 mL luer-lock syringes" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">60 mL luer-lock syringes ×10</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Hand test, fill and purge tool, and <b>the pump reservoirs</b>. A 60 mL barrel with its plunger left free-floating is a closed, air-free reservoir for each pump, so nothing extra needs buying.</p></li>
 
-<li><div class="ph"><span class="pn">MEETOOT female luer → 1/8" barb ×10 · red-cap luer plugs ×20</span><span class="chip c-cart">On the list</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/luerbarb.jpg" data-part="luerbarb" alt="Female luer to 1/8 in barb" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/plugs.jpg" data-part="plugs" alt="Luer plugs" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">MEETOOT female luer → 1/8" barb ×10 · red-cap luer plugs ×20</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Luer barbs join the syringes/reservoirs to the 1/8" lines; plugs cap the dead end of each muscle and the fill ports. Two female luers cannot join each other, though, and barbs do not join tube to tube, so the straight/tee couplers and a stopcock in Added after review are still needed.</p></li>
 
-<li><div class="ph"><span class="pn">Distilled water, 1 gal</span><span class="pspec">grocery</span><span class="chip c-buy">Buy locally</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/water.jpg" data-part="water" alt="Distilled water 1 gal" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Distilled water, 1 gal</span><span class="pspec">grocery</span><span class="chip c-buy">Buy locally</span></div>
 <p class="pwhy">No scale on the pump hose or heater side, and lower conductivity if it ever leaks.</p></li>
 </ul>
 
@@ -644,7 +649,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
   <text class="schs" x="212" y="157.5" text-anchor="middle">no water → no thermal mass, weak breath signal</text>
 </svg>
 <ul class="parts">
-<li><div class="ph"><span class="pn">Tubing, braid, zip ties, luer fittings, syringe</span><span class="chip c-cart">Shared with Plan B</span></div>
+<li><div class="pthumbs"><img class="pt" src="../img/parts/tube.jpg" data-part="tube" alt="Silicone tubing 1/8 in ID, 5 ft" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/braid.jpg" data-part="braid" alt="PET braided sleeving 1/4 + 1/2 in" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/zip.jpg" data-part="zip" alt="Zip ties" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/luerbarb.jpg" data-part="luerbarb" alt="Female luer to 1/8 in barb" loading="lazy" tabindex="0"><img class="pt" src="../img/parts/syringe.jpg" data-part="syringe" alt="60 mL luer-lock syringes" loading="lazy" tabindex="0"></div><div class="ph"><span class="pn">Tubing, braid, zip ties, luer fittings, syringe</span><span class="chip c-cart">Shared with Plan B</span></div>
 <p class="pwhy">Nothing extra to buy for the hand test. A real air build would need a one-way air pump <em>plus</em> an exhaust valve; buy those only if the hand test wins.</p></li>
 </ul>
 <div class="pc">
@@ -816,5 +821,6 @@ Updated 10 Oct 2026 from <code>soft-robot/cart-2026-10-10.json</code> (prices as
 })();
 </script>
 <script src="/js/read-mark.js"></script>
+<script src="../js/parts-pop.js" data-base="../" defer></script>
 </body>
 </html>
