@@ -1009,7 +1009,7 @@
     {
      "id": "ns-public",
      "label": "NORTH STAR PUBLIC",
-     "status": "planned",
+     "status": "idle",
      "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
      "statusLine": "this snapshot",
      "caption": "Releasing North Star itself:",
@@ -1033,7 +1033,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "planned",
+     "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "built",
      "caption": "One morning notification:",
