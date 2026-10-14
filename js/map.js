@@ -547,9 +547,10 @@ function renderCrumbs() {
 
 function buildGraph(full) {
     indexFull(full);
-    if (!buildGraph.opened && full !== FALLBACK && OPEN_WANT && FULL.e[OPEN_WANT]) {
+    const want = OPEN_WANT && !FULL.e[OPEN_WANT] && full.aliases && full.aliases[OPEN_WANT] ? full.aliases[OPEN_WANT] : OPEN_WANT;
+    if (!buildGraph.opened && full !== FALLBACK && want && FULL.e[want]) {
         buildGraph.opened = true;
-        resolveOpen(OPEN_WANT);
+        resolveOpen(want);
     }
     if (ROOT && !canRoot(ROOT)) ROOT = null;
     window.NS_ROOT = ROOT;
