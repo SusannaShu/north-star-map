@@ -376,8 +376,7 @@
      "why": "Agents see and tap the phone the way a person would, so Mittens can act in any app. Next: control from anywhere, not only on the same network.",
      "statusLine": "works at home · anywhere is next",
      "caption": "Agents see and tap the phone the way a person would, so Mittens can act in any app.",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/phone-control.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
