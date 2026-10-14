@@ -2048,6 +2048,12 @@ function openHit(i) {
     openDot(n.id);
 }
 
+window.nsLight = ids => {
+    const s = new Set(ids || []);
+    SEARCH.q = "";
+    SEARCH.hits = Object.values(FULL.e).filter(e => s.has(e.id)).map(e => byId[e.id] || e);
+};
+
 window.nsSearch = q => {
     searchEl.value = q;
     runSearch(q);
