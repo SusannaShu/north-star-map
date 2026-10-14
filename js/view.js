@@ -200,7 +200,7 @@
                 box().innerHTML = `<div class="hint">no flow drawn yet — add a ## Flow block (Skill tab)</div>`;
                 return;
             }
-            const {svg: svg} = await mermaid.render("vwflow" + ++seq, f.flow);
+            const {svg: svg} = await (await nsMermaid()).render("vwflow" + ++seq, f.flow);
             if (VIEW === id && box()) box().innerHTML = svg;
         } catch (e) {
             if (box()) box().innerHTML = `<div class="hint">flow unavailable here</div>`;

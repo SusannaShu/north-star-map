@@ -1,23 +1,39 @@
-if (window.mermaid) mermaid.initialize({
-    startOnLoad: false,
-    securityLevel: "strict",
-    theme: "base",
-    themeVariables: {
-        fontFamily: "Inter, sans-serif",
-        fontSize: "13px",
-        primaryColor: "#FFFFFF",
-        primaryBorderColor: "#000000",
-        primaryTextColor: "#000000",
-        lineColor: "#999999",
-        secondaryColor: "#F5F5F5",
-        tertiaryColor: "#F5F5F5"
-    },
-    flowchart: {
-        htmlLabels: true,
-        curve: "basis",
-        useMaxWidth: false
-    }
-});
+let mermaidP = null;
+
+window.nsMermaid = () => mermaidP || (mermaidP = new Promise((ok, fail) => {
+    const init = () => {
+        mermaid.initialize({
+            startOnLoad: false,
+            securityLevel: "strict",
+            theme: "base",
+            themeVariables: {
+                fontFamily: "Inter, sans-serif",
+                fontSize: "13px",
+                primaryColor: "#FFFFFF",
+                primaryBorderColor: "#000000",
+                primaryTextColor: "#000000",
+                lineColor: "#999999",
+                secondaryColor: "#F5F5F5",
+                tertiaryColor: "#F5F5F5"
+            },
+            flowchart: {
+                htmlLabels: true,
+                curve: "basis",
+                useMaxWidth: false
+            }
+        });
+        ok(window.mermaid);
+    };
+    if (window.mermaid) return init();
+    const s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
+    s.onload = init;
+    s.onerror = () => {
+        mermaidP = null;
+        fail(new Error("mermaid did not load"));
+    };
+    document.head.appendChild(s);
+}));
 
 const FLOW = {};
 
@@ -55,7 +71,7 @@ async function drawFlow(f) {
     }
     pBody.innerHTML = head + `<div class="flowbox" id="flowbox"><div class="hint">drawing…</div></div>`;
     try {
-        const {svg: svg} = await mermaid.render("flow" + ++flowSeq, f.flow);
+        const {svg: svg} = await (await nsMermaid()).render("flow" + ++flowSeq, f.flow);
         const box = document.getElementById("flowbox");
         if (box) box.innerHTML = svg;
     } catch (e) {

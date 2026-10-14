@@ -24,3 +24,23 @@
     return map;
   };
 })();
+
+/* Embedded load progress (T230 2026-10-14): when the map sits in her portfolio's North Star tab, tell the
+ * parent page how far loading has got, so it shows a real progress line instead of a blank wait.
+ * Stages only, no data: boot (scripts ran), data (map.public.json in), drawn (the map is on screen). */
+(function () {
+  if (window.parent === window) return;
+  const post = (stage, pct) => { try { window.parent.postMessage({ type: 'ns-map-progress', stage, pct }, '*'); } catch {} };
+  post('boot', 0.45);
+  const live = window.nsLive;
+  if (live) window.nsLive = async function (map) { post('data', 0.8); return live(map); };
+  const done = () => { const t = document.getElementById('ticker'); return t && !/loading map/.test(t.textContent); };
+  const watch = () => {
+    if (done()) return post('drawn', 1);
+    const t = document.getElementById('ticker');
+    if (!t) return setTimeout(watch, 100);
+    const mo = new MutationObserver(() => { if (done()) { mo.disconnect(); post('drawn', 1); } });
+    mo.observe(t, { childList: true, characterData: true, subtree: true });
+  };
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', watch); else watch();
+})();
