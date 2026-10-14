@@ -370,6 +370,18 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "desktop-agent",
+     "label": "DESKTOP AGENT",
+     "status": "idle",
+     "why": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
+     "statusLine": "live",
+     "caption": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
+     "stage": "active",
+     "embed": "pages/desktop-agent.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "phone-control",
      "label": "PHONE CONTROL",
      "status": "idle",
@@ -408,6 +420,7 @@
      "visibility": "public",
      "links": [
       "omi",
+      "desktop-agent",
       "mittens-daily"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1192,6 +1205,7 @@
      "links": [
       "mittens-desktop",
       "mittens-daily",
+      "desktop-agent",
       "omi"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1223,7 +1237,8 @@
      "links": [
       "phone-control",
       "agent-phone",
-      "glasses-mittens"
+      "glasses-mittens",
+      "desktop-agent"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
