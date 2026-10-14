@@ -1,0 +1,1516 @@
+{
+ "public": true,
+ "snapshot": true,
+ "generatedAt": "2026-10-14",
+ "hub": {
+  "id": "north-star",
+  "label": "NORTH STAR",
+  "why": "What I care about and what I'm building: authenticity + creativity, health + meaning of life, diversity and inclusivity in representation.",
+  "yesterday": [],
+  "today": []
+ },
+ "projects": [
+  {
+   "id": "outreach",
+   "label": "PEOPLE + OUTREACH",
+   "status": "idle",
+   "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
+   "statusLine": "counts only",
+   "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
+   "embed": "pages/outreach.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "designer-outreach",
+     "label": "DESIGNER OUTREACH",
+     "status": "idle",
+     "why": "Every day an agent finds student designers and young independent brands and puts their work on SHEYOU with a claim link.",
+     "statusLine": "daily routine",
+     "caption": "Every day an agent finds student designers and young independent brands and puts their work on SHEYOU with a claim link.",
+     "embed": "pages/designer-outreach.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "creator-outreach",
+     "label": "CREATOR OUTREACH",
+     "status": "idle",
+     "why": "Every day an agent finds fashion creators and builds each one a SUSU Closet already filled with designer pieces, rendered in the looks.",
+     "statusLine": "daily routine",
+     "caption": "Every day an agent finds fashion creators and builds each one a SUSU Closet already filled with designer pieces, rendered in the looks.",
+     "embed": "pages/creator-outreach.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "designers",
+     "label": "DESIGNERS",
+     "status": "idle",
+     "why": "Student designers and young independent brands. Their work goes on SHEYOU with a claim link; every time a member wears a piece, the designer earns.",
+     "statusLine": "pipeline",
+     "caption": "Student designers and young independent brands.",
+     "embed": "pages/designers.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "influencers",
+     "label": "CREATORS",
+     "status": "idle",
+     "why": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
+     "statusLine": "pipeline",
+     "caption": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
+     "embed": "pages/influencers.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pt:robotics",
+     "label": "ROBOTICS · 26",
+     "status": "idle",
+     "why": "26 people. Robotics people I learn from -- they feed ROBOT SKIN and ACTUATION.",
+     "kind": "ptype",
+     "count": 26,
+     "caption": "Robotics people I learn from -- they feed ROBOT SKIN and ACTUATION.",
+     "embed": "pages/pt-robotics.html",
+     "visibility": "public",
+     "links": [
+      "robot-skin",
+      "actuation",
+      "lab-partnerships"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pt:wearable",
+     "label": "WEARABLES · 38",
+     "status": "idle",
+     "why": "38 people. Wearables people I learn from -- they feed WEARABLES.",
+     "kind": "ptype",
+     "count": 38,
+     "caption": "Wearables people I learn from -- they feed WEARABLES.",
+     "embed": "pages/pt-wearable.html",
+     "visibility": "public",
+     "links": [
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pt:luxury-fashion",
+     "label": "LUXURY · 21",
+     "status": "idle",
+     "why": "21 people. People in luxury fashion I learn from -- they feed FASHION FUTURE.",
+     "kind": "ptype",
+     "count": 21,
+     "caption": "People in luxury fashion I learn from -- they feed FASHION FUTURE.",
+     "embed": "pages/pt-luxury-fashion.html",
+     "visibility": "public",
+     "links": [
+      "fashion"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pt:world-model",
+     "label": "WORLD MODELS · 23",
+     "status": "idle",
+     "why": "23 people. People building world models I learn from -- they feed DIGITAL.",
+     "kind": "ptype",
+     "count": 23,
+     "caption": "People building world models I learn from -- they feed DIGITAL.",
+     "embed": "pages/pt-world-model.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pt:research",
+     "label": "RESEARCH · 6",
+     "status": "idle",
+     "why": "6 people. Researchers I learn from -- they feed PATH.",
+     "kind": "ptype",
+     "count": 6,
+     "caption": "Researchers I learn from -- they feed PATH.",
+     "embed": "pages/pt-research.html",
+     "visibility": "public",
+     "links": [
+      "path"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "fashion",
+   "label": "FASHION FUTURE",
+   "status": "idle",
+   "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
+   "statusLine": "two products live",
+   "caption": "A creative economy platform -- authenticity + creativity.",
+   "embed": "pages/fashion.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "sheyou",
+     "label": "SHEYOU",
+     "status": "idle",
+     "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
+     "statusLine": "live",
+     "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+     "embed": "pages/sheyou.html",
+     "visibility": "public",
+     "embedCaption": "case study"
+    },
+    {
+     "id": "susu-closet",
+     "label": "SUSU CLOSET",
+     "status": "idle",
+     "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+     "statusLine": "live",
+     "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+     "embed": "pages/susu-closet.html",
+     "visibility": "public",
+     "embedCaption": "case study"
+    },
+    {
+     "id": "fit-data",
+     "label": "FIT DATA FROM BRANDS",
+     "status": "idle",
+     "why": "The fit bottleneck is unknown fabric behaviour. Measure one garment, build the fit demo end to end, then ask direct-to-consumer brands in fitted categories (denim, tailoring, swimwear) for one style's fabric data. The pitch: fewer returns.",
+     "statusLine": "plan · step 1: one measured garment",
+     "caption": "The fit bottleneck is unknown fabric behaviour.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/fit-data.html",
+     "visibility": "public",
+     "links": [
+      "outreach"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "case study"
+  },
+  {
+   "id": "susu-map",
+   "label": "SUSU MAP",
+   "status": "dormant",
+   "why": "Community hyper-local resources -- the free city, mapped for everyone.",
+   "statusLine": "planned",
+   "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
+   "embed": "pages/susu-map.html",
+   "visibility": "public",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "marketing",
+   "label": "MARKETING",
+   "status": "idle",
+   "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
+   "statusLine": "paused for the redesign",
+   "caption": "Spread the vision and actually sell:",
+   "embed": "pages/marketing.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "publish",
+     "label": "PUBLISH",
+     "status": "done",
+     "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
+     "statusLine": "paused",
+     "caption": "Hourly, inside a safe window:",
+     "embed": "pages/publish.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "strategy-pass",
+     "label": "STRATEGY PASS",
+     "status": "idle",
+     "why": "Weekly: reads the whole funnel and writes the directive that sets the next week's content.",
+     "statusLine": "paused",
+     "caption": "Weekly:",
+     "embed": "pages/strategy-pass.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "nightly-content",
+     "label": "NIGHTLY CONTENT",
+     "status": "idle",
+     "why": "Nightly: script the week's themes, generate across image and video tools, quality-check.",
+     "statusLine": "paused",
+     "caption": "Nightly:",
+     "embed": "pages/nightly-content.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "weekly-rnd",
+     "label": "WEEKLY R&D",
+     "status": "idle",
+     "why": "Sundays: research what is actually trending, set seven themes for the week.",
+     "statusLine": "paused",
+     "caption": "Sundays:",
+     "embed": "pages/weekly-rnd.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "viral-machine",
+     "label": "VIRAL MACHINE",
+     "status": "idle",
+     "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
+     "statusLine": "plan · two-week pilot",
+     "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/viral-machine.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "marketing-analytics",
+     "label": "ANALYTICS",
+     "status": "idle",
+     "why": "Trace every sign-up and payment back to the post that caused it: ref links, campaign tags and post ids carried all the way to the payment.",
+     "statusLine": "plan",
+     "caption": "Trace every sign-up and payment back to the post that caused it:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/marketing-analytics.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "agentic-marketing",
+     "label": "AGENTIC MARKETING",
+     "status": "idle",
+     "why": "Research: how agent-run marketing goes wrong -- persona farms, undisclosed ads, fake engagement -- and the redesign: founder and brand accounts, labelled virtual models, paid creators, official APIs only.",
+     "statusLine": "research done · redesign next",
+     "caption": "Research:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/agentic-marketing.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens",
+   "label": "MITTENS",
+   "status": "idle",
+   "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
+   "statusLine": "active",
+   "caption": "All my bots, digital and physical:",
+   "stage": "active",
+   "embed": "pages/mittens.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-vision",
+     "label": "THE NEW OPENCLAW",
+     "status": "idle",
+     "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
+     "statusLine": "vision",
+     "caption": "Mittens and North Star as one agent for a whole life and work:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-vision.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-architecture",
+     "label": "MITTENS ARCHITECTURE",
+     "status": "idle",
+     "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
+     "statusLine": "decided",
+     "caption": "Personal data moves off the shared cloud backend onto a small home server:",
+     "stage": "active",
+     "embed": "pages/mittens-architecture.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "agent-phone",
+     "label": "ALWAYS-HOME ANDROID",
+     "status": "idle",
+     "why": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
+     "statusLine": "running",
+     "caption": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
+     "stage": "active",
+     "embed": "pages/agent-phone.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "guardian-angel",
+     "label": "GUARDIAN ANGEL",
+     "status": "idle",
+     "why": "Idea: a small flying pod that docks on glasses, a pendant or clothing and flies when pulled away -- a glass shell, eyes that turn, a light. It carries the camera, so Mittens knows where it points.",
+     "statusLine": "idea · research",
+     "caption": "Idea:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/guardian-angel.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "phone-control",
+     "label": "PHONE CONTROL",
+     "status": "idle",
+     "why": "Agents see and tap the phone the way a person would, so Mittens can act in any app. Next: control from anywhere, not only on the same network.",
+     "statusLine": "works at home · anywhere is next",
+     "caption": "Agents see and tap the phone the way a person would, so Mittens can act in any app.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/phone-control.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "go-anywhere",
+     "label": "GO ANYWHERE",
+     "status": "idle",
+     "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
+     "statusLine": "built",
+     "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
+     "stage": "active",
+     "embed": "pages/go-anywhere.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-desktop",
+     "label": "MITTENS ON DESKTOP",
+     "status": "idle",
+     "why": "A watcher on the laptop turns what I am working on into honest calendar blocks. The screen picture is deleted at once; only a one-line summary stays.",
+     "statusLine": "v1 built",
+     "caption": "A watcher on the laptop turns what I am working on into honest calendar blocks.",
+     "stage": "active",
+     "embed": "pages/mittens-desktop.html",
+     "visibility": "public",
+     "links": [
+      "omi",
+      "mittens-daily"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "case study"
+  },
+  {
+   "id": "mittens-daily",
+   "label": "MITTENS DAY + TALK",
+   "status": "idle",
+   "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
+   "statusLine": "active",
+   "caption": "Mittens as the direct interface:",
+   "stage": "active",
+   "embed": "pages/mittens-daily.html",
+   "visibility": "public",
+   "links": [
+    "mittens"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "meeting-notes",
+     "label": "MEETING NOTES",
+     "status": "idle",
+     "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
+     "statusLine": "installed",
+     "caption": "\"Start recording\" on the glasses:",
+     "embed": "pages/meeting-notes.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mw-blind",
+     "label": "CAN'T SEE -> ASK",
+     "status": "idle",
+     "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
+     "statusLine": "building",
+     "caption": "Glasses off or a useless frame:",
+     "embed": "pages/mw-blind.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mw-calls",
+     "label": "CALLS AS MITTENS",
+     "status": "idle",
+     "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "statusLine": "installed",
+     "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "embed": "pages/mw-calls.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "proactive-rules",
+     "label": "PROACTIVE RULES",
+     "status": "idle",
+     "why": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
+     "statusLine": "built",
+     "caption": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
+     "stage": "active",
+     "embed": "pages/proactive-rules.html",
+     "visibility": "public",
+     "links": [
+      "context-graph",
+      "map-upkeep",
+      "mw-blind",
+      "mw-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-digital",
+   "label": "DIGITAL",
+   "status": "idle",
+   "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
+   "statusLine": "active",
+   "caption": "The digital half of Mittens:",
+   "embed": "pages/mittens-digital.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "ns-talk",
+     "label": "NORTH STAR TALK",
+     "status": "idle",
+     "why": "Talk to the map out loud: it answers what is going on and starts agents on a go. When it hears how something should grow, the map changes too.",
+     "statusLine": "live",
+     "caption": "Talk to the map out loud:",
+     "embed": "pages/ns-talk.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-app",
+     "label": "MITTENS APP",
+     "status": "idle",
+     "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
+     "statusLine": "being restored",
+     "caption": "The assistant on the phone:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-app.html",
+     "visibility": "public",
+     "embedCaption": "case study"
+    },
+    {
+     "id": "aurora",
+     "label": "AURORA",
+     "status": "idle",
+     "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
+     "statusLine": "next: the first voice file",
+     "caption": "A voice layer so an agent stops sounding like AI:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/aurora.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "omi"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "aurora-market",
+     "label": "WHO ELSE DOES THIS",
+     "status": "idle",
+     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
+     "statusLine": "research",
+     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/aurora-market.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "small-models",
+     "label": "SMALL LOCAL MODELS",
+     "status": "idle",
+     "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
+     "statusLine": "benchmarked",
+     "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/small-models.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-tutor",
+     "label": "MITTENS TEACHES",
+     "status": "idle",
+     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "statusLine": "idea",
+     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-tutor.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "wearables",
+   "label": "WEARABLES",
+   "status": "idle",
+   "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
+   "statusLine": "active",
+   "caption": "The eyes and ears of Mittens, worn all day:",
+   "images": [
+    "img/pendant-front.jpg",
+    "img/pendant-workbench.jpg"
+   ],
+   "embed": "pages/wearables.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "pendant",
+     "label": "PENDANT",
+     "status": "idle",
+     "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
+     "statusLine": "prototype on the bench",
+     "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
+     "images": [
+      "img/pendant-workbench.jpg",
+      "img/pendant-front.jpg"
+     ],
+     "embed": "pages/pendant.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "smart-glasses",
+     "label": "SMART GLASSES",
+     "status": "planned",
+     "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
+     "statusLine": "testing",
+     "caption": "Smart glasses as the eyes beside the pendant:",
+     "planned": true,
+     "embed": "pages/smart-glasses.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "omi",
+     "label": "OMI",
+     "status": "idle",
+     "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
+     "statusLine": "branch built",
+     "caption": "Omi is the open-source AI wearable.",
+     "stage": "active",
+     "embed": "pages/omi.html",
+     "visibility": "public",
+     "links": [
+      "aurora"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "glasses-mittens",
+     "label": "GLASSES + MITTENS",
+     "status": "idle",
+     "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
+     "statusLine": "testing",
+     "caption": "Mittens on the lens:",
+     "stage": "active",
+     "embed": "pages/glasses-mittens.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-speaker",
+     "label": "SPEAKER + MIC",
+     "status": "planned",
+     "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
+     "statusLine": "idea",
+     "caption": "Mittens with a speaker and a microphone:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-speaker.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "robot-skin",
+   "label": "ROBOT SKIN",
+   "status": "idle",
+   "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. The hardware half of a soft-robotics companion.",
+   "statusLine": "v1 build under way",
+   "caption": "Warm Skin v1:",
+   "stage": "active",
+   "embed": "pages/robot-skin.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "muscle-papers",
+     "label": "MUSCLE PAPERS",
+     "status": "idle",
+     "why": "Sixteen biohybrid-muscle papers (2014-2026) read and taught visually: one mechanism and three numbers each. Takeaway: living muscle gives 0.1-2.9 mN -- a living demo patch, not the mover.",
+     "statusLine": "16 read · 4 must-reads",
+     "caption": "Sixteen biohybrid-muscle papers (2014-2026) read and taught visually:",
+     "stage": "active",
+     "embed": "pages/muscle-papers.html",
+     "visibility": "public",
+     "links": [
+      "biohybrid-muscle",
+      "lab-access"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "cuddle-vision",
+     "label": "VISION",
+     "status": "idle",
+     "why": "A soft robot that holds -- warm fluid skin, textile body, breathing that syncs to yours. Care you can hold, accessible outside romance, gender and family norms. The reason the hardware line exists.",
+     "statusLine": "paper + zine",
+     "caption": "A soft robot that holds -- warm fluid skin, textile body, breathing that syncs to yours.",
+     "images": [
+      "img/paper-spread.jpg",
+      "img/zine-spread.jpg"
+     ],
+     "embed": "pages/cuddle-vision.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "skin-materials",
+     "label": "MATERIALS",
+     "status": "idle",
+     "why": "The Warm Skin v1 parts list -- muscle, bladder, warmth, sensing, control.",
+     "statusLine": "parts arriving",
+     "caption": "The Warm Skin v1 parts list -- muscle, bladder, warmth, sensing, control.",
+     "stage": "active",
+     "images": [
+      "img/warm-skin-layers.jpg"
+     ],
+     "embed": "pages/skin-materials.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "skin-build",
+     "label": "BUILD PLAN",
+     "status": "idle",
+     "why": "The layer stack and build order, part by part, and seven interactions -- approach, touch, stroke, press, hold, warmth, breathing.",
+     "statusLine": "building",
+     "caption": "The layer stack and build order, part by part, and seven interactions -- approach, touch, stroke, press, hold, warmth, breathing.",
+     "stage": "active",
+     "embed": "pages/skin-build.html",
+     "visibility": "public",
+     "embedCaption": "the layer stack, part by part"
+    },
+    {
+     "id": "skin-schedule",
+     "label": "BUILD SCHEDULE",
+     "status": "idle",
+     "why": "The build day by day, driven by when each part arrives: what unlocks what, and the critical path.",
+     "statusLine": "seal test + muscle go/no-go",
+     "caption": "The build day by day, driven by when each part arrives:",
+     "stage": "active",
+     "embed": "pages/skin-schedule.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "cuddle-bot-paper",
+     "label": "CUDDLE BOT PAPER",
+     "status": "idle",
+     "why": "Getting the Cuddle Bot paper out: a working paper with a DOI first, then a late-breaking-results venue.",
+     "statusLine": "working paper staged",
+     "caption": "Getting the Cuddle Bot paper out:",
+     "stage": "active",
+     "images": [
+      "img/cuddle-bot-paper-p1.jpg"
+     ],
+     "embed": "pages/cuddle-bot-paper.html",
+     "visibility": "public",
+     "links": [
+      "mittens-vision",
+      "skin-build"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "skin-research",
+     "label": "SKIN RESEARCH + DEMO",
+     "status": "idle",
+     "why": "Ten measurements turn the build into results: warmth with a 40 C cutoff, softness, actuation, touch accuracy, breath and entrainment, latency, power, noise, seal life, and a small ethics-reviewed study.",
+     "statusLine": "10 measurements mapped",
+     "caption": "Ten measurements turn the build into results:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/skin-research.html",
+     "visibility": "public",
+     "links": [
+      "cuddle-bot-paper",
+      "skin-schedule"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "three-actuators",
+     "label": "THREE ACTUATORS",
+     "status": "idle",
+     "why": "Which muscle for v1: electrohydraulic (HASEL), the electrofluidic fibre, or living muscle cells. Decided on room and signature, not performance: HASEL first, electrofluidic in v2, living muscle needs an institution.",
+     "statusLine": "decided: HASEL first",
+     "caption": "Which muscle for v1:",
+     "stage": "active",
+     "embed": "pages/three-actuators.html",
+     "visibility": "public",
+     "links": [
+      "electrofluidic",
+      "biohybrid-muscle",
+      "lab-access",
+      "skin-build"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "muscle-recipe",
+     "label": "MUSCLE RECIPE",
+     "status": "idle",
+     "why": "How to actually grow a muscle film from the papers: every number carries its page, every unknown is marked unknown. About 12 days from seeding to a working film, more than 30 days of life, 2.9 mN.",
+     "statusLine": "recipe built",
+     "caption": "How to actually grow a muscle film from the papers:",
+     "stage": "active",
+     "embed": "pages/muscle-recipe.html",
+     "visibility": "public",
+     "links": [
+      "muscle-papers",
+      "biohybrid-muscle",
+      "lab-access"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "case study"
+  },
+  {
+   "id": "mittens-hw",
+   "label": "MITTENS WATCH",
+   "status": "idle",
+   "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
+   "statusLine": "running · 3 a day",
+   "caption": "Mittens scrolls so I don't:",
+   "stage": "active",
+   "embed": "pages/mittens-hw.html",
+   "visibility": "public",
+   "parent": "wearables",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "actuation",
+   "label": "ACTUATION",
+   "status": "planned",
+   "why": "How the soft body moves. Warm Skin v1 breathes with a pump; v2 replaces it with electrofluidic fibre muscles -- silent, no external pump.",
+   "statusLine": "v1 pump · v2 fibres",
+   "caption": "How the soft body moves.",
+   "planned": true,
+   "embed": "pages/actuation.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "electrofluidic",
+     "label": "ELECTROFLUIDIC MUSCLE",
+     "status": "planned",
+     "why": "Electrofluidic fibre muscles (Science Robotics, 2026): 2 mm fibres driven by solid-state pumps in a sealed loop. Planned for skin v2.",
+     "statusLine": "planned for v2",
+     "caption": "Electrofluidic fibre muscles (Science Robotics, 2026):",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/electrofluidic.html",
+     "visibility": "public",
+     "links": [
+      "robot-skin"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "biohybrid-muscle",
+     "label": "BIOHYBRID MUSCLE",
+     "status": "planned",
+     "why": "Engineered muscle and biohybrid robots: the research direction for the living-muscle line.",
+     "statusLine": "reading list",
+     "caption": "Engineered muscle and biohybrid robots:",
+     "planned": true,
+     "embed": "pages/biohybrid-muscle.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "wet-lab",
+     "label": "WET LAB",
+     "status": "planned",
+     "why": "Where cells can be grown: cleanrooms open to startups at published rates; cell culture needs a sponsor or a commercial wet lab.",
+     "statusLine": "researching access",
+     "caption": "Where cells can be grown:",
+     "planned": true,
+     "embed": "pages/wet-lab.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "lab-access",
+     "label": "LAB ACCESS",
+     "status": "idle",
+     "why": "Mapping the city's cleanrooms and community labs that could host muscle and actuator work. Most want a company account.",
+     "statusLine": "asking",
+     "caption": "Mapping the city's cleanrooms and community labs that could host muscle and actuator work.",
+     "stage": "active",
+     "embed": "pages/lab-access.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "bench-or-cleanroom",
+     "label": "BENCH OR CLEANROOM?",
+     "status": "idle",
+     "why": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture. Electrohydraulic is bench work, the muscle papers need cell culture, only three need micron fabrication.",
+     "statusLine": "pre-scan done",
+     "caption": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/bench-or-cleanroom.html",
+     "visibility": "public",
+     "links": [
+      "lab-access",
+      "electrofluidic",
+      "biohybrid-muscle"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "devhub",
+   "label": "DEV HUB",
+   "status": "idle",
+   "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
+   "statusLine": "live",
+   "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
+   "embed": "pages/devhub.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "manual-map",
+   "label": "MANUAL MAP",
+   "status": "idle",
+   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
+   "statusLine": "live",
+   "caption": "Where \"how\" lives:",
+   "stage": "active",
+   "embed": "pages/manual-map.html",
+   "visibility": "public",
+   "parent": "devhub",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "portfolio",
+   "label": "PORTFOLIO",
+   "status": "idle",
+   "why": "Where the work shows itself.",
+   "statusLine": "live",
+   "caption": "Where the work shows itself.",
+   "embed": "pages/portfolio.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "shooting-star",
+     "label": "SHOOTING STAR",
+     "status": "planned",
+     "why": "The star comes out of the desk screen: the map you see is live.",
+     "statusLine": "planned · being animated",
+     "caption": "The star comes out of the desk screen:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "intro.html?moment=star",
+     "visibility": "public",
+     "embedCaption": "the landing story"
+    },
+    {
+     "id": "stack-audit",
+     "label": "STACK AUDIT",
+     "status": "idle",
+     "why": "Every technical claim on the case studies checked against the code: 106 claims -- 57 proven, 29 partial, 20 corrected.",
+     "statusLine": "done",
+     "caption": "Every technical claim on the case studies checked against the code:",
+     "stage": "active",
+     "embed": "pages/stack-audit.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "northstar",
+   "label": "NORTH STAR MAP",
+   "status": "idle",
+   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
+   "statusLine": "active",
+   "caption": "The map itself:",
+   "stage": "active",
+   "embed": "pages/northstar.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "ns-public",
+     "label": "NORTH STAR PUBLIC",
+     "status": "planned",
+     "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
+     "statusLine": "this snapshot",
+     "caption": "Releasing North Star itself:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/ns-public.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "daily-sync",
+     "label": "DAILY SYNC",
+     "status": "idle",
+     "why": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
+     "statusLine": "live",
+     "caption": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
+     "embed": "pages/daily-sync.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "morning-brief",
+     "label": "MORNING BRIEF",
+     "status": "planned",
+     "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
+     "statusLine": "built",
+     "caption": "One morning notification:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/morning-brief.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "public-intro",
+     "label": "PUBLIC INTRO",
+     "status": "planned",
+     "why": "The landing story: grass, sky, the sun, back through a window to the desk, and down into the screen where the light becomes the North Star.",
+     "statusLine": "built",
+     "caption": "The landing story:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "intro.html",
+     "visibility": "public",
+     "embedCaption": "the landing story"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "path",
+   "label": "PATH",
+   "status": "idle",
+   "why": "Where the work goes next: a lab where the soft robot's body can be machine-made.",
+   "statusLine": "exploring",
+   "caption": "Where the work goes next:",
+   "embed": "pages/path.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "lab-partnerships",
+   "label": "LAB PARTNERSHIPS",
+   "status": "idle",
+   "why": "A university textiles lab whose knitting machines could make the soft robot's body instead of making it by hand.",
+   "statusLine": "exploring",
+   "caption": "A university textiles lab whose knitting machines could make the soft robot's body instead of making it by hand.",
+   "embed": "pages/lab-partnerships.html",
+   "visibility": "public",
+   "links": [
+    "robot-skin"
+   ],
+   "parent": "path",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-rules",
+   "label": "RULES",
+   "status": "idle",
+   "why": "How every agent starts, where things go on the map, which models.",
+   "caption": "How every agent starts, where things go on the map, which models.",
+   "stage": "active",
+   "embed": "pages/man-rules.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-start-here",
+     "label": "START HERE",
+     "status": "idle",
+     "why": "The first page every agent reads: the map for context, the manual for how, then the repo.",
+     "caption": "The first page every agent reads:",
+     "stage": "active",
+     "embed": "pages/howto-start-here.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "context-graph"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-map-organizing",
+     "label": "WHERE THINGS GO",
+     "status": "idle",
+     "why": "The sorting rules: what she says lands on the right dot.",
+     "caption": "The sorting rules:",
+     "stage": "active",
+     "embed": "pages/howto-map-organizing.html",
+     "visibility": "public",
+     "links": [
+      "northstar",
+      "context-graph"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-models",
+     "label": "MODELS",
+     "status": "idle",
+     "why": "Which model does what: the strongest for anything she talks to, smaller ones for background routines.",
+     "caption": "Which model does what:",
+     "stage": "active",
+     "embed": "pages/howto-models.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "map-upkeep",
+     "label": "MAP UPKEEP",
+     "status": "idle",
+     "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+     "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+     "stage": "active",
+     "embed": "pages/map-upkeep.html",
+     "visibility": "public",
+     "links": [
+      "context-graph",
+      "proactive-rules",
+      "howto-map-organizing",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-proactive",
+     "label": "PROACTIVE HOW-TO",
+     "status": "idle",
+     "why": "How Mittens decides when to speak first.",
+     "caption": "How Mittens decides when to speak first.",
+     "stage": "active",
+     "embed": "pages/howto-proactive.html",
+     "visibility": "public",
+     "links": [
+      "proactive-rules",
+      "mittens-daily",
+      "map-upkeep",
+      "context-graph"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-mittens-desktop",
+     "label": "MITTENS DESKTOP",
+     "status": "idle",
+     "why": "How the desktop watcher runs and what it keeps.",
+     "caption": "How the desktop watcher runs and what it keeps.",
+     "stage": "active",
+     "embed": "pages/howto-mittens-desktop.html",
+     "visibility": "public",
+     "links": [
+      "mittens-desktop",
+      "mittens-daily",
+      "omi"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-devices",
+   "label": "DEVICES",
+   "status": "idle",
+   "why": "How agents use the phones, the glasses and recording.",
+   "caption": "How agents use the phones, the glasses and recording.",
+   "stage": "active",
+   "embed": "pages/man-devices.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-devices",
+     "label": "ALL DEVICES",
+     "status": "idle",
+     "why": "Agents may use every device; how, and how to leave it as found.",
+     "caption": "Agents may use every device; how, and how to leave it as found.",
+     "stage": "active",
+     "embed": "pages/howto-devices.html",
+     "visibility": "public",
+     "links": [
+      "phone-control",
+      "agent-phone",
+      "glasses-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-phone-iphone",
+     "label": "IPHONE CONTROL",
+     "status": "idle",
+     "why": "How an agent sees and taps the iPhone.",
+     "caption": "How an agent sees and taps the iPhone.",
+     "stage": "active",
+     "embed": "pages/howto-phone-iphone.html",
+     "visibility": "public",
+     "links": [
+      "phone-control",
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-android",
+     "label": "PIXEL CONTROL",
+     "status": "idle",
+     "why": "The always-home Android and the apps that only live there.",
+     "caption": "The always-home Android and the apps that only live there.",
+     "stage": "active",
+     "embed": "pages/howto-android.html",
+     "visibility": "public",
+     "links": [
+      "agent-phone",
+      "mittens-hw"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-meta-glasses",
+     "label": "GLASSES HOW-TO",
+     "status": "idle",
+     "why": "How Mittens draws on the glasses.",
+     "caption": "How Mittens draws on the glasses.",
+     "stage": "active",
+     "embed": "pages/howto-meta-glasses.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "mittens-daily",
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-recording",
+     "label": "RECORDING",
+     "status": "idle",
+     "why": "How a meeting gets recorded and lands on the map.",
+     "caption": "How a meeting gets recorded and lands on the map.",
+     "stage": "active",
+     "embed": "pages/howto-recording.html",
+     "visibility": "public",
+     "links": [
+      "meeting-notes",
+      "glasses-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-browsers",
+   "label": "BROWSERS + MCP",
+   "status": "idle",
+   "why": "Which browser lane for which task, and the tool servers agents use.",
+   "caption": "Which browser lane for which task, and the tool servers agents use.",
+   "stage": "active",
+   "embed": "pages/man-browsers.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-browsers",
+     "label": "BROWSER LANES",
+     "status": "idle",
+     "why": "One browser profile per task, one at a time, closed after use.",
+     "caption": "One browser profile per task, one at a time, closed after use.",
+     "stage": "active",
+     "embed": "pages/howto-browsers.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-mcp",
+     "label": "MCP SERVERS",
+     "status": "idle",
+     "why": "Every tool server agents can call.",
+     "caption": "Every tool server agents can call.",
+     "stage": "active",
+     "embed": "pages/howto-mcp.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-builds",
+   "label": "BUILDS + DEPLOYS",
+   "status": "idle",
+   "why": "Shipping app builds and deploys, scheduled routines, testing without touching real accounts.",
+   "caption": "Shipping app builds and deploys, scheduled routines, testing without touching real accounts.",
+   "stage": "active",
+   "embed": "pages/man-builds.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-builds-ios",
+     "label": "IOS BUILDS",
+     "status": "idle",
+     "why": "Building and installing the phone apps.",
+     "caption": "Building and installing the phone apps.",
+     "stage": "active",
+     "embed": "pages/howto-builds-ios.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app",
+      "phone-control"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-deploys",
+     "label": "DEPLOYS",
+     "status": "idle",
+     "why": "Where each service is hosted, and who must say yes first.",
+     "caption": "Where each service is hosted, and who must say yes first.",
+     "stage": "active",
+     "embed": "pages/howto-deploys.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "fashion",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-routines",
+     "label": "ROUTINES HOW-TO",
+     "status": "idle",
+     "why": "How scheduled work runs and reports.",
+     "caption": "How scheduled work runs and reports.",
+     "stage": "active",
+     "embed": "pages/howto-routines.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "northstar",
+      "daily-sync"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-testing",
+     "label": "TESTING",
+     "status": "idle",
+     "why": "Testing with stubs and scratch copies, never real accounts.",
+     "caption": "Testing with stubs and scratch copies, never real accounts.",
+     "stage": "active",
+     "embed": "pages/howto-testing.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "northstar",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-data",
+   "label": "SECRETS + BACKUP",
+   "status": "idle",
+   "why": "Where secrets may live, backup and restore, records, cleanup.",
+   "caption": "Where secrets may live, backup and restore, records, cleanup.",
+   "stage": "active",
+   "embed": "pages/man-data.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-secrets",
+     "label": "SECRETS",
+     "status": "idle",
+     "why": "Secrets live only in ignored env files, never in a repo or a page.",
+     "caption": "Secrets live only in ignored env files, never in a repo or a page.",
+     "stage": "active",
+     "embed": "pages/howto-secrets.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-restore",
+     "label": "BACKUP + RESTORE",
+     "status": "idle",
+     "why": "What is backed up nightly, and how to bring it back.",
+     "caption": "What is backed up nightly, and how to bring it back.",
+     "stage": "active",
+     "embed": "pages/howto-restore.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-records",
+     "label": "RECORDS",
+     "status": "idle",
+     "why": "Which tool owns each kind of record, so nothing is hand-edited.",
+     "caption": "Which tool owns each kind of record, so nothing is hand-edited.",
+     "stage": "active",
+     "embed": "pages/howto-records.html",
+     "visibility": "public",
+     "links": [
+      "northstar",
+      "outreach"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-cleanup",
+     "label": "CLEANUP",
+     "status": "idle",
+     "why": "Every agent leaves the machine as it found it.",
+     "caption": "Every agent leaves the machine as it found it.",
+     "stage": "active",
+     "embed": "pages/howto-cleanup.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "context-graph",
+   "label": "CONTEXT GRAPH",
+   "status": "idle",
+   "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
+   "statusLine": "phase 3 built",
+   "caption": "Agents get only the context the situation needs:",
+   "stage": "active",
+   "embed": "pages/context-graph.html",
+   "visibility": "public",
+   "links": [
+    "mittens-daily",
+    "proactive-rules",
+    "map-upkeep"
+   ],
+   "parent": "manual-map",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  }
+ ],
+ "activity": {
+  "working": 0,
+  "at": {}
+ },
+ "ticker": [],
+ "sync": [],
+ "health": {},
+ "peopleTypes": [],
+ "people": []
+}

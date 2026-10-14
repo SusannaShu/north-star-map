@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Warm Skin v1 — build plans</title>
+<style>
+:root{
+  --bg:#0d1016; --bg2:#141924; --card:#171d2a; --line:#273040;
+  --ink:#e8ecf4; --dim:#9aa6bd; --faint:#6d7a92;
+  --l1:#c9b9a3; /* organic fabric */
+  --l2:#e0b43c; /* capacitive mesh */
+  --l3:#b06ad4; /* velostat */
+  --l4:#4fbf74; /* mckibben */
+  --l5:#38a8d8; /* water bladder */
+  --l6:#e8713c; /* heater film */
+  --l7:#7b8ce6; /* esp32 */
+  --ok:#3fbf85; --warn:#e0a92c; --buy:#4aa8e8; --own:#7b8696; --ask:#b47ae0; --quote:#e0685c;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--bg); color:var(--ink);
+  font:16px/1.55 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+  -webkit-text-size-adjust:100%;
+  padding:0 0 64px;
+}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px}
+header{padding:28px 0 10px}
+h1{font-size:27px;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+h1 small{display:block;font-size:14px;font-weight:500;color:var(--faint);letter-spacing:0;margin-top:7px}
+h2{font-size:20px;margin:40px 0 6px;letter-spacing:-.01em}
+h3{font-size:16px;margin:22px 0 6px}
+p{margin:8px 0}
+.lede{color:var(--dim);font-size:15px}
+.rule{height:1px;background:var(--line);margin:26px 0 0;border:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
+.note{background:#141b16;border-color:#27402f}
+.warnbox{background:#1d1812;border-color:#4a3a1c}
+
+/* ---------- controls ---------- */
+.ctl{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 2px}
+.ctl button{
+  background:var(--bg2);color:var(--ink);border:1px solid var(--line);
+  border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:600;
+  font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent;
+}
+.ctl button[aria-pressed=true]{background:#24324a;border-color:#3d5173;color:#fff}
+
+/* ---------- exploded stack ---------- */
+.stagewrap{background:linear-gradient(170deg,#101521,#0b0e14);border:1px solid var(--line);border-radius:14px;padding:4px 0 0;margin:12px 0}
+svg.stage{display:block;width:100%;height:auto}
+.plate-top{stroke:rgba(255,255,255,.28);stroke-width:1}
+.plate-side{stroke:none;opacity:.62}
+.lblt{font:600 18px -apple-system,BlinkMacSystemFont,"SF Pro Text",sans-serif;fill:#e8ecf4}
+.lbln{font:700 13px -apple-system,sans-serif;fill:#0d1016}
+.leader{stroke:#55627a;stroke-width:1.2;stroke-dasharray:3 3}
+
+
+/* ---------- layer legend ---------- */
+.legend{list-style:none;margin:10px 0 0;padding:0}
+.legend li{display:flex;gap:11px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line)}
+.legend li:first-child{border-top:0}
+.sw{flex:0 0 auto;width:15px;height:15px;border-radius:4px;margin-top:4px;box-shadow:0 0 0 1px rgba(255,255,255,.18) inset}
+.legend b{display:block;font-size:15px}
+.legend span{display:block;color:var(--dim);font-size:13.5px;line-height:1.45}
+
+/* ---------- plans ---------- */
+.plan{border:1px solid var(--line);border-radius:14px;background:var(--card);margin:16px 0;overflow:hidden}
+.plan>header{padding:14px 16px 12px;background:var(--bg2);border-bottom:1px solid var(--line)}
+.plan h3{margin:0;font-size:17.5px}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  padding:3px 8px;border-radius:999px;margin-bottom:7px}
+.t-now{background:#143326;color:#6de3a8}
+.t-main{background:#122a3d;color:#79cdf5}
+.t-alt{background:#2b2238;color:#cfa6ee}
+.t-test{background:#33281a;color:#efc06a}
+.plan .body{padding:14px 16px 16px}
+.plan .why{color:var(--dim);font-size:14.5px;margin:0 0 10px}
+svg.sch{display:block;width:100%;height:auto;background:#0e131d;border:1px solid var(--line);border-radius:10px;margin:4px 0 12px}
+.scht{font:600 13px -apple-system,sans-serif;fill:#d6dced}
+.schs{font:500 11px -apple-system,sans-serif;fill:#8e9ab2}
+.schbox{stroke-width:1.3}
+.flow{stroke:#6b7a95;stroke-width:1.6;fill:none}
+
+/* parts list */
+.parts{list-style:none;margin:6px 0 0;padding:0}
+.parts>li{padding:11px 0;border-top:1px solid var(--line)}
+.parts>li:first-child{border-top:0}
+.ph{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.pn{font-weight:650;font-size:14.5px}
+.pspec{color:var(--faint);font-size:12.5px}
+.pwhy{color:var(--dim);font-size:13.5px;margin:4px 0 0;line-height:1.5}
+.chip{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
+  padding:3px 7px;border-radius:5px;white-space:nowrap;border:1px solid}
+.c-cart{color:#6de3a8;border-color:#245c42;background:#10231b}
+.c-bad{color:#f0c56a;border-color:#5c4a1e;background:#231c10}
+.c-buy{color:#8dcdf7;border-color:#23506e;background:#0f1d28}
+.c-own{color:#a7b2c4;border-color:#3a4354;background:#171b22}
+.c-ask{color:#d3abf0;border-color:#4d3663;background:#1c1424}
+.c-quote{color:#f29a90;border-color:#6b322c;background:#261412}
+
+/* pros/cons */
+.pc{display:grid;grid-template-columns:1fr;gap:10px;margin:12px 0 0}
+@media(min-width:640px){.pc{grid-template-columns:1fr 1fr}}
+.pc div{background:#0f141e;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.pc h4{margin:0 0 5px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)}
+.pc ul{margin:0;padding-left:16px;font-size:13.5px;color:var(--dim)}
+.pc li{margin:3px 0}
+.mile{margin-top:12px;font-size:14px;background:#0f1a16;border:1px solid #244034;border-radius:10px;padding:10px 12px}
+.mile b{color:#7fe0ad}
+
+/* key */
+.key{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 0}
+.key span{font-size:11.5px}
+.tbl{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:8px}
+.tbl th,.tbl td{text-align:left;padding:8px 8px 8px 0;border-top:1px solid var(--line);vertical-align:top}
+.tbl th{color:var(--faint);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;border-top:0}
+footer{color:var(--faint);font-size:12.5px;margin-top:34px;line-height:1.6}
+code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>Warm Skin v1 — build plans
+    <small>Palm-sized warm, touch-responsive fluid skin · module one of a soft healthcare companion</small>
+  </h1>
+  <p class="lede">The layer stack below is the one thing all the plans share. The plans differ only in <b>how the skin moves</b> — and that choice decides which parts actually matter.</p>
+</header>
+
+<h2 id="stack">The layer stack</h2>
+<p class="lede">Tap <b>Hold open</b> to freeze the exploded view, or <b>Pressed</b> to see it assembled. It loops on its own: two slow breaths, lift apart, settle, then a press.</p>
+<div class="ctl">
+  <button id="bAnim" aria-pressed="true">Animate</button>
+  <button id="bOpen" aria-pressed="false">Hold open</button>
+  <button id="bFlat" aria-pressed="false">Pressed</button>
+</div>
+<div class="stagewrap" id="stage">
+<svg class="stage" viewBox="0 0 520 408" role="img" aria-label="Exploded diagram of the seven layers of the Warm Skin v1 stack">
+  <g transform="translate(150,322)">
+   <g class="lyr" style="--gap:0;--br:0;--dip:0">
+    <path class="plate-side" fill="#3e4673" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#5965a6" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#7b8ce6" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#7b8ce6" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">1</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">ESP32-S3 brain</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,310)">
+   <g class="lyr" style="--gap:30;--br:0;--dip:0">
+    <path class="plate-side" fill="#74391e" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#a7512b" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#e8713c" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#e8713c" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">2</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">Heater film (5 V)</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,298)">
+   <g class="lyr" style="--gap:60;--br:5;--dip:5">
+    <path class="plate-side" fill="#1c546c" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#28799c" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#38a8d8" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#38a8d8" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">3</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">TPU water bladder</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,286)">
+   <g class="lyr" style="--gap:90;--br:6;--dip:6">
+    <path class="plate-side" fill="#28603a" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#398a54" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#4fbf74" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#4fbf74" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">4</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">McKibben muscle</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,274)">
+   <g class="lyr" style="--gap:120;--br:6;--dip:7">
+    <path class="plate-side" fill="#58356a" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#7f4c99" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#b06ad4" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#b06ad4" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">5</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">Velostat press</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,262)">
+   <g class="lyr" style="--gap:150;--br:6;--dip:7">
+    <path class="plate-side" fill="#705a1e" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#a1822b" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#e0b43c" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#e0b43c" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">6</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">Capacitive mesh</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,250)">
+   <g class="lyr" style="--gap:180;--br:6;--dip:7">
+    <path class="plate-side" fill="#655d52" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
+    <path class="plate-side" fill="#918575" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
+    <path class="plate-top" fill="#c9b9a3" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
+    <g class="lbl">
+      <line class="leader" x1="112" y1="0" x2="126" y2="0"/>
+      <circle cx="0" cy="0" r="12" fill="#0d1016" fill-opacity=".6" stroke="#c9b9a3" stroke-width="1.3"/>
+      <text class="lblt" x="0" y="0" font-size="13" text-anchor="middle" dominant-baseline="central" style="fill:#fff">7</text>
+      <text class="lblt" x="134" y="0" dominant-baseline="central">Organic fabric</text>
+    </g>
+   </g>
+  </g>
+  <g transform="translate(150,196)">
+   <g class="finger">
+    <circle cx="0" cy="-26" r="15" fill="#f3e3d6" fill-opacity=".92"/>
+    <rect x="-11" y="-26" width="22" height="30" rx="8" fill="#f3e3d6" fill-opacity=".8"/>
+    <ellipse cx="0" cy="12" rx="32" ry="10" fill="none" stroke="#f3e3d6" stroke-opacity=".45" stroke-width="1.4"/>
+   </g>
+  </g>
+</svg>
+</div>
+<div class="card">
+<ul class="legend">
+  <li><i class="sw" style="background:#c9b9a3"></i><div><b>7 · Organic fabric top</b><span>The only part a hand ever touches, so it decides whether the thing reads as alive or as a gadget. Natural fibre, already owned. Her paper's long-term version is a knitted conductive-yarn skin (layers 7 and 6 become one fabric); v1 stitches the two separately.</span></div></li>
+  <li><i class="sw" style="background:#e0b43c"></i><div><b>6 · Capacitive strips + shield</b><span>4–6 strips cut from the OurSure silver fabric, sewn down with conductive thread, one ESP32-S3 touch pin each. They sense a hand <em>before</em> any force lands (approach, ~3–8 cm) and which strip fires first gives the stroke direction. Underneath, separated by a few mm of felt or fabric: a ground sheet of the ATMOSURE copper-nickel fabric, which stops the warm water and the pump motors from reading as a "hand".</span></div></li>
+  <li><i class="sw" style="background:#b06ad4"></i><div><b>5 · Velostat press zones (2×2)</b><span>Each Chibitronics sheet is only ~9.5×10 cm, so four of them tile the palm pad as four press zones. Each zone sits between a silver-fabric pad (to an ADC pin) and the shared ground sheet above. Resistance falls under force: press, squeeze, hold and <em>where</em>. Dry, flat, nothing to leak.</span></div></li>
+  <li><i class="sw" style="background:#4fbf74"></i><div><b>4 · McKibben fluid muscles</b><span>1/8" ID silicone tube inside 1/4" PET braid, zip-tied at both ends. Push water in, the tube swells, the braid turns that swell into a shortening pull. Optional for v1 — see the syringe test in Plan B.</span></div></li>
+  <li><i class="sw" style="background:#38a8d8"></i><div><b>3 · TPU water bladder (two chambers)</b><span>Heat-welded 0.3 mm TPU, ~5 mm thick, split into two chambers so the two pumps can make a travelling ripple. Holds the warmth, gives the pad the dead weight of a body, and — sealed — turns any press or breath against it into a pressure change the MPRLS can read through a short air-filled tube.</span></div></li>
+  <li><i class="sw" style="background:#e8713c"></i><div><b>2 · Heater film, 2 × 8 W 5 V</b><span>Two 50×50 mm polyimide films stuck to the outside of the bladder floor, each with a KSD301 40 °C cutoff on top and in series. Firmware holds the film at ≤38 °C so the hardware cutoff is only ever the backstop.</span></div></li>
+  <li><i class="sw" style="background:#7b8ce6"></i><div><b>1 · ESP32-S3 brain</b><span>Reads touch, Velostat, bladder pressure and temperature; drives two pumps (one DRV8833) and two heater MOSFETs. Already owned.</span></div></li>
+</ul>
+</div>
+
+<div class="card note">
+<p style="margin:0;font-size:14px"><b>Status:</b> the parts list is settled. Everything runs off <b>one 5 V 3 A USB-C supply</b>. The MOSFET and power-supply questions are closed, and the 0.5 mL/min stepper pump has been replaced with two 100 mL/min DC pumps. A final engineering pass found missing fittings and wiring; those are now on the list too (see <a href="#adds" style="color:#79cdf5">Added after review</a>). HeatnBond was dropped — stitch the dry layers instead.</p>
+</div>
+
+<style>
+.imap{list-style:none;margin:8px 0 0;padding:0}
+.imap>li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.imap h4{margin:0 0 6px;font-size:15.5px}
+.imap dl{margin:0;display:grid;grid-template-columns:78px 1fr;gap:4px 10px;font-size:13.5px}
+.imap dt{color:var(--faint);font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding-top:2px}
+.imap dd{margin:0;color:var(--dim)}
+.ok{color:#6de3a8;font-weight:700}
+.risk{color:#efc06a;font-weight:700}
+.steps{margin:6px 0 0;padding-left:20px;font-size:14px;color:var(--dim)}
+.steps li{margin:6px 0}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.sev{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 6px;border-radius:5px;white-space:nowrap}
+.s-block{color:#f29a90;background:#261412;border:1px solid #6b322c}
+.s-risk{color:#f0c56a;background:#231c10;border:1px solid #5c4a1e}
+.s-nice{color:#a7b2c4;background:#171b22;border:1px solid #3a4354}
+</style>
+
+<h2 id="interactions">Seven interactions, and what makes each one work</h2>
+<p class="lede">The core is "a patch of skin that syncs its breathing to yours". Every part on the list is there for at least one of these. <span class="ok">Possible</span> means the parts list plus owned parts can do it; <span class="risk">Possible, with care</span> means it works only if the note is followed.</p>
+<ul class="imap">
+<li><h4>1 · Approach <span class="ok">· Possible</span></h4><dl>
+<dt>Sense</dt><dd>Self-capacitance on the silver strips (ESP32-S3 touch pins). Expect a hand at ~3–8 cm on a palm-sized electrode, less once the ground sheet is underneath.</dd>
+<dt>Respond</dt><dd>Lean in: a small slow inflation (2–3 mL) and the heater stepping up, before contact.</dd>
+<dt>Parts</dt><dd>OurSure silver fabric, conductive thread, ATMOSURE fabric as ground sheet, ESP32-S3. MPR121 only if the native pins are too noisy.</dd>
+<dt>Watch</dt><dd>The ESP32-S3 has a driven-shield channel (touch channel 14, GPIO14) but its drive strength is limited (levels L0–L7). A palm-sized shield sheet may be too big for it — <b>verify</b>; the fallback is to tie the sheet to ground. Longer-range approach (30 cm+) needs a ~$10 ToF sensor, which is a v2 item.</dd></dl></li>
+
+<li><h4>2 · Touch / tap <span class="ok">· Possible</span></h4><dl>
+<dt>Sense</dt><dd>A capacitive spike under 300 ms with a small, short Velostat blip.</dd>
+<dt>Respond</dt><dd>A single small pulse — a twitch of attention, not a breath.</dd>
+<dt>Parts</dt><dd>Capacitive strips + Velostat zones.</dd></dl></li>
+
+<li><h4>3 · Stroke <span class="ok">· Possible</span></h4><dl>
+<dt>Sense</dt><dd>4–6 strips firing in sequence give direction and speed. One undivided electrode cannot tell direction.</dd>
+<dt>Respond</dt><dd>A ripple that travels the same way: pump A fills chamber A while pump B drains chamber B, then they swap.</dd>
+<dt>Parts</dt><dd>Silver strips; two pumps, one DRV8833 (both channels); two-chamber bladder.</dd></dl></li>
+
+<li><h4>4 · Press / squeeze <span class="ok">· Possible</span></h4><dl>
+<dt>Sense</dt><dd>Velostat zone resistance (where, roughly how hard) plus bladder pressure on the MPRLS (how hard, overall).</dd>
+<dt>Respond</dt><dd>Firm back: the pumps hold or add volume so the pad pushes back instead of collapsing; one slow breath.</dd>
+<dt>Parts</dt><dd>4 Velostat tiles, 4.7 kΩ resistors (owned), MPRLS, sealed bladder.</dd></dl></li>
+
+<li><h4>5 · Hold <span class="ok">· Possible</span></h4><dl>
+<dt>Sense</dt><dd>Velostat plus capacitive steady for more than 5 s.</dd>
+<dt>Respond</dt><dd>Warmth up to the 36 °C setpoint, then move into breathing mode (7).</dd>
+<dt>Parts</dt><dd>As 4, plus the heater chain.</dd></dl></li>
+
+<li><h4>6 · Warmth <span class="risk">· Possible, with care</span></h4><dl>
+<dt>Sense</dt><dd>DS18B20s: one on the film, one on the top surface under the fabric (the number that matters), one at the reservoir or ambient, one spare.</dd>
+<dt>Respond</dt><dd>PWM on the film to hold the surface at 34–36 °C, with a hard ceiling of 38 °C on the film.</dd>
+<dt>Parts</dt><dd>2 × 8 W films, KSD301 40 °C in series on each film, NOYITO AOD4184 module × 2, 4.7 kΩ pull-up.</dd>
+<dt>Watch</dt><dd>With the film capped at ~40 °C, the top surface will sit a few degrees cooler through water, Velostat and fabric. Warming ~110 mL of water by 12 °C takes ~5.5 kJ: about 12 min at 8 W with no losses, so plan on <b>20–30 min</b> of pre-warm with one film. Measure the surface temperature on the first build. If it will not get above 32 °C, move the Velostat under the bladder; water passes a press straight through.</dd></dl></li>
+
+<li><h4>7 · Breathing + entrainment <span class="risk">· Possible, with care</span></h4><dl>
+<dt>Sense</dt><dd>The user's breathing as a slow pressure wave in the <em>sealed</em> bladder (MPRLS), with the pad held against the chest or belly. Hand-held on a resting palm, the signal is weak.</dd>
+<dt>Respond</dt><dd>Swell in phase with the user, then slowly lead them down toward ~6 breaths/min.</dd>
+<dt>Parts</dt><dd>MPRLS on an air-pocket tube, two pumps, two-chamber bladder, syringe-barrel reservoirs.</dd>
+<dt>Watch</dt><dd>The pumps limit how big a breath can be: ~80 mL/min at 5 V is ~1.3 mL/s per pump, about 6–7 mL per 5-second inhale. Over the whole 15×15 cm bladder that is only ~0.3 mm. <b>Make a small "breath pocket" (~6×8 cm) as chamber B</b> so the same volume shows as a visible rise, and keep the McKibben for the pull. Full method below.</dd></dl></li>
+</ul>
+
+<h2 id="entrain">Breathing entrainment: how the demo shows it</h2>
+<div class="card">
+<h3 style="margin-top:0">Why a sealed water bladder can read breath</h3>
+<p style="font-size:14px;color:var(--dim)">A sealed, liquid-filled pouch pressed against a body turns every small load change into a pressure change. That is the same principle as the air-cushion and bed-bladder sensors used for sleep monitoring, which read both respiration and heartbeat (ballistocardiography). A chest or belly rising under the pad changes the bladder pressure on every breath. A hand resting on a table barely moves, so the palm pose gives almost nothing.</p>
+<p style="font-size:14px;color:var(--dim);margin-bottom:0"><b>How Shionoiri &amp; Osawa (2025) differ:</b> they <em>circulate</em> water through a 3 mm ID silicone tube (~1 m, on a PP film) and read contact as flow resistance on an SMC PSE573. That sensor is a ceramic, liquid-rated part, so it sits directly in the water line. Contact only registers from ~5 N, where the tube starts to collapse, up to ~7 N, where it fully occludes. They state that weak forces are hard to detect and that pump-rate changes bury small signals. Heat comes from Peltier devices on a small tank (40×40×10 mm), with a thermocouple inside the tube, and water at room temperature +5/+10/+15 °C (24 → ~39 °C). They did not attempt respiration. For breath, their result argues <b>against</b> continuous circulation: a sealed, static bladder sensed while the pump is <em>stopped</em> is the better design. It also confirms that a water skin can be the sensor and the heater at once.</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">Plumbing the sensor (MPRLS stays dry)</h3>
+<p style="font-size:14px;color:var(--dim);margin:0">Adafruit describes the MPRLS die as "silicone-gel covered". Neither Adafruit nor the public Honeywell pages rate this variant (MPRLS0025PA00001A) for water; Honeywell's full datasheet is behind a sign-in, so <b>verify</b>, and treat it as dry gas only either way. Run a ~10 cm tube straight up from a dedicated bladder nozzle (or a tee with a stopcock) and leave an air column at the top. Water never reaches the port, and the small air pocket passes pressure faithfully. Keep it short and small, because a big air volume damps the signal. The steel port is only <b>2.5 mm OD</b>, so 1/8" ID tubing is loose on it. Follow Adafruit's advice: put 3/32" ID tubing on the port and nest that inside the 1/8" line. Range check: 0–25 PSI <em>absolute</em> leaves only about 10 PSI (~70 kPa) above room pressure. That is plenty for a bladder, but the sensor must <b>never</b> go on a McKibben line.</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">Separating its own breath from the user's</h3>
+<ol class="steps">
+<li><b>Two chambers, two jobs.</b> Chamber A (big, under the palm/chest contact) is the <em>listening</em> chamber and carries the MPRLS. Chamber B (the small breath pocket) does the visible breathing. During entrainment, pump A is stopped. A stopped peristaltic pump clamps its tube shut, so chamber A's volume is fixed and its pressure changes come from the user, not the machine.</li>
+<li><b>Subtract the known crosstalk.</b> Chamber B swelling still presses on A a little. Calibrate once with nobody touching: run the breath cycle and record A's pressure versus B's commanded volume. In use, subtract that curve. What is left is the user.</li>
+<li><b>Filter by time scale.</b> Breathing is 0.1–0.5 Hz, heartbeat ~1–1.5 Hz, and peristaltic roller ripple several Hz. Low-pass at ~0.7 Hz for breath; band-pass ~0.8–2 Hz if a heartbeat shows up.</li>
+<li><b>Fallback if crosstalk is too big:</b> sense in the pauses. Breathe, hold for 1–2 s at the top and bottom, and update the user's phase estimate only during holds. This is slower to lock, but it is clean.</li>
+</ol>
+</div>
+
+<div class="card note">
+<h3 style="margin-top:0">The demo scenario (60–90 s of video)</h3>
+<ol class="steps">
+<li><b>Set-up.</b> The user lies back with the pad on the belly or sternum, under one hand or hugged to the chest. The laptop shows a live plot over Wi-Fi with two traces: <i>your breath</i> (MPRLS, chamber A) and <i>its breath</i> (chamber B command).</li>
+<li><b>Arrive (0–15 s).</b> The hand approaches and the pad warms and leans in. On contact, one slow breath.</li>
+<li><b>Listen (15–35 s).</b> The pad goes still and warm. The user's breathing appears on the plot, typically 12–18/min. Firmware estimates rate and phase from peak-to-peak timing.</li>
+<li><b>Match (35–55 s).</b> Chamber B swells in phase with the user, at the user's rate, small and soft. On screen, the two traces lock.</li>
+<li><b>Lead (55 s–3 min).</b> Each cycle, the pad's period stretches by ~3–5%, toward ~6/min, with longer exhales. If the user's rate does not follow within a few cycles, it waits and re-matches rather than dragging ahead.</li>
+<li><b>The proof shot.</b> Both traces walk down together: the user's rate follows the pad's. Cut to a close-up of the fabric rising under the hand, then the plot. That is the attunement claim made visible.</li>
+</ol>
+<p style="font-size:13px;color:var(--faint);margin:8px 0 0">Honest limits: not everyone entrains in one sitting, so film several takes and several people. Cross-check the MPRLS-derived rate against a count or a phone breathing app once, so the plot can be trusted on camera.</p>
+</div>
+
+<h2 id="plans">Four ways to build it</h2>
+<p class="lede">Same stack, four different answers to "what makes it move". With two 100 mL/min pumps now on the list, Plan B is fully buildable; C and D remain cheap fall-backs.</p>
+
+<div class="card">
+<p style="margin:0 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint)">Key</p>
+<div class="key">
+  <span class="chip c-cart">On the list</span>
+  <span class="chip c-buy">Add / buy locally</span>
+  <span class="chip c-own">Already owned</span>
+  <span class="chip c-ask">Verify on arrival</span>
+  <span class="chip c-quote">v2 / later</span>
+</div>
+
+</div>
+<style>
+svg.defs{position:absolute;width:0;height:0;overflow:hidden}
+.musc{animation:squeeze 3.6s ease-in-out infinite}
+@keyframes squeeze{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.74)}}
+.bulge{animation:bulge 3.6s ease-in-out infinite}
+@keyframes bulge{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.3)}}
+.fl{stroke-dasharray:5 7;animation:dash 1.5s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-24}}
+.tendon{animation:pull 3.6s ease-in-out infinite}
+@keyframes pull{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-24deg)}}
+.puff{animation:puff 2.2s ease-in-out infinite}
+@keyframes puff{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.14);opacity:1}}
+@media (prefers-reduced-motion:reduce){
+  .musc,.bulge,.fl,.tendon,.puff{animation:none}
+}
+</style>
+<svg class="defs" aria-hidden="true"><defs>
+<marker id="arw" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b7a95"/></marker>
+<pattern id="braid" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(30)">
+  <path d="M0 4.5 H9" stroke="#2f6f45" stroke-width="2.4"/>
+</pattern>
+</defs></svg>
+
+<!-- ======================= PLAN A ======================= -->
+<div class="plan">
+<header>
+  <span class="tag t-now">Plan A · first week after the parts land</span>
+  <h3>Sensing-first: the dry pad + heater</h3>
+</header>
+<div class="body">
+<p class="why">Build layers 7–5 plus the heater on a flat pad with <b>no water at all</b>. Prove that approach, tap, stroke, press and hold are cleanly distinguishable, and that the heater chain holds 36 °C and the cutoff actually trips. Motion goes underneath later without touching any of this.</p>
+
+<svg class="sch" viewBox="0 0 440 182" role="img" aria-label="Plan A schematic: dry sensing pad wired to an ESP32-S3 with heater feedback">
+  <rect x="16" y="20" width="152" height="15" rx="3" fill="#c9b9a3"/><text class="schs" x="24" y="31.5" style="fill:#241f18">Organic fabric</text>
+  <rect x="16" y="39" width="152" height="15" rx="3" fill="#e0b43c"/><text class="schs" x="24" y="50.5" style="fill:#241f18">Cap strips + ground sheet</text>
+  <rect x="16" y="58" width="152" height="15" rx="3" fill="#b06ad4"/><text class="schs" x="24" y="69.5" style="fill:#1a0f22">Velostat 2×2 zones</text>
+  <rect x="16" y="77" width="152" height="15" rx="3" fill="#e8713c"/><text class="schs" x="24" y="88.5" style="fill:#241208">Heater film 5 V</text>
+  <rect x="16" y="104" width="152" height="40" rx="6" fill="none" stroke="#49556b" stroke-width="1.2" stroke-dasharray="4 4"/>
+  <text class="schs" x="92" y="120" text-anchor="middle">muscle / bladder</text>
+  <text class="schs" x="92" y="134" text-anchor="middle">added in Plan B, C or D</text>
+
+  <path class="flow" d="M172 47 H206" marker-end="url(#arw)"/>
+  <path class="flow" d="M172 66 H206" marker-end="url(#arw)"/>
+  <rect class="schbox" x="208" y="30" width="112" height="52" rx="8" fill="#1a2234" stroke="#7b8ce6"/>
+  <text class="scht" x="264" y="52" text-anchor="middle">ESP32-S3</text>
+  <text class="schs" x="264" y="68" text-anchor="middle">touch + ADC</text>
+
+  <path class="flow" d="M264 86 V104" marker-end="url(#arw)"/>
+  <rect class="schbox" x="208" y="106" width="112" height="38" rx="8" fill="#231810" stroke="#e8713c"/>
+  <text class="schs" x="264" y="123" text-anchor="middle">AOD4184 module</text>
+  <text class="schs" x="264" y="137" text-anchor="middle">→ KSD301 → heater</text>
+
+  <path class="flow" d="M324 125 H372 V56 H324" marker-end="url(#arw)"/>
+  <rect class="schbox" x="326" y="30" width="98" height="26" rx="7" fill="#101b22" stroke="#38a8d8" transform="translate(0,-4)"/>
+  <text class="schs" x="375" y="44" text-anchor="middle">DS18B20 ×4</text>
+  <text class="schs" x="424" y="162" text-anchor="end">one 5 V 3 A rail</text>
+  <path class="flow" d="M264 146 V156 H352" marker-end="url(#arw)"/>
+</svg>
+
+<ul class="parts">
+<li><div class="ph"><span class="pn">Chibitronics Velostat/Linqstat</span><span class="pspec">5 sheets, each ~3.75×4" · B0DM6MTKG9 · $9.59</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Four sheets tile the 15×15 cm pad as a 2×2 grid of press zones; one is spare. Each zone forms a divider with a 4.7 kΩ resistor into one ADC1 pin. Expect drift and hysteresis: filter it, don't measure force with it.</p></li>
+
+<li><div class="ph"><span class="pn">OurSure silver-nylon conductive fabric</span><span class="pspec">11.5×12.5" · B013CXXC3I · $14.00</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">One sheet (~29×32 cm, ~930 cm²) covers both the capacitive strips (~225 cm²) and the four Velostat bottom pads (~380 cm²), with a little spare. Cut carefully. Silver-nylon does not solder well: sew or snap the leads.</p></li>
+
+<li><div class="ph"><span class="pn">ATMOSURE copper-nickel Faraday fabric + tape</span><span class="pspec">44×36" · B08BN89Z6M · $16.95</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">The ground sheet. One continuous piece is both the shared top electrode of all four Velostat zones (tied to GND) and the shield that keeps the warm water and pump motors out of the capacitive reading. Leave a few mm of felt or fabric between it and the cap strips, or the approach range collapses. There is plenty left over for spares and v2.</p></li>
+
+<li><div class="ph"><span class="pn">Adafruit stainless conductive thread</span><span class="pspec">23 m · B00KLDPV1E · $13.26</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Signal leads only (strips and zones to the header). It is resistive (tens of ohms per metre — verify), so it must <b>never</b> carry heater or pump current.</p></li>
+
+<li><div class="ph"><span class="pn">MECCANIXITY 5 V 8 W heater film ×2</span><span class="pspec">50×50 mm, adhesive, ~1.6 A each · B0GWN8CLR6 · $8.99</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Both films together cover only ~50×100 mm of the 150×150 pad. The water spreads the heat; that is why the bladder is there. Use one film at a time at full power (see the power budget).</p></li>
+
+<li><div class="ph"><span class="pn">Fielect KSD301 40 °C normally-closed ×5</span><span class="pspec">B082GV8ZXB · $6.49</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">One on each film, in series with that film's MOSFET. Snap discs reset some 10–15 °C below the trip point (<b>verify</b> on this part), so if it trips the heater stays off for a while. That is the reason firmware should hold the film at ≤38 °C and never lean on the disc.</p></li>
+
+<li><div class="ph"><span class="pn">DS18B20 waterproof probes ×4</span><span class="pspec">1 m · B0FH4WRN6H · $9.99</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">All four on one data pin with one 4.7 kΩ pull-up to 3.3 V (owned). Film, top surface, reservoir/ambient, spare. Do <b>not</b> push a probe through the bladder wall: the 6 mm steel can is a leak point. Tape it to the outside.</p></li>
+
+<li><div class="ph"><span class="pn">NOYITO isolated AOD4184 MOSFET module ×2</span><span class="pspec">B07D1VVQWY · $6.99</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<p class="pwhy">One per heater film. Listed as taking a 3 V or 5 V signal. Bench check: drive it from a 3.3 V pin at 1.6 A load and confirm less than ~0.1 V across the output. The optocoupler is slow, so run heater PWM at a few hundred Hz or slower (a 1 s time-proportioned cycle is fine for heat).</p></li>
+
+<li><div class="ph"><span class="pn">5 V 3 A USB-C supply + USB-C→screw-terminal adapter</span><span class="pspec">B09JW4QQJ2 $9.99 · B0H3L2J6XJ $9.99 (5-pack)</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<p class="pwhy">The Pi supply has a captive USB-C plug, so it needs the female-to-terminal adapter. Check with the multimeter that the terminals read ~5 V under a heater load (that confirms the adapter's CC resistors and the supply agree). Then run the 5 V and GND buses in 22 AWG wire (see <a href="#adds" style="color:#79cdf5">Added after review</a>), not Dupont jumpers.</p></li>
+
+<li><div class="ph"><span class="pn">NOYITO MPR121 breakout</span><span class="pspec">B07DQDHXMD · $5.99</span><span class="chip c-cart">On the list · backup</span></div>
+<p class="pwhy">Twelve more touch channels on I2C (0x5A, no clash with the MPRLS at 0x18). It is used only if the ESP32-S3's own touch pins are too noisy next to pumps and heater, or if the pin budget runs out.</p></li>
+
+<li><div class="ph"><span class="pn">HeatnBond Lite</span><span class="pspec">B001687ZDA · $13.99 · currently out of stock</span><span class="chip c-cart">On the list · optional</span></div>
+<p class="pwhy">It is insulating: <b>edges only</b>, never across a Velostat contact area or under a capacitive strip. It stops the dry layers sliding and making phantom presses. Stitching does the same job, so drop it if it stays out of stock.</p></li>
+
+<li><div class="ph"><span class="pn">ESP32-S3 · organic fabric · jumper wires · 4.7 kΩ resistors · soldering iron · multimeter</span><span class="chip c-own">Already owned</span></div>
+<p class="pwhy">All present. <b>Pin plan</b> (ESP32-S3 ADC1 pins are also touch pins, so plan it once): GPIO1–4 → Velostat zones (ADC1); GPIO5–10 → 6 capacitive strips; GPIO14 → shield/guard if used; I2C (MPRLS + MPR121) on non-touch pins, e.g. GPIO17/18; DRV8833 IN1–IN4 on GPIO15/16/21/38; heater MOSFETs on GPIO39/40; DS18B20 on GPIO41. Avoid ADC2 (unusable with Wi-Fi on) and the octal-PSRAM pins 35–37 on N16R8 boards.</p></li>
+</ul>
+
+<div class="pc">
+<div><h4>Why this first</h4><ul>
+<li>No water anywhere near the electronics.</li>
+<li>Gets the gesture classifier (tap / stroke / press / hold / approach) written while the bladder is being welded.</li>
+<li>Proves the heater cutoff before the heater is ever under water.</li>
+</ul></div>
+<div><h4>What it does not give</h4><ul>
+<li>No movement and no breathing yet.</li>
+<li>No bladder, so no MPRLS signal and no body weight.</li>
+</ul></div>
+</div>
+<p class="mile"><b>Done when:</b> the serial log cleanly separates approach, tap, stroke-left, stroke-right, press and a 5-second hold, and a deliberately overheated film is cut off by the KSD301.</p>
+</div>
+</div>
+<!-- ======================= PLAN B ======================= -->
+<div class="plan">
+<header>
+  <span class="tag t-main">Plan B · the main line</span>
+  <h3>Hydraulic: two-chamber water bladder, two pumps, optional McKibben</h3>
+</header>
+<div class="body">
+<p class="why">Water does three jobs at once: it carries the warmth, it turns a press <em>or a breath</em> into a pressure the MPRLS can read, and it is the working fluid. Two reversible pumps drive two chambers, which gives a real travelling ripple for stroke and lets one chamber listen while the other breathes.</p>
+
+<svg class="sch" viewBox="0 0 440 204" role="img" aria-label="Plan B schematic: two reversible peristaltic pumps driving a two-chamber water bladder with an air-pocket pressure sensor and heater">
+  <rect class="schbox" x="10" y="18" width="84" height="36" rx="8" fill="#1a2234" stroke="#6b7a95"/>
+  <text class="schs" x="52" y="34" text-anchor="middle">Syringe-barrel</text>
+  <text class="schs" x="52" y="47" text-anchor="middle">reservoirs ×2</text>
+  <path class="flow fl" d="M96 36 H116" marker-end="url(#arw)"/>
+  <rect class="schbox" x="118" y="18" width="92" height="36" rx="8" fill="#141f1a" stroke="#4fbf74"/>
+  <text class="schs" x="164" y="34" text-anchor="middle">6 V peristaltic ×2</text>
+  <text class="schs" x="164" y="47" text-anchor="middle">DRV8833 · reversible</text>
+  <path class="flow fl" d="M212 36 H234" marker-end="url(#arw)"/>
+
+  <g class="musc" style="transform-origin:330px 36px">
+    <rect x="236" y="22" width="188" height="28" rx="14" fill="url(#braid)" stroke="#4fbf74" stroke-width="1.4"/>
+    <rect x="242" y="29" width="176" height="14" rx="7" fill="#1d3d2a" fill-opacity=".8"/>
+  </g>
+  <text class="schs" x="424" y="68" text-anchor="end">optional McKibben · tube in PET braid, zip-tied</text>
+
+  <g class="bulge" style="transform-origin:216px 112px">
+    <rect x="116" y="96" width="200" height="32" rx="16" fill="#1d4a5e" stroke="#38a8d8" stroke-width="1.4"/>
+  </g>
+  <text class="schs" x="216" y="116" text-anchor="middle" style="fill:#bfe6f6">A: listen · B: breath pocket</text>
+  <path class="flow" d="M318 112 H336" marker-end="url(#arw)"/>
+  <rect class="schbox" x="338" y="94" width="92" height="36" rx="8" fill="#101b22" stroke="#38a8d8"/>
+  <text class="schs" x="384" y="110" text-anchor="middle">air pocket → MPRLS</text>
+  <text class="schs" x="384" y="123" text-anchor="middle">press · breath · pulse</text>
+
+  <rect x="116" y="142" width="200" height="15" rx="4" fill="#e8713c"/>
+  <text class="schs" x="216" y="153.5" text-anchor="middle" style="fill:#241208">Heater film 5 V · outside the bladder</text>
+  <path class="flow" d="M338 150 H322" marker-end="url(#arw)"/>
+  <text class="schs" x="384" y="153" text-anchor="middle">DS18B20 + KSD301</text>
+  <text class="schs" x="220" y="182" text-anchor="middle">syringe by hand → 2 peristaltic pumps → (v2) silent piezo pump</text>
+</svg>
+
+<ul class="parts">
+<li><div class="ph"><span class="pn">PH PandaHall black TPU fabric, 0.3 mm</span><span class="pspec">54" × 1 yd · B0DS1N97JX · $15.09</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<p class="pwhy">The bladder. Check whether it is TPU on both faces or TPU-coated on one face; if coated, weld coated face to coated face. Weld test strips first and pull them apart by hand before cutting the real bladder. A yard is enough for many attempts.</p></li>
+
+<li><div class="ph"><span class="pn">Mini craft iron 80 W, adjustable + HTVRONT PTFE sheets</span><span class="pspec">B0H2YZPD8V $15.99 · B09PVCGDT7 $5.69</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">TPU welds in a narrow temperature band and sticks to bare metal; PTFE gives a clean release. Note the temperature that gives a seam you can't peel, and reuse it.</p></li>
+
+<li><div class="ph"><span class="pn">Bladder ports: 3D-printed flanged TPU nozzles</span><span class="pspec">school TPU printer</span><span class="chip c-own">Make</span></div>
+<p class="pwhy">Polycarbonate and silicone barbs will not heat-weld to TPU. Print a thin flanged nozzle in TPU and weld the flange inside the bladder (TPU to TPU), with the outside shaped as a barb for 1/8" ID tubing. Printer TPU and film TPU may be different grades (polyester vs polyether), so <b>test-weld one and leak-test it under a squeeze</b>. Backup: a urethane adhesive such as Aquaseal FD around the flange (see Added after review). Plan <b>three ports</b>: pump A → chamber A, pump B → chamber B, and a dedicated sensor port on A, so the MPRLS needs no tee.</p></li>
+
+<li><div class="ph"><span class="pn">FTVOGUE 6 V DC peristaltic pump ×2</span><span class="pspec">0–100 mL/min, reversible by polarity · B0CTBY97KZ · 2 × $15.27</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Reversible, so the skin can inhale <em>and</em> exhale. When stopped, the rollers pinch the tube shut, which is exactly what lets chamber A "hold" and listen. At 5 V expect ~80 mL/min (<b>verify</b>), about 6–7 mL per 5 s inhale per pump. That is why chamber B is a small breath pocket. Similar 6 V pumps ship with 3 mm ID × 5 mm OD hose (<b>verify</b>), which pushes onto a 1/8" barb. Running current is listed around 0.1–0.3 A for this class; measure it. Add a 0.1 µF capacitor across each motor's terminals to keep brush noise out of the touch channels.</p></li>
+
+<li><div class="ph"><span class="pn">DRV8833 dual motor driver</span><span class="pspec">5-pack · B0G5NSYR2Q · $8.99</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">One board drives both pumps (2 × 1.5 A channels, 3–10 V); four boards are spares. VM goes to the 5 V rail, IN pins to 3.3 V GPIO, and the board's SLP/EEP pin is tied high if it is not already pulled up (<b>check the module</b>). Use slow-decay PWM for gentle low-speed breathing.</p></li>
+
+<li><div class="ph"><span class="pn">Adafruit MPRLS 0–25 PSI ported</span><span class="pspec">3965 · B07JP4Y7S8 · $39.95</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">The highest-value part: press, squeeze and the user's breath (and maybe pulse) from one sensor. It goes on an <b>air-pocket tube</b> off the top of chamber A, never wetted, and never on a McKibben line (range is only ~10 PSI above room pressure). The 2.5 mm port needs the 3/32" sleeve (Added after review).</p></li>
+
+<li><div class="ph"><span class="pn">Pure silicone tubing 1/8" ID × 1/4" OD</span><span class="pspec">5 ft · B07V5T31MF · $7.90</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">All the plumbing runs, plus the McKibben inner tubes. Five feet is enough for both, but not generous: keep runs short.</p></li>
+
+<li><div class="ph"><span class="pn">Alex Tech PET braided sleeving, 1/4" + 1/2"</span><span class="pspec">50 ft · B07RZXSJBM · $9.99</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">The 1/4" braid over the 1/4" OD tube is the McKibben actuator. It must be snug at rest; loose braid loses stroke. The 1/2" is cable management. Silicone tube with a 1.6 mm wall may need more pressure to contract than the pump makes. That is exactly what the syringe test answers.</p></li>
+
+<li><div class="ph"><span class="pn">Zip ties 4" ×200</span><span class="pspec">B0BC1VH4XB · $3.99</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Clamp braid <em>and</em> tube together at both ends of each muscle, and every barb joint. If the braid can slide, nothing shortens.</p></li>
+
+<li><div class="ph"><span class="pn">60 mL luer-lock syringes ×10</span><span class="pspec">B0DVTCCZYP · $12.99</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Hand test, fill and purge tool, and <b>the pump reservoirs</b>. A 60 mL barrel with its plunger left free-floating is a closed, air-free reservoir for each pump, so nothing extra needs buying.</p></li>
+
+<li><div class="ph"><span class="pn">MEETOOT female luer → 1/8" barb ×10 · red-cap luer plugs ×20</span><span class="pspec">B0BXX3V1JZ $8.99 · B01LY9WHQC $9.00</span><span class="chip c-cart">On the list</span></div>
+<p class="pwhy">Luer barbs join the syringes/reservoirs to the 1/8" lines; plugs cap the dead end of each muscle and the fill ports. Two female luers cannot join each other, though, and barbs do not join tube to tube, so the straight/tee couplers and a stopcock in Added after review are still needed.</p></li>
+
+<li><div class="ph"><span class="pn">Distilled water, 1 gal</span><span class="pspec">grocery</span><span class="chip c-buy">Buy locally</span></div>
+<p class="pwhy">No scale on the pump hose or heater side, and lower conductivity if it ever leaks.</p></li>
+</ul>
+
+<div class="pc">
+<div><h4>Why it is the main line</h4><ul>
+<li>One material, three functions: heat store, sensor medium, actuator fluid.</li>
+<li>A sealed bladder reads a breath against the chest, which makes entrainment possible at all.</li>
+<li>Two chambers = travelling ripple for stroke, and listen-while-breathing for entrainment.</li>
+<li>Thermal mass: the warmth lingers.</li>
+</ul></div>
+<div><h4>Risks</h4><ul>
+<li>Leaks onto electronics: leak-test with water, squeezed, before any wire goes near it.</li>
+<li>Trapped air in the chambers damps both the ripple and the pressure signal. Purge with the syringe through a stopcock.</li>
+<li>Breath amplitude is limited by pump flow, so keep the breath pocket small.</li>
+<li>The peristaltic pumps whirr. That is acceptable for v1, and the reason for the v2 piezo pump.</li>
+</ul></div>
+</div>
+<p class="mile"><b>Done when, in order:</b> (1) a 60 mL syringe push shows two things: whether a McKibben muscle under the bladder reads as breathing or as a pucker, and whether pushing <em>straight into</em> the breath pocket (volume swell) looks better. Film both. (2) The sealed bladder held against the belly shows breaths on the MPRLS plot. (3) Pumps take over from the syringe.</p>
+</div>
+</div>
+
+<!-- ======================= PLAN C ======================= -->
+<div class="plan">
+<header>
+  <span class="tag t-alt">Plan C · deadline insurance</span>
+  <h3>Tendon drive: a motor pulling threads through the skin</h3>
+</header>
+<div class="body">
+<p class="why">Drop fluid actuation entirely. A micro servo winds low-stretch tendons sewn into the skin, so a breath is an angle sweep. The water bladder stays, sealed and unpumped, as warmth and as the breath sensor. <b>Only needed if the pumped bladder fails to give a visible breath by mid-November.</b> Nothing for it is in the cart, and nothing needs to be.</p>
+
+<svg class="sch" viewBox="0 0 440 190" role="img" aria-label="Plan C schematic: a servo horn pulling tendons that compress the skin over an unpressurised water bladder">
+  <rect class="schbox" x="10" y="64" width="84" height="40" rx="8" fill="#241c33" stroke="#b06ad4"/>
+  <text class="schs" x="52" y="80" text-anchor="middle">Micro servo</text>
+  <text class="schs" x="52" y="93" text-anchor="middle">or 28BYJ-48</text>
+  <g class="tendon" style="transform-origin:112px 84px">
+    <line x1="112" y1="84" x2="150" y2="84" stroke="#b06ad4" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="150" cy="84" r="4" fill="#b06ad4"/>
+  </g>
+  <circle cx="112" cy="84" r="7" fill="#2a2140" stroke="#b06ad4" stroke-width="1.4"/>
+  <text class="schs" x="130" y="108" text-anchor="middle">horn</text>
+
+  <path class="flow" d="M156 84 C200 60 230 48 300 46" stroke="#cfa6ee" stroke-dasharray="4 3"/>
+  <path class="flow" d="M156 84 C206 86 240 92 300 94" stroke="#cfa6ee" stroke-dasharray="4 3"/>
+  <path class="flow" d="M156 86 C200 110 230 126 300 132" stroke="#cfa6ee" stroke-dasharray="4 3"/>
+  <text class="schs" x="214" y="150" text-anchor="middle">Dyneema tendons in tube guides</text>
+
+  <g class="bulge" style="transform-origin:364px 90px">
+    <rect x="300" y="36" width="126" height="108" rx="20" fill="#1d4a5e" stroke="#38a8d8" stroke-width="1.4"/>
+  </g>
+  <circle cx="306" cy="46" r="4" fill="#cfa6ee"/><circle cx="306" cy="94" r="4" fill="#cfa6ee"/><circle cx="306" cy="132" r="4" fill="#cfa6ee"/>
+  <text class="schs" x="364" y="84" text-anchor="middle" style="fill:#bfe6f6">water bladder</text>
+  <text class="schs" x="364" y="98" text-anchor="middle" style="fill:#bfe6f6">warmth + sensing</text>
+  <text class="schs" x="364" y="112" text-anchor="middle" style="fill:#bfe6f6">sealed, unpumped</text>
+  <text class="schs" x="214" y="172" text-anchor="middle">anchor patches cut from TPU offcuts</text>
+</svg>
+
+<ul class="parts">
+<li><div class="ph"><span class="pn">Micro servo (SG90-class) + Dyneema / braided fishing line</span><span class="pspec">~$3–8 each, only if needed</span><span class="chip c-buy">Only if needed</span></div>
+<p class="pwhy">Positional and repeatable: a breath is an angle. A servo needs no driver; a 28BYJ-48 stepper could use a spare DRV8833 from the 5-pack.</p></li>
+<li><div class="ph"><span class="pn">Tendon guides + anchor patches</span><span class="pspec">silicone-tube offcuts, TPU scraps</span><span class="chip c-own">From Plan B offcuts</span></div>
+<p class="pwhy">Spread each pull across a patch, which is the difference between a swell and a pucker.</p></li>
+</ul>
+<div class="pc">
+<div><h4>Strengths</h4><ul><li>Motion in an afternoon; no leaks.</li><li>The sealed bladder still gives warmth and the breath signal, and is even cleaner with no pump in it.</li></ul></div>
+<div><h4>Weaknesses</h4><ul><li>Gear noise; point loads pucker.</li><li>Steps away from the hydraulic-muscle research line in her paper.</li></ul></div>
+</div>
+</div>
+</div>
+
+<!-- ======================= PLAN D ======================= -->
+<div class="plan">
+<header>
+  <span class="tag t-test">Plan D · a 20-minute experiment, not a build</span>
+  <h3>Pneumatic: the same muscle, driven with air</h3>
+</header>
+<div class="body">
+<p class="why">Fill the syringe with air instead of water and compare the two by hand on the same muscle. This answers the compressibility question with no new parts.</p>
+<svg class="sch" viewBox="0 0 440 176" role="img" aria-label="Plan D schematic: air pump and valve driving the same braided muscle, with no water layer">
+  <rect class="schbox" x="10" y="30" width="80" height="38" rx="8" fill="#2b2415" stroke="#e0b43c"/>
+  <text class="schs" x="50" y="46" text-anchor="middle">Syringe</text>
+  <text class="schs" x="50" y="59" text-anchor="middle">(air)</text>
+  <path class="flow fl" d="M92 49 H222" marker-end="url(#arw)"/>
+  <g class="musc" style="transform-origin:324px 49px">
+    <rect x="224" y="35" width="200" height="28" rx="14" fill="url(#braid)" stroke="#4fbf74" stroke-width="1.4"/>
+    <rect x="230" y="42" width="188" height="14" rx="7" fill="#1d3d2a" fill-opacity=".8"/>
+  </g>
+  <text class="schs" x="324" y="80" text-anchor="middle">same muscle as Plan B</text>
+  <rect x="112" y="124" width="200" height="15" rx="4" fill="#e8713c"/>
+  <text class="schs" x="212" y="135.5" text-anchor="middle" style="fill:#241208">Heater film = all the warmth</text>
+  <rect x="70" y="146" width="284" height="15" rx="4" fill="none" stroke="#49556b" stroke-dasharray="4 3"/>
+  <text class="schs" x="212" y="157.5" text-anchor="middle">no water → no thermal mass, weak breath signal</text>
+</svg>
+<ul class="parts">
+<li><div class="ph"><span class="pn">Tubing, braid, zip ties, luer fittings, syringe</span><span class="chip c-cart">Shared with Plan B</span></div>
+<p class="pwhy">Nothing extra to buy for the hand test. A real air build would need a one-way air pump <em>plus</em> an exhaust valve; buy those only if the hand test wins.</p></li>
+</ul>
+<div class="pc">
+<div><h4>Strengths</h4><ul><li>A leak dries instead of shorting.</li><li>Fast twitch possible.</li></ul></div>
+<div><h4>Why it is not the main line</h4><ul><li>A squeeze feels mushy.</li><li>No thermal mass, and the compressible air damps the breath signal.</li></ul></div>
+</div>
+</div>
+</div>
+
+<h2 id="order">How they fit together</h2>
+<div class="card note">
+<p style="margin:0 0 6px;font-size:14.5px;color:var(--dim)"><b>Plan A</b> while the TPU nozzle and test welds are being printed. <b>Plan B</b> is the build: syringe test first (muscle vs. volume swell, plus Plan D's air version the same afternoon), then a sealed bladder breath test against the belly, then pumps. <b>Plan C</b> only if no visible breath by mid-November. The demo for 15 Dec is the entrainment scenario above.</p>
+</div>
+
+<h2 id="power">Power budget, one 5 V 3 A rail</h2>
+<div class="card">
+<div class="tblwrap"><table class="tbl">
+<tr><th>Load</th><th>Current</th><th>Note</th></tr>
+<tr><td>ESP32-S3 (Wi-Fi on)</td><td>~0.25 A</td><td>peaks higher on Wi-Fi bursts</td></tr>
+<tr><td>Heater film, one</td><td>1.6 A</td><td>8 W at 5 V</td></tr>
+<tr><td>Heater film, both</td><td>3.2 A</td><td><b>over budget on its own</b></td></tr>
+<tr><td>Pump, each</td><td>~0.1–0.3 A run, more at start</td><td>measure; planning figure was 0.5 A</td></tr>
+<tr><td>Sensors</td><td>&lt;0.05 A</td><td>MPRLS, MPR121, DS18B20s</td></tr>
+</table></div>
+<p style="font-size:14px;color:var(--dim);margin:10px 0 0"><b>Firmware rule:</b> heater duty total ≤ one film (1.6 A). Either run one film at a time, or run both interleaved at ≤50% each and never on together. Drop heater duty to zero while both pumps start. Worst legal case: 1.6 + 0.25 + 2×0.5 ≈ 2.85 A. Add a 470–1000 µF capacitor across the rail at the DRV8833, so pump start-up and heater switching do not brown out the ESP32.</p>
+<p style="font-size:14px;color:var(--dim);margin:8px 0 0"><b>USB logging caution:</b> if the ESP32 is plugged into a laptop by USB <em>and</em> fed from the 5 V rail, the two supplies can back-feed. While logging over USB, power the ESP32 from USB only and share GND with the rail. Or log over Wi-Fi.</p>
+</div>
+
+<h2 id="adds">Added after review</h2>
+<p class="lede">Things the final pass found missing. <b>Added to the cart on 10 Oct:</b> 1/8" straight barb unions ×15 (B095YSPRPL), 1/8" barb tees ×10 (B0F8HN7KC8), 2 mm ID silicone tube for the MPRLS port (B08GPBC7C6), luer 3-way stopcocks ×6 (B0BDD7GG56), 22 AWG silicone wire kit (B07G2JWYDW), inline mini-blade fuse holders with 3 A fuses (B0C15H3F9M), electrolytic capacitor kit to 1000 µF (B0C1VBXCQM). Aquaseal FD stays optional.</p>
+<div class="card">
+<div class="tblwrap"><table class="tbl">
+<tr><th>Search term</th><th>Why</th><th>Severity</th></tr>
+<tr><td>"1/8 inch barbed straight connector and tee assortment" (polypropylene)</td><td>Joins the pump's own hose to the 1/8" lines, tube to tube, and tees off the purge port. The cart has only luer-to-barb adapters, and two female luers cannot mate.</td><td><span class="sev s-block">Blocks breathing / stroke plumbing</span></td></tr>
+<tr><td>"luer lock 3-way stopcock" (pack of ~5–10)</td><td>Fill and purge each chamber with the syringe without letting air back in; closes off the MPRLS air pocket at a set volume.</td><td><span class="sev s-risk">Risk</span></td></tr>
+<tr><td>"3/32 ID silicone tubing" (a short length)</td><td>The MPRLS port is 2.5 mm OD, and 1/8" ID tube is loose on it. Adafruit's own fix is 3/32" ID tube on the port, nested inside the 1/8" line. A leaky air pocket reads nothing.</td><td><span class="sev s-block">Blocks breath sensing</span></td></tr>
+<tr><td>"22 AWG stranded silicone wire kit" (red/black at least)</td><td>The 5 V bus, heater and pump leads carry 1.6 A+. Dupont jumpers and breadboard rows are not for that current. Conductive thread only for signals.</td><td><span class="sev s-risk">Risk</span></td></tr>
+<tr><td>"inline blade fuse holder" + 3 A mini blade fuses, or a 2.5 A PTC resettable fuse</td><td>Between the USB-C terminal and the rail. A shorted heater lead next to water should blow a fuse, not rely on the charger's protection.</td><td><span class="sev s-risk">Risk</span></td></tr>
+<tr><td>"electrolytic capacitor assortment" (470–1000 µF, ≥10 V) + 0.1 µF ceramics</td><td>Rail bulk cap at the DRV8833, and noise caps across the pump motors, which would otherwise couple into the touch channels.</td><td><span class="sev s-nice">Nice-to-have</span></td></tr>
+<tr><td>"Gear Aid Aquaseal FD" or similar urethane adhesive</td><td>Backup seal around the printed nozzle flange if the TPU-to-TPU weld leaks.</td><td><span class="sev s-nice">Nice-to-have</span></td></tr>
+<tr><td>Distilled water, 1 gal</td><td>Fill fluid. Buy locally.</td><td><span class="sev s-risk">Needed</span></td></tr>
+</table></div>
+</div>
+
+<h2 id="cart">Current cart, checked</h2>
+<p class="lede">Every line has a job; none are wrong-spec.</p>
+<div class="card">
+<div class="tblwrap"><table class="tbl">
+<tr><th>Item</th><th>Price</th><th>Job</th></tr>
+<tr><td>FTVOGUE 6 V peristaltic pump ×2</td><td>$30.54</td><td>Chambers A + B; ripple and breath</td></tr>
+<tr><td>DRV8833 module, 5-pack</td><td>$8.99</td><td>One board drives both pumps</td></tr>
+<tr><td>Adafruit MPRLS 0–25 PSI</td><td>$39.95</td><td>Press + breath via air pocket</td></tr>
+<tr><td>NOYITO MPR121</td><td>$5.99</td><td>Touch backup</td></tr>
+<tr><td>DS18B20 probes ×4</td><td>$9.99</td><td>Film / surface / ambient / spare</td></tr>
+<tr><td>MECCANIXITY 5 V 8 W film ×2</td><td>$8.99</td><td>Warmth</td></tr>
+<tr><td>Fielect KSD301 40 °C ×5</td><td>$6.49</td><td>Hardware cutoff, one per film</td></tr>
+<tr><td>NOYITO AOD4184 module ×2</td><td>$6.99</td><td>Heater switches</td></tr>
+<tr><td>5 V 3 A USB-C supply</td><td>$9.99</td><td>The one rail</td></tr>
+<tr><td>USB-C female → screw terminal, 5-pack</td><td>$9.99</td><td>Supply to bus</td></tr>
+<tr><td>Chibitronics Velostat, 5 sheets</td><td>$9.59</td><td>2×2 press zones + spare</td></tr>
+<tr><td>OurSure silver fabric 11.5×12.5"</td><td>$14.00</td><td>Cap strips + Velostat pads</td></tr>
+<tr><td>ATMOSURE Faraday fabric kit</td><td>$16.95</td><td>Ground sheet / shield</td></tr>
+<tr><td>Adafruit stainless thread 23 m</td><td>$13.26</td><td>Signal leads</td></tr>
+<tr><td>HeatnBond Lite</td><td>$13.99</td><td>Optional, edges only; out of stock</td></tr>
+<tr><td>PandaHall TPU fabric 0.3 mm, 1 yd</td><td>$15.09</td><td>Bladder</td></tr>
+<tr><td>Mini craft iron 80 W</td><td>$15.99</td><td>Welding TPU</td></tr>
+<tr><td>HTVRONT PTFE sheets ×3</td><td>$5.69</td><td>Weld release</td></tr>
+<tr><td>Silicone tubing 1/8"×1/4", 5 ft</td><td>$7.90</td><td>Lines + muscle tube</td></tr>
+<tr><td>PET braid 1/4" + 1/2", 50 ft</td><td>$9.99</td><td>McKibben + cable sleeve</td></tr>
+<tr><td>Zip ties 4" ×200</td><td>$3.99</td><td>Muscle + barb clamps</td></tr>
+<tr><td>60 mL luer syringes ×10</td><td>$12.99</td><td>Test, fill, reservoirs</td></tr>
+<tr><td>Female luer → 1/8" barb ×10</td><td>$8.99</td><td>Syringe/reservoir to line</td></tr>
+<tr><td>Red-cap luer plugs ×20</td><td>$9.00</td><td>Dead ends, fill ports</td></tr>
+<tr><td><b>Subtotal</b></td><td><b>$295.33</b></td><td>before tax and shipping</td></tr>
+</table></div>
+</div>
+
+<div class="card warnbox">
+<h3 style="margin-top:0">Do not buy</h3>
+<p style="margin:0;font-size:14px">PU-coated fabric (must be TPU) · anything 12 V · IRF520 modules, TIP120 or PN2222 for the heater · a second MPRLS for the McKibben line (out of range) · shape-memory alloy wire · HASEL or any high-voltage supply · silicone casting kits (Ecoflex, Dragon Skin, Sil-Poxy).</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">Safety, non-negotiable</h3>
+<p style="margin:0;font-size:14px;color:var(--dim)">Everything at 5 V from an external supply; no mains near water. Firmware caps the film at 38 °C and the skin surface at 37 °C; the KSD301 40 °C disc is in series with each film as the hardware backstop. Bench-trip it once with a hair dryer before trusting it. The heater sits outside the bladder, never in the water. Fuse the rail. Leak-test the bladder full of water and squeezed, with no electronics attached, before a single wire goes near it. No heater on while nobody is watching during development.</p>
+</div>
+
+<div class="card">
+<h3 style="margin-top:0">Still open (none block checkout)</h3>
+<ol style="margin:0;padding-left:20px;font-size:14px;color:var(--dim)">
+<li style="margin:5px 0"><b>Bartels mp6 (v2, silent pump).</b> A question email went to Darwin Microfluidics on 10 Oct. The pump is ≈€52 and the mp-Lowdriver (5 V, I2C) $82.60. Bartels' datasheet gives the mp6 ~5–7 mL/min water and ~600–650 mbar max; the sister BP7 is ~9 mL/min, 450 mbar. Its passive check valves make it <b>one-way</b>, so it cannot exhale without a second pump or a valve. At ~1/15 of the peristaltic flow it suits a McKibben muscle better than a volume-swell breath pocket.</li>
+<li style="margin:5px 0"><b>MPRLS media rating</b>: confirm from the Honeywell MPR datasheet. The design keeps it dry regardless.</li>
+<li style="margin:5px 0"><b>TPU fabric construction</b> (film vs. coated), and whether printer TPU welds to it. Settled by the first test weld.</li>
+</ol>
+</div>
+
+<h2 id="research">What the build measures for the paper</h2>
+<div class="card note">
+<p style="margin-top:0">Every build night also produces a number the Cuddle Bot paper needs, so a position paper becomes a results paper. The ten measurements are warmth and the 40 °C cutoff, softness, actuation, touch accuracy, breath and entrainment, latency, power, noise, seal life, and a small IRB-reviewed study.</p>
+<p style="margin-bottom:0"><a href="/skin-research-plan.html">Day-by-day map: build night to paper data</a> · <a href="/paper-publication.html">Where the paper goes (venues, edits)</a></p>
+</div>
+
+<footer>
+Updated 10 Oct 2026 from <code>soft-robot/cart-2026-10-10.json</code> (prices as captured, no tax or shipping, nothing ordered), the Shionoiri &amp; Osawa 2025 ROBOMECH paper, her Cuddle Bot paper, the Adafruit MPRLS guide, Espressif's ESP32-S3 touch docs and the Bartels mp6 datasheet. Items marked "verify" are not confirmed from a listing or datasheet. Full bill of materials: <code>soft-robot/BOM.md</code>. Supersedes the Oct 2 cart reconciliation and the 12 V silicone handoff.
+</footer>
+</div>
+
+<script>
+(function(){
+  var stage=document.getElementById('stage');
+  var btns={bAnim:'',bOpen:'mode-open',bFlat:'mode-flat'};
+  function set(id){
+    stage.className='stagewrap'+(btns[id]?' '+btns[id]:'');
+    Object.keys(btns).forEach(function(k){
+      document.getElementById(k).setAttribute('aria-pressed', k===id ? 'true':'false');
+    });
+  }
+  var svg=stage.querySelector('svg.stage');
+  var VB={bAnim:'0 0 520 408',bOpen:'0 0 520 408',bFlat:'14 212 292 176'};
+  var mode='bAnim';
+  var _set=set;
+  set=function(id){ mode=id; _set(id); svg.setAttribute('viewBox',VB[id]); draw(); };
+  Object.keys(btns).forEach(function(k){
+    document.getElementById(k).addEventListener('click',function(){set(k);});
+  });
+
+  // Animation is driven here, through SVG transform attributes, because Safari
+  // mis-places SVG groups that carry a CSS transform (every layer collapsed to 0,0).
+  var lyrs=[].map.call(svg.querySelectorAll('.lyr'),function(g){
+    var cs=g.getAttribute('style')||'';
+    function v(n){var m=cs.match(new RegExp('--'+n+':(-?[\\d.]+)'));return m?+m[1]:0;}
+    return {g:g,lbl:g.querySelector('.lbl'),gap:v('gap'),br:v('br'),dip:v('dip')};
+  });
+  var finger=svg.querySelector('.finger');
+  function bez(x1,y1,x2,y2){
+    function c(a,b,t){var u=1-t;return 3*u*u*t*a+3*u*t*t*b+t*t*t;}
+    return function(x){var lo=0,hi=1,t=x;for(var i=0;i<24;i++){t=(lo+hi)/2;if(c(x1,x2,t)<x)lo=t;else hi=t;}return c(y1,y2,t);};
+  }
+  var ease=bez(.45,.05,.3,1), lin=function(x){return x;};
+  function track(keys,p,e){
+    for(var i=1;i<keys.length;i++){
+      if(p<=keys[i][0]){var a=keys[i-1],b=keys[i],f=(p-a[0])/(b[0]-a[0]||1);return a[1]+(b[1]-a[1])*e(f);}
+    }
+    return keys[keys.length-1][1];
+  }
+  function cycle(L){
+    return [[0,0],[5,0],[13,-L.br],[21,0],[29,-L.br],[37,0],[40,0],[56,-L.gap],[74,-L.gap],[84,0],[86,0],[91,L.dip],[96,0],[100,0]];
+  }
+  var LBL=[[0,0],[46,0],[55,1],[74,1],[80,0],[100,0]];
+  var FO=[[0,0],[84,0],[86,1],[95,1],[97,0],[100,0]];
+  var FY=[[0,-34],[86,-34],[91,0],[95,-34],[100,-34]];
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function draw(now){
+    var m=mode, p;
+    if(m==='bAnim'&&reduce) m='bOpen';
+    if(m==='bAnim') p=(((now||performance.now())/1000+6.6)%15)/15*100;
+    lyrs.forEach(function(L){
+      var y = m==='bOpen' ? -L.gap : m==='bFlat' ? 0 : track(cycle(L),p,ease);
+      var o = m==='bOpen' ? 1 : m==='bFlat' ? 0 : track(LBL,p,lin);
+      L.g.setAttribute('transform','translate(0,'+y.toFixed(2)+')');
+      L.lbl.setAttribute('opacity',o.toFixed(3));
+    });
+    var fo = m==='bAnim' ? track(FO,p,lin) : 0;
+    var fy = m==='bAnim' ? track(FY,p,lin) : -34;
+    finger.setAttribute('opacity',fo.toFixed(3));
+    finger.setAttribute('transform','translate(0,'+fy.toFixed(2)+')');
+  }
+  function loop(t){ if(mode==='bAnim') draw(t); requestAnimationFrame(loop); }
+  draw(); requestAnimationFrame(loop);
+})();
+</script>
+<script src="/js/read-mark.js"></script>
+</body>
+</html>

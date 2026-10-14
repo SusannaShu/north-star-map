@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DA94"/><stop offset=".55" stop-color="#D4A24C"/><stop offset="1" stop-color="#A8772B"/></linearGradient>
+    <linearGradient id="gs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8853A"/><stop offset="1" stop-color="#7A5420"/></linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="#141C33"/>
+  <!-- the North Star glyph (restored 2026-10-11), gold treatment: same d as public/js/north-star-glyph.js, split lit/shade -->
+  <g transform="translate(512 512) scale(8.6)"><path d="M0 -44L3.06 -1.39L0 6ZM3.06 -1.39L14.85 -8.85L0 6ZM14.85 -8.85L7.39 2.94L0 6ZM-7.39 9.06L-32 6L0 6ZM-32 6L-7.39 2.94L0 6ZM-7.39 2.94L-14.85 -8.85L0 6ZM-14.85 -8.85L-3.06 -1.39L0 6ZM-3.06 -1.39L0 -44L0 6Z" fill="url(#gl)"/><path d="M7.39 2.94L32 6L0 6ZM32 6L7.39 9.06L0 6ZM7.39 9.06L14.85 20.85L0 6ZM14.85 20.85L3.06 13.39L0 6ZM3.06 13.39L0 44L0 6ZM0 44L-3.06 13.39L0 6ZM-3.06 13.39L-14.85 20.85L0 6ZM-14.85 20.85L-7.39 9.06L0 6Z" fill="url(#gs)"/></g>
+</svg>

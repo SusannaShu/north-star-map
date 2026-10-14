@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>North Star</title>
+<meta name="description" content="Where Susanna is, in everything she is building: a live map of her projects, from a desk over the East River.">
+<meta name="theme-color" content="#141C33">
+<link rel="icon" href="icon-gold.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preload" as="image" href="media/intro/hero-poster.webp" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload='this.media="all"'>
+<style>
+/* North Star intro -- Mittens Monochrome, light and dark. Colour lives only in the sky.
+ * Her storyboard (2026-10-11): a golden dot, the East River skyline rising, the sun going down
+ * gold to red, dark, the window and the desk, the screen showing North Star, the screen becoming
+ * the live map, the star growing white, her and Mittens, the object chain, Mittens standing,
+ * Talk to Mittens. Drawn, not photographed -- her room and her face stay hers. */
+:root {
+  --paper:#FFFFFF; --ink:#000000; --ink2:#555555; --muted:#999999; --dim:#CCCCCC; --edge:#DADADA; --edge2:#CFCFCF;
+  --sky:#0D0D0D; --sky2:#1E1E1E; --sky3:#2E2E2E; --lit:#EDEAE2; --screen:#F1F0EC; --screen-off:#2A2A2A; --bezel:#111111; --wood:#FFFFFF; --grain:#BDBDBD;
+  --font-heading:'Archivo Black', sans-serif; --font:'Inter', -apple-system, sans-serif; --mono:'JetBrains Mono', 'SF Mono', monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper:#0A0A0A; --ink:#F2F2F2; --ink2:#B8B8B8; --muted:#7C7C7C; --dim:#3A3A3A; --edge:#252525; --edge2:#303030;
+    --sky:#141414; --sky2:#232323; --sky3:#303030; --lit:#E9E5D8; --screen:#E9E8E3; --screen-off:#1C1C1C; --bezel:#2A2A2A; --wood:#121212; --grain:#3A3A3A;
+  }
+}
+:root[data-theme="dark"] {
+  --paper:#0A0A0A; --ink:#F2F2F2; --ink2:#B8B8B8; --muted:#7C7C7C; --dim:#3A3A3A; --edge:#252525; --edge2:#303030;
+  --sky:#141414; --sky2:#232323; --sky3:#303030; --lit:#E9E5D8; --screen:#E9E8E3; --screen-off:#1C1C1C; --bezel:#2A2A2A; --wood:#121212; --grain:#3A3A3A;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { background:var(--paper); color:var(--ink); font-family:var(--font); -webkit-tap-highlight-color:transparent; }
+body { overflow-x:hidden; }
+#stage { position:fixed; inset:0; overflow:hidden; background:var(--paper); }
+#live { position:absolute; inset:0; width:100%; height:100%; border:0; opacity:0; pointer-events:none; background:var(--paper); }
+#scene { position:absolute; inset:0; display:block; will-change:filter; }
+#track { height:1500vh; }
+body.moment #track { display:none; }
+body.moment, body.explore { overflow:hidden; }
+body.explore #live { pointer-events:auto; }
+body.explore #cap, body.explore #hint { display:none; }
+/* hero mode (the default): the story's stage only carries the live map underneath */
+body:not(.story) #scene, body:not(.story) #cap, body:not(.story) #hint, body:not(.story) #explore, body:not(.story) #cta, body:not(.story) #replay, body:not(.story) #shooting-star-slot { display:none; }
+body:not(.story):not(.explore) #live { visibility:hidden; }
+body:not(.story) { overflow:hidden; }
+body.explore #live { opacity:1 !important; visibility:visible; }
+/* Her own shooting star drops in here (the SHOOTING STAR dot's ?moment=star view): a Lottie JSON
+   (data-type="lottie" data-src="..."), a video, an image, or inline SVG children (they get --t, 0..1). */
+#shooting-star-slot { position:absolute; left:0; top:0; width:var(--size, 160px); height:var(--size, 160px); pointer-events:none; opacity:0;
+  transform-origin:50% 50%; will-change:transform, opacity; }
+#shooting-star-slot > * { width:100%; height:100%; display:block; }
+#cap { position:absolute; left:16px; right:16px; bottom:max(9vh, calc(env(safe-area-inset-bottom) + 56px)); text-align:center; pointer-events:none; }
+#cap .t { display:inline-block; font-family:var(--font-heading); font-size:clamp(18px, 2.4vw, 28px); letter-spacing:-.4px; line-height:1.15;
+  color:var(--ink); background:var(--paper); padding:4px 10px; border-radius:6px; max-width:min(720px, 100%); }
+#cap .s { display:table; margin:8px auto 0; font-family:var(--mono); font-size:12px; color:var(--ink2); background:var(--paper); padding:2px 8px; border-radius:4px; max-width:min(560px, 100%); }
+#cap .s:empty { display:none; }
+#hint { position:absolute; left:50%; bottom:max(24px, env(safe-area-inset-bottom)); transform:translateX(-50%); font-family:var(--mono); font-size:11px;
+  color:var(--ink2); display:flex; flex-direction:column; align-items:center; gap:4px; pointer-events:none; letter-spacing:1px; text-transform:uppercase; }
+#hint svg { width:14px; height:14px; fill:none; stroke:currentColor; stroke-width:1.5; stroke-linecap:round; stroke-linejoin:round; animation:nudge 1.8s ease-in-out infinite; }
+@keyframes nudge { 0%,100% { transform:translateY(0); } 50% { transform:translateY(4px); } }
+.pill { display:inline-flex; align-items:center; gap:6px; font-family:var(--mono); font-size:11px; color:var(--ink); background:var(--paper);
+  border:1px dashed var(--ink); border-radius:999px; padding:7px 12px; cursor:pointer; text-decoration:none; }
+.pill svg { width:12px; height:12px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+#replay { position:absolute; right:96px; top:max(16px, env(safe-area-inset-top)); z-index:3; }
+#explore { position:absolute; left:50%; top:max(16px, env(safe-area-inset-top)); transform:translateX(-50%); z-index:3; }
+#back { position:absolute; left:16px; top:max(16px, env(safe-area-inset-top)); z-index:4; }
+#replay[hidden], #explore[hidden], #back[hidden] { display:none; }
+#cta { position:absolute; left:50%; top:60%; transform:translate(-50%, 0); z-index:3; display:flex; flex-direction:column; align-items:center; gap:8px;
+  text-decoration:none; color:var(--ink); opacity:0; pointer-events:none; text-align:center; width:min(420px, calc(100% - 32px)); }
+#cta .b { display:inline-flex; align-items:center; gap:10px; font-family:var(--font-heading); font-size:clamp(18px, 2.2vw, 24px); letter-spacing:-.3px;
+  background:var(--ink); color:var(--paper); padding:12px 22px; border-radius:999px; }
+#cta .b svg { width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+#cta .s { font-family:var(--mono); font-size:12px; color:var(--ink2); }
+#cta:focus-visible .b { outline:2px dashed var(--ink); outline-offset:4px; }
+.sr { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); }
+@media (prefers-reduced-motion: reduce) { #hint svg { animation:none; } }
+/* ═══════════ THE HERO (2026-10-11) ═══════════
+ * One screen, fast: a generated loop (a red sun over the East River that resolves into the desk
+ * and the North Star on its screen), a big "Explore North Star", a skip, and the story on demand.
+ * Budget: poster <= 120 KB paints first; the 1 MB loop starts after load; the map after that. */
+:root { --navy:#141C33; --navy2:#0B1022; --gold:#D4A24C; --gold-hi:#F6DA94; --gold-lo:#9C6E28; --cream:#F6EFE3; }
+#hero { position:fixed; inset:0; z-index:5; overflow:hidden; background:var(--navy); color:var(--cream);
+  transition:opacity .6s ease, visibility 0s linear .6s; }
+body.story #hero { display:none; }
+body.explore #hero { opacity:0; visibility:hidden; pointer-events:none; }
+#hero picture, #hero picture img, #hero video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:62% 50%; display:block; }
+#hero video { opacity:0; transition:opacity .8s ease; }
+#hero video.on { opacity:1; }
+#hero .scrim { position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(180deg, rgba(11,16,34,.55) 0%, rgba(11,16,34,0) 22%, rgba(11,16,34,0) 46%, rgba(11,16,34,.72) 78%, rgba(11,16,34,.9) 100%); }
+#hero .top { position:absolute; left:16px; right:16px; top:max(16px, env(safe-area-inset-top)); display:flex; align-items:center; justify-content:space-between; gap:12px; }
+#hero .mark { display:flex; align-items:center; gap:8px; font:900 13px/1 'Archivo Black', 'Arial Black', system-ui, sans-serif; letter-spacing:1.6px; color:var(--cream); text-decoration:none; }
+#hero .mark svg { width:38px; height:38px; margin:-8px -8px -8px -12px; }
+.skip { font:500 12px/1 ui-monospace, 'SF Mono', Menlo, monospace; color:var(--cream); background:rgba(11,16,34,.38); border:1px solid rgba(246,239,227,.45);
+  border-radius:999px; padding:8px 14px; text-decoration:none; backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); cursor:pointer; }
+.skip:hover { border-color:var(--cream); }
+#skip { position:fixed; right:16px; top:max(16px, env(safe-area-inset-top)); z-index:6; }
+body.explore #skip, body.moment #skip { display:none; }
+body.story #skip { color:var(--ink); background:var(--paper); border:1px dashed var(--ink); top:auto; bottom:max(16px, env(safe-area-inset-bottom)); }
+/* back sits bottom-right, clear of the live map's own title bar and legend */
+#back { left:auto !important; top:auto !important; right:16px; bottom:max(48px, calc(env(safe-area-inset-bottom) + 40px)); }
+#hero .copy { position:absolute; left:0; right:0; bottom:max(28px, calc(env(safe-area-inset-bottom) + 20px)); padding:0 16px; display:flex; flex-direction:column; align-items:center; text-align:center; gap:14px; }
+#hero h1 { font:900 clamp(30px, 5.4vw, 64px)/1.02 'Archivo Black', 'Arial Black', system-ui, sans-serif; letter-spacing:-.02em; max-width:15ch; text-wrap:balance; }
+#hero .sub { font:400 clamp(14px, 1.5vw, 17px)/1.45 Inter, system-ui, -apple-system, sans-serif; color:rgba(246,239,227,.86); max-width:46ch; text-wrap:balance; }
+#go { display:inline-flex; align-items:center; gap:12px; margin-top:6px; padding:16px 30px 16px 22px; border-radius:999px; border:0; cursor:pointer;
+  font:900 clamp(18px, 2vw, 22px)/1 'Archivo Black', 'Arial Black', system-ui, sans-serif; letter-spacing:-.01em; color:var(--navy2);
+  background:linear-gradient(135deg, var(--gold-hi) 0%, var(--gold) 55%, #B8853A 100%);
+  box-shadow:0 10px 30px rgba(212,162,76,.35), inset 0 1px 0 rgba(255,255,255,.55); transition:transform .15s ease, box-shadow .15s ease; }
+#go:hover { transform:translateY(-1px); box-shadow:0 14px 36px rgba(212,162,76,.45), inset 0 1px 0 rgba(255,255,255,.55); }
+#go:focus-visible, #story:focus-visible, .skip:focus-visible { outline:2px solid var(--gold-hi); outline-offset:4px; }
+#go .st { width:26px; height:26px; display:inline-flex; }
+#go .st svg { width:26px; height:26px; }
+#hero .more { display:flex; gap:18px; align-items:center; font:500 12px/1 ui-monospace, 'SF Mono', Menlo, monospace; color:rgba(246,239,227,.8); }
+#story { background:none; border:0; color:inherit; font:inherit; cursor:pointer; display:inline-flex; align-items:center; gap:6px; text-decoration:underline; text-underline-offset:4px; }
+#story svg { width:12px; height:12px; fill:currentColor; }
+#hero .scrollcue { display:inline-flex; align-items:center; gap:6px; }
+#hero .scrollcue svg { width:12px; height:12px; fill:none; stroke:currentColor; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; animation:nudge 1.8s ease-in-out infinite; }
+#fly { position:fixed; left:0; top:0; z-index:7; pointer-events:none; opacity:0; transform-origin:50% 50%; will-change:transform, opacity; }
+#fly svg { display:block; width:100%; height:100%; }
+/* wide screens: the copy sits bottom-right, so the desk's North Star screen (left) stays clear */
+@media (min-width:900px) {
+  #hero .copy { left:auto; right:max(40px, 5vw); bottom:max(40px, 6vh); width:min(560px, 44vw); align-items:flex-start; text-align:left; padding:0; }
+  #hero .scrim { background:linear-gradient(180deg, rgba(11,16,34,.5) 0%, rgba(11,16,34,0) 20%, rgba(11,16,34,0) 50%, rgba(11,16,34,.55) 80%, rgba(11,16,34,.8) 100%),
+    radial-gradient(120% 90% at 100% 100%, rgba(11,16,34,.75) 0%, rgba(11,16,34,0) 55%); }
+}
+@media (max-width:520px) { #hero .copy { gap:12px; } #go { padding:15px 24px 15px 18px; } #hero .more { flex-direction:column; gap:10px; } }
+@media (prefers-reduced-motion: reduce) { #hero video { display:none; } #hero .scrollcue svg { animation:none; } }
+
+</style>
+</head>
+<body>
+<section id="hero" aria-label="North Star">
+  <picture>
+    <source srcset="media/intro/hero-poster.webp" type="image/webp">
+    <img src="media/intro/hero-poster.jpg" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
+  </picture>
+  
+  <video id="loop" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1">
+    <source data-src="media/intro/hero.mp4" type="video/mp4">
+    <source data-src="media/intro/hero.webm" type="video/webm">
+  </video>
+  <div class="scrim"></div>
+  <div class="top"><a class="mark" href="./intro.html"><span class="gs"><svg viewBox="-44 -44 88 88" aria-hidden="true"><defs><linearGradient id="ml" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DA94"/><stop offset=".55" stop-color="#D4A24C"/><stop offset="1" stop-color="#A8772B"/></linearGradient><linearGradient id="ms" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8853A"/><stop offset="1" stop-color="#6E4A1C"/></linearGradient></defs><path data-lit fill="url(#ml)"/><path data-shade fill="url(#ms)"/></svg></span>NORTH STAR</a></div>
+  <div class="copy">
+    <h1>Where I am, in everything I&#8217;m building.</h1>
+    <p class="sub">A live map of my projects, from a desk over the East River. Every dot is real work, updated as it moves.</p>
+    <button id="go" type="button"><span class="st" id="goStar"><svg viewBox="-44 -44 88 88" aria-hidden="true"><path data-lit fill="#141C33"/><path data-shade fill="#3A3220"/></svg></span>Explore North Star</button>
+    <div class="more">
+      <button id="story" type="button"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M3 1.5v9l7.5-4.5z"/></svg>watch the story</button>
+      <span class="scrollcue">or scroll<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></span>
+    </div>
+  </div>
+</section>
+<a id="skip" class="skip" href="./?public=1">skip to the map</a>
+<div id="fly" aria-hidden="true"><svg viewBox="-44 -44 88 88" aria-hidden="true"><defs><linearGradient id="fl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6DA94"/><stop offset=".55" stop-color="#D4A24C"/><stop offset="1" stop-color="#A8772B"/></linearGradient><linearGradient id="fs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8853A"/><stop offset="1" stop-color="#6E4A1C"/></linearGradient></defs><path data-lit fill="url(#fl)"/><path data-shade fill="url(#fs)"/></svg></div>
+<div id="stage">
+  <iframe id="live" title="North Star, the live map" tabindex="-1" loading="eager"></iframe>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div id="shooting-star-slot" aria-hidden="true"></div>
+  <div id="cap" aria-live="polite"><span class="t"></span><span class="s"></span></div>
+  <div id="hint">scroll<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></div>
+  <button id="explore" class="pill" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v6M5 8h6"/></svg> explore the live map</button>
+  <button id="back" class="pill" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg> back to the story</button>
+  <a id="cta" href="#talk" tabindex="-1"><span class="b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20v-9.5L4 3.5l5 3.5h6l5-3.5-1 7V20z"/><path d="M9.5 13h.01M14.5 13h.01"/></svg>Talk to Mittens</span><span class="s">who you are, why you're getting in touch</span></a>
+  <button id="replay" class="pill" hidden><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8a5 5 0 1 0 1.6-3.7M3 2.5v2.8h2.8"/></svg> replay</button>
+</div>
+<p class="sr">Hello from Susanna's bedroom: what I care about and what I'm working on. A sunset over the East River; a desk with a Mac mini, a bamboo keyboard and a reflective screen showing North Star, the live map of every project. The North Star becomes Mittens, a soft companion robot: a wearable pendant in steel and glass, a black stone ring, skin, muscle. Mittens opens its eye and stands up. Talk to Mittens to schedule a coffee chat: who you are, and why you're getting in touch.</p>
+<script src="js/north-star-glyph.js?v=20261011v4"></script>
+<script>(()=>{const QS=new URLSearchParams(location.search),B=document.body;const RM=matchMedia("(prefers-reduced-motion: reduce)");const frame=document.getElementById("live"),vid=document.getElementById("loop");const hero=document.getElementById("hero"),fly=document.getElementById("fly"),back=document.getElementById("back");document.querySelectorAll("path[data-lit]").forEach(p=>p.setAttribute("d",NSStar.dLit));document.querySelectorAll("path[data-shade]").forEach(p=>p.setAttribute("d",NSStar.dShade));let storyP=null;function loadStory(){if(storyP)return storyP;B.classList.add("story");B.classList.remove("explore");if(!document.getElementById("track")){const t=document.createElement("div");t.id="track";document.body.insertBefore(t,document.querySelector(".sr"))}scrollTo(0,0);try{vid.pause()}catch{}return storyP=new Promise(ok=>{const s=document.createElement("script");s.src="js/intro-story.js?v=20261011v4";s.onload=ok;document.body.appendChild(s)})}if(QS.get("moment")==="star"||QS.get("story")==="1"){B.classList.add(QS.get("moment")==="star"?"moment":"story");loadStory();return}const warm=()=>{if(!frame.getAttribute("src"))frame.src="./?public=1&embed=1"};function startLoop(){if(RM.matches)return;vid.querySelectorAll("source").forEach(s=>{s.src=s.dataset.src});vid.preload="auto";vid.load();vid.addEventListener("playing",()=>vid.classList.add("on"),{once:true});vid.play().catch(()=>{})}addEventListener("load",()=>{startLoop();(window.requestIdleCallback||(f=>setTimeout(f,600)))(warm,{timeout:2500})});const mapReady=()=>new Promise(ok=>{warm();const t0=performance.now();(function poll(){let L=null;try{L=frame.contentWindow&&frame.contentWindow.nsLayout&&frame.contentWindow.nsLayout()}catch{}if(L&&L.ready&&L.nodes.length>1)return ok(L);if(performance.now()-t0>4e3)return ok(null);setTimeout(poll,60)})()});let busy=false;async function explore(instant){if(busy||B.classList.contains("explore"))return;busy=true;const go=document.getElementById("goStar").getBoundingClientRect();const L=await mapReady();frame.tabIndex=0;back.hidden=false;back.lastChild.textContent=B.classList.contains("story")?" back to the story":" back";if(instant||RM.matches||!L||!fly.animate){B.classList.add("explore");busy=false;try{vid.pause()}catch{}frame.focus();return}const hub=L.nodes[0],x=L.W/2+L.cam.x+hub.x*L.cam.k,y=L.H/2+L.cam.y+hub.y*L.cam.k,h=hub.r*L.cam.k*1.72;const s0=Math.max(go.height,26),s1=Math.max(h,8);Object.assign(fly.style,{width:s0+"px",height:s0+"px",opacity:1});const from=`translate(${go.left+go.width/2-s0/2}px, ${go.top+go.height/2-s0/2}px) scale(1)`;const mid=`translate(${(go.left+x)/2-s0/2}px, ${Math.min(go.top,y)-60-s0/2}px) scale(${(s1/s0+3)/2})`;const to=`translate(${x-s0/2}px, ${y-s0/2}px) scale(${s1/s0})`;B.classList.add("explore");await fly.animate([{transform:from,opacity:1},{transform:mid,opacity:1,offset:.55},{transform:to,opacity:1,offset:.88},{transform:to,opacity:0}],{duration:1100,easing:"cubic-bezier(.5,0,.2,1)",fill:"forwards"}).finished.catch(()=>{});fly.style.opacity=0;busy=false;try{vid.pause()}catch{}frame.focus()}document.getElementById("go").onclick=()=>explore(false);document.getElementById("skip").onclick=e=>{e.preventDefault();explore(true)};document.getElementById("story").onclick=()=>loadStory();back.addEventListener("click",()=>{frame.tabIndex=-1;back.hidden=true;B.classList.remove("explore");if(!B.classList.contains("story")&&!RM.matches)vid.play().catch(()=>{})});let acc=0,ty=null;hero.addEventListener("wheel",e=>{acc=Math.max(0,acc+e.deltaY);if(acc>60){acc=0;explore(false)}},{passive:true});hero.addEventListener("touchstart",e=>{ty=e.touches[0].clientY},{passive:true});hero.addEventListener("touchend",e=>{if(ty!=null&&ty-e.changedTouches[0].clientY>50)explore(false);ty=null},{passive:true});addEventListener("keydown",e=>{if(B.classList.contains("story")||B.classList.contains("explore"))return;if(["ArrowDown","PageDown"," "].includes(e.key)&&document.activeElement.tagName!=="BUTTON"){e.preventDefault();explore(false)}})})()</script>
+</body>
+</html>
