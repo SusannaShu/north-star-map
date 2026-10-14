@@ -1563,6 +1563,7 @@ function draw() {
         }
         ctx.globalAlpha = 1;
     });
+    drawFlashes();
     const lf = LEAFMAP && byId[LEAF];
     if (lf && vaOf(lf) > .3) {
         ctx.save();
@@ -2721,25 +2722,211 @@ buildGraph(FALLBACK);
 
 loadData();
 
-setInterval(async () => {
+const FLASH = {}, FLASH_MS = 4200;
+
+let MAP_V = null, mapBusy = false, mapAgain = null, esLive = false;
+
+const liveBase = () => CLOUD ? window.MAC_BASE || "" : "";
+
+const dotSig = d => JSON.stringify([ d.label, d.status, d.stage, d.statusLine, d.why, d.waitingOn, d.parent, (d.children || []).map(c => c.id).join(",") ]);
+
+function dotSigs(data) {
+    const o = {};
+    (data.projects || []).forEach(p => {
+        o[p.id] = dotSig(p);
+    });
+    (data.projects || []).forEach(p => (p.children || []).forEach(c => {
+        if (!(c.id in o)) o[c.id] = dotSig(c);
+    }));
+    return o;
+}
+
+async function fetchLive() {
+    if (CLOUD && window.MAC_BASE && !PUBLIC) {
+        try {
+            const r = await fetch(window.MAC_BASE + "/api/map", {
+                cache: "no-store"
+            });
+            if (r.ok) return r.json();
+        } catch {}
+    }
+    return fetchMapData();
+}
+
+function applyMap(d, hinted) {
+    const before = DATA === FALLBACK ? null : dotSigs(DATA), after = dotSigs(d);
+    const pos = {};
+    nodes.forEach(n => pos[n.id] = {
+        x: n.x,
+        y: n.y,
+        va: n.va
+    });
+    const keep = Date.now() - userCam < 6e4 ? {
+        ...cam
+    } : null;
+    DATA = d;
+    buildGraph(DATA);
+    nodes.forEach(n => {
+        if (pos[n.id]) Object.assign(n, pos[n.id]);
+    });
+    renderChrome();
+    if (keep) Object.assign(cam, keep);
+    if (d.v) MAP_V = d.v;
+    if (SEARCH.q) runSearch(SEARCH.q);
+    if (LEAFMAP) renderLeafCap();
+    if (!before) return;
+    const ids = new Set((hinted || []).filter(id => FULL.e[id]));
+    Object.keys(after).forEach(id => {
+        if (before[id] !== after[id] && !String(id).startsWith("r:")) ids.add(id);
+    });
+    if (!ids.size) return;
+    const now = Date.now();
+    ids.forEach(id => {
+        FLASH[id] = now;
+    });
+    const names = [ ...ids ].map(id => FULL.e[id] && FULL.e[id].label).filter(Boolean);
+    if (names.length) tick(`<b>updated</b> · ${names.slice(0, 3).map(esc).join(", ")}${names.length > 3 ? ` +${names.length - 3}` : ""}`);
+    window.dispatchEvent(new CustomEvent("ns:map", {
+        detail: {
+            changed: [ ...ids ]
+        }
+    }));
+}
+
+window.nsFlashed = () => Object.keys(FLASH);
+
+async function refreshMap(ev) {
+    if (mapBusy) {
+        mapAgain = ev || {};
+        return;
+    }
+    mapBusy = true;
     try {
-        const d = await fetchMapData();
-        if (!d) return;
-        const pos = {};
-        nodes.forEach(n => pos[n.id] = {
-            x: n.x,
-            y: n.y,
-            va: n.va
-        });
-        DATA = d;
-        buildGraph(DATA);
-        nodes.forEach(n => {
-            if (pos[n.id]) Object.assign(n, pos[n.id]);
-        });
-        renderChrome();
-        if (SEARCH.q) runSearch(SEARCH.q);
+        const d = await fetchLive();
+        if (d) {
+            applyMap(d, ev && ev.changed);
+            if (ev && ev.v) MAP_V = ev.v;
+        }
     } catch {}
-}, 2e4);
+    mapBusy = false;
+    if (mapAgain) {
+        const e = mapAgain;
+        mapAgain = null;
+        refreshMap(e);
+    }
+}
+
+function onVersion(s) {
+    if (!s || !s.v) return;
+    if (MAP_V === null) MAP_V = DATA.v || null;
+    if (MAP_V === null) {
+        MAP_V = s.v;
+        return;
+    }
+    if (s.v !== MAP_V) {
+        MAP_V = s.v;
+        refreshMap(s);
+    }
+}
+
+function flashTarget(id) {
+    let x = id, g = 0;
+    while (x && g++ < 8) {
+        const n = byId[x];
+        if (n && vaOf(n) > .5) return n;
+        x = FULL.e[x] && FULL.e[x].up;
+    }
+    return null;
+}
+
+function drawFlashes() {
+    const now = Date.now(), seen = new Set;
+    for (const id in FLASH) {
+        const age = now - FLASH[id];
+        if (age > FLASH_MS) {
+            delete FLASH[id];
+            continue;
+        }
+        const n = flashTarget(id);
+        if (!n || seen.has(n.id)) continue;
+        seen.add(n.id);
+        const p = age / FLASH_MS, q = p * 3 % 1;
+        ctx.globalAlpha = .85 * (1 - p);
+        ctx.fillStyle = "rgba(255,196,0,0.28)";
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r + 6, 0, 7);
+        ctx.fill();
+        ctx.globalAlpha = .9 * (1 - p) * (1 - q);
+        ctx.strokeStyle = "#F2A900";
+        ctx.lineWidth = 2.6;
+        ctx.beginPath();
+        ctx.arc(n.x, n.y, n.r + 4 + q * 18, 0, 7);
+        ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+}
+
+let noVerRoute = false;
+
+async function pollVersion() {
+    const base = liveBase();
+    if (CLOUD && !base) return false;
+    if (!noVerRoute) try {
+        const r = await fetch(base + "/api/map/version", {
+            cache: "no-store"
+        });
+        if (r.ok) {
+            onVersion(await r.json());
+            return true;
+        }
+        if (r.status === 404) noVerRoute = true;
+    } catch {}
+    if (!CLOUD) {
+        try {
+            const r = await fetch("map-version.json", {
+                cache: "no-store"
+            });
+            if (r.ok) {
+                onVersion(await r.json());
+                return true;
+            }
+        } catch {}
+    }
+    return false;
+}
+
+function liveConnect() {
+    if (STILL) return;
+    const base = liveBase();
+    if (window.EventSource && !(CLOUD && !base) && !PUBLIC) {
+        try {
+            const es = new EventSource(base + "/api/map/events");
+            es.onopen = () => {
+                esLive = true;
+            };
+            es.onmessage = e => {
+                esLive = true;
+                try {
+                    onVersion(JSON.parse(e.data));
+                } catch {}
+            };
+            es.onerror = () => {
+                esLive = false;
+            };
+        } catch {}
+    }
+    let last = Date.now();
+    setInterval(async () => {
+        const live = esLive || await pollVersion();
+        const gap = live ? 6e4 : 2e4;
+        if (Date.now() - last > gap) {
+            last = Date.now();
+            refreshMap();
+        }
+    }, 3e3);
+}
+
+liveConnect();
 
 if (new URLSearchParams(location.search).get("screensaver") === "1") enterSaver();
 

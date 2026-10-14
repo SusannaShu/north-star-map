@@ -228,4 +228,5 @@
     } else mountDock();
     render(true);
     setInterval(() => render(false), PAGE ? 3e4 : 1e4);
+    addEventListener("ns:map", () => render(false));
 })();

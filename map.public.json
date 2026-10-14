@@ -687,7 +687,7 @@
    "label": "ROBOT SKIN",
    "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. The hardware half of a soft-robotics companion.",
-   "statusLine": "v1 build under way",
+   "statusLine": "v1 build under way · first breath Mon 10/19",
    "caption": "Warm Skin v1:",
    "stage": "active",
    "embed": "pages/robot-skin.html",
@@ -738,30 +738,6 @@
       "img/warm-skin-layers.jpg"
      ],
      "embed": "pages/skin-materials.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "skin-build",
-     "label": "BUILD PLAN",
-     "status": "idle",
-     "why": "The layer stack and build order, part by part, and seven interactions -- approach, touch, stroke, press, hold, warmth, breathing.",
-     "statusLine": "building",
-     "caption": "The layer stack and build order, part by part, and seven interactions -- approach, touch, stroke, press, hold, warmth, breathing.",
-     "stage": "active",
-     "embed": "pages/skin-build.html",
-     "visibility": "public",
-     "embedCaption": "the layer stack, part by part"
-    },
-    {
-     "id": "skin-schedule",
-     "label": "BUILD SCHEDULE",
-     "status": "idle",
-     "why": "The build day by day, driven by when each part arrives: what unlocks what, and the critical path.",
-     "statusLine": "seal test + muscle go/no-go",
-     "caption": "The build day by day, driven by when each part arrives:",
-     "stage": "active",
-     "embed": "pages/skin-schedule.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -838,6 +814,49 @@
     }
    ],
    "embedCaption": "case study"
+  },
+  {
+   "id": "skin-build",
+   "label": "BUILD PLAN",
+   "status": "idle",
+   "why": "The layer stack and build order, part by part, and seven interactions -- approach, touch, stroke, press, hold, warmth, breathing. The build schedule hangs under it, one dot per build night.",
+   "statusLine": "order set · nights moved forward",
+   "caption": "The layer stack and build order, part by part, and seven interactions -- approach, touch, stroke, press, hold, warmth, breathing.",
+   "stage": "active",
+   "embed": "pages/skin-build.html",
+   "visibility": "public",
+   "parent": "robot-skin",
+   "parked": false,
+   "children": [],
+   "embedCaption": "the layer stack, part by part"
+  },
+  {
+   "id": "skin-schedule",
+   "label": "BUILD SCHEDULE",
+   "status": "idle",
+   "why": "The build night by night, driven by when each part arrives: what unlocks what, and the critical path. Two nights slipped, so every session moved forward: touch, temperature probes and the 40 C cutoff first, then the seal and a test pouch, pressure on the pouch, the 5 V rail, heater and water bladder, the sensing stack and pumps, and a first breath on Mon 10/19.",
+   "statusLine": "reshuffled 10/14 · first breath Mon 10/19",
+   "caption": "The build night by night, driven by when each part arrives:",
+   "stage": "active",
+   "embed": "pages/skin-schedule.html",
+   "visibility": "public",
+   "parent": "skin-build",
+   "parked": false,
+   "children": [
+    {
+     "id": "skin-night-1014",
+     "label": "WED 10/14 BUILD NIGHT",
+     "status": "idle",
+     "why": "Touch on scrap + 4 temperature probes + prove the KSD301 40 C cutoff. Three copper-nickel strips under felt and fabric on the ESP32-S3 touch pins; four DS18B20 probes on one bus; the KSD301 in hot water with a probe beside it and a meter on continuity. Done when the strips fire in order on a stroke, the four probes agree within 0.5 C, and the cutoff opens near 40 C and closes again as it cools.",
+     "statusLine": "Wed 10/14 · 3 steps",
+     "caption": "Touch on scrap + 4 temperature probes + prove the KSD301 40 C cutoff.",
+     "stage": "active",
+     "embed": "pages/skin-night-1014.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "mittens-hw",

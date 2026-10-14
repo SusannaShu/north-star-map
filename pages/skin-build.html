@@ -251,6 +251,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
 </div>
 
 <div class="card note">
+<p style="margin:0 0 8px;font-size:14px"><b>Status, 14 Oct 2026:</b> parts ordered 11 Oct and in hand since 13 Oct, except the two 6 V pumps (still in transit) and the Velostat (estimate Sat 17 Oct). The Mon and Tue build nights slipped, so the build order below runs a few days later: <b>Wed 14 Oct</b> touch on scrap + 4 temperature probes + the KSD301 40 °C cutoff; <b>Thu</b> seal setting + test pouch; <b>Fri</b> pressure on the pouch; <b>Sat</b> 5 V rail + heater on a tile, then the bladder (muscle optional); <b>Sun</b> sensing stack, pump flow, mount + plumb; <b>Mon 19 Oct</b> assemble + first breath. The order of the layers and the safety rules did not change.</p>
 <p style="margin:0;font-size:14px"><b>Status:</b> the parts list is settled. Everything runs off <b>one 5 V 3 A USB-C supply</b>. The MOSFET and power-supply questions are closed, and the 0.5 mL/min stepper pump has been replaced with two 100 mL/min DC pumps. A final engineering pass found missing fittings and wiring; those are now on the list too (see <a href="#adds" style="color:#79cdf5">Added after review</a>). HeatnBond was dropped — stitch the dry layers instead.</p>
 </div>
 
@@ -279,7 +280,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
 <dt>Sense</dt><dd>Self-capacitance on the silver strips (ESP32-S3 touch pins). Expect a hand at ~3–8 cm on a palm-sized electrode, less once the ground sheet is underneath.</dd>
 <dt>Respond</dt><dd>Lean in: a small slow inflation (2–3 mL) and the heater stepping up, before contact.</dd>
 <dt>Parts</dt><dd>OurSure silver fabric, conductive thread, ATMOSURE fabric as ground sheet, ESP32-S3. MPR121 only if the native pins are too noisy.</dd>
-<dt>Watch</dt><dd>The ESP32-S3 has a driven-shield channel (touch channel 14, GPIO14) but its drive strength is limited (levels L0–L7). A palm-sized shield sheet may be too big for it — <b>verify</b>; the fallback is to tie the sheet to ground. Longer-range approach (30 cm+) needs a ~$10 ToF sensor, which is a v2 item.</dd></dl></li>
+<dt>Watch</dt><dd>The ESP32-S3 has a driven-shield channel (touch channel 14, GPIO14) but its drive strength is limited (levels L0–L7). A palm-sized shield sheet may be too big for it — <b>verify</b>; the fallback is to tie the sheet to ground. Longer-range approach (30 cm+) needs a ToF sensor, which is a v2 item.</dd></dl></li>
 
 <li><h4>2 · Touch / tap <span class="ok">· Possible</span></h4><dl>
 <dt>Sense</dt><dd>A capacitive spike under 300 ms with a small, short Velostat blip.</dd>
@@ -423,37 +424,37 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </svg>
 
 <ul class="parts">
-<li><div class="ph"><span class="pn">Chibitronics Velostat/Linqstat</span><span class="pspec">5 sheets, each ~3.75×4" · B0DM6MTKG9 · $9.59</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Chibitronics Velostat/Linqstat</span><span class="pspec">5 sheets, each ~3.75×4"</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Four sheets tile the 15×15 cm pad as a 2×2 grid of press zones; one is spare. Each zone forms a divider with a 4.7 kΩ resistor into one ADC1 pin. Expect drift and hysteresis: filter it, don't measure force with it.</p></li>
 
-<li><div class="ph"><span class="pn">OurSure silver-nylon conductive fabric</span><span class="pspec">11.5×12.5" · B013CXXC3I · $14.00</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">OurSure silver-nylon conductive fabric</span><span class="pspec">11.5×12.5"</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">One sheet (~29×32 cm, ~930 cm²) covers both the capacitive strips (~225 cm²) and the four Velostat bottom pads (~380 cm²), with a little spare. Cut carefully. Silver-nylon does not solder well: sew or snap the leads.</p></li>
 
-<li><div class="ph"><span class="pn">ATMOSURE copper-nickel Faraday fabric + tape</span><span class="pspec">44×36" · B08BN89Z6M · $16.95</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">ATMOSURE copper-nickel Faraday fabric + tape</span><span class="pspec">44×36"</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">The ground sheet. One continuous piece is both the shared top electrode of all four Velostat zones (tied to GND) and the shield that keeps the warm water and pump motors out of the capacitive reading. Leave a few mm of felt or fabric between it and the cap strips, or the approach range collapses. There is plenty left over for spares and v2.</p></li>
 
-<li><div class="ph"><span class="pn">Adafruit stainless conductive thread</span><span class="pspec">23 m · B00KLDPV1E · $13.26</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Adafruit stainless conductive thread</span><span class="pspec">23 m</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Signal leads only (strips and zones to the header). It is resistive (tens of ohms per metre — verify), so it must <b>never</b> carry heater or pump current.</p></li>
 
-<li><div class="ph"><span class="pn">MECCANIXITY 5 V 8 W heater film ×2</span><span class="pspec">50×50 mm, adhesive, ~1.6 A each · B0GWN8CLR6 · $8.99</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">MECCANIXITY 5 V 8 W heater film ×2</span><span class="pspec">50×50 mm, adhesive, ~1.6 A each</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Both films together cover only ~50×100 mm of the 150×150 pad. The water spreads the heat; that is why the bladder is there. Use one film at a time at full power (see the power budget).</p></li>
 
-<li><div class="ph"><span class="pn">Fielect KSD301 40 °C normally-closed ×5</span><span class="pspec">B082GV8ZXB · $6.49</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Fielect KSD301 40 °C normally-closed ×5</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">One on each film, in series with that film's MOSFET. Snap discs reset some 10–15 °C below the trip point (<b>verify</b> on this part), so if it trips the heater stays off for a while. That is the reason firmware should hold the film at ≤38 °C and never lean on the disc.</p></li>
 
-<li><div class="ph"><span class="pn">DS18B20 waterproof probes ×4</span><span class="pspec">1 m · B0FH4WRN6H · $9.99</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">DS18B20 waterproof probes ×4</span><span class="pspec">1 m</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">All four on one data pin with one 4.7 kΩ pull-up to 3.3 V (owned). Film, top surface, reservoir/ambient, spare. Do <b>not</b> push a probe through the bladder wall: the 6 mm steel can is a leak point. Tape it to the outside.</p></li>
 
-<li><div class="ph"><span class="pn">NOYITO isolated AOD4184 MOSFET module ×2</span><span class="pspec">B07D1VVQWY · $6.99</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<li><div class="ph"><span class="pn">NOYITO isolated AOD4184 MOSFET module ×2</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
 <p class="pwhy">One per heater film. Listed as taking a 3 V or 5 V signal. Bench check: drive it from a 3.3 V pin at 1.6 A load and confirm less than ~0.1 V across the output. The optocoupler is slow, so run heater PWM at a few hundred Hz or slower (a 1 s time-proportioned cycle is fine for heat).</p></li>
 
-<li><div class="ph"><span class="pn">5 V 3 A USB-C supply + USB-C→screw-terminal adapter</span><span class="pspec">B09JW4QQJ2 $9.99 · B0H3L2J6XJ $9.99 (5-pack)</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<li><div class="ph"><span class="pn">5 V 3 A USB-C supply + USB-C→screw-terminal adapter</span><span class="pspec">(5-pack)</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
 <p class="pwhy">The Pi supply has a captive USB-C plug, so it needs the female-to-terminal adapter. Check with the multimeter that the terminals read ~5 V under a heater load (that confirms the adapter's CC resistors and the supply agree). Then run the 5 V and GND buses in 22 AWG wire (see <a href="#adds" style="color:#79cdf5">Added after review</a>), not Dupont jumpers.</p></li>
 
-<li><div class="ph"><span class="pn">NOYITO MPR121 breakout</span><span class="pspec">B07DQDHXMD · $5.99</span><span class="chip c-cart">On the list · backup</span></div>
+<li><div class="ph"><span class="pn">NOYITO MPR121 breakout</span><span class="chip c-cart">On the list · backup</span></div>
 <p class="pwhy">Twelve more touch channels on I2C (0x5A, no clash with the MPRLS at 0x18). It is used only if the ESP32-S3's own touch pins are too noisy next to pumps and heater, or if the pin budget runs out.</p></li>
 
-<li><div class="ph"><span class="pn">HeatnBond Lite</span><span class="pspec">B001687ZDA · $13.99 · currently out of stock</span><span class="chip c-cart">On the list · optional</span></div>
+<li><div class="ph"><span class="pn">HeatnBond Lite</span><span class="pspec">currently out of stock</span><span class="chip c-cart">On the list · optional</span></div>
 <p class="pwhy">It is insulating: <b>edges only</b>, never across a Velostat contact area or under a capacitive strip. It stops the dry layers sliding and making phantom presses. Stitching does the same job, so drop it if it stays out of stock.</p></li>
 
 <li><div class="ph"><span class="pn">ESP32-S3 · organic fabric · jumper wires · 4.7 kΩ resistors · soldering iron · multimeter</span><span class="chip c-own">Already owned</span></div>
@@ -516,37 +517,37 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </svg>
 
 <ul class="parts">
-<li><div class="ph"><span class="pn">PH PandaHall black TPU fabric, 0.3 mm</span><span class="pspec">54" × 1 yd · B0DS1N97JX · $15.09</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
+<li><div class="ph"><span class="pn">PH PandaHall black TPU fabric, 0.3 mm</span><span class="pspec">54" × 1 yd</span><span class="chip c-cart">On the list</span><span class="chip c-ask">Verify on arrival</span></div>
 <p class="pwhy">The bladder. Check whether it is TPU on both faces or TPU-coated on one face; if coated, weld coated face to coated face. Weld test strips first and pull them apart by hand before cutting the real bladder. A yard is enough for many attempts.</p></li>
 
-<li><div class="ph"><span class="pn">Mini craft iron 80 W, adjustable + HTVRONT PTFE sheets</span><span class="pspec">B0H2YZPD8V $15.99 · B09PVCGDT7 $5.69</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Mini craft iron 80 W, adjustable + HTVRONT PTFE sheets</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">TPU welds in a narrow temperature band and sticks to bare metal; PTFE gives a clean release. Note the temperature that gives a seam you can't peel, and reuse it.</p></li>
 
 <li><div class="ph"><span class="pn">Bladder ports: 3D-printed flanged TPU nozzles</span><span class="pspec">school TPU printer</span><span class="chip c-own">Make</span></div>
 <p class="pwhy">Polycarbonate and silicone barbs will not heat-weld to TPU. Print a thin flanged nozzle in TPU and weld the flange inside the bladder (TPU to TPU), with the outside shaped as a barb for 1/8" ID tubing. Printer TPU and film TPU may be different grades (polyester vs polyether), so <b>test-weld one and leak-test it under a squeeze</b>. Backup: a urethane adhesive such as Aquaseal FD around the flange (see Added after review). Plan <b>three ports</b>: pump A → chamber A, pump B → chamber B, and a dedicated sensor port on A, so the MPRLS needs no tee.</p></li>
 
-<li><div class="ph"><span class="pn">FTVOGUE 6 V DC peristaltic pump ×2</span><span class="pspec">0–100 mL/min, reversible by polarity · B0CTBY97KZ · 2 × $15.27</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">FTVOGUE 6 V DC peristaltic pump ×2</span><span class="pspec">0–100 mL/min, reversible by polarity · 2 ×</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Reversible, so the skin can inhale <em>and</em> exhale. When stopped, the rollers pinch the tube shut, which is exactly what lets chamber A "hold" and listen. At 5 V expect ~80 mL/min (<b>verify</b>), about 6–7 mL per 5 s inhale per pump. That is why chamber B is a small breath pocket. Similar 6 V pumps ship with 3 mm ID × 5 mm OD hose (<b>verify</b>), which pushes onto a 1/8" barb. Running current is listed around 0.1–0.3 A for this class; measure it. Add a 0.1 µF capacitor across each motor's terminals to keep brush noise out of the touch channels.</p></li>
 
-<li><div class="ph"><span class="pn">DRV8833 dual motor driver</span><span class="pspec">5-pack · B0G5NSYR2Q · $8.99</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">DRV8833 dual motor driver</span><span class="pspec">5-pack</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">One board drives both pumps (2 × 1.5 A channels, 3–10 V); four boards are spares. VM goes to the 5 V rail, IN pins to 3.3 V GPIO, and the board's SLP/EEP pin is tied high if it is not already pulled up (<b>check the module</b>). Use slow-decay PWM for gentle low-speed breathing.</p></li>
 
-<li><div class="ph"><span class="pn">Adafruit MPRLS 0–25 PSI ported</span><span class="pspec">3965 · B07JP4Y7S8 · $39.95</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Adafruit MPRLS 0–25 PSI ported</span><span class="pspec">3965</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">The highest-value part: press, squeeze and the user's breath (and maybe pulse) from one sensor. It goes on an <b>air-pocket tube</b> off the top of chamber A, never wetted, and never on a McKibben line (range is only ~10 PSI above room pressure). The 2.5 mm port needs the 3/32" sleeve (Added after review).</p></li>
 
-<li><div class="ph"><span class="pn">Pure silicone tubing 1/8" ID × 1/4" OD</span><span class="pspec">5 ft · B07V5T31MF · $7.90</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Pure silicone tubing 1/8" ID × 1/4" OD</span><span class="pspec">5 ft</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">All the plumbing runs, plus the McKibben inner tubes. Five feet is enough for both, but not generous: keep runs short.</p></li>
 
-<li><div class="ph"><span class="pn">Alex Tech PET braided sleeving, 1/4" + 1/2"</span><span class="pspec">50 ft · B07RZXSJBM · $9.99</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Alex Tech PET braided sleeving, 1/4" + 1/2"</span><span class="pspec">50 ft</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">The 1/4" braid over the 1/4" OD tube is the McKibben actuator. It must be snug at rest; loose braid loses stroke. The 1/2" is cable management. Silicone tube with a 1.6 mm wall may need more pressure to contract than the pump makes. That is exactly what the syringe test answers.</p></li>
 
-<li><div class="ph"><span class="pn">Zip ties 4" ×200</span><span class="pspec">B0BC1VH4XB · $3.99</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">Zip ties 4" ×200</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Clamp braid <em>and</em> tube together at both ends of each muscle, and every barb joint. If the braid can slide, nothing shortens.</p></li>
 
-<li><div class="ph"><span class="pn">60 mL luer-lock syringes ×10</span><span class="pspec">B0DVTCCZYP · $12.99</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">60 mL luer-lock syringes ×10</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Hand test, fill and purge tool, and <b>the pump reservoirs</b>. A 60 mL barrel with its plunger left free-floating is a closed, air-free reservoir for each pump, so nothing extra needs buying.</p></li>
 
-<li><div class="ph"><span class="pn">MEETOOT female luer → 1/8" barb ×10 · red-cap luer plugs ×20</span><span class="pspec">B0BXX3V1JZ $8.99 · B01LY9WHQC $9.00</span><span class="chip c-cart">On the list</span></div>
+<li><div class="ph"><span class="pn">MEETOOT female luer → 1/8" barb ×10 · red-cap luer plugs ×20</span><span class="chip c-cart">On the list</span></div>
 <p class="pwhy">Luer barbs join the syringes/reservoirs to the 1/8" lines; plugs cap the dead end of each muscle and the fill ports. Two female luers cannot join each other, though, and barbs do not join tube to tube, so the straight/tee couplers and a stopcock in Added after review are still needed.</p></li>
 
 <li><div class="ph"><span class="pn">Distilled water, 1 gal</span><span class="pspec">grocery</span><span class="chip c-buy">Buy locally</span></div>
@@ -607,7 +608,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </svg>
 
 <ul class="parts">
-<li><div class="ph"><span class="pn">Micro servo (SG90-class) + Dyneema / braided fishing line</span><span class="pspec">~$3–8 each, only if needed</span><span class="chip c-buy">Only if needed</span></div>
+<li><div class="ph"><span class="pn">Micro servo (SG90-class) + Dyneema / braided fishing line</span><span class="pspec">only if needed</span><span class="chip c-buy">Only if needed</span></div>
 <p class="pwhy">Positional and repeatable: a breath is an angle. A servo needs no driver; a 28BYJ-48 stepper could use a spare DRV8833 from the 5-pack.</p></li>
 <li><div class="ph"><span class="pn">Tendon guides + anchor patches</span><span class="pspec">silicone-tube offcuts, TPU scraps</span><span class="chip c-own">From Plan B offcuts</span></div>
 <p class="pwhy">Spread each pull across a patch, which is the difference between a swell and a pucker.</p></li>
@@ -673,7 +674,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </div>
 
 <h2 id="adds">Added after review</h2>
-<p class="lede">Things the final pass found missing. <b>Added to the cart on 10 Oct:</b> 1/8" straight barb unions ×15 (B095YSPRPL), 1/8" barb tees ×10 (B0F8HN7KC8), 2 mm ID silicone tube for the MPRLS port (B08GPBC7C6), luer 3-way stopcocks ×6 (B0BDD7GG56), 22 AWG silicone wire kit (B07G2JWYDW), inline mini-blade fuse holders with 3 A fuses (B0C15H3F9M), electrolytic capacitor kit to 1000 µF (B0C1VBXCQM). Aquaseal FD stays optional.</p>
+<p class="lede">Things the final pass found missing. <b>Added to the cart on 10 Oct:</b> 1/8" straight barb unions ×15, 1/8" barb tees ×10, 2 mm ID silicone tube for the MPRLS port, luer 3-way stopcocks ×6, 22 AWG silicone wire kit, inline mini-blade fuse holders with 3 A fuses, electrolytic capacitor kit to 1000 µF. Aquaseal FD stays optional.</p>
 <div class="card">
 <div class="tblwrap"><table class="tbl">
 <tr><th>Search term</th><th>Why</th><th>Severity</th></tr>
@@ -692,32 +693,31 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 <p class="lede">Every line has a job; none are wrong-spec.</p>
 <div class="card">
 <div class="tblwrap"><table class="tbl">
-<tr><th>Item</th><th>Price</th><th>Job</th></tr>
-<tr><td>FTVOGUE 6 V peristaltic pump ×2</td><td>$30.54</td><td>Chambers A + B; ripple and breath</td></tr>
-<tr><td>DRV8833 module, 5-pack</td><td>$8.99</td><td>One board drives both pumps</td></tr>
-<tr><td>Adafruit MPRLS 0–25 PSI</td><td>$39.95</td><td>Press + breath via air pocket</td></tr>
-<tr><td>NOYITO MPR121</td><td>$5.99</td><td>Touch backup</td></tr>
-<tr><td>DS18B20 probes ×4</td><td>$9.99</td><td>Film / surface / ambient / spare</td></tr>
-<tr><td>MECCANIXITY 5 V 8 W film ×2</td><td>$8.99</td><td>Warmth</td></tr>
-<tr><td>Fielect KSD301 40 °C ×5</td><td>$6.49</td><td>Hardware cutoff, one per film</td></tr>
-<tr><td>NOYITO AOD4184 module ×2</td><td>$6.99</td><td>Heater switches</td></tr>
-<tr><td>5 V 3 A USB-C supply</td><td>$9.99</td><td>The one rail</td></tr>
-<tr><td>USB-C female → screw terminal, 5-pack</td><td>$9.99</td><td>Supply to bus</td></tr>
-<tr><td>Chibitronics Velostat, 5 sheets</td><td>$9.59</td><td>2×2 press zones + spare</td></tr>
-<tr><td>OurSure silver fabric 11.5×12.5"</td><td>$14.00</td><td>Cap strips + Velostat pads</td></tr>
-<tr><td>ATMOSURE Faraday fabric kit</td><td>$16.95</td><td>Ground sheet / shield</td></tr>
-<tr><td>Adafruit stainless thread 23 m</td><td>$13.26</td><td>Signal leads</td></tr>
-<tr><td>HeatnBond Lite</td><td>$13.99</td><td>Optional, edges only; out of stock</td></tr>
-<tr><td>PandaHall TPU fabric 0.3 mm, 1 yd</td><td>$15.09</td><td>Bladder</td></tr>
-<tr><td>Mini craft iron 80 W</td><td>$15.99</td><td>Welding TPU</td></tr>
-<tr><td>HTVRONT PTFE sheets ×3</td><td>$5.69</td><td>Weld release</td></tr>
-<tr><td>Silicone tubing 1/8"×1/4", 5 ft</td><td>$7.90</td><td>Lines + muscle tube</td></tr>
-<tr><td>PET braid 1/4" + 1/2", 50 ft</td><td>$9.99</td><td>McKibben + cable sleeve</td></tr>
-<tr><td>Zip ties 4" ×200</td><td>$3.99</td><td>Muscle + barb clamps</td></tr>
-<tr><td>60 mL luer syringes ×10</td><td>$12.99</td><td>Test, fill, reservoirs</td></tr>
-<tr><td>Female luer → 1/8" barb ×10</td><td>$8.99</td><td>Syringe/reservoir to line</td></tr>
-<tr><td>Red-cap luer plugs ×20</td><td>$9.00</td><td>Dead ends, fill ports</td></tr>
-<tr><td><b>Subtotal</b></td><td><b>$295.33</b></td><td>before tax and shipping</td></tr>
+<tr><th>Item</th><th>Job</th></tr>
+<tr><td>FTVOGUE 6 V peristaltic pump ×2</td><td>Chambers A + B; ripple and breath</td></tr>
+<tr><td>DRV8833 module, 5-pack</td><td>One board drives both pumps</td></tr>
+<tr><td>Adafruit MPRLS 0–25 PSI</td><td>Press + breath via air pocket</td></tr>
+<tr><td>NOYITO MPR121</td><td>Touch backup</td></tr>
+<tr><td>DS18B20 probes ×4</td><td>Film / surface / ambient / spare</td></tr>
+<tr><td>MECCANIXITY 5 V 8 W film ×2</td><td>Warmth</td></tr>
+<tr><td>Fielect KSD301 40 °C ×5</td><td>Hardware cutoff, one per film</td></tr>
+<tr><td>NOYITO AOD4184 module ×2</td><td>Heater switches</td></tr>
+<tr><td>5 V 3 A USB-C supply</td><td>The one rail</td></tr>
+<tr><td>USB-C female → screw terminal, 5-pack</td><td>Supply to bus</td></tr>
+<tr><td>Chibitronics Velostat, 5 sheets</td><td>2×2 press zones + spare</td></tr>
+<tr><td>OurSure silver fabric 11.5×12.5"</td><td>Cap strips + Velostat pads</td></tr>
+<tr><td>ATMOSURE Faraday fabric kit</td><td>Ground sheet / shield</td></tr>
+<tr><td>Adafruit stainless thread 23 m</td><td>Signal leads</td></tr>
+<tr><td>HeatnBond Lite</td><td>Optional, edges only; out of stock</td></tr>
+<tr><td>PandaHall TPU fabric 0.3 mm, 1 yd</td><td>Bladder</td></tr>
+<tr><td>Mini craft iron 80 W</td><td>Welding TPU</td></tr>
+<tr><td>HTVRONT PTFE sheets ×3</td><td>Weld release</td></tr>
+<tr><td>Silicone tubing 1/8"×1/4", 5 ft</td><td>Lines + muscle tube</td></tr>
+<tr><td>PET braid 1/4" + 1/2", 50 ft</td><td>McKibben + cable sleeve</td></tr>
+<tr><td>Zip ties 4" ×200</td><td>Muscle + barb clamps</td></tr>
+<tr><td>60 mL luer syringes ×10</td><td>Test, fill, reservoirs</td></tr>
+<tr><td>Female luer → 1/8" barb ×10</td><td>Syringe/reservoir to line</td></tr>
+<tr><td>Red-cap luer plugs ×20</td><td>Dead ends, fill ports</td></tr>
 </table></div>
 </div>
 
@@ -734,7 +734,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 <div class="card">
 <h3 style="margin-top:0">Still open (none block checkout)</h3>
 <ol style="margin:0;padding-left:20px;font-size:14px;color:var(--dim)">
-<li style="margin:5px 0"><b>Bartels mp6 (v2, silent pump).</b> A question email went to Darwin Microfluidics on 10 Oct. The pump is ≈€52 and the mp-Lowdriver (5 V, I2C) $82.60. Bartels' datasheet gives the mp6 ~5–7 mL/min water and ~600–650 mbar max; the sister BP7 is ~9 mL/min, 450 mbar. Its passive check valves make it <b>one-way</b>, so it cannot exhale without a second pump or a valve. At ~1/15 of the peristaltic flow it suits a McKibben muscle better than a volume-swell breath pocket.</li>
+<li style="margin:5px 0"><b>Bartels mp6 (v2, silent pump).</b> Bartels' datasheet gives the mp6 ~5–7 mL/min water and ~600–650 mbar max; the sister BP7 is ~9 mL/min, 450 mbar. Its passive check valves make it <b>one-way</b>, so it cannot exhale without a second pump or a valve. At ~1/15 of the peristaltic flow it suits a McKibben muscle better than a volume-swell breath pocket.</li>
 <li style="margin:5px 0"><b>MPRLS media rating</b>: confirm from the Honeywell MPR datasheet. The design keeps it dry regardless.</li>
 <li style="margin:5px 0"><b>TPU fabric construction</b> (film vs. coated), and whether printer TPU welds to it. Settled by the first test weld.</li>
 </ol>
