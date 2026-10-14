@@ -135,6 +135,31 @@ async function fetchMapData() {
 
 const PUBLIC_LINE = "live from a desk in New York";
 
+let HERE = null;
+
+async function fetchHere() {
+    if (PUBLIC) return null;
+    try {
+        const r = await api("/api/location", {
+            cache: "no-store"
+        });
+        if (r.ok) {
+            const l = await r.json();
+            const at = Date.parse(l && l.at || "") || 0;
+            HERE = l && l.lat != null ? {
+                at: l.at,
+                place: l.place || null,
+                lat: l.lat,
+                lon: l.lon,
+                fresh: Date.now() - at < 12 * 36e5,
+                history: (l.history || []).slice(-40)
+            } : null;
+        }
+    } catch {}
+    if (DATA) DATA.location = HERE;
+    return HERE;
+}
+
 const FALLBACK = {
     hub: {
         id: "north-star",
@@ -1006,6 +1031,8 @@ async function loadData() {
         const d = await fetchMapData();
         if (d) DATA = d;
     } catch {}
+    await Promise.race([ fetchHere(), new Promise(r => setTimeout(r, 1500)) ]);
+    if (!PUBLIC) setInterval(fetchHere, 6e4);
     if (DATA.cloud) tick(`<b>north-star</b> · from the Mac ${ago(DATA.cloud.pushedAt)}`);
     buildGraph(DATA);
     renderChrome();
@@ -2765,6 +2792,7 @@ function applyMap(d, hinted) {
     const keep = Date.now() - userCam < 6e4 ? {
         ...cam
     } : null;
+    d.location = HERE;
     DATA = d;
     buildGraph(DATA);
     nodes.forEach(n => {
