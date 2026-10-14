@@ -142,9 +142,9 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
   <button id="bFlat" aria-pressed="false">Pressed</button>
 </div>
 <div class="stagewrap" id="stage">
-<svg class="stage" viewBox="0 0 520 408" role="img" aria-label="Exploded diagram of the seven layers of the Warm Skin v1 stack">
+<svg class="stage" data-pop="stack" viewBox="0 0 520 408" role="img" aria-label="Exploded diagram of the seven layers of the Warm Skin v1 stack">
   <g transform="translate(150,322)">
-   <g class="lyr" style="--gap:0;--br:0;--dip:0">
+   <g class="lyr" data-part="esp32" data-tip="The small computer that runs the skin: it reads every sensor and drives the two pumps and the two heaters." style="--gap:0;--br:0;--dip:0">
     <path class="plate-side" fill="#3e4673" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#5965a6" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#7b8ce6" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -157,7 +157,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,310)">
-   <g class="lyr" style="--gap:30;--br:0;--dip:0">
+   <g class="lyr" data-part="heater" data-tip="Two thin 5 V heating films stuck to the outside of the bladder floor, each with a 40 °C safety switch on top. Firmware keeps the film at 38 °C or less." style="--gap:30;--br:0;--dip:0">
     <path class="plate-side" fill="#74391e" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#a7512b" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#e8713c" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -170,7 +170,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,298)">
-   <g class="lyr" style="--gap:60;--br:5;--dip:5">
+   <g class="lyr" data-part="tpu" data-tip="A sealed water pouch welded from 0.3 mm TPU, about 5 mm thick, in two chambers. It holds the warmth, gives the pad weight, and turns a press or a breath into a pressure change the sensor can read." style="--gap:60;--br:5;--dip:5">
     <path class="plate-side" fill="#1c546c" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#28799c" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#38a8d8" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -183,7 +183,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,286)">
-   <g class="lyr" style="--gap:90;--br:6;--dip:6">
+   <g class="lyr" data-part="braid" data-tip="Optional for v1. A silicone tube inside a woven PET sleeve, tied at both ends: push water in, the tube swells, and the sleeve turns the swell into a pull." style="--gap:90;--br:6;--dip:6">
     <path class="plate-side" fill="#28603a" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#398a54" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#4fbf74" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -196,7 +196,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,274)">
-   <g class="lyr" style="--gap:120;--br:6;--dip:7">
+   <g class="lyr" data-part="velostat" data-tip="Four pressure-sensitive sheets in a 2 x 2 grid. Their resistance drops when pressed, so they tell where, and roughly how hard, a hand presses." style="--gap:120;--br:6;--dip:7">
     <path class="plate-side" fill="#58356a" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#7f4c99" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#b06ad4" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -209,7 +209,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,262)">
-   <g class="lyr" style="--gap:150;--br:6;--dip:7">
+   <g class="lyr" data-part="cuni" data-tip="4-6 conductive fabric strips that feel a hand 3-8 cm before it touches, and which way it strokes. A grounded sheet underneath keeps the warm water and the pumps from reading as a hand." style="--gap:150;--br:6;--dip:7">
     <path class="plate-side" fill="#705a1e" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#a1822b" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#e0b43c" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -222,7 +222,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,250)">
-   <g class="lyr" style="--gap:180;--br:6;--dip:7">
+   <g class="lyr" data-part="organic" data-tip="The only part a hand ever touches: natural-fibre fabric, already owned." style="--gap:180;--br:6;--dip:7">
     <path class="plate-side" fill="#655d52" d="M -112 0 L 0 39 L 0 48 L -112 9 Z"/>
     <path class="plate-side" fill="#918575" d="M 112 0 L 0 39 L 0 48 L 112 9 Z"/>
     <path class="plate-top" fill="#c9b9a3" fill-opacity=".9" d="M -112 0 L 0 -39 L 112 0 L 0 39 Z"/>
@@ -235,7 +235,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
    </g>
   </g>
   <g transform="translate(150,196)">
-   <g class="finger">
+   <g class="finger" data-tip-title="A hand" data-tip="A hand coming down onto the skin. The strips feel it a few centimetres before contact; the Velostat feels the press; the bladder feels the weight.">
     <circle cx="0" cy="-26" r="15" fill="#f3e3d6" fill-opacity=".92"/>
     <rect x="-11" y="-26" width="22" height="30" rx="8" fill="#f3e3d6" fill-opacity=".8"/>
     <ellipse cx="0" cy="12" rx="32" ry="10" fill="none" stroke="#f3e3d6" stroke-opacity=".45" stroke-width="1.4"/>
@@ -256,7 +256,7 @@ code{background:#0f141e;border:1px solid var(--line);border-radius:5px;padding:1
 </div>
 
 <div class="card note">
-<p style="margin:0 0 8px;font-size:14px"><b>Status, 14 Oct 2026:</b> parts ordered 11 Oct and in hand since 13 Oct, except the two 6 V pumps (still in transit) and the Velostat (estimate Sat 17 Oct). The Mon and Tue build nights slipped, so the build order below runs a few days later: <b>Wed 14 Oct</b> touch on scrap + 4 temperature probes + the KSD301 40 °C cutoff; <b>Thu</b> seal setting, TPU flanges welded onto the luer-barbs (the bladder nozzles; no 3D print since 14 Oct), test pouch; <b>Fri</b> pressure on the pouch; <b>Sat</b> 5 V rail + heater on a tile, then the bladder (muscle optional); <b>Sun</b> sensing stack, pump flow, mount + plumb; <b>Mon 19 Oct</b> assemble + first breath. The order of the layers and the safety rules did not change.</p>
+<p style="margin:0 0 8px;font-size:14px"><b>Status, 14 Oct 2026:</b> parts in hand since 13 Oct, except the two 6 V pumps (still in transit) and the Velostat (estimate Sat 17 Oct). The Mon and Tue build nights slipped, so the build order below runs a few days later: <b>Wed 14 Oct</b> touch on scrap + 4 temperature probes + the KSD301 40 °C cutoff; <b>Thu</b> seal setting, TPU flanges welded onto the luer-barbs (the bladder nozzles; no 3D print since 14 Oct), test pouch; <b>Fri</b> pressure on the pouch; <b>Sat</b> 5 V rail + heater on a tile, then the bladder (muscle optional); <b>Sun</b> sensing stack, pump flow, mount + plumb; <b>Mon 19 Oct</b> assemble + first breath. The order of the layers and the safety rules did not change.</p>
 <p style="margin:0;font-size:14px"><b>Status:</b> the parts list is settled. Everything runs off <b>one 5 V 3 A USB-C supply</b>. The MOSFET and power-supply questions are closed, and the 0.5 mL/min stepper pump has been replaced with two 100 mL/min DC pumps. A final engineering pass found missing fittings and wiring; those are now on the list too (see <a href="#adds" style="color:#79cdf5">Added after review</a>). HeatnBond was dropped — stitch the dry layers instead.</p>
 </div>
 
@@ -401,7 +401,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 <div class="body">
 <p class="why">Build layers 7–5 plus the heater on a flat pad with <b>no water at all</b>. Prove that approach, tap, stroke, press and hold are cleanly distinguishable, and that the heater chain holds 36 °C and the cutoff actually trips. Motion goes underneath later without touching any of this.</p>
 
-<svg class="sch" viewBox="0 0 440 182" role="img" aria-label="Plan A schematic: dry sensing pad wired to an ESP32-S3 with heater feedback">
+<svg class="sch" data-pop="planA" viewBox="0 0 440 182" role="img" aria-label="Plan A schematic: dry sensing pad wired to an ESP32-S3 with heater feedback">
   <rect x="16" y="20" width="152" height="15" rx="3" fill="#c9b9a3"/><text class="schs" x="24" y="31.5" style="fill:#241f18">Organic fabric</text>
   <rect x="16" y="39" width="152" height="15" rx="3" fill="#e0b43c"/><text class="schs" x="24" y="50.5" style="fill:#241f18">Cap strips + ground sheet</text>
   <rect x="16" y="58" width="152" height="15" rx="3" fill="#b06ad4"/><text class="schs" x="24" y="69.5" style="fill:#1a0f22">Velostat 2×2 zones</text>
@@ -410,8 +410,8 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
   <text class="schs" x="92" y="120" text-anchor="middle">muscle / bladder</text>
   <text class="schs" x="92" y="134" text-anchor="middle">added in Plan B, C or D</text>
 
-  <path class="flow" d="M172 47 H206" marker-end="url(#arw)"/>
-  <path class="flow" d="M172 66 H206" marker-end="url(#arw)"/>
+  <path class="flow" d="M172 47 H206" marker-end="url(#arw)" data-tip-title="Touch wires" data-tip="Each capacitive strip runs to its own ESP32-S3 touch pin, sewn with conductive thread." style="stroke-width:3"/>
+  <path class="flow" d="M172 66 H206" marker-end="url(#arw)" data-tip-title="Press wires" data-tip="Each Velostat zone runs to an analog (ADC) pin through a 4.7 kOhm resistor." style="stroke-width:3"/>
   <rect class="schbox" x="208" y="30" width="112" height="52" rx="8" fill="#1a2234" stroke="#7b8ce6"/>
   <text class="scht" x="264" y="52" text-anchor="middle">ESP32-S3</text>
   <text class="schs" x="264" y="68" text-anchor="middle">touch + ADC</text>
@@ -421,7 +421,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
   <text class="schs" x="264" y="123" text-anchor="middle">AOD4184 module</text>
   <text class="schs" x="264" y="137" text-anchor="middle">→ KSD301 → heater</text>
 
-  <path class="flow" d="M324 125 H372 V56 H324" marker-end="url(#arw)"/>
+  <path class="flow" d="M324 125 H372 V56 H324" marker-end="url(#arw)" data-tip-title="Feedback loop" data-tip="The probes tell the ESP32 how hot the film is, so it can hold the skin at 36 °C and switch the heater down before 38 °C." style="stroke-width:3"/>
   <rect class="schbox" x="326" y="30" width="98" height="26" rx="7" fill="#101b22" stroke="#38a8d8" transform="translate(0,-4)"/>
   <text class="schs" x="375" y="44" text-anchor="middle">DS18B20 ×4</text>
   <text class="schs" x="424" y="162" text-anchor="end">one 5 V 3 A rail</text>
@@ -489,7 +489,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 <div class="body">
 <p class="why">Water does three jobs at once: it carries the warmth, it turns a press <em>or a breath</em> into a pressure the MPRLS can read, and it is the working fluid. Two reversible pumps drive two chambers, which gives a real travelling ripple for stroke and lets one chamber listen while the other breathes.</p>
 
-<svg class="sch" viewBox="0 0 440 204" role="img" aria-label="Plan B schematic: two reversible peristaltic pumps driving a two-chamber water bladder with an air-pocket pressure sensor and heater">
+<svg class="sch" data-pop="planB" viewBox="0 0 440 204" role="img" aria-label="Plan B schematic: two reversible peristaltic pumps driving a two-chamber water bladder with an air-pocket pressure sensor and heater">
   <rect class="schbox" x="10" y="18" width="84" height="36" rx="8" fill="#1a2234" stroke="#6b7a95"/>
   <text class="schs" x="52" y="34" text-anchor="middle">Syringe-barrel</text>
   <text class="schs" x="52" y="47" text-anchor="middle">reservoirs ×2</text>
@@ -586,7 +586,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 <div class="body">
 <p class="why">Drop fluid actuation entirely. A micro servo winds low-stretch tendons sewn into the skin, so a breath is an angle sweep. The water bladder stays, sealed and unpumped, as warmth and as the breath sensor. <b>Only needed if the pumped bladder fails to give a visible breath by mid-November.</b> Nothing for it is in the cart, and nothing needs to be.</p>
 
-<svg class="sch" viewBox="0 0 440 190" role="img" aria-label="Plan C schematic: a servo horn pulling tendons that compress the skin over an unpressurised water bladder">
+<svg class="sch" data-pop="planC" viewBox="0 0 440 190" role="img" aria-label="Plan C schematic: a servo horn pulling tendons that compress the skin over an unpressurised water bladder">
   <rect class="schbox" x="10" y="64" width="84" height="40" rx="8" fill="#241c33" stroke="#b06ad4"/>
   <text class="schs" x="52" y="80" text-anchor="middle">Micro servo</text>
   <text class="schs" x="52" y="93" text-anchor="middle">or 28BYJ-48</text>
@@ -633,7 +633,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </header>
 <div class="body">
 <p class="why">Fill the syringe with air instead of water and compare the two by hand on the same muscle. This answers the compressibility question with no new parts.</p>
-<svg class="sch" viewBox="0 0 440 176" role="img" aria-label="Plan D schematic: air pump and valve driving the same braided muscle, with no water layer">
+<svg class="sch" data-pop="planD" viewBox="0 0 440 176" role="img" aria-label="Plan D schematic: air pump and valve driving the same braided muscle, with no water layer">
   <rect class="schbox" x="10" y="30" width="80" height="38" rx="8" fill="#2b2415" stroke="#e0b43c"/>
   <text class="schs" x="50" y="46" text-anchor="middle">Syringe</text>
   <text class="schs" x="50" y="59" text-anchor="middle">(air)</text>
@@ -752,7 +752,7 @@ svg.defs{position:absolute;width:0;height:0;overflow:hidden}
 </div>
 
 <footer>
-Updated 10 Oct 2026 from <code>soft-robot/cart-2026-10-10.json</code> (prices as captured, no tax or shipping, nothing ordered), the Shionoiri &amp; Osawa 2025 ROBOMECH paper, her Cuddle Bot paper, the Adafruit MPRLS guide, Espressif's ESP32-S3 touch docs and the Bartels mp6 datasheet. Items marked "verify" are not confirmed from a listing or datasheet. Full bill of materials: <code>soft-robot/BOM.md</code>. Supersedes the Oct 2 cart reconciliation and the 12 V silicone handoff.
+Updated 10 Oct 2026 from the parts list, the Shionoiri &amp; Osawa 2025 ROBOMECH paper, her Cuddle Bot paper, the Adafruit MPRLS guide, Espressif's ESP32-S3 touch docs and the Bartels mp6 datasheet. Items marked "verify" are not confirmed from a listing or datasheet. Supersedes the Oct 2 cart reconciliation and the 12 V silicone handoff.
 </footer>
 </div>
 
@@ -821,6 +821,7 @@ Updated 10 Oct 2026 from <code>soft-robot/cart-2026-10-10.json</code> (prices as
 })();
 </script>
 <script src="/js/read-mark.js"></script>
+<script type="application/json" id="diagram-tips">{"planA": {"Cap strips + ground sheet": {"part": "cuni", "t": "Capacitive strips + ground sheet", "d": "Conductive fabric strips that sense a hand before it touches, over a grounded shield sheet."}, "muscle / bladder": {"t": "Motion layer, added later", "d": "Empty on purpose: Plan A has no water and no motion. The muscle or bladder goes here in Plan B, C or D without touching the layers above."}, "added in Plan B, C or D": {"t": "Motion layer, added later", "d": "Empty on purpose: Plan A has no water and no motion. The muscle or bladder goes here in Plan B, C or D without touching the layers above."}, "ESP32-S3": {"part": "esp32", "d": "Reads the strips on its touch pins and the Velostat zones on its analog pins, and switches the heater."}, "touch + ADC": {"part": "esp32", "t": "Touch + analog pins", "d": "The strips go to touch pins; the Velostat zones go to analog (ADC) pins."}, "AOD4184 module": {"part": "mosfet", "d": "An electronic switch: a 3.3 V signal from the ESP32 turns the heater's 5 V current on and off."}, "→ KSD301 → heater": {"part": "ksd", "d": "The heater current passes through the KSD301, a 40 °C safety switch that opens if the film gets too hot."}, "DS18B20 ×4": {"part": "ds18", "d": "Four temperature probes: film, top surface, water or room, and a spare."}, "one 5 V 3 A rail": {"part": "supply", "d": "Everything runs from one 5 V 3 A USB-C supply."}}, "planB": {"Syringe-barrel": {"part": "syringe", "t": "Reservoirs", "d": "Two 60 mL syringe barrels with the plunger left free: a closed, air-free water tank for each pump."}, "reservoirs ×2": {"part": "syringe", "t": "Reservoirs", "d": "Two 60 mL syringe barrels with the plunger left free: a closed, air-free water tank for each pump."}, "6 V peristaltic ×2": {"part": "pumps", "d": "Two small pumps that squeeze a tube with rollers. Reverse the current and the flow reverses, so the skin can breathe in and out. Pump A feeds chamber A, pump B feeds chamber B."}, "DRV8833 · reversible": {"part": "drv", "d": "One DRV8833 board drives both pumps, in either direction."}, "optional McKibben · tube in PET braid, zip-tied": {"part": "braid", "t": "McKibben muscle (optional)", "d": "A silicone tube inside a woven sleeve, zip-tied at both ends: water in makes it fatter and shorter, a pull."}, "A: listen · B: breath pocket": {"part": "tpu", "t": "Two-chamber bladder", "d": "Chamber A (big) listens: its pump stays stopped, so its pressure changes come from you. Chamber B (a small 6 x 8 cm pocket) does the visible breathing."}, "air pocket → MPRLS": {"part": "psens", "t": "Pressure sensor on an air pocket", "d": "A short tube rises from chamber A with air at the top. The sensor reads through that air, so water never touches it. It picks up a press, a breath, maybe a pulse."}, "press · breath · pulse": {"part": "psens", "t": "What the pressure sensor hears", "d": "A press, your breath, and maybe your pulse, all as small pressure changes in the sealed bladder."}, "Heater film 5 V · outside the bladder": {"part": "heater", "d": "The heater sits under the bladder, outside it, so it stays dry; the water spreads the heat."}, "DS18B20 + KSD301": {"part": "ds18", "t": "Probe + safety switch", "d": "A temperature probe watches the film, and the KSD301 switch cuts power if it passes 40 °C."}, "syringe by hand → 2 peristaltic pumps → (v2) silent piezo pump": {"t": "How the drive grows", "d": "First push water by hand with a syringe, then the two pumps take over; a later version may use a silent piezo pump."}}, "planC": {"Micro servo": {"t": "Micro servo", "d": "A small hobby motor that turns to a set angle; winding it pulls the tendons. Only bought if Plan B fails."}, "or 28BYJ-48": {"t": "Or a small stepper", "d": "A 28BYJ-48 stepper motor could do the same job, driven by a spare DRV8833."}, "horn": {"t": "Servo horn", "d": "The arm on the servo shaft. The tendons tie to it, so turning it pulls them."}, "Dyneema tendons in tube guides": {"t": "Tendons", "d": "Strong, low-stretch threads run through short tube guides and sewn into the skin. Pulling them tightens the skin like a breath."}, "water bladder": {"part": "tpu", "d": "The same sealed water bladder, but with no pump in it: it only gives warmth and reads your breath."}, "warmth + sensing": {"part": "tpu", "d": "The same sealed water bladder, but with no pump in it: it only gives warmth and reads your breath."}, "sealed, unpumped": {"part": "tpu", "d": "The same sealed water bladder, but with no pump in it: it only gives warmth and reads your breath."}, "anchor patches cut from TPU offcuts": {"t": "Anchor patches", "d": "TPU scraps that spread each pull over an area, so the skin swells instead of puckering."}}, "planD": {"Syringe": {"part": "syringe", "d": "The same syringe, filled with air instead of water, pushed by hand."}, "(air)": {"part": "syringe", "d": "The same syringe, filled with air instead of water, pushed by hand."}, "same muscle as Plan B": {"part": "braid", "t": "Same muscle, driven by air", "d": "The braided muscle from Plan B, pushed with air: a 20-minute test of whether air or water feels better."}, "Heater film = all the warmth": {"part": "heater", "d": "With no water, the film alone gives all the warmth, and nothing stores it."}, "no water → no thermal mass, weak breath signal": {"t": "No water layer", "d": "Without water nothing stores heat, and air squashes, so the breath signal is weak. That is why this is a test, not the main build."}}}</script>
 <script src="../js/parts-pop.js" data-base="../" defer></script>
 </body>
 </html>
