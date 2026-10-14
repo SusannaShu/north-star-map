@@ -331,106 +331,13 @@
      "embed": "pages/mittens-vision.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-architecture",
-     "label": "MITTENS ARCHITECTURE",
-     "status": "idle",
-     "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-     "statusLine": "decided",
-     "caption": "Personal data moves off the shared cloud backend onto a small home server:",
-     "stage": "active",
-     "embed": "pages/mittens-architecture.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "agent-phone",
-     "label": "ALWAYS-HOME ANDROID",
-     "status": "idle",
-     "why": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
-     "statusLine": "running",
-     "caption": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
-     "stage": "active",
-     "embed": "pages/agent-phone.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "guardian-angel",
-     "label": "GUARDIAN ANGEL",
-     "status": "idle",
-     "why": "Idea: a small flying pod that docks on glasses, a pendant or clothing and flies when pulled away -- a glass shell, eyes that turn, a light. It carries the camera, so Mittens knows where it points.",
-     "statusLine": "idea · research",
-     "caption": "Idea:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/guardian-angel.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "desktop-agent",
-     "label": "DESKTOP AGENT",
-     "status": "idle",
-     "why": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
-     "statusLine": "live",
-     "caption": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
-     "stage": "active",
-     "embed": "pages/desktop-agent.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "phone-control",
-     "label": "PHONE CONTROL",
-     "status": "idle",
-     "why": "Agents see and tap the phone the way a person would, so Mittens can act in any app. Next: control from anywhere, not only on the same network.",
-     "statusLine": "works at home · anywhere is next",
-     "caption": "Agents see and tap the phone the way a person would, so Mittens can act in any app.",
-     "stage": "active",
-     "embed": "pages/phone-control.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "go-anywhere",
-     "label": "GO ANYWHERE",
-     "status": "idle",
-     "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
-     "statusLine": "built",
-     "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
-     "stage": "active",
-     "embed": "pages/go-anywhere.html",
-     "visibility": "public",
-     "links": [
-      "glasses-mittens"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-desktop",
-     "label": "MITTENS ON DESKTOP",
-     "status": "idle",
-     "why": "A watcher on the laptop turns what I am working on into honest calendar blocks. The screen picture is deleted at once; only a one-line summary stays.",
-     "statusLine": "v1 built",
-     "caption": "A watcher on the laptop turns what I am working on into honest calendar blocks.",
-     "stage": "active",
-     "embed": "pages/mittens-desktop.html",
-     "visibility": "public",
-     "links": [
-      "omi",
-      "desktop-agent",
-      "mittens-daily"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "case study"
   },
   {
    "id": "mittens-daily",
-   "label": "MITTENS DAY + TALK",
+   "label": "DAY & CALENDAR",
    "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
@@ -444,39 +351,6 @@
    "parent": "mittens",
    "parked": false,
    "children": [
-    {
-     "id": "meeting-notes",
-     "label": "MEETING NOTES",
-     "status": "idle",
-     "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
-     "statusLine": "installed",
-     "caption": "\"Start recording\" on the glasses:",
-     "embed": "pages/meeting-notes.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mw-blind",
-     "label": "CAN'T SEE -> ASK",
-     "status": "idle",
-     "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
-     "statusLine": "building",
-     "caption": "Glasses off or a useless frame:",
-     "embed": "pages/mw-blind.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mw-calls",
-     "label": "CALLS AS MITTENS",
-     "status": "idle",
-     "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "statusLine": "installed",
-     "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "embed": "pages/mw-calls.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "proactive-rules",
      "label": "PROACTIVE RULES",
@@ -494,13 +368,28 @@
       "mw-calls"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "go-anywhere",
+     "label": "GO ANYWHERE",
+     "status": "idle",
+     "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
+     "statusLine": "built",
+     "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
+     "stage": "active",
+     "embed": "pages/go-anywhere.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "mittens-digital",
-   "label": "DIGITAL",
+   "label": "APP & DEVICES",
    "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
@@ -510,20 +399,6 @@
    "parent": "mittens",
    "parked": false,
    "children": [
-    {
-     "id": "ns-talk",
-     "label": "NORTH STAR TALK",
-     "status": "idle",
-     "why": "Talk to the map out loud: it answers what is going on and starts agents on a go. When it hears how something should grow, the map changes too.",
-     "statusLine": "live",
-     "caption": "Talk to the map out loud:",
-     "embed": "pages/ns-talk.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
@@ -538,58 +413,50 @@
      "embedCaption": "case study"
     },
     {
-     "id": "aurora",
-     "label": "AURORA",
+     "id": "mittens-architecture",
+     "label": "MITTENS ARCHITECTURE",
      "status": "idle",
-     "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
-     "statusLine": "next: the first voice file",
-     "caption": "A voice layer so an agent stops sounding like AI:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/aurora.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk",
-      "omi"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "aurora-market",
-     "label": "WHO ELSE DOES THIS",
-     "status": "idle",
-     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
-     "statusLine": "research",
-     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/aurora-market.html",
+     "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
+     "statusLine": "decided",
+     "caption": "Personal data moves off the shared cloud backend onto a small home server:",
+     "stage": "active",
+     "embed": "pages/mittens-architecture.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "small-models",
-     "label": "SMALL LOCAL MODELS",
+     "id": "phone-control",
+     "label": "PHONE CONTROL",
      "status": "idle",
-     "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "statusLine": "benchmarked",
-     "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/small-models.html",
+     "why": "Agents see and tap the phone the way a person would, so Mittens can act in any app. Next: control from anywhere, not only on the same network.",
+     "statusLine": "works at home · anywhere is next",
+     "caption": "Agents see and tap the phone the way a person would, so Mittens can act in any app.",
+     "stage": "active",
+     "embed": "pages/phone-control.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "mittens-tutor",
-     "label": "MITTENS TEACHES",
+     "id": "desktop-agent",
+     "label": "DESKTOP AGENT",
      "status": "idle",
-     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "statusLine": "idea",
-     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/mittens-tutor.html",
+     "why": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
+     "statusLine": "live",
+     "caption": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
+     "stage": "active",
+     "embed": "pages/desktop-agent.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "agent-phone",
+     "label": "ALWAYS-HOME ANDROID",
+     "status": "idle",
+     "why": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
+     "statusLine": "running",
+     "caption": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
+     "stage": "active",
+     "embed": "pages/agent-phone.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -628,18 +495,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "smart-glasses",
-     "label": "SMART GLASSES",
-     "status": "planned",
-     "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
-     "statusLine": "testing",
-     "caption": "Smart glasses as the eyes beside the pendant:",
-     "planned": true,
-     "embed": "pages/smart-glasses.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "omi",
      "label": "OMI",
      "status": "idle",
@@ -655,18 +510,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "glasses-mittens",
-     "label": "GLASSES + MITTENS",
-     "status": "idle",
-     "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
-     "statusLine": "testing",
-     "caption": "Mittens on the lens:",
-     "stage": "active",
-     "embed": "pages/glasses-mittens.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-speaker",
      "label": "SPEAKER + MIC",
      "status": "planned",
@@ -676,6 +519,19 @@
      "stage": "plan",
      "planned": true,
      "embed": "pages/mittens-speaker.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "guardian-angel",
+     "label": "GUARDIAN ANGEL",
+     "status": "idle",
+     "why": "Idea: a small flying pod that docks on glasses, a pendant or clothing and flies when pulled away -- a glass shell, eyes that turn, a light. It carries the camera, so Mittens knows where it points.",
+     "statusLine": "idea · research",
+     "caption": "Idea:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/guardian-angel.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -866,7 +722,7 @@
   },
   {
    "id": "mittens-hw",
-   "label": "MITTENS WATCH",
+   "label": "WATCH",
    "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · 3 a day",
@@ -874,7 +730,7 @@
    "stage": "active",
    "embed": "pages/mittens-hw.html",
    "visibility": "public",
-   "parent": "wearables",
+   "parent": "mittens",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -889,7 +745,7 @@
    "planned": true,
    "embed": "pages/actuation.html",
    "visibility": "public",
-   "parent": "mittens",
+   "parent": "soft-robot",
    "parked": false,
    "children": [
     {
@@ -1228,7 +1084,6 @@
      "embed": "pages/howto-mittens-desktop.html",
      "visibility": "public",
      "links": [
-      "mittens-desktop",
       "mittens-daily",
       "desktop-agent",
       "omi"
@@ -1323,7 +1178,6 @@
      "embed": "pages/howto-recording.html",
      "visibility": "public",
      "links": [
-      "meeting-notes",
       "glasses-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1540,6 +1394,130 @@
    "parent": "manual-map",
    "parked": false,
    "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "ns-talk",
+   "label": "TALK & CALLS",
+   "status": "idle",
+   "why": "Talk to the map out loud: it answers what is going on and starts agents on a go. When it hears how something should grow, the map changes too.",
+   "statusLine": "live",
+   "caption": "Talk to the map out loud:",
+   "embed": "pages/ns-talk.html",
+   "visibility": "public",
+   "links": [
+    "northstar"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "mw-calls",
+     "label": "CALLS AS MITTENS",
+     "status": "idle",
+     "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "statusLine": "installed",
+     "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "embed": "pages/mw-calls.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mw-blind",
+     "label": "CAN'T SEE -> ASK",
+     "status": "idle",
+     "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
+     "statusLine": "building",
+     "caption": "Glasses off or a useless frame:",
+     "embed": "pages/mw-blind.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "aurora",
+     "label": "AURORA",
+     "status": "idle",
+     "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
+     "statusLine": "next: the first voice file",
+     "caption": "A voice layer so an agent stops sounding like AI:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/aurora.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "omi"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "aurora-market",
+     "label": "WHO ELSE DOES THIS",
+     "status": "idle",
+     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
+     "statusLine": "research",
+     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/aurora-market.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "small-models",
+     "label": "SMALL LOCAL MODELS",
+     "status": "idle",
+     "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
+     "statusLine": "benchmarked",
+     "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/small-models.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-tutor",
+     "label": "MITTENS TEACHES",
+     "status": "idle",
+     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "statusLine": "idea",
+     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-tutor.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "smart-glasses",
+   "label": "GLASSES",
+   "status": "planned",
+   "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
+   "statusLine": "testing",
+   "caption": "Smart glasses as the eyes beside the pendant:",
+   "planned": true,
+   "embed": "pages/smart-glasses.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "glasses-mittens",
+     "label": "GLASSES + MITTENS",
+     "status": "idle",
+     "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
+     "statusLine": "testing",
+     "caption": "Mittens on the lens:",
+     "stage": "active",
+     "embed": "pages/glasses-mittens.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   }
  ],
