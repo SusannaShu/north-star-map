@@ -2219,6 +2219,10 @@ function openPanel(n, tab) {
     let html = "";
     if (d.asks && d.asks.length) html += `<div class="card"><h4>Needs you — ${d.asks.length} question${d.asks.length > 1 ? "s" : ""}</h4><ul>${d.asks.map(a => `<li class="hot"><b>${esc(a.title)}</b></li>`).join("")}</ul>\n      <div class="ask" style="cursor:pointer" onclick="openInbox('${target.id}')"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> Answer in the inbox</div></div>`;
     if (d.why) html += `<div class="card why"><h4>Why</h4><p>${d.why}</p></div>`;
+    if (d.ideas && d.ideas.length) html += `<div class="card"><h4>From Talk</h4><ul>${d.ideas.map(x => `<li><b>${esc(new Date(x.at).toLocaleDateString("en-US", {
+        month: "numeric",
+        day: "numeric"
+    }))}</b> ${esc(x.text)}</li>`).join("")}</ul></div>`;
     if (d.refs && d.refs.length) html += `<div class="card"><h4>Read</h4><ul>${d.refs.map(r => `<li><a href="${esc(macUrl(r.href))}" target="_blank" rel="noopener">${esc(r.label)}</a></li>`).join("")}</ul></div>`; else if (d.portfolio && d.portfolio.onPortfolio === false && target.id !== "portfolio") html += `<div class="card"><h4>Portfolio</h4><p>Not on the portfolio yet${d.portfolio.note ? ` — ${esc(d.portfolio.note)}` : ""}.</p></div>`;
     if (d.yesterday && d.yesterday.length) html += `<div class="card"><h4>${d.kind === "routine" ? "Runs today" : d.kind === "convo" ? "Last said" : "Yesterday"}</h4><ul>${d.yesterday.map(x => `<li>${x}</li>`).join("")}</ul></div>`;
     if (d.today && d.today.length || d.ask) html += `<div class="card"><h4>Today's goal</h4><ul>${(d.today || []).map(x => `<li class="${/you/i.test(x) ? "hot" : ""}">${x}</li>`).join("")}</ul>\n      ${d.ask ? `<div class="ask"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> ${d.ask}</div>` : ""}</div>`;
