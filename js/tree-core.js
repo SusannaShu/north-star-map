@@ -117,7 +117,7 @@
             const gid = groupId || "other";
             if (!segs[seg].has(gid)) segs[seg].set(gid, {
                 id: gid,
-                label: gid === "minute" ? "GOT A MINUTE" : gid === "asked" ? "YOU ASKED, NOT DONE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
+                label: gid === "minute" ? "GOT A MINUTE" : gid === "asked" ? "YOU ASKED, NOT DONE" : gid === "inbound" ? "FROM OUTSIDE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
                 items: [],
                 ...gid === "minute" ? {
                     minute: true
@@ -226,6 +226,21 @@
                 kind: "inbox",
                 inbox: p.id,
                 n: q.length
+            });
+        }
+        for (const t of map.triage || []) {
+            const when = t.at ? new Date(t.at).toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit",
+                timeZone: "America/New_York"
+            }).toLowerCase() : "";
+            add("needs", "inbound", {
+                name: clip(`${t.who} (${t.label})`, 48),
+                line: clip([ t.cls === "urgent" ? "URGENT" : "", t.wants, t.drafted ? "draft ready" : "", when ].filter(Boolean).join(" · "), 96),
+                open: X.e["comms-triage"] ? "comms-triage" : X.e.comms ? "comms" : null,
+                kind: "inbound",
+                urgent: t.cls === "urgent",
+                triageId: t.id
             });
         }
         for (const a of (map.asks || []).filter(a => a.status === "open" || a.status === "blocked")) {

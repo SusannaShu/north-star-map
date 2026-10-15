@@ -1774,14 +1774,17 @@ function youAreHere(n, t) {
 
 let userCam = 0;
 
-function loop() {
+function loop(t) {
+    requestAnimationFrame(loop);
+    const idle = !dragNode && Date.now() - lastActive > 2e4;
+    if (idle && t - lastFrame < 125) return;
+    lastFrame = t || 0;
     step();
     if (!dragNode && Date.now() - userCam > 6e4 && ++fitTick % 30 === 0) fitAll();
     draw();
-    requestAnimationFrame(loop);
 }
 
-let fitTick = 0;
+let fitTick = 0, lastFrame = -1e9;
 
 function toWorld(px, py) {
     return {
