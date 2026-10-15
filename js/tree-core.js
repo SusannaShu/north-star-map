@@ -117,7 +117,7 @@
             const gid = groupId || "other";
             if (!segs[seg].has(gid)) segs[seg].set(gid, {
                 id: gid,
-                label: gid === "minute" ? "GOT A MINUTE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
+                label: gid === "minute" ? "GOT A MINUTE" : gid === "asked" ? "YOU ASKED, NOT DONE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
                 items: [],
                 ...gid === "minute" ? {
                     minute: true
@@ -226,6 +226,20 @@
                 kind: "inbox",
                 inbox: p.id,
                 n: q.length
+            });
+        }
+        for (const a of (map.asks || []).filter(a => a.status === "open" || a.status === "blocked")) {
+            const when = new Date(a.at).toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit",
+                timeZone: "America/New_York"
+            }).toLowerCase();
+            add("needs", "asked", {
+                name: clip(a.text, 60),
+                line: clip(a.status === "blocked" ? `asked ${when} · blocked: ${a.why || "a worker could not do it"}` : `asked ${when} · nobody on it yet${a.raised ? " · Mittens raised it" : ""}`, 90),
+                open: "mittens",
+                kind: "asked",
+                askId: a.id
             });
         }
         const later = map.later || null;

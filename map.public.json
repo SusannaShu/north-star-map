@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-14T23:37:24.603Z",
+ "generatedAt": "2026-10-15T17:15:05.889Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1403,6 +1403,8 @@
    "why": "Talk to the map out loud: it answers what is going on and starts agents on a go. When it hears how something should grow, the map changes too.",
    "statusLine": "live",
    "caption": "Talk to the map out loud:",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/ns-talk.html",
    "visibility": "public",
    "links": [
