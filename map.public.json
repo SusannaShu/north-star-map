@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-16T01:36:49.525Z",
+ "generatedAt": "2026-10-16T23:15:10.789Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -224,7 +224,7 @@
     {
      "id": "publish",
      "label": "PUBLISH",
-     "status": "done",
+     "status": "idle",
      "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
      "statusLine": "paused",
      "caption": "Hourly, inside a safe window:",
@@ -1417,6 +1417,7 @@
      "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
      "statusLine": "installed",
      "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "stage": "active",
      "embed": "pages/mw-calls.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"

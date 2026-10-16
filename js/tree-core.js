@@ -530,6 +530,11 @@
                 continue;
             }
             const t = q.task && tById[q.task], ans = clip(q.answer || q.status, 40), told = `you said "${ans}" ${qWhen(q.answeredAt)}`;
+            const asker = /^T\d+$/.test(q.from || "") ? tById[q.from] || {
+                id: q.from,
+                status: "done"
+            } : null;
+            if (q.task && !t || !q.task && asker && !(asker.status === "running" || asker.status === "queued")) continue;
             if (t && (t.status === "running" || t.status === "queued")) add("working", g || "agents", {
                 ...base,
                 name: title,
@@ -854,8 +859,11 @@
         }
         for (const q of QS || []) {
             if (q.status === "open") continue;
-            const t = q.task && tById[q.task];
-            if (t ? t.status !== "done" : !(q.applied || q.status === "dismissed" || !(q.need || q.onYes))) continue;
+            const t = q.task && tById[q.task], asker = /^T\d+$/.test(q.from || "") && !q.task ? tById[q.from] || {
+                status: "done"
+            } : null;
+            const gone = q.task && !t || asker && !(asker.status === "running" || asker.status === "queued");
+            if (!gone && (t ? t.status !== "done" : !(q.applied || q.status === "dismissed" || !(q.need || q.onYes)))) continue;
             const at = t && t.endedAt || q.appliedAt || q.answeredAt;
             if (!(Date.parse(at) > now - WEEK)) continue;
             doneRows.push({
@@ -877,7 +885,7 @@
             if (m.qid && qIds.has(m.qid) || m.task && tById[m.task]) continue;
             const at = Date.parse(m.at || "");
             if (!(at > now - WEEK)) continue;
-            if (m.reply && at > now - 12 * 36e5) {
+            if (m.reply && at > now - 12 * 36e5 && !m.retired && !m.repliedAfter) {
                 add("needs", "minute", {
                     name: clip(m.text, 60),
                     line: `Mittens asked ${qWhen(m.at)} · reply in chat`,
