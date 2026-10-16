@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-15T17:15:05.889Z",
+ "generatedAt": "2026-10-16T01:36:49.525Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -406,8 +406,7 @@
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "being restored",
      "caption": "The assistant on the phone:",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/mittens-app.html",
      "visibility": "public",
      "embedCaption": "case study"
@@ -940,12 +939,11 @@
     {
      "id": "public-intro",
      "label": "PUBLIC INTRO",
-     "status": "planned",
+     "status": "idle",
      "why": "The landing story: grass, sky, the sun, back through a window to the desk, and down into the screen where the light becomes the North Star.",
      "statusLine": "built",
      "caption": "The landing story:",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "intro.html",
      "visibility": "public",
      "embedCaption": "the landing story"
@@ -1403,8 +1401,7 @@
    "why": "Talk to the map out loud: it answers what is going on and starts agents on a go. When it hears how something should grow, the map changes too.",
    "statusLine": "live",
    "caption": "Talk to the map out loud:",
-   "stage": "plan",
-   "planned": true,
+   "stage": "active",
    "embed": "pages/ns-talk.html",
    "visibility": "public",
    "links": [
@@ -1497,11 +1494,11 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "planned",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
-   "planned": true,
+   "stage": "active",
    "embed": "pages/smart-glasses.html",
    "visibility": "public",
    "parent": "mittens",

@@ -2482,27 +2482,28 @@ async function renderChrome() {
     if (mbtn) mbtn.setAttribute("aria-label", n ? `Menu, ${n} in the inbox` : "Menu");
 }
 
-function setAgentsInd(n, names, clickable) {
+function setAgentsInd(n, names, clickable, queued) {
     const box = document.getElementById("healthChips");
     if (!box) return;
-    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0);
+    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "");
     if (box.dataset.sig === sig) return;
     box.dataset.sig = sig;
     box.querySelectorAll(".agents-ind").forEach(el => el.remove());
-    if (!n) return;
+    if (!n && !queued) return;
     const el = document.createElement(clickable ? "button" : "div");
     el.className = "agents-ind";
     el.id = "agentsChip";
-    const label = `${n} agent${n === 1 ? "" : "s"} working`;
+    const label = `${n} agent${n === 1 ? "" : "s"} working` + (queued ? ` · ${queued}` : "");
     el.title = clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label;
     el.setAttribute("aria-label", clickable ? `${label}, show them` : label);
-    el.innerHTML = `<span class="pulse" aria-hidden="true"></span><b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}</span>${names ? `<span class="who">${esc(names)}</span>` : ""}`;
+    el.innerHTML = `<span class="pulse" aria-hidden="true"></span><b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>${names ? `<span class="who">${esc(names)}</span>` : ""}`;
     if (clickable) el.onclick = openAgentsPanel;
     box.appendChild(el);
 }
 
 function renderPublicChrome() {
-    const n = DATA.activity && DATA.activity.working || 0;
+    const a = DATA.activity || {}, n = a.working || 0, labels = (a.labels || []).join(", ");
+    const rest = [ a.queued ? `${a.queued} queued` : "", a.asleep ? `${a.asleep} asleep` : "" ].filter(Boolean).join(" · ");
     LIVE = {
         working: n,
         workers: Array.from({
@@ -2512,8 +2513,8 @@ function renderPublicChrome() {
             label: "agent"
         }))
     };
-    setAgentsInd(n, "", false);
-    DATA.ticker = [ `<b>north star</b> · ${PUBLIC_LINE}`, `<b>${n}</b> agent${n === 1 ? "" : "s"} working right now`, ...DATA.generatedAt ? [ `<b>map</b> · rebuilt ${ago(DATA.generatedAt).replace(/ — .*$/, "")}` ] : [] ];
+    setAgentsInd(n, labels, false, rest);
+    DATA.ticker = [ `<b>north star</b> · ${PUBLIC_LINE}`, `<b>${n}</b> working${rest ? " · " + rest : ""} right now${labels ? " · " + esc(labels) : ""}`, ...DATA.generatedAt ? [ `<b>map</b> · rebuilt ${ago(DATA.generatedAt).replace(/ — .*$/, "")}` ] : [] ];
     tick(DATA.ticker[0]);
     const lg = document.getElementById("legendGap");
     if (lg) lg.hidden = true;

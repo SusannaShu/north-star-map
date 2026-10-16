@@ -6,6 +6,12 @@
         s = strip(s);
         return s.length > n ? s.slice(0, n - 1).replace(/[\s,;:.-]+\S*$/, "") + "…" : s;
     };
+    const ago = at => {
+        const m = (Date.now() - Date.parse(at)) / 6e4;
+        if (!(m >= 0)) return "";
+        return m < 60 ? `${Math.max(1, Math.round(m))} min` : m < 36 * 60 ? `${Math.round(m / 60)} h` : `${Math.round(m / 1440)} d`;
+    };
+    const srcOfWhy = w => /gmail/i.test(w || "") ? "from Gmail" : /imessage/i.test(w || "") ? "from iMessage" : /whatsapp/i.test(w || "") ? "from WhatsApp" : /teams/i.test(w || "") ? "from Teams" : /linkedin/i.test(w || "") ? "from LinkedIn" : "from the sync";
     const nice = l => {
         const t = strip(l), u = t.replace(/ (HUB|MAP)$/i, "");
         return u.length > 4 ? u : t;
@@ -71,10 +77,17 @@
     }
     function split(text, n = 84) {
         const t = strip(text);
-        for (const sep of [ ": ", " — ", " – ", " - ", "; " ]) {
+        for (const sep of [ ": ", " -- ", " — ", " – ", " - ", "; " ]) {
             const i = t.indexOf(sep);
             if (i < 2 || i > (sep === ": " ? 60 : 50)) continue;
             const name = t.slice(0, i).replace(/\s*\([^)]*\)\s*/g, " ").trim(), line = t.slice(i + sep.length).trim();
+            if (sep === ": " && /^(review|read|pick|check|decide)$/i.test(name)) {
+                const r = split(line, n);
+                return {
+                    name: clip(`${name}: ${r.name}`, 60),
+                    line: r.line
+                };
+            }
             if (name && line && !/^(https?|\d+)$/i.test(name)) return {
                 name: clip(name, 48),
                 line: clip(line, n)
@@ -113,32 +126,66 @@
             if (seen[seg].has(key)) return;
             seen[seg].add(key);
             item.seq = seq++;
+            if (item.src && !item.meta) item.meta = item.src + (item.since && ago(item.since) ? " · " + ago(item.since) : "");
             if (seg === "needs" && item.urgent == null) item.urgent = true;
             const gid = groupId || "other";
             if (!segs[seg].has(gid)) segs[seg].set(gid, {
                 id: gid,
-                label: gid === "minute" ? "GOT A MINUTE" : gid === "asked" ? "YOU ASKED, NOT DONE" : gid === "inbound" ? "FROM OUTSIDE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
+                label: gid === "minute" ? "GOT A MINUTE" : gid === "review" ? "TO REVIEW" : gid === "asked" ? "YOU ASKED, NOT DONE" : gid === "inbound" ? "FROM OUTSIDE" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
                 items: [],
-                ...gid === "minute" ? {
+                ...gid === "minute" || gid === "review" ? {
                     minute: true
+                } : {},
+                ...gid === "review" ? {
+                    review: true
                 } : {}
             });
             segs[seg].get(gid).items.push(item);
         };
         const groupFor = (id, raw) => id && X.groupOf(id) || (raw ? String(raw).toLowerCase() : "other");
         const S = map.situation || {}, T = S.truth;
+        const liveTasks = new Set;
+        const tasks = Array.isArray(map.tasks) ? map.tasks : [], taskName = {};
+        const taskDot = {};
+        for (const t of tasks) {
+            taskName[t.id] = t.name;
+            if (t.dot) taskDot[t.id] = t.dot;
+        }
         for (const w of workers || []) {
-            let id = (map.workerAt || {})[w.id] || w.project || null;
+            let id = w.kind === "task" && taskDot[w.id] || (map.workerAt || {})[w.id] || w.project || null;
             if (id && !X.e[id] && X.e["r:" + w.id]) id = "r:" + w.id;
             if (!id && w.kind === "routine" && X.e["r:" + w.id]) id = "r:" + w.id;
             if (id && !X.e[id]) id = null;
             const mins = w.elapsedSeconds == null ? "" : w.elapsedSeconds < 90 ? `${Math.round(w.elapsedSeconds)}s` : `${Math.round(w.elapsedSeconds / 60)} min`;
+            if (w.kind === "task") liveTasks.add(w.id);
             add("working", groupFor(id, "agents"), {
-                name: clip(w.label || w.id || "agent", 48),
-                line: clip([ w.now || "working", mins ].filter(Boolean).join(" · "), 70),
+                name: clip(w.kind === "task" && taskName[w.id] || w.label || w.id || "agent", 48),
+                line: clip([ w.kind === "task" ? w.id : "", w.now || "working", mins ].filter(Boolean).join(" · "), 70),
                 open: id,
                 kind: "agent",
-                live: true
+                live: true,
+                taskId: w.kind === "task" ? w.id : undefined
+            });
+        }
+        const tAgo = t => {
+            const s = Date.parse(t.startedAt || t.at || "");
+            if (!(s > 0)) return "";
+            const m = (Date.now() - s) / 6e4;
+            return m < 90 ? `${Math.max(1, Math.round(m))} min` : `${Math.round(m / 60)} h`;
+        };
+        for (const t of tasks) {
+            if (liveTasks.has(t.id) || !(t.status === "running" || t.status === "queued")) continue;
+            const id = t.dot && X.e[t.dot] ? t.dot : null;
+            add("working", groupFor(id, "agents"), {
+                name: clip(t.name, 48),
+                line: clip(t.status === "queued" ? t.asleep ? `${t.id} · ${t.waiting}` : `${t.id} · queued · ${t.waiting || "next free slot"}` : `${t.id} · ${t.now || "working"} · ${tAgo(t)}`, 80),
+                open: id,
+                kind: "task",
+                taskId: t.id,
+                queued: t.status === "queued",
+                asleep: t.asleep || undefined,
+                src: "voice task",
+                since: t.at || null
             });
         }
         for (const x of Object.values(X.e)) {
@@ -165,6 +212,7 @@
             });
         }
         const people = (Array.isArray(map.people) ? map.people : []).filter(p => p && p.name);
+        const lastAt = p => (p.timeline || []).map(t => t && t.at).filter(Boolean).sort().pop() || null;
         const words = p => strip(p.name + " " + (p.org || "")).toLowerCase().split(/[^a-zÀ-ɏ]+/).filter(w => w.length > 3 && !/^(staff|labs?|team|university|the)$/.test(w));
         const progText = (T && T.inProgress || []).map(t => strip(t.text).toLowerCase());
         const due = p => p.nextDue || "9999";
@@ -175,7 +223,9 @@
                 name: p.name,
                 line: clip(p.line || "waiting on them", 64),
                 open: id,
-                kind: "person"
+                kind: "person",
+                src: "from people",
+                since: lastAt(p)
             });
         }
         const needsText = [];
@@ -191,7 +241,9 @@
                 ...s,
                 open: id,
                 kind: "need",
-                link: t.link || null
+                link: t.link || null,
+                src: t.pinned ? "pinned" : srcOfWhy(t.why),
+                since: t.since || null
             });
         }
         const named = p => words(p).some(w => needsText.some(t => t.includes(w)));
@@ -202,7 +254,9 @@
                 name: p.name,
                 line: clip(p.owes || p.line || (p.state === "check" ? "check the thread" : "your move"), 70),
                 open: id,
-                kind: "person"
+                kind: "person",
+                src: "from people",
+                since: lastAt(p)
             });
         }
         for (const x of Object.values(X.e)) {
@@ -225,7 +279,9 @@
                 open: p.id,
                 kind: "inbox",
                 inbox: p.id,
-                n: q.length
+                n: q.length,
+                src: q[0].from ? "asked by " + q[0].from : "inbox",
+                since: q[0].createdAt || null
             });
         }
         for (const t of map.triage || []) {
@@ -234,13 +290,28 @@
                 minute: "2-digit",
                 timeZone: "America/New_York"
             }).toLowerCase() : "";
+            if (t.status === "waiting") {
+                add("waiting", "inbound", {
+                    name: clip(`${t.who} (${t.label})`, 48),
+                    line: clip([ t.wants, t.waitingOn ].filter(Boolean).join(" · "), 96),
+                    open: X.e["comms-triage"] ? "comms-triage" : X.e.comms ? "comms" : null,
+                    kind: "inbound",
+                    triageId: t.id,
+                    status: "waiting",
+                    src: "from " + t.label,
+                    since: t.at || null
+                });
+                continue;
+            }
             add("needs", "inbound", {
                 name: clip(`${t.who} (${t.label})`, 48),
                 line: clip([ t.cls === "urgent" ? "URGENT" : "", t.wants, t.drafted ? "draft ready" : "", when ].filter(Boolean).join(" · "), 96),
                 open: X.e["comms-triage"] ? "comms-triage" : X.e.comms ? "comms" : null,
                 kind: "inbound",
                 urgent: t.cls === "urgent",
-                triageId: t.id
+                triageId: t.id,
+                src: "from " + t.label,
+                since: t.at || null
             });
         }
         for (const a of (map.asks || []).filter(a => a.status === "open" || a.status === "blocked")) {
@@ -254,12 +325,70 @@
                 line: clip(a.status === "blocked" ? `asked ${when} · blocked: ${a.why || "a worker could not do it"}` : `asked ${when} · nobody on it yet${a.raised ? " · Mittens raised it" : ""}`, 90),
                 open: "mittens",
                 kind: "asked",
-                askId: a.id
+                askId: a.id,
+                src: "asked in Talk",
+                since: a.at
+            });
+        }
+        for (const t of tasks.filter(t => t.status === "stopped")) {
+            add("needs", "asked", {
+                name: clip(t.name, 60),
+                line: clip(`${t.id} · stopped before it finished${t.result ? ": " + t.result : ""}`, 90),
+                open: t.dot && X.e[t.dot] ? t.dot : "mittens",
+                kind: "task",
+                taskId: t.id,
+                src: "voice task",
+                since: t.endedAt || t.at || null
+            });
+        }
+        for (const x of Object.values(X.e)) {
+            const n = x.node;
+            if (!n || !String(x.id).startsWith("r:") || n.status !== "needs-you" || X.parked(x.id)) continue;
+            const b = (n.blocked || []).map(strip).filter(Boolean);
+            add("needs", X.groupOf(x.id), {
+                name: nice(n.label),
+                line: clip(b.length ? b[0] + (b.length > 1 ? ` (+${b.length - 1} more)` : "") : n.statusLine || "the last run needs a look", 90),
+                open: x.id,
+                kind: "run",
+                src: "routine run",
+                since: n.run && n.run.endedAt ? new Date(n.run.endedAt).toISOString() : null
+            });
+        }
+        const runs = (Array.isArray(map.runs) ? map.runs : []).filter(r => !X.e["r:" + r.routine]);
+        for (const r of runs.filter(r => /^(blocked|failed|limit)$/.test(r.status))) {
+            add("needs", "routines", {
+                name: r.routine,
+                line: clip(`last run ${r.status}${r.blocked && r.blocked.length ? ": " + r.blocked[0] : r.note ? ": " + r.note : ""}`, 90),
+                open: null,
+                kind: "run",
+                src: "routine run",
+                since: r.at
             });
         }
         const later = map.later || null;
+        const dueWord = d => {
+            const t = Date.parse(d);
+            if (!(t > 0)) return "";
+            const o = {
+                timeZone: "America/New_York"
+            };
+            const day = new Date(t).toLocaleDateString("en-CA", o), today = (new Date).toLocaleDateString("en-CA", o), tmw = new Date(Date.now() + 864e5).toLocaleDateString("en-CA", o);
+            const hm = new Date(t).toLocaleTimeString("en-US", {
+                ...o,
+                hour: "numeric",
+                minute: "2-digit"
+            }).replace(":00", "").toLowerCase();
+            return "due " + (day === today ? "today" : day === tmw ? "tomorrow" : new Date(t).toLocaleDateString("en-US", {
+                ...o,
+                weekday: "short"
+            })) + " " + hm;
+        };
         for (const l of later && later.items || []) {
-            const s = split(l.text, 84);
+            const rv = l.review != null ? l.review : /^(review|read)\s*:/i.test(strip(l.text));
+            const s = l.title ? {
+                name: clip(l.title, 60),
+                line: clip(l.sub || "", 84)
+            } : split(rv ? strip(l.text).replace(/^(review|read)\s*:\s*/i, "") : l.text, 84);
             const act = l.action || {
                 kind: l.dot ? "dot" : "none",
                 target: l.dot || null,
@@ -271,9 +400,9 @@
                 phone: "on your phone",
                 anywhere: "anywhere"
             };
-            add("needs", "minute", {
+            add("needs", rv ? "review" : "minute", {
                 name: s.name,
-                line: [ `~${l.minutes} min`, WH[l.where] || l.where, l.fit === false ? "not here" : "", s.line ].filter(Boolean).join(" · "),
+                line: [ l.due ? dueWord(l.due) : "", `~${l.minutes} min`, WH[l.where] || l.where, l.fit === false ? "not here" : "", s.line ].filter(Boolean).join(" · "),
                 open: l.dot && X.e[l.dot] ? l.dot : null,
                 kind: "minute",
                 urgent: false,
@@ -282,7 +411,15 @@
                 fit: l.fit !== false,
                 act: act,
                 laterId: l.id,
-                why: l.why || ""
+                ...rv ? {
+                    review: true
+                } : {},
+                ...l.due ? {
+                    due: l.due
+                } : {},
+                why: l.why || "",
+                src: l.from === "calendar" ? "from calendar" : l.from === "at-home" ? "from the home list" : "added",
+                since: l.addedAt || null
             });
         }
         for (const x of Object.values(X.e)) {
@@ -297,12 +434,15 @@
                 kind: "wait"
             });
         }
+        const inReview = new Set((later && later.items || []).filter(l => l.dot && /^review\b/i.test(strip(l.text))).map(l => l.dot));
         for (const x of Object.values(X.e)) {
             const n = x.node;
             if (!n || X.parked(x.id)) continue;
+            if (String(x.id).startsWith("ww-")) continue;
             const plan = n.stage === "plan", planned = n.status === "planned";
             if (!plan && !planned) continue;
             if (n.status === "working" || n.status === "needs-you" || n.status === "done" || n.status === "waiting" || n.waitingOn) continue;
+            if (inReview.has(x.id)) continue;
             add("planned", X.groupOf(x.id), {
                 name: nice(n.label),
                 line: clip(n.statusLine || n.why || "", 70),
@@ -348,6 +488,64 @@
                     open: id,
                     kind: d.kind === "answered" ? "answered" : "closed",
                     at: d.at
+                }
+            });
+        }
+        for (const t of tasks.filter(t => t.status === "done")) {
+            const at = Date.parse(t.endedAt || "");
+            if (!(at > now - WEEK)) continue;
+            const id = t.dot && X.e[t.dot] ? t.dot : null;
+            doneRows.push({
+                g: groupFor(id, "agents"),
+                it: {
+                    name: clip(t.name, 48),
+                    line: clip(`${t.id} · finished ${dday(at)}${t.result ? " -- " + t.result : ""}`, 90),
+                    open: id,
+                    kind: "task",
+                    taskId: t.id,
+                    at: t.endedAt
+                }
+            });
+        }
+        for (const x of Object.values(X.e)) {
+            const n = x.node;
+            if (!n || !String(x.id).startsWith("r:") || n.status === "needs-you" || !n.run || !n.run.endedAt) continue;
+            const at = Number(n.run.endedAt) || Date.parse(n.run.endedAt);
+            if (!(at > now - WEEK)) continue;
+            doneRows.push({
+                g: X.groupOf(x.id),
+                it: {
+                    name: nice(n.label),
+                    line: clip(`ran ${n.run.status || "ok"} ${dday(at)}`, 70),
+                    open: x.id,
+                    kind: "run",
+                    at: new Date(at).toISOString()
+                }
+            });
+        }
+        for (const r of runs.filter(r => !/^(blocked|failed|limit)$/.test(r.status) && (r.n > 1 || /^ended/.test(r.status)))) {
+            doneRows.push({
+                g: "routines",
+                it: {
+                    name: r.routine,
+                    line: clip(`ran ${r.status} ${dday(Date.parse(r.at))}${r.note ? " -- " + r.note : ""}`, 90),
+                    open: null,
+                    kind: "run",
+                    at: r.at
+                }
+            });
+        }
+        const RM = map.triageRemoved;
+        if (RM && RM.week > 0) {
+            const top = (RM.recent || []).slice(0, 3).map(x => `${x.who} (${x.label})`).join(", ");
+            doneRows.push({
+                g: "inbound",
+                it: {
+                    name: `Removed unread: ${RM.week} this week`,
+                    line: clip(`scam / spam, never read${top ? " · " + top : ""}`, 90),
+                    open: X.e["comms-triage"] ? "comms-triage" : X.e.comms ? "comms" : null,
+                    kind: "removed",
+                    at: (RM.recent || [])[0]?.at || null
                 }
             });
         }
@@ -444,6 +642,7 @@
         spoken: spoken,
         openNow: openNow,
         split: split,
+        ago: ago,
         PROMOTE: [ ...PROMOTE ]
     };
 })(typeof globalThis !== "undefined" ? globalThis : window);
