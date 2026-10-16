@@ -2503,7 +2503,7 @@ function setAgentsInd(n, names, clickable, queued) {
 
 function renderPublicChrome() {
     const a = DATA.activity || {}, n = a.working || 0, labels = (a.labels || []).join(", ");
-    const rest = [ a.queued ? `${a.queued} queued` : "", a.asleep ? `${a.asleep} asleep` : "" ].filter(Boolean).join(" · ");
+    const rest = [ a.waiting ?? a.asleep ? `${a.waiting ?? a.asleep} waiting` : "", a.queued ? `${a.queued} queued` : "" ].filter(Boolean).join(" · ");
     LIVE = {
         working: n,
         workers: Array.from({
