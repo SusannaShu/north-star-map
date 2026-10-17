@@ -15,7 +15,9 @@
     try { const r = await fetch(URL + '?m=' + Math.floor(Date.now() / 60000), { cache: 'no-store' });
       if (r.ok) { const j = await r.json(); last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)), planned: (j.planned || []).filter(x => ID.test(x)),
         count: n99(j.count), queued: n99(j.queued), asleep: n99(j.asleep),
-        labels: (Array.isArray(j.labels) ? j.labels : []).filter(x => typeof x === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(x)).slice(0, 8) }; } } catch {}
+        labels: (Array.isArray(j.labels) ? j.labels : []).filter(x => typeof x === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(x)).slice(0, 8),
+        // OUT OF USAGE (T590): a flag and the reset time in words, nothing else
+        paused: j.paused && typeof j.paused === 'object' ? { until: typeof j.paused.until === 'string' && /^[A-Za-z0-9 :]{1,32}$/.test(j.paused.until) ? j.paused.until : null } : null }; } } catch {}
     return last;
   }
   window.nsLive = async function (map) {
@@ -31,7 +33,7 @@
     // QUEUED (2026-10-15 9:19 pm, her yes): the same "N working · M queued" as her private map, plus the
     // public area labels the relay lets out ("Mittens", "Robot Skin") -- counts and labels only.
     map.activity = { working: fresh && a.count != null ? Math.max(a.count, n) : n, queued: fresh ? a.queued || 0 : 0, asleep: fresh ? a.asleep || 0 : 0,
-      labels: fresh ? a.labels || [] : [], at };
+      labels: fresh ? a.labels || [] : [], paused: fresh ? a.paused || null : null, at };
     return map;
   };
 })();

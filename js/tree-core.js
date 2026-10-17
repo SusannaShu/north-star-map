@@ -301,7 +301,10 @@
         }
         const qTask = new Set((Array.isArray(map.questions) ? map.questions : []).map(q => q.task).filter(Boolean));
         for (const w of workers || []) {
-            if (w.kind === "task" && qTask.has(w.id)) continue;
+            if (w.kind === "task" && qTask.has(w.id)) {
+                liveTasks.add(w.id);
+                continue;
+            }
             let id = w.kind === "task" && taskDot[w.id] || (map.workerAt || {})[w.id] || w.project || null;
             if (id && !X.e[id] && X.e["r:" + w.id]) id = "r:" + w.id;
             if (!id && w.kind === "routine" && X.e["r:" + w.id]) id = "r:" + w.id;
@@ -543,7 +546,8 @@
                 status: t.status === "queued" ? "queued" : "working",
                 taskId: t.id,
                 queued: t.status === "queued",
-                since: q.answeredAt
+                since: q.answeredAt,
+                live: liveTasks.has(t.id) || undefined
             }); else if (t && t.status === "stopped") add("needs", "asked", {
                 ...base,
                 name: title,

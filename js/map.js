@@ -2515,6 +2515,7 @@ function renderPublicChrome() {
     };
     setAgentsInd(n, labels, false, rest);
     DATA.ticker = [ `<b>north star</b> · ${PUBLIC_LINE}`, `<b>${n}</b> working${rest ? " · " + rest : ""} right now${labels ? " · " + esc(labels) : ""}`, ...DATA.generatedAt ? [ `<b>map</b> · rebuilt ${ago(DATA.generatedAt).replace(/ — .*$/, "")}` ] : [] ];
+    if (a.paused) DATA.ticker.unshift(`<b>out of usage</b>${a.paused.until ? " until " + esc(a.paused.until) : ""} · most agents paused, requests wait in the queue`);
     tick(DATA.ticker[0]);
     const lg = document.getElementById("legendGap");
     if (lg) lg.hidden = true;
