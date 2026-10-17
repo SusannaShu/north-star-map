@@ -404,7 +404,8 @@
             add("working", groupFor(id, t.project), {
                 ...s,
                 open: id,
-                kind: "progress"
+                kind: "progress",
+                since: t.since || null
             });
         }
         const people = (Array.isArray(map.people) ? map.people : []).filter(p => p && p.name);
