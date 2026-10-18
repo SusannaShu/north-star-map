@@ -11,7 +11,9 @@
 // pop-up. Tips table: window.DIAGRAM_TIPS and/or <script type="application/json" id="diagram-tips">,
 // { "<scope>" | "*": { "<label text>": {t: title, d: plain words, part: key} | "part:<key>" | "" } }
 // ("" = leave that label alone). Any element can also carry data-tip="words" [data-tip-title]
-// [data-part] by hand. Diagrams drawn later are picked up on their own (MutationObserver).
+// [data-part] by hand, or a <title> child (a shape's own <title> becomes its tip). Diagrams drawn later are
+// picked up on their own (MutationObserver). Pages with no parts load /js/tips.js instead (same helper,
+// no part-name scan of the prose). loop/style-check.mjs flags a diagram (an <svg> with 3+ labels) with no tips.
 (function(){
   'use strict';
   const me = document.currentScript;
@@ -26,7 +28,7 @@
 .dpk{cursor:help}
 .dpk:hover,.dpk:focus,.dpk.dpon{opacity:.62;outline:none}
 text.dpk{text-decoration:underline dotted;text-underline-offset:2px}
-.ppc{position:fixed;z-index:9999;width:min(340px,92vw);max-height:86vh;overflow:auto;background:var(--bg,#fff);color:var(--ink,#000);border:1px solid var(--line2,#d6d6d6);border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.28);font:13px/1.4 Inter,-apple-system,sans-serif}
+.ppc{position:fixed;z-index:9999;width:min(340px,92vw);max-height:86vh;overflow:auto;background:var(--bg,#fff);color:var(--text,var(--ink,#000));border:1px solid var(--border,var(--line2,#d6d6d6));border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.28);font:13px/1.4 Inter,-apple-system,sans-serif}
 .ppc .m{width:100%;height:190px;object-fit:contain;background:#fff;display:block;border-radius:12px 12px 0 0}
 .ppc .b{padding:10px 12px 12px}
 .ppc h4{margin:0 0 6px;font-size:15px;padding-right:30px}
@@ -143,6 +145,14 @@ text.dpk{text-decoration:underline dotted;text-underline-offset:2px}
       for (const o of shapes) if (cx >= o.r.left && cx <= o.r.right && cy >= o.r.top && cy <= o.r.bottom && (!best || o.r.width * o.r.height < best.r.width * best.r.height)) best = o;
       if (best && !best.s.hasAttribute('data-part') && !best.s.hasAttribute('data-tip')) apply(best.s, e, lbl, false);
     }
+    // a shape or group with its own <title> child: that title is its tip (and no second, native tooltip)
+    for (const ti of svg.querySelectorAll('title')) {
+      const el = ti.parentElement; if (!el || el === svg || el.closest('[data-tip],[data-part]')) continue;
+      const words = ti.textContent.replace(/\s+/g, ' ').trim(); if (!words) continue;
+      const cut = words.match(/^([^:.]{1,40}):\s+(.+)$/);
+      el.dataset.tip = cut ? cut[2] : words; el.dataset.tipTitle = cut ? cut[1] : (el.querySelector('text') || {}).textContent || 'What this is';
+      ti.remove();
+    }
     svg.querySelectorAll('[data-part],[data-tip]').forEach(el => { if (!el.classList.contains('dpk')) focusable(el); });
   }
   function diagrams(root){
@@ -179,7 +189,7 @@ text.dpk{text-decoration:underline dotted;text-underline-offset:2px}
     if (!me || me.dataset.auto !== 'off') scan(document.querySelector('main') || document.body);
     ready.splice(0).forEach(f => f());
     diagrams();
-  }).catch(() => {});
+  }).catch(() => { P = {}; RX = /$^/g; window.partsPop.parts = P; ready.splice(0).forEach(f => f()); diagrams(); });   // no parts.json: tips still work
   const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
   window.partsPop = { scan, show, showEl, hide, html, diagrams };
 })();
