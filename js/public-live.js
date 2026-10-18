@@ -8,14 +8,20 @@
   const URL = 'https://susannas-mac-mini.tailc633d2.ts.net:8443/activity';
   const ID = /^[a-z0-9][a-z0-9-]{0,47}$/;
   const n99 = v => Number.isInteger(v) && v >= 0 && v < 100 ? v : null;
+  // the only titles a worker row may carry (same list as loop/public-snapshot/worker-titles.mjs)
+  const TITLES = ['Building a feature', 'Fixing a bug', 'Research', 'Planning', 'Design', 'Writing', 'Admin', 'Maintenance', 'Testing', 'Routine check', 'Working on a task'];
+  const STATUSES = ['working', 'waiting', 'queued'];
   let last = null, lastAt = 0;
   async function activity() {
     if (Date.now() - lastAt < 60000) return last;
     lastAt = Date.now();
     try { const r = await fetch(URL + '?m=' + Math.floor(Date.now() / 60000), { cache: 'no-store' });
       if (r.ok) { const j = await r.json(); last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)), planned: (j.planned || []).filter(x => ID.test(x)),
-        count: n99(j.count), queued: n99(j.queued), asleep: n99(j.asleep),
+        count: n99(j.count), queued: n99(j.queued), waiting: n99(j.waiting), asleep: n99(j.asleep),
         labels: (Array.isArray(j.labels) ? j.labels : []).filter(x => typeof x === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(x)).slice(0, 8),
+        // WORKERS (T710): one fixed public title, a public area label and working / waiting / queued -- nothing else
+        workers: (Array.isArray(j.workers) ? j.workers : []).filter(w => w && TITLES.includes(w.title) && STATUSES.includes(w.status)
+          && typeof w.area === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(w.area)).slice(0, 30).map(w => ({ title: w.title, area: w.area, status: w.status })),
         // OUT OF USAGE (T590): a flag and the reset time in words, nothing else
         paused: j.paused && typeof j.paused === 'object' ? { until: typeof j.paused.until === 'string' && /^[A-Za-z0-9 :]{1,32}$/.test(j.paused.until) ? j.paused.until : null } : null }; } } catch {}
     return last;
@@ -32,7 +38,7 @@
     const n = Object.keys(at).length;
     // QUEUED (2026-10-15 9:19 pm, her yes): the same "N working · M queued" as her private map, plus the
     // public area labels the relay lets out ("Mittens", "Robot Skin") -- counts and labels only.
-    map.activity = { working: fresh && a.count != null ? Math.max(a.count, n) : n, queued: fresh ? a.queued || 0 : 0, asleep: fresh ? a.asleep || 0 : 0,
+    map.activity = { working: fresh && a.count != null ? Math.max(a.count, n) : n, queued: fresh ? a.queued || 0 : 0, waiting: fresh ? (a.waiting ?? a.asleep) || 0 : 0, asleep: fresh ? a.asleep || 0 : 0, workers: fresh ? a.workers : [],
       labels: fresh ? a.labels || [] : [], paused: fresh ? a.paused || null : null, at };
     return map;
   };

@@ -2497,7 +2497,7 @@ function setAgentsInd(n, names, clickable, queued) {
     el.title = clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label;
     el.setAttribute("aria-label", clickable ? `${label}, show them` : label);
     el.innerHTML = `<span class="pulse" aria-hidden="true"></span><b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>${names ? `<span class="who">${esc(names)}</span>` : ""}`;
-    if (clickable) el.onclick = openAgentsPanel;
+    if (clickable) el.onclick = PUBLIC ? openPublicAgentsPanel : openAgentsPanel;
     box.appendChild(el);
 }
 
@@ -2513,7 +2513,9 @@ function renderPublicChrome() {
             label: "agent"
         }))
     };
-    setAgentsInd(n, labels, false, rest);
+    const pw = a.workers || [];
+    setAgentsInd(n, labels, pw.length > 0, rest);
+    if (panelNode && panelNode.id === "__agents" && panel.classList.contains("open")) openPublicAgentsPanel();
     DATA.ticker = [ `<b>north star</b> · ${PUBLIC_LINE}`, `<b>${n}</b> working${rest ? " · " + rest : ""} right now${labels ? " · " + esc(labels) : ""}`, ...DATA.generatedAt ? [ `<b>map</b> · rebuilt ${ago(DATA.generatedAt).replace(/ — .*$/, "")}` ] : [] ];
     if (a.paused) DATA.ticker.unshift(`<b>out of usage</b>${a.paused.until ? " until " + esc(a.paused.until) : ""} · most agents paused, requests wait in the queue`);
     tick(DATA.ticker[0]);
@@ -2544,6 +2546,31 @@ function openAgentsPanel() {
 }
 
 window.openAgentsPanel = openAgentsPanel;
+
+function openPublicAgentsPanel() {
+    const a = DATA.activity || {}, w = a.workers || [];
+    panelNode = {
+        id: "__agents",
+        parent: "northstar"
+    };
+    panel.classList.remove("wide", "mini");
+    panel.classList.add("open");
+    document.getElementById("pTabs").style.display = "none";
+    syncPanelW();
+    document.getElementById("pTitle").textContent = "Agents";
+    const n = s => w.filter(x => x.status === s).length;
+    document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${[ `${n("working")} working`, n("waiting") ? `${n("waiting")} waiting` : "", n("queued") ? `${n("queued")} queued` : "" ].filter(Boolean).join(" · ")}</span>`;
+    const word = {
+        working: "working now",
+        waiting: "waiting on something",
+        queued: "queued for a free worker"
+    };
+    const group = s => {
+        const rows = w.filter(x => x.status === s);
+        return rows.length ? `<div class="agent-kind" style="margin:14px 0 6px">${esc(s.toUpperCase())}</div>` + rows.map(x => `\n    <div class="agent-row"><div class="agent-top"><b>${esc(x.title)}</b><span class="agent-kind">${esc(x.area)}</span></div>\n      <div class="agent-now">${esc(word[s])}</div></div>`).join("") : "";
+    };
+    document.getElementById("pBody").innerHTML = w.length ? [ "working", "waiting", "queued" ].map(group).join("") + '<div class="agent-empty" style="margin-top:14px">Titles are kinds of work only; private projects stay private.</div>' : '<div class="agent-empty">Nothing is running right now.</div>';
+}
 
 window.jumpToWorker = wid => {
     const at = agentsAt();

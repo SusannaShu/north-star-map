@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-18T01:34:46.215Z",
+ "generatedAt": "2026-10-18T12:47:12.411Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -322,12 +322,11 @@
     {
      "id": "mittens-vision",
      "label": "THE NEW OPENCLAW",
-     "status": "idle",
+     "status": "done",
      "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
      "statusLine": "vision",
      "caption": "Mittens and North Star as one agent for a whole life and work:",
-     "stage": "plan",
-     "planned": true,
+     "stage": "done",
      "embed": "pages/mittens-vision.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -511,7 +510,7 @@
     {
      "id": "mittens-speaker",
      "label": "SPEAKER + MIC",
-     "status": "planned",
+     "status": "idle",
      "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
      "statusLine": "idea",
      "caption": "Mittens with a speaker and a microphone:",
@@ -737,11 +736,10 @@
   {
    "id": "actuation",
    "label": "ACTUATION",
-   "status": "planned",
+   "status": "idle",
    "why": "How the soft body moves. Warm Skin v1 breathes with a pump; v2 replaces it with electrofluidic fibre muscles -- silent, no external pump.",
    "statusLine": "v1 pump · v2 fibres",
    "caption": "How the soft body moves.",
-   "planned": true,
    "embed": "pages/actuation.html",
    "visibility": "public",
    "parent": "soft-robot",
@@ -750,7 +748,7 @@
     {
      "id": "electrofluidic",
      "label": "ELECTROFLUIDIC MUSCLE",
-     "status": "planned",
+     "status": "idle",
      "why": "Electrofluidic fibre muscles (Science Robotics, 2026): 2 mm fibres driven by solid-state pumps in a sealed loop. Planned for skin v2.",
      "statusLine": "planned for v2",
      "caption": "Electrofluidic fibre muscles (Science Robotics, 2026):",
@@ -778,11 +776,10 @@
     {
      "id": "wet-lab",
      "label": "WET LAB",
-     "status": "planned",
+     "status": "idle",
      "why": "Where cells can be grown: cleanrooms open to startups at published rates; cell culture needs a sponsor or a commercial wet lab.",
      "statusLine": "researching access",
      "caption": "Where cells can be grown:",
-     "planned": true,
      "embed": "pages/wet-lab.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -862,7 +859,7 @@
     {
      "id": "shooting-star",
      "label": "SHOOTING STAR",
-     "status": "planned",
+     "status": "idle",
      "why": "The star comes out of the desk screen: the map you see is live.",
      "statusLine": "planned · being animated",
      "caption": "The star comes out of the desk screen:",
@@ -1453,12 +1450,11 @@
     {
      "id": "aurora-market",
      "label": "WHO ELSE DOES THIS",
-     "status": "idle",
+     "status": "done",
      "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
      "statusLine": "research",
      "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
-     "stage": "plan",
-     "planned": true,
+     "stage": "done",
      "embed": "pages/aurora-market.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1466,12 +1462,11 @@
     {
      "id": "small-models",
      "label": "SMALL LOCAL MODELS",
-     "status": "idle",
+     "status": "done",
      "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
      "statusLine": "benchmarked",
      "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "stage": "plan",
-     "planned": true,
+     "stage": "done",
      "embed": "pages/small-models.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"

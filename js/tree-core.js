@@ -539,6 +539,20 @@
                 status: "done"
             } : null;
             if (q.task && !t || !q.task && asker && !(asker.status === "running" || asker.status === "queued")) continue;
+            if (t && t.status === "queued" && (t.waitingOn || t.asleep)) {
+                add("waiting", "agents-waiting", {
+                    ...base,
+                    name: title,
+                    line: clip(`${told} · ${t.id} · ${String(t.waiting || "waiting").split(" -- ")[0]}`, 96),
+                    kind: "question",
+                    status: "waiting",
+                    taskId: t.id,
+                    waitingOn: true,
+                    asleep: t.asleep || undefined,
+                    since: q.answeredAt
+                });
+                continue;
+            }
             if (t && (t.status === "running" || t.status === "queued")) add("working", g || "agents", {
                 ...base,
                 name: title,
