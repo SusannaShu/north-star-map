@@ -66,13 +66,60 @@
             const hit = Object.values(e).find(n => n.label && (n.label.toLowerCase() === k || nice(n.label).toLowerCase() === k));
             return hit ? hit.id : null;
         };
+        const STOPW = new Set([ "the", "and", "for", "with", "your", "from", "into", "of", "to", "a", "an", "in", "on", "my", "her" ]);
+        const ltoks = l => strip(l).toLowerCase().replace(/[^a-z0-9]+/g, " ").split(" ").filter(w => w && !STOPW.has(w) && (w.length > 2 || /\d/.test(w)));
+        const cand = Object.values(e).filter(x => x.node && !String(x.id).startsWith("r:") && !parked(x.id) && !/^(person|place|community)$/.test(x.node.kind || "") && !chain(x.id).some(c => /(^|-)people$/.test(c.id)) && !/^ww-/.test(x.id) && x.node.stage !== "done" && x.node.status !== "done").map(x => ({
+            x: x,
+            t: [ ...new Set(ltoks(x.label)) ],
+            depth: chain(x.id).length
+        }));
+        const ldf = new Map;
+        for (const c of cand) for (const w of c.t) ldf.set(w, (ldf.get(w) || 0) + 1);
+        const rareW = w => (ldf.get(w) || 0) <= 3;
+        const said = (seq, t) => {
+            for (let i = 0; i + t.length <= seq.length; i++) if (t.every((w, j) => seq[i + j] === w)) return true;
+            return false;
+        };
+        const specific = (text, fallback, link) => {
+            const seq = ltoks(text), have = new Set(seq);
+            let best = null;
+            for (const c of cand) {
+                const linked = link && c.x.node.embed && String(link).includes(c.x.node.embed);
+                if (!linked && (!c.t.length || c.depth < 2 || !said(seq, ltoks(c.x.label)) || !c.t.some(rareW))) continue;
+                const s = (linked ? 100 : 0) + c.t.length * 10 + c.depth;
+                if (!best || s > best.s) best = {
+                    ...c,
+                    s: s
+                };
+            }
+            if (!best) return {
+                id: fallback,
+                also: []
+            };
+            const fd = fallback && e[fallback] ? chain(fallback).length : 0;
+            if (fallback && !under(best.x.id, fallback) && fd > 1) return {
+                id: fallback,
+                also: []
+            };
+            if (fallback === best.x.id || fallback && under(fallback, best.x.id)) return {
+                id: fallback,
+                also: []
+            };
+            const rare = best.t.filter(rareW);
+            const also = cand.filter(c => c.x.id !== best.x.id && c.x.up === best.x.up && c.t.some(w => rare.includes(w) && have.has(w))).map(c => c.x.id).slice(0, 2);
+            return {
+                id: best.x.id,
+                also: also
+            };
+        };
         return {
             hub: hub,
             e: e,
             groupOf: groupOf,
             parked: parked,
             under: under,
-            find: find
+            find: find,
+            specific: specific
         };
     }
     const skey = s => strip(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 40);
@@ -371,8 +418,14 @@
             const d = X.find(s.name);
             return d && d !== X.hub ? d : id;
         };
+        const pin = (text, id, link) => {
+            const r = X.specific(strip(text), id, link);
+            return [ r.id, r.also.length ? {
+                also: r.also
+            } : {} ];
+        };
         for (const t of T && T.inProgress || []) {
-            const s = split(t.text), id = named1(s, X.find(t.project)), who = isSubject(SUBJ, s.name, s.line);
+            const s = split(t.text), [id, also] = pin(t.text, named1(split(t.text), X.find(t.project))), who = isSubject(SUBJ, s.name, s.line);
             {
                 const why = notAction(t.text, {
                     now: NOW,
@@ -404,6 +457,7 @@
             add("working", groupFor(id, t.project), {
                 ...s,
                 open: id,
+                ...also,
                 kind: "progress",
                 since: t.since || null
             });
@@ -433,7 +487,7 @@
         for (const t of truthNeeds) {
             if (!t || t.project === "inbox" || t.id === "inbox") continue;
             let s = split(t.text);
-            const id = named1(s, X.find(t.project || t.id)), who = isSubject(SUBJ, s.name, "");
+            const [id, also] = pin(t.text, named1(s, X.find(t.project || t.id)), t.link), who = isSubject(SUBJ, s.name, "");
             needsText.push(strip(t.text).toLowerCase());
             const why = notAction(t.text, {
                 now: NOW,
@@ -456,6 +510,7 @@
             add("needs", groupFor(id, t.project), {
                 ...s,
                 open: id,
+                ...also,
                 kind: "need",
                 link: t.link || null,
                 src: t.pinned ? "pinned" : srcOfWhy(t.why),
@@ -716,10 +771,11 @@
                 name: clip(l.title, 60),
                 line: clip(l.sub || "", 84)
             } : split(rv ? strip(l.text).replace(/^(review|read)\s*:\s*/i, "") : l.text, 84);
+            const [ldot, lalso] = l.dot && X.e[l.dot] ? pin(`${l.title || ""} ${l.text || ""}`, l.dot) : [ null, {} ];
             const act = l.action || {
-                kind: l.dot ? "dot" : "none",
-                target: l.dot || null,
-                label: l.dot ? "Open the dot" : "Mark done"
+                kind: ldot ? "dot" : "none",
+                target: ldot,
+                label: ldot ? "Open the dot" : "Mark done"
             };
             const WH = {
                 home: "at home",
@@ -730,7 +786,8 @@
             add("needs", rv ? "review" : "minute", {
                 name: s.name,
                 line: [ l.due ? dueWord(l.due) : "", `~${l.minutes} min`, WH[l.where] || l.where, l.fit === false ? "not here" : "", s.line ].filter(Boolean).join(" · "),
-                open: l.dot && X.e[l.dot] ? l.dot : null,
+                open: ldot,
+                ...lalso,
                 kind: "minute",
                 urgent: false,
                 minutes: l.minutes,
