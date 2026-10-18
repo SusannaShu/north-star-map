@@ -754,6 +754,7 @@
             if (!n || X.parked(x.id)) continue;
             if (!(n.waitingOn || n.status === "waiting") || n.status === "working" || n.status === "needs-you") continue;
             if (n.kind === "ptype") continue;
+            if (n.supersededBy) continue;
             add("waiting", X.groupOf(x.id), {
                 name: nice(n.label),
                 line: clip(n.waitingOn ? "waiting on " + n.waitingOn : n.statusLine || "waiting on someone else", 70),
@@ -766,6 +767,7 @@
             const n = x.node;
             if (!n || X.parked(x.id)) continue;
             if (String(x.id).startsWith("ww-")) continue;
+            if (n.supersededBy) continue;
             const plan = n.stage === "plan", planned = n.status === "planned";
             if (!plan && !planned) continue;
             if (n.status === "working" || n.status === "needs-you" || n.status === "done" || n.status === "waiting" || n.waitingOn) continue;
