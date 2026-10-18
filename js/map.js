@@ -2965,19 +2965,26 @@ function liveConnect() {
     const base = liveBase();
     if (window.EventSource && !(CLOUD && !base) && !PUBLIC) {
         try {
-            const es = new EventSource(base + "/api/map/events");
-            es.onopen = () => {
-                esLive = true;
+            const h = {
+                onopen: () => {
+                    esLive = true;
+                },
+                onmessage: d => {
+                    esLive = true;
+                    try {
+                        onVersion(JSON.parse(d));
+                    } catch {}
+                },
+                onerror: () => {
+                    esLive = false;
+                }
             };
-            es.onmessage = e => {
-                esLive = true;
-                try {
-                    onVersion(JSON.parse(e.data));
-                } catch {}
-            };
-            es.onerror = () => {
-                esLive = false;
-            };
+            if (window.nsStream) window.nsStream(base + "/api/map/events", h); else {
+                const es = new EventSource(base + "/api/map/events");
+                es.onopen = h.onopen;
+                es.onmessage = e => h.onmessage(e.data);
+                es.onerror = h.onerror;
+            }
         } catch {}
     }
     let last = Date.now();
