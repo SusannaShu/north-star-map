@@ -67,7 +67,15 @@ text.dpk{text-decoration:underline dotted;text-underline-offset:2px}
     const r = el.getBoundingClientRect(), W = Math.min(340, innerWidth * .92);
     let x = Math.min(Math.max(8, r.left), innerWidth - W - 8), y = r.bottom + 6;
     card.style.left = x + 'px'; card.style.top = y + 'px'; card.style.display = 'block';
-    const h = card.offsetHeight; if (y + h > innerHeight - 8) card.style.top = Math.max(8, r.top - h - 6) + 'px';
+    const h = card.offsetHeight;
+    // in a diagram: open beside the diagram, never over its other labels (A's card must not hide B)
+    const svg = el.closest && el.closest('svg[data-pop]'), sr = svg && svg.getBoundingClientRect();
+    const yy = Math.min(Math.max(8, r.top - 8), innerHeight - h - 8);
+    if (sr && innerWidth - sr.right >= W + 20) { card.style.left = (sr.right + 12) + 'px'; card.style.top = yy + 'px'; return; }
+    if (sr && sr.left >= W + 20) { card.style.left = (sr.left - W - 12) + 'px'; card.style.top = yy + 'px'; return; }
+    if (sr && sr.bottom + h + 8 <= innerHeight) { card.style.top = (sr.bottom + 6) + 'px'; return; }
+    if (sr && sr.top - h - 6 >= 8) { card.style.top = (sr.top - h - 6) + 'px'; return; }
+    if (y + h > innerHeight - 8) card.style.top = Math.max(8, r.top - h - 6) + 'px';
   }
   function show(k, el, pin, here){ if (!P || !P[k]) return; place(el, html(k, here), k, pin); }
   // an element with data-tip and/or data-part
