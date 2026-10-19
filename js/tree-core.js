@@ -836,6 +836,20 @@
                 kind: plan ? "plan" : "planned"
             });
         }
+        for (const d of map.ideaPlans || []) {
+            const at = X.e[d.dot] ? d.dot : null;
+            add("planned", at ? X.groupOf(at) : "mittens", {
+                name: clip(d.title, 60),
+                line: d.card ? "a pick waits on its card" : "planned, not started",
+                src: "your idea",
+                open: at,
+                kind: "idea",
+                said: "idea:" + d.id,
+                ideaId: d.id,
+                thread: d.thread || null,
+                since: d.at
+            });
+        }
         const WEEK = 7 * 864e5, now = Date.now();
         const dday = at => {
             const d = new Date(at);
