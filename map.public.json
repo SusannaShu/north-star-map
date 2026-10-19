@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-19T14:52:46.534Z",
+ "generatedAt": "2026-10-19T15:20:57.512Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -393,6 +393,7 @@
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
+   "stage": "active",
    "embed": "pages/mittens-digital.html",
    "visibility": "public",
    "parent": "mittens",
