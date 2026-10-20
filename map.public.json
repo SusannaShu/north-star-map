@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-20T01:26:58.358Z",
+ "generatedAt": "2026-10-20T01:33:08.134Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -213,7 +213,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -224,7 +224,7 @@
     {
      "id": "publish",
      "label": "PUBLISH",
-     "status": "done",
+     "status": "working",
      "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
      "statusLine": "paused",
      "caption": "Hourly, inside a safe window:",
@@ -474,7 +474,24 @@
    ],
    "parent": "mittens",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "content-cleanup",
+     "label": "CONTENT CLEAN-UP",
+     "status": "idle",
+     "why": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
+     "statusLine": "proposal drafted",
+     "caption": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/content-cleanup.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1126,7 +1143,8 @@
      "visibility": "public",
      "links": [
       "night-shift",
-      "action-tree"
+      "action-tree",
+      "research-watch"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1822,7 +1840,23 @@
    ],
    "parent": "context-graph",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "agent-swap",
+     "label": "AGENT SWAP",
+     "status": "idle",
+     "why": "The map and my assistant's memory are the real context, so any AI agent can plug in. When one runs out or goes down, the work moves to another automatically.",
+     "statusLine": "router built · tested",
+     "caption": "The map and my assistant's memory are the real context, so any AI agent can plug in.",
+     "stage": "active",
+     "embed": "pages/agent-swap.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -2106,12 +2140,103 @@
    "visibility": "public",
    "links": [
     "daily-content",
+    "research-watch",
     "mittens-hw",
     "morning-brief",
     "what-changed",
     "action-tree"
    ],
    "parent": "mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "research-watch",
+   "label": "RESEARCH WATCH",
+   "status": "idle",
+   "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
+   "statusLine": "live · every day",
+   "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
+   "stage": "active",
+   "embed": "pages/research-watch.html",
+   "visibility": "public",
+   "links": [
+    "night-shift",
+    "soft-robot",
+    "robot-skin",
+    "muscle-papers",
+    "mittens",
+    "actuation",
+    "three-actuators",
+    "electrofluidic",
+    "skin-build",
+    "skin-materials",
+    "lab-access",
+    "bench-or-cleanroom",
+    "wet-lab",
+    "biohybrid-muscle",
+    "muscle-recipe",
+    "skin-research",
+    "cuddle-bot-paper",
+    "cuddle-vision",
+    "mittens-speaker",
+    "lab-partnerships",
+    "path",
+    "context-graph",
+    "mittens-architecture",
+    "mittens-vision",
+    "northstar",
+    "nightly-reflection",
+    "mittens-knows",
+    "mittens-proactive",
+    "proactive-rules",
+    "mittens-daily",
+    "need-her-once",
+    "action-tree",
+    "morning-brief",
+    "mittens-hw",
+    "go-anywhere",
+    "mittens-digital",
+    "agent-phone",
+    "phone-control",
+    "mittens-desktop",
+    "desktop-agent",
+    "window-tiling",
+    "smart-glasses",
+    "glasses-mittens",
+    "wearables",
+    "meeting-notes",
+    "mw-blind",
+    "mittens-tutor",
+    "pendant",
+    "omi",
+    "neural-band-cursor",
+    "aurora",
+    "aurora-market",
+    "small-models",
+    "ns-talk",
+    "mw-call-voice",
+    "mittens-barge-in",
+    "mw-calls",
+    "mittens-app",
+    "fit-data",
+    "susu-closet",
+    "sheyou",
+    "fashion",
+    "designers",
+    "viral-machine",
+    "daily-content",
+    "marketing",
+    "agentic-marketing",
+    "marketing-analytics",
+    "influencers",
+    "outreach",
+    "susu-map",
+    "portfolio",
+    "guardian-angel"
+   ],
+   "parent": "night-shift",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -2146,6 +2271,7 @@
    "embed": "pages/watch-picks.html",
    "visibility": "public",
    "links": [
+    "research-watch",
     "local-watch",
     "soft-robot",
     "smart-glasses",
