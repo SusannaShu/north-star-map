@@ -1093,7 +1093,8 @@
                 minutes: i.minutes || null,
                 open: i.open || null,
                 act: i.act || null,
-                laterId: i.laterId || null
+                laterId: i.laterId || null,
+                review: !!i.review
             })),
             counts: {
                 urgent: urgent.length,
