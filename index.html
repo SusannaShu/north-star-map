@@ -12,6 +12,7 @@
 <meta name="apple-mobile-web-app-title" content="North Star">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#FFFFFF">
+<script>if(/[?&]mini=1(&|$)/.test(location.search))document.documentElement.classList.add("mini")</script>
 <script>document.documentElement.classList.add("public");(function(){const f=window.fetch.bind(window);window.fetch=(u,o)=>/^(\/|\.\/)?(api|north-star)\//.test(String(u&&u.url||u))?Promise.resolve(new Response('{"ok":false,"error":"static snapshot"}',{status:404,headers:{"Content-Type":"application/json"}})):f(u,o);window.EventSource=function(){return{close(){},addEventListener(){}}}})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -386,6 +387,9 @@ body.saver .saver-clock { opacity:1; }
 .saver-clock .sub.sit-open .sit-full { display:block; }
 .saver-clock .sit-wake { font-family:var(--mono); font-size:11px; color:var(--text-dim); margin-top:8px; }
 
+/* ── ?mini=1 (2026-10-20): only the canvas -- the map ringed on one dot, framed inside a dot page ── */
+html.mini body > :not(canvas#map) { display:none !important; }
+html.mini, html.mini body { overflow:hidden; background:transparent; }
 /* ── Public view (?public=1, 2026-10-10): only public nodes; no questions, no CEO, no Talk ── */
 html.public #inboxBtn, html.public #reviewBtn, html.public #syncBtn, html.public #talkBtn, html.public #pubBtn,
 html.public .askbar, html.public .panel-chat, html.public #legendNeeds, html.public #pTabs, html.public .voice { display:none !important; }

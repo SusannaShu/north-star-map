@@ -89,14 +89,16 @@ window.MAC_BASE = CLOUD ? String(window.NS_TTS_BASE || "").replace(/\/+$/, "") :
 
 window.macUrl = u => CLOUD && window.MAC_BASE && /^\/(?!\/)/.test(String(u || "")) ? window.MAC_BASE + u : u;
 
-if (CLOUD && !window.MAC_BASE) api("/api/status").then(r => r.json()).then(j => {
+const macKnown = CLOUD && !window.MAC_BASE ? api("/api/status").then(r => r.json()).then(j => {
     const d = j && j.voice && j.voice.direct;
     if (d) window.MAC_BASE = String(d).replace(/\/+$/, "");
-}).catch(() => {});
+}).catch(() => {}) : Promise.resolve();
 
 const QS = new URLSearchParams(location.search);
 
 const PUBLIC = true, _qsPublic = QS.get("public") === "1", EMBED = QS.get("embed") === "1", PREVIEW = QS.get("preview") === "1";
+
+const MINI = QS.get("mini") === "1";
 
 window.NS_PUBLIC = PUBLIC;
 
@@ -222,7 +224,7 @@ const isOverlay = n => n.type === "intent" || n.type === "agent";
 
 const vaOf = n => n.va == null ? 1 : n.va;
 
-let ROOT = null, LEAF = null, PENDING_LEAF = null, HUBKIDS = [];
+let ROOT = null, LEAF = null, PENDING_LEAF = null, PENDING_RING = null, HUBKIDS = [];
 
 let LEAFMAP = false;
 
@@ -330,6 +332,14 @@ function resolveOpen(id) {
         ROOT = null;
         return;
     }
+    if (MINI) {
+        const rootOf = x => x && x !== FULL.hub && canRoot(x) ? x : null, kids = x => Object.values(FULL.e).filter(k => k.up === x).length;
+        let r = rootOf(e.up);
+        if (r && kids(r) < 5 && rootOf(FULL.e[r].up)) r = FULL.e[r].up;
+        ROOT = r;
+        PENDING_RING = id;
+        return;
+    }
     if (canRoot(id)) {
         ROOT = id;
         return;
@@ -375,6 +385,7 @@ window.nsSetRoot = setRoot;
 
 function clickDot(n) {
     if (!n) return;
+    if (MINI) return miniGo(n.id);
     if (isOverlay(n)) return openPanel(n);
     if (n.type === "hub") return toggleDrawer(n);
     if (n.type === "project" && ((n.kids || []).length || (n.subs || []).length)) return setRoot(n.id);
@@ -399,6 +410,21 @@ function openDot(id) {
 }
 
 window.nsOpen = openDot;
+
+function miniGo(id) {
+    for (let w = window.parent, i = 0; w && w !== window && i < 3; w = w.parent, i++) {
+        try {
+            if (w.nsOpen) return w.nsOpen(id);
+        } catch {
+            break;
+        }
+        if (w === w.parent) break;
+    }
+    const q = new URLSearchParams(location.search);
+    q.delete("mini");
+    q.set("open", id);
+    window.open(location.pathname + "?" + q.toString(), "_blank", "noopener");
+}
 
 function leafHasPage(id, opts) {
     if (opts && opts.noGraph) return true;
@@ -743,6 +769,13 @@ function buildGraph(full) {
             if (byId[id]) openLeaf(byId[id]);
         }, 400);
     }
+    if (PENDING_RING && byId[PENDING_RING]) {
+        LEAF = PENDING_RING;
+        LEAFMAP = true;
+        panelNode = byId[LEAF];
+        PENDING_RING = null;
+        fitAll();
+    }
 }
 
 const weightOf = n => n.type === "project" ? n._w : n.minor ? MINOR_W : 1;
@@ -1027,8 +1060,9 @@ function placeLabels(forced, home) {
 }
 
 async function loadData() {
+    if (CLOUD) await Promise.race([ macKnown, new Promise(r => setTimeout(r, 3e3)) ]);
     try {
-        const d = await fetchMapData();
+        const d = await (CLOUD ? fetchLive() : fetchMapData());
         if (d) DATA = d;
     } catch {}
     await Promise.race([ fetchHere(), new Promise(r => setTimeout(r, 1500)) ]);
@@ -1090,6 +1124,14 @@ function setGravity() {
 }
 
 function avail() {
+    if (MINI) return {
+        top: 10,
+        bot: 10,
+        side: 8,
+        rx: 0,
+        w: Math.max(50, W - 16),
+        h: Math.max(50, H - 20)
+    };
     const bar = document.getElementById("topbar"), tk = document.getElementById("ticker");
     const clock = document.querySelector(".saver-clock .sub"), cap = document.getElementById("stillCap");
     let top = saver ? (clock ? clock.getBoundingClientRect().bottom : 90) + 16 : (bar ? bar.offsetHeight : 60) + 8;
@@ -1951,6 +1993,7 @@ canvas.addEventListener("pointerleave", e => {
 });
 
 canvas.addEventListener("wheel", e => {
+    if (MINI && !e.ctrlKey) return;
     e.preventDefault();
     const p = pointer(e), f = e.ctrlKey ? Math.exp(-e.deltaY * .01) : e.deltaY < 0 ? 1.1 : .9;
     zoomAt(p.x, p.y, cam.k * f);
@@ -2819,7 +2862,8 @@ async function fetchLive() {
     if (CLOUD && window.MAC_BASE && !PUBLIC) {
         try {
             const r = await fetch(window.MAC_BASE + "/api/map", {
-                cache: "no-store"
+                cache: "no-store",
+                signal: AbortSignal.timeout ? AbortSignal.timeout(5e3) : undefined
             });
             if (r.ok) return r.json();
         } catch {}
