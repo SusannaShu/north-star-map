@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-20T14:57:05.329Z",
+ "generatedAt": "2026-10-20T15:21:15.979Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1237,7 +1237,7 @@
     {
      "id": "ns-desk",
      "label": "NORTH STAR DESK",
-     "status": "done",
+     "status": "idle",
      "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
      "statusLine": "done",
      "caption": "A native desktop app that tiles the open pages in one window:",
