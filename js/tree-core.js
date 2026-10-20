@@ -160,14 +160,19 @@
     const EVENTISH = /^(?:(?:go|going|head|heading)\s+(?:to|out|in\s*to|into|over|back to)\b|(?:attend|attending|join|joining)\s+(?:the|a|an|her|his|their)\b|(?:probably|maybe)\s+(?:skip|skipping|go|going|meet|meeting|see)\b)/i;
     const PERSONAL = /\b(friends?|hang|free (over|this|next|on)|when (you are|you're|she is) free|catch up|text (him|her|them) back|reply to (his|her|their) messages|asked (if|when) you|see you|visit|family|mom|dad|sister|brother)\b/i;
     const URGENT = /\b(urgent|asap|emergency|today|tonight|right now)\b/i;
-    function dueToday(text, {now: now, due: due} = {}) {
+    function dueToday(text, {now: now, due: due, since: since} = {}) {
         const t = strip(text), d = new Date(now == null ? Date.now() : now);
-        if (URGENT.test(t)) return true;
         const md = d.toLocaleDateString("en-US", {
             timeZone: "America/New_York",
             month: "numeric",
             day: "numeric"
         });
+        const said = since ? new Date(since).toLocaleDateString("en-US", {
+            timeZone: "America/New_York",
+            month: "numeric",
+            day: "numeric"
+        }) : md;
+        if (said === md && URGENT.test(t)) return true;
         if (new RegExp("\\b(?:by|due|on|until|before|mon|tue|wed|thu|fri|sat|sun)\\w*,?\\s+" + md.replace("/", "\\/") + "(?![\\d/])", "i").test(t)) return true;
         const ms = due ? Date.parse(due) : NaN;
         return ms > 0 && ms - d.getTime() < 24 * 36e5;
@@ -475,7 +480,8 @@
             item.seq = seq++;
             if (item.src && !item.meta) item.meta = item.src + (item.since && ago(item.since) ? " · " + ago(item.since) : "");
             if (seg === "needs" && item.urgent == null) item.urgent = !AGENT_KINDS.has(item.kind) && dueToday(`${item.name} ${item.line || ""}`, {
-                due: item.due
+                due: item.due,
+                since: item.since
             });
             const gid = groupId || "other";
             if (!segs[seg].has(gid)) segs[seg].set(gid, {
@@ -748,7 +754,9 @@
                     line: snoozed ? `later -- back at ${qWhen(q.later)}${what ? " · " + what : ""}` : what,
                     kind: "question",
                     status: "open",
-                    urgent: !snoozed && dueToday(`${title} ${what}`),
+                    urgent: !snoozed && dueToday(`${title} ${what}`, {
+                        since: q.createdAt
+                    }),
                     later: q.later || undefined
                 });
                 continue;
@@ -1252,18 +1260,18 @@
         const say = i => `${i.name}${i.line ? " -- " + clip(i.line, 60) : ""} (${title(i.group)})`;
         const parts = [];
         const live = items(W).filter(i => i.live), moving = items(W).filter(i => !i.live), waiting = items(Wt).filter(i => i.kind === "person"), waitDots = items(Wt).filter(i => i.kind !== "person");
-        parts.push(live.length ? `${live.length} agent${live.length === 1 ? "" : "s"} running now: ${live.slice(0, 2).map(i => i.name).join(", ")}.` : "No agents running right now.");
-        if (moving.length) parts.push(`In motion: ${moving.slice(0, top).map(say).join("; ")}${moving.length > top ? `; and ${moving.length - top} more` : ""}.`);
-        if (waitDots.length) parts.push(`Waiting on others: ${waitDots.slice(0, 3).map(i => `${i.name.charAt(0) + i.name.slice(1).toLowerCase()} -- ${i.line}`).join("; ")}.`);
-        if (waiting.length) parts.push(`Waiting on ${waiting.length} ${waiting.length === 1 ? "person" : "people"} to reply (${waiting.slice(0, 3).map(i => i.name).join(", ")}${waiting.length > 3 ? ", ..." : ""}).`);
         const need = items(N).filter(i => i.kind !== "inbox" && i.urgent), inbox = items(N).filter(i => i.kind === "inbox"), minute = items(N).filter(i => !i.urgent && (i.kind === "minute" || i.kind === "said"));
         const later = items(N).filter(i => !i.urgent && !AGENT_KINDS.has(i.kind) && i.kind !== "minute");
         if (need.length) parts.push(`${need.length} need${need.length === 1 ? "s" : ""} you. Top: ${need.slice(0, top).map(say).join("; ")}.`);
         if (later.length) parts.push(`${later.length} more need you, not today.`);
+        parts.push(live.length ? `${live.length} agent${live.length === 1 ? "" : "s"} running now: ${live.slice(0, 2).map(i => i.name).join(", ")}.` : "No agents running right now.");
+        if (moving.length) parts.push(`In motion: ${moving.slice(0, top).map(say).join("; ")}${moving.length > top ? `; and ${moving.length - top} more` : ""}.`);
         if (minute.length) parts.push(`${minute.length} can wait for a spare minute (about ${minute.reduce((s, i) => s + (i.minutes || 0), 0)} min in all)${minute[0].fit ? `, quickest fit now: ${minute[0].name} (~${minute[0].minutes} min)` : ""}.`);
         const q = inbox.reduce((s, i) => s + (i.n || 0), 0);
         if (q) parts.push(`${q} questions in the inbox, most in ${title(inbox.slice().sort((a, b) => b.n - a.n)[0].group)}.`);
         if (Pl.count) parts.push(`${Pl.count} planned and not acted on, the biggest pile in ${title(Pl.groups[0].label)} (${Pl.groups[0].items.length}).`);
+        if (waitDots.length) parts.push(`Waiting on others: ${waitDots.slice(0, 3).map(i => `${i.name.charAt(0) + i.name.slice(1).toLowerCase()} -- ${i.line}`).join("; ")}.`);
+        if (waiting.length) parts.push(`Waiting on ${waiting.length} ${waiting.length === 1 ? "person" : "people"} to reply (${waiting.slice(0, 3).map(i => i.name).join(", ")}${waiting.length > 3 ? ", ..." : ""}).`);
         const D = by("done"), day = d => new Date(d).toLocaleDateString("en-CA");
         const today = D ? items(D).filter(i => i.at && day(i.at) === day(Date.now())) : [];
         if (today.length) parts.push(`Done today: ${today.slice(0, top).map(i => i.name.charAt(0) + i.name.slice(1).toLowerCase()).join(", ")}${today.length > top ? `, and ${today.length - top} more` : ""}.`);
