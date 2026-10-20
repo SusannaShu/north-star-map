@@ -295,6 +295,160 @@
             line: ""
         };
     }
+    const AGENT_DOTS = new Set([ "comms-fresh" ]);
+    const PARKED_WISH = /\b(first salary|after (?:my |her |the )?(?:first )?(?:paycheck|salary)|considering buying|nothing bought|parked idea)\b/i;
+    const canon = s => strip(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/h/g, "").replace(/[^a-z0-9]+/g, " ").trim();
+    function fold(segs, {SUBJ: SUBJ, X: X, held: held, QS: QS = []}) {
+        const qBody = new Map(QS.map(q => [ q.id, q.body || "" ]));
+        const ORDER = [ "needs", "waiting", "planned" ], rows = [];
+        for (const seg of ORDER) for (const g of segs[seg].values()) for (const it of g.items) rows.push({
+            seg: seg,
+            g: g,
+            it: it
+        });
+        const persons = [];
+        for (const [, v] of SUBJ) if (v.kind === "person") {
+            const c = canon(v.name);
+            if (c.length >= 4 && !/^(mom|dad|team|staff|susanna|susu)( |$)/.test(c)) persons.push({
+                c: c,
+                re: new RegExp("(^| )" + c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "( |$)"),
+                full: c.split(" ").length
+            });
+        }
+        for (const x of Object.values(X.e)) {
+            if (!x.node || !x.up || !/(^|-)people$/.test(x.up) && !/-p-/.test(x.id)) continue;
+            const c = canon(strip(x.label).replace(/\s*\(.*$/, "")).split(" ")[0];
+            if (c && c.length >= 4 && !persons.some(p => p.c === c)) persons.push({
+                c: c,
+                re: new RegExp("(^| )" + c + "( |$)"),
+                full: 1
+            });
+        }
+        const whoOf = it => it.kind === "inbound" ? strip(it.name).replace(/^Reply to /, "").replace(/\s*\(.*$/, "") : null;
+        for (const r of rows) {
+            const w = whoOf(r.it);
+            const c = w && canon(w);
+            if (c && c.length >= 4 && c.includes(" ") && !persons.some(p => p.c === c)) persons.push({
+                c: c,
+                re: new RegExp("(^| )" + c.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "( |$)"),
+                full: c.split(" ").length
+            });
+        }
+        persons.sort((a, b) => b.full - a.full || b.c.length - a.c.length);
+        const firstPerson = text => {
+            const t = " " + canon(text) + " ";
+            let best = null, at = Infinity;
+            for (const p of persons) {
+                const m = p.re.exec(t);
+                if (m && (m.index < at || m.index === at && p.full > 1 && best && !best.full)) {
+                    at = m.index;
+                    best = {
+                        first: p.c.split(" ")[0],
+                        full: p.full > 1 ? p.c : null
+                    };
+                }
+            }
+            return best;
+        };
+        const openQ = new Set(rows.filter(r => r.it.qid && r.it.status === "open").map(r => r.it.qid));
+        const batchOf = new Map, firstListed = new Map;
+        for (const r of rows) if (r.it.qid && /^still open\?/i.test(r.it.name || "")) {
+            const body = String(qBody.get(r.it.qid) || r.it.line || "");
+            for (const m of body.matchAll(/(?:^|\s)\d+\.\s+([^.(]{8,60})/g)) {
+                const b = canon(m[1]).slice(0, 24);
+                batchOf.set(b, r.it.qid);
+                if (!firstListed.has(r.it.qid)) firstListed.set(r.it.qid, b);
+            }
+        }
+        const labels = rows.filter(r => r.it.kind === "wait" || r.it.kind === "plan" || r.it.kind === "planned" || r.it.kind === "dot").map(r => ({
+            r: r,
+            l: strip(r.it.name)
+        })).filter(x => x.l.length >= 6 && x.l === x.l.toUpperCase());
+        const keysOf = r => {
+            const it = r.it, k = [], text = `${it.name || ""} ${it.line || ""}`;
+            if (it.taskId || it.live || it.kind === "task" || it.kind === "agent") return k;
+            if (it.qid) k.push("q:" + it.qid);
+            for (const m of text.matchAll(/\b(Q\d{3,5})\b/g)) if (openQ.has(m[1])) k.push("q:" + m[1]);
+            if (it.kind === "idea" && it.line === "a pick waits on its card" && it.card) k.push("q:" + it.card);
+            if (it.kind === "wait" && /^waiting on /.test(it.line || "")) k.push("w:" + canon(it.line.replace(/^waiting on /, "")).slice(0, 40));
+            if (it.kind === "wait") for (const x of labels) if (x.r !== r && (it.line || "").includes(x.l)) k.push("d:" + x.l);
+            if (labels.some(x => x.r === r)) k.push("d:" + strip(it.name));
+            const subj = it.subject || whoOf(it);
+            const who = subj ? {
+                first: canon(subj).split(" ")[0],
+                full: canon(subj).includes(" ") ? canon(subj) : null
+            } : firstPerson(text);
+            if (who) {
+                if (who.full) k.push("p:" + who.full);
+                k.push("p:" + who.first + "|" + r.g.id);
+                if (it.kind === "person" || subj || it.kind === "wait" && canon(it.name).startsWith(who.first)) k.push("pf:" + who.first);
+            }
+            if (it.qid && it.src && /^asked by /.test(it.src) && it.since) k.push("b:" + it.src + "|" + (it.open || "") + "|" + Math.floor(Date.parse(it.since) / 9e5));
+            const c = canon(it.name).slice(0, 24);
+            for (const [b, q] of batchOf) if (c && (c.startsWith(b) || b.startsWith(c)) && firstListed.get(q) === b) k.push("q:" + q);
+            return k;
+        };
+        const par = rows.map((_, i) => i), find = i => {
+            while (par[i] !== i) i = par[i] = par[par[i]];
+            return i;
+        };
+        const owner = new Map;
+        rows.forEach((r, i) => {
+            for (const key of keysOf(r)) {
+                if (owner.has(key)) par[find(i)] = find(owner.get(key)); else owner.set(key, i);
+            }
+        });
+        const wordsOf = r => new Set(canon(`${r.it.name || ""} ${r.it.line || ""}`).split(" ").filter(w => w.length >= 6));
+        const W = rows.map(wordsOf), df = new Map;
+        for (const ws of W) for (const w of ws) df.set(w, (df.get(w) || 0) + 1);
+        rows.forEach((a, i) => {
+            if (!(a.it.kind === "need" || a.it.kind === "wait")) return;
+            rows.forEach((b, j) => {
+                if (b.it.kind !== "question" || b.it.status !== "open") return;
+                let n = 0;
+                for (const w of W[i]) if (df.get(w) <= 3 && W[j].has(w)) n++;
+                if (n >= 2) par[find(i)] = find(j);
+            });
+        });
+        const groups = new Map;
+        rows.forEach((r, i) => {
+            const g = find(i);
+            if (!groups.has(g)) groups.set(g, []);
+            groups.get(g).push(r);
+        });
+        const t = r => Date.parse(r.it.since || "") || Infinity;
+        for (const members of groups.values()) {
+            if (members.length < 2) continue;
+            members.sort((a, b) => ORDER.indexOf(a.seg) - ORDER.indexOf(b.seg) || !!b.it.options - !!a.it.options || (b.it.status === "open") - (a.it.status === "open") || t(a) - t(b));
+            const head = members[0], rest = members.slice(1);
+            head.it.merged = rest.map(r => ({
+                name: r.it.name,
+                line: r.it.line,
+                kind: r.it.kind,
+                qid: r.it.qid,
+                triageId: r.it.triageId,
+                askId: r.it.askId,
+                laterId: r.it.laterId,
+                ideaId: r.it.ideaId,
+                open: r.it.open,
+                since: r.it.since,
+                seg: r.seg
+            }));
+            const oldest = members.reduce((a, b) => t(b) < t(a) ? b : a);
+            if (oldest.it.since && t(oldest) < t(head)) head.it.firstSince = oldest.it.since;
+            head.it.line = clip(`${head.it.line || ""}${head.it.line ? " · " : ""}+${rest.length} on this`, 110);
+            for (const r of rest) {
+                r.g.items.splice(r.g.items.indexOf(r.it), 1);
+                held.push({
+                    name: strip(r.it.name),
+                    why: "merged",
+                    into: head.it.name,
+                    src: r.it.src || r.it.kind
+                });
+            }
+        }
+        for (const seg of ORDER) for (const [id, g] of [ ...segs[seg] ]) if (!g.items.length) segs[seg].delete(id);
+    }
     function build({map: map, workers: workers, now: NOW} = {}) {
         map = map || {};
         const X = index(map), P = map.projects || [], SUBJ = subjects(map), held = [];
@@ -467,8 +621,18 @@
         const words = p => strip(p.name + " " + (p.org || "")).toLowerCase().split(/[^a-zÀ-ɏ]+/).filter(w => w.length > 3 && !/^(staff|labs?|team|university|the)$/.test(w));
         const progText = (T && T.inProgress || []).map(t => strip(t.text).toLowerCase());
         const due = p => p.nextDue || "9999";
-        for (const p of people.filter(p => p.state === "them").sort((a, b) => due(a).localeCompare(due(b)))) {
+        for (const p of people.filter(p => p.state === "them" || !p.state && p.project === "community").sort((a, b) => due(a).localeCompare(due(b)))) {
             if (words(p).some(w => progText.some(t => t.includes(w)))) continue;
+            if (p.project === "community" || !p.state) {
+                held.push({
+                    name: p.name,
+                    line: strip(p.line || ""),
+                    why: "personal",
+                    src: "people",
+                    who: p.name
+                });
+                continue;
+            }
             const id = X.find(p.project);
             add("waiting", groupFor(id, p.project), {
                 name: p.name,
@@ -548,6 +712,7 @@
             const n = x.node;
             if (!n || n.status !== "needs-you" || X.parked(x.id) || String(x.id).startsWith("r:")) continue;
             if (x.child ? !(n.kind === "channel" || n.ask || n.statusLine) : !n.ask) continue;
+            if (AGENT_DOTS.has(x.id)) continue;
             add("needs", X.groupOf(x.id), {
                 name: nice(n.label),
                 line: clip(n.ask || n.statusLine || "needs a look", 70),
@@ -812,6 +977,16 @@
             if (!(n.waitingOn || n.status === "waiting") || n.status === "working" || n.status === "needs-you") continue;
             if (n.kind === "ptype") continue;
             if (n.supersededBy) continue;
+            if (PARKED_WISH.test(n.waitingOn || "")) {
+                held.push({
+                    name: nice(n.label),
+                    line: strip(n.waitingOn),
+                    why: "parked",
+                    src: "dot",
+                    open: x.id
+                });
+                continue;
+            }
             add("waiting", X.groupOf(x.id), {
                 name: nice(n.label),
                 line: clip(n.waitingOn ? "waiting on " + n.waitingOn : n.statusLine || "waiting on someone else", 70),
@@ -838,12 +1013,27 @@
         }
         for (const d of map.ideaPlans || []) {
             const at = X.e[d.dot] ? d.dot : null;
+            {
+                const why = PARKED_WISH.test(d.title) ? "parked" : notAction(d.title, {
+                    now: NOW
+                });
+                if (why) {
+                    held.push({
+                        name: d.title,
+                        why: why,
+                        src: "idea",
+                        ideaId: d.id
+                    });
+                    continue;
+                }
+            }
             add("planned", at ? X.groupOf(at) : "mittens", {
                 name: clip(d.title, 60),
                 line: d.card ? "a pick waits on its card" : "planned, not started",
                 src: "your idea",
                 open: at,
                 kind: "idea",
+                card: d.card || undefined,
                 said: "idea:" + d.id,
                 ideaId: d.id,
                 thread: d.thread || null,
@@ -1011,6 +1201,12 @@
             });
         }
         doneRows.sort((a, b) => String(b.it.at).localeCompare(String(a.it.at))).forEach(r => add("done", r.g, r.it));
+        fold(segs, {
+            SUBJ: SUBJ,
+            X: X,
+            held: held,
+            QS: Array.isArray(map.questions) ? map.questions : []
+        });
         const first = g => Math.min(...g.items.map(i => i.seq));
         const seg = (id, label) => {
             const groups = [ ...segs[id].values() ].sort(id === "planned" ? (a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label) : (a, b) => !!a.minute - !!b.minute || (a.id === "queued") - (b.id === "queued") || first(a) - first(b));

@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-20T16:36:59.280Z",
+ "generatedAt": "2026-10-20T17:25:22.963Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -677,7 +677,7 @@
     {
      "id": "mittens-speaker",
      "label": "SPEAKER + MIC",
-     "status": "idle",
+     "status": "planned",
      "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
      "statusLine": "idea",
      "caption": "Mittens with a speaker and a microphone:",
@@ -1058,7 +1058,7 @@
     {
      "id": "shooting-star",
      "label": "SHOOTING STAR",
-     "status": "idle",
+     "status": "planned",
      "why": "The star comes out of the desk screen: the map you see is live.",
      "statusLine": "planned · being animated",
      "caption": "The star comes out of the desk screen:",
