@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-20T01:12:47.842Z",
+ "generatedAt": "2026-10-20T01:26:58.358Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -270,10 +270,9 @@
      "label": "VIRAL MACHINE",
      "status": "idle",
      "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
-     "statusLine": "plan · two-week pilot",
+     "statusLine": "research done · 75 videos read · demos made",
      "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/viral-machine.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -324,11 +323,27 @@
      "label": "THE NEW OPENCLAW",
      "status": "done",
      "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
-     "statusLine": "vision",
+     "statusLine": "vision · 8 pillars mapped",
      "caption": "Mittens and North Star as one agent for a whole life and work:",
      "stage": "done",
      "embed": "pages/mittens-vision.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-workstation",
+     "label": "MITTENS WORKSTATION",
+     "status": "done",
+     "why": "A narrow Mittens column beside the map on the desktop: today, chat, workers and the action tree at a glance.",
+     "statusLine": "done",
+     "caption": "A narrow Mittens column beside the map on the desktop:",
+     "stage": "done",
+     "embed": "pages/mittens-workstation.html",
+     "visibility": "public",
+     "links": [
+      "mittens-desktop",
+      "action-tree"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -369,11 +384,23 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "mittens-proactive",
+     "label": "MITTENS SPEAKS FIRST",
+     "status": "idle",
+     "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
+     "statusLine": "live",
+     "caption": "Mittens may speak first:",
+     "stage": "active",
+     "embed": "pages/mittens-proactive.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "go-anywhere",
      "label": "GO ANYWHERE",
      "status": "idle",
      "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
-     "statusLine": "built",
+     "statusLine": "live · bike-share arrival flow",
      "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
      "stage": "active",
      "embed": "pages/go-anywhere.html",
@@ -382,8 +409,72 @@
       "glasses-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "outing-thread",
+     "label": "OUTING THREAD",
+     "status": "done",
+     "why": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
+     "statusLine": "done",
+     "caption": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
+     "stage": "done",
+     "embed": "pages/outing-thread.html",
+     "visibility": "public",
+     "links": [
+      "go-anywhere",
+      "local-watch"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "shopping-list",
+     "label": "SHOPPING LIST",
+     "status": "idle",
+     "why": "One list for groceries, household things and hardware, reminded at the right moment: leaving, heading home, walking into the store.",
+     "statusLine": "live",
+     "caption": "One list for groceries, household things and hardware, reminded at the right moment:",
+     "stage": "active",
+     "embed": "pages/shopping-list.html",
+     "visibility": "public",
+     "links": [
+      "robot-skin"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "meeting-notes",
+     "label": "MEETING NOTES",
+     "status": "idle",
+     "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
+     "statusLine": "installed",
+     "caption": "\"Start recording\" on the glasses:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/meeting-notes.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "daily-content",
+   "label": "DAILY CONTENT",
+   "status": "idle",
+   "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
+   "statusLine": "nightly · offered each morning",
+   "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
+   "stage": "active",
+   "embed": "pages/daily-content.html",
+   "visibility": "public",
+   "links": [
+    "viral-machine",
+    "smart-glasses",
+    "night-shift"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -404,7 +495,7 @@
      "label": "MITTENS APP",
      "status": "idle",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
-     "statusLine": "being restored",
+     "statusLine": "live on the phone · Talk, chat, lens",
      "caption": "The assistant on the phone:",
      "stage": "active",
      "embed": "pages/mittens-app.html",
@@ -412,11 +503,69 @@
      "embedCaption": "case study"
     },
     {
+     "id": "read-to-me",
+     "label": "READ TO ME",
+     "status": "idle",
+     "why": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
+     "statusLine": "built",
+     "caption": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
+     "stage": "active",
+     "embed": "pages/read-to-me.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-chat-threads",
+     "label": "CHAT THREADS",
+     "status": "idle",
+     "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
+     "statusLine": "built",
+     "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
+     "stage": "active",
+     "embed": "pages/mittens-chat-threads.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "window-tiling",
+     "label": "WINDOW TILING",
+     "status": "idle",
+     "why": "Ask to open several things and each gets its own window, tiled without overlap on the screen I am at.",
+     "statusLine": "built",
+     "caption": "Ask to open several things and each gets its own window, tiled without overlap on the screen I am at.",
+     "stage": "active",
+     "embed": "pages/window-tiling.html",
+     "visibility": "public",
+     "links": [
+      "desktop-agent",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-ota",
+     "label": "UPDATES ANYWHERE",
+     "status": "idle",
+     "why": "App updates reach the phone anywhere, signed and served from the home server -- no waiting for home Wi-Fi.",
+     "statusLine": "live",
+     "caption": "App updates reach the phone anywhere, signed and served from the home server -- no waiting for home Wi-Fi.",
+     "stage": "active",
+     "embed": "pages/mittens-ota.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "mittens-architecture",
      "label": "MITTENS ARCHITECTURE",
      "status": "idle",
      "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-     "statusLine": "decided",
+     "statusLine": "decided · phone works offline (shipped)",
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
      "stage": "active",
      "embed": "pages/mittens-architecture.html",
@@ -428,7 +577,7 @@
      "label": "PHONE CONTROL",
      "status": "idle",
      "why": "Agents see and tap the phone the way a person would, so Mittens can act in any app. Next: control from anywhere, not only on the same network.",
-     "statusLine": "works at home · anywhere is next",
+     "statusLine": "works at home and over cellular",
      "caption": "Agents see and tap the phone the way a person would, so Mittens can act in any app.",
      "stage": "active",
      "embed": "pages/phone-control.html",
@@ -498,7 +647,7 @@
      "label": "OMI",
      "status": "idle",
      "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
-     "statusLine": "branch built",
+     "statusLine": "old branch shelved · next: the voice-clone track",
      "caption": "Omi is the open-source AI wearable.",
      "stage": "active",
      "embed": "pages/omi.html",
@@ -729,6 +878,9 @@
    "stage": "active",
    "embed": "pages/mittens-hw.html",
    "visibility": "public",
+   "links": [
+    "night-shift"
+   ],
    "parent": "mittens",
    "parked": false,
    "children": [],
@@ -802,7 +954,7 @@
      "label": "BENCH OR CLEANROOM?",
      "status": "idle",
      "why": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture. Electrohydraulic is bench work, the muscle papers need cell culture, only three need micron fabrication.",
-     "statusLine": "pre-scan done",
+     "statusLine": "read: bench for the fibre muscle, cell culture for living muscle",
      "caption": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture.",
      "stage": "plan",
      "planned": true,
@@ -828,7 +980,36 @@
    "embed": "pages/devhub.html",
    "visibility": "public",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "housekeeping",
+     "label": "HOUSEKEEPING",
+     "status": "idle",
+     "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
+     "statusLine": "nightly",
+     "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
+     "stage": "active",
+     "embed": "pages/housekeeping.html",
+     "visibility": "public",
+     "links": [
+      "howto-cleanup",
+      "context-graph"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "views-check",
+     "label": "VIEWS CHECK",
+     "status": "idle",
+     "why": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
+     "statusLine": "live · every 5 min",
+     "caption": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
+     "stage": "active",
+     "embed": "pages/views-check.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -881,6 +1062,19 @@
      "embed": "pages/stack-audit.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-night-mode",
+     "label": "NIGHT MODE",
+     "status": "idle",
+     "why": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
+     "statusLine": "prototype",
+     "caption": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/portfolio-night-mode.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -902,10 +1096,9 @@
      "label": "NORTH STAR PUBLIC",
      "status": "idle",
      "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
-     "statusLine": "this snapshot",
+     "statusLine": "live · republishes within minutes · nightly catch-up",
      "caption": "Releasing North Star itself:",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/ns-public.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -926,11 +1119,41 @@
      "label": "MORNING BRIEF",
      "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
-     "statusLine": "built",
+     "statusLine": "live · greets on waking",
      "caption": "One morning notification:",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/morning-brief.html",
+     "visibility": "public",
+     "links": [
+      "night-shift",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "what-changed",
+     "label": "WHAT CHANGED",
+     "status": "idle",
+     "why": "Each morning: what got built, fixed or shipped yesterday, in five lines grouped by area.",
+     "statusLine": "built",
+     "caption": "Each morning:",
+     "stage": "active",
+     "embed": "pages/what-changed.html",
+     "visibility": "public",
+     "links": [
+      "night-shift"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "nightly-reflection",
+     "label": "NIGHTLY REFLECTION",
+     "status": "idle",
+     "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
+     "statusLine": "live · every night",
+     "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
+     "stage": "active",
+     "embed": "pages/nightly-reflection.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -945,6 +1168,69 @@
      "embed": "intro.html",
      "visibility": "public",
      "embedCaption": "the landing story"
+    },
+    {
+     "id": "ui-style",
+     "label": "UI STYLE",
+     "status": "idle",
+     "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+     "statusLine": "checked nightly",
+     "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+     "stage": "active",
+     "embed": "pages/ui-style.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "watchdog",
+     "label": "WATCHDOG",
+     "status": "idle",
+     "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
+     "statusLine": "live",
+     "caption": "Nothing fails silently:",
+     "stage": "active",
+     "embed": "pages/watchdog.html",
+     "visibility": "public",
+     "links": [
+      "mittens-proactive",
+      "howto-routines",
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "action-tree",
+     "label": "ACTION TREE",
+     "status": "idle",
+     "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
+     "statusLine": "live · repaired nightly",
+     "caption": "The one source of truth for what is open:",
+     "stage": "active",
+     "embed": "pages/action-tree.html",
+     "visibility": "public",
+     "links": [
+      "window-tiling",
+      "night-shift",
+      "context-graph",
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ns-desk",
+     "label": "NORTH STAR DESK",
+     "status": "done",
+     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
+     "statusLine": "done",
+     "caption": "A native desktop app that tiles the open pages in one window:",
+     "stage": "done",
+     "embed": "pages/ns-desk.html",
+     "visibility": "public",
+     "links": [
+      "action-tree",
+      "window-tiling"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -991,6 +1277,47 @@
    "parent": "manual-map",
    "parked": false,
    "children": [
+    {
+     "id": "brain-architecture",
+     "label": "BRAIN ARCHITECTURE",
+     "status": "done",
+     "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
+     "statusLine": "done · drilled nightly",
+     "caption": "Swap the model and nothing is lost:",
+     "stage": "done",
+     "embed": "pages/brain-architecture.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "context-map",
+     "label": "CONTEXT MAP",
+     "status": "idle",
+     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "statusLine": "built",
+     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "stage": "active",
+     "embed": "pages/context-map.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture",
+      "mittens-chat-threads",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "triggers",
+     "label": "TRIGGERS",
+     "status": "done",
+     "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
+     "statusLine": "done",
+     "caption": "When Mittens speaks first, as one list any model reads:",
+     "stage": "done",
+     "embed": "pages/triggers.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "howto-start-here",
      "label": "START HERE",
@@ -1080,9 +1407,84 @@
      "embed": "pages/howto-mittens-desktop.html",
      "visibility": "public",
      "links": [
+      "mittens-desktop",
       "mittens-daily",
       "desktop-agent",
       "omi"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-talk-requests",
+     "label": "TALK REQUESTS",
+     "status": "idle",
+     "why": "Every ask in Talk gets its own row, open to done, raised when nothing starts within ten minutes.",
+     "caption": "Every ask in Talk gets its own row, open to done, raised when nothing starts within ten minutes.",
+     "stage": "active",
+     "embed": "pages/howto-talk-requests.html",
+     "visibility": "public",
+     "links": [
+      "mittens",
+      "mittens-architecture",
+      "mittens-digital",
+      "northstar",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-ui-style",
+     "label": "UI STYLE HOW-TO",
+     "status": "idle",
+     "why": "The palette, type and dot glyphs every page and screen uses.",
+     "caption": "The palette, type and dot glyphs every page and screen uses.",
+     "stage": "active",
+     "embed": "pages/howto-ui-style.html",
+     "visibility": "public",
+     "links": [
+      "ui-style",
+      "northstar",
+      "mittens-daily",
+      "mittens-app",
+      "smart-glasses",
+      "soft-robot",
+      "robot-skin",
+      "skin-build",
+      "skin-schedule"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-video-qa",
+     "label": "VIDEO QA",
+     "status": "idle",
+     "why": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
+     "caption": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
+     "stage": "active",
+     "embed": "pages/howto-video-qa.html",
+     "visibility": "public",
+     "links": [
+      "daily-content",
+      "viral-machine",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-windows",
+     "label": "WINDOWS",
+     "status": "idle",
+     "why": "How agents open several things at once, each in its own tiled window.",
+     "caption": "How agents open several things at once, each in its own tiled window.",
+     "stage": "active",
+     "embed": "pages/howto-windows.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "ns-talk",
+      "desktop-agent",
+      "window-tiling",
+      "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1115,6 +1517,7 @@
       "agent-phone",
       "glasses-mittens",
       "desktop-agent",
+      "window-tiling",
       "man-devices"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1160,6 +1563,7 @@
      "visibility": "public",
      "links": [
       "glasses-mittens",
+      "lens-home",
       "mittens-daily",
       "mittens-app"
      ],
@@ -1175,6 +1579,7 @@
      "embed": "pages/howto-recording.html",
      "visibility": "public",
      "links": [
+      "meeting-notes",
       "glasses-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1281,7 +1686,12 @@
      "links": [
       "devhub",
       "northstar",
-      "daily-sync"
+      "daily-sync",
+      "daily-content",
+      "watchdog",
+      "mittens-proactive",
+      "nightly-reflection",
+      "what-changed"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1368,7 +1778,8 @@
      "embed": "pages/howto-cleanup.html",
      "visibility": "public",
      "links": [
-      "devhub"
+      "devhub",
+      "housekeeping"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1396,6 +1807,25 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "one-mittens-brain",
+   "label": "ONE MITTENS BRAIN",
+   "status": "idle",
+   "why": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
+   "statusLine": "built",
+   "caption": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
+   "stage": "active",
+   "embed": "pages/one-mittens-brain.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk",
+    "mittens-digital"
+   ],
+   "parent": "context-graph",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
    "status": "idle",
@@ -1412,11 +1842,28 @@
    "parked": false,
    "children": [
     {
+     "id": "mittens-barge-in",
+     "label": "BARGE-IN",
+     "status": "idle",
+     "why": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
+     "statusLine": "live",
+     "caption": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
+     "stage": "active",
+     "embed": "pages/mittens-barge-in.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "mittens-app",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "mw-calls",
      "label": "CALLS AS MITTENS",
      "status": "idle",
      "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "statusLine": "installed",
+     "statusLine": "live · Mittens answers calls first",
      "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
      "stage": "active",
      "embed": "pages/mw-calls.html",
@@ -1424,14 +1871,45 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "mw-call-voice",
+     "label": "CALL VOICE",
+     "status": "done",
+     "why": "Phone calls that sound less like AI: a short opener, one sentence per turn, an instant \"mm-hm\", half-second turns -- free, no paid voice service.",
+     "statusLine": "done",
+     "caption": "Phone calls that sound less like AI:",
+     "stage": "done",
+     "embed": "pages/mw-call-voice.html",
+     "visibility": "public",
+     "links": [
+      "mw-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "mw-blind",
      "label": "CAN'T SEE -> ASK",
      "status": "idle",
      "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
-     "statusLine": "building",
+     "statusLine": "built · waiting for a first real case",
      "caption": "Glasses off or a useless frame:",
      "embed": "pages/mw-blind.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "need-her-once",
+     "label": "NEED HER ONCE",
+     "status": "idle",
+     "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
+     "statusLine": "live",
+     "caption": "Anything that needs me needs me once:",
+     "stage": "active",
+     "embed": "pages/need-her-once.html",
+     "visibility": "public",
+     "links": [
+      "mittens-vision",
+      "proactive-rules"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1439,10 +1917,9 @@
      "label": "AURORA",
      "status": "idle",
      "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
-     "statusLine": "next: the first voice file",
+     "statusLine": "first voice file built · in review",
      "caption": "A voice layer so an agent stops sounding like AI:",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/aurora.html",
      "visibility": "public",
      "links": [
@@ -1456,7 +1933,7 @@
      "label": "WHO ELSE DOES THIS",
      "status": "done",
      "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
-     "statusLine": "research",
+     "statusLine": "research done",
      "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
      "stage": "done",
      "embed": "pages/aurora-market.html",
@@ -1468,7 +1945,7 @@
      "label": "SMALL LOCAL MODELS",
      "status": "done",
      "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "statusLine": "benchmarked",
+     "statusLine": "benchmarked · done",
      "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
      "stage": "done",
      "embed": "pages/small-models.html",
@@ -1486,6 +1963,68 @@
      "planned": true,
      "embed": "pages/mittens-tutor.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "wake-report",
+     "label": "WAKE REPORT",
+     "status": "idle",
+     "why": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
+     "statusLine": "built",
+     "caption": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
+     "stage": "active",
+     "embed": "pages/wake-report.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "talk-voice",
+     "label": "TALK VOICE",
+     "status": "idle",
+     "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
+     "statusLine": "three voices to pick from",
+     "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/talk-voice.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-knows",
+   "label": "ALWAYS KNOWS",
+   "status": "idle",
+   "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
+   "statusLine": "live",
+   "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
+   "stage": "active",
+   "embed": "pages/mittens-knows.html",
+   "visibility": "public",
+   "links": [
+    "mw-blind",
+    "mittens-desktop"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-desktop",
+     "label": "MITTENS ON DESKTOP",
+     "status": "idle",
+     "why": "A watcher on the laptop turns what I am working on into honest calendar blocks. The screen picture is deleted at once; only a one-line summary stays.",
+     "statusLine": "v1 built",
+     "caption": "A watcher on the laptop turns what I am working on into honest calendar blocks.",
+     "stage": "active",
+     "embed": "pages/mittens-desktop.html",
+     "visibility": "public",
+     "links": [
+      "omi",
+      "desktop-agent",
+      "mittens-daily"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -1505,18 +2044,138 @@
    "parked": false,
    "children": [
     {
+     "id": "lens-home",
+     "label": "MITTENS LENS HOME",
+     "status": "idle",
+     "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
+     "statusLine": "step 1 live",
+     "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
+     "stage": "active",
+     "embed": "pages/lens-home.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
      "status": "idle",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
-     "statusLine": "testing",
+     "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
      "stage": "active",
      "embed": "pages/glasses-mittens.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "glasses-launch",
+     "label": "LAUNCH FROM THE GLASSES",
+     "status": "idle",
+     "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
+     "statusLine": "built · first install next",
+     "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
+     "stage": "active",
+     "embed": "pages/glasses-launch.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "neural-band-cursor",
+     "label": "CURSOR CONTROL",
+     "status": "idle",
+     "why": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
+     "statusLine": "works",
+     "caption": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
+     "stage": "active",
+     "embed": "pages/neural-band-cursor.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "night-shift",
+   "label": "NIGHT SHIFT",
+   "status": "idle",
+   "why": "The routines that run while I sleep -- research, the watchers, the content cut and the system's own reflection -- so the morning starts with work already done.",
+   "statusLine": "live · every night",
+   "caption": "The routines that run while I sleep -- research, the watchers, the content cut and the system's own reflection -- so the morning starts with work already done.",
+   "stage": "active",
+   "embed": "pages/night-shift.html",
+   "visibility": "public",
+   "links": [
+    "daily-content",
+    "mittens-hw",
+    "morning-brief",
+    "what-changed",
+    "action-tree"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "local-watch",
+   "label": "LOCAL EVENTS WATCH",
+   "status": "idle",
+   "why": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
+   "statusLine": "live",
+   "caption": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
+   "stage": "active",
+   "embed": "pages/local-watch.html",
+   "visibility": "public",
+   "links": [
+    "night-shift",
+    "morning-brief"
+   ],
+   "parent": "mittens-hw",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "watch-picks",
+   "label": "WATCH PICKS",
+   "status": "idle",
+   "why": "The watch is judged on its picks, not volume: real breakthroughs for my projects, scored and tested, instead of general news.",
+   "statusLine": "being tuned",
+   "caption": "The watch is judged on its picks, not volume:",
+   "stage": "active",
+   "embed": "pages/watch-picks.html",
+   "visibility": "public",
+   "links": [
+    "local-watch",
+    "soft-robot",
+    "smart-glasses",
+    "northstar",
+    "susu-closet",
+    "fashion"
+   ],
+   "parent": "mittens-hw",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-scenarios",
+   "label": "SCENARIOS",
+   "status": "idle",
+   "why": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home: which device leads, what is said out loud, what waits.",
+   "statusLine": "built · 10 scenarios",
+   "caption": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home:",
+   "stage": "active",
+   "embed": "pages/mittens-scenarios.html",
+   "visibility": "public",
+   "links": [
+    "mittens",
+    "mittens-digital",
+    "proactive-rules"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   }
  ],
