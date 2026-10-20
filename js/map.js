@@ -2752,12 +2752,22 @@ setInterval(() => {
 
 let lastActive = Date.now();
 
-[ "pointermove", "pointerdown", "keydown", "wheel" ].forEach(ev => window.addEventListener(ev, () => {
+const poke = () => {
     lastActive = Date.now();
+};
+
+[ "pointermove", "pointerdown", "keydown", "wheel", "touchstart", "touchmove", "scroll" ].forEach(ev => window.addEventListener(ev, poke, {
+    capture: true,
+    passive: true
+}));
+
+const reading = () => !!(ROOT || LEAF || DOC || [ "panel", "overlay", "focus", "docPane", "inboxOverlay", "voiceOv" ].some(id => {
+    const el = document.getElementById(id);
+    return el && el.classList.contains("open");
 }));
 
 setInterval(() => {
-    if (!saver && !PUBLIC && Date.now() - lastActive > (isMobile() ? 6e4 : 18e4)) enterSaver();
+    if (!saver && !PUBLIC && !document.hidden && !reading() && Date.now() - lastActive > (isMobile() ? 6e4 : 18e4)) enterSaver();
 }, 1e4);
 
 if (PUBLIC) {
