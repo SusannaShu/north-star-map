@@ -53,6 +53,8 @@
         if (tl) parts.push(tl);
         const refs = (d.refs || []).filter(r => r && r.href);
         if (refs.length) parts.push(`<div class="vw-links">${refs.map(r => `<a href="${esc(macUrl(r.href))}" target="_blank" rel="noopener">↗ ${esc(clip(r.label, 46))}</a>`).join("")}</div>`);
+        const pp = paperRail(id);
+        if (pp) parts.push(pp);
         const cap = d.caption || firstSentence(d.why || d.statusLine || "");
         const isPlan = (n.stage || d.stage) === "plan" && n.status !== "dormant";
         const sl = d.statusLine && d.statusLine !== cap ? d.statusLine : "";
@@ -119,6 +121,25 @@
             fib += `<path d="${dd}" fill="none" stroke="#000" stroke-width="${k % 3 ? 1 : 2.2}" stroke-linecap="round" opacity="${k % 3 ? .35 : .9}">\n      <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="${2 + k * .3}s" repeatCount="indefinite"/></path>`;
         }
         return `<div class="vw-card paper"><svg viewBox="0 0 240 130" class="vw-fibers">${fib.replace(/<path /g, '<path stroke-dasharray="10 2" ')}</svg>\n    <span class="vw-tag">${esc(p.venue || "paper")}</span><span class="vw-ct">${esc(p.title)}</span><span class="vw-cs">${esc(clip(p.authors || "", 60))}</span></div>`;
+    }
+    const TRIAL_WORD = {
+        on: "IN USE",
+        testing: "TESTING",
+        off: "TRIED · OFF"
+    };
+    function paperTile(r) {
+        const big = r.number ? clip(r.number.replace(/percentage points?/i, "pts").replace(/\s*(end-to-end|on |across |with |balanced|accuracy).*$/i, ""), 22) : clip(r.venue || "paper", 22);
+        return `<a class="vw-pp" href="${esc(r.link)}" target="_blank" rel="noopener">\n    <div class="vw-pp-pic"><span class="vw-pp-who">${esc(clip(r.lab || r.venue || "", 34))}</span>${r.trial ? `<span class="vw-pp-st ${esc(r.trial.state)}">${TRIAL_WORD[r.trial.state] || ""}</span>` : ""}<b>${esc(big)}</b></div>\n    <div class="vw-pp-body"><h4>${esc(clip(r.title, 90))}</h4>${r.number ? `<p>${esc(clip(r.number, 110))}</p>` : ""}\n    <div class="vw-pp-for"><i>FOR YOU</i>${esc(clip(r.means, 200))}</div>\n    ${r.trial ? `<div class="vw-pp-for"><i>TRIED</i>${esc(clip(r.trial.line, 160))}</div>` : ""}\n    <div class="vw-pp-src">${esc(clip(r.venue || "", 24))}${r.date ? " · " + esc(r.date) : ""} ↗</div></div></a>`;
+    }
+    function paperRail(id) {
+        const P = !window.NS_PUBLIC && DATA && DATA.papers;
+        if (!P) return "";
+        const own = (P.byDot || {})[id] || [], sys = id === "context-graph" ? P.system || [] : [];
+        let h = "";
+        if (sys.length) h += `<div class="vw-block"><div class="vw-cap">use in our system · ${sys.filter(r => r.trial && r.trial.state === "on").length} in use · <a href="/research-watch.html" target="_blank">research watch ↗</a></div>\n    <div class="vw-pps">${sys.map(paperTile).join("")}</div></div>`;
+        const rest = own.filter(r => !sys.some(x => x.id === r.id));
+        if (rest.length) h += `<div class="vw-block"><div class="vw-cap">papers for this dot · ${rest.length}</div><div class="vw-pps">${rest.map(paperTile).join("")}</div></div>`;
+        return h;
     }
     function placeholder(id, n) {
         const R = rnd(hash(id));

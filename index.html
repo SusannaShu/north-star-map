@@ -536,6 +536,22 @@ body.saver .askbar, body:has(.panel.open) .askbar { opacity:0; pointer-events:no
 .vw-feeds { display:flex; flex-wrap:wrap; gap:6px; align-items:center; margin-top:6px; }
 .vw-feeds span { font-family:var(--mono); font-size:10.5px; color:var(--text-muted); text-transform:uppercase; letter-spacing:.6px; margin-right:4px; }
 .vw-feeds button { font-family:var(--font-heading); font-size:11px; padding:5px 10px; border:1px dashed #000; border-radius:999px; background:var(--bg); cursor:pointer; }
+/* Papers for this dot (view.js paperRail, 2026-10-19): the Watch redesign's card -- black type panel, body, FOR YOU line. */
+.vw-pps { display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:6px; }
+.vw-pp { flex:0 0 78%; max-width:320px; scroll-snap-align:start; border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; background:var(--bg); color:var(--text); text-decoration:none; animation:vwIn .45s ease both; }
+.vw-pp:hover { border-color:#000; }
+.vw-pp-pic { position:relative; height:110px; display:flex; align-items:flex-end; padding:12px; box-sizing:border-box; background:#000; color:#FFF; }
+.vw-pp-pic b { font:26px/1.05 var(--font-heading); }
+.vw-pp-who { position:absolute; left:10px; top:10px; font:10px var(--mono); letter-spacing:.1em; text-transform:uppercase; background:rgba(255,255,255,.14); border-radius:999px; padding:3px 9px; }
+.vw-pp-st { position:absolute; right:10px; top:10px; font:10px var(--mono); letter-spacing:.1em; border-radius:999px; padding:3px 9px; background:#FFF; color:#000; }
+.vw-pp-st.testing { background:var(--wait, #B7791F); color:#FFF; }
+.vw-pp-st.off { background:#777; color:#FFF; }
+.vw-pp-body { padding:10px 12px 12px; }
+.vw-pp-body h4 { font:600 14px/1.3 var(--font); margin:0 0 5px; }
+.vw-pp-body p { margin:0 0 6px; color:var(--text-secondary); font-size:12.5px; }
+.vw-pp-for { border-top:1px solid var(--border); padding-top:6px; margin-top:6px; font-size:12.5px; }
+.vw-pp-for i { font:normal 10px var(--mono); letter-spacing:.12em; display:block; color:var(--text-muted); margin-bottom:2px; }
+.vw-pp-src { font:10.5px var(--mono); color:var(--text-muted); margin-top:8px; }
 .vw-links { display:flex; flex-wrap:wrap; gap:6px; }
 .vw-links a { font-family:var(--mono); font-size:11px; color:var(--text); text-decoration:none; border:1px solid var(--border); border-radius:999px; padding:5px 10px; }
 .vw-links a:hover { border-color:#000; }
@@ -804,7 +820,7 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/map.js?v=20261018q560"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/live.js?v=20261013mt1"></script>
-<script src="js/view.js?v=20261014lazy"></script>
+<script src="js/view.js?v=20261019papers"></script>
 
 <script src="js/tree-core.js?v=20261018dot"></script>
 <script src="js/tree-dock.js?v=20261015rv1"></script>
