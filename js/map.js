@@ -222,7 +222,7 @@ let TREE_TOP = [], EX = 1, EY = 1, fitK = 1;
 
 const isOverlay = n => n.type === "intent" || n.type === "agent";
 
-const vaOf = n => n.va == null ? 1 : n.va;
+const vaOf = n => BORN && isOverlay(n) ? 0 : n.va == null ? 1 : n.va;
 
 let ROOT = null, LEAF = null, PENDING_LEAF = null, PENDING_RING = null, HUBKIDS = [];
 
@@ -1071,6 +1071,7 @@ async function loadData() {
     buildGraph(DATA);
     renderChrome();
     window.nsReady = true;
+    window.nsMapData = () => DATA;
 }
 
 function bendOf(l) {
@@ -1178,12 +1179,37 @@ function resize() {
 
 window.addEventListener("resize", resize);
 
+let BORN = null;
+
+const unborn = n => {
+    if (!BORN || n.type === "hub" || isOverlay(n)) return false;
+    for (let k = n, i = 0; k && k.type !== "hub" && i < 8; k = byId[k.up], i++) {
+        const c = BORN.created[k.id];
+        if (c && c > BORN.day) return true;
+    }
+    return false;
+};
+
+window.nsBorn = (created, day) => {
+    BORN = day ? {
+        created: created || {},
+        day: day
+    } : null;
+};
+
+window.nsLight = ids => {
+    const s = new Set(ids || []);
+    SEARCH.q = "";
+    SEARCH.hits = Object.values(FULL.e).filter(e => s.has(e.id)).map(e => byId[e.id] || e);
+};
+
 function step() {
     const E = unfolded(), AT = agentsAt();
     for (const n of nodes) {
         if (isOverlay(n)) continue;
-        n.vt = !n.minor || E.all || E.has(n.up) || !STILL && (AT[n.id] || []).length ? 1 : 0;
-        const up = n.minor ? byId[n.up] : null;
+        const nb = unborn(n);
+        n.vt = !nb && (!n.minor || E.all || E.has(n.up) || !STILL && (AT[n.id] || []).length) ? 1 : 0;
+        const up = n.minor || nb ? byId[n.up] : null;
         const tx = n.vt || !up ? n.hx : up.x, ty = n.vt || !up ? n.hy : up.y;
         if (n !== dragNode) {
             n.x += (tx - n.x) * .2;
@@ -2122,12 +2148,6 @@ function openHit(i) {
     clearSearch(true);
     openDot(n.id);
 }
-
-window.nsLight = ids => {
-    const s = new Set(ids || []);
-    SEARCH.q = "";
-    SEARCH.hits = Object.values(FULL.e).filter(e => s.has(e.id)).map(e => byId[e.id] || e);
-};
 
 window.nsSearch = q => {
     searchEl.value = q;

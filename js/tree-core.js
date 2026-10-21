@@ -473,7 +473,9 @@
             done: new Set
         };
         let seq = 0;
+        const HID = new Set(Array.isArray(map.clerkHidden) ? map.clerkHidden : []);
         const add = (seg, groupId, item) => {
+            if (HID.size && [ item.open, item.qid, item.askId, item.laterId, item.task, item.item ].some(r => r && HID.has(String(r)))) return;
             const key = (item.name + "|" + item.line).toLowerCase();
             if (seen[seg].has(key)) return;
             seen[seg].add(key);
