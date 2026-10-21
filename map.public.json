@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-21T23:34:11.289Z",
+ "generatedAt": "2026-10-21T23:38:22.752Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -214,7 +214,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -225,7 +225,7 @@
     {
      "id": "publish",
      "label": "PUBLISH",
-     "status": "working",
+     "status": "done",
      "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
      "statusLine": "paused",
      "caption": "Hourly, inside a safe window:",
