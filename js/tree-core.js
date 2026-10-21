@@ -750,16 +750,27 @@
             const title = clip(q.title, 70), what = clip(q.body || "", 110);
             if (q.status === "open") {
                 const snoozed = q.later && Date.parse(q.later) > Date.now();
+                if (snoozed) {
+                    add("waiting", g || "asked", {
+                        ...base,
+                        name: title,
+                        line: clip(`you said later -- back at ${qWhen(q.later)}${what ? " · " + what : ""}`, 110),
+                        kind: "question",
+                        status: "waiting",
+                        waitingOn: true,
+                        later: q.later
+                    });
+                    continue;
+                }
                 add("needs", g || "asked", {
                     ...base,
                     name: title,
-                    line: snoozed ? `later -- back at ${qWhen(q.later)}${what ? " · " + what : ""}` : what,
+                    line: what,
                     kind: "question",
                     status: "open",
-                    urgent: !snoozed && dueToday(`${title} ${what}`, {
+                    urgent: dueToday(`${title} ${what}`, {
                         since: q.createdAt
-                    }),
-                    later: q.later || undefined
+                    })
                 });
                 continue;
             }

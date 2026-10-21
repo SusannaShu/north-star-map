@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-21T10:36:57.761Z",
+ "generatedAt": "2026-10-21T11:29:13.402Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -200,13 +200,13 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "dormant",
+   "status": "idle",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
    "embed": "pages/susu-map.html",
    "visibility": "public",
-   "parked": true,
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
