@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-21T03:08:47.671Z",
+ "generatedAt": "2026-10-21T06:40:56.281Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -270,7 +270,7 @@
      "label": "VIRAL MACHINE",
      "status": "idle",
      "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
-     "statusLine": "direction set · visuals first, then motion",
+     "statusLine": "trend gathering starts next",
      "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
      "stage": "active",
      "embed": "pages/viral-machine.html",
@@ -388,7 +388,7 @@
      "label": "MITTENS SPEAKS FIRST",
      "status": "idle",
      "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
-     "statusLine": "live",
+     "statusLine": "live · planning ahead next",
      "caption": "Mittens may speak first:",
      "stage": "active",
      "embed": "pages/mittens-proactive.html",
@@ -490,6 +490,18 @@
       "housekeeping"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "brand-style",
+     "label": "BRAND STYLE",
+     "status": "idle",
+     "why": "I made a style guide from my portfolio so every generated scene looks like the rest of my work. Each scene uses it as the reference.",
+     "statusLine": "built · used on every scene",
+     "caption": "I made a style guide from my portfolio so every generated scene looks like the rest of my work.",
+     "stage": "active",
+     "embed": "pages/brand-style.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -512,7 +524,7 @@
      "label": "MITTENS APP",
      "status": "idle",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
-     "statusLine": "live on the phone · Talk, chat, lens",
+     "statusLine": "new layout built · rolling out",
      "caption": "The assistant on the phone:",
      "stage": "active",
      "embed": "pages/mittens-app.html",
@@ -536,13 +548,14 @@
      "label": "CHAT THREADS",
      "status": "idle",
      "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
-     "statusLine": "built",
+     "statusLine": "built · more events into threads",
      "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
      "stage": "active",
      "embed": "pages/mittens-chat-threads.html",
      "visibility": "public",
      "links": [
-      "mittens-app"
+      "mittens-app",
+      "thread-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -582,7 +595,7 @@
      "label": "MITTENS ARCHITECTURE",
      "status": "idle",
      "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-     "statusLine": "decided · phone works offline (shipped)",
+     "statusLine": "chat moved · rest next",
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
      "stage": "active",
      "embed": "pages/mittens-architecture.html",
@@ -623,6 +636,23 @@
      "stage": "active",
      "embed": "pages/agent-phone.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "thread-architecture",
+     "label": "THREAD ARCHITECTURE",
+     "status": "idle",
+     "why": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply. One panel shows my threads and the agents working on them.",
+     "statusLine": "decided · live",
+     "caption": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply.",
+     "stage": "active",
+     "embed": "pages/thread-architecture.html",
+     "visibility": "public",
+     "links": [
+      "mittens-chat-threads",
+      "brain-architecture",
+      "work-in-threads"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -994,6 +1024,7 @@
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
+   "stage": "active",
    "embed": "pages/devhub.html",
    "visibility": "public",
    "parked": false,
@@ -1003,7 +1034,7 @@
      "label": "HOUSEKEEPING",
      "status": "idle",
      "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
-     "statusLine": "nightly",
+     "statusLine": "nightly cleanup running",
      "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
      "stage": "active",
      "embed": "pages/housekeeping.html",
@@ -1092,6 +1123,19 @@
      "embed": "pages/portfolio-night-mode.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-chapters",
+     "label": "SCROLL CHAPTERS",
+     "status": "idle",
+     "why": "As visitors scroll my portfolio, they move through three chapters: the assistant handling a sample day, the soft robot responding to touch, and the project map playing back over time.",
+     "statusLine": "preview · not deployed",
+     "caption": "As visitors scroll my portfolio, they move through three chapters:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/portfolio-chapters.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1113,7 +1157,7 @@
      "label": "NORTH STAR PUBLIC",
      "status": "idle",
      "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
-     "statusLine": "live · new safe dots added nightly",
+     "statusLine": "live · launch plan in progress",
      "caption": "Releasing North Star itself:",
      "stage": "active",
      "embed": "pages/ns-public.html",
@@ -1168,7 +1212,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · every night",
+     "statusLine": "live · fixes made overnight",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -1192,7 +1236,7 @@
      "label": "UI STYLE",
      "status": "idle",
      "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-     "statusLine": "checked nightly",
+     "statusLine": "checked nightly · cleanup ongoing",
      "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
      "stage": "active",
      "embed": "pages/ui-style.html",
@@ -1239,7 +1283,7 @@
      "label": "NORTH STAR DESK",
      "status": "idle",
      "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
-     "statusLine": "done",
+     "statusLine": "done · panes now searchable",
      "caption": "A native desktop app that tiles the open pages in one window:",
      "stage": "done",
      "embed": "pages/ns-desk.html",
@@ -1248,6 +1292,18 @@
       "action-tree",
       "window-tiling"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "work-in-threads",
+     "label": "WORK IN THREADS",
+     "status": "idle",
+     "why": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
+     "statusLine": "case study",
+     "caption": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
+     "stage": "active",
+     "embed": "pages/work-in-threads.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -1374,6 +1430,7 @@
      "label": "MAP UPKEEP",
      "status": "idle",
      "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+     "statusLine": "placement audit done · ongoing",
      "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
      "stage": "active",
      "embed": "pages/map-upkeep.html",
@@ -1509,7 +1566,42 @@
    "visibility": "public",
    "parent": "man-rules",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "context-ledger",
+     "label": "CONTEXT LEDGER",
+     "status": "idle",
+     "why": "Code can never keep up with change, so every update to my data and every message to me is checked against context first. If the checker is down, nothing goes out unreviewed.",
+     "statusLine": "live · checks every write",
+     "caption": "Code can never keep up with change, so every update to my data and every message to me is checked against context first.",
+     "stage": "active",
+     "embed": "pages/context-ledger.html",
+     "visibility": "public",
+     "links": [
+      "thread-architecture",
+      "action-tree",
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "one-pulse",
+     "label": "ONE PULSE",
+     "status": "idle",
+     "why": "One heartbeat would keep context, screens and messages in sync, notice when something breaks and fix it, without constant polling. It would also let agents act ahead of me.",
+     "statusLine": "plan · waiting on my yes",
+     "caption": "One heartbeat would keep context, screens and messages in sync, notice when something breaks and fix it, without constant polling.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/one-pulse.html",
+     "visibility": "public",
+     "links": [
+      "context-ledger",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1613,6 +1705,7 @@
    "label": "BROWSERS + MCP",
    "status": "idle",
    "why": "Which browser lane for which task, and the tool servers agents use.",
+   "statusLine": "manual written",
    "caption": "Which browser lane for which task, and the tool servers agents use.",
    "stage": "active",
    "embed": "pages/man-browsers.html",
@@ -1657,6 +1750,7 @@
    "label": "BUILDS + DEPLOYS",
    "status": "idle",
    "why": "Shipping app builds and deploys, scheduled routines, testing without touching real accounts.",
+   "statusLine": "manual written",
    "caption": "Shipping app builds and deploys, scheduled routines, testing without touching real accounts.",
    "stage": "active",
    "embed": "pages/man-builds.html",
@@ -2006,7 +2100,7 @@
      "label": "TALK VOICE",
      "status": "idle",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
-     "statusLine": "three voices to pick from",
+     "statusLine": "second round of voices to pick",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "stage": "plan",
      "planned": true,
@@ -2198,6 +2292,7 @@
     "wearables",
     "meeting-notes",
     "mw-blind",
+    "mittens-tutor",
     "pendant",
     "omi",
     "neural-band-cursor",
@@ -2306,6 +2401,39 @@
    "parent": "mittens",
    "parked": false,
    "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "learn-with-mittens",
+   "label": "LEARN WITH MITTENS",
+   "status": "idle",
+   "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
+   "statusLine": "built",
+   "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
+   "stage": "active",
+   "embed": "pages/learn-with-mittens.html",
+   "visibility": "public",
+   "links": [
+    "sheyou",
+    "ns-talk"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-tutor",
+     "label": "MITTENS TEACHES",
+     "status": "idle",
+     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "statusLine": "idea",
+     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-tutor.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   }
  ],
