@@ -861,7 +861,7 @@
                 due: t.deadline
             }));
             add("needs", "inbound", {
-                name: clip(`Reply to ${t.who} (${t.label})`, 56),
+                name: clip(t.noReply ? `${t.who} alert (${t.label})` : `Reply to ${t.who} (${t.label})`, 56),
                 line: clip([ live ? "URGENT" : "", t.wants, t.drafted ? "draft ready" : "", when ].filter(Boolean).join(" · "), 96),
                 open: X.e["comms-triage"] ? "comms-triage" : X.e.comms ? "comms" : null,
                 kind: "inbound",
