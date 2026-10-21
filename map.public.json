@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-21T02:44:17.827Z",
+ "generatedAt": "2026-10-21T03:08:47.671Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1296,18 +1296,6 @@
    "parked": false,
    "children": [
     {
-     "id": "brain-architecture",
-     "label": "BRAIN ARCHITECTURE",
-     "status": "done",
-     "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
-     "statusLine": "done · cold-start drill passes nightly",
-     "caption": "Swap the model and nothing is lost:",
-     "stage": "done",
-     "embed": "pages/brain-architecture.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "context-map",
      "label": "CONTEXT MAP",
      "status": "idle",
@@ -1507,6 +1495,21 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brain-architecture",
+   "label": "BRAIN ARCHITECTURE",
+   "status": "done",
+   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
+   "statusLine": "done · cold-start drill passes nightly",
+   "caption": "Swap the model and nothing is lost:",
+   "stage": "done",
+   "embed": "pages/brain-architecture.html",
+   "visibility": "public",
+   "parent": "man-rules",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
