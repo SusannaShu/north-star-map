@@ -535,27 +535,29 @@
             const m = (Date.now() - s) / 6e4;
             return m < 90 ? `${Math.max(1, Math.round(m))} min` : `${Math.round(m / 60)} h`;
         };
-        for (const t of tasks) {
+        for (const t of [ ...tasks ].sort((a, b) => (Date.parse(b.at || "") || 0) - (Date.parse(a.at || "") || 0))) {
             if (liveTasks.has(t.id) || qTask.has(t.id) || !(t.status === "running" || t.status === "queued")) continue;
             const id = t.dot && X.e[t.dot] ? t.dot : null;
             const waitingNow = t.status === "queued" && (t.waitingOn || t.asleep);
             if (waitingNow) {
-                add("waiting", "agents-waiting", {
+                add("waiting", groupFor(id, "agents-waiting"), {
                     name: clip(t.name, 48),
-                    line: clip(`${t.id} · ${String(t.waiting || "waiting").split(" -- ")[0]}`, 80),
+                    line: clip(`${t.id} · ${t.startedAt ? "in progress, blocked: " : ""}${String(t.waiting || "waiting").split(" -- ")[0].replace(/^waiting for /, "")}`, 110),
                     open: id,
                     kind: "task",
                     taskId: t.id,
                     waitingOn: true,
+                    inProgress: !!t.startedAt,
+                    blocker: String(t.waiting || "").split(" -- ")[0] || undefined,
                     asleep: t.asleep || undefined,
                     src: "voice task",
                     since: t.at || null
                 });
                 continue;
             }
-            add("working", t.status === "queued" ? "queued" : groupFor(id, "agents"), {
+            add("working", groupFor(id, t.status === "queued" ? "queued" : "agents"), {
                 name: clip(t.name, 48),
-                line: clip(t.status === "queued" ? `${t.id} · ${t.waiting || "next free slot"}` : `${t.id} · ${t.now || "working"} · ${tAgo(t)}`, 80),
+                line: clip(t.status === "queued" ? `${t.id} · queued: ${t.waiting || "next free slot"}` : `${t.id} · ${t.now || "working"} · ${tAgo(t)}`, 80),
                 open: id,
                 kind: "task",
                 taskId: t.id,
@@ -781,7 +783,7 @@
             } : null;
             if (q.task && !t || !q.task && asker && !(asker.status === "running" || asker.status === "queued")) continue;
             if (t && t.status === "queued" && (t.waitingOn || t.asleep)) {
-                add("waiting", "agents-waiting", {
+                add("waiting", g || "agents-waiting", {
                     ...base,
                     name: title,
                     line: clip(`${told} · ${t.id} · ${String(t.waiting || "waiting").split(" -- ")[0]}`, 96),
