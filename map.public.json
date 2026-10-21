@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-21T01:37:35.783Z",
+ "generatedAt": "2026-10-21T02:44:17.827Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1987,19 +1987,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "mittens-tutor",
-     "label": "MITTENS TEACHES",
-     "status": "idle",
-     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "statusLine": "idea",
-     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/mittens-tutor.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "wake-report",
      "label": "WAKE REPORT",
      "status": "idle",
@@ -2208,7 +2195,6 @@
     "wearables",
     "meeting-notes",
     "mw-blind",
-    "mittens-tutor",
     "pendant",
     "omi",
     "neural-band-cursor",
