@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-22T00:49:23.339Z",
+ "generatedAt": "2026-10-22T00:53:33.318Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -203,7 +203,7 @@
     {
      "id": "publish",
      "label": "PUBLISH",
-     "status": "working",
+     "status": "done",
      "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
      "statusLine": "paused",
      "caption": "Hourly, inside a safe window:",
