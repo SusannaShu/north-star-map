@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-22T06:41:14.178Z",
+ "generatedAt": "2026-10-22T10:24:17.476Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2270,7 +2270,7 @@
     {
      "id": "learn-ep-content-attention",
      "label": "WHO GETS ATTENTION",
-     "status": "idle",
+     "status": "done",
      "why": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
      "statusLine": "plan",
      "caption": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
