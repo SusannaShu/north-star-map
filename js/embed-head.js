@@ -12,7 +12,7 @@
  * cross-origin (cloud) -- then it posts {ns:'embed-head', lead} to the parent. Idempotent.
  */
 (function(){
-const CRUMB = /^(eyebrow|kick|kicker|crumb|crumbs|breadcrumb|breadcrumbs|lbl|over|overline|path|trail)$/;
+const CRUMB = /^(eyebrow|kick|kicker|crumb|crumbs|breadcrumb|breadcrumbs|lbl|over|overline|path|trail|ns-path)$/;   // a plain <nav> menu stays
 const LEAD = /^(lede|lead|sub|subtitle|dek|tagline|intro|standfirst|summary)$/;
 const META = /^(meta|byline|asof|stamp|state|status|st|chip|chips|pill|pills|due|draft|cap|s|tags|badge|badges|when|date|updated)$/;
 const HEAVY = 'img,video,iframe,table,canvas,button,input,select,textarea,figure,pre,ul,ol';
@@ -29,7 +29,7 @@ window.nsEmbedHead = function(doc){
   if (!root || !doc.body) return null;
   if (root.hasAttribute('data-ns-embed')) return { lead: root.getAttribute('data-ns-embed-lead') || '', hidden: [] };
   const h1 = doc.body.querySelector('h1');
-  if (!h1) return null;
+  if (!h1 || h1.hasAttribute('data-embed-keep')) return null;
   const h2 = doc.body.querySelector('h2,h3');
   if (h2 && (h2.compareDocumentPosition(h1) & 4)) return null;      // a heading comes before the h1: not a page header
   const hidden = []; let lead = '';
@@ -37,16 +37,16 @@ window.nsEmbedHead = function(doc){
   // before the h1: breadcrumb / eyebrow lines
   for (let el = h1.previousElementSibling; el; el = el.previousElementSibling) {
     if (skip(el)) continue;
-    if ((has(el, CRUMB) || has(el, META) || el.tagName === 'NAV') && plain(el, 220)) hide(el, hidden); else break;
+    if ((has(el, CRUMB) || has(el, META) || has(el, /^ns-path$/) || /breadcrumb/i.test(el.getAttribute('aria-label') || '')) && plain(el, 220)) hide(el, hidden); else break;
   }
   hide(h1, hidden);
   // after the h1: the lead line, then meta / status / chip lines (in any order), until real content starts
   for (let el = h1.nextElementSibling; el; el = el.nextElementSibling) {
     if (skip(el)) continue;
-    if (has(el, LEAD) && plain(el, 900)) { if (!lead) lead = txt(el); hide(el, hidden); continue; }
+    if (has(el, LEAD) && plain(el, 900)) { if (lead) break; lead = txt(el); hide(el, hidden); continue; }   // one lead line; a second is content
     if (has(el, META) && plain(el, 300)) { hide(el, hidden); continue; }
     if (el.tagName === 'SPAN' && plain(el, 120)) { hide(el, hidden); continue; }    // a bare status chip
-    if (/^(DIV|P)$/.test(el.tagName) && el.children.length && [...el.children].every(c => has(c, META) || c.tagName === 'SPAN') && plain(el, 300)) { hide(el, hidden); continue; }   // a row of chips
+    if (/^(DIV|P)$/.test(el.tagName) && el.children.length && [...el.children].every(c => has(c, /^(chip|pill|badge|tag|st|status)$/)) && plain(el, 300)) { hide(el, hidden); continue; }   // a row of chips
     break;
   }
   if (!lead && small) lead = txt(small);

@@ -503,7 +503,11 @@ function docPane(on) {
         const fr = el.querySelector("iframe");
         if (el.dataset.src !== src) {
             el.dataset.src = src;
-            fr.src = macUrl(src);
+            fr.src = window.nsEmbedSrc ? window.nsEmbedSrc(src) : macUrl(src);
+            if (window.nsWatchEmbed) window.nsWatchEmbed(fr, lead => {
+                const c = el.querySelector(".doc-cap");
+                if (c && lead && !c.textContent) c.textContent = lead;
+            });
         }
         el.querySelector(".doc-title").textContent = FULL.e[ROOT].label || "";
         el.querySelector(".doc-cap").textContent = d.embedCaption || "";

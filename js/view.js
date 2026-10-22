@@ -47,15 +47,23 @@
             sub.title = lead;
         }
     }
-    function hideEmbedHead(fr) {
+    function hideEmbedHead(fr, onLead) {
+        if (!EMBED_HEAD()) return;
+        if (!onLead) onLead = lead => {
+            if (fr.dataset.head) keepRicherLead(lead);
+        };
+        fr._nsLead = onLead;
         const go = () => {
             let r = null;
             try {
                 if (window.nsEmbedHead && fr.contentDocument) r = window.nsEmbedHead(fr.contentDocument);
             } catch {}
-            if (r && fr.dataset.head) keepRicherLead(r.lead);
+            if (r) fr._nsLead(r.lead);
         };
-        fr.addEventListener("load", go);
+        if (!fr._nsWired) {
+            fr._nsWired = 1;
+            fr.addEventListener("load", go);
+        }
         let n = 0;
         const t = setInterval(() => {
             let doc = null;
@@ -75,9 +83,11 @@
     window.addEventListener("message", e => {
         const m = e.data;
         if (!m || m.ns !== "embed-head" || !EMBED_HEAD()) return;
-        const fr = [ ...focusEl.querySelectorAll("iframe.vw-embed[data-head]") ].find(f => f.contentWindow === e.source);
-        if (fr) keepRicherLead(m.lead);
+        const fr = [ ...document.querySelectorAll("iframe") ].find(f => f.contentWindow === e.source);
+        if (fr && fr._nsLead) fr._nsLead(m.lead);
     });
+    window.nsEmbedSrc = embedSrc;
+    window.nsWatchEmbed = hideEmbedHead;
     const mins = s => s == null ? "" : s < 90 ? `${Math.round(s)}s` : s < 5400 ? `${Math.round(s / 60)} min` : `${(s / 3600).toFixed(1)} h`;
     window.renderView = function(target, opts) {
         const id = target.id, n = byId[id] || target, d = DETAILS[id] || {};
@@ -127,7 +137,7 @@
         });
         if (d.hasFlow || id.startsWith("r:")) drawFlowInto(id);
         if (d.view === "location" || id === "location") mountMap();
-        if (EMBED_HEAD()) focusEl.querySelectorAll("iframe.vw-embed").forEach(hideEmbedHead);
+        focusEl.querySelectorAll("iframe.vw-embed").forEach(f => hideEmbedHead(f));
     }
     function workersFor(id) {
         const own = (window.agentsOn ? window.agentsOn(id) : []).slice();
