@@ -6,6 +6,10 @@
  * a planned one stays planned. Nothing else comes from the server. */
 (function () {
   const URL = 'https://susannas-mac-mini.tailc633d2.ts.net:8443/activity';
+  // T1748 (her 10:10 am 10/22): on her own tailnet devices the Funnel name resolves to 100.x and Chrome's Local Network
+  // Access blocks the read (in the portfolio iframe it cannot even ask), so the agents line vanished for her. The
+  // Strapi mirror holds the same fail-closed body (filtered again below); read it when the Funnel read fails.
+  const MIRROR = 'https://strapi-backend-production-4eb8.up.railway.app/north-star/public/activity';
   const ID = /^[a-z0-9][a-z0-9-]{0,47}$/;
   const n99 = v => Number.isInteger(v) && v >= 0 && v < 100 ? v : null;
   // the only titles a worker row may carry (same list as loop/public-snapshot/worker-titles.mjs)
@@ -15,8 +19,10 @@
   async function activity() {
     if (Date.now() - lastAt < 60000) return last;
     lastAt = Date.now();
-    try { const r = await fetch(URL + '?m=' + Math.floor(Date.now() / 60000), { cache: 'no-store' });
-      if (r.ok) { const j = await r.json(); last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)), planned: (j.planned || []).filter(x => ID.test(x)),
+    const m = '?m=' + Math.floor(Date.now() / 60000);
+    const read = async u => { const r = await fetch(u + m, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status); return r.json(); };
+    try { const j = await read(URL).catch(() => read(MIRROR));
+      { last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)), planned: (j.planned || []).filter(x => ID.test(x)),
         count: n99(j.count), queued: n99(j.queued), waiting: n99(j.waiting), asleep: n99(j.asleep),
         labels: (Array.isArray(j.labels) ? j.labels : []).filter(x => typeof x === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(x)).slice(0, 8),
         // WORKERS (T710): one fixed public title, a public area label and working / waiting / queued -- nothing else

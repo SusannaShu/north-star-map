@@ -26,6 +26,58 @@
     };
     const kidsOf = id => nodes.filter(n => n.parent === id || DETAILS[n.id] && DETAILS[n.id].parent === id && n.type === "project").filter(n => n.type !== "intent" && n.type !== "agent");
     const statusDot = st => st === "needs-you" ? "needs-you" : st === "working" ? "working" : st === "planned" ? "planned" : st === "dormant" ? "dormant" : "done";
+    const EMBED_HEAD = () => !window.NS_EMBED_HEAD_OFF;
+    const embedSrc = u => {
+        u = macUrl(u);
+        if (!EMBED_HEAD() || !u) return u;
+        const i = u.indexOf("#"), h = i < 0 ? "" : u.slice(i), b = i < 0 ? u : u.slice(0, i);
+        return b + (b.includes("?") ? "&" : "?") + "embed=1" + h;
+    };
+    function keepRicherLead(lead) {
+        const sub = focusEl.querySelector(".vw-sub");
+        lead = String(lead || "").replace(/\s+/g, " ").trim();
+        if (!lead) return;
+        if (!sub) {
+            const head = focusEl.querySelector(".vw-head .vw-title");
+            if (head) head.insertAdjacentHTML("afterend", `<div class="vw-sub">${esc(clip(lead, 420))}</div>`);
+            return;
+        }
+        if (lead.length > sub.textContent.trim().length) {
+            sub.textContent = clip(lead, 420);
+            sub.title = lead;
+        }
+    }
+    function hideEmbedHead(fr) {
+        const go = () => {
+            let r = null;
+            try {
+                if (window.nsEmbedHead && fr.contentDocument) r = window.nsEmbedHead(fr.contentDocument);
+            } catch {}
+            if (r && fr.dataset.head) keepRicherLead(r.lead);
+        };
+        fr.addEventListener("load", go);
+        let n = 0;
+        const t = setInterval(() => {
+            let doc = null;
+            try {
+                doc = fr.contentDocument;
+            } catch {
+                clearInterval(t);
+                return;
+            }
+            if (++n > 80 || !fr.isConnected) return clearInterval(t);
+            if (doc && doc.readyState !== "loading" && /[?&]embed=1/.test(doc.URL || "")) {
+                clearInterval(t);
+                go();
+            }
+        }, 60);
+    }
+    window.addEventListener("message", e => {
+        const m = e.data;
+        if (!m || m.ns !== "embed-head" || !EMBED_HEAD()) return;
+        const fr = [ ...focusEl.querySelectorAll("iframe.vw-embed[data-head]") ].find(f => f.contentWindow === e.source);
+        if (fr) keepRicherLead(m.lead);
+    });
     const mins = s => s == null ? "" : s < 90 ? `${Math.round(s)}s` : s < 5400 ? `${Math.round(s / 60)} min` : `${(s / 3600).toFixed(1)} h`;
     window.renderView = function(target, opts) {
         const id = target.id, n = byId[id] || target, d = DETAILS[id] || {};
@@ -44,8 +96,8 @@
         if (hero.length) parts.push(`<div class="vw-cards">${hero.join("")}</div>`);
         const linked = (DATA.peopleAt || {})[id] || [];
         if (linked.length) parts.push(peopleRow(linked));
-        if (d.embed) parts.push(`<div class="vw-block"><div class="vw-cap">${esc(d.embedCaption || (id === "skin-build" || id === "robot-skin" ? "the layer stack, part by part" : "the page"))} · <a href="${esc(macUrl(d.embed))}" target="_blank">open full ↗</a></div>\n    <iframe class="vw-embed" src="${esc(macUrl(d.embed))}" loading="lazy" title="${esc(n.label)}"></iframe></div>`);
-        if (d.stack) parts.push(`<div class="vw-block"><div class="vw-cap">stack &amp; how it works · <a href="${esc(macUrl(d.stack))}" target="_blank">open full ↗</a></div>\n    <iframe class="vw-embed" src="${esc(macUrl(d.stack))}" loading="lazy" title="stack"></iframe></div>`);
+        if (d.embed) parts.push(`<div class="vw-block"><div class="vw-cap">${esc(d.embedCaption || (id === "skin-build" || id === "robot-skin" ? "the layer stack, part by part" : "the page"))} · <a href="${esc(macUrl(d.embed))}" target="_blank">open full ↗</a></div>\n    <iframe class="vw-embed" data-head="1" src="${esc(embedSrc(d.embed))}" loading="lazy" title="${esc(n.label)}"></iframe></div>`);
+        if (d.stack) parts.push(`<div class="vw-block"><div class="vw-cap">stack &amp; how it works · <a href="${esc(macUrl(d.stack))}" target="_blank">open full ↗</a></div>\n    <iframe class="vw-embed" src="${esc(embedSrc(d.stack))}" loading="lazy" title="stack"></iframe></div>`);
         const graph = opts && opts.noGraph ? "" : subgraph(id);
         if (graph) parts.push(graph);
         if (d.hasFlow || id.startsWith("r:")) parts.push(`<div class="vw-block"><div class="vw-cap">flow</div><div class="vw-flow" id="vwFlow"><div class="hint">drawing…</div></div></div>`);
@@ -75,6 +127,7 @@
         });
         if (d.hasFlow || id.startsWith("r:")) drawFlowInto(id);
         if (d.view === "location" || id === "location") mountMap();
+        if (EMBED_HEAD()) focusEl.querySelectorAll("iframe.vw-embed").forEach(hideEmbedHead);
     }
     function workersFor(id) {
         const own = (window.agentsOn ? window.agentsOn(id) : []).slice();
