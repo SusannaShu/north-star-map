@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-22T18:24:19.207Z",
+ "generatedAt": "2026-10-22T21:41:38.206Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -361,21 +361,6 @@
      "visibility": "public",
      "links": [
       "proactive-rules"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "go-anywhere",
-     "label": "GO ANYWHERE",
-     "status": "idle",
-     "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
-     "statusLine": "live · bike-share arrival flow",
-     "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
-     "stage": "active",
-     "embed": "pages/go-anywhere.html",
-     "visibility": "public",
-     "links": [
-      "glasses-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -2489,6 +2474,24 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "go-anywhere",
+   "label": "GO ANYWHERE",
+   "status": "idle",
+   "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
+   "statusLine": "live · bike-share arrival flow",
+   "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
+   "stage": "active",
+   "embed": "pages/go-anywhere.html",
+   "visibility": "public",
+   "links": [
+    "glasses-mittens"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   }
  ],
