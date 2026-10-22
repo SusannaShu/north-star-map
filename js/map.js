@@ -1067,7 +1067,12 @@ async function loadData() {
         if (d) DATA = d;
     } catch {}
     await Promise.race([ fetchHere(), new Promise(r => setTimeout(r, 1500)) ]);
-    if (!PUBLIC) setInterval(fetchHere, 6e4);
+    if (!PUBLIC) {
+        if (window.nsPulse && !CLOUD) nsPulse([ "location" ], () => fetchHere(), {
+            minGapMs: 15e3,
+            fallbackMs: 6e4
+        }); else setInterval(fetchHere, 6e4);
+    }
     if (DATA.cloud) tick(`<b>north-star</b> · from the Mac ${ago(DATA.cloud.pushedAt)}`);
     buildGraph(DATA);
     renderChrome();

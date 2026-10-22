@@ -372,6 +372,8 @@
         });
     } else mountDock();
     render(true);
-    setInterval(() => render(false), PAGE ? 3e4 : 1e4);
+    if (window.nsPulse) nsPulse(PAGE ? [ "map" ] : [], () => render(false), {
+        minGapMs: 3e4
+    }); else setInterval(() => render(false), PAGE ? 3e4 : 1e4);
     addEventListener("ns:map", () => render(false));
 })();
