@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-22T01:38:13.588Z",
+ "generatedAt": "2026-10-22T02:14:46.813Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -330,9 +330,7 @@
      "links": [
       "mittens-proactive",
       "context-graph",
-      "map-upkeep",
-      "mw-blind",
-      "mw-calls"
+      "map-upkeep"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -515,22 +513,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "window-tiling",
-     "label": "WINDOW TILING",
-     "status": "idle",
-     "why": "Ask to open several things and each gets its own window, tiled without overlap on the screen I am at.",
-     "statusLine": "built",
-     "caption": "Ask to open several things and each gets its own window, tiled without overlap on the screen I am at.",
-     "stage": "active",
-     "embed": "pages/window-tiling.html",
-     "visibility": "public",
-     "links": [
-      "desktop-agent",
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-ota",
      "label": "UPDATES ANYWHERE",
      "status": "idle",
@@ -554,42 +536,6 @@
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
      "stage": "active",
      "embed": "pages/mittens-architecture.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "phone-control",
-     "label": "PHONE CONTROL",
-     "status": "idle",
-     "why": "Agents see and tap the phone the way a person would, so Mittens can act in any app. Next: control from anywhere, not only on the same network.",
-     "statusLine": "works at home and over cellular",
-     "caption": "Agents see and tap the phone the way a person would, so Mittens can act in any app.",
-     "stage": "active",
-     "embed": "pages/phone-control.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "desktop-agent",
-     "label": "DESKTOP AGENT",
-     "status": "idle",
-     "why": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
-     "statusLine": "live",
-     "caption": "Mittens on the Mac mini hands screen and app jobs to an agent running on my laptop itself, which opens, arranges and works my apps and windows on an external screen -- by voice.",
-     "stage": "active",
-     "embed": "pages/desktop-agent.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "agent-phone",
-     "label": "ALWAYS-HOME ANDROID",
-     "status": "idle",
-     "why": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
-     "statusLine": "running",
-     "caption": "An Android phone that stays home and is always available to agents, so they can read and act in apps that have no API.",
-     "stage": "active",
-     "embed": "pages/agent-phone.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1136,57 +1082,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "daily-sync",
-     "label": "DAILY SYNC",
-     "status": "idle",
-     "why": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
-     "statusLine": "live",
-     "caption": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
-     "embed": "pages/daily-sync.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "morning-brief",
-     "label": "MORNING BRIEF",
-     "status": "idle",
-     "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
-     "statusLine": "live · greets on waking",
-     "caption": "One morning notification:",
-     "stage": "active",
-     "embed": "pages/morning-brief.html",
-     "visibility": "public",
-     "links": [
-      "action-tree",
-      "research-watch"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "what-changed",
-     "label": "WHAT CHANGED",
-     "status": "idle",
-     "why": "Each morning: what got built, fixed or shipped yesterday, in five lines grouped by area.",
-     "statusLine": "built",
-     "caption": "Each morning:",
-     "stage": "active",
-     "embed": "pages/what-changed.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "nightly-reflection",
-     "label": "NIGHTLY REFLECTION",
-     "status": "idle",
-     "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · fixes made overnight",
-     "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "stage": "active",
-     "embed": "pages/nightly-reflection.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "public-intro",
      "label": "PUBLIC INTRO",
      "status": "idle",
@@ -1211,23 +1106,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "watchdog",
-     "label": "WATCHDOG",
-     "status": "idle",
-     "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
-     "statusLine": "live",
-     "caption": "Nothing fails silently:",
-     "stage": "active",
-     "embed": "pages/watchdog.html",
-     "visibility": "public",
-     "links": [
-      "mittens-proactive",
-      "howto-routines",
-      "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "action-tree",
      "label": "ACTION TREE",
      "status": "idle",
@@ -1238,7 +1116,6 @@
      "embed": "pages/action-tree.html",
      "visibility": "public",
      "links": [
-      "window-tiling",
       "context-graph",
       "housekeeping"
      ],
@@ -1255,8 +1132,7 @@
      "embed": "pages/ns-desk.html",
      "visibility": "public",
      "links": [
-      "action-tree",
-      "window-tiling"
+      "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1412,97 +1288,6 @@
       "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "howto-mittens-desktop",
-     "label": "MITTENS DESKTOP",
-     "status": "idle",
-     "why": "How the desktop watcher runs and what it keeps.",
-     "caption": "How the desktop watcher runs and what it keeps.",
-     "stage": "active",
-     "embed": "pages/howto-mittens-desktop.html",
-     "visibility": "public",
-     "links": [
-      "mittens-desktop",
-      "mittens-daily",
-      "desktop-agent",
-      "omi"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "howto-talk-requests",
-     "label": "TALK REQUESTS",
-     "status": "idle",
-     "why": "Every ask in Talk gets its own row, open to done, raised when nothing starts within ten minutes.",
-     "caption": "Every ask in Talk gets its own row, open to done, raised when nothing starts within ten minutes.",
-     "stage": "active",
-     "embed": "pages/howto-talk-requests.html",
-     "visibility": "public",
-     "links": [
-      "mittens",
-      "mittens-architecture",
-      "mittens-digital",
-      "northstar",
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "howto-ui-style",
-     "label": "UI STYLE HOW-TO",
-     "status": "idle",
-     "why": "The palette, type and dot glyphs every page and screen uses.",
-     "caption": "The palette, type and dot glyphs every page and screen uses.",
-     "stage": "active",
-     "embed": "pages/howto-ui-style.html",
-     "visibility": "public",
-     "links": [
-      "ui-style",
-      "northstar",
-      "mittens-daily",
-      "mittens-app",
-      "smart-glasses",
-      "soft-robot",
-      "robot-skin",
-      "skin-build",
-      "skin-schedule"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "howto-video-qa",
-     "label": "VIDEO QA",
-     "status": "idle",
-     "why": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
-     "caption": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
-     "stage": "active",
-     "embed": "pages/howto-video-qa.html",
-     "visibility": "public",
-     "links": [
-      "daily-content",
-      "viral-machine",
-      "marketing"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "howto-windows",
-     "label": "WINDOWS",
-     "status": "idle",
-     "why": "How agents open several things at once, each in its own tiled window.",
-     "caption": "How agents open several things at once, each in its own tiled window.",
-     "stage": "active",
-     "embed": "pages/howto-windows.html",
-     "visibility": "public",
-     "links": [
-      "devhub",
-      "ns-talk",
-      "desktop-agent",
-      "window-tiling",
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1579,11 +1364,7 @@
      "embed": "pages/howto-devices.html",
      "visibility": "public",
      "links": [
-      "phone-control",
-      "agent-phone",
       "glasses-mittens",
-      "desktop-agent",
-      "window-tiling",
       "man-devices"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1598,7 +1379,6 @@
      "embed": "pages/howto-phone-iphone.html",
      "visibility": "public",
      "links": [
-      "phone-control",
       "mittens-app"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1613,25 +1393,7 @@
      "embed": "pages/howto-android.html",
      "visibility": "public",
      "links": [
-      "agent-phone",
       "mittens-hw"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "howto-meta-glasses",
-     "label": "GLASSES HOW-TO",
-     "status": "idle",
-     "why": "How Mittens draws on the glasses.",
-     "caption": "How Mittens draws on the glasses.",
-     "stage": "active",
-     "embed": "pages/howto-meta-glasses.html",
-     "visibility": "public",
-     "links": [
-      "glasses-mittens",
-      "lens-home",
-      "mittens-daily",
-      "mittens-app"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1721,8 +1483,7 @@
      "embed": "pages/howto-builds-ios.html",
      "visibility": "public",
      "links": [
-      "mittens-app",
-      "phone-control"
+      "mittens-app"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1754,12 +1515,8 @@
      "links": [
       "devhub",
       "northstar",
-      "daily-sync",
       "daily-content",
-      "watchdog",
-      "mittens-proactive",
-      "nightly-reflection",
-      "what-changed"
+      "mittens-proactive"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1961,44 +1718,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "mw-calls",
-     "label": "CALLS AS MITTENS",
-     "status": "idle",
-     "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "statusLine": "live · Mittens answers calls first",
-     "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "stage": "active",
-     "embed": "pages/mw-calls.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mw-call-voice",
-     "label": "CALL VOICE",
-     "status": "done",
-     "why": "Phone calls that sound less like AI: a short opener, one sentence per turn, an instant \"mm-hm\", half-second turns -- free, no paid voice service.",
-     "statusLine": "done",
-     "caption": "Phone calls that sound less like AI:",
-     "stage": "done",
-     "embed": "pages/mw-call-voice.html",
-     "visibility": "public",
-     "links": [
-      "mw-calls"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mw-blind",
-     "label": "CAN'T SEE -> ASK",
-     "status": "idle",
-     "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
-     "statusLine": "built · waiting for a first real case",
-     "caption": "Glasses off or a useless frame:",
-     "embed": "pages/mw-blind.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
      "status": "idle",
@@ -2093,10 +1812,9 @@
    "embed": "pages/mittens-knows.html",
    "visibility": "public",
    "links": [
-    "mw-blind",
     "mittens-desktop"
    ],
-   "parent": "mittens",
+   "parent": "mittens-daily",
    "parked": false,
    "children": [
     {
@@ -2111,7 +1829,6 @@
      "visibility": "public",
      "links": [
       "omi",
-      "desktop-agent",
       "mittens-daily"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -2129,7 +1846,7 @@
    "stage": "active",
    "embed": "pages/smart-glasses.html",
    "visibility": "public",
-   "parent": "mittens",
+   "parent": "wearables",
    "parked": false,
    "children": [
     {
@@ -2218,27 +1935,20 @@
     "mittens-architecture",
     "mittens-vision",
     "northstar",
-    "nightly-reflection",
     "mittens-knows",
     "mittens-proactive",
     "proactive-rules",
     "mittens-daily",
     "need-her-once",
     "action-tree",
-    "morning-brief",
     "mittens-hw",
     "go-anywhere",
     "mittens-digital",
-    "agent-phone",
-    "phone-control",
     "mittens-desktop",
-    "desktop-agent",
-    "window-tiling",
     "smart-glasses",
     "glasses-mittens",
     "wearables",
     "meeting-notes",
-    "mw-blind",
     "mittens-tutor",
     "pendant",
     "omi",
@@ -2247,9 +1957,7 @@
     "aurora-market",
     "small-models",
     "ns-talk",
-    "mw-call-voice",
     "mittens-barge-in",
-    "mw-calls",
     "mittens-app",
     "fit-data",
     "susu-closet",
@@ -2282,9 +1990,6 @@
    "stage": "active",
    "embed": "pages/local-watch.html",
    "visibility": "public",
-   "links": [
-    "morning-brief"
-   ],
    "parent": "mittens-hw",
    "parked": false,
    "children": [],
