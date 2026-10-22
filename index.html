@@ -86,6 +86,11 @@ button.agents-ind { cursor:pointer; } button.agents-ind:hover { border-color:var
 .agents-ind .pulse { width:7px; height:7px; border-radius:50%; background:var(--accent); flex-shrink:0; animation:pulse 1.6s infinite; }
 .agents-ind b { color:var(--text); font-weight:700; }
 .agents-ind .who { color:var(--text-muted); max-width:22vw; overflow:hidden; text-overflow:ellipsis; }
+/* public status strip (T1786): the talk pill -- pulsing while she talks to Mittens, grey when idle */
+.presence-ind .ico, .agents-ind > .ico { width:15px; height:15px; color:var(--text); }
+.presence-ind .lbl { color:var(--text); font-weight:600; }
+.presence-ind.off .pulse { background:var(--text-dim); animation:none; }
+.presence-ind.off .ico, .presence-ind.off .lbl { color:var(--text-muted); }
 /* The "..." and its menu */
 .morebtn { position:relative; flex-shrink:0; width:33px; height:33px; display:flex; align-items:center; justify-content:center;
   border:1px solid var(--border); border-radius:var(--radius-sm); background:var(--bg); color:var(--text); cursor:pointer; padding:0; }

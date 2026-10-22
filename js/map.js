@@ -2561,7 +2561,7 @@ function setAgentsInd(n, names, clickable, queued) {
     const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "");
     if (box.dataset.sig === sig) return;
     box.dataset.sig = sig;
-    box.querySelectorAll(".agents-ind").forEach(el => el.remove());
+    box.querySelectorAll(".agents-ind:not(.presence-ind)").forEach(el => el.remove());
     if (!n && !queued) return;
     const el = document.createElement(clickable ? "button" : "div");
     el.className = "agents-ind";
@@ -2576,7 +2576,8 @@ function setAgentsInd(n, names, clickable, queued) {
 
 function renderPublicChrome() {
     const a = DATA.activity || {}, n = a.working || 0, labels = (a.labels || []).join(", ");
-    const rest = [ a.waiting ?? a.asleep ? `${a.waiting ?? a.asleep} waiting` : "", a.queued ? `${a.queued} queued` : "" ].filter(Boolean).join(" · ");
+    const wt = a.waiting ?? a.asleep ?? (window.NS_PRESENCE || {}).waiting;
+    const rest = [ wt ? `${wt} waiting` : "", a.queued ? `${a.queued} queued` : "" ].filter(Boolean).join(" · ");
     LIVE = {
         working: n,
         workers: Array.from({
