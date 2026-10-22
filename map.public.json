@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-22T10:24:17.476Z",
+ "generatedAt": "2026-10-22T18:24:19.207Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1849,22 +1849,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "aurora",
-     "label": "AURORA",
-     "status": "idle",
-     "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
-     "statusLine": "first voice file built · in review",
-     "caption": "A voice layer so an agent stops sounding like AI:",
-     "stage": "active",
-     "embed": "pages/aurora.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk",
-      "omi"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "aurora-market",
      "label": "WHO ELSE DOES THIS",
      "status": "done",
@@ -1913,6 +1897,25 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "aurora",
+   "label": "AURORA",
+   "status": "idle",
+   "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
+   "statusLine": "first voice file built · in review",
+   "caption": "A voice layer so an agent stops sounding like AI:",
+   "stage": "active",
+   "embed": "pages/aurora.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk",
+    "omi"
+   ],
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
