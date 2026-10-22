@@ -670,7 +670,8 @@ function buildGraph(full) {
             r: owned ? SZ.owned : SZ.child
         });
         k.done = c.stage === "done";
-        k.doneOld = k.done && !!c.doneAt && Date.now() - Date.parse(c.doneAt) > DONE_FOLD_MS;
+        k.merged = !!c.mergedInto;
+        k.doneOld = k.done && (!!c.archived || k.merged || !!c.doneAt && Date.now() - Date.parse(c.doneAt) > DONE_FOLD_MS);
         k.loud = !k.done && (k.status === "needs-you" || k.status === "working" || k.pin || k.live);
         k.fold = !k.loud && (!owned || MINOR_KINDS.has(k.kind) || k.planned || k.doneOld || k.kind === "howto" && !ROOT);
         links.push({
@@ -1512,7 +1513,7 @@ function satellites(n) {
         ctx.stroke();
         ctx.restore();
         ctx.fillStyle = DONE_C;
-        ctx.fillText(`done · ${old}`, tx + side * 10, dy);
+        ctx.fillText(`${all.every(k => !k.doneOld || k.merged) ? "merged" : "done"} · ${old}`, tx + side * 10, dy);
     }
     const w = old ? 64 : 14;
     n.sat = {

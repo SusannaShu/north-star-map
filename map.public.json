@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-21T23:38:22.752Z",
+ "generatedAt": "2026-10-22T00:49:23.339Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -21,28 +21,6 @@
    "visibility": "public",
    "parked": false,
    "children": [
-    {
-     "id": "designer-outreach",
-     "label": "DESIGNER OUTREACH",
-     "status": "idle",
-     "why": "Every day an agent finds student designers and young independent brands and puts their work on SHEYOU with a claim link.",
-     "statusLine": "daily routine",
-     "caption": "Every day an agent finds student designers and young independent brands and puts their work on SHEYOU with a claim link.",
-     "embed": "pages/designer-outreach.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "creator-outreach",
-     "label": "CREATOR OUTREACH",
-     "status": "idle",
-     "why": "Every day an agent finds fashion creators and builds each one a SUSU Closet already filled with designer pieces, rendered in the looks.",
-     "statusLine": "daily routine",
-     "caption": "Every day an agent finds fashion creators and builds each one a SUSU Closet already filled with designer pieces, rendered in the looks.",
-     "embed": "pages/creator-outreach.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "designers",
      "label": "DESIGNERS",
@@ -214,7 +192,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -225,22 +203,11 @@
     {
      "id": "publish",
      "label": "PUBLISH",
-     "status": "done",
+     "status": "working",
      "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
      "statusLine": "paused",
      "caption": "Hourly, inside a safe window:",
      "embed": "pages/publish.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "strategy-pass",
-     "label": "STRATEGY PASS",
-     "status": "idle",
-     "why": "Weekly: reads the whole funnel and writes the directive that sets the next week's content.",
-     "statusLine": "paused",
-     "caption": "Weekly:",
-     "embed": "pages/strategy-pass.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -322,29 +289,13 @@
     {
      "id": "mittens-vision",
      "label": "THE NEW OPENCLAW",
-     "status": "done",
+     "status": "idle",
      "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
      "statusLine": "vision · 8 pillars mapped",
      "caption": "Mittens and North Star as one agent for a whole life and work:",
-     "stage": "done",
+     "stage": "active",
      "embed": "pages/mittens-vision.html",
      "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-workstation",
-     "label": "MITTENS WORKSTATION",
-     "status": "done",
-     "why": "A narrow Mittens column beside the map on the desktop: today, chat, workers and the action tree at a glance.",
-     "statusLine": "done",
-     "caption": "A narrow Mittens column beside the map on the desktop:",
-     "stage": "done",
-     "embed": "pages/mittens-workstation.html",
-     "visibility": "public",
-     "links": [
-      "mittens-desktop",
-      "action-tree"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -369,14 +320,15 @@
     {
      "id": "proactive-rules",
      "label": "PROACTIVE RULES",
-     "status": "idle",
+     "status": "done",
      "why": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
      "statusLine": "built",
      "caption": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/proactive-rules.html",
      "visibility": "public",
      "links": [
+      "mittens-proactive",
       "context-graph",
       "map-upkeep",
       "mw-blind",
@@ -394,6 +346,9 @@
      "stage": "active",
      "embed": "pages/mittens-proactive.html",
      "visibility": "public",
+     "links": [
+      "proactive-rules"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -470,8 +425,7 @@
    "visibility": "public",
    "links": [
     "viral-machine",
-    "smart-glasses",
-    "night-shift"
+    "smart-glasses"
    ],
    "parent": "mittens",
    "parked": false,
@@ -655,6 +609,22 @@
       "work-in-threads"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-workstation",
+     "label": "MITTENS WORKSTATION",
+     "status": "done",
+     "why": "A narrow Mittens column beside the map on the desktop: today, chat, workers and the action tree at a glance.",
+     "statusLine": "done",
+     "caption": "A narrow Mittens column beside the map on the desktop:",
+     "stage": "done",
+     "embed": "pages/mittens-workstation.html",
+     "visibility": "public",
+     "links": [
+      "mittens-desktop",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -693,11 +663,11 @@
     {
      "id": "omi",
      "label": "OMI",
-     "status": "idle",
+     "status": "done",
      "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
      "statusLine": "old branch shelved · next: the voice-clone track",
      "caption": "Omi is the open-source AI wearable.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/omi.html",
      "visibility": "public",
      "links": [
@@ -769,11 +739,11 @@
     {
      "id": "muscle-papers",
      "label": "MUSCLE PAPERS",
-     "status": "idle",
+     "status": "done",
      "why": "Sixteen biohybrid-muscle papers (2014-2026) read and taught visually: one mechanism and three numbers each. Takeaway: living muscle gives 0.1-2.9 mN -- a living demo patch, not the mover.",
      "statusLine": "16 read · 4 must-reads",
      "caption": "Sixteen biohybrid-muscle papers (2014-2026) read and taught visually:",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/muscle-papers.html",
      "visibility": "public",
      "links": [
@@ -926,9 +896,6 @@
    "stage": "active",
    "embed": "pages/mittens-hw.html",
    "visibility": "public",
-   "links": [
-    "night-shift"
-   ],
    "parent": "mittens",
    "parked": false,
    "children": [],
@@ -972,6 +939,9 @@
      "planned": true,
      "embed": "pages/biohybrid-muscle.html",
      "visibility": "public",
+     "links": [
+      "muscle-papers"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1187,7 +1157,6 @@
      "embed": "pages/morning-brief.html",
      "visibility": "public",
      "links": [
-      "night-shift",
       "action-tree",
       "research-watch"
      ],
@@ -1203,9 +1172,6 @@
      "stage": "active",
      "embed": "pages/what-changed.html",
      "visibility": "public",
-     "links": [
-      "night-shift"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1273,7 +1239,6 @@
      "visibility": "public",
      "links": [
       "window-tiling",
-      "night-shift",
       "context-graph",
       "housekeeping"
      ],
@@ -1353,26 +1318,9 @@
    "parked": false,
    "children": [
     {
-     "id": "context-map",
-     "label": "CONTEXT MAP",
-     "status": "idle",
-     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
-     "statusLine": "built",
-     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
-     "stage": "active",
-     "embed": "pages/context-map.html",
-     "visibility": "public",
-     "links": [
-      "brain-architecture",
-      "mittens-chat-threads",
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "triggers",
      "label": "TRIGGERS",
-     "status": "done",
+     "status": "idle",
      "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
      "statusLine": "done",
      "caption": "When Mittens speaks first, as one list any model reads:",
@@ -1558,14 +1506,14 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "done",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
    "stage": "done",
    "embed": "pages/brain-architecture.html",
    "visibility": "public",
-   "parent": "man-rules",
+   "parent": "context-graph",
    "parked": false,
    "children": [
     {
@@ -1919,7 +1867,25 @@
    ],
    "parent": "manual-map",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "context-map",
+     "label": "CONTEXT MAP",
+     "status": "idle",
+     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "statusLine": "built",
+     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "stage": "active",
+     "embed": "pages/context-map.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture",
+      "mittens-chat-threads",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -2214,29 +2180,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "night-shift",
-   "label": "NIGHT SHIFT",
-   "status": "idle",
-   "why": "The routines that run while I sleep -- research, the watchers, the content cut and the system's own reflection -- so the morning starts with work already done.",
-   "statusLine": "live · every night",
-   "caption": "The routines that run while I sleep -- research, the watchers, the content cut and the system's own reflection -- so the morning starts with work already done.",
-   "stage": "active",
-   "embed": "pages/night-shift.html",
-   "visibility": "public",
-   "links": [
-    "daily-content",
-    "research-watch",
-    "mittens-hw",
-    "morning-brief",
-    "what-changed",
-    "action-tree"
-   ],
-   "parent": "mittens",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
    "status": "idle",
@@ -2247,7 +2190,6 @@
    "embed": "pages/research-watch.html",
    "visibility": "public",
    "links": [
-    "night-shift",
     "soft-robot",
     "robot-skin",
     "muscle-papers",
@@ -2321,7 +2263,7 @@
     "portfolio",
     "guardian-angel"
    ],
-   "parent": "night-shift",
+   "parent": "mittens-hw",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -2337,7 +2279,6 @@
    "embed": "pages/local-watch.html",
    "visibility": "public",
    "links": [
-    "night-shift",
     "morning-brief"
    ],
    "parent": "mittens-hw",
@@ -2399,7 +2340,7 @@
     "mittens-digital",
     "proactive-rules"
    ],
-   "parent": "mittens",
+   "parent": "mittens-knows",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"

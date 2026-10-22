@@ -182,7 +182,7 @@
         const t = strip(text);
         return !WORK.test(t) && (SOCIAL.test(t) || EVENTISH.test(t));
     }
-    function weekendOpen(now) {
+    function weekendOpen(now, day) {
         const d = new Date(now == null ? Date.now() : now), o = {
             timeZone: "America/New_York"
         };
@@ -194,6 +194,8 @@
             hour: "2-digit",
             hour12: false
         }).slice(0, 2);
+        const hd = day !== undefined ? day : typeof G.NS_HOLD_DAY === "function" ? G.NS_HOLD_DAY() : G.NS_HOLD_DAY;
+        if (hd === "sun") return wd === "Sun";
         return wd === "Sun" || wd === "Sat" && h >= 8;
     }
     function weekendHeld(text, {now: now, urgent: urgent = false, personal: personal = false} = {}) {
