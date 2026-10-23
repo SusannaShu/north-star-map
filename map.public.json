@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-23T12:00:53.689Z",
+ "generatedAt": "2026-10-23T15:53:58.379Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1115,22 +1115,6 @@
    "parked": false,
    "children": [
     {
-     "id": "housekeeping",
-     "label": "HOUSEKEEPING",
-     "status": "idle",
-     "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
-     "statusLine": "nightly cleanup running",
-     "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
-     "stage": "active",
-     "embed": "pages/housekeeping.html",
-     "visibility": "public",
-     "links": [
-      "howto-cleanup",
-      "context-graph"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "views-check",
      "label": "VIEWS CHECK",
      "status": "idle",
@@ -1143,6 +1127,25 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "housekeeping",
+   "label": "HOUSEKEEPING",
+   "status": "idle",
+   "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
+   "statusLine": "nightly cleanup running",
+   "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
+   "stage": "active",
+   "embed": "pages/housekeeping.html",
+   "visibility": "public",
+   "links": [
+    "howto-cleanup",
+    "context-graph"
+   ],
+   "parent": "devhub",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {

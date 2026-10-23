@@ -2588,7 +2588,7 @@ function renderPublicChrome() {
         }))
     };
     const pw = a.workers || [];
-    setAgentsInd(n, labels, pw.length > 0, rest);
+    setAgentsInd(n, labels, pw.length > 0 || n > 0 || !!rest, rest);
     if (panelNode && panelNode.id === "__agents" && panel.classList.contains("open")) openPublicAgentsPanel();
     DATA.ticker = [ `<b>north star</b> · ${PUBLIC_LINE}`, `<b>${n}</b> working${rest ? " · " + rest : ""} right now${labels ? " · " + esc(labels) : ""}`, ...DATA.generatedAt ? [ `<b>map</b> · rebuilt ${ago(DATA.generatedAt).replace(/ — .*$/, "")}` ] : [] ];
     if (a.paused) DATA.ticker.unshift(`<b>out of usage</b>${a.paused.until ? " until " + esc(a.paused.until) : ""} · most agents paused, requests wait in the queue`);
@@ -2631,19 +2631,42 @@ function openPublicAgentsPanel() {
     panel.classList.add("open");
     document.getElementById("pTabs").style.display = "none";
     syncPanelW();
-    document.getElementById("pTitle").textContent = "Agents";
-    const n = s => w.filter(x => x.status === s).length;
-    document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${[ `${n("working")} working`, n("waiting") ? `${n("waiting")} waiting` : "", n("queued") ? `${n("queued")} queued` : "" ].filter(Boolean).join(" · ")}</span>`;
-    const word = {
-        working: "working now",
-        waiting: "waiting on something",
-        queued: "queued for a free worker"
+    document.getElementById("pTitle").textContent = "What the agents are building";
+    const cnt = s => w.length ? w.filter(x => x.status === s).length : {
+        working: a.working || 0,
+        waiting: a.waiting || 0,
+        queued: a.queued || 0
+    }[s];
+    document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${[ `${cnt("working")} working`, cnt("waiting") ? `${cnt("waiting")} waiting` : "", cnt("queued") ? `${cnt("queued")} queued` : "" ].filter(Boolean).join(" · ")}</span>`;
+    const PRIV = "Private project";
+    const areas = new Map;
+    for (const x of w) {
+        const k = x.area || PRIV;
+        const g = areas.get(k) || {
+            titles: new Set,
+            working: 0,
+            waiting: 0,
+            queued: 0
+        };
+        g.titles.add(x.title);
+        g[x.status] = (g[x.status] || 0) + 1;
+        areas.set(k, g);
+    }
+    if (!w.length) for (const l of a.labels || []) areas.set(l, {
+        titles: new Set,
+        working: 1,
+        waiting: 0,
+        queued: 0,
+        approx: true
+    });
+    const order = [ ...areas.entries() ].sort((p, q) => (p[0] === PRIV) - (q[0] === PRIV) || q[1].working - p[1].working || q[1].waiting - p[1].waiting);
+    const state = g => g.approx ? "working now" : [ g.working ? `${g.working} working` : "", g.waiting ? `${g.waiting} waiting` : "", g.queued ? `${g.queued} queued` : "" ].filter(Boolean).join(" · ");
+    const row = ([k, g]) => {
+        const id = k === PRIV ? null : nodeFor(k);
+        const name = k === PRIV ? "Private projects" : id && FULL.e[id] ? FULL.e[id].label : k;
+        return `<div class="agent-row"${id ? ` style="cursor:pointer" onclick="jumpTo('${esc(id)}')"` : ""}>\n      <div class="agent-top"><b>${esc(name)}</b><span class="agent-kind">${esc(state(g))}</span></div>\n      ${g.titles.size ? `<div class="agent-now">${esc([ ...g.titles ].join(", "))}</div>` : ""}</div>`;
     };
-    const group = s => {
-        const rows = w.filter(x => x.status === s);
-        return rows.length ? `<div class="agent-kind" style="margin:14px 0 6px">${esc(s.toUpperCase())}</div>` + rows.map(x => `\n    <div class="agent-row"><div class="agent-top"><b>${esc(x.title)}</b><span class="agent-kind">${esc(x.area)}</span></div>\n      <div class="agent-now">${esc(word[s])}</div></div>`).join("") : "";
-    };
-    document.getElementById("pBody").innerHTML = w.length ? [ "working", "waiting", "queued" ].map(group).join("") + '<div class="agent-empty" style="margin-top:14px">Titles are kinds of work only; private projects stay private.</div>' : '<div class="agent-empty">Nothing is running right now.</div>';
+    document.getElementById("pBody").innerHTML = order.length ? order.map(row).join("") + '<div class="agent-empty" style="margin-top:14px">Tap a project to see it on the map. Kinds of work only; private projects stay private.</div>' : '<div class="agent-empty">Nothing is running right now.</div>';
 }
 
 window.jumpToWorker = wid => {

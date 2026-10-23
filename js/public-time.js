@@ -9,7 +9,10 @@
  * 2026-10-22 11:17 am, her ask (T1764): "the change of dots too not just update" -- STRUCTURE changes are
  * timeline events: a tick row under the bars marks days a dot was added / moved / renamed / merged / done /
  * retired, and the day's second caption line names them. Local: map.json structureChanges
- * (loop/map-changes.mjs); public: history.json `changes` (public ids only, no renames; ships on her yes). */
+ * (loop/map-changes.mjs); public: history.json `changes` (public ids only, no renames; ships on her yes).
+ * 2026-10-23 9:53 am, her ask (T1915, an ALTERNATIVE, off by default): ?time=condensed merges a run of quiet, alike
+ * days (mostly the same few dots, e.g. Nightly content / Publish / Fashion future for weeks) into ONE step with its
+ * date range and day count, so playback does not repeat itself; busy days stay one step each. */
 (function () {
   const DAYS = 45;
   const css = `.ns-time{position:fixed;left:50%;transform:translateX(-50%);bottom:40px;z-index:16;width:min(620px,calc(100vw - 32px));
@@ -35,6 +38,8 @@
   const nice = d => new Date(d + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', timeZone: 'UTC' });
   const VERB = { added: 'added', moved: 'moved', renamed: 'renamed', merged: 'merged', done: 'done', archived: 'retired' };
   let H, list = [], sel = -1, timer = null, labels = {}, CH = {};
+  const CONDENSED = new URLSearchParams(location.search).get('time') === 'condensed';
+  let G = null;   // condensed: last day of a run -> { from, to, n, ids }
   async function boot() {
     const own = !window.NS_PUBLIC && /[?&]time=1(&|$)/.test(location.search);
     if (!own) { try { const r = await fetch('history.json', { cache: 'no-store' }); if (!r.ok) return; H = await r.json(); } catch { return; } }
@@ -50,23 +55,39 @@
     for (const [d, rows] of Object.entries(CH)) for (const c of rows) if (c.k === 'added' && (!H.created[c.id] || d < H.created[c.id])) H.created[c.id] = d;
     const today = dayOf(Date.now());
     for (let i = DAYS - 1; i >= 0; i--) list.push(dayOf(Date.parse(today + 'T12:00:00Z') - i * 864e5));
+    if (CONDENSED) {
+      // a quiet day (<= 8 dots) joins the run before it when it shares at least 40% of its dots with the run (or is
+      // empty); a busy day is its own step. The step is keyed by the run's last day.
+      const QUIET = 8, runs = []; let run = null;
+      for (const d of list) {
+        const ids = H.days[d] || [], u = run ? run.ids : null;
+        const alike = u && ids.length <= QUIET && run.quiet && (!ids.length || ids.filter(x => u.has(x)).length / new Set([...ids, ...u]).size >= 0.4);
+        if (alike) { run.days.push(d); ids.forEach(x => run.ids.add(x)); }
+        else { run = { days: [d], ids: new Set(ids), quiet: ids.length <= QUIET }; runs.push(run); }
+      }
+      G = {}; list = runs.map(r => { const k = r.days[r.days.length - 1]; G[k] = { from: r.days[0], to: k, n: r.days.length, ids: [...r.ids], days: r.days }; return k; });
+      const CH2 = {}; for (const k of list) { const rows = G[k].days.flatMap(d => CH[d] || []); if (rows.length) CH2[k] = rows; } CH = CH2;
+    }
+    const idsOf = d => (G ? G[d].ids : H.days[d] || []);
+    const niceOf = d => (G && G[d].n > 1 ? `${nice(G[d].from)} – ${nice(d)} · ${G[d].n} days` : nice(d));
+    function d0 (id) { const c = H.created[id]; return G ? list.find(k => c >= G[k].from && c <= G[k].to) : c; }
     const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
     const el = document.createElement('div'); el.className = 'ns-time'; el.setAttribute('aria-label', 'What was worked on, day by day');
     const hasCH = Object.keys(CH).length > 0;   // public: no `changes` until her yes (public-flags mapChanges) = the strip looks as before
-    const max = Math.max(1, ...list.map(d => (H.days[d] || []).length));
+    const max = Math.max(1, ...list.map(d => idsOf(d).length));
     el.innerHTML = `<div class="row"><button class="play" type="button" aria-label="Play the last ${DAYS} days">${PLAY}</button><div class="bars">${
-      list.map((d, i) => { const n = (H.days[d] || []).length; return `<i data-i="${i}" class="${n ? '' : 'empty'}" style="height:${n ? 14 + 86 * Math.sqrt(n / max) : 6}%" title="${nice(d)} · ${n} dot${n === 1 ? '' : 's'}"></i>`; }).join('')
-    }</div></div>${hasCH ? `<div class="ticks">${list.map((d, i) => { const n = (CH[d] || []).length; return `<i data-i="${i}">${n ? `<b title="${nice(d)} · ${n} map change${n === 1 ? '' : 's'}"></b>` : ''}</i>`; }).join('')}</div>` : ''}<div class="ends"><span>${nice(list[0])}</span><span>TIME · tap a day${hasCH ? ` · <b style="display:inline-block;width:4px;height:4px;border-radius:50%;background:currentColor;vertical-align:middle"></b> map changed` : ''}</span><span>today</span></div><div class="cap"></div><div class="cap chg"></div>`;
+      list.map((d, i) => { const n = idsOf(d).length; return `<i data-i="${i}" class="${n ? '' : 'empty'}" style="height:${n ? 14 + 86 * Math.sqrt(n / max) : 6}%${G && G[d].n > 1 ? `;flex:${Math.min(4, 1 + G[d].n / 6).toFixed(2)}` : ''}" title="${niceOf(d)} · ${n} dot${n === 1 ? '' : 's'}"></i>`; }).join('')
+    }</div></div>${hasCH ? `<div class="ticks">${list.map((d, i) => { const n = (CH[d] || []).length; return `<i data-i="${i}"${G && G[d].n > 1 ? ` style="flex:${Math.min(4, 1 + G[d].n / 6).toFixed(2)}"` : ''}>${n ? `<b title="${niceOf(d)} · ${n} map change${n === 1 ? '' : 's'}"></b>` : ''}</i>`; }).join('')}</div>` : ''}<div class="ends"><span>${nice(G ? G[list[0]].from : list[0])}</span><span>TIME${G ? ' · alike days merged' : ''} · tap a day${hasCH ? ` · <b style="display:inline-block;width:4px;height:4px;border-radius:50%;background:currentColor;vertical-align:middle"></b> map changed` : ''}</span><span>today</span></div><div class="cap"></div><div class="cap chg"></div>`;
     document.body.appendChild(el);
     const bars = el.querySelector('.bars'), ticks = el.querySelector('.ticks') || document.createElement('div'), cap = el.querySelector('.cap'), chg = el.querySelector('.chg'), btn = el.querySelector('.play');
     const pick = i => { sel = i; [...bars.children].forEach((b, k) => b.classList.toggle('on', k === i)); [...ticks.children].forEach((b, k) => b.classList.toggle('on', k === i));
       if (i < 0) { cap.innerHTML = ''; chg.innerHTML = ''; window.nsLight && window.nsLight([]); window.nsBorn && window.nsBorn(null); return; }
-      const d = list[i], ids = H.days[d] || [], born = Object.keys(H.created).filter(id => H.created[id] === d && labels[id]);
-      window.nsBorn && window.nsBorn(H.created, d);   // dots made after d are not on the map yet
+      const d = list[i], ids = idsOf(d), born = Object.keys(H.created).filter(id => (G ? d0(id) === d : H.created[id] === d) && labels[id]);
+      window.nsBorn && window.nsBorn(H.created, d);   // dots made after d are not on the map yet (condensed: the run's last day)
       const cs = CH[d] || [];
       window.nsLight && window.nsLight([...new Set([...ids, ...cs.map(c => c.id)])]);
       const nm = id => `<a data-id="${esc(id)}">${esc(String(labels[id] || id).replace(/ · \d+$/, ''))}</a>`;
-      cap.innerHTML = `<b>${nice(d)}</b> · ${ids.length ? `${ids.length} worked on: ${ids.filter(id => labels[id]).slice(0, 8).map(nm).join(', ')}${ids.length > 8 ? ' …' : ''}` : 'quiet day'}`
+      cap.innerHTML = `<b>${niceOf(d)}</b> · ${ids.length ? `${ids.length} worked on: ${ids.filter(id => labels[id]).slice(0, 8).map(nm).join(', ')}${ids.length > 8 ? ' …' : ''}` : 'quiet day'}`
         + (born.length ? ` · new: ${born.slice(0, 4).map(nm).join(', ')}` : '');
       // structure: "map changed: 3 added (A, B) · C moved to D · E renamed (was F) · G done"
       const by = {}; for (const c of cs) (by[c.k] ||= []).push(c);
@@ -82,7 +103,7 @@
     el.querySelectorAll('.cap').forEach(c => c.addEventListener('click', e => { const a = e.target.closest('a[data-id]'); if (a && window.nsOpen) { stop(); window.nsOpen(a.dataset.id); } }));
     btn.addEventListener('click', () => { if (timer) return stop(); btn.innerHTML = STOP; let i = 0;   // from the first day, so the map grows
       pick(i); timer = setInterval(() => { i++; if (i >= list.length) { stop(); return pick(-1); } pick(i); }, 800); });
-    const q = new URLSearchParams(location.search).get('day'), qi = list.indexOf(q); if (qi >= 0) pick(qi);   // ?day=YYYY-MM-DD links a day
+    const q = new URLSearchParams(location.search).get('day'), qi = G ? list.findIndex(k => q >= G[k].from && q <= G[k].to) : list.indexOf(q); if (q && qi >= 0) pick(qi);   // ?day=YYYY-MM-DD links a day
     document.addEventListener('keydown', e => { if (e.key === 'Escape' && sel >= 0) { stop(); pick(-1); } });
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
