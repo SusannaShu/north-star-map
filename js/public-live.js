@@ -10,6 +10,9 @@
   // Access blocks the read (in the portfolio iframe it cannot even ask), so the agents line vanished for her. The
   // Strapi mirror holds the same fail-closed body (filtered again below); read it when the Funnel read fails.
   const MIRROR = 'https://strapi-backend-production-4eb8.up.railway.app/north-star/public/activity';
+  // T1992 (her 2:54 pm 10/23): a local copy (the portfolio previews on the Mac mini, 127.0.0.1) reads the same file from
+  // loop/public-activity-serve.mjs directly -- the mirror has no worker rows, so the agents panel came up empty there.
+  const LOCAL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? `http://${location.hostname}:4432/activity` : null;
   const ID = /^[a-z0-9][a-z0-9-]{0,47}$/;
   const n99 = v => Number.isInteger(v) && v >= 0 && v < 100 ? v : null;
   // the only titles a worker row may carry (same list as loop/public-snapshot/worker-titles.mjs)
@@ -21,7 +24,7 @@
     lastAt = Date.now();
     const m = '?m=' + Math.floor(Date.now() / 60000);
     const read = async u => { const r = await fetch(u + m, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status); return r.json(); };
-    try { const j = await read(URL).catch(() => read(MIRROR));
+    try { const j = await (LOCAL ? read(LOCAL).catch(() => read(URL)) : read(URL)).catch(() => read(MIRROR));
       { last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)), planned: (j.planned || []).filter(x => ID.test(x)),
         count: n99(j.count), queued: n99(j.queued), waiting: n99(j.waiting), asleep: n99(j.asleep),
         labels: (Array.isArray(j.labels) ? j.labels : []).filter(x => typeof x === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(x)).slice(0, 8),

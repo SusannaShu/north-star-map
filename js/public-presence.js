@@ -3,6 +3,31 @@
     const LOCAL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
     const SRC = LOCAL ? [ `http://${location.hostname}:4432/presence` ] : [ "https://susannas-mac-mini.tailc633d2.ts.net:8443/presence", "https://strapi-backend-production-4eb8.up.railway.app/north-star/public/activity" ];
     const DEVICES = [ "glasses", "phone", "tablet", "laptop" ], SEEN = [ "within the hour", "earlier today", "yesterday", "this week" ];
+    const TYPES = {
+        glasses: "glasses",
+        iphone: "iPhone",
+        ipad: "iPad",
+        phone: "phone",
+        "mac-mini": "Mac mini",
+        macbook: "MacBook",
+        laptop: "laptop"
+    };
+    const TYPE_ICON = {
+        glasses: "glasses",
+        iphone: "phone",
+        ipad: "tablet",
+        phone: "phone",
+        "mac-mini": "laptop",
+        macbook: "laptop",
+        laptop: "laptop"
+    };
+    const both = a => a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1];
+    const fromWords = p => p && p.talk === "on" && p.devices.length ? "from her " + both(p.devices.map(d => TYPES[d])) : "";
+    window.nsTalkLine = () => {
+        const p = last;
+        if (!p || p.talk !== "on" || p.at != null && Date.now() - p.at > FRESH) return "";
+        return "Susanna is talking to Mittens" + (fromWords(p) ? " " + fromWords(p) : "");
+    };
     const n99 = v => Number.isInteger(v) && v >= 0 && v < 100 ? v : 0;
     const clean = j => {
         j = j && typeof j === "object" ? "presence" in j ? j.presence : j : null;
@@ -12,6 +37,7 @@
             at: isNaN(at) ? null : at,
             talk: talk,
             device: talk === "on" && DEVICES.includes(j.device) ? j.device : null,
+            devices: talk === "on" && Array.isArray(j.devices) ? [ ...new Set(j.devices.filter(d => d in TYPES)) ].slice(0, 4) : talk === "on" && j.device === "glasses" ? [ "glasses" ] : [],
             seen: talk === "off" && SEEN.includes(j.seen) ? j.seen : null,
             working: n99(j.working),
             waiting: n99(j.waiting)
@@ -58,9 +84,10 @@
             return;
         }
         const on = p.talk === "on";
-        const words = on ? "Talking to Mittens" : "Mittens idle";
-        const sub = on ? p.device ? `on ${p.device === "glasses" ? "the glasses" : `a ${p.device}`}` : "now" : p.seen ? `talked ${p.seen}` : "";
-        const sig = words + "|" + sub + "|" + (p.device || "");
+        const words = on ? "Susanna is talking to Mittens" : "Mittens idle";
+        const sub = on ? fromWords(p) || (p.device ? `on ${p.device === "glasses" ? "the glasses" : `a ${p.device}`}` : "now") : p.seen ? `talked ${p.seen}` : "";
+        const ico = on ? p.devices.length ? TYPE_ICON[p.devices[0]] : p.device : null;
+        const sig = words + "|" + sub + "|" + (ico || "");
         if (!el) {
             el = document.createElement("div");
             el.id = "presenceChip";
@@ -73,11 +100,14 @@
         el.title = `${words}${sub ? " " + sub : ""}`;
         el.setAttribute("aria-label", el.title);
         el.setAttribute("role", "status");
-        el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${svg(on && p.device ? p.device : "mitten")}<span class="lbl">${words}</span>${sub ? `<span class="who">${sub}</span>` : ""}`;
+        el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${on && p.devices.length > 1 ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : svg(ico || "mitten")}<span class="lbl">${words}</span>${sub ? `<span class="who">${sub}</span>` : ""}`;
         const first = !window.NS_PRESENCE;
         window.NS_PRESENCE = p;
         if (first && typeof window.renderPublicChrome === "function") try {
             window.renderPublicChrome();
+        } catch {}
+        if (typeof window.nsPresenceChanged === "function") try {
+            window.nsPresenceChanged();
         } catch {}
     }
     function iconWorkers() {

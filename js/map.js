@@ -2652,13 +2652,30 @@ function openPublicAgentsPanel() {
         g[x.status] = (g[x.status] || 0) + 1;
         areas.set(k, g);
     }
-    if (!w.length) for (const l of a.labels || []) areas.set(l, {
-        titles: new Set,
-        working: 1,
-        waiting: 0,
-        queued: 0,
-        approx: true
-    });
+    if (!w.length) {
+        const on = Object.keys(a.at || {}).filter(id => FULL.e[id]);
+        for (const l of a.labels || []) areas.set(l, {
+            titles: new Set,
+            working: 1,
+            waiting: 0,
+            queued: 0,
+            approx: true
+        });
+        for (const id of on) if (![ ...areas.keys() ].some(k => nodeFor(k) === id)) areas.set(FULL.e[id].label, {
+            titles: new Set,
+            working: 1,
+            waiting: 0,
+            queued: 0,
+            approx: true
+        });
+        const rest = (a.working || 0) - areas.size;
+        if (rest > 0) areas.set(PRIV, {
+            titles: new Set,
+            working: rest,
+            waiting: 0,
+            queued: 0
+        });
+    }
     const order = [ ...areas.entries() ].sort((p, q) => (p[0] === PRIV) - (q[0] === PRIV) || q[1].working - p[1].working || q[1].waiting - p[1].waiting);
     const state = g => g.approx ? "working now" : [ g.working ? `${g.working} working` : "", g.waiting ? `${g.waiting} waiting` : "", g.queued ? `${g.queued} queued` : "" ].filter(Boolean).join(" · ");
     const row = ([k, g]) => {
@@ -2666,7 +2683,11 @@ function openPublicAgentsPanel() {
         const name = k === PRIV ? "Private projects" : id && FULL.e[id] ? FULL.e[id].label : k;
         return `<div class="agent-row"${id ? ` style="cursor:pointer" onclick="jumpTo('${esc(id)}')"` : ""}>\n      <div class="agent-top"><b>${esc(name)}</b><span class="agent-kind">${esc(state(g))}</span></div>\n      ${g.titles.size ? `<div class="agent-now">${esc([ ...g.titles ].join(", "))}</div>` : ""}</div>`;
     };
-    document.getElementById("pBody").innerHTML = order.length ? order.map(row).join("") + '<div class="agent-empty" style="margin-top:14px">Tap a project to see it on the map. Kinds of work only; private projects stay private.</div>' : '<div class="agent-empty">Nothing is running right now.</div>';
+    const talk = typeof window.nsTalkLine === "function" ? window.nsTalkLine() : "";
+    window.nsPresenceChanged = () => {
+        if (panelNode && panelNode.id === "__agents" && panel.classList.contains("open")) openPublicAgentsPanel();
+    };
+    document.getElementById("pBody").innerHTML = (talk ? `<div class="agent-row agent-talk"><div class="agent-top"><b>${esc(talk)}</b></div></div>` : "") + (order.length ? order.map(row).join("") + '<div class="agent-empty" style="margin-top:14px">Tap a project to see it on the map. Kinds of work only; private projects stay private.</div>' : '<div class="agent-empty">Nothing is running right now.</div>');
 }
 
 window.jumpToWorker = wid => {
