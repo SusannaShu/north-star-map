@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-23T18:03:33.711Z",
+ "generatedAt": "2026-10-23T20:06:02.646Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -446,36 +446,6 @@
    "parked": false,
    "children": [
     {
-     "id": "watch-content",
-     "label": "WATCH CONTENT",
-     "status": "idle",
-     "why": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics. The videos are made every night and stay private until I choose to make a channel public.",
-     "statusLine": "made nightly · not public yet",
-     "caption": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics.",
-     "stage": "active",
-     "embed": "pages/watch-content.html",
-     "visibility": "public",
-     "links": [
-      "susu-map"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "voice-clone",
-     "label": "MY VOICE",
-     "status": "idle",
-     "why": "I wanted to narrate my site and content without recording every line. So I made a voice that sounds like me, built on my own machine with open models I'm free to use.",
-     "statusLine": "live · Mittens speaks in it",
-     "caption": "I wanted to narrate my site and content without recording every line.",
-     "stage": "active",
-     "embed": "pages/voice-clone.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "content-cleanup",
      "label": "CONTENT CLEAN-UP",
      "status": "idle",
@@ -633,21 +603,6 @@
      "embed": "pages/mittens-app.html",
      "visibility": "public",
      "embedCaption": "case study"
-    },
-    {
-     "id": "read-to-me",
-     "label": "READ TO ME",
-     "status": "idle",
-     "why": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
-     "statusLine": "built",
-     "caption": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
-     "stage": "active",
-     "embed": "pages/read-to-me.html",
-     "visibility": "public",
-     "links": [
-      "howto-read-to-me"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     },
     {
      "id": "mittens-chat-threads",
@@ -2009,30 +1964,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "aurora-market",
-     "label": "WHO ELSE DOES THIS",
-     "status": "done",
-     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
-     "statusLine": "research done",
-     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
-     "stage": "done",
-     "embed": "pages/aurora-market.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "small-models",
-     "label": "SMALL LOCAL MODELS",
-     "status": "done",
-     "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "statusLine": "benchmarked · done",
-     "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "stage": "done",
-     "embed": "pages/small-models.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "wake-report",
      "label": "WAKE REPORT",
      "status": "idle",
@@ -2076,7 +2007,47 @@
    ],
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "voice-clone",
+     "label": "MY VOICE",
+     "status": "idle",
+     "why": "I wanted to narrate my site and content without recording every line. So I made a voice that sounds like me, built on my own machine with open models I'm free to use.",
+     "statusLine": "live · Mittens speaks in it",
+     "caption": "I wanted to narrate my site and content without recording every line.",
+     "stage": "active",
+     "embed": "pages/voice-clone.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "aurora-market",
+     "label": "WHO ELSE DOES THIS",
+     "status": "done",
+     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
+     "statusLine": "research done",
+     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
+     "stage": "done",
+     "embed": "pages/aurora-market.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "small-models",
+     "label": "SMALL LOCAL MODELS",
+     "status": "done",
+     "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
+     "statusLine": "benchmarked · done",
+     "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
+     "stage": "done",
+     "embed": "pages/small-models.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -2465,6 +2436,21 @@
      "stage": "done",
      "embed": "pages/learn-ep-content-attention.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "read-to-me",
+     "label": "READ TO ME",
+     "status": "idle",
+     "why": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
+     "statusLine": "built",
+     "caption": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
+     "stage": "active",
+     "embed": "pages/read-to-me.html",
+     "visibility": "public",
+     "links": [
+      "howto-read-to-me"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2881,7 +2867,23 @@
     "aurora"
    ],
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "watch-content",
+     "label": "WATCH CONTENT",
+     "status": "idle",
+     "why": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics. The videos are made every night and stay private until I choose to make a channel public.",
+     "statusLine": "made nightly · not public yet",
+     "caption": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics.",
+     "stage": "active",
+     "embed": "pages/watch-content.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {

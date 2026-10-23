@@ -1192,6 +1192,27 @@
             if (m.qid && qIds.has(m.qid) || m.task && tById[m.task]) continue;
             const at = Date.parse(m.at || "");
             if (!(at > now - WEEK)) continue;
+            if (m.unseen) {
+                add("needs", "minute", {
+                    name: clip(m.text, 60),
+                    line: `not seen yet · sent ${qWhen(m.at)}`,
+                    open: null,
+                    kind: "said",
+                    rid: m.id,
+                    urgent: false,
+                    minutes: 1,
+                    where: "phone",
+                    fit: true,
+                    act: {
+                        kind: "url",
+                        target: "mittens://chat",
+                        label: "Open in chat"
+                    },
+                    src: "Mittens chat",
+                    since: m.at
+                });
+                continue;
+            }
             if (m.reply && at > now - 12 * 36e5 && !m.retired && !m.repliedAfter) {
                 add("needs", "minute", {
                     name: clip(m.text, 60),
