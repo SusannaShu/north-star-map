@@ -1,5 +1,4 @@
 (function() {
-    if (new URLSearchParams(location.search).get("public") !== "1") return;
     const LOCAL = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
     const SRC = LOCAL ? [ `http://${location.hostname}:4432/presence` ] : [ "https://susannas-mac-mini.tailc633d2.ts.net:8443/presence", "https://strapi-backend-production-4eb8.up.railway.app/north-star/public/activity" ];
     const DEVICES = [ "glasses", "phone", "tablet", "laptop" ], SEEN = [ "within the hour", "earlier today", "yesterday", "this week" ];
