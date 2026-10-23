@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-22T21:41:38.206Z",
+ "generatedAt": "2026-10-23T06:41:06.677Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -479,7 +479,7 @@
    "label": "CONTENT REFERENCES",
    "status": "done",
    "why": "I wrote one case study for each piece of work I look up to, plus a style guide. Every content agent reads them first, so it knows what I mean.",
-   "statusLine": "done",
+   "statusLine": "done · archived",
    "caption": "I wrote one case study for each piece of work I look up to, plus a style guide.",
    "stage": "done",
    "embed": "pages/content-references.html",
@@ -489,7 +489,80 @@
    ],
    "parent": "daily-content",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "ref-portfolio",
+     "label": "PORTFOLIO STUDY",
+     "status": "done",
+     "why": "A case study of my own portfolio, so content agents know the bar I hold my work to.",
+     "statusLine": "done · archived",
+     "caption": "A case study of my own portfolio, so content agents know the bar I hold my work to.",
+     "stage": "done",
+     "embed": "pages/ref-portfolio.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ref-meta-glasses",
+     "label": "GLASSES FILMS STUDY",
+     "status": "done",
+     "why": "A study of how smart glasses are shown in public product films, used as a reference for my own videos.",
+     "statusLine": "done · archived",
+     "caption": "A study of how smart glasses are shown in public product films, used as a reference for my own videos.",
+     "stage": "done",
+     "embed": "pages/ref-meta-glasses.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ref-claude-launches",
+     "label": "AI LAUNCH STUDY",
+     "status": "done",
+     "why": "A study of how AI assistant launches are told, so my content agents learn the craft.",
+     "statusLine": "done · archived",
+     "caption": "A study of how AI assistant launches are told, so my content agents learn the craft.",
+     "stage": "done",
+     "embed": "pages/ref-claude-launches.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ref-chatgpt-launches",
+     "label": "CHAT LAUNCH STUDY",
+     "status": "done",
+     "why": "Another study of public AI product launches, kept as a reference for pacing and visuals.",
+     "statusLine": "done · archived",
+     "caption": "Another study of public AI product launches, kept as a reference for pacing and visuals.",
+     "stage": "done",
+     "embed": "pages/ref-chatgpt-launches.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ref-apple-google-pages",
+     "label": "FEATURE PAGE STUDY",
+     "status": "done",
+     "why": "A study of how big tech feature pages explain products with motion and clear words.",
+     "statusLine": "done · archived",
+     "caption": "A study of how big tech feature pages explain products with motion and clear words.",
+     "stage": "done",
+     "embed": "pages/ref-apple-google-pages.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ref-mittens-style",
+     "label": "MITTENS STYLE SYSTEM",
+     "status": "done",
+     "why": "One style guide every content agent reads first, so everything about Mittens looks and sounds the same.",
+     "statusLine": "done · archived",
+     "caption": "One style guide every content agent reads first, so everything about Mittens looks and sounds the same.",
+     "stage": "done",
+     "embed": "pages/ref-mittens-style.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -527,6 +600,9 @@
      "stage": "active",
      "embed": "pages/read-to-me.html",
      "visibility": "public",
+     "links": [
+      "howto-read-to-me"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -671,7 +747,7 @@
      "label": "SPEAKER + MIC",
      "status": "planned",
      "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
-     "statusLine": "idea",
+     "statusLine": "plan · not built yet",
      "caption": "Mittens with a speaker and a microphone:",
      "stage": "plan",
      "planned": true,
@@ -882,7 +958,7 @@
    "label": "WATCH",
    "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
-   "statusLine": "running · 3 a day",
+   "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
    "stage": "active",
    "embed": "pages/mittens-hw.html",
@@ -1091,7 +1167,7 @@
      "label": "MITTENS SCENES",
      "status": "idle",
      "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
-     "statusLine": "ideas · not on the site",
+     "statusLine": "ideas · transitions made, not on site",
      "caption": "I want more varied views in the Mittens chapter of my portfolio:",
      "stage": "plan",
      "planned": true,
@@ -1109,6 +1185,30 @@
      "stage": "plan",
      "planned": true,
      "embed": "pages/portfolio-chapters.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-milkyway",
+     "label": "LANDING END: MILKY WAY",
+     "status": "idle",
+     "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
+     "statusLine": "built · not shipped yet",
+     "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
+     "stage": "active",
+     "embed": "pages/portfolio-milkyway.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-landing-talk",
+     "label": "LANDING: HOW I WORK",
+     "status": "idle",
+     "why": "The landing shows how I work: I talk while wearing my devices, my words travel to the computer at home and light up a dot on my map. It also explains in my own voice why I build soft robots.",
+     "statusLine": "draft · waiting to ship",
+     "caption": "The landing shows how I work:",
+     "stage": "active",
+     "embed": "pages/portfolio-landing-talk.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1433,6 +1533,31 @@
       "one-pulse",
       "thread-architecture"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "truth-check",
+     "label": "TRUTH CHECK",
+     "status": "idle",
+     "why": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
+     "statusLine": "built · runs at every finish",
+     "caption": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
+     "stage": "active",
+     "embed": "pages/truth-check.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "context-architecture",
+     "label": "CONTEXT ARCHITECTURE",
+     "status": "idle",
+     "why": "A design for how every agent always knows what is actually happening, built from facts, data and experiments.",
+     "statusLine": "plan · design doc",
+     "caption": "A design for how every agent always knows what is actually happening, built from facts, data and experiments.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/context-architecture.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2260,10 +2385,9 @@
      "label": "WHO GETS ATTENTION",
      "status": "done",
      "why": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
-     "statusLine": "plan",
+     "statusLine": "episode done",
      "caption": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
-     "stage": "plan",
-     "planned": true,
+     "stage": "done",
      "embed": "pages/learn-ep-content-attention.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -2300,6 +2424,76 @@
       "mittens-app"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-lens",
+     "label": "GLASSES LENS",
+     "status": "idle",
+     "why": "What Mittens shows on my display glasses: live talk, pages, the action list and what the computer at home is doing.",
+     "statusLine": "live",
+     "caption": "What Mittens shows on my display glasses:",
+     "stage": "active",
+     "embed": "pages/howto-glasses-lens.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "lens-home",
+      "mittens-app",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-session",
+     "label": "GLASSES SESSION",
+     "status": "idle",
+     "why": "How Mittens starts and keeps a session on my glasses: it heals itself, speaks first, can be interrupted and works with the phone locked.",
+     "statusLine": "live",
+     "caption": "How Mittens starts and keeps a session on my glasses:",
+     "stage": "active",
+     "embed": "pages/howto-glasses-session.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "glasses-launch",
+      "mw-calls",
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-capture",
+     "label": "GLASSES CAPTURE",
+     "status": "idle",
+     "why": "Everything the glasses camera can do: quick photos, journal pages, asking Mittens to look, and Mittens filming by itself.",
+     "statusLine": "live",
+     "caption": "Everything the glasses camera can do:",
+     "stage": "active",
+     "embed": "pages/howto-glasses-capture.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "meeting-notes",
+      "mw-blind"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-build",
+     "label": "GLASSES BUILD",
+     "status": "idle",
+     "why": "How I build and install the glasses side of the Mittens app, from the native module to testing.",
+     "statusLine": "live",
+     "caption": "How I build and install the glasses side of the Mittens app, from the native module to testing.",
+     "stage": "active",
+     "embed": "pages/howto-glasses-build.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "mittens-app",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -2317,6 +2511,39 @@
    "parent": "manual-map",
    "parked": false,
    "children": [
+    {
+     "id": "howto-talk",
+     "label": "TALK",
+     "status": "idle",
+     "why": "One Mittens brain behind Talk: live context it must get right, files shared in chat, handling interruptions, and both English and Mandarin.",
+     "statusLine": "live",
+     "caption": "One Mittens brain behind Talk:",
+     "stage": "active",
+     "embed": "pages/howto-talk.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "one-mittens-brain"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-read-to-me",
+     "label": "READ TO ME",
+     "status": "idle",
+     "why": "Any page or document can be read aloud to me by a voice made on my own computer, with a player in the Mittens app.",
+     "statusLine": "live",
+     "caption": "Any page or document can be read aloud to me by a voice made on my own computer, with a player in the Mittens app.",
+     "stage": "active",
+     "embed": "pages/howto-read-to-me.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app",
+      "ns-talk",
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "howto-talk-requests",
      "label": "TALK REQUESTS",
@@ -2467,13 +2694,30 @@
      "label": "CAN'T SEE -> ASK",
      "status": "idle",
      "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
-     "statusLine": "built · waiting for a first real case",
+     "statusLine": "built · fixing the view during calls",
      "caption": "Glasses off or a useless frame:",
+     "stage": "active",
      "embed": "pages/mw-blind.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "ns-talk-live-stt",
+   "label": "LIVE TRANSCRIPTION",
+   "status": "idle",
+   "why": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
+   "statusLine": "plan · picking a service",
+   "caption": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/ns-talk-live-stt.html",
+   "visibility": "public",
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
