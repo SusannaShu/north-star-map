@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-23T06:41:06.677Z",
+ "generatedAt": "2026-10-23T12:00:53.689Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -144,6 +144,23 @@
      "embed": "pages/sheyou.html",
      "visibility": "public",
      "embedCaption": "case study"
+    },
+    {
+     "id": "sheyou-recreations",
+     "label": "CREDITED RECREATIONS",
+     "status": "idle",
+     "why": "I want people to remake a designer's work, with everyone in the chain credited and paid. Much of the record keeping already exists, and the rest is planned.",
+     "statusLine": "plan ready · not built",
+     "caption": "I want people to remake a designer's work, with everyone in the chain credited and paid.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/sheyou-recreations.html",
+     "visibility": "public",
+     "links": [
+      "sheyou",
+      "designers"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     },
     {
      "id": "susu-closet",
@@ -429,6 +446,21 @@
    "parked": false,
    "children": [
     {
+     "id": "watch-content",
+     "label": "WATCH CONTENT",
+     "status": "idle",
+     "why": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics. The videos are made every night and stay private until I choose to make a channel public.",
+     "statusLine": "made nightly · not public yet",
+     "caption": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics.",
+     "stage": "active",
+     "embed": "pages/watch-content.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "voice-clone",
      "label": "MY VOICE",
      "status": "idle",
@@ -468,6 +500,18 @@
      "caption": "I made a style guide from my portfolio so every generated scene looks like the rest of my work.",
      "stage": "active",
      "embed": "pages/brand-style.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "about-mittens",
+     "label": "ABOUT MITTENS",
+     "status": "idle",
+     "why": "I am writing down who I need Mittens to be: an assistant, a coach and a thoughtful teammate. Every night it adds notes on how it can do better.",
+     "statusLine": "draft · waiting on my yes",
+     "caption": "I am writing down who I need Mittens to be:",
+     "stage": "active",
+     "embed": "pages/about-mittens.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -963,6 +1007,9 @@
    "stage": "active",
    "embed": "pages/mittens-hw.html",
    "visibility": "public",
+   "links": [
+    "gospel"
+   ],
    "parent": "mittens",
    "parked": false,
    "children": [],
@@ -2021,7 +2068,8 @@
    "visibility": "public",
    "links": [
     "ns-talk",
-    "omi"
+    "omi",
+    "gospel"
    ],
    "parent": "ns-talk",
    "parked": false,
@@ -2369,6 +2417,18 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "learn-ep-sheyou-strategy",
+     "label": "STRATEGY EPISODE",
+     "status": "idle",
+     "why": "An episode on owning the work and the context around it, who pays, and how to market try-on.",
+     "statusLine": "ready",
+     "caption": "An episode on owning the work and the context around it, who pays, and how to market try-on.",
+     "stage": "done",
+     "embed": "pages/learn-ep-sheyou-strategy.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "learn-ep-sheyou-ledger",
      "label": "LEDGER EPISODE",
      "status": "idle",
@@ -2377,6 +2437,18 @@
      "caption": "An episode comparing signed records, anchored ledgers and blockchains:",
      "stage": "done",
      "embed": "pages/learn-ep-sheyou-ledger.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-ep-business-strategy",
+     "label": "BUSINESS EPISODE",
+     "status": "idle",
+     "why": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
+     "statusLine": "ready",
+     "caption": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
+     "stage": "done",
+     "embed": "pages/learn-ep-business-strategy.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -2528,6 +2600,22 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "howto-outbound-calls",
+     "label": "OUTBOUND CALLS",
+     "status": "idle",
+     "why": "Mittens can call a business for me with clear rules: say the purpose first, never pretend to be me, and send identity checks back to me. Every call teaches the next one.",
+     "statusLine": "live · learning each call",
+     "caption": "Mittens can call a business for me with clear rules:",
+     "stage": "active",
+     "embed": "pages/howto-outbound-calls.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "mw-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "howto-read-to-me",
      "label": "READ TO ME",
      "status": "idle",
@@ -2559,6 +2647,76 @@
       "mittens-digital",
       "northstar",
       "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-system",
+   "label": "SYSTEM MANUAL",
+   "status": "idle",
+   "why": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
+   "statusLine": "written",
+   "caption": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
+   "stage": "active",
+   "embed": "pages/man-system.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-ui-style",
+     "label": "UI STYLE HOW-TO",
+     "status": "idle",
+     "why": "The palette, type and dot glyphs every page and screen uses.",
+     "caption": "The palette, type and dot glyphs every page and screen uses.",
+     "stage": "active",
+     "embed": "pages/howto-ui-style.html",
+     "visibility": "public",
+     "links": [
+      "ui-style",
+      "northstar",
+      "mittens-daily",
+      "mittens-app",
+      "smart-glasses",
+      "soft-robot",
+      "robot-skin",
+      "skin-build",
+      "skin-schedule"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-windows",
+     "label": "WINDOWS",
+     "status": "idle",
+     "why": "How agents open several things at once, each in its own tiled window.",
+     "caption": "How agents open several things at once, each in its own tiled window.",
+     "stage": "active",
+     "embed": "pages/howto-windows.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "ns-talk",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-video-qa",
+     "label": "VIDEO QA",
+     "status": "idle",
+     "why": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
+     "caption": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
+     "stage": "active",
+     "embed": "pages/howto-video-qa.html",
+     "visibility": "public",
+     "links": [
+      "daily-content",
+      "viral-machine",
+      "marketing"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -2702,6 +2860,25 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "gospel",
+   "label": "GOSPEL",
+   "status": "idle",
+   "why": "A project that gathers and shares good news: progress in science, good deeds, repaired places, AI for good, and what the future looks like if things go right.",
+   "statusLine": "idea · working name",
+   "caption": "A project that gathers and shares good news:",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/gospel.html",
+   "visibility": "public",
+   "links": [
+    "mittens-hw",
+    "aurora"
+   ],
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
