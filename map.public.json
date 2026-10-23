@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-23T15:53:58.379Z",
+ "generatedAt": "2026-10-23T18:03:33.711Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1963,9 +1963,9 @@
    "id": "ns-talk",
    "label": "TALK & CALLS",
    "status": "idle",
-   "why": "Talk to the map out loud: it answers what is going on and starts agents on a go. When it hears how something should grow, the map changes too.",
+   "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
-   "caption": "Talk to the map out loud:",
+   "caption": "The map keeps itself current.",
    "stage": "active",
    "embed": "pages/ns-talk.html",
    "visibility": "public",
