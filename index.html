@@ -12,7 +12,7 @@
 <meta name="apple-mobile-web-app-title" content="North Star">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="theme-color" content="#FFFFFF">
-<script>if(/[?&]mini=1(&|$)/.test(location.search))document.documentElement.classList.add("mini")</script>
+<script>if(/[?&]mini=1(&|$)/.test(location.search))document.documentElement.classList.add("mini");if(/[?&]wall=1(&|$)/.test(location.search))document.documentElement.classList.add("wall")</script>
 <script>document.documentElement.classList.add("public");(function(){const f=window.fetch.bind(window);window.fetch=(u,o)=>/^(\/|\.\/)?(api|north-star)\//.test(String(u&&u.url||u))?Promise.resolve(new Response('{"ok":false,"error":"static snapshot"}',{status:404,headers:{"Content-Type":"application/json"}})):f(u,o);window.EventSource=function(){return{close(){},addEventListener(){}}}})()</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -395,6 +395,13 @@ body.saver .saver-clock { opacity:1; }
 /* ── ?mini=1 (2026-10-20): only the canvas -- the map ringed on one dot, framed inside a dot page ── */
 html.mini body > :not(canvas#map) { display:none !important; }
 html.mini, html.mini body { overflow:hidden; background:transparent; }
+/* ── ?wall=1 (the WALL PAGE, public/wall.html, dot wall-display): the map, its crumbs, the dot panel and the plan --
+   no bars, legend, ask bar, ticker or screensaver; big type for a touch screen across the room ── */
+html.wall .topbar, html.wall .legend, html.wall .askbar, html.wall .ticker, html.wall .saver-clock, html.wall .still-cap,
+html.wall #voiceOv, html.wall .pub-exit { display:none !important; }
+html.wall .panel { font-size:17px; }
+html.wall .panel-close, html.wall .crumbs a, html.wall .crumbs button { min-width:44px; min-height:44px; }
+html.wall .crumbs { top:16px; font-size:18px; }
 /* ── Public view (?public=1, 2026-10-10): only public nodes; no questions, no CEO, no Talk ── */
 html.public #inboxBtn, html.public #reviewBtn, html.public #syncBtn, html.public #talkBtn, html.public #pubBtn,
 html.public .askbar, html.public .panel-chat, html.public #legendNeeds, html.public #pTabs, html.public .voice { display:none !important; }
@@ -826,15 +833,15 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/north-star-glyph.js?v=20261011v4"></script>
 <script src="js/ns-stream.js?v=20261022pulse2"></script>
 <script src="js/public-live.js"></script>
-<script src="js/map.js?v=20261022onehead"></script>
+<script src="js/map.js?v=20261023wall"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/public-time.js?v=20261022changes" defer="defer"></script>
 <script src="js/live.js?v=20261013mt1"></script>
 <script src="js/embed-head.js?v=20261022one"></script>
 <script src="js/view.js?v=20261022onehead"></script>
 
-<script src="js/tree-core.js?v=20261018dot"></script>
-<script src="js/tree-dock.js?v=20261022pulse"></script>
+<script src="js/tree-core.js?v=20261024trig"></script>
+<script src="js/tree-dock.js?v=20261024trig"></script>
 <script src="js/read-mark.js?v=20261013pr1" data-watch></script>
 <script>(function(){if(window.NS_PUBLIC||document.documentElement.classList.contains("public"))return;let chip="";const box=()=>document.getElementById("healthChips");function place(){const b=box();if(!b)return;const el=document.getElementById("usageChip");if(!chip){if(el)el.remove();return}if(el&&el.dataset.t===chip&&b.firstElementChild===el)return;if(el)el.remove();const d=document.createElement("div");d.className="chip";d.id="usageChip";d.dataset.t=chip;d.title="Claude is out of usage; Talk, tasks and intents queue and resume on reset";d.innerHTML='<svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3.2l2 1.3"/></svg> ';const t=document.createElement("span");t.className="warn";t.textContent=chip;d.appendChild(t);b.insertBefore(d,b.firstChild)}async function poll(){try{const r=await(window.api?window.api("/api/health",{cache:"no-store"}):fetch("/api/health",{cache:"no-store"}));if(r.ok){const u=(await r.json()).usage||{};chip=u.limited?u.chip:"";place()}}catch{}}const b=box();if(b)new MutationObserver(place).observe(b,{childList:true});poll();setInterval(poll,3e4)})()</script>
 <script>(function(){const btn=document.getElementById("moreBtn"),menu=document.getElementById("nsMenu");if(!btn||!menu)return;const items=()=>[...menu.querySelectorAll(".mi")].filter(el=>el.offsetParent!==null);function show(focusFirst){menu.hidden=false;btn.setAttribute("aria-expanded","true");if(focusFirst){const f=items()[0];if(f)f.focus()}}function hide(refocus){if(menu.hidden)return;menu.hidden=true;btn.setAttribute("aria-expanded","false");if(refocus)btn.focus()}window.closeNsMenu=hide;btn.addEventListener("click",e=>{e.stopPropagation();menu.hidden?show(e.detail===0):hide()});menu.addEventListener("click",e=>{if(e.target.closest(".mi"))hide()});document.addEventListener("pointerdown",e=>{if(!menu.hidden&&!menu.contains(e.target)&&!btn.contains(e.target))hide()},true);document.addEventListener("keydown",e=>{if(menu.hidden)return;if(e.key==="Escape"){e.stopPropagation();hide(true);return}if(e.key==="ArrowDown"||e.key==="ArrowUp"){e.preventDefault();const l=items();if(!l.length)return;const i=l.indexOf(document.activeElement);l[(i+(e.key==="ArrowDown"?1:-1)+l.length)%l.length].focus()}},true);let lastW=innerWidth;addEventListener("resize",()=>{if(innerWidth!==lastW){lastW=innerWidth;hide()}})})()</script>

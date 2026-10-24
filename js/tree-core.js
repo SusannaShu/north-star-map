@@ -483,6 +483,252 @@
         }
         for (const seg of ORDER) for (const [id, g] of [ ...segs[seg] ]) if (!g.items.length) segs[seg].delete(id);
     }
+    const TRIG = [ {
+        id: "time",
+        label: "TIME"
+    }, {
+        id: "event",
+        label: "EVENT"
+    }, {
+        id: "place",
+        label: "PLACE"
+    }, {
+        id: "worker",
+        label: "WORKER"
+    }, {
+        id: "weather",
+        label: "WEATHER"
+    }, {
+        id: "message",
+        label: "MESSAGE"
+    } ];
+    const WEATHER_RE = /\b(weather|forecast|rain(s|y|ing)?|drizzle|snow(s|ing)?|sunny|sun (is )?out|the sun comes out|uv( index)?|cloud(y|s)?|clear sky|warm(er)?|cold(er)?|wind(y)?|temperature|degrees|storm)\b/i;
+    const MESSAGE_RE = /\b(repl(y|ies|ied)|writes? back|wrote back|answers?|responds?|texts? (me|back|you)|emails? (me|back|you)|messages? (me|back|you)|gets? back to)\b/i;
+    const TRIG_SET = new Set(TRIG.map(t => t.id));
+    const you = s => String(s || "").replace(/\bI'm\b/g, "you're").replace(/\bI am\b/g, "you are").replace(/\bI've\b/g, "you've").replace(/\bI\b/g, "you").replace(/\bmy\b/gi, "your").replace(/\bme\b/g, "you").replace(/\bmyself\b/g, "yourself");
+    const herYour = s => String(s || "").replace(/\bher\b/g, "your").replace(/\bshe is\b/g, "you are").replace(/\bshe\b/g, "you").replace(/\bSusanna\b/g, "you");
+    const plainWait = s => clip(herYour(String(s || "").replace(/ · \+\d+ on this$/, "")).split(" -- ")[0].replace(/^(device check(?: parked)?:\s*|waiting (for|on)\s+|waits for\s+)/i, "").replace(/\s*\((then|and then)[^)]*\)?\s*$/i, "").replace(/\s*\(then .*$/i, ""), 80);
+    const replies = who => `${who} ${/ [a-z]+s$/.test(who) ? "reply" : "replies"}`;
+    const DEVICE_RE = /^device check\b|\bwaits for her next use\b/i;
+    const CH = {
+        email: "email",
+        imessage: "iMessage",
+        teams: "Teams",
+        wechat: "WeChat",
+        whatsapp: "WhatsApp",
+        linkedin: "LinkedIn",
+        instagram: "Instagram",
+        sms: "text",
+        discord: "Discord"
+    };
+    function trigOfSpec(spec) {
+        const parts = String(spec || "").split(";").map(p => p.trim()).filter(Boolean);
+        for (const p of parts) {
+            const m = /^(\w+)\s*:\s*(.+)$/.exec(p);
+            if (!m) continue;
+            const k = m[1].toLowerCase(), v = m[2].trim();
+            if (k === "at") return {
+                kind: "time",
+                line: "at a set time",
+                at: v
+            };
+            if (k === "when") return trigOfWords(v) || {
+                kind: "event",
+                line: you(v)
+            };
+            if (k === "reply") return {
+                kind: "message",
+                line: `${v} replies`
+            };
+            if (k === "event") return {
+                kind: "time",
+                line: `when that calendar event ${/start/.test(v) ? "starts" : "ends"}`
+            };
+            if (k === "items") {
+                const ids = v.split(",").map(s => s.trim()).filter(Boolean);
+                if (ids.length && ids.every(i => /^T\d+$/.test(i))) return {
+                    kind: "worker",
+                    line: `after ${ids.join(", ")} finish${ids.length > 1 ? "" : "es"}`,
+                    on: ids
+                };
+                return {
+                    kind: "event",
+                    line: `when ${ids.length} linked item${ids.length > 1 ? "s are" : " is"} done`
+                };
+            }
+        }
+        return null;
+    }
+    function trigOfWords(s) {
+        const t = strip(s);
+        if (!t) return null;
+        if (/\b(when|once|after|till|until) (i|she|you) (get|gets|come|comes|am|is|are|'m) (back )?home\b|\bat home\b|\bwhen (i|she|you) (arrive|arrives|get|gets) (to|at) /i.test(t)) {
+            const pl = /\b(?:arrive|arrives|get|gets) (?:to|at) ([^,.;()]+)/i.exec(t);
+            return {
+                kind: "place",
+                line: pl && !/^home$/i.test(pl[1].trim()) ? `when you get to ${clip(pl[1], 40)}` : "when you get home"
+            };
+        }
+        const T = /\b(T\d{3,5})\b/.exec(t);
+        if (T && /\b(finish|finishes|finished|done|ends?|ended|complete[sd]?|lands?|clock(?:s|ed)? off)\b/i.test(t)) return {
+            kind: "worker",
+            line: `after ${T[1]} finishes`,
+            on: [ T[1] ]
+        };
+        if (/\b(get|got|gets) paid\b|\bpay ?day\b|\bpaycheck\b|\bsalary\b/i.test(t)) return {
+            kind: "event",
+            line: "when you get paid"
+        };
+        if (WEATHER_RE.test(t) && !/\b(watch|every|whenever|always)\b/i.test(t)) return {
+            kind: "weather",
+            line: you(herYour(clip(t.replace(/^(waiting (for|on)|wait (till|until))\s+/i, ""), 80)))
+        };
+        if (MESSAGE_RE.test(t) && /(^|\s)[A-Z][a-z]+/.test(t.replace(/^(When|Once|After|Till|Until|Waiting)\b/, ""))) return {
+            kind: "message",
+            line: you(herYour(clip(t.replace(/^(waiting (for|on)|wait (till|until))\s+/i, "").replace(/\s*\((then|and then)\b.*$/i, ""), 80)))
+        };
+        return null;
+    }
+    function triggerOf(x) {
+        x = x || {};
+        if (x.trigger && TRIG_SET.has(x.trigger.kind)) {
+            const r = x.trigger.kind === "event" && x.trigger.via !== "device" ? trigOfWords(x.trigger.line) : null;
+            return r && /^(message|weather)$/.test(r.kind) ? {
+                ...x.trigger,
+                ...r
+            } : {
+                ...x.trigger,
+                line: herYour(x.trigger.line) || plainWait(x.line)
+            };
+        }
+        if (x.later) return {
+            kind: "time",
+            line: "you said later",
+            at: x.later
+        };
+        if (x.asleep || x.wakesAt) return {
+            kind: "time",
+            line: "its wake time",
+            at: x.wakesAt || null
+        };
+        if (x.waitFor) {
+            const s = trigOfSpec(typeof x.waitFor === "string" ? x.waitFor : x.waitFor.spec);
+            if (s) return s;
+        }
+        const w = x.wait || x.ledger && x.ledger.wait || null;
+        if (w) {
+            if (w.trigger) {
+                const s = trigOfSpec(w.trigger);
+                if (s) return /^until /.test(w.on || "") && s.kind === "time" ? {
+                    ...s,
+                    line: you(String(w.on).replace(/^until\s+/, "on "))
+                } : s;
+            }
+            if (/^reach$/i.test(w.on || "")) return {
+                kind: "event",
+                line: "you hear the answer"
+            };
+            if (w.on && !/^(her|susanna|you)$/i.test(w.on)) {
+                const ch = /\((\w+),\s*since/i.exec(w.why || "");
+                return {
+                    kind: "message",
+                    line: `${replies(w.on)}${ch && CH[ch[1].toLowerCase()] ? " on " + CH[ch[1].toLowerCase()] : ""}`
+                };
+            }
+        }
+        const said = strip(x.blocker || x.line || "");
+        const wn = /^Waiting on ([^:]{2,40}):/.exec(strip(x.name || ""));
+        if (wn && !/^(her|you|susanna)\b/i.test(wn[1])) return {
+            kind: "message",
+            line: replies(wn[1].trim())
+        };
+        const words = trigOfWords(said);
+        if (words) return words;
+        if (DEVICE_RE.test(said)) return {
+            kind: "event",
+            line: /her next use/i.test(said) ? "your next use of the phone or glasses" : "your iPhone is free"
+        };
+        const on = /^(?:T\d+ · (?:in progress, blocked: )?)?waiting on (.+?)(?:[:,(]| · |$)/i.exec(said);
+        if (on) {
+            const who = on[1].trim();
+            if (/^(her|your|susanna)\b/i.test(who)) return {
+                kind: "event",
+                line: you(who.replace(/^her\b/i, "your").replace(/^susanna\b/i, "you")).replace(/^your yes\b.*/i, "your yes")
+            };
+            if (/^reach\b/i.test(who)) return {
+                kind: "event",
+                line: "you hear the answer"
+            };
+            if (/^until\b/i.test(who)) return {
+                kind: "time",
+                line: you(who.replace(/^until\s+/i, "on "))
+            };
+            const rep = /^([^:]{2,40}): reply to\b/i.exec(on[1] + said.slice(said.indexOf(on[1]) + on[1].length));
+            if (rep) return {
+                kind: "message",
+                line: replies(rep[1].trim())
+            };
+            if (/^[A-Z0-9&' .-]{4,}$/.test(who) && /[A-Z]{3}/.test(who) && x.kind !== "person") return {
+                kind: "event",
+                line: `when ${clip(who, 40)} is done`
+            };
+            if (/^[A-Z0-9][\w.&'-]*( [\w.&'-]+){0,3}$/.test(who) || x.kind === "person") return {
+                kind: "message",
+                line: replies(clip(who, 40))
+            };
+        }
+        if (x.kind === "person" && x.name) return {
+            kind: "message",
+            line: replies(clip(x.name, 40))
+        };
+        if (x.taskId && x.waitingOn && said) return trigOfWords(said.replace(/^T\d+ · (in progress, blocked: )?/, "")) || {
+            kind: "event",
+            line: plainWait(said.replace(/^T\d+ · (in progress, blocked: )?/, "").replace(/^you said "[^"]*" [^·]*· T\d+ · /, "")),
+            via: "check"
+        };
+        if (x.kind === "inbound") return {
+            kind: "message",
+            line: clip(said || "their next message", 80)
+        };
+        return {
+            kind: "event",
+            line: clip(plainWait(said) || "something to happen", 80),
+            flag: true
+        };
+    }
+    const fires = at => {
+        const t = Date.parse(at || "");
+        if (!t) return "";
+        const d = new Date(t), o = {
+            timeZone: "America/New_York"
+        };
+        const day = d.toLocaleDateString("en-US", {
+            ...o,
+            weekday: "short",
+            month: "numeric",
+            day: "numeric"
+        }).replace(",", ""), tm = d.toLocaleTimeString("en-US", {
+            ...o,
+            hour: "numeric",
+            minute: "2-digit"
+        }).toLowerCase().replace(":00", "");
+        return `fires ${day}${t - Date.now() > 30 * 864e5 ? d.getFullYear() !== (new Date).getFullYear() ? " " + d.getFullYear() : "" : ", " + tm}`;
+    };
+    function byTrigger(rows) {
+        const g = new Map(TRIG.map(t => [ t.id, {
+            id: "trig-" + t.id,
+            trig: t.id,
+            label: t.label,
+            items: []
+        } ]));
+        for (const r of rows || []) {
+            const t = r.trig || (r.trig = triggerOf(r));
+            if (t.kind === "time" && t.at && !t.fires) t.fires = fires(t.at);
+            g.get(t.kind).items.push(r);
+        }
+        g.get("time").items.sort((a, b) => (Date.parse(a.trig.at || "") || 9e15) - (Date.parse(b.trig.at || "") || 9e15));
+        return [ ...g.values() ].filter(x => x.items.length);
+    }
     function build({map: map, workers: workers, now: NOW} = {}) {
         map = map || {};
         const X = index(map), P = map.projects || [], SUBJ = subjects(map), held = [];
@@ -580,6 +826,8 @@
                     inProgress: !!t.startedAt,
                     blocker: String(t.waiting || "").split(" -- ")[0] || undefined,
                     asleep: t.asleep || undefined,
+                    wakesAt: t.wakesAt || undefined,
+                    trigger: t.trigger || undefined,
                     src: "voice task",
                     since: t.at || null
                 });
@@ -822,6 +1070,8 @@
                     taskId: t.id,
                     waitingOn: true,
                     asleep: t.asleep || undefined,
+                    wakesAt: t.wakesAt || undefined,
+                    trigger: t.trigger || undefined,
                     since: q.answeredAt
                 });
                 continue;
@@ -1281,10 +1531,38 @@
             held: held,
             QS: Array.isArray(map.questions) ? map.questions : []
         });
+        const W0 = [ ...segs.waiting.values() ].flatMap(g => g.items.map(it => (it.area = it.area || g.label, 
+        it)));
+        const refs = new Set(W0.flatMap(it => [ it.taskId, it.qid, it.rid, it.ref, it.open ].filter(Boolean).map(String)));
+        for (const w of Array.isArray(map.waits) ? map.waits : []) {
+            if (!w || !w.title || w.ref && refs.has(String(w.ref)) || w.task && refs.has(String(w.task))) continue;
+            if (HID.size && w.ref && HID.has(String(w.ref))) continue;
+            W0.push({
+                name: clip(w.title, 60),
+                line: w.line || "",
+                open: w.dot || null,
+                kind: "wait",
+                rid: w.ref || undefined,
+                ref: w.ref || undefined,
+                trigger: w.trigger,
+                area: w.dot && X.groupOf(w.dot) && X.e[X.groupOf(w.dot)] ? nice(X.e[X.groupOf(w.dot)].label) : w.area || "",
+                src: w.src || "wait",
+                since: w.since || null,
+                seq: seq++
+            });
+        }
+        segs.waiting = new Map(byTrigger(W0).map(g => [ g.id, g ]));
+        for (const g of segs.waiting.values()) for (const it of g.items) {
+            const t = it.trig;
+            it.trigLine = t.line;
+            it.trigAt = t.at || null;
+            if (t.fires) it.fires = t.fires;
+            if (t.flag) it.trigFlag = true;
+        }
         const first = g => Math.min(...g.items.map(i => i.seq));
         const seg = (id, label) => {
-            const groups = [ ...segs[id].values() ].sort(id === "planned" ? (a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label) : (a, b) => !!a.minute - !!b.minute || (a.id === "queued") - (b.id === "queued") || first(a) - first(b));
-            groups.forEach(g => g.items.sort((a, b) => (a.kind === "inbox") - (b.kind === "inbox") || a.seq - b.seq));
+            const groups = id === "waiting" ? [ ...segs[id].values() ] : [ ...segs[id].values() ].sort(id === "planned" ? (a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label) : (a, b) => !!a.minute - !!b.minute || (a.id === "queued") - (b.id === "queued") || first(a) - first(b));
+            if (id !== "waiting") groups.forEach(g => g.items.sort((a, b) => (a.kind === "inbox") - (b.kind === "inbox") || a.seq - b.seq));
             return {
                 id: id,
                 label: label,
@@ -1313,7 +1591,8 @@
             modeLine: later && later.line || "",
             segments: segments,
             subjects: [ ...SUBJ.keys() ],
-            held: held
+            held: held,
+            watches: Array.isArray(map.watches) ? map.watches : []
         };
     }
     function spoken(tree, {top: top = 3} = {}) {
@@ -1374,6 +1653,10 @@
         };
     }
     G.NSTree = {
+        triggerOf: triggerOf,
+        byTrigger: byTrigger,
+        fires: fires,
+        TRIG: TRIG,
         build: build,
         spoken: spoken,
         openNow: openNow,

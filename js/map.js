@@ -100,6 +100,10 @@ const PUBLIC = true, _qsPublic = QS.get("public") === "1", EMBED = QS.get("embed
 
 const MINI = QS.get("mini") === "1";
 
+const WALL = QS.get("wall") === "1";
+
+if (WALL) document.documentElement.classList.add("wall");
+
 window.NS_PUBLIC = PUBLIC;
 
 async function fetchMapData() {
@@ -1143,6 +1147,18 @@ function avail() {
         w: Math.max(50, W - 16),
         h: Math.max(50, H - 20)
     };
+    if (WALL) {
+        const cr = document.getElementById("nsCrumbs");
+        const top = cr && !cr.hidden ? cr.getBoundingClientRect().bottom + 10 : 16, bot = 130;
+        return {
+            top: top,
+            bot: bot,
+            side: 16,
+            rx: 0,
+            w: Math.max(50, W - 32),
+            h: Math.max(50, H - top - bot)
+        };
+    }
     const bar = document.getElementById("topbar"), tk = document.getElementById("ticker");
     const clock = document.querySelector(".saver-clock .sub"), cap = document.getElementById("stillCap");
     let top = saver ? (clock ? clock.getBoundingClientRect().bottom : 90) + 16 : (bar ? bar.offsetHeight : 60) + 8;
@@ -1871,13 +1887,13 @@ function toWorld(px, py) {
     };
 }
 
-function pick(px, py) {
+function pick(px, py, skip) {
     const p = toWorld(px, py);
     let best = null, bd = 1e9;
     nodes.forEach(n => {
-        if (vaOf(n) < .5) return;
+        if (n === skip || vaOf(n) < .5) return;
         const d = Math.hypot(n.x - p.x, n.y - p.y);
-        const hit = n.r + (n.type === "child" ? 12 : 8) / cam.k;
+        const hit = n.r + (WALL ? 30 : n.type === "child" ? 12 : 8) / cam.k;
         if (d < hit && d < bd) {
             best = n;
             bd = d;
@@ -1969,6 +1985,7 @@ canvas.addEventListener("pointermove", e => {
             dragNode.y = w.y;
             moved = true;
         }
+        if (WALL && moved) hoverNode = pick(p.x, p.y, dragNode);
     } else if (panning) {
         if (far || moved) {
             cam.x += p.x - lastP.x;
@@ -1976,7 +1993,7 @@ canvas.addEventListener("pointermove", e => {
             moved = true;
             userCam = Date.now();
         }
-    } else {
+    } else if (!WALL) {
         const n = pick(p.x, p.y);
         hoverNode = n;
         canvas.style.cursor = n ? "pointer" : "grab";
@@ -2011,6 +2028,17 @@ function pointerEnd(e) {
     if (dragNode && !moved) {
         clearSearch();
         clickDot(dragNode);
+    } else if (WALL && dragNode && moved && lastP) {
+        const t = pick(lastP.x, lastP.y, dragNode);
+        hoverNode = null;
+        if (t) window.dispatchEvent(new CustomEvent("ns-drop", {
+            detail: {
+                from: dragNode.id,
+                to: t.id,
+                fromLabel: dragNode.label,
+                toLabel: t.label
+            }
+        }));
     } else if (panning && !moved) {
         setDrawer(false);
         if (LEAFMAP) closeLeaf();
@@ -2885,7 +2913,7 @@ const reading = () => !!(ROOT || LEAF || DOC || [ "panel", "overlay", "focus", "
 }));
 
 setInterval(() => {
-    if (!saver && !PUBLIC && !document.hidden && !reading() && Date.now() - lastActive > (isMobile() ? 6e4 : 18e4)) enterSaver();
+    if (!saver && !PUBLIC && !WALL && !document.hidden && !reading() && Date.now() - lastActive > (isMobile() ? 6e4 : 18e4)) enterSaver();
 }, 1e4);
 
 if (PUBLIC) {
@@ -2988,6 +3016,24 @@ function applyMap(d, hinted) {
 }
 
 window.nsFlashed = () => Object.keys(FLASH);
+
+window.nsNearest = (px, py) => {
+    const w = toWorld(px, py);
+    let best = null, bd = 1e9;
+    nodes.forEach(n => {
+        if (vaOf(n) < .5 || isOverlay(n)) return;
+        const d = Math.hypot(n.x - w.x, n.y - w.y);
+        if (d < bd) {
+            bd = d;
+            best = n;
+        }
+    });
+    return best ? {
+        id: best.id,
+        label: best.label,
+        px: Math.round(bd * cam.k)
+    } : null;
+};
 
 async function refreshMap(ev) {
     if (mapBusy) {
