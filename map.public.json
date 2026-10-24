@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T21:59:31.426Z",
+ "generatedAt": "2026-10-24T22:03:52.385Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -725,7 +725,7 @@
     {
      "id": "omi",
      "label": "OMI",
-     "status": "done",
+     "status": "working",
      "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
      "statusLine": "old branch shelved",
      "caption": "Omi is the open-source AI wearable.",
