@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T02:34:56.134Z",
+ "generatedAt": "2026-10-24T06:40:49.299Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1096,7 +1096,20 @@
    ],
    "parent": "devhub",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "disk",
+     "label": "DISK CLEANUP",
+     "status": "idle",
+     "why": "I wanted to know what takes up space on the agents' computer and get it back. The agents measure every folder, clear old models and caches, and ask me before removing anything big.",
+     "statusLine": "cleared · more waits on my yes",
+     "caption": "I wanted to know what takes up space on the agents' computer and get it back.",
+     "stage": "active",
+     "embed": "pages/disk.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1104,7 +1117,7 @@
    "label": "MANUAL MAP",
    "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
-   "statusLine": "live",
+   "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
    "stage": "active",
    "embed": "pages/manual-map.html",
@@ -1306,6 +1319,21 @@
      "embed": "pages/work-in-threads.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "grand-threads",
+     "label": "GRAND THREADS",
+     "status": "idle",
+     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
+     "statusLine": "built",
+     "caption": "Each dot on my map is now a chat thread.",
+     "stage": "active",
+     "embed": "pages/grand-threads.html",
+     "visibility": "public",
+     "links": [
+      "work-in-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1384,7 +1412,7 @@
      "label": "MAP UPKEEP",
      "status": "idle",
      "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-     "statusLine": "placement audit done · ongoing",
+     "statusLine": "hourly tidy checks · placement audit done",
      "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
      "stage": "active",
      "embed": "pages/map-upkeep.html",
@@ -1523,12 +1551,26 @@
      "label": "CONTEXT ARCHITECTURE",
      "status": "idle",
      "why": "A design for how every agent always knows what is actually happening, built from facts, data and experiments.",
-     "statusLine": "plan · design doc",
+     "statusLine": "first phases live · more planned",
      "caption": "A design for how every agent always knows what is actually happening, built from facts, data and experiments.",
-     "stage": "plan",
-     "planned": true,
+     "stage": "active",
      "embed": "pages/context-architecture.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "latest-wins",
+     "label": "LATEST WINS",
+     "status": "idle",
+     "why": "My newest words win over older plans, so a fresh chat session carries what I said most recently. Replies are checked against the question they answer, and unfinished reports get sent back.",
+     "statusLine": "built · more checks planned",
+     "caption": "My newest words win over older plans, so a fresh chat session carries what I said most recently.",
+     "stage": "active",
+     "embed": "pages/latest-wins.html",
+     "visibility": "public",
+     "links": [
+      "context-architecture"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2204,7 +2246,7 @@
    "label": "LOCAL EVENTS WATCH",
    "status": "idle",
    "why": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
-   "statusLine": "live",
+   "statusLine": "live · checks on demand",
    "caption": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
    "stage": "active",
    "embed": "pages/local-watch.html",
@@ -2620,6 +2662,75 @@
    "parked": false,
    "children": [
     {
+     "id": "howto-north-star-server",
+     "label": "MAP SERVER",
+     "status": "idle",
+     "why": "This is how the server behind my map keeps its main thread free and shows every agent the same header first. One pulse replaces the scattered timer jobs, and a workers panel and efficiency audit sit on top.",
+     "statusLine": "documented · live",
+     "caption": "This is how the server behind my map keeps its main thread free and shows every agent the same header first.",
+     "stage": "active",
+     "embed": "pages/howto-north-star-server.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-self-check",
+     "label": "SELF CHECK",
+     "status": "idle",
+     "why": "Every mistake I catch becomes a standing test, and drafts, tests, plans and live counts are checked on every pulse. A daily score shows how many mistakes the system caught on its own versus how many I caught.",
+     "statusLine": "documented · live",
+     "caption": "Every mistake I catch becomes a standing test, and drafts, tests, plans and live counts are checked on every pulse.",
+     "stage": "active",
+     "embed": "pages/howto-self-check.html",
+     "visibility": "public",
+     "links": [
+      "brain-tidy-plan",
+      "one-pulse",
+      "brain-architecture",
+      "action-tree",
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-gen-cards",
+     "label": "GEN CARDS",
+     "status": "idle",
+     "why": "Every image, video cut, design or mock page the system makes shows up as one picture card the moment it is saved. A new version replaces the same card.",
+     "statusLine": "documented · live",
+     "caption": "Every image, video cut, design or mock page the system makes shows up as one picture card the moment it is saved.",
+     "stage": "active",
+     "embed": "pages/howto-gen-cards.html",
+     "visibility": "public",
+     "links": [
+      "mittens",
+      "daily-content",
+      "portfolio",
+      "viral-machine",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-brief-to-episode",
+     "label": "BRIEF TO EPISODE",
+     "status": "idle",
+     "why": "Every spec, brief or plan made for me starts with research and becomes an interactive audio episode. The newest one I haven't heard is offered when I have a free moment, and we talk it through.",
+     "statusLine": "documented · live",
+     "caption": "Every spec, brief or plan made for me starts with research and becomes an interactive audio episode.",
+     "stage": "active",
+     "embed": "pages/howto-brief-to-episode.html",
+     "visibility": "public",
+     "links": [
+      "learn-with-mittens",
+      "learn-sop"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "howto-ui-style",
      "label": "UI STYLE HOW-TO",
      "status": "idle",
@@ -2832,6 +2943,53 @@
    ],
    "parked": false,
    "children": [
+    {
+     "id": "gospel-sources",
+     "label": "GOOD NEWS SOURCES",
+     "status": "idle",
+     "why": "I reuse my news-watch channels on science, AI and robotics progress and added a channel for good deeds and environmental repair. Every item keeps its original source link.",
+     "statusLine": "live · sources gathered",
+     "caption": "I reuse my news-watch channels on science, AI and robotics progress and added a channel for good deeds and environmental repair.",
+     "stage": "active",
+     "embed": "pages/gospel-sources.html",
+     "visibility": "public",
+     "links": [
+      "research-watch"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "gospel-series",
+     "label": "THE SERIES",
+     "status": "idle",
+     "why": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant. Each good news item can become a story beat: the real news, then the world where it went right.",
+     "statusLine": "pilot waiting on my yes",
+     "caption": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant.",
+     "stage": "active",
+     "embed": "pages/gospel-series.html",
+     "visibility": "public",
+     "links": [
+      "daily-content",
+      "aurora"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "gospel-channels",
+     "label": "GOSPEL CHANNELS",
+     "status": "idle",
+     "why": "Good news could go out as short videos, a weekly post or newsletter, or on my portfolio. Until I choose, it stays a private weekly digest, and nothing posts without my yes.",
+     "statusLine": "plan · channels not picked",
+     "caption": "Good news could go out as short videos, a weekly post or newsletter, or on my portfolio.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/gospel-channels.html",
+     "visibility": "public",
+     "links": [
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "watch-content",
      "label": "WATCH CONTENT",
