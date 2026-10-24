@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T01:32:37.621Z",
+ "generatedAt": "2026-10-24T02:34:56.134Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -55,8 +55,7 @@
      "visibility": "public",
      "links": [
       "robot-skin",
-      "actuation",
-      "lab-partnerships"
+      "actuation"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -115,9 +114,6 @@
      "caption": "Researchers I learn from -- they feed PATH.",
      "embed": "pages/pt-research.html",
      "visibility": "public",
-     "links": [
-      "path"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -1315,36 +1311,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "path",
-   "label": "PATH",
-   "status": "idle",
-   "why": "Where the work goes next: a lab where the soft robot's body can be machine-made.",
-   "statusLine": "exploring",
-   "caption": "Where the work goes next:",
-   "embed": "pages/path.html",
-   "visibility": "public",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "lab-partnerships",
-   "label": "LAB PARTNERSHIPS",
-   "status": "idle",
-   "why": "A university textiles lab whose knitting machines could make the soft robot's body instead of making it by hand.",
-   "statusLine": "exploring",
-   "caption": "A university textiles lab whose knitting machines could make the soft robot's body instead of making it by hand.",
-   "embed": "pages/lab-partnerships.html",
-   "visibility": "public",
-   "links": [
-    "robot-skin"
-   ],
-   "parent": "path",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "man-rules",
    "label": "RULES",
    "status": "idle",
@@ -2179,8 +2145,6 @@
     "cuddle-bot-paper",
     "cuddle-vision",
     "mittens-speaker",
-    "lab-partnerships",
-    "path",
     "context-graph",
     "mittens-architecture",
     "mittens-vision",
