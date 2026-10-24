@@ -7,7 +7,7 @@
     const strip = x => String(x == null ? "" : x).replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
     const isPub = n => !!n && n.visibility === "public";
     const clone = x => x == null ? x : JSON.parse(JSON.stringify(x));
-    const pubStatus = s => s === "working" ? "working" : s === "dormant" ? "dormant" : s === "planned" ? "planned" : s === "done" ? "done" : "idle";
+    const pubStatus = s => s === "working" ? "working" : s === "waiting" ? "waiting" : s === "dormant" ? "dormant" : s === "planned" ? "planned" : s === "done" ? "done" : "idle";
     function sanitize(o) {
         if (o.why != null) o.why = strip(o.why);
         if (o.caption != null) o.caption = strip(o.caption);
@@ -66,7 +66,7 @@
         const o = {
             id: n.id,
             label: n.label,
-            status: pubStatus(n.status)
+            status: n.status === "waiting" && !n.liveWork ? "idle" : pubStatus(n.status)
         };
         for (const k of PUBLIC_FIELDS) if (n[k] !== undefined) o[k] = clone(n[k]);
         const pv = n.public && typeof n.public === "object" ? n.public : {};
@@ -143,11 +143,36 @@
         const workers = opts.workers || [];
         const at = {};
         const hubId = m.hub && m.hub.id || "north-star";
+        const up = {};
+        for (const p of P) {
+            if (p.parent) up[p.id] = p.parent;
+            for (const c of p.children || []) if (!up[c.id]) up[c.id] = p.id;
+        }
+        const pubOf = id => {
+            let q = id, d = 0;
+            while (q && d < 10) {
+                if (ids.has(q)) return q;
+                q = up[q];
+                d++;
+            }
+            return hubId;
+        };
         for (const w of workers) {
             const where = (m.workerAt || {})[w.id] || w.project || null;
-            const id = where && ids.has(where) ? where : hubId;
+            const id = where ? pubOf(where) : hubId;
             at[id] = (at[id] || 0) + 1;
         }
+        const rank = s => s === "working" ? 2 : s === "waiting" ? 1 : 0;
+        const lift = {};
+        for (const p of P) for (const n of [ p, ...p.children || [] ]) {
+            if (ids.has(n.id) || !n.liveWork) continue;
+            const s = n.liveWork.working ? "working" : "waiting", to = pubOf(n.id);
+            if (to !== hubId && rank(s) > rank(lift[to])) lift[to] = s;
+        }
+        projects.forEach(p => [ p, ...p.children ].forEach(o => {
+            const s = lift[o.id];
+            if (s && rank(s) > rank(o.status) && o.status !== "done") o.status = s;
+        }));
         const alias = {};
         for (const p of P) {
             if (p.public && p.public.id) alias[p.id] = p.public.id;
