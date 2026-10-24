@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T16:52:01.966Z",
+ "generatedAt": "2026-10-24T17:46:17.061Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -303,7 +303,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -2321,7 +2321,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
