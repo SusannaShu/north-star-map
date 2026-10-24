@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T19:41:06.004Z",
+ "generatedAt": "2026-10-24T19:53:20.928Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1232,7 +1232,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active",
    "caption": "The map itself:",
@@ -1244,7 +1244,7 @@
     {
      "id": "ns-public",
      "label": "NORTH STAR PUBLIC",
-     "status": "idle",
+     "status": "working",
      "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
      "statusLine": "live · launch plan in progress",
      "caption": "Releasing North Star itself:",
