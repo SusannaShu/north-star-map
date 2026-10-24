@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T20:28:38.151Z",
+ "generatedAt": "2026-10-24T20:38:50.685Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -303,7 +303,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -578,7 +578,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -591,7 +591,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "idle",
+     "status": "working",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · rolling out",
      "caption": "The assistant on the phone:",
@@ -694,12 +694,10 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
-   "stage": "plan",
-   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -716,8 +714,6 @@
      "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
      "statusLine": "prototype on the bench",
      "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
-     "stage": "plan",
-     "planned": true,
      "images": [
       "img/pendant-workbench.jpg",
       "img/pendant-front.jpg"
@@ -729,7 +725,7 @@
     {
      "id": "omi",
      "label": "OMI",
-     "status": "done",
+     "status": "working",
      "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
      "statusLine": "old branch shelved",
      "caption": "Omi is the open-source AI wearable.",
@@ -1236,7 +1232,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active",
    "caption": "The map itself:",
@@ -1248,7 +1244,7 @@
     {
      "id": "ns-public",
      "label": "NORTH STAR PUBLIC",
-     "status": "idle",
+     "status": "working",
      "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
      "statusLine": "live · launch plan in progress",
      "caption": "Releasing North Star itself:",
@@ -2101,7 +2097,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -2126,7 +2122,7 @@
     {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
      "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
