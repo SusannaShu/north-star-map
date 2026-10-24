@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T19:18:14.964Z",
+ "generatedAt": "2026-10-24T19:28:37.135Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -122,7 +122,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -133,7 +133,7 @@
     {
      "id": "sheyou",
      "label": "SHEYOU",
-     "status": "working",
+     "status": "idle",
      "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
      "statusLine": "live",
      "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
