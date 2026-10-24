@@ -25,7 +25,9 @@
     const m = '?m=' + Math.floor(Date.now() / 60000);
     const read = async u => { const r = await fetch(u + m, { cache: 'no-store' }); if (!r.ok) throw new Error(r.status); return r.json(); };
     try { const j = await (LOCAL ? read(LOCAL).catch(() => read(URL)) : read(URL)).catch(() => read(MIRROR));
-      { last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)), planned: (j.planned || []).filter(x => ID.test(x)),
+      { last = { at: j.at || null, active: (j.active || []).filter(x => ID.test(x)),
+        // SUSANNA (T2238): the public dots she is on in Talk right now -- ids only, at most 3
+        her: (Array.isArray(j.her) ? j.her : []).filter(x => typeof x === 'string' && ID.test(x)).slice(0, 3), planned: (j.planned || []).filter(x => ID.test(x)),
         count: n99(j.count), queued: n99(j.queued), waiting: n99(j.waiting), asleep: n99(j.asleep),
         labels: (Array.isArray(j.labels) ? j.labels : []).filter(x => typeof x === 'string' && /^[A-Za-z0-9 &+]{1,32}$/.test(x)).slice(0, 8),
         // WORKERS (T710): one fixed public title, a public area label and working / waiting / queued -- nothing else
@@ -39,7 +41,9 @@
     const a = await activity() || { at: null, active: [], planned: [] };   // no feed = nothing works (T2197)
     // Activity older than 10 minutes (the minute job stopped) spins nothing.
     const fresh = a.at && Date.now() - Date.parse(a.at) < 600000;
-    const on = new Set(fresh ? a.active : []), plan = new Set(a.planned), at = {};
+    const on = new Set(fresh ? a.active : []), plan = new Set(a.planned), at = {}, her = {};
+    const ids = new Set(); for (const p of map.projects || []) { ids.add(p.id); (p.children || []).forEach(c => ids.add(c.id)); }
+    for (const id of fresh ? a.her || [] : []) if (ids.has(id)) her[id] = 1;
     // ONLY the live feed makes a dot work (T2197, her 9:14-9:23 am 10/24 "that's not the real dots that's working"): a
     // 'working' baked into map.public.json at build time stops the moment its worker is gone from the minute feed.
     const set = n => { if (on.has(n.id)) { n.status = 'working'; at[n.id] = 1; } else if (n.status === 'working') n.status = 'idle'; else if (plan.has(n.id) && !n.stage && n.status === 'idle') n.status = 'planned'; };
@@ -50,7 +54,7 @@
     // QUEUED (2026-10-15 9:19 pm, her yes): the same "N working · M queued" as her private map, plus the
     // public area labels the relay lets out ("Mittens", "Robot Skin") -- counts and labels only.
     map.activity = { working: fresh && a.count != null ? Math.max(a.count, n) : n, queued: fresh ? a.queued || 0 : 0, waiting: fresh ? (a.waiting ?? a.asleep) || 0 : 0, asleep: fresh ? a.asleep || 0 : 0, workers: fresh ? a.workers : [],
-      labels: fresh ? a.labels || [] : [], paused: fresh ? a.paused || null : null, at };
+      labels: fresh ? a.labels || [] : [], paused: fresh ? a.paused || null : null, at, her };
     return map;
   };
 })();

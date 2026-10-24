@@ -1753,6 +1753,7 @@ function draw() {
             ctx.globalAlpha = 1;
         }
         if (!dim && va > .5) agentCaption(n, t);
+        if (!dim && va > .5) herMark(n, t);
     });
 }
 
@@ -1801,6 +1802,34 @@ setInterval(() => {
 window.agentsOn = id => agentsAt()[id] || [];
 
 const CAPMAX = 44;
+
+const herOn = id => PUBLIC ? !!(DATA.activity && DATA.activity.her || {})[id] : (DATA.herAt || []).includes(id);
+
+window.herOn = herOn;
+
+function herMark(n, t) {
+    if (!herOn(n.id) || STILL && n.type === "child") return;
+    const R = n.r + 12 + Math.sin(t * 1.6) * 1.5;
+    ctx.save();
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 2.4;
+    ctx.globalAlpha = .55 + .35 * Math.sin(t * 1.6);
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, R, 0, 7);
+    ctx.stroke();
+    ctx.globalAlpha = 1;
+    ctx.font = "600 10px JetBrains Mono, monospace";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "bottom";
+    const y = n.y - R - 4;
+    ctx.strokeStyle = "rgba(255,255,255,0.92)";
+    ctx.lineWidth = 3;
+    ctx.lineJoin = "round";
+    ctx.strokeText("SUSANNA", n.x, y);
+    ctx.fillStyle = "#000";
+    ctx.fillText("SUSANNA", n.x, y);
+    ctx.restore();
+}
 
 function agentCaption(n, t) {
     const on = agentsAt()[n.id];
