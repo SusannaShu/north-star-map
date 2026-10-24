@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T19:56:32.817Z",
+ "generatedAt": "2026-10-24T20:08:10.291Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -330,7 +330,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -694,10 +694,12 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
+   "stage": "plan",
+   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -951,7 +953,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1232,7 +1234,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active",
    "caption": "The map itself:",
@@ -1244,7 +1246,7 @@
     {
      "id": "ns-public",
      "label": "NORTH STAR PUBLIC",
-     "status": "working",
+     "status": "idle",
      "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
      "statusLine": "live · launch plan in progress",
      "caption": "Releasing North Star itself:",
@@ -2097,7 +2099,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -2122,7 +2124,7 @@
     {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
-     "status": "working",
+     "status": "idle",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
      "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
