@@ -2712,7 +2712,7 @@ function openPublicAgentsPanel() {
         areas.set(k, g);
     }
     if (!w.length) {
-        const on = Object.keys(a.at || {}).filter(id => FULL.e[id]);
+        const on = Object.keys(a.at || {}).filter(id => FULL.e[id] && id !== "private-work");
         for (const l of a.labels || []) areas.set(l, {
             titles: new Set,
             working: 1,
@@ -2738,7 +2738,7 @@ function openPublicAgentsPanel() {
     const order = [ ...areas.entries() ].sort((p, q) => (p[0] === PRIV) - (q[0] === PRIV) || q[1].working - p[1].working || q[1].waiting - p[1].waiting);
     const state = g => g.approx ? "working now" : [ g.working ? `${g.working} working` : "", g.waiting ? `${g.waiting} waiting` : "", g.queued ? `${g.queued} queued` : "" ].filter(Boolean).join(" · ");
     const row = ([k, g]) => {
-        const id = k === PRIV ? null : nodeFor(k);
+        const id = k === PRIV ? FULL.e["private-work"] ? "private-work" : null : nodeFor(k);
         const name = k === PRIV ? "Private projects" : id && FULL.e[id] ? FULL.e[id].label : k;
         return `<div class="agent-row"${id ? ` style="cursor:pointer" onclick="jumpTo('${esc(id)}')"` : ""}>\n      <div class="agent-top"><b>${esc(name)}</b><span class="agent-kind">${esc(state(g))}</span></div>\n      ${g.titles.size ? `<div class="agent-now">${esc([ ...g.titles ].join(", "))}</div>` : ""}</div>`;
     };

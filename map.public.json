@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T20:38:50.685Z",
+ "generatedAt": "2026-10-24T20:41:36.574Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -3041,6 +3041,19 @@
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "private-work",
+   "label": "PRIVATE WORK",
+   "status": "idle",
+   "why": "Some of the work stays private. This dot lights up while an agent works on any of it -- never what, for whom or how much.",
+   "statusLine": "private",
+   "caption": "Some of the work stays private.",
+   "embed": "pages/private-work.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [],
+   "embedCaption": "private work · shown only as working"
   }
  ],
  "activity": {
