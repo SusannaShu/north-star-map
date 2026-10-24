@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T21:30:55.599Z",
+ "generatedAt": "2026-10-24T21:39:15.373Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -694,10 +694,12 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
+   "stage": "plan",
+   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -710,10 +712,12 @@
     {
      "id": "pendant",
      "label": "PENDANT",
-     "status": "working",
+     "status": "idle",
      "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
      "statusLine": "prototype on the bench",
      "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
+     "stage": "plan",
+     "planned": true,
      "images": [
       "img/pendant-workbench.jpg",
       "img/pendant-front.jpg"
