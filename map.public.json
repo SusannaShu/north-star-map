@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T20:08:10.291Z",
+ "generatedAt": "2026-10-24T20:20:24.411Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -330,7 +330,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -694,12 +694,10 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
-   "stage": "plan",
-   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -727,7 +725,7 @@
     {
      "id": "omi",
      "label": "OMI",
-     "status": "done",
+     "status": "working",
      "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
      "statusLine": "old branch shelved",
      "caption": "Omi is the open-source AI wearable.",
@@ -1058,7 +1056,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1117,7 +1115,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1854,7 +1852,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
