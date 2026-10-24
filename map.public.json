@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T21:03:56.429Z",
+ "generatedAt": "2026-10-24T21:22:37.758Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -578,7 +578,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -591,7 +591,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "working",
+     "status": "idle",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · rolling out",
      "caption": "The assistant on the phone:",
@@ -710,7 +710,7 @@
     {
      "id": "pendant",
      "label": "PENDANT",
-     "status": "working",
+     "status": "idle",
      "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
      "statusLine": "prototype on the bench",
      "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
