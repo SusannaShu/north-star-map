@@ -2619,6 +2619,8 @@ function renderPublicChrome() {
     setAgentsInd(n, labels, pw.length > 0 || n > 0 || !!rest, rest);
     if (panelNode && panelNode.id === "__agents" && panel.classList.contains("open")) openPublicAgentsPanel();
     DATA.ticker = [ `<b>north star</b> · ${PUBLIC_LINE}`, `<b>${n}</b> working${rest ? " · " + rest : ""} right now${labels ? " · " + esc(labels) : ""}`, ...DATA.generatedAt ? [ `<b>map</b> · rebuilt ${ago(DATA.generatedAt).replace(/ — .*$/, "")}` ] : [] ];
+    const talkLine = typeof window.nsTalkLine === "function" ? window.nsTalkLine() : "";
+    if (talkLine) DATA.ticker.unshift(`<b>live</b> · ${esc(talkLine)}`);
     if (a.paused) DATA.ticker.unshift(`<b>out of usage</b>${a.paused.until ? " until " + esc(a.paused.until) : ""} · most agents paused, requests wait in the queue`);
     tick(DATA.ticker[0]);
     const lg = document.getElementById("legendGap");
@@ -2713,7 +2715,9 @@ function openPublicAgentsPanel() {
     };
     const talk = typeof window.nsTalkLine === "function" ? window.nsTalkLine() : "";
     window.nsPresenceChanged = () => {
-        if (panelNode && panelNode.id === "__agents" && panel.classList.contains("open")) openPublicAgentsPanel();
+        try {
+            renderPublicChrome();
+        } catch {}
     };
     document.getElementById("pBody").innerHTML = (talk ? `<div class="agent-row agent-talk"><div class="agent-top"><b>${esc(talk)}</b></div></div>` : "") + (order.length ? order.map(row).join("") + '<div class="agent-empty" style="margin-top:14px">Tap a project to see it on the map. Kinds of work only; private projects stay private.</div>' : '<div class="agent-empty">Nothing is running right now.</div>');
 }
