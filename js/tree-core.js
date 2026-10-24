@@ -267,8 +267,35 @@
         };
     }
     const isPersonal = (text, o = {}) => classify(text, o).kind === "personal" && !TRULY_URGENT.test(strip(text));
+    let DOC_OFF = null;
+    const DOC_WORD = /\b(dr\.?\s+[a-z]+|doctor'?s?|physician|podiatrist|dermatologist|gyn\w*|pcp|gp|md)\b/i;
+    const DOC_NOTE = /\b(notes? (to|for)|questions? (to|for)|ask (dr\b|the doc|my doc|her doc|at|about)|to ask\b|bring up|mention (to|at)|tell (dr|the doc|my doc)|(at|for|to) (my|your|her|the) next (visit|appointment|appt|blood test|check-?up|physical|labs?)|next time (i|you|she) (see|visit))/i;
+    const DOC_ACTION = /\b(book|booking|schedule|reschedul\w*|cancel\w*|confirm (the|my|her) (appointment|visit)|intake|forms?\b|fill (in|out)|pay|bill|copay|refill|pharmacy|pick ?up|leave (now|by)|call (the|her|dr|to book)|referral (form|letter) (due|by))\b/i;
+    const DOC_SERIOUS = /\b(severe|serious|worse|worsening|getting worse|can'?t (walk|breathe|stand|sleep|bear weight)|chest pain|fever|numb\w*|bleeding|infect\w*|emergency|urgent|asap|hospital|911|faint\w*|pass(ed)? out|new fracture|swollen and hot)\b/i;
+    const doctorNames = () => (PEOPLE || []).filter(p => p && p.name && /\bdoctor|dentist|podiatr|physician\b/i.test(`${p.group || ""} ${p.relation || ""}`)).map(p => p.name);
+    function doctorsOn(o = {}) {
+        if (o.on !== undefined) return !!o.on;
+        const g = typeof G.NS_DOCTOR_NOTES_OFF === "function" ? G.NS_DOCTOR_NOTES_OFF() : G.NS_DOCTOR_NOTES_OFF;
+        return g !== undefined ? !!g : !!DOC_OFF;
+    }
+    function doctorNote(text, o = {}) {
+        const t = strip(text);
+        if (!t) return null;
+        const names = o.doctors || doctorNames(), named = names.find(n => strip(n).split(/\s+/).some(w => w.length >= 4 && wordIn(t, w.toLowerCase())));
+        if (!named && !DOC_WORD.test(t)) return null;
+        if (!DOC_NOTE.test(t) || DOC_ACTION.test(t.replace(DOC_NOTE, " "))) return null;
+        return {
+            doctor: named || null,
+            serious: DOC_SERIOUS.test(t)
+        };
+    }
+    function doctorHeld(text, o = {}) {
+        if (!doctorsOn(o)) return null;
+        const d = doctorNote(text, o);
+        return d && !d.serious ? "doctor-note" : null;
+    }
     function notAction(text, o = {}) {
-        return nonAction(text) ? "event" : o.personal && !TRULY_URGENT.test(strip(text)) || isPersonal(text, o) ? "personal" : null;
+        return doctorHeld(text, o) || (nonAction(text) ? "event" : o.personal && !TRULY_URGENT.test(strip(text)) || isPersonal(text, o) ? "personal" : null);
     }
     const isSubject = (S, name, line) => S.get(skey(name)) || (personish(name, line) ? {
         kind: "person",
@@ -460,6 +487,7 @@
         map = map || {};
         const X = index(map), P = map.projects || [], SUBJ = subjects(map), held = [];
         if (Array.isArray(map.people) && map.people.length) PEOPLE = map.people;
+        if (typeof map.doctorNotesOff === "boolean") DOC_OFF = map.doctorNotesOff;
         const segs = {
             working: new Map,
             waiting: new Map,
@@ -1357,6 +1385,8 @@
         weekendHeld: weekendHeld,
         weekendOpen: weekendOpen,
         notAction: notAction,
+        doctorNote: doctorNote,
+        doctorHeld: doctorHeld,
         dueToday: dueToday,
         classify: classify,
         isPersonal: isPersonal,
