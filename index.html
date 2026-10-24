@@ -91,21 +91,17 @@ button.agents-ind { cursor:pointer; } button.agents-ind:hover { border-color:var
 .presence-ind .lbl { color:var(--text); font-weight:600; }
 .presence-ind.off .pulse { background:var(--text-dim); animation:none; }
 .presence-ind.off .ico, .presence-ind.off .lbl { color:var(--text-muted); }
-/* T2176 (her 8:18 am 10/24): inside her portfolio (map.js body.framed) no title -- the portfolio's Menu pill sits top-left --
-   and the status pills live in the bottom bar, right of the ticker: the device icon says where she talks from, the words
-   stay short (the full sentence is the pill's title and the ticker's line). */
-body.framed .topbar .brand { display:none; }
-body.framed .topbar { padding-left:132px; }
-.pub-status { position:fixed; right:12px; bottom:0; z-index:16; height:32px; padding-bottom:env(safe-area-inset-bottom);
-  display:flex; align-items:center; transition:transform .4s ease, opacity .4s ease; }
-.pub-status .chips { margin-left:0; gap:6px; }
-.pub-status .agents-ind { height:24px; padding:0 9px; gap:6px; font-size:11.5px; }
-.pub-status .agents-ind .who { display:none; }
-body.saver .pub-status { transform:translateY(110%); opacity:0; pointer-events:none; }
-body.has-crumbs .pub-status { opacity:0 !important; pointer-events:none !important; }
+/* Portfolio frame (map.js body.framed). T2176 (her 8:18 am 10/24): no title -- the portfolio's compact Menu pill sits
+   top-left, 132 px of room. T2182 (her 8:32 + 8:34 am 10/24): the status pills are back in the TOP bar, and the bar holds
+   only search + talk status (device icon) + worker status: no details-panel button, no "..." (a dot already opens its why). */
+body.framed .topbar .brand, body.framed #panelBtn, body.framed #moreBtn, body.framed #nsMenu { display:none !important; }
+body.framed .topbar { padding-left:132px; gap:10px; }
+body.framed .topbar .chips { gap:6px; }
+body.framed .agents-ind { height:26px; padding:0 9px; gap:6px; font-size:11.5px; }
+body.framed .agents-ind .who { display:none; }
 @media (max-width:640px) {
-  body.framed .topbar { padding-left:128px; }
-  .pub-status .agents-ind .lbl { display:none; }
+  body.framed .topbar { padding-left:128px; padding-right:10px; }
+  body.framed .agents-ind .lbl { display:none; }
 }
 /* The "..." and its menu */
 .morebtn { position:relative; flex-shrink:0; width:33px; height:33px; display:flex; align-items:center; justify-content:center;
