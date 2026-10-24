@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-24T14:14:43.899Z",
+ "generatedAt": "2026-10-24T14:18:58.707Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -330,7 +330,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
