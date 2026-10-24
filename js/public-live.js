@@ -36,11 +36,13 @@
     return last;
   }
   window.nsLive = async function (map) {
-    const a = await activity(); if (!a) return map;
+    const a = await activity() || { at: null, active: [], planned: [] };   // no feed = nothing works (T2197)
     // Activity older than 10 minutes (the minute job stopped) spins nothing.
     const fresh = a.at && Date.now() - Date.parse(a.at) < 600000;
     const on = new Set(fresh ? a.active : []), plan = new Set(a.planned), at = {};
-    const set = n => { if (on.has(n.id)) { n.status = 'working'; at[n.id] = 1; } else if (plan.has(n.id) && !n.stage && n.status === 'idle') n.status = 'planned'; };
+    // ONLY the live feed makes a dot work (T2197, her 9:14-9:23 am 10/24 "that's not the real dots that's working"): a
+    // 'working' baked into map.public.json at build time stops the moment its worker is gone from the minute feed.
+    const set = n => { if (on.has(n.id)) { n.status = 'working'; at[n.id] = 1; } else if (n.status === 'working') n.status = 'idle'; else if (plan.has(n.id) && !n.stage && n.status === 'idle') n.status = 'planned'; };
     for (const p of map.projects || []) { set(p); (p.children || []).forEach(set); }
     // COUNT (2026-10-14, her yes): the header says how many agents work right now, all of them --
     // a bare number from the relay, never which dots; at least the public dots spinning.
