@@ -603,6 +603,7 @@ body.saver .askbar, body:has(.panel.open) .askbar { opacity:0; pointer-events:no
 .sit-prog { font-size:11.5px; color:var(--text-muted); margin-top:6px; } .sit-prog span { font-family:var(--mono); font-size:10px; text-transform:uppercase; letter-spacing:.8px; margin-right:4px; }
 .sit-prog b { color:var(--text-secondary); font-weight:600; }
 .legend .dot.planned { width:9px; height:9px; }
+.legend .dot.her { background:#fff; box-shadow:0 0 0 1.5px #000, 0 0 0 3px #fff, 0 0 0 4.5px #000; }   /* T2238: her own mark (map.js herMark) */
 /* Plan made, not acted on (stage:"plan"): a blueprint dot -- double ring, drafting grid. */
 .dot.plan { width:9px; height:9px; background:repeating-linear-gradient(0deg, transparent 0 2px, rgba(0,0,0,.3) 2px 2.6px), repeating-linear-gradient(90deg, transparent 0 2px, rgba(0,0,0,.3) 2px 2.6px), #FFF; border:1px solid #000; box-shadow:0 0 0 1.5px #FFF, 0 0 0 2.3px #000; margin:0 1px; }
 .stage-chip { font-family:var(--mono); font-size:10px; font-weight:500; letter-spacing:.6px; text-transform:uppercase; color:var(--text-secondary); border:1px solid currentColor; outline:1px solid var(--border); outline-offset:1.5px; border-radius:3px; padding:2px 6px; margin-left:4px; white-space:nowrap; align-self:center; }
@@ -768,6 +769,7 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 
 <div class="legend">
   <div><span class="dot working"></span> agent working</div>
+  <div><span class="dot her"></span> Susanna is here</div>
   <div id="legendNeeds"><span class="dot needs-you"></span> needs you</div>
   <div><span class="dot done"></span> shipped / idle</div>
   <div><span class="dot planned"></span> planned (where it is going)</div>
