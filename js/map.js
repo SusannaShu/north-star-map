@@ -2923,6 +2923,26 @@ setInterval(() => {
 if (PUBLIC) {
     document.body.classList.add("public");
     if (EMBED) document.body.classList.add("embed");
+    let framed = false;
+    try {
+        framed = window.self !== window.top;
+    } catch {
+        framed = true;
+    }
+    if (framed) {
+        document.body.classList.add("framed");
+        const chips = document.getElementById("healthChips"), tk = document.querySelector(".ticker");
+        if (chips) {
+            const bar = document.createElement("div");
+            bar.className = "pub-status";
+            bar.id = "pubStatus";
+            bar.appendChild(chips);
+            document.body.appendChild(bar);
+            if (tk && window.ResizeObserver) new ResizeObserver(() => {
+                tk.style.paddingRight = (bar.offsetWidth ? bar.offsetWidth + 20 : 16) + "px";
+            }).observe(bar);
+        }
+    }
     document.getElementById("pTabs").style.display = "none";
     const ex = document.getElementById("pubExit");
     if (ex && PREVIEW && !EMBED) ex.hidden = false;

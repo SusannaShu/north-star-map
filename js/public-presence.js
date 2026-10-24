@@ -16,7 +16,7 @@
         iphone: "phone",
         ipad: "tablet",
         phone: "phone",
-        "mac-mini": "laptop",
+        "mac-mini": "mini",
         macbook: "laptop",
         laptop: "laptop"
     };
@@ -47,6 +47,7 @@
         phone: '<rect x="4.5" y="1.75" width="7" height="12.5" rx="1.6"/><path d="M7 12h2"/>',
         tablet: '<rect x="2.75" y="1.75" width="10.5" height="12.5" rx="1.6"/><path d="M7 12h2"/>',
         laptop: '<rect x="3" y="3" width="10" height="7" rx="1"/><path d="M1.5 12.5h13"/>',
+        mini: '<rect x="2" y="5.5" width="12" height="5" rx="1.6"/><path d="M4.5 12.5h7M4.5 8h.01"/>',
         workers: '<circle cx="8" cy="5" r="2.5"/><path d="M3 14c0-2.8 2.2-4.75 5-4.75S13 11.2 13 14"/>',
         mitten: '<path d="M5 14.25V7.5a3 3 0 0 1 6 0v1.25l1.4-1.4a1.2 1.2 0 0 1 1.7 1.7L11 12.2v2.05zM5 12h6"/>'
     };
@@ -84,9 +85,10 @@
         }
         const on = p.talk === "on";
         const words = on ? "Susanna is talking to Mittens" : "Mittens idle";
+        const short = document.body.classList.contains("framed") ? on ? "Talking" : "Idle" : words;
         const sub = on ? fromWords(p) || (p.device ? `on ${p.device === "glasses" ? "the glasses" : `a ${p.device}`}` : "now") : p.seen ? `talked ${p.seen}` : "";
         const ico = on ? p.devices.length ? TYPE_ICON[p.devices[0]] : p.device : null;
-        const sig = words + "|" + sub + "|" + (ico || "");
+        const sig = short + "|" + sub + "|" + (ico || "");
         if (!el) {
             el = document.createElement("div");
             el.id = "presenceChip";
@@ -99,7 +101,7 @@
         el.title = `${words}${sub ? " " + sub : ""}`;
         el.setAttribute("aria-label", el.title);
         el.setAttribute("role", "status");
-        el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${on && p.devices.length > 1 ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : svg(ico || "mitten")}<span class="lbl">${words}</span>${sub ? `<span class="who">${sub}</span>` : ""}`;
+        el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${on && p.devices.length > 1 ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : svg(ico || "mitten")}<span class="lbl">${short}</span>${sub ? `<span class="who">${sub}</span>` : ""}`;
         const first = !window.NS_PRESENCE;
         window.NS_PRESENCE = p;
         if (first && typeof window.renderPublicChrome === "function") try {
