@@ -271,7 +271,7 @@
     const DOC_WORD = /\b(dr\.?\s+[a-z]+|doctor'?s?|physician|podiatrist|dermatologist|gyn\w*|pcp|gp|md)\b/i;
     const DOC_NOTE = /\b(notes? (to|for)|questions? (to|for)|ask (dr\b|the doc|my doc|her doc|at|about)|to ask\b|bring up|mention (to|at)|tell (dr|the doc|my doc)|(at|for|to) (my|your|her|the) next (visit|appointment|appt|blood test|check-?up|physical|labs?)|next time (i|you|she) (see|visit))/i;
     const DOC_ACTION = /\b(book|booking|schedule|reschedul\w*|cancel\w*|confirm (the|my|her) (appointment|visit)|intake|forms?\b|fill (in|out)|pay|bill|copay|refill|pharmacy|pick ?up|leave (now|by)|call (the|her|dr|to book)|referral (form|letter) (due|by))\b/i;
-    const DOC_SERIOUS = /\b(severe|serious|worse|worsening|getting worse|can'?t (walk|breathe|stand|sleep|bear weight)|chest pain|fever|numb\w*|bleeding|infect\w*|emergency|urgent|asap|hospital|911|faint\w*|pass(ed)? out|new fracture|swollen and hot)\b/i;
+    const DOC_SERIOUS = /\b(severe|serious|worse|worsening|getting worse|can'?t (walk|breathe|stand|sleep|bear weight)|chest pain|fever|numb\w*|bleeding|infect\w*|emergency|urgent|asap|hospital|911|faint\w*|pass(ed)? out|new fracture|swollen and hot|suicid\w*|self-?harm|kill (my|her)self)\b/i;
     const doctorNames = () => (PEOPLE || []).filter(p => p && p.name && /\bdoctor|dentist|podiatr|physician\b/i.test(`${p.group || ""} ${p.relation || ""}`)).map(p => p.name);
     function doctorsOn(o = {}) {
         if (o.on !== undefined) return !!o.on;

@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-23T20:06:02.646Z",
+ "generatedAt": "2026-10-24T01:32:37.621Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -231,17 +231,6 @@
    "parked": false,
    "children": [
     {
-     "id": "publish",
-     "label": "PUBLISH",
-     "status": "done",
-     "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
-     "statusLine": "paused",
-     "caption": "Hourly, inside a safe window:",
-     "embed": "pages/publish.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "nightly-content",
      "label": "NIGHTLY CONTENT",
      "status": "idle",
@@ -249,6 +238,17 @@
      "statusLine": "paused",
      "caption": "Nightly:",
      "embed": "pages/nightly-content.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "publish",
+     "label": "PUBLISH",
+     "status": "idle",
+     "why": "Hourly, inside a safe window: publishes what is due. Nothing else.",
+     "statusLine": "paused",
+     "caption": "Hourly, inside a safe window:",
+     "embed": "pages/publish.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
