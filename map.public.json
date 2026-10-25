@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T15:32:59.404Z",
+ "generatedAt": "2026-10-25T15:37:13.098Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1270,7 +1270,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1319,7 +1319,7 @@
     {
      "id": "portfolio-mittens-scenes",
      "label": "MITTENS SCENES",
-     "status": "idle",
+     "status": "working",
      "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
      "statusLine": "ideas · transitions made, not on site",
      "caption": "I want more varied views in the Mittens chapter of my portfolio:",
