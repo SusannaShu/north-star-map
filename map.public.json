@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T15:06:03.018Z",
+ "generatedAt": "2026-10-25T15:27:00.754Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1076,7 +1076,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1181,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1223,7 +1223,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "working",
+   "status": "idle",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -1240,7 +1240,7 @@
     {
      "id": "disk",
      "label": "DISK CLEANUP",
-     "status": "working",
+     "status": "idle",
      "why": "I wanted to know what takes up space on the agents' computer and get it back. The agents measure every folder, clear old models and caches, and ask me before removing anything big.",
      "statusLine": "cleared · more waits on my yes",
      "caption": "I wanted to know what takes up space on the agents' computer and get it back.",
