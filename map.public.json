@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T11:20:59.367Z",
+ "generatedAt": "2026-10-25T11:29:14.309Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -813,22 +813,6 @@
    "parent": "mittens",
    "parked": false,
    "children": [
-    {
-     "id": "pendant",
-     "label": "PENDANT",
-     "status": "idle",
-     "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
-     "statusLine": "three form designs · picking one",
-     "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
-     "stage": "active",
-     "images": [
-      "img/pendant-workbench.jpg",
-      "img/pendant-front.jpg"
-     ],
-     "embed": "pages/pendant.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "mittens-speaker",
      "label": "SPEAKER + MIC",
@@ -1473,7 +1457,7 @@
     {
      "id": "code-architecture-tree",
      "label": "CODE ARCHITECTURE TREE",
-     "status": "working",
+     "status": "idle",
      "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
      "statusLine": "built · rescans the code",
      "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -3364,7 +3348,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "idle",
+   "status": "working",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
@@ -3424,7 +3408,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
@@ -3497,6 +3481,25 @@
    "links": [
     "aurora"
    ],
+   "parent": "wearables",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "pendant",
+   "label": "PENDANT",
+   "status": "idle",
+   "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
+   "statusLine": "three form designs · picking one",
+   "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
+   "stage": "active",
+   "images": [
+    "img/pendant-workbench.jpg",
+    "img/pendant-front.jpg"
+   ],
+   "embed": "pages/pendant.html",
+   "visibility": "public",
    "parent": "wearables",
    "parked": false,
    "children": [],
