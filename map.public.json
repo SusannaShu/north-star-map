@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T16:45:59.097Z",
+ "generatedAt": "2026-10-25T16:59:02.566Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -183,7 +183,7 @@
     {
      "id": "fit-data",
      "label": "FIT DATA FROM BRANDS",
-     "status": "idle",
+     "status": "working",
      "why": "The fit bottleneck is unknown fabric behaviour. Measure one garment, build the fit demo end to end, then ask direct-to-consumer brands in fitted categories (denim, tailoring, swimwear) for one style's fabric data. The pitch: fewer returns.",
      "statusLine": "plan · step 1: one measured garment",
      "caption": "The fit bottleneck is unknown fabric behaviour.",
