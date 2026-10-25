@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T23:35:19.672Z",
+ "generatedAt": "2026-10-25T23:58:42.441Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1270,7 +1270,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1345,7 +1345,7 @@
     {
      "id": "portfolio-milkyway",
      "label": "LANDING END: MILKY WAY",
-     "status": "idle",
+     "status": "working",
      "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
      "statusLine": "built · not shipped yet",
      "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3314,7 +3314,7 @@
   {
    "id": "ns-talk-live-stt",
    "label": "LIVE TRANSCRIPTION",
-   "status": "working",
+   "status": "idle",
    "why": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
    "statusLine": "plan · picking a service",
    "caption": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
