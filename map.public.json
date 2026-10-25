@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T06:09:04.300Z",
+ "generatedAt": "2026-10-25T06:43:18.488Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -26,8 +26,9 @@
      "label": "DESIGNERS",
      "status": "idle",
      "why": "Student designers and young independent brands. Their work goes on SHEYOU with a claim link; every time a member wears a piece, the designer earns.",
-     "statusLine": "pipeline",
+     "statusLine": "pipeline · try-on pricing idea added",
      "caption": "Student designers and young independent brands.",
+     "stage": "active",
      "embed": "pages/designers.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -41,6 +42,21 @@
      "caption": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
      "embed": "pages/influencers.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-outreach",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code, so the map always matches what is really built. It covers the outreach records and automation, the phone app and the outreach agent.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code, so the map always matches what is really built.",
+     "stage": "active",
+     "embed": "pages/code-outreach.html",
+     "visibility": "public",
+     "links": [
+      "outreach"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -131,6 +147,23 @@
    "parked": false,
    "children": [
     {
+     "id": "sheyou-business-logic",
+     "label": "TRY-ON BUSINESS LOGIC",
+     "status": "idle",
+     "why": "I tested whether designer-priced virtual try-on is a real business. The answer is yes: a free try-on works as the advert, people pay to keep what they love, and the designer sets the price and keeps most of it.",
+     "statusLine": "plan · decisions pending",
+     "caption": "I tested whether designer-priced virtual try-on is a real business.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/sheyou-business-logic.html",
+     "visibility": "public",
+     "links": [
+      "sheyou",
+      "designers"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "sheyou-recreations",
      "label": "CREDITED RECREATIONS",
      "status": "idle",
@@ -188,6 +221,21 @@
      "stage": "active",
      "embed": "pages/susu-daily.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-susu-map",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the web map, the phone app and the display.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-susu-map.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -273,6 +321,21 @@
      "planned": true,
      "embed": "pages/agentic-marketing.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-marketing",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the content pipeline with its lanes, and the marketing phone app.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-marketing.html",
+     "visibility": "public",
+     "links": [
+      "marketing"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -387,6 +450,22 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "how-about-the-question-threads",
+     "label": "TEST THREAD",
+     "status": "done",
+     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
+     "statusLine": "merged · test leftover",
+     "caption": "A test run briefly made this thread dot.",
+     "stage": "done",
+     "embed": "pages/how-about-the-question-threads.html",
+     "visibility": "public",
+     "links": [
+      "mittens-daily",
+      "outing-thread"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "meeting-notes",
      "label": "MEETING NOTES",
      "status": "idle",
@@ -445,6 +524,23 @@
      "stage": "active",
      "embed": "pages/brand-style.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-icon",
+     "label": "MITTENS ICON",
+     "status": "idle",
+     "why": "I am redrawing the Mittens icon to make it better. Three redraws are ready for me to pick from.",
+     "statusLine": "plan ready · waiting on my pick",
+     "caption": "I am redrawing the Mittens icon to make it better.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-icon.html",
+     "visibility": "public",
+     "links": [
+      "brand-style",
+      "today-page-north-star-icon"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -571,7 +667,7 @@
      "label": "MITTENS APP",
      "status": "idle",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
-     "statusLine": "new layout built · rolling out",
+     "statusLine": "new layout built · smarter reminders next",
      "caption": "The assistant on the phone:",
      "stage": "active",
      "embed": "pages/mittens-app.html",
@@ -665,6 +761,36 @@
       "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "today-page-north-star-icon",
+     "label": "TODAY PAGE ICON",
+     "status": "idle",
+     "why": "A North Star icon on the app's today screen, so the map is one tap away.",
+     "statusLine": "in progress",
+     "caption": "A North Star icon on the app's today screen, so the map is one tap away.",
+     "stage": "active",
+     "embed": "pages/today-page-north-star-icon.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-mittens-digital",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the Mittens phone app with chat, talk, glasses and day views, the open pendant capture and its triage, and the core skills.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-mittens-digital.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -692,8 +818,9 @@
      "label": "PENDANT",
      "status": "idle",
      "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
-     "statusLine": "prototype on the bench",
+     "statusLine": "three form designs · picking one",
      "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
+     "stage": "active",
      "images": [
       "img/pendant-workbench.jpg",
       "img/pendant-front.jpg"
@@ -742,6 +869,39 @@
      "embed": "pages/guardian-angel.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pendant-pre-sale",
+     "label": "PENDANT PRE-SALE",
+     "status": "idle",
+     "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
+     "statusLine": "thinking it through",
+     "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/pendant-pre-sale.html",
+     "visibility": "public",
+     "links": [
+      "wearables",
+      "pendant"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "start-without-wearables",
+     "label": "START WITHOUT WEARABLES",
+     "status": "idle",
+     "why": "Mittens should be useful from day one with just a phone, so wearables become an upgrade rather than a requirement.",
+     "statusLine": "thinking it through",
+     "caption": "Mittens should be useful from day one with just a phone, so wearables become an upgrade rather than a requirement.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/start-without-wearables.html",
+     "visibility": "public",
+     "links": [
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -762,7 +922,23 @@
    "visibility": "public",
    "parent": "mittens",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "code-soft-robot",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the soft robot firmware, its parts list and its build schedule.",
+     "statusLine": "mapped · early code",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-soft-robot.html",
+     "visibility": "public",
+     "links": [
+      "soft-robot"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1056,6 +1232,21 @@
      "embed": "pages/views-check.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-devhub",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the Dev Hub server, launcher and manual, and its phone app.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-devhub.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1205,6 +1396,21 @@
      "embed": "pages/portfolio-landing-talk.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-portfolio",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code of my portfolio site.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code of my portfolio site.",
+     "stage": "active",
+     "embed": "pages/code-portfolio.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1214,7 +1420,7 @@
    "label": "NORTH STAR MAP",
    "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active",
+   "statusLine": "active · busy week",
    "caption": "The map itself:",
    "stage": "active",
    "embed": "pages/northstar.html",
@@ -1269,13 +1475,44 @@
      "label": "GRAND THREADS",
      "status": "idle",
      "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
-     "statusLine": "built",
+     "statusLine": "built · chat threads tied to dots",
      "caption": "Each dot on my map is now a chat thread.",
      "stage": "active",
      "embed": "pages/grand-threads.html",
      "visibility": "public",
      "links": [
       "work-in-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-architecture-tree",
+     "label": "CODE ARCHITECTURE TREE",
+     "status": "idle",
+     "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
+     "statusLine": "built · rescans the code",
+     "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
+     "stage": "active",
+     "embed": "pages/code-architecture-tree.html",
+     "visibility": "public",
+     "links": [
+      "northstar",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-northstar",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
+     "stage": "active",
+     "embed": "pages/code-northstar.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1356,7 +1593,7 @@
      "label": "MAP UPKEEP",
      "status": "idle",
      "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-     "statusLine": "hourly tidy checks · placement audit done",
+     "statusLine": "hourly tidy checks · placement audit run",
      "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
      "stage": "active",
      "embed": "pages/map-upkeep.html",
@@ -1514,6 +1751,38 @@
      "visibility": "public",
      "links": [
       "context-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "triage",
+     "label": "TRIAGE",
+     "status": "idle",
+     "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
+     "statusLine": "built · catching far more",
+     "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
+     "stage": "active",
+     "embed": "pages/triage.html",
+     "visibility": "public",
+     "links": [
+      "context-architecture",
+      "latest-wins"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "scenarios",
+     "label": "SCENARIOS",
+     "status": "idle",
+     "why": "Each scenario has its own full logic: which gates it opens, what actions it takes and what it updates. Each one is also a dot on the map, and every code path it points to is checked to make sure it exists.",
+     "statusLine": "built · all code paths checked",
+     "caption": "Each scenario has its own full logic:",
+     "stage": "active",
+     "embed": "pages/scenarios.html",
+     "visibility": "public",
+     "links": [
+      "triage",
+      "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1920,7 +2189,7 @@
      "label": "WAKE REPORT",
      "status": "idle",
      "why": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
-     "statusLine": "built",
+     "statusLine": "built · new work reported first",
      "caption": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
      "stage": "active",
      "embed": "pages/wake-report.html",
@@ -1937,6 +2206,127 @@
      "stage": "active",
      "embed": "pages/talk-voice.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "starting-what-now",
+     "label": "TEST THREAD",
+     "status": "done",
+     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
+     "statusLine": "merged · test leftover",
+     "caption": "A test run briefly made this thread dot.",
+     "stage": "done",
+     "embed": "pages/starting-what-now.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "wait-why-are-you-fixing",
+     "label": "TEST THREAD",
+     "status": "done",
+     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
+     "statusLine": "merged · test leftover",
+     "caption": "A test run briefly made this thread dot.",
+     "stage": "done",
+     "embed": "pages/wait-why-are-you-fixing.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "talk-voice"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "is-that-why-the-memory",
+     "label": "TEST THREAD",
+     "status": "done",
+     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
+     "statusLine": "merged · test leftover",
+     "caption": "A test run briefly made this thread dot.",
+     "stage": "done",
+     "embed": "pages/is-that-why-the-memory.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "are-you-just-stupider-on",
+     "label": "TEST THREAD",
+     "status": "done",
+     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
+     "statusLine": "merged · test leftover",
+     "caption": "A test run briefly made this thread dot.",
+     "stage": "done",
+     "embed": "pages/are-you-just-stupider-on.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "something-that-dies",
+     "label": "TEST LEAK FIXED",
+     "status": "done",
+     "why": "A test's sample title leaked onto the real map. It was merged away, and tests now run without touching the map.",
+     "statusLine": "merged · tests now isolated",
+     "caption": "A test's sample title leaked onto the real map.",
+     "stage": "done",
+     "embed": "pages/something-that-dies.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "slowjob-5000-build-the-thing",
+     "label": "TEST LEAK FIXED",
+     "status": "done",
+     "why": "A test's sample title leaked onto the real map. It was merged away, and tests now run without touching the map.",
+     "statusLine": "merged · tests now isolated",
+     "caption": "A test's sample title leaked onto the real map.",
+     "stage": "done",
+     "embed": "pages/slowjob-5000-build-the-thing.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "hang-build-the-dummy-thing",
+     "label": "TEST LEAK FIXED",
+     "status": "done",
+     "why": "A test's sample title leaked onto the real map. It was merged away, and tests now run without touching the map.",
+     "statusLine": "merged · tests now isolated",
+     "caption": "A test's sample title leaked onto the real map.",
+     "stage": "done",
+     "embed": "pages/hang-build-the-dummy-thing.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "linger-then-finish",
+     "label": "TEST LEAK FIXED",
+     "status": "done",
+     "why": "A test's sample title leaked onto the real map. It was merged away, and tests now run without touching the map.",
+     "statusLine": "merged · tests now isolated",
+     "caption": "A test's sample title leaked onto the real map.",
+     "stage": "done",
+     "embed": "pages/linger-then-finish.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2860,7 +3250,7 @@
      "label": "CAN'T SEE -> ASK",
      "status": "idle",
      "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
-     "statusLine": "built · fixing the view during calls",
+     "statusLine": "built · spoken recaps planned",
      "caption": "Glasses off or a useless frame:",
      "stage": "active",
      "embed": "pages/mw-blind.html",
@@ -3027,6 +3417,26 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-scenario-logic",
+   "label": "SCENARIOS",
+   "status": "idle",
+   "why": "Every scenario in Mittens' logic is a dot showing its prompt, gates, tools and what it made. The dots are built from one shared registry, so the map cannot drift away from the code.",
+   "statusLine": "live · rebuilt every map build",
+   "caption": "Every scenario in Mittens' logic is a dot showing its prompt, gates, tools and what it made.",
+   "stage": "active",
+   "embed": "pages/mittens-scenario-logic.html",
+   "visibility": "public",
+   "links": [
+    "brain-architecture",
+    "triage",
+    "scenarios"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "sheyou",
    "label": "SHEYOU",
    "status": "idle",
@@ -3035,9 +3445,28 @@
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
    "embed": "pages/sheyou.html",
    "visibility": "public",
+   "links": [
+    "sheyou-business-logic"
+   ],
    "parent": "fashion",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "code-sheyou",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the iOS app, the web store, the live backend for products and orders, and an unfinished move to a newer backend.",
+     "statusLine": "mapped · backend move unfinished",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-sheyou.html",
+     "visibility": "public",
+     "links": [
+      "sheyou"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "case study"
   },
   {
@@ -3045,13 +3474,29 @@
    "label": "SUSU CLOSET",
    "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
-   "statusLine": "live",
+   "statusLine": "live · business model still open",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "embed": "pages/susu-closet.html",
    "visibility": "public",
    "parent": "fashion",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "code-susu-closet",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code of the closet phone app.",
+     "statusLine": "mapped from the code",
+     "caption": "This branch is mapped straight from the code of the closet phone app.",
+     "stage": "active",
+     "embed": "pages/code-susu-closet.html",
+     "visibility": "public",
+     "links": [
+      "susu-closet"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "case study"
   },
   {
