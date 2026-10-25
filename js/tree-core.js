@@ -729,6 +729,7 @@
         g.get("time").items.sort((a, b) => (Date.parse(a.trig.at || "") || 9e15) - (Date.parse(b.trig.at || "") || 9e15));
         return [ ...g.values() ].filter(x => x.items.length);
     }
+    const CO = "company", CO_LABEL = "UNIQUE DESIGNS -- COMPANY MAC MINI";
     function build({map: map, workers: workers, now: NOW} = {}) {
         map = map || {};
         const X = index(map), P = map.projects || [], SUBJ = subjects(map), held = [];
@@ -790,13 +791,16 @@
             const gid = groupId || "other";
             if (!segs[seg].has(gid)) segs[seg].set(gid, {
                 id: gid,
-                label: gid === "minute" ? "GOT A MINUTE" : gid === "review" ? "TO REVIEW" : gid === "asked" ? "YOU ASKED, NOT DONE" : gid === "inbound" ? "FROM OUTSIDE" : gid === "told" ? "MITTENS TOLD YOU" : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
+                label: gid === "minute" ? "GOT A MINUTE" : gid === "review" ? "TO REVIEW" : gid === "asked" ? "YOU ASKED, NOT DONE" : gid === "inbound" ? "FROM OUTSIDE" : gid === "told" ? "MITTENS TOLD YOU" : gid === CO ? CO_LABEL : X.e[gid] ? nice(X.e[gid].label) : String(gid).replace(/-/g, " ").toUpperCase(),
                 items: [],
                 ...gid === "minute" || gid === "review" ? {
                     minute: true
                 } : {},
                 ...gid === "review" ? {
                     review: true
+                } : {},
+                ...gid === CO ? {
+                    company: true
                 } : {}
             });
             segs[seg].get(gid).items.push(item);
@@ -812,8 +816,24 @@
         }
         const qTask = new Set((Array.isArray(map.questions) ? map.questions : []).map(q => q.task).filter(Boolean));
         for (const w of workers || []) {
-            if (w.kind === "task" && qTask.has(w.id)) {
+            if (w.kind === "task" && qTask.has(w.id) && !w.company) {
                 liveTasks.add(w.id);
+                continue;
+            }
+            if (w.company) {
+                liveTasks.add(w.id);
+                const m = w.elapsedSeconds == null ? "" : w.elapsedSeconds < 90 ? `${Math.round(w.elapsedSeconds)}s` : `${Math.round(w.elapsedSeconds / 60)} min`;
+                add("working", CO, {
+                    name: clip(taskName[w.id] || w.label || w.id, 48),
+                    line: clip([ w.id, "running", w.now || "working", m ].filter(Boolean).join(" · "), 90),
+                    open: taskDot[w.id] && X.e[taskDot[w.id]] ? taskDot[w.id] : null,
+                    kind: "task",
+                    taskId: w.id,
+                    company: true,
+                    status: "working",
+                    src: "company Mac mini",
+                    since: w.since || null
+                });
                 continue;
             }
             let id = w.kind === "task" && taskDot[w.id] || (map.workerAt || {})[w.id] || w.project || null;
@@ -838,8 +858,24 @@
             return m < 90 ? `${Math.max(1, Math.round(m))} min` : `${Math.round(m / 60)} h`;
         };
         for (const t of [ ...tasks ].sort((a, b) => (Date.parse(b.at || "") || 0) - (Date.parse(a.at || "") || 0))) {
-            if (liveTasks.has(t.id) || qTask.has(t.id) || !(t.status === "running" || t.status === "queued")) continue;
+            if (liveTasks.has(t.id) || qTask.has(t.id) && !t.company || !(t.status === "running" || t.status === "queued" || t.company && t.status === "stopped")) continue;
             const id = t.dot && X.e[t.dot] ? t.dot : null;
+            if (t.company) {
+                const st = t.status === "stopped" ? "stopped -- the company queue re-runs it" : t.status === "running" ? `running · ${t.now || "working"} · ${tAgo(t)}` : t.waitingOn || t.asleep ? `waiting: ${String(t.waiting || "waiting").split(" -- ")[0]}` : `queued: ${String(t.waiting || "next company slot").split(" -- ")[0]}`;
+                add("working", CO, {
+                    name: clip(t.name, 48),
+                    line: clip(`${t.id} · ${st}${t.report && t.status !== "queued" ? " · last: " + t.report : ""}`, 110),
+                    open: id,
+                    kind: "task",
+                    taskId: t.id,
+                    company: true,
+                    queued: t.status === "queued",
+                    status: t.status === "queued" ? "queued" : t.status,
+                    src: "company Mac mini",
+                    since: t.at || null
+                });
+                continue;
+            }
             const waitingNow = t.status === "queued" && (t.waitingOn || t.asleep);
             if (waitingNow) {
                 add("waiting", groupFor(id, "agents-waiting"), {
@@ -1207,7 +1243,7 @@
                 since: a.at
             });
         }
-        for (const t of tasks.filter(t => t.status === "stopped" && !qTask.has(t.id))) {
+        for (const t of tasks.filter(t => t.status === "stopped" && !qTask.has(t.id) && !t.company)) {
             add("needs", "asked", {
                 name: clip(t.name, 60),
                 line: clip(`${t.id} · stopped before it finished${t.result ? ": " + t.result : ""}`, 90),
@@ -1415,6 +1451,21 @@
             const at = Date.parse(t.endedAt || "");
             if (!(at > now - WEEK)) continue;
             const id = t.dot && X.e[t.dot] ? t.dot : null;
+            if (t.company) {
+                doneRows.push({
+                    g: CO,
+                    it: {
+                        name: clip(t.name, 48),
+                        line: clip(`${t.id} · finished ${dday(at)}${t.report || t.result ? " -- " + (t.report || t.result) : ""}`, 140),
+                        open: id,
+                        kind: "task",
+                        taskId: t.id,
+                        company: true,
+                        at: t.endedAt
+                    }
+                });
+                continue;
+            }
             doneRows.push({
                 g: groupFor(id, "agents"),
                 it: {
@@ -1590,10 +1641,12 @@
         const seg = (id, label) => {
             const groups = id === "waiting" ? [ ...segs[id].values() ] : [ ...segs[id].values() ].sort(id === "planned" ? (a, b) => b.items.length - a.items.length || a.label.localeCompare(b.label) : (a, b) => !!a.minute - !!b.minute || (a.id === "queued") - (b.id === "queued") || first(a) - first(b));
             if (id !== "waiting") groups.forEach(g => g.items.sort((a, b) => (a.kind === "inbox") - (b.kind === "inbox") || a.seq - b.seq));
+            if (id !== "waiting") groups.sort((a, b) => (a.id === CO) - (b.id === CO));
             return {
                 id: id,
                 label: label,
-                count: groups.reduce((s, g) => s + g.items.length, 0),
+                count: groups.reduce((s, g) => s + g.items.filter(i => !i.company).length, 0),
+                company: groups.reduce((s, g) => s + g.items.filter(i => i.company).length, 0),
                 groups: groups
             };
         };
@@ -1605,6 +1658,7 @@
             verified: !!T,
             inboxOpen: map.inboxOpen || 0,
             counts: {
+                company: by("working").company,
                 working: by("working").count,
                 waiting: by("waiting").count,
                 needs: by("needs").count,
@@ -1624,7 +1678,7 @@
     }
     function spoken(tree, {top: top = 3} = {}) {
         const by = id => tree.segments.find(x => x.id === id), W = by("working"), Wt = by("waiting"), N = by("needs"), Pl = by("planned");
-        const items = s => s.groups.flatMap(g => g.items.map(i => ({
+        const items = s => s.groups.flatMap(g => g.items.filter(i => !i.company).map(i => ({
             ...i,
             group: g.label
         }))).sort((a, b) => a.seq - b.seq);

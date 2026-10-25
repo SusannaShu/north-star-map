@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T16:13:48.297Z",
+ "generatedAt": "2026-10-25T16:22:15.141Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -371,7 +371,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1387,7 +1387,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1411,7 +1411,7 @@
     {
      "id": "action-tree",
      "label": "ACTION TREE",
-     "status": "working",
+     "status": "idle",
      "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
      "statusLine": "live · stale items repaired nightly",
      "caption": "The one source of truth for what is open:",
