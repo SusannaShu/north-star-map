@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T14:16:40.295Z",
+ "generatedAt": "2026-10-25T14:24:54.918Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1442,7 +1442,7 @@
     {
      "id": "grand-threads",
      "label": "GRAND THREADS",
-     "status": "working",
+     "status": "idle",
      "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
      "statusLine": "built · chat threads tied to dots",
      "caption": "Each dot on my map is now a chat thread.",
