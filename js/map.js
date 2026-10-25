@@ -671,6 +671,7 @@ function buildGraph(full) {
             find: !!c.find,
             live: !!c.live,
             status: p.status === "dormant" || p.parked ? "dormant" : c.status,
+            activity: c.activity || null,
             x: 0,
             y: 0,
             vx: 0,
@@ -703,6 +704,7 @@ function buildGraph(full) {
             depth: depth,
             up: up,
             status: p.status,
+            activity: p.activity || null,
             folder: p.folder,
             done: p.stage === "done",
             stage: p.stage || null,
@@ -1606,7 +1608,17 @@ function draw() {
             if (n.type === "intent" && /^(done|dismissed|closed)$/.test(n.status || "")) return;
             window.drawOverlayNode(ctx, n, t, dim);
         } else if (n.type === "project" || n.owned) {
-            if (n.status === "working") {
+            if (n.status === "working" && n.activity === "research") {
+                ctx.save();
+                ctx.strokeStyle = "#000";
+                ctx.lineWidth = 1.4;
+                ctx.setLineDash([ 2, 3.5 ]);
+                ctx.lineDashOffset = -t * 12;
+                ctx.beginPath();
+                ctx.arc(n.x, n.y, n.r + 5, 0, 7);
+                ctx.stroke();
+                ctx.restore();
+            } else if (n.status === "working") {
                 const p = (Math.sin(t * 2.4 + n.x) + 1) / 2;
                 ctx.strokeStyle = `rgba(0,0,0,${.25 * (1 - p)})`;
                 ctx.lineWidth = 2;
