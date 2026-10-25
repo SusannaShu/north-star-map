@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T15:54:29.420Z",
+ "generatedAt": "2026-10-25T16:07:02.563Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -371,7 +371,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1270,7 +1270,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1345,7 +1345,7 @@
     {
      "id": "portfolio-milkyway",
      "label": "LANDING END: MILKY WAY",
-     "status": "idle",
+     "status": "working",
      "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
      "statusLine": "built · not shipped yet",
      "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3232,7 +3232,7 @@
   {
    "id": "gospel",
    "label": "GOSPEL",
-   "status": "working",
+   "status": "idle",
    "why": "A project that gathers and shares good news: progress in science, good deeds, repaired places, AI for good, and what the future looks like if things go right.",
    "statusLine": "idea · working name",
    "caption": "A project that gathers and shares good news:",
@@ -3296,7 +3296,7 @@
     {
      "id": "watch-content",
      "label": "WATCH CONTENT",
-     "status": "working",
+     "status": "idle",
      "why": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics. The videos are made every night and stay private until I choose to make a channel public.",
      "statusLine": "made nightly · not public yet",
      "caption": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics.",
