@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T11:56:12.539Z",
+ "generatedAt": "2026-10-25T12:10:41.176Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1193,7 +1193,7 @@
     {
      "id": "views-check",
      "label": "VIEWS CHECK",
-     "status": "idle",
+     "status": "working",
      "why": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
      "statusLine": "live · every 5 min",
      "caption": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
@@ -1223,7 +1223,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "working",
+   "status": "idle",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -1387,7 +1387,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1411,7 +1411,7 @@
     {
      "id": "action-tree",
      "label": "ACTION TREE",
-     "status": "idle",
+     "status": "working",
      "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
      "statusLine": "live · stale items repaired nightly",
      "caption": "The one source of truth for what is open:",
