@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T22:48:55.336Z",
+ "generatedAt": "2026-10-25T22:53:14.650Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3314,7 +3314,7 @@
   {
    "id": "ns-talk-live-stt",
    "label": "LIVE TRANSCRIPTION",
-   "status": "idle",
+   "status": "working",
    "why": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
    "statusLine": "plan · picking a service",
    "caption": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
