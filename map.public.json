@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T17:36:55.259Z",
+ "generatedAt": "2026-10-25T17:41:16.362Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2624,7 +2624,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
