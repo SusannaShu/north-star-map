@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T14:39:40.727Z",
+ "generatedAt": "2026-10-25T14:52:28.621Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1181,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1223,7 +1223,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "idle",
+   "status": "working",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -1240,7 +1240,7 @@
     {
      "id": "disk",
      "label": "DISK CLEANUP",
-     "status": "idle",
+     "status": "working",
      "why": "I wanted to know what takes up space on the agents' computer and get it back. The agents measure every folder, clear old models and caches, and ask me before removing anything big.",
      "statusLine": "cleared · more waits on my yes",
      "caption": "I wanted to know what takes up space on the agents' computer and get it back.",
