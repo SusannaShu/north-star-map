@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T12:10:41.176Z",
+ "generatedAt": "2026-10-25T12:20:14.359Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1181,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1193,7 +1193,7 @@
     {
      "id": "views-check",
      "label": "VIEWS CHECK",
-     "status": "working",
+     "status": "idle",
      "why": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
      "statusLine": "live · every 5 min",
      "caption": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
@@ -3408,7 +3408,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",

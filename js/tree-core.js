@@ -750,8 +750,34 @@
         };
         let seq = 0;
         const HID = new Set(Array.isArray(map.clerkHidden) ? map.clerkHidden : []);
+        const WCL = map.workClaims && typeof map.workClaims === "object" ? map.workClaims : {};
+        const needKey = t => "need:" + String(t || "").toLowerCase().replace(/<[^>]+>/g, " ").replace(/[^a-z0-9]+/g, " ").trim().slice(0, 48).trim();
+        const claimOf = item => {
+            for (const r of [ item.qid, item.laterId, item.askId, item.item, item.needKey ]) {
+                const c = r && WCL[String(r)];
+                if (!c) continue;
+                const t = (Array.isArray(map.tasks) ? map.tasks : []).find(x => x.id === c.task);
+                if (!t || t.status === "running" || t.status === "queued") return c;
+            }
+            return null;
+        };
         const add = (seg, groupId, item) => {
             if (HID.size && [ item.open, item.qid, item.askId, item.laterId, item.task, item.item ].some(r => r && HID.has(String(r)))) return;
+            if (seg === "needs") {
+                const c = claimOf(item);
+                if (c) {
+                    seg = "working";
+                    groupId = groupId === "minute" || groupId === "review" || groupId === "asked" ? item.open && X.e[item.open] ? X.groupOf(item.open) : "agents" : groupId;
+                    item = {
+                        ...item,
+                        line: clip(`${c.task} on it${item.line ? " · " + item.line : ""}`, 110),
+                        status: "working",
+                        taskId: c.task,
+                        claimed: true,
+                        urgent: false
+                    };
+                }
+            }
             const key = (item.name + "|" + item.line).toLowerCase();
             if (seen[seg].has(key)) return;
             seen[seg].add(key);
@@ -964,6 +990,7 @@
                 open: id,
                 ...also,
                 kind: "need",
+                needKey: needKey(t.text),
                 link: t.link || null,
                 src: t.pinned ? "pinned" : srcOfWhy(t.why),
                 since: t.since || null
