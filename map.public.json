@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T11:12:43.876Z",
+ "generatedAt": "2026-10-25T11:20:59.367Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -3109,7 +3109,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3173,7 +3173,7 @@
     {
      "id": "watchdog",
      "label": "WATCHDOG",
-     "status": "idle",
+     "status": "working",
      "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
      "statusLine": "live",
      "caption": "Nothing fails silently:",
@@ -3424,7 +3424,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
