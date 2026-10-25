@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T19:38:02.503Z",
+ "generatedAt": "2026-10-25T19:48:59.755Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -652,7 +652,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -677,7 +677,7 @@
     {
      "id": "mittens-chat-threads",
      "label": "CHAT THREADS",
-     "status": "working",
+     "status": "idle",
      "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
      "statusLine": "built · more events into threads",
      "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -1387,7 +1387,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1411,7 +1411,7 @@
     {
      "id": "action-tree",
      "label": "ACTION TREE",
-     "status": "idle",
+     "status": "working",
      "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
      "statusLine": "live · stale items repaired nightly",
      "caption": "The one source of truth for what is open:",
@@ -3408,7 +3408,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
