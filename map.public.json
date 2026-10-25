@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T18:44:56.939Z",
+ "generatedAt": "2026-10-25T19:38:02.503Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -484,7 +484,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "working",
+   "status": "idle",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -652,7 +652,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -677,7 +677,7 @@
     {
      "id": "mittens-chat-threads",
      "label": "CHAT THREADS",
-     "status": "idle",
+     "status": "working",
      "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
      "statusLine": "built · more events into threads",
      "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2304,7 +2304,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "idle",
+   "status": "working",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
@@ -3408,7 +3408,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
