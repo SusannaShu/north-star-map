@@ -544,8 +544,12 @@ function renderDocFab() {
 const CODE_HOME = "code-northstar", CODE_ALL = "code-architecture-tree";
 
 function codeDotOf(id) {
-    if (!id || id === FULL.hub || id === CODE_ALL || String(id).startsWith("code-")) return null;
-    return FULL.e["code-" + id] && FULL.e["code-" + id].up === id ? "code-" + id : null;
+    if (!id || id === FULL.hub) return FULL.e[CODE_HOME] ? CODE_HOME : null;
+    for (let x = id, n = 0; x && n < 12; x = (FULL.e[x] || {}).up, n++) {
+        if (x === FULL.hub || x === CODE_ALL || String(x).startsWith("code-")) return null;
+        if (FULL.e["code-" + x] && FULL.e["code-" + x].up === x) return "code-" + x;
+    }
+    return null;
 }
 
 const codeSrcOf = id => {
@@ -992,6 +996,7 @@ function tierOf(n, home) {
     if (n.type === "hub") return 0;
     if (n.type === "project" && n.status === "dormant" && (STILL || isMobile())) return 4;
     if (n.type === "project") return n.sub ? 2 : 1;
+    if (n.kind === "code" && n.depth === 1 && n.up && String(n.id) === "code-" + n.up) return 2;
     if (n.status === "needs-you" || n.status === "working" || n.pin || n.live) return 3;
     if (!home && !STILL && (agentsAt()[n.id] || []).length) return 3;
     return n.minor ? 5 : 4;
