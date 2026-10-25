@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T14:03:49.098Z",
+ "generatedAt": "2026-10-25T14:16:40.295Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1387,7 +1387,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1442,7 +1442,7 @@
     {
      "id": "grand-threads",
      "label": "GRAND THREADS",
-     "status": "idle",
+     "status": "working",
      "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
      "statusLine": "built · chat threads tied to dots",
      "caption": "Each dot on my map is now a chat thread.",
