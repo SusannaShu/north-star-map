@@ -1646,6 +1646,21 @@ function draw() {
                     ctx.fill();
                 }
             }
+            if (n.kind === "code") {
+                const u = n.r * .5;
+                ctx.strokeStyle = "#000";
+                ctx.lineWidth = 1.1;
+                ctx.beginPath();
+                ctx.moveTo(n.x - u, n.y);
+                ctx.lineTo(n.x - u * .1, n.y);
+                ctx.moveTo(n.x - u * .1, n.y - u * .8);
+                ctx.lineTo(n.x - u * .1, n.y + u * .8);
+                ctx.moveTo(n.x - u * .1, n.y - u * .8);
+                ctx.lineTo(n.x + u, n.y - u * .8);
+                ctx.moveTo(n.x - u * .1, n.y + u * .8);
+                ctx.lineTo(n.x + u, n.y + u * .8);
+                ctx.stroke();
+            }
             if (n.live && DATA.location && DATA.location.fresh) youAreHere(n, t);
             if (done && n.status !== "working") doneGlyph(n); else if (plan && ![ "working", "needs-you", "waiting" ].includes(n.status)) planGlyph(n); else if (n.status === "waiting" && !dormant) waitGlyph(n, a0); else if (n.status && !dormant) {
                 const dc = n.status === "working" ? "#000" : n.status === "needs-you" ? css("--red") || "#D32F2F" : n.status === "done" ? "#999" : "#CCC";

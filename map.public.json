@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T01:17:51.147Z",
+ "generatedAt": "2026-10-25T01:25:28.042Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -131,17 +131,6 @@
    "parked": false,
    "children": [
     {
-     "id": "sheyou",
-     "label": "SHEYOU",
-     "status": "idle",
-     "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
-     "statusLine": "live",
-     "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-     "embed": "pages/sheyou.html",
-     "visibility": "public",
-     "embedCaption": "case study"
-    },
-    {
      "id": "sheyou-recreations",
      "label": "CREDITED RECREATIONS",
      "status": "idle",
@@ -157,17 +146,6 @@
       "designers"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "susu-closet",
-     "label": "SUSU CLOSET",
-     "status": "idle",
-     "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
-     "statusLine": "live",
-     "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
-     "embed": "pages/susu-closet.html",
-     "visibility": "public",
-     "embedCaption": "case study"
     },
     {
      "id": "fit-data",
@@ -3041,6 +3019,34 @@
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "sheyou",
+   "label": "SHEYOU",
+   "status": "idle",
+   "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
+   "statusLine": "live",
+   "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "embed": "pages/sheyou.html",
+   "visibility": "public",
+   "parent": "fashion",
+   "parked": false,
+   "children": [],
+   "embedCaption": "case study"
+  },
+  {
+   "id": "susu-closet",
+   "label": "SUSU CLOSET",
+   "status": "idle",
+   "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+   "statusLine": "live",
+   "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+   "embed": "pages/susu-closet.html",
+   "visibility": "public",
+   "parent": "fashion",
+   "parked": false,
+   "children": [],
+   "embedCaption": "case study"
   },
   {
    "id": "private-work",
