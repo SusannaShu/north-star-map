@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T10:37:19.109Z",
+ "generatedAt": "2026-10-25T10:47:42.216Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1488,7 +1488,7 @@
     {
      "id": "code-architecture-tree",
      "label": "CODE ARCHITECTURE TREE",
-     "status": "idle",
+     "status": "working",
      "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
      "statusLine": "built · rescans the code",
      "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -2138,7 +2138,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2187,7 +2187,7 @@
     {
      "id": "wake-report",
      "label": "WAKE REPORT",
-     "status": "idle",
+     "status": "working",
      "why": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
      "statusLine": "built · new work reported first",
      "caption": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
@@ -3124,7 +3124,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3188,7 +3188,7 @@
     {
      "id": "watchdog",
      "label": "WATCHDOG",
-     "status": "working",
+     "status": "idle",
      "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
      "statusLine": "live",
      "caption": "Nothing fails silently:",
