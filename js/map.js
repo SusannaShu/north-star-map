@@ -2384,7 +2384,7 @@ function openPanel(n, tab) {
     const d = DETAILS[target.id];
     if (!d) return;
     pTitle.textContent = target.label;
-    pStatus.innerHTML = `<span class="dot ${target.status || ""}"></span><span>${d.statusLine || "—"}</span>`;
+    pStatus.innerHTML = `<span class="dot ${target.status || ""}"></span><span>${target.status === "queued" && d.queuedLine ? esc(d.queuedLine) + (d.statusLine ? " · " + d.statusLine : "") : d.statusLine || "—"}</span>`;
     document.querySelectorAll("#pTabs .tab").forEach(b => {
         b.classList.toggle("on", b.dataset.tab === panelTab);
         b.disabled = b.dataset.tab === "flow" && !hasFlow(target) || b.dataset.tab === "skill" && !target.id.startsWith("r:");
