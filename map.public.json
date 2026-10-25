@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T19:48:59.755Z",
+ "generatedAt": "2026-10-25T19:55:15.626Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1411,7 +1411,7 @@
     {
      "id": "action-tree",
      "label": "ACTION TREE",
-     "status": "working",
+     "status": "idle",
      "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
      "statusLine": "live · stale items repaired nightly",
      "caption": "The one source of truth for what is open:",
@@ -1457,7 +1457,7 @@
     {
      "id": "code-architecture-tree",
      "label": "CODE ARCHITECTURE TREE",
-     "status": "idle",
+     "status": "working",
      "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
      "statusLine": "built · rescans the code",
      "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2304,7 +2304,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "working",
+   "status": "idle",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
