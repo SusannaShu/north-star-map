@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T17:41:16.362Z",
+ "generatedAt": "2026-10-25T17:49:32.672Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -652,7 +652,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -665,7 +665,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "idle",
+     "status": "working",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · smarter reminders next",
      "caption": "The assistant on the phone:",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2304,7 +2304,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "idle",
+   "status": "working",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
@@ -2349,7 +2349,7 @@
     {
      "id": "small-models",
      "label": "SMALL LOCAL MODELS",
-     "status": "done",
+     "status": "working",
      "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
      "statusLine": "benchmarked · done",
      "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
@@ -2624,7 +2624,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
