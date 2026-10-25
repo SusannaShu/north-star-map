@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T04:06:59.922Z",
+ "generatedAt": "2026-10-25T04:15:14.579Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -281,7 +281,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1036,7 +1036,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1063,7 +1063,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "idle",
+   "status": "working",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -1222,30 +1222,6 @@
    "parked": false,
    "children": [
     {
-     "id": "ns-public",
-     "label": "NORTH STAR PUBLIC",
-     "status": "idle",
-     "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
-     "statusLine": "live · launch plan in progress",
-     "caption": "Releasing North Star itself:",
-     "stage": "active",
-     "embed": "pages/ns-public.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "public-intro",
-     "label": "PUBLIC INTRO",
-     "status": "idle",
-     "why": "The landing story: grass, sky, the sun, back through a window to the desk, and down into the screen where the light becomes the North Star.",
-     "statusLine": "built",
-     "caption": "The landing story:",
-     "stage": "active",
-     "embed": "intro.html",
-     "visibility": "public",
-     "embedCaption": "the landing story"
-    },
-    {
      "id": "ui-style",
      "label": "UI STYLE",
      "status": "idle",
@@ -1286,18 +1262,6 @@
      "links": [
       "action-tree"
      ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "work-in-threads",
-     "label": "WORK IN THREADS",
-     "status": "idle",
-     "why": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
-     "statusLine": "case study",
-     "caption": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
-     "stage": "active",
-     "embed": "pages/work-in-threads.html",
-     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -2909,7 +2873,7 @@
   {
    "id": "gospel",
    "label": "GOSPEL",
-   "status": "working",
+   "status": "idle",
    "why": "A project that gathers and shares good news: progress in science, good deeds, repaired places, AI for good, and what the future looks like if things go right.",
    "statusLine": "idea · working name",
    "caption": "A project that gathers and shares good news:",
@@ -2941,7 +2905,7 @@
     {
      "id": "gospel-series",
      "label": "THE SERIES",
-     "status": "working",
+     "status": "idle",
      "why": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant. Each good news item can become a story beat: the real news, then the world where it went right.",
      "statusLine": "pilot waiting on my yes",
      "caption": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant.",
@@ -3020,6 +2984,46 @@
    "parent": "mittens-daily",
    "parked": false,
    "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "ns-public",
+   "label": "NORTH STAR PUBLIC",
+   "status": "idle",
+   "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
+   "statusLine": "live · launch plan in progress",
+   "caption": "Releasing North Star itself:",
+   "stage": "active",
+   "embed": "pages/ns-public.html",
+   "visibility": "public",
+   "parent": "northstar",
+   "parked": false,
+   "children": [
+    {
+     "id": "public-intro",
+     "label": "PUBLIC INTRO",
+     "status": "idle",
+     "why": "The landing story: grass, sky, the sun, back through a window to the desk, and down into the screen where the light becomes the North Star.",
+     "statusLine": "built",
+     "caption": "The landing story:",
+     "stage": "active",
+     "embed": "intro.html",
+     "visibility": "public",
+     "embedCaption": "the landing story"
+    },
+    {
+     "id": "work-in-threads",
+     "label": "WORK IN THREADS",
+     "status": "idle",
+     "why": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
+     "statusLine": "case study",
+     "caption": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
+     "stage": "active",
+     "embed": "pages/work-in-threads.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {

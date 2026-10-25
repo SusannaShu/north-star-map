@@ -148,6 +148,8 @@ html.public .nsmenu .msep, html.public .morebadge { display:none !important; }
 .dot.done { background:var(--text-muted); }
 /* Waiting on them (2026-10-13): the map's amber hourglass (map.js waitGlyph). */
 .dot.finished { width:8px; height:4.5px; border-radius:0; background:none; border-left:1.6px solid #8C8C8C; border-bottom:1.6px solid #8C8C8C; transform:rotate(-45deg); margin:0 1px 3px; }   /* done (context graph 2026-10-13) */
+/* Queued (T2320): an agent job in line for a slot -- our next move, not theirs; three black dots in a row (map.js queueGlyph). */
+.dot.queued { width:11px; height:3px; border-radius:0; background:radial-gradient(circle, #000 1.1px, transparent 1.4px) 0 0/3.7px 3px repeat-x; }
 .dot.waiting { width:7px; height:9px; border-radius:0; background:#B7791F; clip-path:polygon(0 0, 100% 0, 58% 50%, 100% 100%, 0 100%, 42% 50%); }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.25} }
 .panel-close {
@@ -774,6 +776,7 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
   <div><span class="dot done"></span> shipped / idle</div>
   <div><span class="dot planned"></span> planned (where it is going)</div>
   <div><span class="dot plan"></span> plan made · not acted on</div>
+  <div id="legendQueued"><span class="dot queued"></span> agent queued · next up</div>
   <div id="legendWaiting"><span class="dot waiting"></span> waiting on them</div>
   <div><span class="dot finished"></span> done (folds after a week)</div>
 </div>

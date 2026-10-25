@@ -7,7 +7,7 @@
     const strip = x => String(x == null ? "" : x).replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
     const isPub = n => !!n && n.visibility === "public";
     const clone = x => x == null ? x : JSON.parse(JSON.stringify(x));
-    const pubStatus = s => s === "working" ? "working" : s === "waiting" ? "waiting" : s === "dormant" ? "dormant" : s === "planned" ? "planned" : s === "done" ? "done" : "idle";
+    const pubStatus = s => s === "working" ? "working" : s === "waiting" ? "waiting" : s === "queued" ? "queued" : s === "dormant" ? "dormant" : s === "planned" ? "planned" : s === "done" ? "done" : "idle";
     function sanitize(o) {
         if (o.why != null) o.why = strip(o.why);
         if (o.caption != null) o.caption = strip(o.caption);
@@ -162,11 +162,11 @@
             const id = where ? pubOf(where) : hubId;
             at[id] = (at[id] || 0) + 1;
         }
-        const rank = s => s === "working" ? 2 : s === "waiting" ? 1 : 0;
+        const rank = s => s === "working" ? 3 : s === "waiting" ? 2 : s === "queued" ? 1 : 0;
         const lift = {};
         for (const p of P) for (const n of [ p, ...p.children || [] ]) {
             if (ids.has(n.id) || !n.liveWork) continue;
-            const s = n.liveWork.working ? "working" : "waiting", to = pubOf(n.id);
+            const s = n.liveWork.working ? "working" : n.status === "queued" ? "queued" : "waiting", to = pubOf(n.id);
             if (to !== hubId && rank(s) > rank(lift[to])) lift[to] = s;
         }
         projects.forEach(p => [ p, ...p.children ].forEach(o => {

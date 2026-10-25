@@ -488,7 +488,7 @@ function renderLeafCap() {
     const d = DETAILS[LEAF] || e.det || {}, txt = s => String(s || "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
     const cut = (s, k) => s.length > k ? s.slice(0, k - 1).replace(/\s+\S*$/, "") + "…" : s;
     const why = txt(d.why || d.caption), sl = txt(d.statusLine);
-    const st = e.status === "needs-you" ? "needs-you" : e.status === "working" ? "working" : e.status === "waiting" ? "waiting" : "done";
+    const st = e.status === "needs-you" ? "needs-you" : e.status === "working" ? "working" : e.status === "waiting" ? "waiting" : e.status === "queued" ? "queued" : "done";
     el.innerHTML = `<div class="lc-title"><span class="dot ${st}"></span>${esc(e.label)}</div>${why ? `<p>${esc(cut(why, 220))}</p>` : ""}${sl && sl !== why ? `<div class="lc-meta">${esc(cut(sl, 120))}</div>` : ""}`;
     el.hidden = false;
 }
@@ -1403,6 +1403,28 @@ function blueprint(n, t, a) {
 
 const WAIT_C = "#B7791F";
 
+function queueGlyph(n, a) {
+    ctx.save();
+    ctx.globalAlpha = a;
+    ctx.strokeStyle = "rgba(0,0,0,.28)";
+    ctx.lineWidth = 1.2;
+    ctx.beginPath();
+    ctx.arc(n.x, n.y, n.r + 4, 0, 7);
+    ctx.stroke();
+    const s = n.type === "project" ? 1.2 : n.minor ? .75 : 1, cx = n.x + n.r * .72, cy = n.y - n.r * .72, g = 3.4 * s;
+    ctx.fillStyle = "#FFF";
+    ctx.beginPath();
+    ctx.arc(cx, cy, 6.2 * s, 0, 7);
+    ctx.fill();
+    ctx.fillStyle = "#000";
+    for (const k of [ -1, 0, 1 ]) {
+        ctx.beginPath();
+        ctx.arc(cx + k * g, cy, 1.25 * s, 0, 7);
+        ctx.fill();
+    }
+    ctx.restore();
+}
+
 function waitGlyph(n, a) {
     ctx.save();
     ctx.globalAlpha = a;
@@ -1674,7 +1696,7 @@ function draw() {
                 ctx.stroke();
             }
             if (n.live && DATA.location && DATA.location.fresh) youAreHere(n, t);
-            if (done && n.status !== "working") doneGlyph(n); else if (plan && ![ "working", "needs-you", "waiting" ].includes(n.status)) planGlyph(n); else if (n.status === "waiting" && !dormant) waitGlyph(n, a0); else if (n.status && !dormant) {
+            if (done && n.status !== "working") doneGlyph(n); else if (plan && ![ "working", "needs-you", "waiting" ].includes(n.status)) planGlyph(n); else if (n.status === "waiting" && !dormant) waitGlyph(n, a0); else if (n.status === "queued" && !dormant) queueGlyph(n, a0); else if (n.status && !dormant) {
                 const dc = n.status === "working" ? "#000" : n.status === "needs-you" ? css("--red") || "#D32F2F" : n.status === "done" ? "#999" : "#CCC";
                 const dr = n.type === "project" ? 5.2 : n.minor ? 3.2 : 4;
                 ctx.fillStyle = dc;
@@ -2214,7 +2236,7 @@ function renderHits() {
     const toks = plainLow(SEARCH.q).trim().split(/\s+/).filter(Boolean);
     hitsEl.innerHTML = H.length ? H.slice(0, 12).map((n, i) => {
         const path = pathOf(n), last = path.pop();
-        const st = n.status === "needs-you" && !PUBLIC ? 'fill="var(--red)"' : n.status === "working" ? 'fill="currentColor"' : n.status === "waiting" ? 'fill="#B7791F"' : n.stage === "plan" ? null : n.planned || n.status === "planned" ? 'fill="none" stroke="#9A9A9A"' : 'fill="none" stroke="currentColor"';
+        const st = n.status === "needs-you" && !PUBLIC ? 'fill="var(--red)"' : n.status === "working" ? 'fill="currentColor"' : n.status === "waiting" ? 'fill="#B7791F"' : n.status === "queued" ? 'fill="none" stroke="currentColor" stroke-dasharray="1.5 2"' : n.stage === "plan" ? null : n.planned || n.status === "planned" ? 'fill="none" stroke="#9A9A9A"' : 'fill="none" stroke="currentColor"';
         let why = "";
         if (!toks.every(t => plainLow(n.label).includes(t) || String(n.id).toLowerCase().includes(t))) {
             const T = textOf(n), at = T.indexOf(toks.find(t => T.includes(t)) || "");
