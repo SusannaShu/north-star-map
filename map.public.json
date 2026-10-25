@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T15:37:13.098Z",
+ "generatedAt": "2026-10-25T15:45:55.189Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -371,7 +371,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1076,7 +1076,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
