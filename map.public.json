@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T18:09:39.841Z",
+ "generatedAt": "2026-10-25T18:17:36.818Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -484,7 +484,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -1181,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1255,7 +1255,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1622,7 +1622,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1726,7 +1726,7 @@
     {
      "id": "triage",
      "label": "TRIAGE",
-     "status": "working",
+     "status": "idle",
      "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
      "statusLine": "built · catching far more",
      "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
@@ -2034,7 +2034,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2304,7 +2304,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "working",
+   "status": "idle",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
