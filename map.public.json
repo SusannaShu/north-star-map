@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T15:45:55.189Z",
+ "generatedAt": "2026-10-25T15:54:29.420Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1076,7 +1076,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1181,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1255,7 +1255,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1270,7 +1270,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1319,7 +1319,7 @@
     {
      "id": "portfolio-mittens-scenes",
      "label": "MITTENS SCENES",
-     "status": "working",
+     "status": "idle",
      "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
      "statusLine": "ideas · transitions made, not on site",
      "caption": "I want more varied views in the Mittens chapter of my portfolio:",
@@ -1622,7 +1622,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1726,7 +1726,7 @@
     {
      "id": "triage",
      "label": "TRIAGE",
-     "status": "working",
+     "status": "idle",
      "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
      "statusLine": "built · catching far more",
      "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
@@ -2034,7 +2034,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -3232,7 +3232,7 @@
   {
    "id": "gospel",
    "label": "GOSPEL",
-   "status": "idle",
+   "status": "working",
    "why": "A project that gathers and shares good news: progress in science, good deeds, repaired places, AI for good, and what the future looks like if things go right.",
    "statusLine": "idea · working name",
    "caption": "A project that gathers and shares good news:",
@@ -3296,7 +3296,7 @@
     {
      "id": "watch-content",
      "label": "WATCH CONTENT",
-     "status": "idle",
+     "status": "working",
      "why": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics. The videos are made every night and stay private until I choose to make a channel public.",
      "statusLine": "made nightly · not public yet",
      "caption": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics.",
