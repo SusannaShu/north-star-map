@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T22:53:14.650Z",
+ "generatedAt": "2026-10-25T23:02:07.655Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -484,7 +484,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -798,12 +798,10 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
-   "stage": "plan",
-   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -2400,7 +2398,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -2425,7 +2423,7 @@
     {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
      "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
