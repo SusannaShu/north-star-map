@@ -544,14 +544,8 @@ function renderDocFab() {
 const CODE_HOME = "code-northstar", CODE_ALL = "code-architecture-tree";
 
 function codeDotOf(id) {
-    if (!id || id === FULL.hub || id === "mittens" || id === "northstar") return FULL.e[CODE_HOME] ? CODE_HOME : null;
-    for (let x = id, n = 0; x && x !== FULL.hub && x !== "mittens" && n < 12; x = FULL.e[x] && FULL.e[x].up, 
-    n++) {
-        if (FULL.e["code-" + x]) return "code-" + x;
-        const k = Object.values(FULL.e).find(c => c.up === x && c.kind === "code" && c.id !== CODE_ALL && c.id.startsWith("code-"));
-        if (k) return k.id;
-    }
-    return null;
+    if (!id || id === FULL.hub || id === CODE_ALL || String(id).startsWith("code-")) return null;
+    return FULL.e["code-" + id] && FULL.e["code-" + id].up === id ? "code-" + id : null;
 }
 
 const codeSrcOf = id => {
@@ -620,7 +614,7 @@ function renderCodeFab() {
     }
 }
 
-window.nsOpenCode = id => codePane(id || codeDotOf(ROOT));
+window.nsOpenCode = id => codePane(id || codeDotOf(ROOT) || CODE_HOME);
 
 window.nsOpenVisual = () => {
     const d = ROOT && FULL.e[ROOT] && FULL.e[ROOT].det;
