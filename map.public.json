@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-25T12:20:14.359Z",
+ "generatedAt": "2026-10-25T12:29:44.970Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -798,12 +798,10 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
-   "stage": "plan",
-   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -1387,7 +1385,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1411,7 +1409,7 @@
     {
      "id": "action-tree",
      "label": "ACTION TREE",
-     "status": "working",
+     "status": "idle",
      "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
      "statusLine": "live · stale items repaired nightly",
      "caption": "The one source of truth for what is open:",
@@ -2400,7 +2398,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -2425,7 +2423,7 @@
     {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
      "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
@@ -3408,7 +3406,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",

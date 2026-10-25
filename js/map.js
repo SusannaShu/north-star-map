@@ -541,6 +541,87 @@ function renderDocFab() {
     if (src) fab.title = d.embedCaption ? "the plan: " + d.embedCaption : "open the plan";
 }
 
+const CODE_HOME = "code-northstar", CODE_ALL = "code-architecture-tree";
+
+function codeDotOf(id) {
+    if (!id || id === FULL.hub || id === "mittens" || id === "northstar") return FULL.e[CODE_HOME] ? CODE_HOME : null;
+    for (let x = id, n = 0; x && x !== FULL.hub && x !== "mittens" && n < 12; x = FULL.e[x] && FULL.e[x].up, 
+    n++) {
+        if (FULL.e["code-" + x]) return "code-" + x;
+        const k = Object.values(FULL.e).find(c => c.up === x && c.kind === "code" && c.id !== CODE_ALL && c.id.startsWith("code-"));
+        if (k) return k.id;
+    }
+    return null;
+}
+
+const codeSrcOf = id => {
+    const e = FULL.e[id];
+    return e && e.det && e.det.embed || (id ? `/private/${id}.html` : null);
+};
+
+let CODE = null;
+
+function codePane(id, src) {
+    const el = document.getElementById("codePane");
+    if (!el) return;
+    CODE = id || null;
+    if (CODE) {
+        src = src || codeSrcOf(CODE);
+        const fr = el.querySelector("iframe"), host = FULL.e[(FULL.e[CODE] || {}).up];
+        const cap = el.querySelector(".doc-cap");
+        if (el.dataset.src !== src) {
+            el.dataset.src = src;
+            cap.dataset.lead = "";
+            fr.src = window.nsEmbedSrc ? window.nsEmbedSrc(src) : macUrl(src);
+            if (window.nsWatchEmbed) window.nsWatchEmbed(fr, lead => {
+                if (lead) {
+                    cap.dataset.lead = lead;
+                    cap.textContent = lead;
+                }
+            });
+        }
+        el.querySelector(".doc-title").textContent = CODE === CODE_ALL ? "CODE ARCHITECTURE TREE" : "CODE ARCHITECTURE" + (host ? " · " + host.label : "");
+        cap.textContent = cap.dataset.lead || (CODE === CODE_ALL ? "every tree, how they are built from the code, your checklist" : "tap a branch to unfold it: every if / else, loop, gate, prompt and file line, read from the real code");
+        el.querySelector(".doc-full").href = macUrl(src);
+        const all = el.querySelector(".code-all");
+        all.setAttribute("aria-pressed", CODE === CODE_ALL ? "true" : "false");
+        all.textContent = CODE === CODE_ALL ? "this view’s tree" : "all code trees";
+        if (panel.classList.contains("open")) setDrawer(false);
+    }
+    el.classList.toggle("open", !!CODE);
+    document.body.classList.toggle("code-open", !!CODE);
+    const fab = document.getElementById("codeFab");
+    if (fab) fab.setAttribute("aria-pressed", CODE ? "true" : "false");
+}
+
+function renderCodeFab() {
+    const fab = document.getElementById("codeFab");
+    if (!fab) return;
+    const id = !STILL && !PUBLIC && (!LEAF || LEAFMAP) ? codeDotOf(ROOT) : null;
+    fab.hidden = !id;
+    fab.dataset.dot = id || "";
+    if (id) {
+        const host = FULL.e[(FULL.e[id] || {}).up];
+        fab.title = "the code tree" + (host ? ": " + host.label : "") + " -- every if / else, loop, gate and prompt";
+    }
+}
+
+{
+    const f = document.getElementById("codeFab"), p = document.getElementById("codePane");
+    if (f) f.onclick = () => CODE ? codePane(null) : codePane(f.dataset.dot);
+    if (p) {
+        p.querySelector("#codeClose").onclick = () => codePane(null);
+        p.querySelector(".code-all").onclick = () => codePane(CODE === CODE_ALL ? f && f.dataset.dot || CODE_HOME : CODE_ALL);
+        p.querySelector(".code-dot").onclick = ev => {
+            ev.preventDefault();
+            codePane(null);
+            openDot(CODE_ALL);
+        };
+    }
+}
+
+window.nsOpenCode = id => codePane(id || codeDotOf(ROOT));
+
 window.nsOpenVisual = () => {
     const d = ROOT && FULL.e[ROOT] && FULL.e[ROOT].det;
     if (docSrcOf(d)) return docPane(!DOC);
@@ -561,6 +642,7 @@ function syncURL() {
 
 function renderCrumbs() {
     renderDocFab();
+    renderCodeFab();
     const el = document.getElementById("nsCrumbs");
     if (!el) return;
     const cur = LEAF || ROOT;
@@ -2455,6 +2537,7 @@ function toggleDrawer(n) {
 }
 
 window.nsEscape = () => {
+    if (CODE) return codePane(null);
     if (DOC) return docPane(false);
     if (panel.classList.contains("open")) return setDrawer(false);
     if (LEAF) return closeLeaf();
@@ -2989,7 +3072,7 @@ const poke = () => {
     passive: true
 }));
 
-const reading = () => !!(ROOT || LEAF || DOC || [ "panel", "overlay", "focus", "docPane", "inboxOverlay", "voiceOv" ].some(id => {
+const reading = () => !!(ROOT || LEAF || DOC || CODE || [ "panel", "overlay", "focus", "docPane", "inboxOverlay", "voiceOv" ].some(id => {
     const el = document.getElementById(id);
     return el && el.classList.contains("open");
 }));
