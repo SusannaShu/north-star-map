@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T02:03:31.867Z",
+ "generatedAt": "2026-10-26T02:10:01.526Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -798,10 +798,12 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
+   "stage": "plan",
+   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -3469,7 +3471,7 @@
   {
    "id": "omi",
    "label": "OMI",
-   "status": "working",
+   "status": "done",
    "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
    "statusLine": "old branch shelved",
    "caption": "Omi is the open-source AI wearable.",
