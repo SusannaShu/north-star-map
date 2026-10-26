@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T17:12:26.520Z",
+ "generatedAt": "2026-10-26T17:18:52.453Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -260,7 +260,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -360,7 +360,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -405,7 +405,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -486,7 +486,7 @@
     {
      "id": "how-about-the-question-threads",
      "label": "TEST THREAD",
-     "status": "working",
+     "status": "done",
      "why": "A test run briefly made this thread dot. It was merged back into its parent.",
      "statusLine": "merged · test leftover",
      "caption": "A test run briefly made this thread dot.",
