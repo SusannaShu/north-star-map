@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T05:17:19.386Z",
+ "generatedAt": "2026-10-26T06:46:01.570Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -147,11 +147,27 @@
    "parked": false,
    "children": [
     {
+     "id": "code-fashion",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "I show the code behind my fashion projects as one tree, so anyone can see how the parts fit together.",
+     "statusLine": "mapped from the code",
+     "caption": "I show the code behind my fashion projects as one tree, so anyone can see how the parts fit together.",
+     "stage": "active",
+     "embed": "pages/code-fashion.html",
+     "visibility": "public",
+     "links": [
+      "sheyou",
+      "susu-closet"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "sheyou-business-logic",
      "label": "TRY-ON BUSINESS LOGIC",
      "status": "idle",
      "why": "I tested whether designer-priced virtual try-on is a real business. The answer is yes: a free try-on works as the advert, people pay to keep what they love, and the designer sets the price and keeps most of it.",
-     "statusLine": "plan · decisions pending",
+     "statusLine": "plan · verdict in, decisions pending",
      "caption": "I tested whether designer-priced virtual try-on is a real business.",
      "stage": "plan",
      "planned": true,
@@ -185,7 +201,7 @@
      "label": "FIT DATA FROM BRANDS",
      "status": "idle",
      "why": "The fit bottleneck is unknown fabric behaviour. Measure one garment, build the fit demo end to end, then ask direct-to-consumer brands in fitted categories (denim, tailoring, swimwear) for one style's fabric data. The pitch: fewer returns.",
-     "statusLine": "plan · step 1: one measured garment",
+     "statusLine": "plan · cloth engine picked",
      "caption": "The fit bottleneck is unknown fabric behaviour.",
      "stage": "plan",
      "planned": true,
@@ -353,6 +369,24 @@
    "visibility": "public",
    "parked": false,
    "children": [
+    {
+     "id": "code-mittens",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
+     "statusLine": "mapped from the code",
+     "caption": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
+     "stage": "active",
+     "embed": "pages/code-mittens.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital",
+      "soft-robot",
+      "omi",
+      "pendant"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "mittens-vision",
      "label": "THE NEW OPENCLAW",
@@ -531,7 +565,7 @@
      "label": "MITTENS ICON",
      "status": "idle",
      "why": "I am redrawing the Mittens icon to make it better. Three redraws are ready for me to pick from.",
-     "statusLine": "plan ready · waiting on my pick",
+     "statusLine": "three redraws ready · waiting on my pick",
      "caption": "I am redrawing the Mittens icon to make it better.",
      "stage": "plan",
      "planned": true,
@@ -778,6 +812,36 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "music",
+     "label": "MUSIC",
+     "status": "done",
+     "why": "I can ask Mittens to play music, and it plays through the app and glasses.",
+     "statusLine": "built · done",
+     "caption": "I can ask Mittens to play music, and it plays through the app and glasses.",
+     "stage": "done",
+     "embed": "pages/music.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "devices",
+     "label": "DEVICES",
+     "status": "idle",
+     "why": "A duplicate devices dot that got folded back into the main one.",
+     "statusLine": "merged · duplicate",
+     "caption": "A duplicate devices dot that got folded back into the main one.",
+     "stage": "done",
+     "embed": "pages/devices.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-mittens-digital",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -800,7 +864,7 @@
    "label": "WEARABLES",
    "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
-   "statusLine": "active",
+   "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
    "stage": "plan",
    "planned": true,
@@ -1347,7 +1411,7 @@
      "label": "LANDING END: MILKY WAY",
      "status": "idle",
      "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
-     "statusLine": "built · not shipped yet",
+     "statusLine": "options ready · waiting on my pick",
      "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
      "stage": "active",
      "embed": "pages/portfolio-milkyway.html",
@@ -1364,6 +1428,21 @@
      "stage": "active",
      "embed": "pages/portfolio-landing-talk.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-2",
+     "label": "PORTFOLIO",
+     "status": "done",
+     "why": "A duplicate portfolio dot that the map's tidy pass merged back into the main one.",
+     "statusLine": "merged · duplicate",
+     "caption": "A duplicate portfolio dot that the map's tidy pass merged back into the main one.",
+     "stage": "done",
+     "embed": "pages/portfolio-2.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1459,7 +1538,7 @@
      "label": "CODE ARCHITECTURE TREE",
      "status": "idle",
      "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
-     "statusLine": "built · rescans the code",
+     "statusLine": "built · code tree on every coded dot",
      "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
      "stage": "active",
      "embed": "pages/code-architecture-tree.html",
@@ -1562,7 +1641,7 @@
      "label": "MAP UPKEEP",
      "status": "idle",
      "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-     "statusLine": "hourly tidy checks · placement audit run",
+     "statusLine": "hourly tidy · placement audit run",
      "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
      "stage": "active",
      "embed": "pages/map-upkeep.html",
@@ -1728,7 +1807,7 @@
      "label": "TRIAGE",
      "status": "idle",
      "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
-     "statusLine": "built · catching far more",
+     "statusLine": "built · watcher proposes, Mittens decides",
      "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
      "stage": "active",
      "embed": "pages/triage.html",
@@ -2074,7 +2153,7 @@
    "label": "ONE MITTENS BRAIN",
    "status": "idle",
    "why": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
-   "statusLine": "built",
+   "statusLine": "built · one shared brain",
    "caption": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
    "stage": "active",
    "embed": "pages/one-mittens-brain.html",
@@ -3402,7 +3481,24 @@
    ],
    "parent": "mittens",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "msl-routing",
+     "label": "ROUTING TREE",
+     "status": "idle",
+     "why": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
+     "statusLine": "read from the code · no gaps",
+     "caption": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
+     "stage": "active",
+     "embed": "pages/msl-routing.html",
+     "visibility": "public",
+     "links": [
+      "triage",
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3502,7 +3598,23 @@
    "visibility": "public",
    "parent": "wearables",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "code-pendant",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "The pendant's firmware mapped from the code: camera capture and wireless transfer to the phone. An old copy still needs clearing out.",
+     "statusLine": "mapped · duplicate to clear",
+     "caption": "The pendant's firmware mapped from the code:",
+     "stage": "active",
+     "embed": "pages/code-pendant.html",
+     "visibility": "public",
+     "links": [
+      "pendant"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
