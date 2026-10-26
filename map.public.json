@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T23:28:03.067Z",
+ "generatedAt": "2026-10-26T23:32:53.487Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1913,7 +1913,7 @@
   {
    "id": "man-browsers",
    "label": "BROWSERS + MCP",
-   "status": "idle",
+   "status": "working",
    "why": "Which browser lane for which task, and the tool servers agents use.",
    "statusLine": "manual written",
    "caption": "Which browser lane for which task, and the tool servers agents use.",
@@ -1926,7 +1926,7 @@
     {
      "id": "howto-browsers",
      "label": "BROWSER LANES",
-     "status": "idle",
+     "status": "working",
      "why": "One browser profile per task, one at a time, closed after use.",
      "caption": "One browser profile per task, one at a time, closed after use.",
      "stage": "active",
