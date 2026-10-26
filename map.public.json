@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T11:40:43.966Z",
+ "generatedAt": "2026-10-26T11:46:43.563Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -686,7 +686,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -699,7 +699,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "idle",
+     "status": "working",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · smarter reminders next",
      "caption": "The assistant on the phone:",
