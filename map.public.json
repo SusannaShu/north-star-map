@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T12:04:15.272Z",
+ "generatedAt": "2026-10-26T12:19:55.695Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -405,7 +405,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -862,7 +862,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -906,7 +906,7 @@
     {
      "id": "pendant-pre-sale",
      "label": "PENDANT PRE-SALE",
-     "status": "idle",
+     "status": "working",
      "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
      "statusLine": "thinking it through",
      "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
@@ -1466,7 +1466,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2186,7 +2186,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3172,7 +3172,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3236,7 +3236,7 @@
     {
      "id": "watchdog",
      "label": "WATCHDOG",
-     "status": "working",
+     "status": "idle",
      "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
      "statusLine": "live",
      "caption": "Nothing fails silently:",
@@ -3409,7 +3409,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "idle",
+   "status": "working",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -3585,7 +3585,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
