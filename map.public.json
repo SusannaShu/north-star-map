@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T01:30:02.192Z",
+ "generatedAt": "2026-10-26T01:42:18.228Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -2107,7 +2107,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2304,7 +2304,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "working",
+   "status": "idle",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
