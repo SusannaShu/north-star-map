@@ -2769,6 +2769,7 @@ const UD_ICO = '<svg class="ico" viewBox="0 0 16 16" aria-hidden="true" fill="no
 
 function udLine(u) {
     if (!u) return "";
+    if (u.line) return u.line;
     const state = !u.up ? "not reachable" : !u.loggedIn ? "Claude signed out" : `${u.used}/${u.cap} running`;
     return [ state, u.queued ? `${u.queued} queued` : "", u.memFreePct != null && u.up ? `${u.memFreePct}% memory free` : "" ].filter(Boolean).join(" · ");
 }
@@ -2776,7 +2777,7 @@ function udLine(u) {
 function setUdInd(u) {
     const box = document.getElementById("healthChips");
     if (!box || PUBLIC) return;
-    const sig = u ? JSON.stringify([ u.up, u.loggedIn, u.used, u.cap, u.queued, u.memFreePct, (u.jobs || []).map(j => j.title).join("|") ]) : "";
+    const sig = u ? JSON.stringify([ u.up, u.loggedIn, u.state, u.used, u.cap, u.queued, u.stalled, u.memFreePct, (u.jobs || []).map(j => j.title + j.status).join("|") ]) : "";
     let el = box.querySelector(".ud-ind");
     if (!u) {
         if (el) el.remove();
@@ -2793,9 +2794,11 @@ function setUdInd(u) {
     el.dataset.sig = sig;
     const line = udLine(u), names = (u.jobs || []).filter(j => j.status === "running").map(j => j.title).join(" · ");
     el.classList.toggle("down", !u.up || !u.loggedIn);
+    el.classList.toggle("stalled", u.state === "stalled");
+    const word = u.state === "stalled" ? `${u.stalled} stalled` : u.state === "idle" ? "idle" : u.queued ? `${u.queued} queued` : "";
     el.title = `UD mini (company Mac mini, company Claude): ${line}${names ? " -- " + names : ""}. Separate from your agents.`;
     el.setAttribute("aria-label", `UD mini, ${line}, show`);
-    el.innerHTML = `${UD_ICO}<span class="lbl">UD mini</span><b>${u.up && u.loggedIn ? `${u.used}/${u.cap}` : "off"}</b>${names ? `<span class="who">${esc(names)}</span>` : ""}`;
+    el.innerHTML = `${UD_ICO}<span class="lbl">UD mini</span><b>${u.up && u.loggedIn ? `${u.used}/${u.cap}` : "off"}</b>${word ? `<span class="st${u.state === "stalled" ? " st-stalled" : ""}">${esc(word)}</span>` : ""}${names ? `<span class="who">${esc(names)}</span>` : ""}`;
 }
 
 function renderPublicChrome() {
@@ -2843,7 +2846,7 @@ function openAgentsPanel() {
     }[k] || k || "agent");
     const mins = s => s == null ? "" : s < 90 ? `${Math.round(s)}s` : s < 5400 ? `${Math.round(s / 60)} min` : `${(s / 3600).toFixed(1)} h`;
     document.getElementById("pBody").innerHTML = w.length ? w.map(x => `\n    <div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(x.id)}')">\n      <div class="agent-top"><b>${esc(x.label || x.id || "agent")}</b><span class="agent-kind">${esc(kind(x.kind))}${x.elapsedSeconds != null ? ` · ${mins(x.elapsedSeconds)}` : ""}</span></div>\n      <div class="agent-now">${esc(x.now || "working")}</div>\n    </div>`).join("") : '<div class="agent-empty">Nothing is running right now.</div>';
-    if (u) document.getElementById("pBody").innerHTML += `<div class="ud-sec"><div class="ud-h">${UD_ICO}UD MINI · company Claude${u.plan ? ` (${esc(u.plan)})` : ""}</div>\n    <div class="agent-now">${esc(udLine(u))}${u.why ? " · " + esc(u.why) : ""}</div>\n    ${(u.jobs || []).map(j => `<div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(j.id)}')">\n      <div class="agent-top"><b>${esc(j.title || j.id)}</b><span class="agent-kind">${esc(j.id)} · ${j.status === "running" ? esc(mins(j.elapsedSeconds)) : "queued"}</span></div>\n      <div class="agent-now">${esc(j.now || "")}${j.dot ? " · " + esc(j.dot) : ""}</div></div>`).join("") || '<div class="agent-empty">Nothing running on the UD mini.</div>'}</div>`;
+    if (u) document.getElementById("pBody").innerHTML += `<div class="ud-sec"><div class="ud-h">${UD_ICO}UD MINI · company Claude${u.plan ? ` (${esc(u.plan)})` : ""}</div>\n    <div class="agent-now">${esc(udLine(u))}${u.why ? " · " + esc(u.why) : ""}</div>\n    ${(u.jobs || []).map(j => `<div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(j.id)}')">\n      <div class="agent-top"><b>${esc(j.title || j.id)}</b><span class="agent-kind">${esc(j.id)} · ${j.status === "queued" ? "queued" : esc(mins(j.elapsedSeconds)) + (j.stalled ? ` · stalled, no output ${esc(mins(j.idleSeconds))}` : "")}</span></div>\n      <div class="agent-now">${esc(j.now || "")}${j.dot ? " · " + esc(j.dot) : ""}</div></div>`).join("") || '<div class="agent-empty">Nothing running on the UD mini.</div>'}</div>`;
 }
 
 window.openAgentsPanel = openAgentsPanel;

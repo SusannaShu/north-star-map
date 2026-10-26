@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T15:08:23.343Z",
+ "generatedAt": "2026-10-26T15:17:18.596Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -260,7 +260,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -711,7 +711,7 @@
     {
      "id": "mittens-chat-threads",
      "label": "CHAT THREADS",
-     "status": "idle",
+     "status": "working",
      "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
      "statusLine": "built · more events into threads",
      "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -829,7 +829,7 @@
     {
      "id": "devices",
      "label": "DEVICES",
-     "status": "working",
+     "status": "idle",
      "why": "A duplicate devices dot that got folded back into the main one.",
      "statusLine": "merged · duplicate",
      "caption": "A duplicate devices dot that got folded back into the main one.",
@@ -1245,7 +1245,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1319,7 +1319,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1840,7 +1840,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
