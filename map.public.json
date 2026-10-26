@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T13:39:43.488Z",
+ "generatedAt": "2026-10-26T13:46:03.526Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -742,7 +742,7 @@
     {
      "id": "mittens-architecture",
      "label": "MITTENS ARCHITECTURE",
-     "status": "working",
+     "status": "idle",
      "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
      "statusLine": "moving over step by step",
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
@@ -1245,7 +1245,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
