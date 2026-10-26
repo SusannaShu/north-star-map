@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T03:46:16.283Z",
+ "generatedAt": "2026-10-26T04:02:46.381Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -798,10 +798,12 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
+   "stage": "plan",
+   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -3487,7 +3489,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
