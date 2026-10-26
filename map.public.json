@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T12:19:55.695Z",
+ "generatedAt": "2026-10-26T12:24:40.355Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -906,7 +906,7 @@
     {
      "id": "pendant-pre-sale",
      "label": "PENDANT PRE-SALE",
-     "status": "working",
+     "status": "idle",
      "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
      "statusLine": "thinking it through",
      "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
