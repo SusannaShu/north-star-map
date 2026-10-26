@@ -764,7 +764,14 @@
         };
         const add = (seg, groupId, item) => {
             if (HID.size && [ item.open, item.qid, item.askId, item.laterId, item.task, item.item ].some(r => r && HID.has(String(r)))) return;
-            if (seg === "needs") {
+            if (seg === "needs" && item.qid) {
+                const c = claimOf(item);
+                if (c) item = {
+                    ...item,
+                    line: clip(`${c.task} on it${item.line ? " · " + item.line : ""}`, 110),
+                    taskId: c.task
+                };
+            } else if (seg === "needs") {
                 const c = claimOf(item);
                 if (c) {
                     seg = "working";

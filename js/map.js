@@ -3414,3 +3414,28 @@ if (STILL) {
 }
 
 loop();
+
+(function selfUpdate() {
+    if (PUBLIC || CLOUD) return;
+    let sig = null;
+    const sigOf = t => {
+        let h = 0;
+        for (let i = 0; i < t.length; i++) h = h * 31 + t.charCodeAt(i) | 0;
+        return t.length + ":" + h;
+    };
+    const quiet = () => Date.now() - lastActive > 12e4 && (!window.nsVoice || !window.nsVoice.isOpen()) && !panelNode && !LEAFMAP;
+    async function check() {
+        let next = 3e5;
+        try {
+            const s = sigOf(await (await fetch(location.pathname, {
+                cache: "no-store"
+            })).text());
+            if (sig && s !== sig) {
+                if (quiet()) return location.reload();
+                next = 3e4;
+            } else sig = s;
+        } catch {}
+        setTimeout(check, next);
+    }
+    setTimeout(check, 5e3);
+})();
