@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T13:06:25.415Z",
+ "generatedAt": "2026-10-26T13:14:33.157Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -405,7 +405,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -862,7 +862,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -906,7 +906,7 @@
     {
      "id": "pendant-pre-sale",
      "label": "PENDANT PRE-SALE",
-     "status": "working",
+     "status": "idle",
      "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
      "statusLine": "thinking it through",
      "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
