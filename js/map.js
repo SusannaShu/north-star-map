@@ -1692,7 +1692,8 @@ function draw() {
         ctx.setLineDash([]);
     });
     ctx.globalAlpha = 1;
-    nodes.forEach(n => {
+    const LIVEAT = PUBLIC ? {} : agentsAt();
+    [ ...nodes.filter(n => !LIVEAT[n.id]), ...nodes.filter(n => LIVEAT[n.id]) ].forEach(n => {
         const va = vaOf(n);
         if (va < .02) return;
         const dim = dimOn && !near.has(n.id);
@@ -1735,11 +1736,12 @@ function draw() {
             const done = !!n.done && !dormant;
             const a0 = (dim ? .22 : 1) * va;
             ctx.globalAlpha = a0 * (dormant ? .32 : done ? .42 : 1);
-            ctx.fillStyle = "#FFF";
+            const agentOn = !!LIVEAT[n.id] && !dormant;
+            ctx.fillStyle = agentOn ? "#000" : "#FFF";
             ctx.strokeStyle = dormant ? "#BBB" : planned || done ? "#9A9A9A" : "#000";
             ctx.lineWidth = n.type === "project" ? n.sub ? 2 : 2.4 : n.minor ? 1.3 : 1.6;
             if (planned) ctx.lineWidth = n.type === "project" ? 1.7 : 1.3;
-            if (plan) blueprint(n, t, a0); else {
+            if (plan && !agentOn) blueprint(n, t, a0); else {
                 ctx.beginPath();
                 ctx.arc(n.x, n.y, n.r, 0, 7);
                 ctx.fill();
@@ -1803,7 +1805,7 @@ function draw() {
             }
         } else {
             if (n.done) ctx.globalAlpha *= .45;
-            ctx.fillStyle = dim ? "#E5E5E5" : "#999";
+            ctx.fillStyle = LIVEAT[n.id] ? "#000" : dim ? "#E5E5E5" : "#999";
             ctx.beginPath();
             ctx.arc(n.x, n.y, n.r, 0, 7);
             ctx.fill();
@@ -1968,11 +1970,12 @@ function agentCaption(n, t) {
     const R = n.r + 7;
     ctx.save();
     ctx.strokeStyle = "#000";
-    ctx.lineWidth = 1.6;
+    ctx.lineWidth = 2.4;
     ctx.beginPath();
-    ctx.arc(n.x, n.y, R, t * 2.2, t * 2.2 + .9);
+    ctx.arc(n.x, n.y, R, t * 2.2, t * 2.2 + 1.4);
     ctx.stroke();
-    ctx.strokeStyle = "rgba(0,0,0,0.12)";
+    ctx.lineWidth = 1.2;
+    ctx.strokeStyle = "rgba(0,0,0,0.4)";
     ctx.beginPath();
     ctx.arc(n.x, n.y, R, 0, 7);
     ctx.stroke();
