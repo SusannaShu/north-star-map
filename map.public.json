@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T02:20:59.016Z",
+ "generatedAt": "2026-10-26T02:25:01.298Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -798,10 +798,12 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "active",
    "caption": "The eyes and ears of Mittens, worn all day:",
+   "stage": "plan",
+   "planned": true,
    "images": [
     "img/pendant-front.jpg",
     "img/pendant-workbench.jpg"
@@ -1084,7 +1086,7 @@
    "links": [
     "gospel"
    ],
-   "parent": "mittens",
+   "parent": "wearables",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1179,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1253,7 +1255,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1489,7 +1491,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "working",
+   "status": "idle",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -1558,7 +1560,7 @@
     {
      "id": "map-upkeep",
      "label": "MAP UPKEEP",
-     "status": "working",
+     "status": "idle",
      "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
      "statusLine": "hourly tidy checks · placement audit run",
      "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
@@ -2398,7 +2400,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -2423,7 +2425,7 @@
     {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
-     "status": "working",
+     "status": "idle",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
      "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
