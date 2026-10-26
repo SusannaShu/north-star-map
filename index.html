@@ -85,6 +85,10 @@ canvas.dragging { cursor:grabbing; }
 button.agents-ind { cursor:pointer; } button.agents-ind:hover { border-color:var(--accent); }
 .agents-ind .pulse { width:7px; height:7px; border-radius:50%; background:var(--accent); flex-shrink:0; animation:pulse 1.6s infinite; }
 .agents-ind b { color:var(--text); font-weight:700; }
+.ud-ind { border-style:dashed; } .ud-ind.down b { color:var(--text-muted); } .ud-ind .lbl { color:var(--text-secondary); }
+.ud-sec { margin-top:18px; padding-top:12px; border-top:2px solid var(--text); }
+.ud-h { display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--text); }
+.ud-h .ico { width:15px; height:15px; }
 .agents-ind .who { color:var(--text-muted); max-width:22vw; overflow:hidden; text-overflow:ellipsis; }
 /* public status strip (T1786): the talk pill -- pulsing while she talks to Mittens, grey when idle */
 .presence-ind .ico, .agents-ind > .ico { width:15px; height:15px; color:var(--text); }
