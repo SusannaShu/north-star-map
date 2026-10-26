@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T22:24:03.665Z",
+ "generatedAt": "2026-10-26T22:41:08.085Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -405,7 +405,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -502,10 +502,12 @@
     {
      "id": "meeting-notes",
      "label": "MEETING NOTES",
-     "status": "working",
+     "status": "idle",
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
+     "stage": "plan",
+     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -684,7 +686,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -860,7 +862,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2441,7 +2443,7 @@
   {
    "id": "mittens-knows",
    "label": "ALWAYS KNOWS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
    "statusLine": "live",
    "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
@@ -2458,7 +2460,7 @@
     {
      "id": "mittens-desktop",
      "label": "MITTENS ON DESKTOP",
-     "status": "idle",
+     "status": "working",
      "why": "A watcher on the laptop turns what I am working on into honest calendar blocks. The screen picture is deleted at once; only a one-line summary stays.",
      "statusLine": "v1 built · break nudges live",
      "caption": "A watcher on the laptop turns what I am working on into honest calendar blocks.",
@@ -2477,7 +2479,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -2502,7 +2504,7 @@
     {
      "id": "glasses-mittens",
      "label": "GLASSES + MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
      "statusLine": "testing · lens home live",
      "caption": "Mittens on the lens:",
@@ -2681,7 +2683,7 @@
   {
    "id": "mittens-scenarios",
    "label": "SCENARIOS",
-   "status": "idle",
+   "status": "working",
    "why": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home: which device leads, what is said out loud, what waits.",
    "statusLine": "built · 10 scenarios",
    "caption": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home:",
