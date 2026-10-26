@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T03:19:02.175Z",
+ "generatedAt": "2026-10-26T03:36:01.218Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active",
    "caption": "All my bots, digital and physical:",
@@ -1181,7 +1181,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1255,7 +1255,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1761,7 +1761,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
