@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T13:46:03.526Z",
+ "generatedAt": "2026-10-26T13:54:50.023Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -405,7 +405,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -711,7 +711,7 @@
     {
      "id": "mittens-chat-threads",
      "label": "CHAT THREADS",
-     "status": "idle",
+     "status": "working",
      "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
      "statusLine": "built · more events into threads",
      "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -742,7 +742,7 @@
     {
      "id": "mittens-architecture",
      "label": "MITTENS ARCHITECTURE",
-     "status": "idle",
+     "status": "working",
      "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
      "statusLine": "moving over step by step",
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
