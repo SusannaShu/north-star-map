@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T11:37:59.126Z",
+ "generatedAt": "2026-10-27T11:49:28.500Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -240,6 +240,21 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "susu-map-pin-accuracy",
+     "label": "MAP PIN ACCURACY",
+     "status": "idle",
+     "why": "I am making the pins on my map land exactly where they belong.",
+     "statusLine": "in progress",
+     "caption": "I am making the pins on my map land exactly where they belong.",
+     "stage": "active",
+     "embed": "pages/susu-map-pin-accuracy.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-susu-map",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -360,9 +375,9 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
-   "statusLine": "active",
+   "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
    "stage": "active",
    "embed": "pages/mittens.html",
@@ -397,6 +412,51 @@
      "stage": "active",
      "embed": "pages/mittens-vision.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-name-in-every-session",
+     "label": "MITTENS NAME EVERYWHERE",
+     "status": "idle",
+     "why": "Every session with my agent starts with the same name, so it feels like one companion.",
+     "statusLine": "in progress",
+     "caption": "Every session with my agent starts with the same name, so it feels like one companion.",
+     "stage": "active",
+     "embed": "pages/mittens-name-in-every-session.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mini-queue-triage-fix-live",
+     "label": "TRIAGE QUEUE FIX",
+     "status": "idle",
+     "why": "I fixed how my agent sorts incoming work in its queue, and the fix is live.",
+     "statusLine": "fix live",
+     "caption": "I fixed how my agent sorts incoming work in its queue, and the fix is live.",
+     "stage": "active",
+     "embed": "pages/mini-queue-triage-fix-live.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-makes-calls-for-her",
+     "label": "AGENT MAKES CALLS",
+     "status": "idle",
+     "why": "My agent can place phone calls for me and handle the conversation.",
+     "statusLine": "in progress",
+     "caption": "My agent can place phone calls for me and handle the conversation.",
+     "stage": "active",
+     "embed": "pages/mittens-makes-calls-for-her.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -496,6 +556,21 @@
      "links": [
       "mittens-daily",
       "outing-thread"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "scheduling-screen-like-messages-and",
+     "label": "SCHEDULING SCREEN",
+     "status": "idle",
+     "why": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
+     "statusLine": "in progress",
+     "caption": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
+     "stage": "active",
+     "embed": "pages/scheduling-screen-like-messages-and.html",
+     "visibility": "public",
+     "links": [
+      "mittens-daily"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -744,7 +819,7 @@
      "label": "MITTENS ARCHITECTURE",
      "status": "idle",
      "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-     "statusLine": "moving over step by step",
+     "statusLine": "migration underway · first steps live",
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
      "stage": "active",
      "embed": "pages/mittens-architecture.html",
@@ -842,11 +917,43 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "chat-cards-close-button-on",
+     "label": "CARD CLOSE BUTTON",
+     "status": "idle",
+     "why": "Every card in my agent's chat now has a close button, so I can clear them fast.",
+     "statusLine": "in progress",
+     "caption": "Every card in my agent's chat now has a close button, so I can clear them fast.",
+     "stage": "active",
+     "embed": "pages/chat-cards-close-button-on.html",
+     "visibility": "public",
+     "links": [
+      "mittens-chat-threads",
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "music-playback",
+     "label": "MUSIC PLAYBACK",
+     "status": "idle",
+     "why": "My agent can play music through the app and my glasses.",
+     "statusLine": "in progress",
+     "caption": "My agent can play music through the app and my glasses.",
+     "stage": "active",
+     "embed": "pages/music-playback.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app",
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-mittens-digital",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code: the Mittens phone app with chat, talk, glasses and day views, the open pendant capture and its triage, and the core skills.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code:",
      "stage": "active",
      "embed": "pages/code-mittens-digital.html",
@@ -1245,7 +1352,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1312,6 +1419,36 @@
      "embed": "pages/disk.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "housekeeping-nightly-chrome-ai-model",
+     "label": "NIGHTLY BROWSER CLEANUP",
+     "status": "idle",
+     "why": "A nightly housekeeping rule keeps the browser's built-in AI model from piling up on my machine.",
+     "statusLine": "live · every night",
+     "caption": "A nightly housekeeping rule keeps the browser's built-in AI model from piling up on my machine.",
+     "stage": "active",
+     "embed": "pages/housekeeping-nightly-chrome-ai-model.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "chrome-flashing-open-render-scripts",
+     "label": "BROWSER FLASH FIX",
+     "status": "idle",
+     "why": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
+     "statusLine": "fixing",
+     "caption": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
+     "stage": "active",
+     "embed": "pages/chrome-flashing-open-render-scripts.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1319,7 +1456,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1446,6 +1583,52 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "mittens-soft-robot-film-dark",
+     "label": "SOFT ROBOT FILM",
+     "status": "idle",
+     "why": "I am making a dark version of the short film about my soft robot companion.",
+     "statusLine": "in progress",
+     "caption": "I am making a dark version of the short film about my soft robot companion.",
+     "stage": "active",
+     "embed": "pages/mittens-soft-robot-film-dark.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-mittens-scenes",
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "dev-hub-launcher-portfolio-preview",
+     "label": "PORTFOLIO PREVIEW LAUNCHER",
+     "status": "idle",
+     "why": "My dev hub can now launch a live preview of my portfolio.",
+     "statusLine": "in progress",
+     "caption": "My dev hub can now launch a live preview of my portfolio.",
+     "stage": "active",
+     "embed": "pages/dev-hub-launcher-portfolio-preview.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-media-on-cloudflare-r2",
+     "label": "PORTFOLIO MEDIA HOSTING",
+     "status": "idle",
+     "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
+     "statusLine": "moving over",
+     "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
+     "stage": "active",
+     "embed": "pages/portfolio-media-on-cloudflare-r2.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-portfolio",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -1550,11 +1733,27 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "north-star-intro-animation-pop",
+     "label": "INTRO ANIMATION",
+     "status": "idle",
+     "why": "The map's intro animation now plays only as a pop-up, not every time.",
+     "statusLine": "in progress",
+     "caption": "The map's intro animation now plays only as a pop-up, not every time.",
+     "stage": "active",
+     "embed": "pages/north-star-intro-animation-pop.html",
+     "visibility": "public",
+     "links": [
+      "ui-style",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-northstar",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
      "stage": "active",
      "embed": "pages/code-northstar.html",
@@ -1768,7 +1967,7 @@
      "label": "TRUTH CHECK",
      "status": "idle",
      "why": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
-     "statusLine": "built · runs at every finish",
+     "statusLine": "built · widening to every channel",
      "caption": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
      "stage": "active",
      "embed": "pages/truth-check.html",
@@ -1840,7 +2039,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
@@ -2186,7 +2385,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2235,9 +2434,9 @@
     {
      "id": "wake-report",
      "label": "WAKE REPORT",
-     "status": "working",
+     "status": "idle",
      "why": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
-     "statusLine": "built · new work reported first",
+     "statusLine": "built · morning audio report in use",
      "caption": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
      "stage": "active",
      "embed": "pages/wake-report.html",
@@ -2430,7 +2629,7 @@
      "label": "SMALL LOCAL MODELS",
      "status": "done",
      "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "statusLine": "benchmarked · done",
+     "statusLine": "benchmarked · flagger idea next",
      "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
      "stage": "done",
      "embed": "pages/small-models.html",
