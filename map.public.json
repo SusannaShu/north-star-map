@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T12:30:12.196Z",
+ "generatedAt": "2026-10-27T12:38:58.754Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -275,7 +275,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -375,7 +375,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -465,7 +465,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -500,7 +500,7 @@
     {
      "id": "mittens-proactive",
      "label": "MITTENS SPEAKS FIRST",
-     "status": "working",
+     "status": "idle",
      "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
      "statusLine": "live · planning ahead next",
      "caption": "Mittens may speak first:",
@@ -1352,7 +1352,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1456,7 +1456,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2039,7 +2039,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
