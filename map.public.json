@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T20:47:26.055Z",
+ "generatedAt": "2026-10-27T20:58:17.444Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -138,7 +138,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -159,40 +159,6 @@
      "links": [
       "sheyou",
       "susu-closet"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "sheyou-business-logic",
-     "label": "TRY-ON BUSINESS LOGIC",
-     "status": "idle",
-     "why": "I tested whether designer-priced virtual try-on is a real business. The answer is yes: a free try-on works as the advert, people pay to keep what they love, and the designer sets the price and keeps most of it.",
-     "statusLine": "plan · verdict in, decisions pending",
-     "caption": "I tested whether designer-priced virtual try-on is a real business.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/sheyou-business-logic.html",
-     "visibility": "public",
-     "links": [
-      "sheyou",
-      "designers"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "sheyou-recreations",
-     "label": "CREDITED RECREATIONS",
-     "status": "idle",
-     "why": "I want people to remake a designer's work, with everyone in the chain credited and paid. Much of the record keeping already exists, and the rest is planned.",
-     "statusLine": "plan ready · not built",
-     "caption": "I want people to remake a designer's work, with everyone in the chain credited and paid.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/sheyou-recreations.html",
-     "visibility": "public",
-     "links": [
-      "sheyou",
-      "designers"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -375,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -969,7 +935,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1649,7 +1615,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3371,7 +3337,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3664,6 +3630,73 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "sheyou",
+   "label": "SHEYOU",
+   "status": "working",
+   "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
+   "statusLine": "live",
+   "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "embed": "pages/sheyou.html",
+   "visibility": "public",
+   "links": [
+    "sheyou-business-logic"
+   ],
+   "parent": "fashion",
+   "parked": false,
+   "children": [
+    {
+     "id": "sheyou-business-logic",
+     "label": "TRY-ON BUSINESS LOGIC",
+     "status": "idle",
+     "why": "I tested whether designer-priced virtual try-on is a real business. The answer is yes: a free try-on works as the advert, people pay to keep what they love, and the designer sets the price and keeps most of it.",
+     "statusLine": "plan · verdict in, decisions pending",
+     "caption": "I tested whether designer-priced virtual try-on is a real business.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/sheyou-business-logic.html",
+     "visibility": "public",
+     "links": [
+      "sheyou",
+      "designers"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "sheyou-recreations",
+     "label": "CREDITED RECREATIONS",
+     "status": "idle",
+     "why": "I want people to remake a designer's work, with everyone in the chain credited and paid. Much of the record keeping already exists, and the rest is planned.",
+     "statusLine": "plan ready · not built",
+     "caption": "I want people to remake a designer's work, with everyone in the chain credited and paid.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/sheyou-recreations.html",
+     "visibility": "public",
+     "links": [
+      "sheyou",
+      "designers"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-sheyou",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the iOS app, the web store, the live backend for products and orders, and an unfinished move to a newer backend.",
+     "statusLine": "mapped · backend move unfinished",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-sheyou.html",
+     "visibility": "public",
+     "links": [
+      "sheyou"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "case study"
+  },
+  {
    "id": "mittens-scenario-logic",
    "label": "SCENARIOS",
    "status": "idle",
@@ -3699,39 +3732,6 @@
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "sheyou",
-   "label": "SHEYOU",
-   "status": "idle",
-   "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
-   "statusLine": "live",
-   "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "embed": "pages/sheyou.html",
-   "visibility": "public",
-   "links": [
-    "sheyou-business-logic"
-   ],
-   "parent": "fashion",
-   "parked": false,
-   "children": [
-    {
-     "id": "code-sheyou",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the iOS app, the web store, the live backend for products and orders, and an unfinished move to a newer backend.",
-     "statusLine": "mapped · backend move unfinished",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-sheyou.html",
-     "visibility": "public",
-     "links": [
-      "sheyou"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "case study"
   },
   {
    "id": "susu-closet",
@@ -3784,7 +3784,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
