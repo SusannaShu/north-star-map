@@ -2489,6 +2489,7 @@ function openPanel(n, tab) {
         month: "numeric",
         day: "numeric"
     }))}</b> ${esc(x.text)}</li>`).join("")}</ul></div>`;
+    if (d.pointers && d.pointers.length) html += `<div class="card live-refs" data-dot="${esc(target.id)}"><h4>Live</h4><ul>${d.pointers.map(() => '<li style="color:var(--text-muted)">reading…</li>').join("")}</ul></div>`;
     if (d.refs && d.refs.length) html += `<div class="card"><h4>Read</h4><ul>${d.refs.map(r => `<li><a href="${esc(macUrl(r.href))}" target="_blank" rel="noopener">${esc(r.label)}</a></li>`).join("")}</ul></div>`; else if (d.portfolio && d.portfolio.onPortfolio === false && target.id !== "portfolio") html += `<div class="card"><h4>Portfolio</h4><p>Not on the portfolio yet${d.portfolio.note ? ` — ${esc(d.portfolio.note)}` : ""}.</p></div>`;
     if (d.yesterday && d.yesterday.length) html += `<div class="card"><h4>${d.kind === "routine" ? "Runs today" : d.kind === "convo" ? "Last said" : "Yesterday"}</h4><ul>${d.yesterday.map(x => `<li>${x}</li>`).join("")}</ul></div>`;
     if (d.today && d.today.length || d.ask) html += `<div class="card"><h4>Today's goal</h4><ul>${(d.today || []).map(x => `<li class="${/you/i.test(x) ? "hot" : ""}">${x}</li>`).join("")}</ul>\n      ${d.ask ? `<div class="ask"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> ${d.ask}</div>` : ""}</div>`;
@@ -2510,6 +2511,24 @@ function openPanel(n, tab) {
         html += `<div class="panel-actions">\n      ${folder ? `<button class="topbtn" onclick="location.href='http://localhost:4000/#folder=${folder}'">Open in Dev Hub</button>` : ""}\n      ${d.resume ? `<button class="topbtn primary" onclick="resumeConvo('${d.resume.cliSessionId}','${d.resume.cwd}')">Resume in Terminal</button>` : ""}\n    </div>`;
     }
     pBody.innerHTML = html;
+    const live = pBody.querySelector(".live-refs");
+    if (live) fillLiveRefs(live);
+}
+
+function fillLiveRefs(el) {
+    fetch(macUrl("/api/ref?dot=" + encodeURIComponent(el.dataset.dot))).then(r => r.json()).then(j => {
+        if (!el.isConnected || !j.refs) return;
+        el.querySelector("ul").innerHTML = j.refs.map(x => {
+            const v = x.live || {}, when = new Date(v.readAt || Date.now()).toLocaleTimeString("en-US", {
+                hour: "numeric",
+                minute: "2-digit"
+            });
+            const where = x.ref.kind === "file" ? `${x.ref.host === "company-mini" ? "company mini" : "Mac mini"} ${x.ref.path}` : x.ref.kind === "mittens" ? `Mittens ${x.ref.path}` : x.ref.path;
+            return `<li class="${v.ok ? "" : "hot"}"><b>${esc(v.ok ? v.value : "unreachable")}</b> <span style="color:var(--text-muted)">${esc(where)} · read ${esc(when)}${v.stale ? " (cached)" : ""}</span>${x.text ? `<br><span style="color:var(--text-muted)">${esc(x.text.slice(0, 120))}</span>` : ""}</li>`;
+        }).join("");
+    }).catch(() => {
+        if (el.isConnected) el.querySelector("ul").innerHTML = '<li class="hot">could not read the live value</li>';
+    });
 }
 
 const esc = x => String(x == null ? "" : x).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
