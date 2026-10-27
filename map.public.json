@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-26T23:51:25.965Z",
+ "generatedAt": "2026-10-27T00:10:00.515Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -260,7 +260,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -1570,7 +1570,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "working",
+   "status": "idle",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -1582,7 +1582,7 @@
     {
      "id": "triggers",
      "label": "TRIGGERS",
-     "status": "working",
+     "status": "idle",
      "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
      "statusLine": "live · read by every lane",
      "caption": "When Mittens speaks first, as one list any model reads:",
@@ -1701,7 +1701,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1766,7 +1766,7 @@
     {
      "id": "truth-check",
      "label": "TRUTH CHECK",
-     "status": "idle",
+     "status": "working",
      "why": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
      "statusLine": "built · runs at every finish",
      "caption": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
@@ -2113,7 +2113,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
