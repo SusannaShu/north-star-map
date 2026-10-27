@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T01:29:39.010Z",
+ "generatedAt": "2026-10-27T01:42:49.060Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -686,7 +686,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -742,7 +742,7 @@
     {
      "id": "mittens-architecture",
      "label": "MITTENS ARCHITECTURE",
-     "status": "idle",
+     "status": "working",
      "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
      "statusLine": "moving over step by step",
      "caption": "Personal data moves off the shared cloud backend onto a small home server:",
@@ -1245,7 +1245,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1319,7 +1319,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1701,7 +1701,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1805,7 +1805,7 @@
     {
      "id": "triage",
      "label": "TRIAGE",
-     "status": "idle",
+     "status": "working",
      "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
      "statusLine": "built · watcher proposes, Mittens decides",
      "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
@@ -2113,7 +2113,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -2186,7 +2186,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3427,7 +3427,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "working",
+   "status": "idle",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
