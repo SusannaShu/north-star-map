@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T01:42:49.060Z",
+ "generatedAt": "2026-10-27T01:53:25.298Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -260,7 +260,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -699,7 +699,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "idle",
+     "status": "working",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · smarter reminders next",
      "caption": "The assistant on the phone:",
@@ -829,7 +829,7 @@
     {
      "id": "devices",
      "label": "DEVICES",
-     "status": "idle",
+     "status": "working",
      "why": "A duplicate devices dot that got folded back into the main one.",
      "statusLine": "merged · duplicate",
      "caption": "A duplicate devices dot that got folded back into the main one.",
@@ -1466,7 +1466,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3172,7 +3172,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3236,7 +3236,7 @@
     {
      "id": "watchdog",
      "label": "WATCHDOG",
-     "status": "working",
+     "status": "idle",
      "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
      "statusLine": "live",
      "caption": "Nothing fails silently:",
