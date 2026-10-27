@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T12:21:24.894Z",
+ "generatedAt": "2026-10-27T12:30:12.196Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -275,7 +275,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -500,7 +500,7 @@
     {
      "id": "mittens-proactive",
      "label": "MITTENS SPEAKS FIRST",
-     "status": "idle",
+     "status": "working",
      "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
      "statusLine": "live · planning ahead next",
      "caption": "Mittens may speak first:",
