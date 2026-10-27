@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T16:58:46.495Z",
+ "generatedAt": "2026-10-27T17:18:01.205Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -774,7 +774,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "idle",
+     "status": "working",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · smarter reminders next",
      "caption": "The assistant on the phone:",
