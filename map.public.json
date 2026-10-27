@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T19:58:45.133Z",
+ "generatedAt": "2026-10-27T20:07:17.584Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -375,7 +375,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -465,7 +465,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -546,7 +546,7 @@
     {
      "id": "how-about-the-question-threads",
      "label": "TEST THREAD",
-     "status": "done",
+     "status": "working",
      "why": "A test run briefly made this thread dot. It was merged back into its parent.",
      "statusLine": "merged · test leftover",
      "caption": "A test run briefly made this thread dot.",
@@ -761,7 +761,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -774,7 +774,7 @@
     {
      "id": "mittens-app",
      "label": "MITTENS APP",
-     "status": "idle",
+     "status": "working",
      "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
      "statusLine": "new layout built · smarter reminders next",
      "caption": "The assistant on the phone:",
@@ -1352,7 +1352,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1456,7 +1456,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1900,7 +1900,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -2004,7 +2004,7 @@
     {
      "id": "triage",
      "label": "TRIAGE",
-     "status": "idle",
+     "status": "working",
      "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
      "statusLine": "built · watcher proposes, Mittens decides",
      "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
@@ -2312,7 +2312,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
