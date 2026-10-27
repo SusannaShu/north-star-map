@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T20:32:47.031Z",
+ "generatedAt": "2026-10-27T20:39:04.046Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -375,7 +375,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -1649,7 +1649,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3371,7 +3371,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
