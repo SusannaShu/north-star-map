@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T23:34:21.327Z",
+ "generatedAt": "2026-10-27T23:38:37.917Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -935,7 +935,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -996,7 +996,7 @@
     {
      "id": "start-without-wearables",
      "label": "START WITHOUT WEARABLES",
-     "status": "working",
+     "status": "idle",
      "why": "Mittens should be useful from day one with just a phone, so wearables become an upgrade rather than a requirement.",
      "statusLine": "thinking it through",
      "caption": "Mittens should be useful from day one with just a phone, so wearables become an upgrade rather than a requirement.",
