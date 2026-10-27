@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-27T00:51:50.938Z",
+ "generatedAt": "2026-10-27T00:56:14.981Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -260,7 +260,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -1570,7 +1570,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "working",
+   "status": "idle",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -1582,7 +1582,7 @@
     {
      "id": "triggers",
      "label": "TRIGGERS",
-     "status": "working",
+     "status": "idle",
      "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
      "statusLine": "live · read by every lane",
      "caption": "When Mittens speaks first, as one list any model reads:",
