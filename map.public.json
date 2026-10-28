@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T22:03:00.620Z",
+ "generatedAt": "2026-10-28T22:18:54.458Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -2062,7 +2062,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2169,7 +2169,7 @@
     {
      "id": "are-you-just-stupider-on",
      "label": "TEST THREAD",
-     "status": "working",
+     "status": "done",
      "why": "A test run briefly made this thread dot. It was merged back into its parent.",
      "statusLine": "merged · test leftover",
      "caption": "A test run briefly made this thread dot.",
