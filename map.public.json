@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T07:17:08.143Z",
+ "generatedAt": "2026-10-28T07:34:38.039Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2439,22 +2439,6 @@
       "mittens-daily"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-desktop-panels",
-     "label": "DESKTOP PANELS",
-     "status": "idle",
-     "why": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
-     "statusLine": "being built",
-     "caption": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
-     "stage": "active",
-     "embed": "pages/mittens-desktop-panels.html",
-     "visibility": "public",
-     "links": [
-      "mittens-desktop",
-      "mittens-knows"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4092,6 +4076,25 @@
    "embed": "pages/wake-report.html",
    "visibility": "public",
    "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-desktop-panels",
+   "label": "DESKTOP PANELS",
+   "status": "idle",
+   "why": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
+   "statusLine": "being built",
+   "caption": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
+   "stage": "active",
+   "embed": "pages/mittens-desktop-panels.html",
+   "visibility": "public",
+   "links": [
+    "mittens-desktop",
+    "mittens-knows"
+   ],
+   "parent": "mittens-knows",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
