@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T15:20:36.975Z",
+ "generatedAt": "2026-10-28T15:47:21.537Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -625,7 +625,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -1324,7 +1324,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2062,7 +2062,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2169,7 +2169,7 @@
     {
      "id": "are-you-just-stupider-on",
      "label": "TEST THREAD",
-     "status": "working",
+     "status": "done",
      "why": "A test run briefly made this thread dot. It was merged back into its parent.",
      "statusLine": "merged · test leftover",
      "caption": "A test run briefly made this thread dot.",
@@ -3943,7 +3943,7 @@
   {
    "id": "mittens-chat-threads",
    "label": "CHAT THREADS",
-   "status": "working",
+   "status": "idle",
    "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
    "statusLine": "built · more events into threads",
    "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
