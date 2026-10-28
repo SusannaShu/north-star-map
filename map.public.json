@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T15:13:44.948Z",
+ "generatedAt": "2026-10-28T15:20:36.975Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -3943,7 +3943,7 @@
   {
    "id": "mittens-chat-threads",
    "label": "CHAT THREADS",
-   "status": "idle",
+   "status": "working",
    "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
    "statusLine": "built · more events into threads",
    "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -4041,7 +4041,7 @@
   {
    "id": "mittens-architecture",
    "label": "MITTENS ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
    "statusLine": "migration underway · first steps live",
    "caption": "Personal data moves off the shared cloud backend onto a small home server:",
