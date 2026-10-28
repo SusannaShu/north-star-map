@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T14:42:43.748Z",
+ "generatedAt": "2026-10-28T14:49:16.816Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1324,7 +1324,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3884,23 +3884,7 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [
-    {
-     "id": "question-watcher-works-answer-trim",
-     "label": "QUESTION WATCHER",
-     "status": "idle",
-     "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
-     "statusLine": "works · trim awaits approval",
-     "caption": "My agent notices open questions and answers them first.",
-     "stage": "active",
-     "embed": "pages/question-watcher-works-answer-trim.html",
-     "visibility": "public",
-     "links": [
-      "mittens-daily"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4099,6 +4083,24 @@
     "mittens-knows"
    ],
    "parent": "mittens-knows",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "question-watcher-works-answer-trim",
+   "label": "QUESTION WATCHER",
+   "status": "idle",
+   "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
+   "statusLine": "works · trim awaits approval",
+   "caption": "My agent notices open questions and answers them first.",
+   "stage": "active",
+   "embed": "pages/question-watcher-works-answer-trim.html",
+   "visibility": "public",
+   "links": [
+    "mittens-daily"
+   ],
+   "parent": "mittens-proactive",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
