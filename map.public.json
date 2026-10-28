@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T18:17:41.325Z",
+ "generatedAt": "2026-10-28T18:34:27.975Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -1265,10 +1265,12 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/portfolio.html",
    "visibility": "public",
    "parked": false,
