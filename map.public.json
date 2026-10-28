@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T02:06:56.508Z",
+ "generatedAt": "2026-10-28T02:19:07.467Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -367,63 +367,6 @@
       "pendant"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-vision",
-     "label": "THE NEW OPENCLAW",
-     "status": "idle",
-     "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
-     "statusLine": "live system · 8 pillars mapped",
-     "caption": "Mittens and North Star as one agent for a whole life and work:",
-     "stage": "active",
-     "embed": "pages/mittens-vision.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-name-in-every-session",
-     "label": "MITTENS NAME EVERYWHERE",
-     "status": "idle",
-     "why": "Every session with my agent starts with the same name, so it feels like one companion.",
-     "statusLine": "in progress",
-     "caption": "Every session with my agent starts with the same name, so it feels like one companion.",
-     "stage": "active",
-     "embed": "pages/mittens-name-in-every-session.html",
-     "visibility": "public",
-     "links": [
-      "mittens"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mini-queue-triage-fix-live",
-     "label": "TRIAGE QUEUE FIX",
-     "status": "idle",
-     "why": "I fixed how my agent sorts incoming work in its queue, and the fix is live.",
-     "statusLine": "fix live",
-     "caption": "I fixed how my agent sorts incoming work in its queue, and the fix is live.",
-     "stage": "active",
-     "embed": "pages/mini-queue-triage-fix-live.html",
-     "visibility": "public",
-     "links": [
-      "mittens"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-makes-calls-for-her",
-     "label": "AGENT MAKES CALLS",
-     "status": "idle",
-     "why": "My agent can place phone calls for me and handle the conversation.",
-     "statusLine": "in progress",
-     "caption": "My agent can place phone calls for me and handle the conversation.",
-     "stage": "active",
-     "embed": "pages/mittens-makes-calls-for-her.html",
-     "visibility": "public",
-     "links": [
-      "mittens"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "case study"
@@ -464,21 +407,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "mittens-proactive",
-     "label": "MITTENS SPEAKS FIRST",
-     "status": "idle",
-     "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
-     "statusLine": "live · planning ahead next",
-     "caption": "Mittens may speak first:",
-     "stage": "active",
-     "embed": "pages/mittens-proactive.html",
-     "visibility": "public",
-     "links": [
-      "proactive-rules"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "outing-thread",
      "label": "OUTING THREAD",
      "status": "done",
@@ -495,21 +423,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "shopping-list",
-     "label": "SHOPPING LIST",
-     "status": "idle",
-     "why": "One list for groceries, household things and hardware, reminded at the right moment: leaving, heading home, walking into the store.",
-     "statusLine": "live",
-     "caption": "One list for groceries, household things and hardware, reminded at the right moment:",
-     "stage": "active",
-     "embed": "pages/shopping-list.html",
-     "visibility": "public",
-     "links": [
-      "robot-skin"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "how-about-the-question-threads",
      "label": "TEST THREAD",
      "status": "done",
@@ -522,21 +435,6 @@
      "links": [
       "mittens-daily",
       "outing-thread"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "scheduling-screen-like-messages-and",
-     "label": "SCHEDULING SCREEN",
-     "status": "idle",
-     "why": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
-     "statusLine": "in progress",
-     "caption": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
-     "stage": "active",
-     "embed": "pages/scheduling-screen-like-messages-and.html",
-     "visibility": "public",
-     "links": [
-      "mittens-daily"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -738,34 +636,6 @@
    "parked": false,
    "children": [
     {
-     "id": "mittens-app",
-     "label": "MITTENS APP",
-     "status": "idle",
-     "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
-     "statusLine": "new layout built · smarter reminders next",
-     "caption": "The assistant on the phone:",
-     "stage": "active",
-     "embed": "pages/mittens-app.html",
-     "visibility": "public",
-     "embedCaption": "case study"
-    },
-    {
-     "id": "mittens-chat-threads",
-     "label": "CHAT THREADS",
-     "status": "idle",
-     "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
-     "statusLine": "built · more events into threads",
-     "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
-     "stage": "active",
-     "embed": "pages/mittens-chat-threads.html",
-     "visibility": "public",
-     "links": [
-      "mittens-app",
-      "thread-architecture"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-ota",
      "label": "UPDATES ANYWHERE",
      "status": "idle",
@@ -778,18 +648,6 @@
      "links": [
       "mittens-app"
      ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-architecture",
-     "label": "MITTENS ARCHITECTURE",
-     "status": "idle",
-     "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-     "statusLine": "migration underway · first steps live",
-     "caption": "Personal data moves off the shared cloud backend onto a small home server:",
-     "stage": "active",
-     "embed": "pages/mittens-architecture.html",
-     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -838,36 +696,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "today-page-north-star-icon",
-     "label": "TODAY PAGE ICON",
-     "status": "idle",
-     "why": "A North Star icon on the app's today screen, so the map is one tap away.",
-     "statusLine": "in progress",
-     "caption": "A North Star icon on the app's today screen, so the map is one tap away.",
-     "stage": "active",
-     "embed": "pages/today-page-north-star-icon.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "music",
-     "label": "MUSIC",
-     "status": "done",
-     "why": "I can ask Mittens to play music, and it plays through the app and glasses.",
-     "statusLine": "built · done",
-     "caption": "I can ask Mittens to play music, and it plays through the app and glasses.",
-     "stage": "done",
-     "embed": "pages/music.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "devices",
      "label": "DEVICES",
      "status": "idle",
@@ -878,38 +706,6 @@
      "embed": "pages/devices.html",
      "visibility": "public",
      "links": [
-      "mittens-digital"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "chat-cards-close-button-on",
-     "label": "CARD CLOSE BUTTON",
-     "status": "idle",
-     "why": "Every card in my agent's chat now has a close button, so I can clear them fast.",
-     "statusLine": "in progress",
-     "caption": "Every card in my agent's chat now has a close button, so I can clear them fast.",
-     "stage": "active",
-     "embed": "pages/chat-cards-close-button-on.html",
-     "visibility": "public",
-     "links": [
-      "mittens-chat-threads",
-      "mittens-digital"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "music-playback",
-     "label": "MUSIC PLAYBACK",
-     "status": "idle",
-     "why": "My agent can play music through the app and my glasses.",
-     "statusLine": "in progress",
-     "caption": "My agent can play music through the app and my glasses.",
-     "stage": "active",
-     "embed": "pages/music-playback.html",
-     "visibility": "public",
-     "links": [
-      "mittens-app",
       "mittens-digital"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1446,57 +1242,6 @@
    "parked": false,
    "children": [
     {
-     "id": "shooting-star",
-     "label": "SHOOTING STAR",
-     "status": "planned",
-     "why": "The star comes out of the desk screen: the map you see is live.",
-     "statusLine": "planned · being animated",
-     "caption": "The star comes out of the desk screen:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "intro.html?moment=star",
-     "visibility": "public",
-     "embedCaption": "the landing story"
-    },
-    {
-     "id": "stack-audit",
-     "label": "STACK AUDIT",
-     "status": "idle",
-     "why": "Every technical claim on the case studies checked against the code: 106 claims -- 57 proven, 29 partial, 20 corrected.",
-     "statusLine": "done",
-     "caption": "Every technical claim on the case studies checked against the code:",
-     "stage": "active",
-     "embed": "pages/stack-audit.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-night-mode",
-     "label": "NIGHT MODE",
-     "status": "idle",
-     "why": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
-     "statusLine": "prototype",
-     "caption": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/portfolio-night-mode.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-mittens-scenes",
-     "label": "MITTENS SCENES",
-     "status": "idle",
-     "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
-     "statusLine": "ideas · transitions made, not on site",
-     "caption": "I want more varied views in the Mittens chapter of my portfolio:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/portfolio-mittens-scenes.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "portfolio-chapters",
      "label": "SCROLL CHAPTERS",
      "status": "idle",
@@ -1510,30 +1255,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "portfolio-milkyway",
-     "label": "LANDING END: MILKY WAY",
-     "status": "idle",
-     "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
-     "statusLine": "options ready · waiting on my pick",
-     "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
-     "stage": "active",
-     "embed": "pages/portfolio-milkyway.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-landing-talk",
-     "label": "LANDING: HOW I WORK",
-     "status": "idle",
-     "why": "The landing shows how I work: I talk while wearing my devices, my words travel to the computer at home and light up a dot on my map. It also explains in my own voice why I build soft robots.",
-     "statusLine": "draft · waiting to ship",
-     "caption": "The landing shows how I work:",
-     "stage": "active",
-     "embed": "pages/portfolio-landing-talk.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "portfolio-2",
      "label": "PORTFOLIO",
      "status": "done",
@@ -1542,52 +1263,6 @@
      "caption": "A duplicate portfolio dot that the map's tidy pass merged back into the main one.",
      "stage": "done",
      "embed": "pages/portfolio-2.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-soft-robot-film-dark",
-     "label": "SOFT ROBOT FILM",
-     "status": "idle",
-     "why": "I am making a dark version of the short film about my soft robot companion.",
-     "statusLine": "in progress",
-     "caption": "I am making a dark version of the short film about my soft robot companion.",
-     "stage": "active",
-     "embed": "pages/mittens-soft-robot-film-dark.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-mittens-scenes",
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "dev-hub-launcher-portfolio-preview",
-     "label": "PORTFOLIO PREVIEW LAUNCHER",
-     "status": "idle",
-     "why": "My dev hub can now launch a live preview of my portfolio.",
-     "statusLine": "in progress",
-     "caption": "My dev hub can now launch a live preview of my portfolio.",
-     "stage": "active",
-     "embed": "pages/dev-hub-launcher-portfolio-preview.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-media-on-cloudflare-r2",
-     "label": "PORTFOLIO MEDIA HOSTING",
-     "status": "idle",
-     "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "statusLine": "moving over",
-     "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "stage": "active",
-     "embed": "pages/portfolio-media-on-cloudflare-r2.html",
      "visibility": "public",
      "links": [
       "portfolio"
@@ -1624,34 +1299,6 @@
    "visibility": "public",
    "parked": false,
    "children": [
-    {
-     "id": "ui-style",
-     "label": "UI STYLE",
-     "status": "idle",
-     "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-     "statusLine": "checked nightly · cleanup ongoing",
-     "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-     "stage": "active",
-     "embed": "pages/ui-style.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "action-tree",
-     "label": "ACTION TREE",
-     "status": "idle",
-     "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
-     "statusLine": "live · stale items repaired nightly",
-     "caption": "The one source of truth for what is open:",
-     "stage": "active",
-     "embed": "pages/action-tree.html",
-     "visibility": "public",
-     "links": [
-      "context-graph",
-      "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "ns-desk",
      "label": "NORTH STAR DESK",
@@ -1695,22 +1342,6 @@
      "links": [
       "northstar",
       "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "north-star-intro-animation-pop",
-     "label": "INTRO ANIMATION",
-     "status": "idle",
-     "why": "The map's intro animation now plays only as a pop-up, not every time.",
-     "statusLine": "in progress",
-     "caption": "The map's intro animation now plays only as a pop-up, not every time.",
-     "stage": "active",
-     "embed": "pages/north-star-intro-animation-pop.html",
-     "visibility": "public",
-     "links": [
-      "ui-style",
-      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -2398,18 +2029,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "wake-report",
-     "label": "WAKE REPORT",
-     "status": "idle",
-     "why": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
-     "statusLine": "built · morning audio report in use",
-     "caption": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
-     "stage": "active",
-     "embed": "pages/wake-report.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "talk-voice",
      "label": "TALK VOICE",
      "status": "idle",
@@ -2895,30 +2514,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "learn-ep-french-1",
-     "label": "FRENCH EPISODE ONE",
-     "status": "idle",
-     "why": "A short French lesson built from sentences about my own day. Each one is read at normal speed, then slowly, with a gap for me to repeat it.",
-     "statusLine": "ready",
-     "caption": "A short French lesson built from sentences about my own day.",
-     "stage": "done",
-     "embed": "pages/learn-ep-french-1.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-ep-linear-algebra-1",
-     "label": "LINEAR ALGEBRA ONE",
-     "status": "idle",
-     "why": "A first episode on vectors: adding them, scaling them, and the dot product as a measure of how alike two things are.",
-     "statusLine": "ready",
-     "caption": "A first episode on vectors:",
-     "stage": "done",
-     "embed": "pages/learn-ep-linear-algebra-1.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-tutor",
      "label": "MITTENS TEACHES",
      "status": "idle",
@@ -2940,54 +2535,6 @@
      "stage": "plan",
      "planned": true,
      "embed": "pages/learn-sop.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-ep-sheyou-strategy",
-     "label": "STRATEGY EPISODE",
-     "status": "idle",
-     "why": "An episode on owning the work and the context around it, who pays, and how to market try-on.",
-     "statusLine": "ready",
-     "caption": "An episode on owning the work and the context around it, who pays, and how to market try-on.",
-     "stage": "done",
-     "embed": "pages/learn-ep-sheyou-strategy.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-ep-sheyou-ledger",
-     "label": "LEDGER EPISODE",
-     "status": "idle",
-     "why": "An episode comparing signed records, anchored ledgers and blockchains: what has held up and what a design license can actually promise.",
-     "statusLine": "ready",
-     "caption": "An episode comparing signed records, anchored ledgers and blockchains:",
-     "stage": "done",
-     "embed": "pages/learn-ep-sheyou-ledger.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-ep-business-strategy",
-     "label": "BUSINESS EPISODE",
-     "status": "idle",
-     "why": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
-     "statusLine": "ready",
-     "caption": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
-     "stage": "done",
-     "embed": "pages/learn-ep-business-strategy.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-ep-content-attention",
-     "label": "WHO GETS ATTENTION",
-     "status": "done",
-     "why": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
-     "statusLine": "episode done",
-     "caption": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
-     "stage": "done",
-     "embed": "pages/learn-ep-content-attention.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -3695,6 +3242,321 @@
     }
    ],
    "embedCaption": "case study"
+  },
+  {
+   "id": "action-tree",
+   "label": "ACTION TREE",
+   "status": "idle",
+   "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
+   "statusLine": "live · stale items repaired nightly",
+   "caption": "The one source of truth for what is open:",
+   "stage": "active",
+   "embed": "pages/action-tree.html",
+   "visibility": "public",
+   "links": [
+    "context-graph",
+    "housekeeping"
+   ],
+   "parent": "northstar",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "ui-style",
+   "label": "UI STYLE",
+   "status": "idle",
+   "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+   "statusLine": "checked nightly · cleanup ongoing",
+   "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+   "stage": "active",
+   "embed": "pages/ui-style.html",
+   "visibility": "public",
+   "parent": "northstar",
+   "parked": false,
+   "children": [
+    {
+     "id": "north-star-intro-animation-pop",
+     "label": "INTRO ANIMATION",
+     "status": "idle",
+     "why": "The map's intro animation now plays only as a pop-up, not every time.",
+     "statusLine": "in progress",
+     "caption": "The map's intro animation now plays only as a pop-up, not every time.",
+     "stage": "active",
+     "embed": "pages/north-star-intro-animation-pop.html",
+     "visibility": "public",
+     "links": [
+      "ui-style",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "portfolio-mittens-scenes",
+   "label": "MITTENS SCENES",
+   "status": "idle",
+   "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
+   "statusLine": "ideas · transitions made, not on site",
+   "caption": "I want more varied views in the Mittens chapter of my portfolio:",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/portfolio-mittens-scenes.html",
+   "visibility": "public",
+   "parent": "portfolio",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-soft-robot-film-dark",
+     "label": "SOFT ROBOT FILM",
+     "status": "idle",
+     "why": "I am making a dark version of the short film about my soft robot companion.",
+     "statusLine": "in progress",
+     "caption": "I am making a dark version of the short film about my soft robot companion.",
+     "stage": "active",
+     "embed": "pages/mittens-soft-robot-film-dark.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-mittens-scenes",
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-makes-calls-for-her",
+   "label": "AGENT MAKES CALLS",
+   "status": "idle",
+   "why": "My agent can place phone calls for me and handle the conversation.",
+   "statusLine": "in progress",
+   "caption": "My agent can place phone calls for me and handle the conversation.",
+   "stage": "active",
+   "embed": "pages/mittens-makes-calls-for-her.html",
+   "visibility": "public",
+   "links": [
+    "mittens"
+   ],
+   "parent": "talk-phone-calls",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-vision",
+   "label": "THE NEW OPENCLAW",
+   "status": "idle",
+   "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
+   "statusLine": "live system · 8 pillars mapped",
+   "caption": "Mittens and North Star as one agent for a whole life and work:",
+   "stage": "active",
+   "embed": "pages/mittens-vision.html",
+   "visibility": "public",
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-name-in-every-session",
+     "label": "MITTENS NAME EVERYWHERE",
+     "status": "idle",
+     "why": "Every session with my agent starts with the same name, so it feels like one companion.",
+     "statusLine": "in progress",
+     "caption": "Every session with my agent starts with the same name, so it feels like one companion.",
+     "stage": "active",
+     "embed": "pages/mittens-name-in-every-session.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-proactive",
+   "label": "MITTENS SPEAKS FIRST",
+   "status": "idle",
+   "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
+   "statusLine": "live · planning ahead next",
+   "caption": "Mittens may speak first:",
+   "stage": "active",
+   "embed": "pages/mittens-proactive.html",
+   "visibility": "public",
+   "links": [
+    "proactive-rules"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "shopping-list",
+   "label": "SHOPPING LIST",
+   "status": "idle",
+   "why": "One list for groceries, household things and hardware, reminded at the right moment: leaving, heading home, walking into the store.",
+   "statusLine": "live",
+   "caption": "One list for groceries, household things and hardware, reminded at the right moment:",
+   "stage": "active",
+   "embed": "pages/shopping-list.html",
+   "visibility": "public",
+   "links": [
+    "robot-skin"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "scheduling-screen-like-messages-and",
+   "label": "SCHEDULING SCREEN",
+   "status": "idle",
+   "why": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
+   "statusLine": "in progress",
+   "caption": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
+   "stage": "active",
+   "embed": "pages/scheduling-screen-like-messages-and.html",
+   "visibility": "public",
+   "links": [
+    "mittens-daily"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-chat-threads",
+   "label": "CHAT THREADS",
+   "status": "idle",
+   "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
+   "statusLine": "built · more events into threads",
+   "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
+   "stage": "active",
+   "embed": "pages/mittens-chat-threads.html",
+   "visibility": "public",
+   "links": [
+    "mittens-app",
+    "thread-architecture"
+   ],
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [
+    {
+     "id": "chat-cards-close-button-on",
+     "label": "CARD CLOSE BUTTON",
+     "status": "idle",
+     "why": "Every card in my agent's chat now has a close button, so I can clear them fast.",
+     "statusLine": "in progress",
+     "caption": "Every card in my agent's chat now has a close button, so I can clear them fast.",
+     "stage": "active",
+     "embed": "pages/chat-cards-close-button-on.html",
+     "visibility": "public",
+     "links": [
+      "mittens-chat-threads",
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-app",
+   "label": "MITTENS APP",
+   "status": "idle",
+   "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
+   "statusLine": "new layout built · smarter reminders next",
+   "caption": "The assistant on the phone:",
+   "stage": "active",
+   "embed": "pages/mittens-app.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [
+    {
+     "id": "music-playback",
+     "label": "MUSIC PLAYBACK",
+     "status": "idle",
+     "why": "My agent can play music through the app and my glasses.",
+     "statusLine": "in progress",
+     "caption": "My agent can play music through the app and my glasses.",
+     "stage": "active",
+     "embed": "pages/music-playback.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app",
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "music",
+     "label": "MUSIC",
+     "status": "done",
+     "why": "I can ask Mittens to play music, and it plays through the app and glasses.",
+     "statusLine": "built · done",
+     "caption": "I can ask Mittens to play music, and it plays through the app and glasses.",
+     "stage": "done",
+     "embed": "pages/music.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "today-page-north-star-icon",
+     "label": "TODAY PAGE ICON",
+     "status": "idle",
+     "why": "A North Star icon on the app's today screen, so the map is one tap away.",
+     "statusLine": "in progress",
+     "caption": "A North Star icon on the app's today screen, so the map is one tap away.",
+     "stage": "active",
+     "embed": "pages/today-page-north-star-icon.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "case study"
+  },
+  {
+   "id": "mittens-architecture",
+   "label": "MITTENS ARCHITECTURE",
+   "status": "idle",
+   "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
+   "statusLine": "migration underway · first steps live",
+   "caption": "Personal data moves off the shared cloud backend onto a small home server:",
+   "stage": "active",
+   "embed": "pages/mittens-architecture.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "wake-report",
+   "label": "WAKE REPORT",
+   "status": "idle",
+   "why": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
+   "statusLine": "built · morning audio report in use",
+   "caption": "On waking, every ask from last evening with its status, so nothing I said is lost overnight.",
+   "stage": "active",
+   "embed": "pages/wake-report.html",
+   "visibility": "public",
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "mittens-scenario-logic",
