@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T01:08:01.565Z",
+ "generatedAt": "2026-10-28T01:28:51.985Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -559,7 +559,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "working",
+   "status": "idle",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -2868,7 +2868,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -2885,7 +2885,7 @@
     {
      "id": "mittens-podcast",
      "label": "MITTENS PODCAST",
-     "status": "idle",
+     "status": "working",
      "why": "A podcast made just for me that I can pause to ask questions or practice speaking. A French sound check runs on my own machine and points out my pronunciation mistakes.",
      "statusLine": "built · new episode nightly",
      "caption": "A podcast made just for me that I can pause to ask questions or practice speaking.",
