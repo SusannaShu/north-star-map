@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T11:12:57.165Z",
+ "generatedAt": "2026-10-28T11:27:28.629Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -625,7 +625,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -731,7 +731,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -3955,7 +3955,7 @@
   {
    "id": "mittens-chat-threads",
    "label": "CHAT THREADS",
-   "status": "working",
+   "status": "idle",
    "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
    "statusLine": "built · more events into threads",
    "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -4187,7 +4187,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
