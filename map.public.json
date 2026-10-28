@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T03:31:21.396Z",
+ "generatedAt": "2026-10-28T03:42:07.519Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2167,7 +2167,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "working",
+   "status": "idle",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
