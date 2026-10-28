@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T14:22:46.540Z",
+ "generatedAt": "2026-10-28T14:28:39.271Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1265,7 +1265,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -3428,6 +3428,8 @@
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "links": [
@@ -3491,7 +3493,7 @@
   {
    "id": "portfolio-landing",
    "label": "LANDING",
-   "status": "idle",
+   "status": "working",
    "why": "The landing page scenes: a night hero, a shooting star, how I work, and an ending in the Milky Way.",
    "statusLine": "edited this week",
    "caption": "The landing page scenes:",
@@ -3517,7 +3519,7 @@
     {
      "id": "portfolio-night-mode",
      "label": "NIGHT MODE",
-     "status": "idle",
+     "status": "working",
      "why": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
      "statusLine": "prototype",
      "caption": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
