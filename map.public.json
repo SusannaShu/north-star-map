@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T16:07:10.661Z",
+ "generatedAt": "2026-10-28T16:20:35.981Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -3131,7 +3131,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3195,7 +3195,7 @@
     {
      "id": "watchdog",
      "label": "WATCHDOG",
-     "status": "idle",
+     "status": "working",
      "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
      "statusLine": "live",
      "caption": "Nothing fails silently:",
@@ -3943,7 +3943,7 @@
   {
    "id": "mittens-chat-threads",
    "label": "CHAT THREADS",
-   "status": "working",
+   "status": "idle",
    "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
    "statusLine": "built · more events into threads",
    "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
