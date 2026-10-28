@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T14:28:39.271Z",
+ "generatedAt": "2026-10-28T14:38:42.448Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -625,7 +625,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -1265,10 +1265,12 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/portfolio.html",
    "visibility": "public",
    "parked": false,
@@ -1322,7 +1324,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3129,7 +3131,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3493,7 +3495,7 @@
   {
    "id": "portfolio-landing",
    "label": "LANDING",
-   "status": "working",
+   "status": "idle",
    "why": "The landing page scenes: a night hero, a shooting star, how I work, and an ending in the Milky Way.",
    "statusLine": "edited this week",
    "caption": "The landing page scenes:",
@@ -3519,7 +3521,7 @@
     {
      "id": "portfolio-night-mode",
      "label": "NIGHT MODE",
-     "status": "working",
+     "status": "idle",
      "why": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
      "statusLine": "prototype",
      "caption": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
@@ -4055,7 +4057,7 @@
   {
    "id": "mittens-architecture",
    "label": "MITTENS ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
    "statusLine": "migration underway · first steps live",
    "caption": "Personal data moves off the shared cloud backend onto a small home server:",
