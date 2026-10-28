@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T23:15:21.228Z",
+ "generatedAt": "2026-10-28T23:26:17.819Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -843,7 +843,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "working",
+   "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -878,7 +878,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "working",
+   "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -2062,7 +2062,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2169,7 +2169,7 @@
     {
      "id": "are-you-just-stupider-on",
      "label": "TEST THREAD",
-     "status": "working",
+     "status": "done",
      "why": "A test run briefly made this thread dot. It was merged back into its parent.",
      "statusLine": "merged · test leftover",
      "caption": "A test run briefly made this thread dot.",
