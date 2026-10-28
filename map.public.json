@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T01:33:06.815Z",
+ "generatedAt": "2026-10-28T01:50:21.455Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -559,7 +559,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
