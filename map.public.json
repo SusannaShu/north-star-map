@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T05:41:53.535Z",
+ "generatedAt": "2026-10-28T06:42:31.003Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -287,7 +287,7 @@
      "label": "VIRAL MACHINE",
      "status": "idle",
      "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
-     "statusLine": "making posts from trend research",
+     "statusLine": "pipeline built · drafts, nothing posted",
      "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
      "stage": "active",
      "embed": "pages/viral-machine.html",
@@ -355,7 +355,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
-     "statusLine": "mapped from the code",
+     "statusLine": "four coded parts mapped",
      "caption": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
      "stage": "active",
      "embed": "pages/code-mittens.html",
@@ -801,6 +801,38 @@
      "embed": "pages/start-without-wearables.html",
      "visibility": "public",
      "links": [
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pendant-brand-moodboard",
+     "label": "PENDANT MOODBOARD",
+     "status": "idle",
+     "why": "I'm collecting the look and feel for the pendant's brand before I design it.",
+     "statusLine": "collecting references",
+     "caption": "I'm collecting the look and feel for the pendant's brand before I design it.",
+     "stage": "active",
+     "embed": "pages/pendant-brand-moodboard.html",
+     "visibility": "public",
+     "links": [
+      "pendant",
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pendant-brand-direction",
+     "label": "PENDANT BRAND DIRECTION",
+     "status": "idle",
+     "why": "Turning the moodboard into a clear brand direction for the pendant.",
+     "statusLine": "shaping the direction",
+     "caption": "Turning the moodboard into a clear brand direction for the pendant.",
+     "stage": "active",
+     "embed": "pages/pendant-brand-direction.html",
+     "visibility": "public",
+     "links": [
+      "pendant-brand-moodboard",
       "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1490,6 +1522,22 @@
       "mittens-digital"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "remind-me-cards-after-lost",
+     "label": "REMIND-ME CARDS",
+     "status": "idle",
+     "why": "When a quick request gets lost, my agent now turns it into a reminder card so it doesn't slip again.",
+     "statusLine": "being built",
+     "caption": "When a quick request gets lost, my agent now turns it into a reminder card so it doesn't slip again.",
+     "stage": "active",
+     "embed": "pages/remind-me-cards-after-lost.html",
+     "visibility": "public",
+     "links": [
+      "triggers",
+      "man-rules"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1626,6 +1674,21 @@
      "visibility": "public",
      "links": [
       "triage",
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "bug-voice-tools-unknown-area",
+     "label": "VOICE ROUTING BUG",
+     "status": "idle",
+     "why": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
+     "statusLine": "fixing",
+     "caption": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
+     "stage": "active",
+     "embed": "pages/bug-voice-tools-unknown-area.html",
+     "visibility": "public",
+     "links": [
       "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1940,6 +2003,21 @@
       "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "shared-fetchable-agent-context",
+     "label": "SHARED AGENT CONTEXT",
+     "status": "idle",
+     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "statusLine": "designing",
+     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "stage": "active",
+     "embed": "pages/shared-fetchable-agent-context.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -2160,6 +2238,111 @@
       "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch-2",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main episode watch.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main episode watch.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch-2.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch-3",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main episode watch.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main episode watch.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch-3.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch-4",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main episode watch.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main episode watch.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch-4.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch-5",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main episode watch.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main episode watch.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch-5.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch-6",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main episode watch.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main episode watch.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch-6.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch-7",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main episode watch.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main episode watch.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch-7.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "you-mean-meeting-mode-2",
+     "label": "MEETING MODE",
+     "status": "idle",
+     "why": "A duplicate that was folded into the main meeting mode thread.",
+     "statusLine": "merged",
+     "caption": "A duplicate that was folded into the main meeting mode thread.",
+     "stage": "done",
+     "embed": "pages/you-mean-meeting-mode-2.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -2214,7 +2397,7 @@
      "label": "SMALL LOCAL MODELS",
      "status": "done",
      "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "statusLine": "benchmarked · flagger idea next",
+     "statusLine": "benchmarked · triage moved to larger model",
      "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
      "stage": "done",
      "embed": "pages/small-models.html",
@@ -2254,6 +2437,22 @@
      "links": [
       "omi",
       "mittens-daily"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-desktop-panels",
+     "label": "DESKTOP PANELS",
+     "status": "idle",
+     "why": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
+     "statusLine": "being built",
+     "caption": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
+     "stage": "active",
+     "embed": "pages/mittens-desktop-panels.html",
+     "visibility": "public",
+     "links": [
+      "mittens-desktop",
+      "mittens-knows"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -2319,6 +2518,22 @@
      "stage": "active",
      "embed": "pages/neural-band-cursor.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mini-app-navigation",
+     "label": "GLASSES APP NAVIGATION",
+     "status": "idle",
+     "why": "Making it easy to move around the small app on the smart glasses.",
+     "statusLine": "being built",
+     "caption": "Making it easy to move around the small app on the smart glasses.",
+     "stage": "active",
+     "embed": "pages/mini-app-navigation.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "smart-glasses"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2550,6 +2765,52 @@
      "visibility": "public",
      "links": [
       "howto-read-to-me"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "app-zoom-waits-install-data",
+     "label": "APP ZOOM + DATA PLAN",
+     "status": "idle",
+     "why": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
+     "statusLine": "waiting on install",
+     "caption": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
+     "stage": "active",
+     "embed": "pages/app-zoom-waits-install-data.html",
+     "visibility": "public",
+     "links": [
+      "read-to-me",
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "atahualpa",
+     "label": "ATAHUALPA",
+     "status": "idle",
+     "why": "A history learning episode my agent made for me.",
+     "statusLine": "episode made",
+     "caption": "A history learning episode my agent made for me.",
+     "stage": "active",
+     "embed": "pages/atahualpa.html",
+     "visibility": "public",
+     "links": [
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch",
+     "label": "EPISODE WATCH",
+     "status": "idle",
+     "why": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
+     "statusLine": "live · daily bundle",
+     "caption": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
+     "stage": "active",
+     "embed": "pages/podcast-youtube-episode-watch.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3244,11 +3505,238 @@
    "embedCaption": "case study"
   },
   {
+   "id": "portfolio-landing",
+   "label": "LANDING",
+   "status": "idle",
+   "why": "The landing page scenes: a night hero, a shooting star, how I work, and an ending in the Milky Way.",
+   "statusLine": "edited this week",
+   "caption": "The landing page scenes:",
+   "stage": "active",
+   "embed": "pages/portfolio-landing.html",
+   "visibility": "public",
+   "parent": "portfolio",
+   "parked": false,
+   "children": [
+    {
+     "id": "shooting-star",
+     "label": "SHOOTING STAR",
+     "status": "planned",
+     "why": "The star comes out of the desk screen: the map you see is live.",
+     "statusLine": "planned · being animated",
+     "caption": "The star comes out of the desk screen:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "intro.html?moment=star",
+     "visibility": "public",
+     "embedCaption": "the landing story"
+    },
+    {
+     "id": "portfolio-night-mode",
+     "label": "NIGHT MODE",
+     "status": "idle",
+     "why": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
+     "statusLine": "prototype",
+     "caption": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/portfolio-night-mode.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-milkyway",
+     "label": "LANDING END: MILKY WAY",
+     "status": "idle",
+     "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
+     "statusLine": "options ready · waiting on my pick",
+     "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
+     "stage": "active",
+     "embed": "pages/portfolio-milkyway.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-landing-talk",
+     "label": "LANDING: HOW I WORK",
+     "status": "idle",
+     "why": "The landing shows how I work: I talk while wearing my devices, my words travel to the computer at home and light up a dot on my map. It also explains in my own voice why I build soft robots.",
+     "statusLine": "draft · waiting to ship",
+     "caption": "The landing shows how I work:",
+     "stage": "active",
+     "embed": "pages/portfolio-landing-talk.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "portfolio-site",
+   "label": "SITE + MEDIA",
+   "status": "idle",
+   "why": "How my portfolio site is built and served, including media storage and previews.",
+   "statusLine": "edited this week",
+   "caption": "How my portfolio site is built and served, including media storage and previews.",
+   "stage": "active",
+   "embed": "pages/portfolio-site.html",
+   "visibility": "public",
+   "parent": "portfolio",
+   "parked": false,
+   "children": [
+    {
+     "id": "stack-audit",
+     "label": "STACK AUDIT",
+     "status": "idle",
+     "why": "Every technical claim on the case studies checked against the code: 106 claims -- 57 proven, 29 partial, 20 corrected.",
+     "statusLine": "done",
+     "caption": "Every technical claim on the case studies checked against the code:",
+     "stage": "active",
+     "embed": "pages/stack-audit.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-media-on-cloudflare-r2",
+     "label": "PORTFOLIO MEDIA HOSTING",
+     "status": "idle",
+     "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
+     "statusLine": "moving over",
+     "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
+     "stage": "active",
+     "embed": "pages/portfolio-media-on-cloudflare-r2.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "dev-hub-launcher-portfolio-preview",
+     "label": "PORTFOLIO PREVIEW LAUNCHER",
+     "status": "idle",
+     "why": "My dev hub can now launch a live preview of my portfolio.",
+     "statusLine": "in progress",
+     "caption": "My dev hub can now launch a live preview of my portfolio.",
+     "stage": "active",
+     "embed": "pages/dev-hub-launcher-portfolio-preview.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "learn-episodes",
+   "label": "EPISODES",
+   "status": "idle",
+   "why": "Every learning episode my agent made for me, one dot each.",
+   "statusLine": "growing",
+   "caption": "Every learning episode my agent made for me, one dot each.",
+   "stage": "active",
+   "embed": "pages/learn-episodes.html",
+   "visibility": "public",
+   "parent": "learn-with-mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "learn-ep-french-1",
+     "label": "FRENCH EPISODE ONE",
+     "status": "idle",
+     "why": "A short French lesson built from sentences about my own day. Each one is read at normal speed, then slowly, with a gap for me to repeat it.",
+     "statusLine": "ready",
+     "caption": "A short French lesson built from sentences about my own day.",
+     "stage": "done",
+     "embed": "pages/learn-ep-french-1.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-ep-linear-algebra-1",
+     "label": "LINEAR ALGEBRA ONE",
+     "status": "idle",
+     "why": "A first episode on vectors: adding them, scaling them, and the dot product as a measure of how alike two things are.",
+     "statusLine": "ready",
+     "caption": "A first episode on vectors:",
+     "stage": "done",
+     "embed": "pages/learn-ep-linear-algebra-1.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-ep-sheyou-strategy",
+     "label": "STRATEGY EPISODE",
+     "status": "idle",
+     "why": "An episode on owning the work and the context around it, who pays, and how to market try-on.",
+     "statusLine": "ready",
+     "caption": "An episode on owning the work and the context around it, who pays, and how to market try-on.",
+     "stage": "done",
+     "embed": "pages/learn-ep-sheyou-strategy.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-ep-sheyou-ledger",
+     "label": "LEDGER EPISODE",
+     "status": "idle",
+     "why": "An episode comparing signed records, anchored ledgers and blockchains: what has held up and what a design license can actually promise.",
+     "statusLine": "ready",
+     "caption": "An episode comparing signed records, anchored ledgers and blockchains:",
+     "stage": "done",
+     "embed": "pages/learn-ep-sheyou-ledger.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-ep-business-strategy",
+     "label": "BUSINESS EPISODE",
+     "status": "idle",
+     "why": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
+     "statusLine": "ready",
+     "caption": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
+     "stage": "done",
+     "embed": "pages/learn-ep-business-strategy.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-ep-content-attention",
+     "label": "WHO GETS ATTENTION",
+     "status": "done",
+     "why": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
+     "statusLine": "episode done",
+     "caption": "An episode on who holds attention in short video and why, and what my first cut got wrong.",
+     "stage": "done",
+     "embed": "pages/learn-ep-content-attention.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "talk-short-chats",
+   "label": "SHORT CHATS",
+   "status": "idle",
+   "why": "One-off chats that don't belong to a bigger topic yet, each keeping its own thread.",
+   "statusLine": "edited this week",
+   "caption": "One-off chats that don't belong to a bigger topic yet, each keeping its own thread.",
+   "stage": "active",
+   "embed": "pages/talk-short-chats.html",
+   "visibility": "public",
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "action-tree",
    "label": "ACTION TREE",
    "status": "idle",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
-   "statusLine": "live · stale items repaired nightly",
+   "statusLine": "live · stale items checked daily",
    "caption": "The one source of truth for what is open:",
    "stage": "active",
    "embed": "pages/action-tree.html",
@@ -3259,7 +3747,24 @@
    ],
    "parent": "northstar",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "action-tree-mittens-decides-small",
+     "label": "AGENT DECIDES SMALL CARDS",
+     "status": "idle",
+     "why": "My agent now handles small decisions on its own so only the bigger ones come to me.",
+     "statusLine": "being built",
+     "caption": "My agent now handles small decisions on its own so only the bigger ones come to me.",
+     "stage": "active",
+     "embed": "pages/action-tree-mittens-decides-small.html",
+     "visibility": "public",
+     "links": [
+      "action-tree",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3391,7 +3896,23 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "question-watcher-works-answer-trim",
+     "label": "QUESTION WATCHER",
+     "status": "idle",
+     "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
+     "statusLine": "works · trim awaits approval",
+     "caption": "My agent notices open questions and answers them first.",
+     "stage": "active",
+     "embed": "pages/question-watcher-works-answer-trim.html",
+     "visibility": "public",
+     "links": [
+      "mittens-daily"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3427,7 +3948,24 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "bot-detection-bot-like-a",
+     "label": "BOT DETECTION",
+     "status": "idle",
+     "why": "My agent screens incoming requests and flags ones that look like they came from a bot.",
+     "statusLine": "exploring",
+     "caption": "My agent screens incoming requests and flags ones that look like they came from a bot.",
+     "stage": "active",
+     "embed": "pages/bot-detection-bot-like-a.html",
+     "visibility": "public",
+     "links": [
+      "scheduling-screen-like-messages-and",
+      "mittens-daily"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3563,7 +4101,7 @@
    "label": "SCENARIOS",
    "status": "idle",
    "why": "Every scenario in Mittens' logic is a dot showing its prompt, gates, tools and what it made. The dots are built from one shared registry, so the map cannot drift away from the code.",
-   "statusLine": "live · rebuilt every map build",
+   "statusLine": "live · new switches added",
    "caption": "Every scenario in Mittens' logic is a dot showing its prompt, gates, tools and what it made.",
    "stage": "active",
    "embed": "pages/mittens-scenario-logic.html",
