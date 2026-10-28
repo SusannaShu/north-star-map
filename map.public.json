@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-28T02:34:07.367Z",
+ "generatedAt": "2026-10-28T02:47:10.487Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -731,7 +731,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1982,7 +1982,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2031,7 +2031,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "idle",
+     "status": "working",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -3646,7 +3646,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
