@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-29T19:42:06.438Z",
+ "generatedAt": "2026-10-29T19:59:57.124Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,7 +341,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · in use this week",
    "caption": "All my bots, digital and physical:",
@@ -2425,24 +2425,7 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [
-    {
-     "id": "mittens-desktop",
-     "label": "MITTENS ON DESKTOP",
-     "status": "idle",
-     "why": "A watcher on the laptop turns what I am working on into honest calendar blocks. The screen picture is deleted at once; only a one-line summary stays.",
-     "statusLine": "v1 built · break nudges live",
-     "caption": "A watcher on the laptop turns what I am working on into honest calendar blocks.",
-     "stage": "active",
-     "embed": "pages/mittens-desktop.html",
-     "visibility": "public",
-     "links": [
-      "omi",
-      "mittens-daily"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4101,6 +4084,25 @@
     "mittens-daily"
    ],
    "parent": "mittens-proactive",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-desktop",
+   "label": "MITTENS ON DESKTOP",
+   "status": "idle",
+   "why": "A watcher on the laptop turns what I am working on into honest calendar blocks. The screen picture is deleted at once; only a one-line summary stays.",
+   "statusLine": "v1 built · break nudges live",
+   "caption": "A watcher on the laptop turns what I am working on into honest calendar blocks.",
+   "stage": "active",
+   "embed": "pages/mittens-desktop.html",
+   "visibility": "public",
+   "links": [
+    "omi",
+    "mittens-daily"
+   ],
+   "parent": "mittens-knows",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
