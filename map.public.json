@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-29T11:15:39.495Z",
+ "generatedAt": "2026-10-29T13:16:25.098Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -184,7 +184,7 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
