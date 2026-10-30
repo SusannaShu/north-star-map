@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T23:24:46.343Z",
+ "generatedAt": "2026-10-30T23:29:24.787Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -475,7 +475,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2271,7 +2271,7 @@
     {
      "id": "left-to-do",
      "label": "LEFT TO DO",
-     "status": "working",
+     "status": "idle",
      "why": "This is a running look at what still remains to be finished.",
      "statusLine": "in progress",
      "caption": "This is a running look at what still remains to be finished.",
@@ -3999,7 +3999,7 @@
   {
    "id": "mittens-proactive",
    "label": "MITTENS SPEAKS FIRST",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
    "statusLine": "live · planning ahead next",
    "caption": "Mittens may speak first:",
@@ -4295,7 +4295,7 @@
   {
    "id": "question-watcher-works-answer-trim",
    "label": "QUESTION WATCHER",
-   "status": "working",
+   "status": "idle",
    "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
    "statusLine": "works · trim awaits approval",
    "caption": "My agent notices open questions and answers them first.",
