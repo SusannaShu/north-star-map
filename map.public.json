@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T18:29:39.147Z",
+ "generatedAt": "2026-10-30T18:40:28.490Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -199,7 +199,7 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1268,7 +1268,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1986,7 +1986,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2018,7 +2018,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "idle",
+     "status": "working",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -3040,7 +3040,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3104,7 +3104,7 @@
     {
      "id": "watchdog",
      "label": "WATCHDOG",
-     "status": "idle",
+     "status": "working",
      "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
      "statusLine": "live",
      "caption": "Nothing fails silently:",
