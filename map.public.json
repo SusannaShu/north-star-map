@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T14:13:53.806Z",
+ "generatedAt": "2026-10-30T14:20:49.537Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -199,7 +199,7 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
@@ -631,7 +631,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4214,7 +4214,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -4267,21 +4267,6 @@
      "visibility": "public",
      "links": [
       "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "open-button-crash-fix",
-     "label": "OPEN BUTTON CRASH FIX",
-     "status": "idle",
-     "why": "I am fixing a crash in the app that happens around the open button.",
-     "statusLine": "in progress",
-     "caption": "I am fixing a crash in the app that happens around the open button.",
-     "stage": "active",
-     "embed": "pages/open-button-crash-fix.html",
-     "visibility": "public",
-     "links": [
-      "mittens-app"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -4658,6 +4643,24 @@
    "embed": "pages/brand-style.html",
    "visibility": "public",
    "parent": "daily-content",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "open-button-crash-fix",
+   "label": "OPEN BUTTON CRASH FIX",
+   "status": "idle",
+   "why": "I am fixing a crash in the app that happens around the open button.",
+   "statusLine": "in progress",
+   "caption": "I am fixing a crash in the app that happens around the open button.",
+   "stage": "active",
+   "embed": "pages/open-button-crash-fix.html",
+   "visibility": "public",
+   "links": [
+    "mittens-app"
+   ],
+   "parent": "mittens-app",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
