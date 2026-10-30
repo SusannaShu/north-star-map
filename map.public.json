@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-29T23:53:03.338Z",
+ "generatedAt": "2026-10-30T00:00:38.280Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -193,18 +193,6 @@
    "visibility": "public",
    "parked": false,
    "children": [
-    {
-     "id": "susu-daily",
-     "label": "DAILY FREE LIST",
-     "status": "idle",
-     "why": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post. Nothing goes out until I approve it.",
-     "statusLine": "built · posts wait for accounts",
-     "caption": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post.",
-     "stage": "active",
-     "embed": "pages/susu-daily.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "susu-map-pin-accuracy",
      "label": "MAP PIN ACCURACY",
@@ -488,18 +476,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "brand-style",
-     "label": "BRAND STYLE",
-     "status": "idle",
-     "why": "I made a style guide from my portfolio so every generated scene looks like the rest of my work. Each scene uses it as the reference.",
-     "statusLine": "built · used on every scene",
-     "caption": "I made a style guide from my portfolio so every generated scene looks like the rest of my work.",
-     "stage": "active",
-     "embed": "pages/brand-style.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-icon",
      "label": "MITTENS ICON",
      "status": "idle",
@@ -651,23 +627,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "thread-architecture",
-     "label": "THREAD ARCHITECTURE",
-     "status": "idle",
-     "why": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply. One panel shows my threads and the agents working on them.",
-     "statusLine": "live · every write double-checked",
-     "caption": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply.",
-     "stage": "active",
-     "embed": "pages/thread-architecture.html",
-     "visibility": "public",
-     "links": [
-      "mittens-chat-threads",
-      "brain-architecture",
-      "work-in-threads"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-ui-parity",
      "label": "I CAN DO WHAT MITTENS DOES",
      "status": "idle",
@@ -746,19 +705,6 @@
    "parent": "mittens",
    "parked": false,
    "children": [
-    {
-     "id": "mittens-speaker",
-     "label": "SPEAKER + MIC",
-     "status": "planned",
-     "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
-     "statusLine": "plan · not built yet",
-     "caption": "Mittens with a speaker and a microphone:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/mittens-speaker.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "guardian-angel",
      "label": "GUARDIAN ANGEL",
@@ -1276,19 +1222,6 @@
    "parked": false,
    "children": [
     {
-     "id": "portfolio-chapters",
-     "label": "SCROLL CHAPTERS",
-     "status": "idle",
-     "why": "As visitors scroll my portfolio, they move through three chapters: the assistant handling a sample day, the soft robot responding to touch, and the project map playing back over time.",
-     "statusLine": "preview · phone layout done",
-     "caption": "As visitors scroll my portfolio, they move through three chapters:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/portfolio-chapters.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "portfolio-2",
      "label": "PORTFOLIO",
      "status": "done",
@@ -1364,22 +1297,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "code-architecture-tree",
-     "label": "CODE ARCHITECTURE TREE",
-     "status": "idle",
-     "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
-     "statusLine": "built · code tree on every coded dot",
-     "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
-     "stage": "active",
-     "embed": "pages/code-architecture-tree.html",
-     "visibility": "public",
-     "links": [
-      "northstar",
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "code-northstar",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -1409,18 +1326,6 @@
    "parent": "manual-map",
    "parked": false,
    "children": [
-    {
-     "id": "triggers",
-     "label": "TRIGGERS",
-     "status": "idle",
-     "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
-     "statusLine": "live · read by every lane",
-     "caption": "When Mittens speaks first, as one list any model reads:",
-     "stage": "active",
-     "embed": "pages/triggers.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "howto-start-here",
      "label": "START HERE",
@@ -1463,24 +1368,6 @@
      "links": [
       "devhub",
       "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "map-upkeep",
-     "label": "MAP UPKEEP",
-     "status": "idle",
-     "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-     "statusLine": "hourly tidy · placement audit run",
-     "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-     "stage": "active",
-     "embed": "pages/map-upkeep.html",
-     "visibility": "public",
-     "links": [
-      "context-graph",
-      "proactive-rules",
-      "howto-map-organizing",
-      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -2076,23 +1963,6 @@
    "parked": false,
    "children": [
     {
-     "id": "mittens-barge-in",
-     "label": "BARGE-IN",
-     "status": "idle",
-     "why": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
-     "statusLine": "live",
-     "caption": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
-     "stage": "active",
-     "embed": "pages/mittens-barge-in.html",
-     "visibility": "public",
-     "links": [
-      "glasses-mittens",
-      "mittens-app",
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
      "status": "idle",
@@ -2367,21 +2237,6 @@
    "parent": "ns-talk",
    "parked": false,
    "children": [
-    {
-     "id": "voice-clone",
-     "label": "MY VOICE",
-     "status": "idle",
-     "why": "I wanted to narrate my site and content without recording every line. So I made a voice that sounds like me, built on my own machine with open models I'm free to use.",
-     "statusLine": "live · Mittens speaks in it",
-     "caption": "I wanted to narrate my site and content without recording every line.",
-     "stage": "active",
-     "embed": "pages/voice-clone.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "aurora-market",
      "label": "WHO ELSE DOES THIS",
@@ -2734,22 +2589,6 @@
      "visibility": "public",
      "links": [
       "howto-read-to-me"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "app-zoom-waits-install-data",
-     "label": "APP ZOOM + DATA PLAN",
-     "status": "idle",
-     "why": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
-     "statusLine": "waiting on install",
-     "caption": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
-     "stage": "active",
-     "embed": "pages/app-zoom-waits-install-data.html",
-     "visibility": "public",
-     "links": [
-      "read-to-me",
-      "learn-with-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -3390,18 +3229,6 @@
      "embed": "intro.html",
      "visibility": "public",
      "embedCaption": "the landing story"
-    },
-    {
-     "id": "work-in-threads",
-     "label": "WORK IN THREADS",
-     "status": "idle",
-     "why": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
-     "statusLine": "case study",
-     "caption": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
-     "stage": "active",
-     "embed": "pages/work-in-threads.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3612,18 +3439,6 @@
    "parent": "learn-with-mittens",
    "parked": false,
    "children": [
-    {
-     "id": "learn-ep-french-1",
-     "label": "FRENCH EPISODE ONE",
-     "status": "idle",
-     "why": "A short French lesson built from sentences about my own day. Each one is read at normal speed, then slowly, with a gap for me to repeat it.",
-     "statusLine": "ready",
-     "caption": "A short French lesson built from sentences about my own day.",
-     "stage": "done",
-     "embed": "pages/learn-ep-french-1.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "learn-ep-linear-algebra-1",
      "label": "LINEAR ALGEBRA ONE",
@@ -4103,6 +3918,230 @@
     "mittens-daily"
    ],
    "parent": "mittens-knows",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-barge-in",
+   "label": "BARGE-IN",
+   "status": "idle",
+   "why": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
+   "statusLine": "live",
+   "caption": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
+   "stage": "active",
+   "embed": "pages/mittens-barge-in.html",
+   "visibility": "public",
+   "links": [
+    "glasses-mittens",
+    "mittens-app",
+    "ns-talk"
+   ],
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-speaker",
+   "label": "SPEAKER + MIC",
+   "status": "planned",
+   "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
+   "statusLine": "plan · not built yet",
+   "caption": "Mittens with a speaker and a microphone:",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/mittens-speaker.html",
+   "visibility": "public",
+   "parent": "wearables",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "triggers",
+   "label": "TRIGGERS",
+   "status": "idle",
+   "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
+   "statusLine": "live · read by every lane",
+   "caption": "When Mittens speaks first, as one list any model reads:",
+   "stage": "active",
+   "embed": "pages/triggers.html",
+   "visibility": "public",
+   "parent": "man-rules",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "app-zoom-waits-install-data",
+   "label": "APP ZOOM + DATA PLAN",
+   "status": "idle",
+   "why": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
+   "statusLine": "waiting on install",
+   "caption": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
+   "stage": "active",
+   "embed": "pages/app-zoom-waits-install-data.html",
+   "visibility": "public",
+   "links": [
+    "read-to-me",
+    "learn-with-mittens"
+   ],
+   "parent": "learn-with-mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "work-in-threads",
+   "label": "WORK IN THREADS",
+   "status": "idle",
+   "why": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
+   "statusLine": "case study",
+   "caption": "This case study shows how my assistant turns everything coming in into topic threads, with drafts and progress all in one place.",
+   "stage": "active",
+   "embed": "pages/work-in-threads.html",
+   "visibility": "public",
+   "parent": "ns-public",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "voice-clone",
+   "label": "MY VOICE",
+   "status": "idle",
+   "why": "I wanted to narrate my site and content without recording every line. So I made a voice that sounds like me, built on my own machine with open models I'm free to use.",
+   "statusLine": "live · Mittens speaks in it",
+   "caption": "I wanted to narrate my site and content without recording every line.",
+   "stage": "active",
+   "embed": "pages/voice-clone.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk"
+   ],
+   "parent": "aurora",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "learn-ep-french-1",
+   "label": "FRENCH EPISODE ONE",
+   "status": "idle",
+   "why": "A short French lesson built from sentences about my own day. Each one is read at normal speed, then slowly, with a gap for me to repeat it.",
+   "statusLine": "ready",
+   "caption": "A short French lesson built from sentences about my own day.",
+   "stage": "done",
+   "embed": "pages/learn-ep-french-1.html",
+   "visibility": "public",
+   "parent": "learn-episodes",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "susu-daily",
+   "label": "DAILY FREE LIST",
+   "status": "idle",
+   "why": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post. Nothing goes out until I approve it.",
+   "statusLine": "built · posts wait for accounts",
+   "caption": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post.",
+   "stage": "active",
+   "embed": "pages/susu-daily.html",
+   "visibility": "public",
+   "parent": "susu-map",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "portfolio-chapters",
+   "label": "SCROLL CHAPTERS",
+   "status": "idle",
+   "why": "As visitors scroll my portfolio, they move through three chapters: the assistant handling a sample day, the soft robot responding to touch, and the project map playing back over time.",
+   "statusLine": "preview · phone layout done",
+   "caption": "As visitors scroll my portfolio, they move through three chapters:",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/portfolio-chapters.html",
+   "visibility": "public",
+   "parent": "portfolio",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "map-upkeep",
+   "label": "MAP UPKEEP",
+   "status": "idle",
+   "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "statusLine": "hourly tidy · placement audit run",
+   "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "stage": "active",
+   "embed": "pages/map-upkeep.html",
+   "visibility": "public",
+   "links": [
+    "context-graph",
+    "proactive-rules",
+    "howto-map-organizing",
+    "northstar"
+   ],
+   "parent": "man-rules",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "thread-architecture",
+   "label": "THREAD ARCHITECTURE",
+   "status": "idle",
+   "why": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply. One panel shows my threads and the agents working on them.",
+   "statusLine": "live · every write double-checked",
+   "caption": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply.",
+   "stage": "active",
+   "embed": "pages/thread-architecture.html",
+   "visibility": "public",
+   "links": [
+    "mittens-chat-threads",
+    "brain-architecture",
+    "work-in-threads"
+   ],
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "code-architecture-tree",
+   "label": "CODE ARCHITECTURE TREE",
+   "status": "idle",
+   "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
+   "statusLine": "built · code tree on every coded dot",
+   "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
+   "stage": "active",
+   "embed": "pages/code-architecture-tree.html",
+   "visibility": "public",
+   "links": [
+    "northstar",
+    "action-tree"
+   ],
+   "parent": "northstar",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brand-style",
+   "label": "BRAND STYLE",
+   "status": "idle",
+   "why": "I made a style guide from my portfolio so every generated scene looks like the rest of my work. Each scene uses it as the reference.",
+   "statusLine": "built · used on every scene",
+   "caption": "I made a style guide from my portfolio so every generated scene looks like the rest of my work.",
+   "stage": "active",
+   "embed": "pages/brand-style.html",
+   "visibility": "public",
+   "parent": "daily-content",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
