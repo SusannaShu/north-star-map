@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T21:32:29.936Z",
+ "generatedAt": "2026-10-30T21:42:36.879Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
