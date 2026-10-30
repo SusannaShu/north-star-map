@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T22:44:14.657Z",
+ "generatedAt": "2026-10-30T22:54:09.838Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -392,7 +392,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
