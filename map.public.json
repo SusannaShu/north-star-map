@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T23:15:09.986Z",
+ "generatedAt": "2026-10-30T23:24:46.343Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -392,7 +392,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1986,7 +1986,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2271,7 +2271,7 @@
     {
      "id": "left-to-do",
      "label": "LEFT TO DO",
-     "status": "idle",
+     "status": "working",
      "why": "This is a running look at what still remains to be finished.",
      "statusLine": "in progress",
      "caption": "This is a running look at what still remains to be finished.",
@@ -2334,7 +2334,7 @@
   {
    "id": "mittens-knows",
    "label": "ALWAYS KNOWS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
    "statusLine": "live",
    "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
@@ -3999,7 +3999,7 @@
   {
    "id": "mittens-proactive",
    "label": "MITTENS SPEAKS FIRST",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens may speak first: a spoken brief on waking, a move after long sitting, a wind-down at night -- and work pushes wait until morning.",
    "statusLine": "live · planning ahead next",
    "caption": "Mittens may speak first:",
@@ -4295,7 +4295,7 @@
   {
    "id": "question-watcher-works-answer-trim",
    "label": "QUESTION WATCHER",
-   "status": "idle",
+   "status": "working",
    "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
    "statusLine": "works · trim awaits approval",
    "caption": "My agent notices open questions and answers them first.",
