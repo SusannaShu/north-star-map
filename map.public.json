@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T16:37:35.223Z",
+ "generatedAt": "2026-10-30T16:46:43.201Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -374,7 +374,7 @@
     {
      "id": "mittens-2",
      "label": "MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "This is the running conversation where I shape my assistant and how it works.",
      "statusLine": "in progress",
      "caption": "This is the running conversation where I shape my assistant and how it works.",
