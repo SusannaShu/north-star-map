@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T13:28:23.904Z",
+ "generatedAt": "2026-10-30T13:46:54.330Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -199,7 +199,7 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
