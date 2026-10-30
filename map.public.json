@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T05:53:45.578Z",
+ "generatedAt": "2026-10-30T06:45:21.751Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -45,11 +45,26 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "outreach-hub",
+     "label": "OUTREACH HUB",
+     "status": "idle",
+     "why": "This is one place for my outreach records and the automation around them.",
+     "statusLine": "in progress",
+     "caption": "This is one place for my outreach records and the automation around them.",
+     "stage": "active",
+     "embed": "pages/outreach-hub.html",
+     "visibility": "public",
+     "links": [
+      "outreach"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-outreach",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code, so the map always matches what is really built. It covers the outreach records and automation, the phone app and the outreach agent.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code, so the map always matches what is really built.",
      "stage": "active",
      "embed": "pages/code-outreach.html",
@@ -213,7 +228,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code: the web map, the phone app and the display.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code:",
      "stage": "active",
      "embed": "pages/code-susu-map.html",
@@ -275,7 +290,7 @@
      "label": "VIRAL MACHINE",
      "status": "idle",
      "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
-     "statusLine": "pipeline built · drafts, nothing posted",
+     "statusLine": "research under way · nothing posted",
      "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
      "stage": "active",
      "embed": "pages/viral-machine.html",
@@ -300,7 +315,7 @@
      "label": "AGENTIC MARKETING",
      "status": "idle",
      "why": "Research: how agent-run marketing goes wrong -- persona farms, undisclosed ads, fake engagement -- and the redesign: founder and brand accounts, labelled virtual models, paid creators, official APIs only.",
-     "statusLine": "research done · redesign next",
+     "statusLine": "research done · redesign needs my call",
      "caption": "Research:",
      "stage": "plan",
      "planned": true,
@@ -313,7 +328,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code: the content pipeline with its lanes, and the marketing phone app.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code:",
      "stage": "active",
      "embed": "pages/code-marketing.html",
@@ -331,7 +346,7 @@
    "label": "MITTENS",
    "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
-   "statusLine": "active · in use this week",
+   "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
    "stage": "active",
    "embed": "pages/mittens.html",
@@ -353,6 +368,21 @@
       "soft-robot",
       "omi",
       "pendant"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-2",
+     "label": "MITTENS",
+     "status": "idle",
+     "why": "This is the running conversation where I shape my assistant and how it works.",
+     "statusLine": "in progress",
+     "caption": "This is the running conversation where I shape my assistant and how it works.",
+     "stage": "active",
+     "embed": "pages/mittens-2.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -782,6 +812,21 @@
       "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "wearables-2",
+     "label": "WEARABLES",
+     "status": "idle",
+     "why": "This is where I work through the devices that give my assistant eyes and ears.",
+     "statusLine": "in progress",
+     "caption": "This is where I work through the devices that give my assistant eyes and ears.",
+     "stage": "active",
+     "embed": "pages/wearables-2.html",
+     "visibility": "public",
+     "links": [
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -904,7 +949,7 @@
      "label": "SKIN RESEARCH + DEMO",
      "status": "idle",
      "why": "Ten measurements turn the build into results: warmth with a 40 C cutoff, softness, actuation, touch accuracy, breath and entrainment, latency, power, noise, seal life, and a small ethics-reviewed study.",
-     "statusLine": "10 measurements mapped",
+     "statusLine": "measurements drafted · demo planned",
      "caption": "Ten measurements turn the build into results:",
      "stage": "plan",
      "planned": true,
@@ -948,6 +993,21 @@
       "muscle-papers",
       "biohybrid-muscle",
       "lab-access"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "robot-skin-2",
+     "label": "ROBOT SKIN",
+     "status": "idle",
+     "why": "This is the working thread for the soft skin I am building for my robot.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the soft skin I am building for my robot.",
+     "stage": "active",
+     "embed": "pages/robot-skin-2.html",
+     "visibility": "public",
+     "links": [
+      "robot-skin"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1094,7 +1154,7 @@
    "label": "DEV HUB",
    "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
-   "statusLine": "live",
+   "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "stage": "active",
    "embed": "pages/devhub.html",
@@ -1118,7 +1178,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code: the Dev Hub server, launcher and manual, and its phone app.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code:",
      "stage": "active",
      "embed": "pages/code-devhub.html",
@@ -1241,7 +1301,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code of my portfolio site.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code of my portfolio site.",
      "stage": "active",
      "embed": "pages/code-portfolio.html",
@@ -1293,6 +1353,33 @@
      "visibility": "public",
      "links": [
       "work-in-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "briefs-unsorted",
+     "label": "UNSORTED BRIEFS",
+     "status": "idle",
+     "why": "Every brief, plan and research page belongs on the map so I can find it. A page with no clear home waits here until it gets moved to the right dot.",
+     "statusLine": "live · sorted every night",
+     "caption": "Every brief, plan and research page belongs on the map so I can find it.",
+     "stage": "active",
+     "embed": "pages/briefs-unsorted.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "north-star-map",
+     "label": "NORTH STAR MAP",
+     "status": "idle",
+     "why": "This is the working thread for the map that holds my projects and agents.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the map that holds my projects and agents.",
+     "stage": "active",
+     "embed": "pages/north-star-map.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1576,6 +1663,21 @@
      "caption": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
      "stage": "active",
      "embed": "pages/bug-voice-tools-unknown-area.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "brain-architecture-2",
+     "label": "BRAIN ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "stage": "active",
+     "embed": "pages/brain-architecture-2.html",
      "visibility": "public",
      "links": [
       "brain-architecture"
@@ -2215,6 +2317,36 @@
       "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "talk-calls",
+     "label": "TALK & CALLS",
+     "status": "idle",
+     "why": "This is the working thread for speaking with my assistant by voice and by phone.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for speaking with my assistant by voice and by phone.",
+     "stage": "active",
+     "embed": "pages/talk-calls.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "left-to-do",
+     "label": "LEFT TO DO",
+     "status": "idle",
+     "why": "This is a running look at what still remains to be finished.",
+     "statusLine": "in progress",
+     "caption": "This is a running look at what still remains to be finished.",
+     "stage": "active",
+     "embed": "pages/left-to-do.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -2500,7 +2632,23 @@
    "visibility": "public",
    "parent": "watch-picks",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "watch-redesign-2",
+     "label": "WATCH REDESIGN",
+     "status": "idle",
+     "why": "This is the working thread for making my watch board worth reading.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for making my watch board worth reading.",
+     "stage": "active",
+     "embed": "pages/watch-redesign-2.html",
+     "visibility": "public",
+     "links": [
+      "watch-redesign"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -2520,7 +2668,23 @@
    ],
    "parent": "mittens-knows",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "situations",
+     "label": "SITUATIONS",
+     "status": "idle",
+     "why": "This is where I think through what the system should do in each situation it meets.",
+     "statusLine": "in progress",
+     "caption": "This is where I think through what the system should do in each situation it meets.",
+     "stage": "active",
+     "embed": "pages/situations.html",
+     "visibility": "public",
+     "links": [
+      "mittens-scenarios"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3007,7 +3171,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · fixes made overnight",
+     "statusLine": "live · reviews every night",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -3084,6 +3248,36 @@
      "stage": "active",
      "embed": "pages/mw-blind.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "nothing-ran-didn-t-hear",
+     "label": "LOST SPEECH FIX",
+     "status": "idle",
+     "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
+     "statusLine": "fixed",
+     "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
+     "stage": "done",
+     "embed": "pages/nothing-ran-didn-t-hear.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "phone-calls",
+     "label": "PHONE CALLS",
+     "status": "idle",
+     "why": "This is the working thread for talking with my assistant over a phone call.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for talking with my assistant over a phone call.",
+     "stage": "active",
+     "embed": "pages/phone-calls.html",
+     "visibility": "public",
+     "links": [
+      "talk-phone-calls"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -3184,7 +3378,38 @@
    "visibility": "public",
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "sichuanese-dialect-transcription",
+     "label": "DIALECT TRANSCRIPTION",
+     "status": "idle",
+     "why": "I am working on live transcription that can follow a regional dialect, not only the standard language.",
+     "statusLine": "in progress",
+     "caption": "I am working on live transcription that can follow a regional dialect, not only the standard language.",
+     "stage": "active",
+     "embed": "pages/sichuanese-dialect-transcription.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk-live-stt"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "live-transcription",
+     "label": "LIVE TRANSCRIPTION",
+     "status": "idle",
+     "why": "This is the working thread for turning speech into text as it happens.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for turning speech into text as it happens.",
+     "stage": "active",
+     "embed": "pages/live-transcription.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk-live-stt"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3229,6 +3454,21 @@
      "embed": "intro.html",
      "visibility": "public",
      "embedCaption": "the landing story"
+    },
+    {
+     "id": "why-are-questions-that-should",
+     "label": "QUESTION ROUTING",
+     "status": "idle",
+     "why": "Questions a worker can answer should go to a worker, not to me. Routing is much better, but the assistant still promises work and then forgets it.",
+     "statusLine": "improved · still unreliable",
+     "caption": "Questions a worker can answer should go to a worker, not to me.",
+     "stage": "active",
+     "embed": "pages/why-are-questions-that-should.html",
+     "visibility": "public",
+     "links": [
+      "ns-public"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3281,6 +3521,36 @@
      "links": [
       "sheyou",
       "designers"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "sheyou-report-sources",
+     "label": "SHEYOU REPORT SOURCES",
+     "status": "idle",
+     "why": "This is where I keep track of the sources behind a report on SHEYOU.",
+     "statusLine": "in progress",
+     "caption": "This is where I keep track of the sources behind a report on SHEYOU.",
+     "stage": "active",
+     "embed": "pages/sheyou-report-sources.html",
+     "visibility": "public",
+     "links": [
+      "sheyou"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "sheyou-code-architecture",
+     "label": "SHEYOU CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I look at how the SHEYOU code fits together.",
+     "statusLine": "in progress",
+     "caption": "This is where I look at how the SHEYOU code fits together.",
+     "stage": "active",
+     "embed": "pages/sheyou-code-architecture.html",
+     "visibility": "public",
+     "links": [
+      "sheyou"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -3363,6 +3633,21 @@
      "stage": "active",
      "embed": "pages/portfolio-landing-talk.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "landing",
+     "label": "LANDING",
+     "status": "idle",
+     "why": "This is the working thread for the landing page.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the landing page.",
+     "stage": "active",
+     "embed": "pages/landing.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-landing"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -3514,7 +3799,83 @@
    "visibility": "public",
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "it-looks-so-weird",
+     "label": "QUICK CHAT",
+     "status": "idle",
+     "why": "This was a short one-off chat with my assistant.",
+     "statusLine": "short chat",
+     "caption": "This was a short one-off chat with my assistant.",
+     "stage": "active",
+     "embed": "pages/it-looks-so-weird.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "finished-task-t2814",
+     "label": "FINISHED TASK CHAT",
+     "status": "idle",
+     "why": "This was a short chat about a task that had finished.",
+     "statusLine": "short chat",
+     "caption": "This was a short chat about a task that had finished.",
+     "stage": "active",
+     "embed": "pages/finished-task-t2814.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "task-t2234-2",
+     "label": "TASK CHAT",
+     "status": "idle",
+     "why": "This was a short chat about a single task.",
+     "statusLine": "short chat",
+     "caption": "This was a short chat about a single task.",
+     "stage": "active",
+     "embed": "pages/task-t2234-2.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "workflow-deck-and-app",
+     "label": "WORKFLOW DECK AND APP",
+     "status": "idle",
+     "why": "This was a short chat about a deck and an app for showing a workflow.",
+     "statusLine": "short chat",
+     "caption": "This was a short chat about a deck and an app for showing a workflow.",
+     "stage": "active",
+     "embed": "pages/workflow-deck-and-app.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "bro",
+     "label": "QUICK CHAT",
+     "status": "idle",
+     "why": "This was a very short one-off chat with my assistant.",
+     "statusLine": "short chat",
+     "caption": "This was a very short one-off chat with my assistant.",
+     "stage": "active",
+     "embed": "pages/bro.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3614,6 +3975,21 @@
       "portfolio"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-scenes",
+     "label": "MITTENS SCENES",
+     "status": "idle",
+     "why": "This is the working thread for the scenes that show Mittens in action.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the scenes that show Mittens in action.",
+     "stage": "active",
+     "embed": "pages/mittens-scenes.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-mittens-scenes"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3663,6 +4039,36 @@
       "mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "i-think-mittens-is-just",
+     "label": "MITTENS AND NORTH STAR",
+     "status": "idle",
+     "why": "Mittens is how I talk to the system, and North Star is where the work and the map live. I am rebuilding both around that split.",
+     "statusLine": "rebuilding · top priority",
+     "caption": "Mittens is how I talk to the system, and North Star is where the work and the map live.",
+     "stage": "active",
+     "embed": "pages/i-think-mittens-is-just.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-rules",
+     "label": "MITTENS RULES",
+     "status": "idle",
+     "why": "This is where I set the rules for how my assistant should act.",
+     "statusLine": "in progress",
+     "caption": "This is where I set the rules for how my assistant should act.",
+     "stage": "active",
+     "embed": "pages/mittens-rules.html",
+     "visibility": "public",
+     "links": [
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3682,7 +4088,23 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "mittens-speaks-first",
+     "label": "MITTENS SPEAKS FIRST",
+     "status": "idle",
+     "why": "My assistant should be able to start a conversation when it has something useful to say, not only reply.",
+     "statusLine": "in progress",
+     "caption": "My assistant should be able to start a conversation when it has something useful to say, not only reply.",
+     "stage": "active",
+     "embed": "pages/mittens-speaks-first.html",
+     "visibility": "public",
+     "links": [
+      "mittens-proactive"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3770,6 +4192,21 @@
       "mittens-digital"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "chat-threads",
+     "label": "CHAT THREADS",
+     "status": "idle",
+     "why": "This is the working thread for how conversations are kept separate and tied to the map.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for how conversations are kept separate and tied to the map.",
+     "stage": "active",
+     "embed": "pages/chat-threads.html",
+     "visibility": "public",
+     "links": [
+      "mittens-chat-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3832,6 +4269,36 @@
       "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "open-button-crash-fix",
+     "label": "OPEN BUTTON CRASH FIX",
+     "status": "idle",
+     "why": "I am fixing a crash in the app that happens around the open button.",
+     "statusLine": "in progress",
+     "caption": "I am fixing a crash in the app that happens around the open button.",
+     "stage": "active",
+     "embed": "pages/open-button-crash-fix.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-app-2",
+     "label": "MITTENS APP",
+     "status": "idle",
+     "why": "This is the working thread for the phone app I use to talk with my assistant.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the phone app I use to talk with my assistant.",
+     "stage": "active",
+     "embed": "pages/mittens-app-2.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "case study"
@@ -3848,7 +4315,23 @@
    "visibility": "public",
    "parent": "mittens-digital",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "mittens-architecture-2",
+     "label": "MITTENS ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how the parts of my assistant fit together.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how the parts of my assistant fit together.",
+     "stage": "active",
+     "embed": "pages/mittens-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "mittens-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3863,7 +4346,23 @@
    "visibility": "public",
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "what-do-you-say-i",
+     "label": "OVERNIGHT TRUST",
+     "status": "idle",
+     "why": "I want to be able to count on the work done overnight and find it finished and correct.",
+     "statusLine": "in progress",
+     "caption": "I want to be able to count on the work done overnight and find it finished and correct.",
+     "stage": "active",
+     "embed": "pages/what-do-you-say-i.html",
+     "visibility": "public",
+     "links": [
+      "wake-report"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3900,7 +4399,24 @@
    ],
    "parent": "mittens-proactive",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "promised-hand-it-to-a",
+     "label": "PROMISE FOLLOW-THROUGH",
+     "status": "idle",
+     "why": "When my assistant says it handed work to a worker, that should really have happened. A watcher checks that promises are kept.",
+     "statusLine": "in progress",
+     "caption": "When my assistant says it handed work to a worker, that should really have happened.",
+     "stage": "active",
+     "embed": "pages/promised-hand-it-to-a.html",
+     "visibility": "public",
+     "links": [
+      "question-watcher-works-answer-trim",
+      "mittens-proactive"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4169,7 +4685,7 @@
      "label": "ROUTING TREE",
      "status": "idle",
      "why": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
-     "statusLine": "read from the code · no gaps",
+     "statusLine": "read from the code · gaps open",
      "caption": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
      "stage": "active",
      "embed": "pages/msl-routing.html",
@@ -4200,7 +4716,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This branch is mapped straight from the code of the closet phone app.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This branch is mapped straight from the code of the closet phone app.",
      "stage": "active",
      "embed": "pages/code-susu-closet.html",
