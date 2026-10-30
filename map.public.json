@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T18:23:17.152Z",
+ "generatedAt": "2026-10-30T18:29:39.147Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1222,10 +1222,12 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/portfolio.html",
    "visibility": "public",
    "parked": false,
