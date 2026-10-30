@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-30T16:06:17.006Z",
+ "generatedAt": "2026-10-30T16:11:05.824Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -749,23 +749,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "pendant-pre-sale",
-     "label": "PENDANT PRE-SALE",
-     "status": "idle",
-     "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
-     "statusLine": "thinking it through",
-     "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/pendant-pre-sale.html",
-     "visibility": "public",
-     "links": [
-      "wearables",
-      "pendant"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "start-without-wearables",
      "label": "START WITHOUT WEARABLES",
      "status": "idle",
@@ -777,38 +760,6 @@
      "embed": "pages/start-without-wearables.html",
      "visibility": "public",
      "links": [
-      "wearables"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "pendant-brand-moodboard",
-     "label": "PENDANT MOODBOARD",
-     "status": "idle",
-     "why": "I'm collecting the look and feel for the pendant's brand before I design it.",
-     "statusLine": "collecting references",
-     "caption": "I'm collecting the look and feel for the pendant's brand before I design it.",
-     "stage": "active",
-     "embed": "pages/pendant-brand-moodboard.html",
-     "visibility": "public",
-     "links": [
-      "pendant",
-      "wearables"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "pendant-brand-direction",
-     "label": "PENDANT BRAND DIRECTION",
-     "status": "idle",
-     "why": "Turning the moodboard into a clear brand direction for the pendant.",
-     "statusLine": "shaping the direction",
-     "caption": "Turning the moodboard into a clear brand direction for the pendant.",
-     "stage": "active",
-     "embed": "pages/pendant-brand-direction.html",
-     "visibility": "public",
-     "links": [
-      "pendant-brand-moodboard",
       "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -1619,22 +1570,6 @@
      "visibility": "public",
      "links": [
       "context-architecture"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "triage",
-     "label": "TRIAGE",
-     "status": "idle",
-     "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
-     "statusLine": "built · watcher proposes, Mittens decides",
-     "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
-     "stage": "active",
-     "embed": "pages/triage.html",
-     "visibility": "public",
-     "links": [
-      "context-architecture",
-      "latest-wins"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -2704,18 +2639,6 @@
    "parent": "mittens",
    "parked": false,
    "children": [
-    {
-     "id": "mittens-podcast",
-     "label": "MITTENS PODCAST",
-     "status": "idle",
-     "why": "A podcast made just for me that I can pause to ask questions or practice speaking. A French sound check runs on my own machine and points out my pronunciation mistakes.",
-     "statusLine": "built · new episode nightly",
-     "caption": "A podcast made just for me that I can pause to ask questions or practice speaking.",
-     "stage": "active",
-     "embed": "pages/mittens-podcast.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "mittens-tutor",
      "label": "MITTENS TEACHES",
@@ -4666,6 +4589,124 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "pendant",
+   "label": "PENDANT",
+   "status": "idle",
+   "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
+   "statusLine": "three form designs · picking one",
+   "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
+   "stage": "active",
+   "images": [
+    "img/pendant-workbench.jpg",
+    "img/pendant-front.jpg"
+   ],
+   "embed": "pages/pendant.html",
+   "visibility": "public",
+   "parent": "wearables",
+   "parked": false,
+   "children": [
+    {
+     "id": "pendant-pre-sale",
+     "label": "PENDANT PRE-SALE",
+     "status": "idle",
+     "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
+     "statusLine": "thinking it through",
+     "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/pendant-pre-sale.html",
+     "visibility": "public",
+     "links": [
+      "wearables",
+      "pendant"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pendant-brand-moodboard",
+     "label": "PENDANT MOODBOARD",
+     "status": "idle",
+     "why": "I'm collecting the look and feel for the pendant's brand before I design it.",
+     "statusLine": "collecting references",
+     "caption": "I'm collecting the look and feel for the pendant's brand before I design it.",
+     "stage": "active",
+     "embed": "pages/pendant-brand-moodboard.html",
+     "visibility": "public",
+     "links": [
+      "pendant",
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pendant-brand-direction",
+     "label": "PENDANT BRAND DIRECTION",
+     "status": "idle",
+     "why": "Turning the moodboard into a clear brand direction for the pendant.",
+     "statusLine": "shaping the direction",
+     "caption": "Turning the moodboard into a clear brand direction for the pendant.",
+     "stage": "active",
+     "embed": "pages/pendant-brand-direction.html",
+     "visibility": "public",
+     "links": [
+      "pendant-brand-moodboard",
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-pendant",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "The pendant's firmware mapped from the code: camera capture and wireless transfer to the phone. An old copy still needs clearing out.",
+     "statusLine": "mapped · duplicate to clear",
+     "caption": "The pendant's firmware mapped from the code:",
+     "stage": "active",
+     "embed": "pages/code-pendant.html",
+     "visibility": "public",
+     "links": [
+      "pendant"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "triage",
+   "label": "TRIAGE",
+   "status": "idle",
+   "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
+   "statusLine": "built · watcher proposes, Mittens decides",
+   "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
+   "stage": "active",
+   "embed": "pages/triage.html",
+   "visibility": "public",
+   "links": [
+    "context-architecture",
+    "latest-wins"
+   ],
+   "parent": "brain-architecture",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-podcast",
+   "label": "MITTENS PODCAST",
+   "status": "idle",
+   "why": "A podcast made just for me that I can pause to ask questions or practice speaking. A French sound check runs on my own machine and points out my pronunciation mistakes.",
+   "statusLine": "built · new episode nightly",
+   "caption": "A podcast made just for me that I can pause to ask questions or practice speaking.",
+   "stage": "active",
+   "embed": "pages/mittens-podcast.html",
+   "visibility": "public",
+   "parent": "learn-with-mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-scenario-logic",
    "label": "SCENARIOS",
    "status": "idle",
@@ -4748,41 +4789,6 @@
    "parent": "wearables",
    "parked": false,
    "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "pendant",
-   "label": "PENDANT",
-   "status": "idle",
-   "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
-   "statusLine": "three form designs · picking one",
-   "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
-   "stage": "active",
-   "images": [
-    "img/pendant-workbench.jpg",
-    "img/pendant-front.jpg"
-   ],
-   "embed": "pages/pendant.html",
-   "visibility": "public",
-   "parent": "wearables",
-   "parked": false,
-   "children": [
-    {
-     "id": "code-pendant",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "The pendant's firmware mapped from the code: camera capture and wireless transfer to the phone. An old copy still needs clearing out.",
-     "statusLine": "mapped · duplicate to clear",
-     "caption": "The pendant's firmware mapped from the code:",
-     "stage": "active",
-     "embed": "pages/code-pendant.html",
-     "visibility": "public",
-     "links": [
-      "pendant"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
