@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T02:25:32.268Z",
+ "generatedAt": "2026-10-31T02:29:57.996Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1091,7 +1091,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2004,7 +2004,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "working",
+     "status": "idle",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
