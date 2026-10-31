@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T02:17:27.650Z",
+ "generatedAt": "2026-10-31T02:25:32.268Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1210,12 +1210,10 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/portfolio.html",
    "visibility": "public",
    "parked": false,
@@ -1256,7 +1254,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1310,7 +1308,7 @@
     {
      "id": "north-star-map",
      "label": "NORTH STAR MAP",
-     "status": "idle",
+     "status": "working",
      "why": "This is the working thread for the map that holds my projects and agents.",
      "statusLine": "in progress",
      "caption": "This is the working thread for the map that holds my projects and agents.",
