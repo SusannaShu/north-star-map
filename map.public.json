@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T04:47:38.409Z",
+ "generatedAt": "2026-10-31T04:53:34.366Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -158,7 +158,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -403,7 +403,7 @@
     {
      "id": "mittens-2",
      "label": "MITTENS",
-     "status": "working",
+     "status": "idle",
      "why": "This is the running conversation where I shape my assistant and how it works.",
      "statusLine": "in progress",
      "caption": "This is the running conversation where I shape my assistant and how it works.",
@@ -759,7 +759,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1042,7 +1042,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2045,7 +2045,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3159,7 +3159,7 @@
   {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
    "statusLine": "live",
    "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
@@ -3419,7 +3419,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
@@ -4742,7 +4742,7 @@
   {
    "id": "nothing-ran-didn-t-hear",
    "label": "LOST SPEECH FIX",
-   "status": "idle",
+   "status": "working",
    "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
    "statusLine": "fixed",
    "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
