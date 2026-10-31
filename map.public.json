@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T06:22:17.263Z",
+ "generatedAt": "2026-10-31T06:49:47.170Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -386,7 +386,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
-     "statusLine": "four coded parts mapped",
+     "statusLine": "six coded parts mapped",
      "caption": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
      "stage": "active",
      "embed": "pages/code-mittens.html",
@@ -653,6 +653,21 @@
      "embed": "pages/ref-mittens-style.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "why-is-it-taking-so",
+     "label": "WHY MITTENS RUNS SLOW",
+     "status": "idle",
+     "why": "I looked into why Mittens can take so long, and whether anything notices and fixes a problem on its own.",
+     "statusLine": "looking into it",
+     "caption": "I looked into why Mittens can take so long, and whether anything notices and fixes a problem on its own.",
+     "stage": "active",
+     "embed": "pages/why-is-it-taking-so.html",
+     "visibility": "public",
+     "links": [
+      "content-references"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -812,6 +827,21 @@
      "caption": "This is where I work through the devices that give my assistant eyes and ears.",
      "stage": "active",
      "embed": "pages/wearables-2.html",
+     "visibility": "public",
+     "links": [
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "pendant-electronics-check",
+     "label": "PENDANT ELECTRONICS CHECK",
+     "status": "idle",
+     "why": "I am checking the electronics of the pendant so the hardware can be trusted.",
+     "statusLine": "in progress",
+     "caption": "I am checking the electronics of the pendant so the hardware can be trusted.",
+     "stage": "active",
+     "embed": "pages/pendant-electronics-check.html",
      "visibility": "public",
      "links": [
       "wearables"
@@ -1171,6 +1201,22 @@
      "stage": "active",
      "embed": "pages/views-check.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-architecture-tree-2",
+     "label": "CODE ARCHITECTURE TREE",
+     "status": "idle",
+     "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
+     "statusLine": "in progress",
+     "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
+     "stage": "active",
+     "embed": "pages/code-architecture-tree-2.html",
+     "visibility": "public",
+     "links": [
+      "code-architecture-tree",
+      "northstar"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1542,6 +1588,18 @@
    "parked": false,
    "children": [
     {
+     "id": "mittens-decision-map",
+     "label": "MITTENS DECISION MAP",
+     "status": "idle",
+     "why": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use. Build requests are now judged from context instead of fixed phrases.",
+     "statusLine": "proposal · being tested",
+     "caption": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use.",
+     "stage": "active",
+     "embed": "pages/mittens-decision-map.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "context-ledger",
      "label": "CONTEXT LEDGER",
      "status": "idle",
@@ -1676,6 +1734,30 @@
      "links": [
       "brain-architecture"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "context-review",
+     "label": "WHAT MITTENS IS FED",
+     "status": "idle",
+     "why": "I am reviewing what goes into Mittens on every turn and working out how to make it better.",
+     "statusLine": "under review",
+     "caption": "I am reviewing what goes into Mittens on every turn and working out how to make it better.",
+     "stage": "active",
+     "embed": "pages/context-review.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "event-driven-brain",
+     "label": "EVENT-DRIVEN BRAIN",
+     "status": "idle",
+     "why": "I want the brain to stop checking on a timer and run only when something actually happens.",
+     "statusLine": "first steps built · shadow testing",
+     "caption": "I want the brain to stop checking on a timer and run only when something actually happens.",
+     "stage": "active",
+     "embed": "pages/event-driven-brain.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2341,6 +2423,112 @@
      "caption": "This is a running look at what still remains to be finished.",
      "stage": "active",
      "embed": "pages/left-to-do.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "did-ceo-not-say-anything",
+     "label": "LEAD AGENT SIGN-OFF",
+     "status": "idle",
+     "why": "I checked whether the lead agent had agreed or objected while working through the rules Mittens follows.",
+     "statusLine": "in progress",
+     "caption": "I checked whether the lead agent had agreed or objected while working through the rules Mittens follows.",
+     "stage": "active",
+     "embed": "pages/did-ceo-not-say-anything.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "did-the-ceo-not-say",
+     "label": "LEAD AGENT REVIEW",
+     "status": "idle",
+     "why": "I checked whether the lead agent had weighed in on the map of how-to manuals.",
+     "statusLine": "in progress",
+     "caption": "I checked whether the lead agent had weighed in on the map of how-to manuals.",
+     "stage": "active",
+     "embed": "pages/did-the-ceo-not-say.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "is-anyone-seeing-what-s",
+     "label": "SILENT AUDIO GAPS",
+     "status": "idle",
+     "why": "Mittens could go quiet in the middle of a conversation with no sign of what was happening. The audio is back and I am fixing the gaps.",
+     "statusLine": "audio back · fixing gaps",
+     "caption": "Mittens could go quiet in the middle of a conversation with no sign of what was happening.",
+     "stage": "active",
+     "embed": "pages/is-anyone-seeing-what-s.html",
+     "visibility": "public",
+     "links": [
+      "wait-why-are-you-fixing",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "can-you-remind-me-what",
+     "label": "STRATEGY LEARNING RECAP",
+     "status": "idle",
+     "why": "I asked Mittens to remind me where we left off while learning about business strategy.",
+     "statusLine": "in progress",
+     "caption": "I asked Mittens to remind me where we left off while learning about business strategy.",
+     "stage": "active",
+     "embed": "pages/can-you-remind-me-what.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "yeah-why-is-the-accent",
+     "label": "MITTENS VOICE QUALITY",
+     "status": "idle",
+     "why": "The voice picked up background noise and laughed at the end of lines for no reason. I am working on making it sound natural.",
+     "statusLine": "being tuned",
+     "caption": "The voice picked up background noise and laughed at the end of lines for no reason.",
+     "stage": "active",
+     "embed": "pages/yeah-why-is-the-accent.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "why-is-it-being-overloaded",
+     "label": "WORKER OVERLOAD FIX",
+     "status": "idle",
+     "why": "The main machine was overloaded by our own repeat jobs, not by leftovers. I fixed that and the load came down.",
+     "statusLine": "fixed · still watching memory",
+     "caption": "The main machine was overloaded by our own repeat jobs, not by leftovers.",
+     "stage": "active",
+     "embed": "pages/why-is-it-being-overloaded.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "showing-steps-and-what-to",
+     "label": "LIVE BUILD STEPS",
+     "status": "idle",
+     "why": "I want the system to show the steps and what to do next in real time while the robot skin gets built.",
+     "statusLine": "idea · in progress",
+     "caption": "I want the system to show the steps and what to do next in real time while the robot skin gets built.",
+     "stage": "active",
+     "embed": "pages/showing-steps-and-what-to.html",
      "visibility": "public",
      "links": [
       "ns-talk"
@@ -4128,7 +4316,7 @@
      "label": "CARD CLOSE BUTTON",
      "status": "idle",
      "why": "Every card in my agent's chat now has a close button, so I can clear them fast.",
-     "statusLine": "in progress",
+     "statusLine": "in progress · tackling stale cards",
      "caption": "Every card in my agent's chat now has a close button, so I can clear them fast.",
      "stage": "active",
      "embed": "pages/chat-cards-close-button-on.html",
@@ -4191,7 +4379,7 @@
      "label": "MUSIC",
      "status": "done",
      "why": "I can ask Mittens to play music, and it plays through the app and glasses.",
-     "statusLine": "built · done",
+     "statusLine": "built · merged into playback",
      "caption": "I can ask Mittens to play music, and it plays through the app and glasses.",
      "stage": "done",
      "embed": "pages/music.html",
