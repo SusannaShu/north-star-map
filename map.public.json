@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T00:51:07.760Z",
+ "generatedAt": "2026-10-31T01:00:17.150Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -475,7 +475,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "working",
+   "status": "idle",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -540,7 +540,7 @@
   {
    "id": "content-references",
    "label": "CONTENT REFERENCES",
-   "status": "working",
+   "status": "done",
    "why": "I wrote one case study for each piece of work I look up to, plus a style guide. Every content agent reads them first, so it knows what I mean.",
    "statusLine": "done · archived",
    "caption": "I wrote one case study for each piece of work I look up to, plus a style guide.",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
