@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T02:04:23.983Z",
+ "generatedAt": "2026-10-31T02:17:27.650Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -282,18 +282,6 @@
      "statusLine": "paused",
      "caption": "Sundays:",
      "embed": "pages/weekly-rnd.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "viral-machine",
-     "label": "VIRAL MACHINE",
-     "status": "idle",
-     "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
-     "statusLine": "research under way · nothing posted",
-     "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
-     "stage": "active",
-     "embed": "pages/viral-machine.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -4705,6 +4693,21 @@
     "ns-talk"
    ],
    "parent": "talk-phone-calls",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "viral-machine",
+   "label": "VIRAL MACHINE",
+   "status": "idle",
+   "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
+   "statusLine": "research under way · nothing posted",
+   "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
+   "stage": "active",
+   "embed": "pages/viral-machine.html",
+   "visibility": "public",
+   "parent": "marketing",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
