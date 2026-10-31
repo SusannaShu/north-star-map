@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T07:43:47.575Z",
+ "generatedAt": "2026-10-31T08:00:47.468Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -827,21 +827,6 @@
      "caption": "This is where I work through the devices that give my assistant eyes and ears.",
      "stage": "active",
      "embed": "pages/wearables-2.html",
-     "visibility": "public",
-     "links": [
-      "wearables"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "pendant-electronics-check",
-     "label": "PENDANT ELECTRONICS CHECK",
-     "status": "idle",
-     "why": "I am checking the electronics of the pendant so the hardware can be trusted.",
-     "statusLine": "in progress",
-     "caption": "I am checking the electronics of the pendant so the hardware can be trusted.",
-     "stage": "active",
-     "embed": "pages/pendant-electronics-check.html",
      "visibility": "public",
      "links": [
       "wearables"
@@ -2615,18 +2600,6 @@
    "parent": "wearables",
    "parked": false,
    "children": [
-    {
-     "id": "lens-home",
-     "label": "MITTENS LENS HOME",
-     "status": "idle",
-     "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
-     "statusLine": "step 1 live",
-     "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
-     "stage": "active",
-     "embed": "pages/lens-home.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "glasses-launch",
      "label": "LAUNCH FROM THE GLASSES",
@@ -4876,6 +4849,21 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "pendant-electronics-check",
+     "label": "PENDANT ELECTRONICS CHECK",
+     "status": "idle",
+     "why": "I am checking the electronics of the pendant so the hardware can be trusted.",
+     "statusLine": "in progress",
+     "caption": "I am checking the electronics of the pendant so the hardware can be trusted.",
+     "stage": "active",
+     "embed": "pages/pendant-electronics-check.html",
+     "visibility": "public",
+     "links": [
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-pendant",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -4991,6 +4979,21 @@
     "housekeeping"
    ],
    "parent": "ns-daily-loops",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "lens-home",
+   "label": "MITTENS LENS HOME",
+   "status": "idle",
+   "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
+   "statusLine": "step 1 live",
+   "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
+   "stage": "active",
+   "embed": "pages/lens-home.html",
+   "visibility": "public",
+   "parent": "smart-glasses",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
