@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T03:16:08.098Z",
+ "generatedAt": "2026-10-31T03:24:23.624Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -199,7 +199,7 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
@@ -355,7 +355,8 @@
       "mittens-digital",
       "soft-robot",
       "omi",
-      "pendant"
+      "pendant",
+      "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -773,7 +774,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "idle",
+   "status": "working",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -808,7 +809,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "idle",
+   "status": "working",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -1256,7 +1257,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -4500,7 +4501,7 @@
   {
    "id": "code-architecture-tree",
    "label": "CODE ARCHITECTURE TREE",
-   "status": "working",
+   "status": "idle",
    "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
    "statusLine": "built · code tree on every coded dot",
    "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -4552,7 +4553,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",

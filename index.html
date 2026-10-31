@@ -720,6 +720,11 @@ body.doc-open .doc-fab { right:calc(50vw + 20px); }
 .code-fab { right:20px; }
 .doc-fab:not([hidden]) ~ .code-fab { right:80px; }
 body.doc-open .code-fab { right:calc(50vw + 80px); }
+.repo-chip { position:fixed; right:20px; bottom:78px; z-index:27; max-width:min(46vw, 440px); display:flex; flex-wrap:wrap; justify-content:flex-end; gap:2px 12px; padding:5px 11px; border:1px solid var(--border); border-radius:10px; background:var(--bg); font-family:var(--mono); font-size:10.5px; line-height:1.5; color:var(--text-muted); text-align:right; }
+.repo-chip[hidden] { display:none; }
+.repo-chip a { color:var(--text); }
+.repo-chip b, .vw-repos b { font-weight:500; color:var(--text); }
+body.doc-open .repo-chip { right:calc(50vw + 20px); }
 .code-pane { position:fixed; top:var(--toph, 57px); left:0; right:0; bottom:0; z-index:30; background:var(--bg); display:flex; flex-direction:column;
   transform:translateY(102%); transition:transform .32s cubic-bezier(.4,0,.2,1); }
 .code-pane.open { transform:none; }
@@ -728,12 +733,13 @@ body.doc-open .code-fab { right:calc(50vw + 80px); }
 .code-all { font-family:var(--mono); font-size:11px; color:var(--text); background:none; border:1px solid var(--border); border-radius:999px; padding:4px 10px; cursor:pointer; white-space:nowrap; }
 .code-all:hover, .code-all[aria-pressed="true"] { border-color:var(--accent); }
 .code-dot { font-family:var(--mono); font-size:11px; color:var(--text); white-space:nowrap; }
-body.saver .doc-fab, body.saver .doc-pane, body.still .doc-fab, body.still .doc-pane, body.saver .code-pane, body.still .code-pane { display:none !important; }
+body.saver .repo-chip, body.still .repo-chip, body.saver .doc-fab, body.saver .doc-pane, body.still .doc-fab, body.still .doc-pane, body.saver .code-pane, body.still .code-pane { display:none !important; }
 @media (max-width:640px) {
   .doc-pane { top:auto; left:0; width:100vw; height:58vh; border-left:0; border-top:1px solid var(--border); border-radius:var(--radius) var(--radius) 0 0;
     transform:translateY(102%); box-shadow:0 -18px 48px rgba(0,0,0,.12); }
   .doc-pane.open { transform:none; }
   .doc-fab { right:14px; bottom:14px; }
+  .repo-chip { right:14px; bottom:70px; max-width:calc(100vw - 28px); }
   body.doc-open .doc-fab { right:14px; bottom:calc(58vh + 12px); }
   .doc-fab:not([hidden]) ~ .code-fab { right:72px; }
   body.doc-open .code-fab { right:72px; }
@@ -789,6 +795,8 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 
 
 <button class="doc-fab code-fab" id="codeFab" type="button" hidden aria-pressed="false" aria-label="Open the code tree"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="4.5" cy="10" r="2"/><circle cx="15.5" cy="4" r="1.8"/><circle cx="15.5" cy="10" r="1.8"/><circle cx="15.5" cy="16" r="1.8"/><path d="M6.5 10h3M9.5 4v12M9.5 4h4.2M9.5 10h4.2M9.5 16h4.2"/></svg></button>
+
+<div class="repo-chip" id="repoChip" hidden></div>
 <aside class="code-pane" id="codePane" aria-label="The code tree"><div class="doc-head"><div><div class="doc-title"></div><div class="doc-cap"></div></div><button class="code-all" type="button" title="CODE ARCHITECTURE TREE: every tree, how they are built, your checklist">all code trees</button><a class="code-dot" href="./?open=code-architecture-tree">its dot</a><a class="doc-full" target="_blank" rel="noopener">open full &#8599;</a><button class="panel-close" id="codeClose" type="button" aria-label="Close the code tree">&times;</button></div><iframe title="the code tree"></iframe></aside>
 
 <div class="leaf-cap" id="leafCap" hidden></div>

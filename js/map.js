@@ -592,7 +592,35 @@ function codePane(id, src) {
     if (fab) fab.setAttribute("aria-pressed", CODE ? "true" : "false");
 }
 
+function reposOf(id) {
+    for (let x = id || FULL.hub, n = 0; x && n < 12; x = (FULL.e[x] || {}).up, n++) {
+        const d = (FULL.e[x] || {}).det;
+        if (d && d.codeRepos && d.codeRepos.length) return d.codeRepos;
+    }
+    const home = (FULL.e.northstar || {}).det;
+    return !id && home && home.codeRepos || null;
+}
+
+window.nsRepoRow = id => {
+    const list = reposOf(id);
+    if (!list) return "";
+    const pub = list.filter(r => r.vis === "public" && r.url), priv = list.filter(r => !pub.includes(r));
+    return pub.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)} ↗</a>`).join("") + (priv.length ? `<span>${PUBLIC ? "" : priv.map(r => esc(r.name)).join(", ") + " "}<b>private</b></span>` : "");
+};
+
+function renderRepoChip() {
+    const c = document.getElementById("repoChip");
+    if (!c) return;
+    const h = !STILL && (!LEAF || LEAFMAP) ? window.nsRepoRow(ROOT) : "";
+    c.hidden = !h;
+    if (h !== c.dataset.h) {
+        c.dataset.h = h;
+        c.innerHTML = h;
+    }
+}
+
 function renderCodeFab() {
+    renderRepoChip();
     const fab = document.getElementById("codeFab");
     if (!fab) return;
     const id = !STILL && !PUBLIC && (!LEAF || LEAFMAP) ? codeDotOf(ROOT) : null;

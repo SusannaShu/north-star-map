@@ -6,6 +6,29 @@
     const okAsset = s => typeof s === "string" && /^\/(img|js)\/[\w.\-\/]+$|^\/[\w.\-]+\.(html|pdf|jpg|png|svg)(\?[\w=&.\-]*)?$/.test(s);
     const strip = x => String(x == null ? "" : x).replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
     const isPub = n => !!n && n.visibility === "public";
+    const REPO_URL = /^https:\/\/github\.com\/[\w.-]+\/([\w.-]+)(\/[^\s"<>]*)?$/;
+    function nsPublicRepos(list, now) {
+        if (!Array.isArray(list) || !list.length) return undefined;
+        const t = now || Date.now(), out = [], seen = {};
+        let hidden = false;
+        for (const r of list) {
+            const m = r && r.vis === "public" && typeof r.url === "string" && r.url.match(REPO_URL), fresh = r && t - Date.parse(r.checkedAt) < 3 * 864e5;
+            if (m && fresh) {
+                if (!seen[m[1]]) {
+                    seen[m[1]] = 1;
+                    out.push({
+                        vis: "public",
+                        name: m[1],
+                        url: r.url
+                    });
+                }
+            } else hidden = true;
+        }
+        if (hidden) out.push({
+            vis: "private"
+        });
+        return out;
+    }
     const clone = x => x == null ? x : JSON.parse(JSON.stringify(x));
     const pubStatus = s => s === "working" ? "working" : s === "waiting" ? "waiting" : s === "queued" ? "queued" : s === "dormant" ? "dormant" : s === "planned" ? "planned" : s === "done" ? "done" : "idle";
     function sanitize(o) {
@@ -79,6 +102,8 @@
             o.kind = "ptype";
             o.count = n.count || (n.people || []).length || 0;
         }
+        const repos = nsPublicRepos(n.codeRepos);
+        if (repos) o.codeRepos = repos;
         o.visibility = "public";
         return sanitize(Object.assign(o, extra || {}));
     }
@@ -222,4 +247,5 @@
         };
     }
     root.nsPublicView = nsPublicView;
+    root.nsPublicRepos = nsPublicRepos;
 })(typeof window !== "undefined" ? window : globalThis);

@@ -115,6 +115,10 @@
         if (tl) parts.push(tl);
         const refs = (d.refs || []).filter(r => r && r.href);
         if (refs.length) parts.push(`<div class="vw-links">${refs.map(r => `<a href="${esc(macUrl(r.href))}" target="_blank" rel="noopener">↗ ${esc(clip(r.label, 46))}</a>`).join("")}</div>`);
+        {
+            const repos = window.nsRepoRow ? window.nsRepoRow(id) : "";
+            if (repos) parts.push(`<div class="vw-links vw-repos">${repos}</div>`);
+        }
         const pp = paperRail(id);
         if (pp) parts.push(pp);
         const cap = d.caption || firstSentence(d.why || d.statusLine || "");
