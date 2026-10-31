@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T05:17:31.882Z",
+ "generatedAt": "2026-10-31T05:30:53.810Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -357,7 +357,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -759,7 +759,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1322,7 +1322,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2045,7 +2045,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -3159,7 +3159,7 @@
   {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
    "statusLine": "live",
    "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
@@ -4056,7 +4056,7 @@
   {
    "id": "shopping-list",
    "label": "SHOPPING LIST",
-   "status": "idle",
+   "status": "working",
    "why": "One list for groceries, household things and hardware, reminded at the right moment: leaving, heading home, walking into the store.",
    "statusLine": "live",
    "caption": "One list for groceries, household things and hardware, reminded at the right moment:",
@@ -4562,7 +4562,7 @@
   {
    "id": "code-architecture-tree",
    "label": "CODE ARCHITECTURE TREE",
-   "status": "idle",
+   "status": "working",
    "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
    "statusLine": "built · code tree on every coded dot",
    "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -4742,7 +4742,7 @@
   {
    "id": "nothing-ran-didn-t-hear",
    "label": "LOST SPEECH FIX",
-   "status": "idle",
+   "status": "working",
    "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
    "statusLine": "fixed",
    "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
