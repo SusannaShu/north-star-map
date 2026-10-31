@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T03:24:23.624Z",
+ "generatedAt": "2026-10-31T03:25:02.840Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -19,6 +19,11 @@
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
    "embed": "pages/outreach.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -159,6 +164,11 @@
    "caption": "A creative economy platform -- authenticity + creativity.",
    "embed": "pages/fashion.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -206,6 +216,16 @@
    "stage": "active",
    "embed": "pages/susu-map.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "susu-map-display",
+     "url": "https://github.com/SusannaShu/susu-map-display"
+    },
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -250,6 +270,11 @@
    "caption": "Spread the vision and actually sell:",
    "embed": "pages/marketing.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -339,6 +364,21 @@
    "stage": "active",
    "embed": "pages/mittens.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "mittens-open",
+     "url": "https://github.com/SusannaShu/mittens-open"
+    },
+    {
+     "vis": "public",
+     "name": "omi",
+     "url": "https://github.com/BasedHardware/omi"
+    },
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -627,6 +667,16 @@
    "stage": "active",
    "embed": "pages/mittens-digital.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "mittens-open",
+     "url": "https://github.com/SusannaShu/mittens-open"
+    },
+    {
+     "vis": "private"
+    }
+   ],
    "parent": "mittens",
    "parked": false,
    "children": [
@@ -709,7 +759,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -785,6 +835,11 @@
    ],
    "embed": "pages/soft-robot.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parent": "mittens",
    "parked": false,
    "children": [
@@ -1099,6 +1154,11 @@
    "stage": "active",
    "embed": "pages/devhub.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -1219,6 +1279,11 @@
    "planned": true,
    "embed": "pages/portfolio.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -1264,6 +1329,11 @@
    "stage": "active",
    "embed": "pages/northstar.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
@@ -1982,6 +2052,11 @@
    "stage": "active",
    "embed": "pages/ns-talk.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "links": [
     "northstar"
    ],
@@ -3369,6 +3444,11 @@
    "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "links": [
     "sheyou-business-logic"
    ],
@@ -4564,6 +4644,16 @@
    ],
    "embed": "pages/pendant.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "mittens-open",
+     "url": "https://github.com/SusannaShu/mittens-open/tree/main/mittens_pendant"
+    },
+    {
+     "vis": "private"
+    }
+   ],
    "parent": "wearables",
    "parked": false,
    "children": [
@@ -4762,6 +4852,11 @@
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "embed": "pages/susu-closet.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parent": "fashion",
    "parked": false,
    "children": [
@@ -4793,6 +4888,13 @@
    "stage": "done",
    "embed": "pages/omi.html",
    "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "omi",
+     "url": "https://github.com/BasedHardware/omi"
+    }
+   ],
    "links": [
     "aurora"
    ],
