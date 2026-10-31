@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T03:45:55.610Z",
+ "generatedAt": "2026-10-31T03:58:01.631Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -209,7 +209,7 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
@@ -3229,7 +3229,7 @@
   {
    "id": "gospel",
    "label": "GOSPEL",
-   "status": "working",
+   "status": "idle",
    "why": "A project that gathers and shares good news: progress in science, good deeds, repaired places, AI for good, and what the future looks like if things go right.",
    "statusLine": "idea · working name",
    "caption": "A project that gathers and shares good news:",
