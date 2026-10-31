@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T01:55:46.824Z",
+ "generatedAt": "2026-10-31T02:04:23.983Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1986,7 +1986,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2018,7 +2018,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "idle",
+     "status": "working",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -3171,21 +3171,6 @@
      "stage": "active",
      "embed": "pages/mw-blind.html",
      "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "nothing-ran-didn-t-hear",
-     "label": "LOST SPEECH FIX",
-     "status": "idle",
-     "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
-     "statusLine": "fixed",
-     "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
-     "stage": "done",
-     "embed": "pages/nothing-ran-didn-t-hear.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -4702,6 +4687,24 @@
    "embed": "pages/mittens-podcast.html",
    "visibility": "public",
    "parent": "learn-with-mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "nothing-ran-didn-t-hear",
+   "label": "LOST SPEECH FIX",
+   "status": "idle",
+   "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
+   "statusLine": "fixed",
+   "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
+   "stage": "done",
+   "embed": "pages/nothing-ran-didn-t-hear.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk"
+   ],
+   "parent": "talk-phone-calls",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
