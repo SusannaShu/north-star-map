@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T13:19:38.507Z",
+ "generatedAt": "2026-10-31T13:34:52.220Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -3390,7 +3390,7 @@
   {
    "id": "gospel",
    "label": "GOSPEL",
-   "status": "idle",
+   "status": "working",
    "why": "A project that gathers and shares good news: progress in science, good deeds, repaired places, AI for good, and what the future looks like if things go right.",
    "statusLine": "idea · working name",
    "caption": "A project that gathers and shares good news:",
