@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T04:07:14.820Z",
+ "generatedAt": "2026-10-31T04:15:54.891Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -264,7 +264,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -357,7 +357,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1256,7 +1256,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1531,7 +1531,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1957,7 +1957,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -2045,7 +2045,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -4058,7 +4058,7 @@
   {
    "id": "shopping-list",
    "label": "SHOPPING LIST",
-   "status": "idle",
+   "status": "working",
    "why": "One list for groceries, household things and hardware, reminded at the right moment: leaving, heading home, walking into the store.",
    "statusLine": "live",
    "caption": "One list for groceries, household things and hardware, reminded at the right moment:",
@@ -4762,7 +4762,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "working",
+   "status": "idle",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
