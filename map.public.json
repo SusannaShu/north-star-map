@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T04:38:51.807Z",
+ "generatedAt": "2026-10-31T04:47:38.409Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -158,7 +158,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -403,7 +403,7 @@
     {
      "id": "mittens-2",
      "label": "MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "This is the running conversation where I shape my assistant and how it works.",
      "statusLine": "in progress",
      "caption": "This is the running conversation where I shape my assistant and how it works.",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -504,7 +504,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "working",
+   "status": "idle",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -1147,7 +1147,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1256,7 +1256,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1531,7 +1531,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1957,7 +1957,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -3419,12 +3419,10 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "codeRepos": [
@@ -4058,7 +4056,7 @@
   {
    "id": "shopping-list",
    "label": "SHOPPING LIST",
-   "status": "working",
+   "status": "idle",
    "why": "One list for groceries, household things and hardware, reminded at the right moment: leaving, heading home, walking into the store.",
    "statusLine": "live",
    "caption": "One list for groceries, household things and hardware, reminded at the right moment:",
