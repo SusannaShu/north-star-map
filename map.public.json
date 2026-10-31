@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T03:31:08.148Z",
+ "generatedAt": "2026-10-31T03:37:53.284Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -1147,7 +1147,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -3152,23 +3152,6 @@
      "embed": "pages/nightly-reflection.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "watchdog",
-     "label": "WATCHDOG",
-     "status": "idle",
-     "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
-     "statusLine": "live",
-     "caption": "Nothing fails silently:",
-     "stage": "active",
-     "embed": "pages/watchdog.html",
-     "visibility": "public",
-     "links": [
-      "mittens-proactive",
-      "howto-routines",
-      "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4802,6 +4785,26 @@
    "embed": "pages/glasses-mittens.html",
    "visibility": "public",
    "parent": "smart-glasses",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "watchdog",
+   "label": "WATCHDOG",
+   "status": "idle",
+   "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
+   "statusLine": "live",
+   "caption": "Nothing fails silently:",
+   "stage": "active",
+   "embed": "pages/watchdog.html",
+   "visibility": "public",
+   "links": [
+    "mittens-proactive",
+    "howto-routines",
+    "housekeeping"
+   ],
+   "parent": "ns-daily-loops",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
