@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T00:41:58.189Z",
+ "generatedAt": "2026-10-31T00:51:07.760Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -244,7 +244,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -288,7 +288,7 @@
     {
      "id": "viral-machine",
      "label": "VIRAL MACHINE",
-     "status": "idle",
+     "status": "working",
      "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
      "statusLine": "research under way · nothing posted",
      "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -344,7 +344,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -475,7 +475,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -540,7 +540,7 @@
   {
    "id": "content-references",
    "label": "CONTENT REFERENCES",
-   "status": "done",
+   "status": "working",
    "why": "I wrote one case study for each piece of work I look up to, plus a style guide. Every content agent reads them first, so it knows what I mean.",
    "statusLine": "done · archived",
    "caption": "I wrote one case study for each piece of work I look up to, plus a style guide.",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1986,7 +1986,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
