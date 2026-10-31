@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T01:10:44.572Z",
+ "generatedAt": "2026-10-31T01:19:17.188Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1103,7 +1103,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1145,7 +1145,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "idle",
+   "status": "working",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
