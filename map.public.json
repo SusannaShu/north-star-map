@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T09:10:09.700Z",
+ "generatedAt": "2026-10-31T09:14:04.080Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -774,7 +774,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
