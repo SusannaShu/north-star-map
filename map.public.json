@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T02:29:57.996Z",
+ "generatedAt": "2026-10-31T02:38:00.424Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1091,7 +1091,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1210,10 +1210,12 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/portfolio.html",
    "visibility": "public",
    "parked": false,
@@ -1254,7 +1256,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1308,7 +1310,7 @@
     {
      "id": "north-star-map",
      "label": "NORTH STAR MAP",
-     "status": "working",
+     "status": "idle",
      "why": "This is the working thread for the map that holds my projects and agents.",
      "statusLine": "in progress",
      "caption": "This is the working thread for the map that holds my projects and agents.",
@@ -2358,18 +2360,6 @@
      "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
      "stage": "active",
      "embed": "pages/lens-home.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "glasses-mittens",
-     "label": "GLASSES + MITTENS",
-     "status": "idle",
-     "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
-     "statusLine": "testing · lens home live",
-     "caption": "Mittens on the lens:",
-     "stage": "active",
-     "embed": "pages/glasses-mittens.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -4706,6 +4696,21 @@
    "embed": "pages/viral-machine.html",
    "visibility": "public",
    "parent": "marketing",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "glasses-mittens",
+   "label": "GLASSES + MITTENS",
+   "status": "idle",
+   "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
+   "statusLine": "testing · lens home live",
+   "caption": "Mittens on the lens:",
+   "stage": "active",
+   "embed": "pages/glasses-mittens.html",
+   "visibility": "public",
+   "parent": "smart-glasses",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
