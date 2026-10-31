@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T03:58:01.631Z",
+ "generatedAt": "2026-10-31T04:07:14.820Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -81,11 +81,11 @@
     },
     {
      "id": "pt:robotics",
-     "label": "ROBOTICS · 26",
+     "label": "ROBOTICS · 33",
      "status": "idle",
-     "why": "26 people. Robotics people I learn from -- they feed ROBOT SKIN and ACTUATION.",
+     "why": "33 people. Robotics people I learn from -- they feed ROBOT SKIN and ACTUATION.",
      "kind": "ptype",
-     "count": 26,
+     "count": 33,
      "caption": "Robotics people I learn from -- they feed ROBOT SKIN and ACTUATION.",
      "embed": "pages/pt-robotics.html",
      "visibility": "public",
@@ -97,11 +97,11 @@
     },
     {
      "id": "pt:wearable",
-     "label": "WEARABLES · 38",
+     "label": "WEARABLES · 39",
      "status": "idle",
-     "why": "38 people. Wearables people I learn from -- they feed WEARABLES.",
+     "why": "39 people. Wearables people I learn from -- they feed WEARABLES.",
      "kind": "ptype",
-     "count": 38,
+     "count": 39,
      "caption": "Wearables people I learn from -- they feed WEARABLES.",
      "embed": "pages/pt-wearable.html",
      "visibility": "public",
@@ -127,11 +127,11 @@
     },
     {
      "id": "pt:world-model",
-     "label": "WORLD MODELS · 23",
+     "label": "WORLD MODELS · 24",
      "status": "idle",
-     "why": "23 people. People building world models I learn from -- they feed DIGITAL.",
+     "why": "24 people. People building world models I learn from -- they feed DIGITAL.",
      "kind": "ptype",
-     "count": 23,
+     "count": 24,
      "caption": "People building world models I learn from -- they feed DIGITAL.",
      "embed": "pages/pt-world-model.html",
      "visibility": "public",
@@ -264,7 +264,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -357,7 +357,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -824,7 +824,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "working",
+   "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -864,7 +864,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "working",
+   "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -1256,7 +1256,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1322,7 +1322,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1381,7 +1381,7 @@
     {
      "id": "north-star-map",
      "label": "NORTH STAR MAP",
-     "status": "idle",
+     "status": "working",
      "why": "This is the working thread for the map that holds my projects and agents.",
      "statusLine": "in progress",
      "caption": "This is the working thread for the map that holds my projects and agents.",
@@ -1531,7 +1531,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1957,7 +1957,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4762,7 +4762,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
