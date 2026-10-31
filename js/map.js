@@ -2032,8 +2032,8 @@ let userCam = 0;
 
 function loop(t) {
     requestAnimationFrame(loop);
-    const idle = !dragNode && Date.now() - lastActive > 2e4;
-    if (idle && t - lastFrame < 125) return;
+    const quiet = dragNode ? 0 : Date.now() - lastActive;
+    if (quiet > 2e4 && t - lastFrame < (quiet > 18e4 ? 1e3 : 125)) return;
     lastFrame = t || 0;
     step();
     if (!dragNode && Date.now() - userCam > 6e4 && ++fitTick % 30 === 0) fitAll();
