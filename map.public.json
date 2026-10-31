@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T12:27:35.334Z",
+ "generatedAt": "2026-10-31T12:34:41.042Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -504,7 +504,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -1353,7 +1353,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1412,7 +1412,7 @@
     {
      "id": "north-star-map",
      "label": "NORTH STAR MAP",
-     "status": "idle",
+     "status": "working",
      "why": "This is the working thread for the map that holds my projects and agents.",
      "statusLine": "in progress",
      "caption": "This is the working thread for the map that holds my projects and agents.",
