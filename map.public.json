@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-10-31T03:12:11.890Z",
+ "generatedAt": "2026-10-31T03:16:08.098Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1256,7 +1256,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -4500,7 +4500,7 @@
   {
    "id": "code-architecture-tree",
    "label": "CODE ARCHITECTURE TREE",
-   "status": "idle",
+   "status": "working",
    "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
    "statusLine": "built · code tree on every coded dot",
    "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
