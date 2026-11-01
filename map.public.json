@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-01T13:44:06.005Z",
+ "generatedAt": "2026-11-01T14:43:53.778Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -264,7 +264,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -357,7 +357,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -4260,7 +4260,7 @@
   {
    "id": "mittens-vision",
    "label": "THE NEW OPENCLAW",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens and North Star as one agent for a whole life and work: Mittens talks, North Star shows.",
    "statusLine": "live system · 8 pillars mapped",
    "caption": "Mittens and North Star as one agent for a whole life and work:",
@@ -5373,7 +5373,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
