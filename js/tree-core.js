@@ -859,7 +859,7 @@
             });
         }
         const tAgo = t => {
-            const s = Date.parse(t.startedAt || t.at || "");
+            const s = Date.parse(t.runFrom || t.startedAt || t.at || "");
             if (!(s > 0)) return "";
             const m = (Date.now() - s) / 6e4;
             return m < 90 ? `${Math.max(1, Math.round(m))} min` : `${Math.round(m / 60)} h`;
