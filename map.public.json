@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-01T12:36:27.120Z",
+ "generatedAt": "2026-11-01T12:40:23.391Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -264,7 +264,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -5373,7 +5373,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
