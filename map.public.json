@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-01T06:22:06.004Z",
+ "generatedAt": "2026-11-01T07:43:00.183Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1425,6 +1425,21 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "north-star-as-product",
+     "label": "NORTH STAR AS PRODUCT",
+     "status": "idle",
+     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "statusLine": "exploring the idea",
+     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "stage": "active",
+     "embed": "pages/north-star-as-product.html",
+     "visibility": "public",
+     "links": [
+      "aurora"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-northstar",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -1743,6 +1758,21 @@
      "stage": "active",
      "embed": "pages/event-driven-brain.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "parallel-worker-capacity",
+     "label": "PARALLEL WORKER CAPACITY",
+     "status": "idle",
+     "why": "I am working out how many agents can run side by side, and why so many processes pile up.",
+     "statusLine": "being worked out",
+     "caption": "I am working out how many agents can run side by side, and why so many processes pile up.",
+     "stage": "active",
+     "embed": "pages/parallel-worker-capacity.html",
+     "visibility": "public",
+     "links": [
+      "ns-public"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -2514,6 +2544,51 @@
      "caption": "I want the system to show the steps and what to do next in real time while the robot skin gets built.",
      "stage": "active",
      "embed": "pages/showing-steps-and-what-to.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-voice-quality",
+     "label": "MITTENS VOICE QUALITY",
+     "status": "idle",
+     "why": "I am tuning how Mittens sounds so the voice stays clear and natural.",
+     "statusLine": "folded into voice work",
+     "caption": "I am tuning how Mittens sounds so the voice stays clear and natural.",
+     "stage": "active",
+     "embed": "pages/mittens-voice-quality.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ai-replacing-humans-ubi",
+     "label": "AI AND BASIC INCOME",
+     "status": "idle",
+     "why": "I am thinking through what happens to work and income as AI takes on more human jobs.",
+     "statusLine": "open conversation",
+     "caption": "I am thinking through what happens to work and income as AI takes on more human jobs.",
+     "stage": "active",
+     "embed": "pages/ai-replacing-humans-ubi.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-ns-talk",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "A map of the code that runs talking with Mittens, generated from the code itself.",
+     "statusLine": "mapped from the code",
+     "caption": "A map of the code that runs talking with Mittens, generated from the code itself.",
+     "stage": "active",
+     "embed": "pages/code-ns-talk.html",
      "visibility": "public",
      "links": [
       "ns-talk"
@@ -3383,6 +3458,22 @@
       "talk-phone-calls"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "you-didn-t-catch-any",
+     "label": "CALL VOICE ROLLBACK",
+     "status": "idle",
+     "why": "When a new voice sounds worse on a call, I want to be able to go back to the last good one.",
+     "statusLine": "being fixed",
+     "caption": "When a new voice sounds worse on a call, I want to be able to go back to the last good one.",
+     "stage": "active",
+     "embed": "pages/you-didn-t-catch-any.html",
+     "visibility": "public",
+     "links": [
+      "talk-phone-calls",
+      "nothing-ran-didn-t-hear"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3436,6 +3527,19 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "basic-needs",
+     "label": "FOOD AND SHELTER",
+     "status": "idle",
+     "why": "I researched specific ways to secure food and shelter for people, beyond waiting for government help. The strongest ideas are a benefits helper, resident-owned land and a shared trust.",
+     "statusLine": "researched · no pilot yet",
+     "caption": "I researched specific ways to secure food and shelter for people, beyond waiting for government help.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/basic-needs.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "gospel-channels",
      "label": "GOSPEL CHANNELS",
      "status": "idle",
@@ -3463,6 +3567,21 @@
      "visibility": "public",
      "links": [
       "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "gospel-daily-research-account",
+     "label": "GOSPEL DAILY RESEARCH",
+     "status": "idle",
+     "why": "A thread for shaping how the daily research gets shared.",
+     "statusLine": "in discussion",
+     "caption": "A thread for shaping how the daily research gets shared.",
+     "stage": "active",
+     "embed": "pages/gospel-daily-research-account.html",
+     "visibility": "public",
+     "links": [
+      "gospel"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3597,6 +3716,25 @@
    "parent": "fashion",
    "parked": false,
    "children": [
+    {
+     "id": "sheyou-money-pitch",
+     "label": "BUSINESS MODEL + PITCH",
+     "status": "idle",
+     "why": "I researched how the fashion platform can earn. Free try-ons bring people in, and real sales and rentals give designers and fashion lovers income and visibility.",
+     "statusLine": "plan · not tested yet",
+     "caption": "I researched how the fashion platform can earn.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/sheyou-money-pitch.html",
+     "visibility": "public",
+     "links": [
+      "sheyou",
+      "susu-closet",
+      "sheyou-business-logic",
+      "fit-data"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "sheyou-business-logic",
      "label": "TRY-ON BUSINESS LOGIC",
@@ -4176,6 +4314,21 @@
       "mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "the-new-openclaw",
+     "label": "THE NEW OPENCLAW",
+     "status": "idle",
+     "why": "My vision of one agent that helps with both life and work.",
+     "statusLine": "folded into the vision",
+     "caption": "My vision of one agent that helps with both life and work.",
+     "stage": "active",
+     "embed": "pages/the-new-openclaw.html",
+     "visibility": "public",
+     "links": [
+      "mittens-vision"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4453,6 +4606,21 @@
       "wake-report"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "worker-progress-reports",
+     "label": "WORKER PROGRESS REPORTS",
+     "status": "idle",
+     "why": "I can ask what is running right now, and workers report what they finished and what held them up.",
+     "statusLine": "in use",
+     "caption": "I can ask what is running right now, and workers report what they finished and what held them up.",
+     "stage": "active",
+     "embed": "pages/worker-progress-reports.html",
+     "visibility": "public",
+     "links": [
+      "wake-report"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4512,6 +4680,24 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "from-t3083-the-one-architect",
+   "label": "NEEDS-ME GATE",
+   "status": "idle",
+   "why": "I fixed the step that decides what really needs me, so stale cards stop piling up.",
+   "statusLine": "fixed · moved to architecture",
+   "caption": "I fixed the step that decides what really needs me, so stale cards stop piling up.",
+   "stage": "done",
+   "embed": "pages/from-t3083-the-one-architect.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk"
+   ],
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-desktop",
    "label": "MITTENS ON DESKTOP",
    "status": "idle",
@@ -4547,7 +4733,24 @@
    ],
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "barge-in",
+     "label": "BARGE-IN",
+     "status": "idle",
+     "why": "I can interrupt Mittens mid-sentence and it stops to listen.",
+     "statusLine": "folded into its twin",
+     "caption": "I can interrupt Mittens mid-sentence and it stops to listen.",
+     "stage": "active",
+     "embed": "pages/barge-in.html",
+     "visibility": "public",
+     "links": [
+      "mittens-barge-in",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4563,7 +4766,24 @@
    "visibility": "public",
    "parent": "wearables",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "speaker-mic",
+     "label": "SPEAKER + MIC",
+     "status": "idle",
+     "why": "The sound hardware that lets Mittens hear and speak.",
+     "statusLine": "folded into its twin",
+     "caption": "The sound hardware that lets Mittens hear and speak.",
+     "stage": "active",
+     "embed": "pages/speaker-mic.html",
+     "visibility": "public",
+     "links": [
+      "mittens-speaker",
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4578,7 +4798,24 @@
    "visibility": "public",
    "parent": "man-rules",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "triggers-2",
+     "label": "TRIGGERS",
+     "status": "idle",
+     "why": "The events that set Mittens in motion without being asked.",
+     "statusLine": "folded into its twin",
+     "caption": "The events that set Mittens in motion without being asked.",
+     "stage": "active",
+     "embed": "pages/triggers-2.html",
+     "visibility": "public",
+     "links": [
+      "triggers",
+      "man-rules"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4597,7 +4834,24 @@
    ],
    "parent": "learn-with-mittens",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "app-zoom-waits-install-data-2",
+     "label": "APP ZOOM + DATA PLAN",
+     "status": "idle",
+     "why": "Zoom in the app is waiting on the next install, and I am planning where the data should live.",
+     "statusLine": "folded into its twin",
+     "caption": "Zoom in the app is waiting on the next install, and I am planning where the data should live.",
+     "stage": "active",
+     "embed": "pages/app-zoom-waits-install-data-2.html",
+     "visibility": "public",
+     "links": [
+      "app-zoom-waits-install-data",
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4612,7 +4866,24 @@
    "visibility": "public",
    "parent": "ns-public",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "work-in-threads-2",
+     "label": "WORK IN THREADS",
+     "status": "idle",
+     "why": "Each piece of work lives in its own chat thread, tied to one dot on the map.",
+     "statusLine": "folded into its twin",
+     "caption": "Each piece of work lives in its own chat thread, tied to one dot on the map.",
+     "stage": "active",
+     "embed": "pages/work-in-threads-2.html",
+     "visibility": "public",
+     "links": [
+      "work-in-threads",
+      "ns-public"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4645,7 +4916,24 @@
    "visibility": "public",
    "parent": "learn-episodes",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "ep-french-1-your-wednesday",
+     "label": "FRENCH EPISODE ONE",
+     "status": "idle",
+     "why": "A first French lesson episode built around everyday life.",
+     "statusLine": "folded into its twin",
+     "caption": "A first French lesson episode built around everyday life.",
+     "stage": "active",
+     "embed": "pages/ep-french-1-your-wednesday.html",
+     "visibility": "public",
+     "links": [
+      "learn-ep-french-1",
+      "learn-episodes"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4660,7 +4948,24 @@
    "visibility": "public",
    "parent": "susu-map",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "daily-free-list",
+     "label": "DAILY FREE LIST",
+     "status": "idle",
+     "why": "A short list of free things, made automatically each day.",
+     "statusLine": "folded into its twin",
+     "caption": "A short list of free things, made automatically each day.",
+     "stage": "active",
+     "embed": "pages/daily-free-list.html",
+     "visibility": "public",
+     "links": [
+      "susu-daily",
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4676,7 +4981,24 @@
    "visibility": "public",
    "parent": "portfolio",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "scroll-chapters",
+     "label": "SCROLL CHAPTERS",
+     "status": "idle",
+     "why": "The portfolio tells its story in chapters as you scroll.",
+     "statusLine": "folded into its twin",
+     "caption": "The portfolio tells its story in chapters as you scroll.",
+     "stage": "active",
+     "embed": "pages/scroll-chapters.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-chapters",
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4697,7 +5019,24 @@
    ],
    "parent": "man-rules",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "map-upkeep-2",
+     "label": "MAP UPKEEP",
+     "status": "idle",
+     "why": "The ongoing work of keeping the map tidy and true.",
+     "statusLine": "folded into its twin",
+     "caption": "The ongoing work of keeping the map tidy and true.",
+     "stage": "active",
+     "embed": "pages/map-upkeep-2.html",
+     "visibility": "public",
+     "links": [
+      "map-upkeep",
+      "man-rules"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4717,7 +5056,24 @@
    ],
    "parent": "mittens-digital",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "thread-architecture-2",
+     "label": "THREAD ARCHITECTURE",
+     "status": "idle",
+     "why": "How chat threads connect to dots and agents across the system.",
+     "statusLine": "folded into its twin",
+     "caption": "How chat threads connect to dots and agents across the system.",
+     "stage": "active",
+     "embed": "pages/thread-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "thread-architecture",
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4751,7 +5107,24 @@
    "visibility": "public",
    "parent": "daily-content",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "brand-style-2",
+     "label": "BRAND STYLE",
+     "status": "idle",
+     "why": "The shared look and feel across my projects.",
+     "statusLine": "folded into its twin",
+     "caption": "The shared look and feel across my projects.",
+     "stage": "active",
+     "embed": "pages/brand-style-2.html",
+     "visibility": "public",
+     "links": [
+      "brand-style",
+      "daily-content"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4912,6 +5285,53 @@
    "visibility": "public",
    "parent": "learn-with-mittens",
    "parked": false,
+   "children": [
+    {
+     "id": "podcast-episode-collections",
+     "label": "PODCAST EPISODE COLLECTIONS",
+     "status": "idle",
+     "why": "I group podcast episodes into collections so they are easier to follow.",
+     "statusLine": "in progress",
+     "caption": "I group podcast episodes into collections so they are easier to follow.",
+     "stage": "active",
+     "embed": "pages/podcast-episode-collections.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-desktop-panels-2",
+   "label": "MITTENS DESKTOP PANELS",
+   "status": "idle",
+   "why": "The panels that show Mittens at work on the desktop.",
+   "statusLine": "in progress",
+   "caption": "The panels that show Mittens at work on the desktop.",
+   "stage": "active",
+   "embed": "pages/mittens-desktop-panels-2.html",
+   "visibility": "public",
+   "links": [
+    "mittens-desktop",
+    "mittens-knows"
+   ],
+   "parent": "mittens-desktop",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "flaggers-haiku-only-flags-mittens",
+   "label": "TRIAGE FLAGGERS",
+   "status": "idle",
+   "why": "A small fast model only raises flags, and Mittens decides what actually runs.",
+   "statusLine": "in use · still refining",
+   "caption": "A small fast model only raises flags, and Mittens decides what actually runs.",
+   "stage": "active",
+   "embed": "pages/flaggers-haiku-only-flags-mittens.html",
+   "visibility": "public",
+   "parent": "triage",
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -4930,7 +5350,24 @@
    ],
    "parent": "talk-phone-calls",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "what-s-the-sound-like",
+     "label": "SILENT REPLY",
+     "status": "idle",
+     "why": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
+     "statusLine": "archived",
+     "caption": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
+     "stage": "done",
+     "embed": "pages/what-s-the-sound-like.html",
+     "visibility": "public",
+     "links": [
+      "nothing-ran-didn-t-hear",
+      "talk-phone-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4945,7 +5382,39 @@
    "visibility": "public",
    "parent": "marketing",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "how-s-the-viral-machine",
+     "label": "VIRAL MACHINE CHECK-IN",
+     "status": "idle",
+     "why": "A check on how the content machine is doing.",
+     "statusLine": "folded into viral machine",
+     "caption": "A check on how the content machine is doing.",
+     "stage": "active",
+     "embed": "pages/how-s-the-viral-machine.html",
+     "visibility": "public",
+     "links": [
+      "viral-machine",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "and-get-inspired-kind-of",
+     "label": "WHY GO VIRAL",
+     "status": "idle",
+     "why": "I want Mittens to spread so people can see it and get inspired.",
+     "statusLine": "archived",
+     "caption": "I want Mittens to spread so people can see it and get inspired.",
+     "stage": "done",
+     "embed": "pages/and-get-inspired-kind-of.html",
+     "visibility": "public",
+     "links": [
+      "viral-machine"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5021,7 +5490,7 @@
      "label": "ROUTING TREE",
      "status": "idle",
      "why": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
-     "statusLine": "read from the code · gaps open",
+     "statusLine": "read from the code · no gaps",
      "caption": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
      "stage": "active",
      "embed": "pages/msl-routing.html",
