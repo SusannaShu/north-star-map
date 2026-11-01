@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-01T08:36:39.041Z",
+ "generatedAt": "2026-11-01T09:01:33.875Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2566,21 +2566,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "ai-replacing-humans-ubi",
-     "label": "AI AND BASIC INCOME",
-     "status": "idle",
-     "why": "I am thinking through what happens to work and income as AI takes on more human jobs.",
-     "statusLine": "open conversation",
-     "caption": "I am thinking through what happens to work and income as AI takes on more human jobs.",
-     "stage": "active",
-     "embed": "pages/ai-replacing-humans-ubi.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "code-ns-talk",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -4114,6 +4099,21 @@
      "caption": "This was a very short one-off chat with my assistant.",
      "stage": "active",
      "embed": "pages/bro.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ai-replacing-humans-ubi",
+     "label": "AI AND BASIC INCOME",
+     "status": "idle",
+     "why": "I am thinking through what happens to work and income as AI takes on more human jobs.",
+     "statusLine": "open conversation",
+     "caption": "I am thinking through what happens to work and income as AI takes on more human jobs.",
+     "stage": "active",
+     "embed": "pages/ai-replacing-humans-ubi.html",
      "visibility": "public",
      "links": [
       "ns-talk"
