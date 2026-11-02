@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-02T02:47:31.183Z",
+ "generatedAt": "2026-11-02T08:03:29.998Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -357,7 +357,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -447,6 +447,7 @@
      "links": [
       "mittens-proactive",
       "context-graph",
+      "map-upkeep",
       "mw-blind",
       "mw-calls"
      ],
@@ -773,7 +774,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1232,6 +1233,7 @@
    "embed": "pages/housekeeping.html",
    "visibility": "public",
    "links": [
+    "howto-cleanup",
     "context-graph"
    ],
    "parent": "devhub",
@@ -1294,54 +1296,19 @@
    "visibility": "public",
    "parent": "devhub",
    "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "portfolio",
-   "label": "PORTFOLIO",
-   "status": "idle",
-   "why": "Where the work shows itself.",
-   "statusLine": "live",
-   "caption": "Where the work shows itself.",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/portfolio.html",
-   "visibility": "public",
-   "codeRepos": [
-    {
-     "vis": "private"
-    }
-   ],
-   "parked": false,
    "children": [
     {
-     "id": "portfolio-2",
-     "label": "PORTFOLIO",
-     "status": "done",
-     "why": "A duplicate portfolio dot that the map's tidy pass merged back into the main one.",
-     "statusLine": "merged · duplicate",
-     "caption": "A duplicate portfolio dot that the map's tidy pass merged back into the main one.",
-     "stage": "done",
-     "embed": "pages/portfolio-2.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-portfolio",
-     "label": "CODE ARCHITECTURE",
+     "id": "rule-saves-need-review",
+     "label": "RULE SAVES REVIEWED",
      "status": "idle",
-     "why": "This branch is mapped straight from the code of my portfolio site.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code of my portfolio site.",
+     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
+     "statusLine": "in progress",
+     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
      "stage": "active",
-     "embed": "pages/code-portfolio.html",
+     "embed": "pages/rule-saves-need-review.html",
      "visibility": "public",
      "links": [
-      "portfolio"
+      "manual-map"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1456,6 +1423,123 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "man-rules",
+   "label": "RULES",
+   "status": "idle",
+   "why": "How every agent starts, where things go on the map, which models.",
+   "caption": "How every agent starts, where things go on the map, which models.",
+   "stage": "active",
+   "embed": "pages/man-rules.html",
+   "visibility": "public",
+   "parent": "man-g-agents",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-start-here",
+     "label": "START HERE",
+     "status": "idle",
+     "why": "The first page every agent reads: the map for context, the manual for how, then the repo.",
+     "caption": "The first page every agent reads:",
+     "stage": "active",
+     "embed": "pages/howto-start-here.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "context-graph"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-map-organizing",
+     "label": "WHERE THINGS GO",
+     "status": "idle",
+     "why": "The sorting rules: what she says lands on the right dot.",
+     "caption": "The sorting rules:",
+     "stage": "active",
+     "embed": "pages/howto-map-organizing.html",
+     "visibility": "public",
+     "links": [
+      "northstar",
+      "context-graph"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-models",
+     "label": "MODELS",
+     "status": "idle",
+     "why": "Which model does what: the strongest for anything she talks to, smaller ones for background routines.",
+     "caption": "Which model does what:",
+     "stage": "active",
+     "embed": "pages/howto-models.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-proactive",
+     "label": "PROACTIVE HOW-TO",
+     "status": "idle",
+     "why": "How Mittens decides when to speak first.",
+     "caption": "How Mittens decides when to speak first.",
+     "stage": "active",
+     "embed": "pages/howto-proactive.html",
+     "visibility": "public",
+     "links": [
+      "proactive-rules",
+      "mittens-daily",
+      "map-upkeep",
+      "context-graph",
+      "ns-talk",
+      "mittens",
+      "mittens-digital",
+      "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-action-tree",
+     "label": "ACTION TREE",
+     "status": "idle",
+     "why": "There is one source of truth for what is still open: a ranked list that my agent reads from and reports from.",
+     "statusLine": "live",
+     "caption": "There is one source of truth for what is still open:",
+     "stage": "active",
+     "embed": "pages/howto-action-tree.html",
+     "visibility": "public",
+     "links": [
+      "action-tree",
+      "mittens",
+      "ns-talk",
+      "northstar",
+      "mittens-architecture",
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "remind-me-cards-after-lost",
+     "label": "REMIND-ME CARDS",
+     "status": "idle",
+     "why": "When a quick request gets lost, my agent now turns it into a reminder card so it doesn't slip again.",
+     "statusLine": "being built",
+     "caption": "When a quick request gets lost, my agent now turns it into a reminder card so it doesn't slip again.",
+     "stage": "active",
+     "embed": "pages/remind-me-cards-after-lost.html",
+     "visibility": "public",
+     "links": [
+      "triggers",
+      "man-rules"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
    "status": "idle",
@@ -1487,6 +1571,279 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "man-devices",
+   "label": "DEVICES",
+   "status": "idle",
+   "why": "How agents use the phones, the glasses and recording.",
+   "caption": "How agents use the phones, the glasses and recording.",
+   "stage": "active",
+   "embed": "pages/man-devices.html",
+   "visibility": "public",
+   "parent": "man-g-machines",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-devices",
+     "label": "ALL DEVICES",
+     "status": "idle",
+     "why": "Agents may use every device; how, and how to leave it as found.",
+     "caption": "Agents may use every device; how, and how to leave it as found.",
+     "stage": "active",
+     "embed": "pages/howto-devices.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "man-devices"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-phone-iphone",
+     "label": "IPHONE CONTROL",
+     "status": "idle",
+     "why": "How an agent sees and taps the iPhone.",
+     "caption": "How an agent sees and taps the iPhone.",
+     "stage": "active",
+     "embed": "pages/howto-phone-iphone.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-android",
+     "label": "PIXEL CONTROL",
+     "status": "idle",
+     "why": "The always-home Android and the apps that only live there.",
+     "caption": "The always-home Android and the apps that only live there.",
+     "stage": "active",
+     "embed": "pages/howto-android.html",
+     "visibility": "public",
+     "links": [
+      "mittens-hw"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-recording",
+     "label": "RECORDING",
+     "status": "idle",
+     "why": "How a meeting gets recorded and lands on the map.",
+     "caption": "How a meeting gets recorded and lands on the map.",
+     "stage": "active",
+     "embed": "pages/howto-recording.html",
+     "visibility": "public",
+     "links": [
+      "meeting-notes",
+      "glasses-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-browsers",
+   "label": "BROWSERS + MCP",
+   "status": "idle",
+   "why": "Which browser lane for which task, and the tool servers agents use.",
+   "statusLine": "manual written",
+   "caption": "Which browser lane for which task, and the tool servers agents use.",
+   "stage": "active",
+   "embed": "pages/man-browsers.html",
+   "visibility": "public",
+   "parent": "man-g-machines",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-browsers",
+     "label": "BROWSER LANES",
+     "status": "idle",
+     "why": "One browser profile per task, one at a time, closed after use.",
+     "caption": "One browser profile per task, one at a time, closed after use.",
+     "stage": "active",
+     "embed": "pages/howto-browsers.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-mcp",
+     "label": "MCP SERVERS",
+     "status": "idle",
+     "why": "Every tool server agents can call.",
+     "caption": "Every tool server agents can call.",
+     "stage": "active",
+     "embed": "pages/howto-mcp.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-builds",
+   "label": "BUILDS + DEPLOYS",
+   "status": "idle",
+   "why": "Shipping app builds and deploys, scheduled routines, testing without touching real accounts.",
+   "statusLine": "manual written",
+   "caption": "Shipping app builds and deploys, scheduled routines, testing without touching real accounts.",
+   "stage": "active",
+   "embed": "pages/man-builds.html",
+   "visibility": "public",
+   "parent": "man-g-ship",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-builds-ios",
+     "label": "IOS BUILDS",
+     "status": "idle",
+     "why": "Building and installing the phone apps.",
+     "caption": "Building and installing the phone apps.",
+     "stage": "active",
+     "embed": "pages/howto-builds-ios.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-deploys",
+     "label": "DEPLOYS",
+     "status": "idle",
+     "why": "Where each service is hosted, and who must say yes first.",
+     "caption": "Where each service is hosted, and who must say yes first.",
+     "stage": "active",
+     "embed": "pages/howto-deploys.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "fashion",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-routines",
+     "label": "ROUTINES HOW-TO",
+     "status": "idle",
+     "why": "How scheduled work runs and reports.",
+     "caption": "How scheduled work runs and reports.",
+     "stage": "active",
+     "embed": "pages/howto-routines.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "northstar",
+      "daily-sync",
+      "daily-content",
+      "watchdog",
+      "mittens-proactive",
+      "nightly-reflection",
+      "what-changed"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-testing",
+     "label": "TESTING",
+     "status": "idle",
+     "why": "Testing with stubs and scratch copies, never real accounts.",
+     "caption": "Testing with stubs and scratch copies, never real accounts.",
+     "stage": "active",
+     "embed": "pages/howto-testing.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "northstar",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-data",
+   "label": "SECRETS + BACKUP",
+   "status": "idle",
+   "why": "Where secrets may live, backup and restore, records, cleanup.",
+   "caption": "Where secrets may live, backup and restore, records, cleanup.",
+   "stage": "active",
+   "embed": "pages/man-data.html",
+   "visibility": "public",
+   "parent": "man-g-ship",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-secrets",
+     "label": "SECRETS",
+     "status": "idle",
+     "why": "Secrets live only in ignored env files, never in a repo or a page.",
+     "caption": "Secrets live only in ignored env files, never in a repo or a page.",
+     "stage": "active",
+     "embed": "pages/howto-secrets.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-restore",
+     "label": "BACKUP + RESTORE",
+     "status": "idle",
+     "why": "What is backed up nightly, and how to bring it back.",
+     "caption": "What is backed up nightly, and how to bring it back.",
+     "stage": "active",
+     "embed": "pages/howto-restore.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-records",
+     "label": "RECORDS",
+     "status": "idle",
+     "why": "Which tool owns each kind of record, so nothing is hand-edited.",
+     "caption": "Which tool owns each kind of record, so nothing is hand-edited.",
+     "stage": "active",
+     "embed": "pages/howto-records.html",
+     "visibility": "public",
+     "links": [
+      "northstar",
+      "outreach",
+      "context-graph",
+      "mittens-daily"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-cleanup",
+     "label": "CLEANUP",
+     "status": "idle",
+     "why": "Every agent leaves the machine as it found it.",
+     "caption": "Every agent leaves the machine as it found it.",
+     "stage": "active",
+     "embed": "pages/howto-cleanup.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
    "status": "idle",
@@ -1498,7 +1855,8 @@
    "visibility": "public",
    "links": [
     "mittens-daily",
-    "proactive-rules"
+    "proactive-rules",
+    "map-upkeep"
    ],
    "parent": "manual-map",
    "parked": false,
@@ -1913,7 +2271,7 @@
      "label": "SILENT AUDIO GAPS",
      "status": "idle",
      "why": "Mittens could go quiet in the middle of a conversation with no sign of what was happening. The audio is back and I am fixing the gaps.",
-     "statusLine": "audio back · fixing gaps",
+     "statusLine": "audio back · smarter triggers next",
      "caption": "Mittens could go quiet in the middle of a conversation with no sign of what was happening.",
      "stage": "active",
      "embed": "pages/is-anyone-seeing-what-s.html",
@@ -2212,7 +2570,6 @@
     "influencers",
     "outreach",
     "susu-map",
-    "portfolio",
     "guardian-angel"
    ],
    "parent": "mittens-hw",
@@ -2381,6 +2738,9 @@
      "stage": "active",
      "embed": "pages/read-to-me.html",
      "visibility": "public",
+     "links": [
+      "howto-read-to-me"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -2417,9 +2777,333 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "man-glasses",
+   "label": "GLASSES MANUAL",
+   "status": "idle",
+   "why": "How my agent works on smart glasses: the lens view, keeping a session open, the camera and building for it.",
+   "statusLine": "written",
+   "caption": "How my agent works on smart glasses:",
+   "stage": "active",
+   "embed": "pages/man-glasses.html",
+   "visibility": "public",
+   "parent": "man-devices",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-meta-glasses",
+     "label": "GLASSES HOW-TO",
+     "status": "idle",
+     "why": "How Mittens draws on the glasses.",
+     "caption": "How Mittens draws on the glasses.",
+     "stage": "active",
+     "embed": "pages/howto-meta-glasses.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "lens-home",
+      "mittens-daily",
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-lens",
+     "label": "GLASSES LENS",
+     "status": "idle",
+     "why": "What Mittens shows on my display glasses: live talk, pages, the action list and what the computer at home is doing.",
+     "statusLine": "live",
+     "caption": "What Mittens shows on my display glasses:",
+     "stage": "active",
+     "embed": "pages/howto-glasses-lens.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "lens-home",
+      "mittens-app",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-session",
+     "label": "GLASSES SESSION",
+     "status": "idle",
+     "why": "How Mittens starts and keeps a session on my glasses: it heals itself, speaks first, can be interrupted and works with the phone locked.",
+     "statusLine": "live",
+     "caption": "How Mittens starts and keeps a session on my glasses:",
+     "stage": "active",
+     "embed": "pages/howto-glasses-session.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "glasses-launch",
+      "mw-calls",
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-capture",
+     "label": "GLASSES CAPTURE",
+     "status": "idle",
+     "why": "Everything the glasses camera can do: quick photos, journal pages, asking Mittens to look, and Mittens filming by itself.",
+     "statusLine": "live",
+     "caption": "Everything the glasses camera can do:",
+     "stage": "active",
+     "embed": "pages/howto-glasses-capture.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "meeting-notes",
+      "mw-blind"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-glasses-build",
+     "label": "GLASSES BUILD",
+     "status": "idle",
+     "why": "How I build and install the glasses side of the Mittens app, from the native module to testing.",
+     "statusLine": "live",
+     "caption": "How I build and install the glasses side of the Mittens app, from the native module to testing.",
+     "stage": "active",
+     "embed": "pages/howto-glasses-build.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "mittens-app",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-talk",
+   "label": "TALK MANUAL",
+   "status": "idle",
+   "why": "How the one agent brain behind voice chat works: its rules, the request ledger, calls, reading aloud and messages sent only after I approve.",
+   "statusLine": "written",
+   "caption": "How the one agent brain behind voice chat works:",
+   "stage": "active",
+   "embed": "pages/man-talk.html",
+   "visibility": "public",
+   "parent": "man-g-agents",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-talk",
+     "label": "TALK",
+     "status": "idle",
+     "why": "One Mittens brain behind Talk: live context it must get right, files shared in chat, handling interruptions, and both English and Mandarin.",
+     "statusLine": "live",
+     "caption": "One Mittens brain behind Talk:",
+     "stage": "active",
+     "embed": "pages/howto-talk.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "one-mittens-brain"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-outbound-calls",
+     "label": "OUTBOUND CALLS",
+     "status": "idle",
+     "why": "Mittens can call a business for me with clear rules: say the purpose first, never pretend to be me, and send identity checks back to me. Every call teaches the next one.",
+     "statusLine": "live · learning each call",
+     "caption": "Mittens can call a business for me with clear rules:",
+     "stage": "active",
+     "embed": "pages/howto-outbound-calls.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk",
+      "mw-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-read-to-me",
+     "label": "READ TO ME",
+     "status": "idle",
+     "why": "Any page or document can be read aloud to me by a voice made on my own computer, with a player in the Mittens app.",
+     "statusLine": "live",
+     "caption": "Any page or document can be read aloud to me by a voice made on my own computer, with a player in the Mittens app.",
+     "stage": "active",
+     "embed": "pages/howto-read-to-me.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app",
+      "ns-talk",
+      "mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-talk-requests",
+     "label": "TALK REQUESTS",
+     "status": "idle",
+     "why": "Every ask in Talk gets its own row, open to done, raised when nothing starts within ten minutes.",
+     "caption": "Every ask in Talk gets its own row, open to done, raised when nothing starts within ten minutes.",
+     "stage": "active",
+     "embed": "pages/howto-talk-requests.html",
+     "visibility": "public",
+     "links": [
+      "mittens",
+      "mittens-architecture",
+      "mittens-digital",
+      "northstar",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-system",
+   "label": "SYSTEM MANUAL",
+   "status": "idle",
+   "why": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
+   "statusLine": "written",
+   "caption": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
+   "stage": "active",
+   "embed": "pages/man-system.html",
+   "visibility": "public",
+   "parent": "man-g-machines",
+   "parked": false,
+   "children": [
+    {
+     "id": "howto-north-star-server",
+     "label": "MAP SERVER",
+     "status": "idle",
+     "why": "This is how the server behind my map keeps its main thread free and shows every agent the same header first. One pulse replaces the scattered timer jobs, and a workers panel and efficiency audit sit on top.",
+     "statusLine": "documented · live",
+     "caption": "This is how the server behind my map keeps its main thread free and shows every agent the same header first.",
+     "stage": "active",
+     "embed": "pages/howto-north-star-server.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-self-check",
+     "label": "SELF CHECK",
+     "status": "idle",
+     "why": "Every mistake I catch becomes a standing test, and drafts, tests, plans and live counts are checked on every pulse. A daily score shows how many mistakes the system caught on its own versus how many I caught.",
+     "statusLine": "documented · live",
+     "caption": "Every mistake I catch becomes a standing test, and drafts, tests, plans and live counts are checked on every pulse.",
+     "stage": "active",
+     "embed": "pages/howto-self-check.html",
+     "visibility": "public",
+     "links": [
+      "brain-tidy-plan",
+      "one-pulse",
+      "brain-architecture",
+      "action-tree",
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-gen-cards",
+     "label": "GEN CARDS",
+     "status": "idle",
+     "why": "Every image, video cut, design or mock page the system makes shows up as one picture card the moment it is saved. A new version replaces the same card.",
+     "statusLine": "documented · live",
+     "caption": "Every image, video cut, design or mock page the system makes shows up as one picture card the moment it is saved.",
+     "stage": "active",
+     "embed": "pages/howto-gen-cards.html",
+     "visibility": "public",
+     "links": [
+      "mittens",
+      "daily-content",
+      "viral-machine",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-brief-to-episode",
+     "label": "BRIEF TO EPISODE",
+     "status": "idle",
+     "why": "Every spec, brief or plan made for me starts with research and becomes an interactive audio episode. The newest one I haven't heard is offered when I have a free moment, and we talk it through.",
+     "statusLine": "documented · live",
+     "caption": "Every spec, brief or plan made for me starts with research and becomes an interactive audio episode.",
+     "stage": "active",
+     "embed": "pages/howto-brief-to-episode.html",
+     "visibility": "public",
+     "links": [
+      "learn-with-mittens",
+      "learn-sop"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-ui-style",
+     "label": "UI STYLE HOW-TO",
+     "status": "idle",
+     "why": "The palette, type and dot glyphs every page and screen uses.",
+     "caption": "The palette, type and dot glyphs every page and screen uses.",
+     "stage": "active",
+     "embed": "pages/howto-ui-style.html",
+     "visibility": "public",
+     "links": [
+      "ui-style",
+      "northstar",
+      "mittens-daily",
+      "mittens-app",
+      "smart-glasses",
+      "soft-robot",
+      "robot-skin",
+      "skin-build",
+      "skin-schedule"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-windows",
+     "label": "WINDOWS",
+     "status": "idle",
+     "why": "How agents open several things at once, each in its own tiled window.",
+     "caption": "How agents open several things at once, each in its own tiled window.",
+     "stage": "active",
+     "embed": "pages/howto-windows.html",
+     "visibility": "public",
+     "links": [
+      "devhub",
+      "ns-talk",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "howto-video-qa",
+     "label": "VIDEO QA",
+     "status": "idle",
+     "why": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
+     "caption": "Every generated shot sampled frame by frame and judged for extra fingers, drifting faces and popping objects.",
+     "stage": "active",
+     "embed": "pages/howto-video-qa.html",
+     "visibility": "public",
+     "links": [
+      "daily-content",
+      "viral-machine",
+      "marketing"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -2473,7 +3157,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · reviews every night",
+     "statusLine": "live · reviews and fixes nightly",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -2774,7 +3458,7 @@
      "label": "QUESTION ROUTING",
      "status": "idle",
      "why": "Questions a worker can answer should go to a worker, not to me. Routing is much better, but the assistant still promises work and then forgets it.",
-     "statusLine": "improved · still unreliable",
+     "statusLine": "improved · full structure map next",
      "caption": "Questions a worker can answer should go to a worker, not to me.",
      "stage": "active",
      "embed": "pages/why-are-questions-that-should.html",
@@ -2907,145 +3591,6 @@
     }
    ],
    "embedCaption": "case study"
-  },
-  {
-   "id": "portfolio-landing",
-   "label": "LANDING",
-   "status": "idle",
-   "why": "The landing page scenes: a night hero, a shooting star, how I work, and an ending in the Milky Way.",
-   "statusLine": "edited this week",
-   "caption": "The landing page scenes:",
-   "stage": "active",
-   "embed": "pages/portfolio-landing.html",
-   "visibility": "public",
-   "parent": "portfolio",
-   "parked": false,
-   "children": [
-    {
-     "id": "shooting-star",
-     "label": "SHOOTING STAR",
-     "status": "planned",
-     "why": "The star comes out of the desk screen: the map you see is live.",
-     "statusLine": "planned · being animated",
-     "caption": "The star comes out of the desk screen:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "intro.html?moment=star",
-     "visibility": "public",
-     "embedCaption": "the landing story"
-    },
-    {
-     "id": "portfolio-night-mode",
-     "label": "NIGHT MODE",
-     "status": "idle",
-     "why": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
-     "statusLine": "prototype",
-     "caption": "The landing hero moves from day to sunset to night; the scene stays the same, only the light and sky change.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/portfolio-night-mode.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-milkyway",
-     "label": "LANDING END: MILKY WAY",
-     "status": "idle",
-     "why": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
-     "statusLine": "options ready · waiting on my pick",
-     "caption": "The landing scroll ends with a glint off Mittens that opens into the Milky Way, then the camera settles on one bright star that leads into my map.",
-     "stage": "active",
-     "embed": "pages/portfolio-milkyway.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-landing-talk",
-     "label": "LANDING: HOW I WORK",
-     "status": "idle",
-     "why": "The landing shows how I work: I talk while wearing my devices, my words travel to the computer at home and light up a dot on my map. It also explains in my own voice why I build soft robots.",
-     "statusLine": "draft · waiting to ship",
-     "caption": "The landing shows how I work:",
-     "stage": "active",
-     "embed": "pages/portfolio-landing-talk.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "landing",
-     "label": "LANDING",
-     "status": "idle",
-     "why": "This is the working thread for the landing page.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for the landing page.",
-     "stage": "active",
-     "embed": "pages/landing.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-landing"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "portfolio-site",
-   "label": "SITE + MEDIA",
-   "status": "idle",
-   "why": "How my portfolio site is built and served, including media storage and previews.",
-   "statusLine": "edited this week",
-   "caption": "How my portfolio site is built and served, including media storage and previews.",
-   "stage": "active",
-   "embed": "pages/portfolio-site.html",
-   "visibility": "public",
-   "parent": "portfolio",
-   "parked": false,
-   "children": [
-    {
-     "id": "stack-audit",
-     "label": "STACK AUDIT",
-     "status": "idle",
-     "why": "Every technical claim on the case studies checked against the code: 106 claims -- 57 proven, 29 partial, 20 corrected.",
-     "statusLine": "done",
-     "caption": "Every technical claim on the case studies checked against the code:",
-     "stage": "active",
-     "embed": "pages/stack-audit.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-media-on-cloudflare-r2",
-     "label": "PORTFOLIO MEDIA HOSTING",
-     "status": "idle",
-     "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "statusLine": "moving over",
-     "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "stage": "active",
-     "embed": "pages/portfolio-media-on-cloudflare-r2.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "dev-hub-launcher-portfolio-preview",
-     "label": "PORTFOLIO PREVIEW LAUNCHER",
-     "status": "idle",
-     "why": "My dev hub can now launch a live preview of my portfolio.",
-     "statusLine": "in progress",
-     "caption": "My dev hub can now launch a live preview of my portfolio.",
-     "stage": "active",
-     "embed": "pages/dev-hub-launcher-portfolio-preview.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "learn-episodes",
@@ -3291,54 +3836,6 @@
      "links": [
       "ui-style",
       "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "portfolio-mittens-scenes",
-   "label": "MITTENS SCENES",
-   "status": "idle",
-   "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
-   "statusLine": "ideas · transitions made, not on site",
-   "caption": "I want more varied views in the Mittens chapter of my portfolio:",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/portfolio-mittens-scenes.html",
-   "visibility": "public",
-   "parent": "portfolio",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-soft-robot-film-dark",
-     "label": "SOFT ROBOT FILM",
-     "status": "idle",
-     "why": "I am making a dark version of the short film about my soft robot companion.",
-     "statusLine": "in progress",
-     "caption": "I am making a dark version of the short film about my soft robot companion.",
-     "stage": "active",
-     "embed": "pages/mittens-soft-robot-film-dark.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-mittens-scenes",
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-scenes",
-     "label": "MITTENS SCENES",
-     "status": "idle",
-     "why": "This is the working thread for the scenes that show Mittens in action.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for the scenes that show Mittens in action.",
-     "stage": "active",
-     "embed": "pages/mittens-scenes.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-mittens-scenes"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3785,7 +4282,24 @@
    ],
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "hows-architect-research-and-did",
+     "label": "ARCHITECT RESEARCH CHECK",
+     "status": "idle",
+     "why": "I asked how the architect research was going and whether my last request got through. It now sits with the main architecture work.",
+     "statusLine": "folded into architecture",
+     "caption": "I asked how the architect research was going and whether my last request got through.",
+     "stage": "active",
+     "embed": "pages/hows-architect-research-and-did.html",
+     "visibility": "public",
+     "links": [
+      "from-t3083-the-one-architect",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -3871,6 +4385,38 @@
      "links": [
       "mittens-speaker",
       "wearables"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "triggers",
+   "label": "TRIGGERS",
+   "status": "idle",
+   "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
+   "statusLine": "live · read by every lane",
+   "caption": "When Mittens speaks first, as one list any model reads:",
+   "stage": "active",
+   "embed": "pages/triggers.html",
+   "visibility": "public",
+   "parent": "man-rules",
+   "parked": false,
+   "children": [
+    {
+     "id": "triggers-2",
+     "label": "TRIGGERS",
+     "status": "idle",
+     "why": "The events that set Mittens in motion without being asked.",
+     "statusLine": "folded into its twin",
+     "caption": "The events that set Mittens in motion without being asked.",
+     "stage": "active",
+     "embed": "pages/triggers-2.html",
+     "visibility": "public",
+     "links": [
+      "triggers",
+      "man-rules"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -4028,32 +4574,37 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "portfolio-chapters",
-   "label": "SCROLL CHAPTERS",
+   "id": "map-upkeep",
+   "label": "MAP UPKEEP",
    "status": "idle",
-   "why": "As visitors scroll my portfolio, they move through three chapters: the assistant handling a sample day, the soft robot responding to touch, and the project map playing back over time.",
-   "statusLine": "preview · phone layout done",
-   "caption": "As visitors scroll my portfolio, they move through three chapters:",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/portfolio-chapters.html",
+   "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "statusLine": "hourly tidy · placement audit run",
+   "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "stage": "active",
+   "embed": "pages/map-upkeep.html",
    "visibility": "public",
-   "parent": "portfolio",
+   "links": [
+    "context-graph",
+    "proactive-rules",
+    "howto-map-organizing",
+    "northstar"
+   ],
+   "parent": "man-rules",
    "parked": false,
    "children": [
     {
-     "id": "scroll-chapters",
-     "label": "SCROLL CHAPTERS",
+     "id": "map-upkeep-2",
+     "label": "MAP UPKEEP",
      "status": "idle",
-     "why": "The portfolio tells its story in chapters as you scroll.",
+     "why": "The ongoing work of keeping the map tidy and true.",
      "statusLine": "folded into its twin",
-     "caption": "The portfolio tells its story in chapters as you scroll.",
+     "caption": "The ongoing work of keeping the map tidy and true.",
      "stage": "active",
-     "embed": "pages/scroll-chapters.html",
+     "embed": "pages/map-upkeep-2.html",
      "visibility": "public",
      "links": [
-      "portfolio-chapters",
-      "portfolio"
+      "map-upkeep",
+      "man-rules"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -4169,7 +4720,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -4189,6 +4740,9 @@
     {
      "vis": "private"
     }
+   ],
+   "links": [
+    "firstpower"
    ],
    "parent": "wearables",
    "parked": false,
@@ -4276,6 +4830,25 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "triage",
+   "label": "TRIAGE",
+   "status": "idle",
+   "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
+   "statusLine": "built · watcher proposes, Mittens decides",
+   "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
+   "stage": "active",
+   "embed": "pages/triage.html",
+   "visibility": "public",
+   "links": [
+    "context-architecture",
+    "latest-wins"
+   ],
+   "parent": "brain-deciding",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-podcast",
    "label": "MITTENS PODCAST",
    "status": "idle",
@@ -4318,6 +4891,21 @@
     "mittens-knows"
    ],
    "parent": "mittens-desktop",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "flaggers-haiku-only-flags-mittens",
+   "label": "TRIAGE FLAGGERS",
+   "status": "idle",
+   "why": "A small fast model only raises flags, and Mittens decides what actually runs.",
+   "statusLine": "in use · still refining",
+   "caption": "A small fast model only raises flags, and Mittens decides what actually runs.",
+   "stage": "active",
+   "embed": "pages/flaggers-haiku-only-flags-mittens.html",
+   "visibility": "public",
+   "parent": "triage",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4405,6 +4993,36 @@
       "viral-machine"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "viral-clips-mittens-positioned-s1",
+     "label": "VIRAL CLIPS SEASON ONE",
+     "status": "idle",
+     "why": "The first season of short clips, made to position my assistant as the product.",
+     "statusLine": "in progress",
+     "caption": "The first season of short clips, made to position my assistant as the product.",
+     "stage": "active",
+     "embed": "pages/viral-clips-mittens-positioned-s1.html",
+     "visibility": "public",
+     "links": [
+      "viral-machine"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-viral-machine",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "The code map of the viral machine. It turns any product into trend research, scripts, generated video and judged quality checks.",
+     "statusLine": "mapped from the code · rescanned",
+     "caption": "The code map of the viral machine.",
+     "stage": "active",
+     "embed": "pages/code-viral-machine.html",
+     "visibility": "public",
+     "links": [
+      "viral-machine"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4421,13 +5039,30 @@
    "visibility": "public",
    "parent": "smart-glasses",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "like-maybe-open-camera-on",
+     "label": "GLASSES CAMERA GUIDANCE",
+     "status": "idle",
+     "why": "I want the glasses camera to open so my assistant can see and walk me through things. For the pendant, I'm moving away from all-metal so the wireless signal can get through, and researching a shape that won't flip over.",
+     "statusLine": "design research continues",
+     "caption": "I want the glasses camera to open so my assistant can see and walk me through things.",
+     "stage": "active",
+     "embed": "pages/like-maybe-open-camera-on.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "idle",
+   "status": "working",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -4436,11 +5071,29 @@
    "visibility": "public",
    "links": [
     "mittens-proactive",
+    "howto-routines",
     "housekeeping"
    ],
    "parent": "ns-daily-loops",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "mem-census-watchdog",
+     "label": "MEMORY WATCHDOG",
+     "status": "idle",
+     "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
+     "statusLine": "in progress",
+     "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
+     "stage": "active",
+     "embed": "pages/mem-census-watchdog.html",
+     "visibility": "public",
+     "links": [
+      "watchdog",
+      "ns-daily-loops"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4455,7 +5108,20 @@
    "visibility": "public",
    "parent": "smart-glasses",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "not-done-b-roll-tile",
+     "label": "B-ROLL TILE",
+     "status": "idle",
+     "why": "A tile next to Capture in the lens home screen for grabbing extra footage. It isn't finished yet.",
+     "statusLine": "not done yet",
+     "caption": "A tile next to Capture in the lens home screen for grabbing extra footage.",
+     "stage": "active",
+     "embed": "pages/not-done-b-roll-tile.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4477,6 +5143,272 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "brain-context-flow",
+   "label": "HOW CONTEXT FLOWS",
+   "status": "idle",
+   "why": "What each agent is given to work with, and how the newest true fact wins.",
+   "statusLine": "noted this week",
+   "caption": "What each agent is given to work with, and how the newest true fact wins.",
+   "stage": "active",
+   "embed": "pages/brain-context-flow.html",
+   "visibility": "public",
+   "parent": "brain-architecture",
+   "parked": false,
+   "children": [
+    {
+     "id": "context-architecture",
+     "label": "CONTEXT ARCHITECTURE",
+     "status": "idle",
+     "why": "A design for how every agent always knows what is actually happening, built from facts, data and experiments.",
+     "statusLine": "first phases live · more planned",
+     "caption": "A design for how every agent always knows what is actually happening, built from facts, data and experiments.",
+     "stage": "active",
+     "embed": "pages/context-architecture.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "context-ledger",
+     "label": "CONTEXT LEDGER",
+     "status": "idle",
+     "why": "Code can never keep up with change, so every update to my data and every message to me is checked against context first. If the checker is down, nothing goes out unreviewed.",
+     "statusLine": "live · checks every outgoing line",
+     "caption": "Code can never keep up with change, so every update to my data and every message to me is checked against context first.",
+     "stage": "active",
+     "embed": "pages/context-ledger.html",
+     "visibility": "public",
+     "links": [
+      "thread-architecture",
+      "action-tree",
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "context-review",
+     "label": "WHAT MITTENS IS FED",
+     "status": "idle",
+     "why": "I am reviewing what goes into Mittens on every turn and working out how to make it better.",
+     "statusLine": "under review",
+     "caption": "I am reviewing what goes into Mittens on every turn and working out how to make it better.",
+     "stage": "active",
+     "embed": "pages/context-review.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "latest-wins",
+     "label": "LATEST WINS",
+     "status": "idle",
+     "why": "My newest words win over older plans, so a fresh chat session carries what I said most recently. Replies are checked against the question they answer, and unfinished reports get sent back.",
+     "statusLine": "built · more checks planned",
+     "caption": "My newest words win over older plans, so a fresh chat session carries what I said most recently.",
+     "stage": "active",
+     "embed": "pages/latest-wins.html",
+     "visibility": "public",
+     "links": [
+      "context-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "truth-check",
+     "label": "TRUTH CHECK",
+     "status": "idle",
+     "why": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
+     "statusLine": "built · widening to every channel",
+     "caption": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
+     "stage": "active",
+     "embed": "pages/truth-check.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brain-deciding",
+   "label": "DECIDING + ROUTING",
+   "status": "idle",
+   "why": "How each message is sorted and sent to the right place.",
+   "statusLine": "noted this week",
+   "caption": "How each message is sorted and sent to the right place.",
+   "stage": "active",
+   "embed": "pages/brain-deciding.html",
+   "visibility": "public",
+   "parent": "brain-architecture",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-decision-map",
+     "label": "MITTENS DECISION MAP",
+     "status": "idle",
+     "why": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use. Build requests are now judged from context instead of fixed phrases.",
+     "statusLine": "proposal · being tested",
+     "caption": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use.",
+     "stage": "active",
+     "embed": "pages/mittens-decision-map.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "scenarios",
+     "label": "SCENARIOS",
+     "status": "idle",
+     "why": "Each scenario has its own full logic: which gates it opens, what actions it takes and what it updates. Each one is also a dot on the map, and every code path it points to is checked to make sure it exists.",
+     "statusLine": "built · all code paths checked",
+     "caption": "Each scenario has its own full logic:",
+     "stage": "active",
+     "embed": "pages/scenarios.html",
+     "visibility": "public",
+     "links": [
+      "triage",
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "bug-voice-tools-unknown-area",
+     "label": "VOICE ROUTING BUG",
+     "status": "idle",
+     "why": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
+     "statusLine": "fixing",
+     "caption": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
+     "stage": "active",
+     "embed": "pages/bug-voice-tools-unknown-area.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brain-running",
+   "label": "RUNNING THE BRAIN",
+   "status": "idle",
+   "why": "The steady pulse, events, worker capacity and keeping everything tidy.",
+   "statusLine": "noted this week",
+   "caption": "The steady pulse, events, worker capacity and keeping everything tidy.",
+   "stage": "active",
+   "embed": "pages/brain-running.html",
+   "visibility": "public",
+   "parent": "brain-architecture",
+   "parked": false,
+   "children": [
+    {
+     "id": "one-pulse",
+     "label": "ONE PULSE",
+     "status": "idle",
+     "why": "One heartbeat would keep context, screens and messages in sync, notice when something breaks and fix it, without constant polling. It would also let agents act ahead of me.",
+     "statusLine": "built · routines moving over daily",
+     "caption": "One heartbeat would keep context, screens and messages in sync, notice when something breaks and fix it, without constant polling.",
+     "stage": "active",
+     "embed": "pages/one-pulse.html",
+     "visibility": "public",
+     "links": [
+      "context-ledger",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "event-driven-brain",
+     "label": "EVENT-DRIVEN BRAIN",
+     "status": "idle",
+     "why": "I want the brain to stop checking on a timer and run only when something actually happens.",
+     "statusLine": "first steps built · shadow testing",
+     "caption": "I want the brain to stop checking on a timer and run only when something actually happens.",
+     "stage": "active",
+     "embed": "pages/event-driven-brain.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "parallel-worker-capacity",
+     "label": "PARALLEL WORKER CAPACITY",
+     "status": "idle",
+     "why": "I am working out how many agents can run side by side, and why so many processes pile up.",
+     "statusLine": "being worked out",
+     "caption": "I am working out how many agents can run side by side, and why so many processes pile up.",
+     "stage": "active",
+     "embed": "pages/parallel-worker-capacity.html",
+     "visibility": "public",
+     "links": [
+      "ns-public"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "brain-tidy-plan",
+     "label": "BRAIN TIDY",
+     "status": "idle",
+     "why": "The system had built up a lot, so I audited what to keep, move or retire. It now checks itself every day and gives itself a score.",
+     "statusLine": "built · last timers to retire",
+     "caption": "The system had built up a lot, so I audited what to keep, move or retire.",
+     "stage": "active",
+     "embed": "pages/brain-tidy-plan.html",
+     "visibility": "public",
+     "links": [
+      "context-graph",
+      "learn-with-mittens",
+      "man-rules",
+      "one-pulse",
+      "thread-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-g-agents",
+   "label": "HOW AGENTS WORK",
+   "status": "idle",
+   "why": "The rules my agents follow and the manual for talking with them.",
+   "statusLine": "noted this week",
+   "caption": "The rules my agents follow and the manual for talking with them.",
+   "stage": "active",
+   "embed": "pages/man-g-agents.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-g-machines",
+   "label": "MACHINES + SYSTEM",
+   "status": "idle",
+   "why": "How my devices and the system itself fit together.",
+   "statusLine": "noted this week",
+   "caption": "How my devices and the system itself fit together.",
+   "stage": "active",
+   "embed": "pages/man-g-machines.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-g-ship",
+   "label": "BUILD + SHIP",
+   "status": "idle",
+   "why": "How things get built, shipped and worked on.",
+   "statusLine": "noted this week",
+   "caption": "How things get built, shipped and worked on.",
+   "stage": "active",
+   "embed": "pages/man-g-ship.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-scenario-logic",
    "label": "SCENARIOS",
    "status": "idle",
@@ -4487,7 +5419,9 @@
    "embed": "pages/mittens-scenario-logic.html",
    "visibility": "public",
    "links": [
-    "brain-architecture"
+    "brain-architecture",
+    "triage",
+    "scenarios"
    ],
    "parent": "mittens",
    "parked": false,
@@ -4503,6 +5437,7 @@
      "embed": "pages/msl-routing.html",
      "visibility": "public",
      "links": [
+      "triage",
       "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
@@ -4568,6 +5503,48 @@
    "parent": "wearables",
    "parked": false,
    "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "firstpower",
+   "label": "FIRSTPOWER",
+   "status": "idle",
+   "why": "A shared physics and electronics pipeline that tests a whole device before anything is built. Each simulation feeds the same judges and fix loop, and gets checked against a real bench test.",
+   "statusLine": "scope expanded · pendant first",
+   "caption": "A shared physics and electronics pipeline that tests a whole device before anything is built.",
+   "stage": "active",
+   "embed": "pages/firstpower.html",
+   "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "firstpower",
+     "url": "https://github.com/SusannaShu/firstpower"
+    }
+   ],
+   "links": [
+    "pendant",
+    "robot-skin"
+   ],
+   "parent": "devhub",
+   "parked": false,
+   "children": [
+    {
+     "id": "code-firstpower",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This map mirrors the real code of my shared hardware engine: a gate, a panel of judges and a loop that fixes its own mistakes. It is built from the code itself, so it stays true as the code changes.",
+     "statusLine": "mapped from the code",
+     "caption": "This map mirrors the real code of my shared hardware engine:",
+     "stage": "active",
+     "embed": "pages/code-firstpower.html",
+     "visibility": "public",
+     "links": [
+      "firstpower"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
