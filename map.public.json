@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-02T00:42:12.640Z",
+ "generatedAt": "2026-11-02T01:03:25.355Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -504,7 +504,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -4606,21 +4606,6 @@
       "wake-report"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "worker-progress-reports",
-     "label": "WORKER PROGRESS REPORTS",
-     "status": "idle",
-     "why": "I can ask what is running right now, and workers report what they finished and what held them up.",
-     "statusLine": "in use",
-     "caption": "I can ask what is running right now, and workers report what they finished and what held them up.",
-     "stage": "active",
-     "embed": "pages/worker-progress-reports.html",
-     "visibility": "public",
-     "links": [
-      "wake-report"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -5468,6 +5453,24 @@
    "embed": "pages/lens-home.html",
    "visibility": "public",
    "parent": "smart-glasses",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "worker-progress-reports",
+   "label": "WORKER PROGRESS REPORTS",
+   "status": "idle",
+   "why": "I can ask what is running right now, and workers report what they finished and what held them up.",
+   "statusLine": "in use",
+   "caption": "I can ask what is running right now, and workers report what they finished and what held them up.",
+   "stage": "active",
+   "embed": "pages/worker-progress-reports.html",
+   "visibility": "public",
+   "links": [
+    "wake-report"
+   ],
+   "parent": "wake-report",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
