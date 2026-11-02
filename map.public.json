@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-02T13:45:57.932Z",
+ "generatedAt": "2026-11-02T14:44:02.777Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -774,7 +774,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -3413,7 +3413,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "working",
+   "status": "idle",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -4720,7 +4720,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
