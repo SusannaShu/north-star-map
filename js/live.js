@@ -51,7 +51,7 @@ window.syncOverlay = function(fresh) {
             fits: fits,
             r: 14
         });
-        (it.agents || []).forEach(a => want.set(a.id, {
+        (it.agents || []).filter(a => window.NS_SHOW_DONE || !/^(done|finished|exited|stopped|killed|failed)$/.test(a.state || "")).forEach(a => want.set(a.id, {
             id: a.id,
             type: "agent",
             label: a.project,

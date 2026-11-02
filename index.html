@@ -447,6 +447,10 @@ html.public[data-theme="dark"] canvas#map { filter:invert(1) hue-rotate(180deg);
 body.saver .legend { opacity:0; }
 .legend div { display:flex; align-items:center; gap:7px; }
 .legend div[hidden] { display:none; }
+.legend .show-done { all:unset; cursor:pointer; display:flex; align-items:center; gap:7px; margin-top:4px; padding:4px 8px 4px 6px; border:1px solid #000; border-radius:3px; background:#fff; color:#000; font:inherit; letter-spacing:.04em; text-transform:uppercase; }
+.legend .show-done:hover { background:#000; color:#fff; }
+.legend .show-done .sd-box { width:9px; height:9px; border:1.4px solid currentColor; box-sizing:border-box; }
+.legend .show-done[aria-pressed="true"] .sd-box { background:currentColor; }
 .card li a { color:var(--text); text-underline-offset:3px; }
 /* ── Live layer: CEO box, intents, the people sketch (live.js) ── */
 .askbar { position:fixed; left:50%; transform:translateX(-50%); bottom:46px; z-index:16; width:min(560px, calc(100vw - 32px));
@@ -810,7 +814,10 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
   <div><span class="dot plan"></span> plan made · not acted on</div>
   <div id="legendQueued"><span class="dot queued"></span> agent queued · next up</div>
   <div id="legendWaiting"><span class="dot waiting"></span> waiting on them</div>
-  <div><span class="dot finished"></span> done (folds after a week)</div>
+  <div><span class="dot finished"></span> done (hidden unless shown)</div>
+  <button type="button" id="fDone" class="show-done" aria-pressed="true" onclick='window.nsFilter&&nsFilter("done")' title="done, archived and merged dots"><span class="sd-box"></span><span class="sd-label">Hide done</span></button>
+  <button type="button" id="fQuiet" class="show-done" aria-pressed="true" onclick='window.nsFilter&&nsFilter("quiet")' title="nothing dated in 3 days, nothing working, nothing waiting on you"><span class="sd-box"></span><span class="sd-label">Hide quiet</span></button>
+  <span id="fCount" class="sd-count" style="font-size:10px;color:#777;margin:2px 0 0 4px"></span>
 </div>
 
 
@@ -881,11 +888,12 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/public-presence.js?v=20261022a-pub" defer="defer"></script>
 <script src="js/north-star-glyph.js?v=20261011v4"></script>
 <script src="js/ns-stream.js?v=20261022pulse2"></script>
+<script src="js/done-filter.js?v=20261102a"></script>
 <script src="js/public-live.js"></script>
-<script src="js/map.js?v=20261030idle"></script>
+<script src="js/map.js?v=20261102done"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/public-time.js?v=20261022changes" defer="defer"></script>
-<script src="js/live.js?v=20261013mt1"></script>
+<script src="js/live.js?v=20261102done"></script>
 <script src="js/embed-head.js?v=20261022one"></script>
 <script src="js/view.js?v=20261022onehead"></script>
 

@@ -712,7 +712,76 @@ function renderCrumbs() {
     });
 }
 
+const lsGet = k => {
+    try {
+        return localStorage.getItem(k);
+    } catch {
+        return null;
+    }
+};
+
+const HIDE = {
+    done: QS.get("done") !== "1" && lsGet("nsHideDone") !== "0",
+    quiet: QS.get("done") !== "1" && QS.get("quiet") !== "1" && lsGet("nsHideQuiet") !== "0"
+};
+
+let SHOW_DONE = !HIDE.done && !HIDE.quiet;
+
+window.nsFilter = k => {
+    HIDE[k] = !HIDE[k];
+    try {
+        localStorage.setItem(k === "done" ? "nsHideDone" : "nsHideQuiet", HIDE[k] ? "1" : "0");
+    } catch {}
+    SHOW_DONE = !HIDE.done && !HIDE.quiet;
+    buildGraph(DATA);
+    renderDoneToggle();
+    if (SEARCH.q) runSearch(SEARCH.q);
+};
+
+let DONE_HIDDEN = 0;
+
+function setShowDone(on) {
+    SHOW_DONE = !!on;
+    HIDE.done = HIDE.quiet = !SHOW_DONE;
+    try {
+        localStorage.setItem("nsHideDone", HIDE.done ? "1" : "0");
+        localStorage.setItem("nsHideQuiet", HIDE.quiet ? "1" : "0");
+    } catch {}
+    buildGraph(DATA);
+    renderDoneToggle();
+    if (SEARCH.q) runSearch(SEARCH.q);
+}
+
+function renderDoneToggle() {
+    window.NS_SHOW_DONE = SHOW_DONE;
+    for (const [id, k, word] of [ [ "fDone", "done", "Hide done" ], [ "fQuiet", "quiet", "Hide quiet" ] ]) {
+        const b = document.getElementById(id);
+        if (!b) continue;
+        b.setAttribute("aria-pressed", HIDE[k] && !SHOW_DONE ? "true" : "false");
+        b.querySelector(".sd-label").textContent = word;
+    }
+    const n = document.getElementById("fCount");
+    if (n) n.textContent = DONE_HIDDEN ? `${DONE_HIDDEN} hidden` : "";
+}
+
+window.nsShowDone = setShowDone;
+
 function buildGraph(full) {
+    const F = window.nsDoneFilter;
+    if (F && !SHOW_DONE && !buildGraph.opened && OPEN_WANT && full !== FALLBACK) {
+        const id0 = full.aliases && full.aliases[OPEN_WANT] || OPEN_WANT;
+        const hit = (full.projects || []).find(p => p.id === id0 || (p.children || []).some(c => c.id === id0));
+        if (hit && (hit.id === id0 ? F.projPast(hit) : F.leafPast(hit.children.find(c => c.id === id0)))) SHOW_DONE = true;
+    }
+    if (F && !SHOW_DONE) {
+        const r = F.hideDone(full, {
+            done: HIDE.done,
+            quiet: HIDE.quiet
+        });
+        DONE_HIDDEN = r.hidden;
+        full = r.data;
+    } else if (F) DONE_HIDDEN = 0;
+    renderDoneToggle();
     indexFull(full);
     const want = OPEN_WANT && !FULL.e[OPEN_WANT] && full.aliases && full.aliases[OPEN_WANT] ? full.aliases[OPEN_WANT] : OPEN_WANT;
     if (!buildGraph.opened && full !== FALLBACK && want && FULL.e[want]) {
