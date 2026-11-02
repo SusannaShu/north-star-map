@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-02T08:03:29.998Z",
+ "generatedAt": "2026-11-02T11:45:18.387Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -357,7 +357,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -421,7 +421,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -774,7 +774,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1318,7 +1318,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1934,7 +1934,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2442,7 +2442,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -3103,7 +3103,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -5030,7 +5030,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -5062,7 +5062,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
