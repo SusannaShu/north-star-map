@@ -788,8 +788,8 @@ function buildGraph(full) {
         });
         k.done = c.stage === "done";
         k.merged = !!c.mergedInto;
-        k.doneOld = k.done && (!!c.archived || k.merged || !!c.doneAt && Date.now() - Date.parse(c.doneAt) > DONE_FOLD_MS);
-        k.loud = !k.done && (k.status === "needs-you" || k.status === "working" || k.pin || k.live);
+        k.doneOld = !!c.archived || k.merged || k.done && !!c.doneAt && Date.now() - Date.parse(c.doneAt) > DONE_FOLD_MS;
+        k.loud = !k.done && !k.doneOld && (k.status === "needs-you" || k.status === "working" || k.pin || k.live);
         k.fold = !k.loud && (!owned || MINOR_KINDS.has(k.kind) || k.planned || k.doneOld || k.kind === "howto" && !ROOT);
         links.push({
             s: p.id,
@@ -897,9 +897,9 @@ function buildGraph(full) {
     }
 }
 
-const weightOf = n => n.type === "project" ? n._w : n.minor ? MINOR_W : 1;
+const weightOf = n => n.minor ? MINOR_W : n.type === "project" ? n._w : 1;
 
-const SPAN = n => n.type === "project" ? n.depth === 1 ? 64 : 58 : n.minor ? 16 : n.owned ? 40 : 32;
+const SPAN = n => n.minor ? 16 : n.type === "project" ? n.depth === 1 ? 64 : 58 : n.owned ? 40 : 32;
 
 function layoutHomes() {
     const hub = nodes[0];
@@ -911,12 +911,23 @@ function layoutHomes() {
         n.minor = n.fold || compact && !n.loud;
         n.r = n.minor ? SZ.minor : n.owned ? SZ.owned : SZ.child;
     });
-    const W8 = n => n._w = Math.max(1, n.subs.reduce((s, q) => s + W8(q), 0) + n.kids.reduce((s, k) => s + (k.minor ? MINOR_W : 1), 0));
+    const keep = n => {
+        const subs = n.subs.map(keep).some(Boolean);
+        const k = subs || n.kids.some(c => !c.minor) || !n.done && [ "needs-you", "working", "waiting" ].includes(n.status);
+        n.minor = compact && n.sub && !k;
+        return k || !n.sub;
+    };
+    TREE_TOP.forEach(keep);
+    const W8 = n => n._w = Math.max(1, n.subs.reduce((s, q) => s + (W8(q), weightOf(q)), 0) + n.kids.reduce((s, k) => s + (k.minor ? MINOR_W : 1), 0));
     const TOP = [ ...HUBKIDS.filter(k => !k.minor), ...HUBKIDS.filter(k => k.minor), ...TREE_TOP ];
     TREE_TOP.forEach(W8);
     const itemsOf = n => n.type === "project" ? [ ...n.kids.filter(k => !k.minor), ...n.kids.filter(k => k.minor), ...n.subs ] : [];
     const NEED = n => {
         const own = SPAN(n) / RING(n.depth);
+        if (n.minor && n.type === "project") {
+            itemsOf(n).forEach(NEED);
+            return n._need = own;
+        }
         const kids = itemsOf(n).reduce((s, q) => s + NEED(q), 0);
         return n._need = Math.max(own, kids);
     };
@@ -1022,6 +1033,7 @@ function measure(n) {
 
 function tierOf(n, home) {
     if (n.type === "hub") return 0;
+    if (n.type === "project" && n.minor) return 5;
     if (n.type === "project" && n.status === "dormant" && (STILL || isMobile())) return 4;
     if (n.type === "project") return n.sub ? 2 : 1;
     if (n.kind === "code" && n.depth === 1 && n.up && String(n.id) === "code-" + n.up) return 2;
@@ -1634,12 +1646,12 @@ function labelText(n, color) {
 }
 
 function satellites(n) {
-    const all = n.kids ? n.kids.filter(k => k.minor && vaOf(k) < .5) : [];
+    const all = n.kids ? [ ...n.kids, ...n.subs || [] ].filter(k => k.minor && vaOf(k) < .5) : [];
     if (!all.length) {
         n.sat = null;
         return;
     }
-    const folded = all.filter(k => !k.doneOld), old = all.length - folded.length;
+    const folded = all.filter(k => !k.doneOld), old = STILL || isMobile() && !ROOT ? 0 : all.length - folded.length;
     const side = (n.hx || 0) >= 0 ? 1 : -1, c0 = side > 0 ? .3 : Math.PI - .3, R = n.r + 5.5, shown = Math.min(folded.length, 6);
     const tx = n.x + side * (R + 5), ty = n.y + Math.sin(.3) * R;
     ctx.font = "500 9px JetBrains Mono, monospace";
