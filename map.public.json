@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-03T07:40:44.615Z",
+ "generatedAt": "2026-11-03T21:53:19.535Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -162,6 +162,8 @@
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "two products live",
    "caption": "A creative economy platform -- authenticity + creativity.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/fashion.html",
    "visibility": "public",
    "codeRepos": [
