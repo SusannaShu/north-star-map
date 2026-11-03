@@ -222,6 +222,14 @@ const RING = d => d <= 0 ? 0 : 190 + (d - 1) * 120;
 
 const MINOR_W = .5, MINOR_STAGGER = 44;
 
+const CHAIN_DR = 26;
+
+const stepNoOf = c => c.order != null && isFinite(+c.order) ? +c.order : (/^\s*(\d+(?:\.\d+)?)[\s.)]/.exec(c.label || "") || [])[1] != null ? +/^\s*(\d+(?:\.\d+)?)/.exec(c.label)[1] : null;
+
+const futureOf = c => !!c.future || /\(FUTURE PLAN\)/i.test(c.label || "");
+
+const chainOf = n => n.layout !== "chain" ? [] : [ ...n.kids || [], ...n.subs || [], ...n.top || [] ].filter(q => q.stepNo != null).sort((a, b) => a.future - b.future || a.stepNo - b.stepNo);
+
 let TREE_TOP = [], EX = 1, EY = 1, fitK = 1;
 
 const isOverlay = n => n.type === "intent" || n.type === "agent";
@@ -817,7 +825,8 @@ function buildGraph(full) {
         va: 1,
         vt: 1,
         kids: [],
-        subs: []
+        subs: [],
+        layout: data.hub.layout || null
     });
     DETAILS[data.hub.id] = data.hub;
     const P = data.projects || [], ids = new Set(P.map(p => p.id)), subsOf = {};
@@ -860,6 +869,11 @@ function buildGraph(full) {
         k.doneOld = !!c.archived || k.merged || k.done && !!c.doneAt && Date.now() - Date.parse(c.doneAt) > DONE_FOLD_MS;
         k.loud = !k.done && !k.doneOld && (k.status === "needs-you" || k.status === "working" || k.pin || k.live);
         k.fold = !k.loud && (!owned || MINOR_KINDS.has(k.kind) || k.planned || k.doneOld || k.kind === "howto" && !ROOT);
+        if (n.layout === "chain" && !k.doneOld) {
+            k.stepNo = stepNoOf(c);
+            k.future = futureOf(c);
+            if (k.stepNo != null) k.fold = false;
+        }
         links.push({
             s: p.id,
             t: c.id
@@ -893,7 +907,10 @@ function buildGraph(full) {
             vy: 0,
             r: depth > 1 ? SZ.sub : SZ.project,
             kids: [],
-            subs: []
+            subs: [],
+            layout: p.layout || null,
+            stepNo: up && byId[up] && byId[up].layout === "chain" ? stepNoOf(p) : null,
+            future: futureOf(p)
         });
         links.push({
             s: up,
@@ -910,6 +927,7 @@ function buildGraph(full) {
     };
     const seen = new Set;
     TREE_TOP = top.map(p => make(p, 1, data.hub.id, seen)).filter(Boolean);
+    hubN.top = TREE_TOP;
     (data.hubKids || []).forEach(c => addKid(data.hub, hubN, c, 0));
     HUBKIDS = hubN.kids.slice();
     [ ...data.projects || [], {
@@ -930,6 +948,19 @@ function buildGraph(full) {
             cross: true
         });
     }));
+    nodes.forEach(n => {
+        const ch = chainOf(n);
+        if (!ch.length) return;
+        const real = ch.filter(q => !q.future), lastReal = real[real.length - 1];
+        ch.forEach((q, i) => {
+            const from = q.future ? lastReal || n : i ? ch[i - 1] : n;
+            const l = links.find(x => x.s === n.id && x.t === q.id);
+            if (!l) return;
+            l.s = from.id;
+            l.chain = true;
+            if (q.future) l.dash = [ 5, 4 ];
+        });
+    });
     links = links.map(l => ({
         ...l,
         s: byId[l.s],
@@ -1017,27 +1048,51 @@ function layoutHomes() {
         n.hy = Math.sin(ang) * R * EY;
     };
     let narrowRun = 0;
-    const place = (n, a0, a1) => {
-        let R = RING(n.depth);
-        if (n.depth === 1) {
+    const place = (n, a0, a1, dr = 0) => {
+        let R = RING(n.depth) + dr;
+        if (n.depth === 1 && !dr) {
             if (a1 - a0 < .42) {
                 if (narrowRun++ % 2) R += 62;
             } else narrowRun = 0;
         }
         put(n, (a0 + a1) / 2, R);
-        const items = itemsOf(n), sh = split(items, a1 - a0);
+        layItems(n, itemsOf(n), a0, a1, dr);
+    };
+    const layItems = (n, items, a0, a1, dr) => {
+        const ch = chainOf(n).filter(q => items.includes(q));
+        if (ch.length) {
+            const side = items.filter(q => !ch.includes(q)), G = {
+                type: "project",
+                _need: ch.reduce((s, q) => s + q._need, 0),
+                _w: ch.reduce((s, q) => s + weightOf(q), 0)
+            }, sh = split([ G, ...side ], a1 - a0), c1 = a0 + sh[0];
+            const real = ch.filter(q => !q.future), fut = ch.filter(q => q.future), m = real.length + (fut.length ? 1 : 0);
+            const per = (c1 - a0) / Math.max(1, m + (fut.length > 1 ? fut.length - 1 : 0));
+            let cur = a0;
+            ch.forEach((q, i) => {
+                const j = q.future ? real.length : i, b0 = cur, b1 = cur + per;
+                cur = b1;
+                if (q.type === "project") return place(q, b0, b1, dr + j * CHAIN_DR);
+                put(q, (b0 + b1) / 2, RING(n.depth + 1) + dr + j * CHAIN_DR);
+            });
+            return layRing(n, side, c1, a1, dr, sh.slice(1));
+        }
+        layRing(n, items, a0, a1, dr, split(items, a1 - a0));
+    };
+    const layRing = (n, items, a0, a1, dr, sh) => {
         let cur = a0, mi = 0;
         items.forEach((q, i) => {
             const b0 = cur, b1 = cur + sh[i];
             cur = b1;
-            if (q.type === "project") return place(q, b0, b1);
-            put(q, (b0 + b1) / 2, RING(n.depth + 1) + (q.minor && mi++ % 2 ? MINOR_STAGGER : 0));
+            if (q.type === "project") return place(q, b0, b1, dr);
+            put(q, (b0 + b1) / 2, RING(n.depth + 1) + dr + (q.minor && mi++ % 2 ? MINOR_STAGGER : 0));
         });
     };
     const a00 = a;
     const all = () => {
         a = a00;
         narrowRun = 0;
+        if (chainOf(hub).length) return layItems(hub, TOP, -Math.PI * .8, Math.PI * 1.2, 0);
         TOP.forEach((n, i) => {
             const span = share[i] / tot * Math.PI * 2;
             place(n, a, a + span);
@@ -1788,8 +1843,8 @@ function draw() {
         const dim = dimOn && !(near.has(l.s.id) && near.has(l.t.id));
         const lt = l.faint && near.has(l.s.id) && near.has(l.t.id) && !!(focus || searchOn);
         ctx.globalAlpha = a;
-        ctx.strokeStyle = dim ? "#F0F0F0" : l.overlay ? "#8A8A8A" : l.vision ? "#9A9A9A" : l.faint ? lt ? "#9A9A9A" : "#ECECEC" : l.cross ? "#CFCFCF" : "#DADADA";
-        ctx.lineWidth = l.s.type === "hub" ? 1.6 : l.vision ? 1.3 : l.faint ? 1 : 1.1;
+        ctx.strokeStyle = dim ? "#F0F0F0" : l.chain ? "#9A9A9A" : l.overlay ? "#8A8A8A" : l.vision ? "#9A9A9A" : l.faint ? lt ? "#9A9A9A" : "#ECECEC" : l.cross ? "#CFCFCF" : "#DADADA";
+        ctx.lineWidth = l.chain ? 1.5 : l.s.type === "hub" ? 1.6 : l.vision ? 1.3 : l.faint ? 1 : 1.1;
         ctx.setLineDash(l.dash || (l.vision ? [ 6, 5 ] : l.faint ? [ 1.5, 4 ] : l.cross ? [ 4, 5 ] : []));
         ctx.beginPath();
         ctx.moveTo(l.s.x, l.s.y);
