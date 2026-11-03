@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-03T06:23:19.640Z",
+ "generatedAt": "2026-11-03T07:40:44.615Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2271,7 +2271,7 @@
      "label": "SILENT AUDIO GAPS",
      "status": "idle",
      "why": "Mittens could go quiet in the middle of a conversation with no sign of what was happening. The audio is back and I am fixing the gaps.",
-     "statusLine": "audio back · smarter triggers next",
+     "statusLine": "fixing redraw side effects",
      "caption": "Mittens could go quiet in the middle of a conversation with no sign of what was happening.",
      "stage": "active",
      "embed": "pages/is-anyone-seeing-what-s.html",
@@ -2362,7 +2362,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "A map of the code that runs talking with Mittens, generated from the code itself.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "A map of the code that runs talking with Mittens, generated from the code itself.",
      "stage": "active",
      "embed": "pages/code-ns-talk.html",
@@ -3157,7 +3157,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · reviews and fixes nightly",
+     "statusLine": "live · fixes issues nightly",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -3458,7 +3458,7 @@
      "label": "QUESTION ROUTING",
      "status": "idle",
      "why": "Questions a worker can answer should go to a worker, not to me. Routing is much better, but the assistant still promises work and then forgets it.",
-     "statusLine": "improved · full structure map next",
+     "statusLine": "routing questions to workers · cards next",
      "caption": "Questions a worker can answer should go to a worker, not to me.",
      "stage": "active",
      "embed": "pages/why-are-questions-that-should.html",
@@ -3779,7 +3779,7 @@
    "label": "ACTION TREE",
    "status": "idle",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
-   "statusLine": "live · stale items checked daily",
+   "statusLine": "live · stale items repaired daily",
    "caption": "The one source of truth for what is open:",
    "stage": "active",
    "embed": "pages/action-tree.html",
@@ -4748,6 +4748,18 @@
    "parked": false,
    "children": [
     {
+     "id": "pendant-no-flip",
+     "label": "NO-FLIP SHAPE",
+     "status": "idle",
+     "why": "I want the pendant to stay facing out while I move. I'm testing shapes that won't tip over.",
+     "statusLine": "shapes tested · picking one",
+     "caption": "I want the pendant to stay facing out while I move.",
+     "stage": "active",
+     "embed": "pages/pendant-no-flip.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "pendant-pre-sale",
      "label": "PENDANT PRE-SALE",
      "status": "idle",
@@ -5010,6 +5022,36 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "trend-sensing-for-products",
+     "label": "TREND SENSING",
+     "status": "idle",
+     "why": "I want the machine to spot trends that matter for a product before it makes anything.",
+     "statusLine": "active · early thread",
+     "caption": "I want the machine to spot trends that matter for a product before it makes anything.",
+     "stage": "active",
+     "embed": "pages/trend-sensing-for-products.html",
+     "visibility": "public",
+     "links": [
+      "viral-machine"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "trend-to-concept-design",
+     "label": "TREND TO CONCEPT",
+     "status": "idle",
+     "why": "A trend is only useful once it becomes a concept. This step turns trends into product and content ideas.",
+     "statusLine": "active · early thread",
+     "caption": "A trend is only useful once it becomes a concept.",
+     "stage": "active",
+     "embed": "pages/trend-to-concept-design.html",
+     "visibility": "public",
+     "links": [
+      "viral-machine"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "code-viral-machine",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
@@ -5045,7 +5087,7 @@
      "label": "GLASSES CAMERA GUIDANCE",
      "status": "idle",
      "why": "I want the glasses camera to open so my assistant can see and walk me through things. For the pendant, I'm moving away from all-metal so the wireless signal can get through, and researching a shape that won't flip over.",
-     "statusLine": "design research continues",
+     "statusLine": "capture button fix queued",
      "caption": "I want the glasses camera to open so my assistant can see and walk me through things.",
      "stage": "active",
      "embed": "pages/like-maybe-open-camera-on.html",
@@ -5053,6 +5095,21 @@
      "links": [
       "glasses-mittens",
       "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "glasses-photo-button-flaky",
+     "label": "GLASSES PHOTO BUTTON",
+     "status": "idle",
+     "why": "The photo button on the glasses only works some of the time. I'm tracking down why so capture is reliable.",
+     "statusLine": "fix in progress",
+     "caption": "The photo button on the glasses only works some of the time.",
+     "stage": "active",
+     "embed": "pages/glasses-photo-button-flaky.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5409,6 +5466,21 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "one-dispatcher",
+   "label": "ONE DISPATCHER",
+   "status": "idle",
+   "why": "I want one dispatcher that sorts everything I say into the right thread and acts on it, the way a good coding agent does. It should also give my assistant the same context every time.",
+   "statusLine": "first step live",
+   "caption": "I want one dispatcher that sorts everything I say into the right thread and acts on it, the way a good coding agent does.",
+   "stage": "active",
+   "embed": "pages/one-dispatcher.html",
+   "visibility": "public",
+   "parent": "brain-deciding",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-scenario-logic",
    "label": "SCENARIOS",
    "status": "idle",
@@ -5534,7 +5606,7 @@
      "label": "CODE ARCHITECTURE",
      "status": "idle",
      "why": "This map mirrors the real code of my shared hardware engine: a gate, a panel of judges and a loop that fixes its own mistakes. It is built from the code itself, so it stays true as the code changes.",
-     "statusLine": "mapped from the code",
+     "statusLine": "mapped from the code · rescanned",
      "caption": "This map mirrors the real code of my shared hardware engine:",
      "stage": "active",
      "embed": "pages/code-firstpower.html",
