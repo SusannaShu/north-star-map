@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-04T07:06:00.124Z",
+ "generatedAt": "2026-11-04T07:44:48.229Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -160,7 +160,7 @@
    "label": "FASHION FUTURE",
    "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
-   "statusLine": "two products live",
+   "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
    "stage": "plan",
    "planned": true,
@@ -239,6 +239,21 @@
      "caption": "I am making the pins on my map land exactly where they belong.",
      "stage": "active",
      "embed": "pages/susu-map-pin-accuracy.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "susu-map-daily-posts",
+     "label": "SUSU MAP DAILY POSTS",
+     "status": "idle",
+     "why": "I want a daily post about what's on the map, so people have a reason to come back to it.",
+     "statusLine": "just started",
+     "caption": "I want a daily post about what's on the map, so people have a reason to come back to it.",
+     "stage": "active",
+     "embed": "pages/susu-map-daily-posts.html",
      "visibility": "public",
      "links": [
       "susu-map"
@@ -752,6 +767,22 @@
      "visibility": "public",
      "links": [
       "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-self-improve",
+     "label": "SELF-IMPROVING LOOP",
+     "status": "idle",
+     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
+     "statusLine": "live · learning nightly",
+     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+     "stage": "active",
+     "embed": "pages/mittens-self-improve.html",
+     "visibility": "public",
+     "links": [
+      "aurora",
+      "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1554,6 +1585,18 @@
    "parent": "context-graph",
    "parked": false,
    "children": [
+    {
+     "id": "mittens-design",
+     "label": "MITTENS = CLAUDE + SENSES",
+     "status": "idle",
+     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
+     "statusLine": "designed · new version going live",
+     "caption": "My assistant is a strong language model plus senses:",
+     "stage": "active",
+     "embed": "pages/mittens-design.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "brain-architecture-2",
      "label": "BRAIN ARCHITECTURE",
@@ -3337,7 +3380,7 @@
      "label": "WATCH CONTENT",
      "status": "idle",
      "why": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics. The videos are made every night and stay private until I choose to make a channel public.",
-     "statusLine": "made nightly · not public yet",
+     "statusLine": "made nightly · paused · not public yet",
      "caption": "I turn what my world watch finds into short videos, one channel per topic, such as AI agents, wearables and soft robotics.",
      "stage": "active",
      "embed": "pages/watch-content.html",
@@ -3895,7 +3938,7 @@
      "label": "MITTENS AND NORTH STAR",
      "status": "idle",
      "why": "Mittens is how I talk to the system, and North Star is where the work and the map live. I am rebuilding both around that split.",
-     "statusLine": "rebuilding · top priority",
+     "statusLine": "rethinking the map around projects",
      "caption": "Mittens is how I talk to the system, and North Star is where the work and the map live.",
      "stage": "active",
      "embed": "pages/i-think-mittens-is-just.html",
@@ -5479,7 +5522,33 @@
    "visibility": "public",
    "parent": "brain-deciding",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "plan-now",
+     "label": "THE PLAN, NOW",
+     "status": "idle",
+     "why": "The map should answer 'what was the plan again?' straight away and show the next steps, drawn from live data.",
+     "statusLine": "live from data",
+     "caption": "The map should answer 'what was the plan again?' straight away and show the next steps, drawn from live data.",
+     "stage": "active",
+     "embed": "pages/plan-now.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "three-layers",
+     "label": "THREE LAYERS",
+     "status": "idle",
+     "why": "I'm writing a spec that splits the system into three layers: the assistant I talk to, the map that holds the plan, and the work sessions. It reuses existing agent tool ideas instead of reinventing them.",
+     "statusLine": "spec written · for review",
+     "caption": "I'm writing a spec that splits the system into three layers:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/three-layers.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
