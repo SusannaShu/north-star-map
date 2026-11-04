@@ -335,17 +335,47 @@
         });
         window.NS_TREE = tree;
         lastTree = tree;
-        const s = JSON.stringify([ tree.counts, tree.segments.map(x => x.groups.map(g => g.items.map(i => i.name + i.line + (i.meta || "")))) ]) + [ ...expanded ].join() + JSON.stringify(fold) + needF;
+        let v2 = null;
+        try {
+            const [lt, th] = await Promise.all([ fetch("/api/later", {
+                cache: "no-store"
+            }).then(r => r.json()), fetch("/api/threads", {
+                cache: "no-store"
+            }).then(r => r.json()) ]);
+            if (lt && lt.mittens === "mittens-v2") {
+                const T = th && th.threads || [];
+                v2 = {
+                    need: lt.items || [],
+                    threads: T
+                };
+                v2.c = {
+                    needs: v2.need.length,
+                    urgent: v2.need.filter(i => (i.rank && i.rank.score || 0) >= 9).length,
+                    minute: v2.need.filter(i => (i.rank && i.rank.score || 0) < 9).length,
+                    planned: T.filter(t => t.state === "open").length,
+                    working: T.filter(t => t.state === "working").length,
+                    waiting: 0,
+                    done: 0
+                };
+            }
+        } catch (e) {}
+        const s = JSON.stringify([ v2 && v2.c, v2 && v2.threads.map(t => t.id + t.state + t.status), tree.counts, tree.segments.map(x => x.groups.map(g => g.items.map(i => i.name + i.line + (i.meta || "")))) ]) + [ ...expanded ].join() + JSON.stringify(fold) + needF;
         if (!force && s === sig) return;
         sig = s;
         if (PAGE) return renderPage(tree);
-        const c = tree.counts;
+        const c = v2 && v2.c || tree.counts;
         chip.innerHTML = `${ICON.tree}<span class="nt-c needs"><span class="nt-d need" style="margin:0"></span><b>${c.needs}</b><em>need you</em></span><span class="nt-c planned"><span class="nt-d plan" style="margin:0"></span><b>${c.planned}</b><em>planned</em></span><span class="nt-c working"><span class="nt-d live" style="margin:0"></span><b>${c.working}</b><em>working</em></span><span class="nt-c waiting"><span class="nt-d wait" style="margin:0"></span><b>${c.waiting}</b><em>waiting</em></span>${!folded("seg:done") ? `<span class="nt-c done"><span class="nt-d done" style="margin:0 1px 3px"></span><b>${c.done || 0}</b><em>done</em></span>` : ""}<span class="nt-badge${c.urgent ? " on" : ""}"></span>`;
         chip.title = `Action tree: ${c.needs} need you (${c.urgent} urgent, ${c.minute || 0} got a minute), ${c.planned} planned, not acted on, ${c.working} working, ${c.waiting} waiting on others${c.done ? `, ${c.done} done this week` : ""}`;
         if (document.body.classList.contains("nt-open")) {
             const y = body.scrollTop;
             panel.querySelector("#ntSub").textContent = subLine(tree);
-            body.innerHTML = treeHtml(tree, {
+            const e2 = x => String(x == null ? "" : x).replace(/[&<>"]/g, ch => ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;"
+            }[ch]));
+            body.innerHTML = v2 ? `<div class="nt-seg"><b>NEED YOU</b>${v2.need.map(i => `<div class="nt-row"><span class="nt-d need"></span>${e2(i.title)}<em> ${e2(i.rank ? i.rank.why : "")}</em></div>`).join("") || "<div>nothing</div>"}</div>` + `<div class="nt-seg"><b>WORKING AND OPEN</b>${v2.threads.filter(t => t.state !== "needs-you").map(t => `<div class="nt-row"><span class="nt-d ${t.state === "working" ? "work" : "plan"}"></span>${e2(t.title)}<em> ${e2(t.status)}</em></div>`).join("") || "<div>nothing</div>"}</div><div><a href="/tree.html">the whole tree</a></div>` : treeHtml(tree, {
                 stacked: true,
                 cap: 4
             });

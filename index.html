@@ -816,7 +816,8 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
   <div id="legendWaiting"><span class="dot waiting"></span> waiting on them</div>
   <div><span class="dot finished"></span> done (hidden unless shown)</div>
   <button type="button" id="fDone" class="show-done" aria-pressed="true" onclick='window.nsFilter&&nsFilter("done")' title="done, archived and merged dots"><span class="sd-box"></span><span class="sd-label">Hide done</span></button>
-  <button type="button" id="fQuiet" class="show-done" aria-pressed="true" onclick='window.nsFilter&&nsFilter("quiet")' title="nothing dated in 3 days, nothing working, nothing waiting on you"><span class="sd-box"></span><span class="sd-label">Hide quiet</span></button>
+  <button type="button" id="fIdle" class="show-done" aria-pressed="true" onclick='window.nsFilter&&nsFilter("idle")' title="nothing running, nothing open, nothing waiting, untouched 3 days"><span class="sd-box"></span><span class="sd-label">Hide idle</span></button>
+  <button type="button" id="fLife" class="show-done" aria-pressed="true" onclick='window.nsFilter&&nsFilter("life")' title="your life: health, day and calendar, home, people, messages, money -- on the Life and Today tabs"><span class="sd-box"></span><span class="sd-label">Hide life</span></button>
   <span id="fCount" class="sd-count" style="font-size:10px;color:#777;margin:2px 0 0 4px"></span>
 </div>
 
@@ -888,9 +889,10 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/public-presence.js?v=20261022a-pub" defer="defer"></script>
 <script src="js/north-star-glyph.js?v=20261011v4"></script>
 <script src="js/ns-stream.js?v=20261022pulse2"></script>
-<script src="js/done-filter.js?v=20261102a"></script>
+<script src="js/done-filter.js?v=20261103b"></script>
+<script src="js/dot-view.js?v=20261103b"></script>
 <script src="js/public-live.js"></script>
-<script src="js/map.js?v=20261102done"></script>
+<script src="js/map.js?v=20261103c"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/public-time.js?v=20261022changes" defer="defer"></script>
 <script src="js/live.js?v=20261102done"></script>
@@ -898,7 +900,7 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/view.js?v=20261022onehead"></script>
 
 <script src="js/tree-core.js?v=20261026card"></script>
-<script src="js/tree-dock.js?v=20261024trig"></script>
+<script src="js/tree-dock.js?v=20261103live"></script>
 <script src="js/read-mark.js?v=20261013pr1" data-watch></script>
 <style>
   #usageChip .ico { width:13px; height:13px; fill:none; stroke:currentColor; stroke-width:1.4; color:var(--text-muted, #999); vertical-align:-2px; }

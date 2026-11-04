@@ -210,7 +210,7 @@ const fontOf = n => {
     return `${n.stage === "plan" ? "italic " : ""}${f[0]} ${fontPx(n)}px ${f[2]}, sans-serif`;
 };
 
-const SECTORS = [ "mittens", "path", "portfolio", "fashion", "marketing", "outreach", "job", "northstar", "life-inputs", "susu-map", "devhub" ];
+const SECTORS = [ "mittens", "unique-designs", "portfolio", "fashion", "path", "marketing", "outreach", "job", "northstar", "life-inputs", "susu-map", "devhub" ];
 
 const MINOR_KINDS = new Set([ "routine", "channel", "ptype", "convo" ]);
 
@@ -286,6 +286,7 @@ function indexFull(data) {
                 up: p.id,
                 owned: owned,
                 kind: c.kind || null,
+                into: c.mergedInto || null,
                 status: c.status,
                 stage: c.stage || null,
                 planned: c.status === "planned" && c.stage !== "plan",
@@ -337,9 +338,29 @@ function rerootData(data, id) {
     };
 }
 
+function twoRings(data) {
+    const P = data.projects || [], ids = new Set(P.map(p => p.id)), depth = {};
+    const d = p => depth[p.id] ??= p.parent && ids.has(p.parent) && p.parent !== p.id ? 1 + d(P.find(q => q.id === p.parent)) : 1;
+    const projects = P.filter(p => d(p) <= 2).map(p => d(p) === 2 && (p.children || []).length && !(byIdLayout(P, p.parent) === "chain") ? {
+        ...p,
+        children: [],
+        moreKids: p.children.length
+    } : p);
+    return projects.length === P.length && projects.every((p, i) => p === P[i]) ? data : {
+        ...data,
+        projects: projects
+    };
+}
+
+const byIdLayout = (P, id) => (P.find(p => p.id === id) || {}).layout;
+
 function resolveOpen(id) {
-    const e = FULL.e[id];
+    let e = FULL.e[id];
     if (!e) return;
+    if (e.into && FULL.e[e.into] && e.into !== id) {
+        id = e.into;
+        e = FULL.e[id];
+    }
     if (e.type === "hub") {
         ROOT = null;
         return;
@@ -388,6 +409,7 @@ function setRoot(id) {
         userCam = 0;
         fitAll();
         if (SEARCH.q) runSearch(SEARCH.q);
+        if (id && byId[id] && !MINI && !PUBLIC && !isMobile()) openPanel(byId[id], "status");
     }
     renderCrumbs();
     syncURL();
@@ -400,7 +422,8 @@ function clickDot(n) {
     if (MINI) return miniGo(n.id);
     if (isOverlay(n)) return openPanel(n);
     if (n.type === "hub") return toggleDrawer(n);
-    if (n.type === "project" && ((n.kids || []).length || (n.subs || []).length)) return setRoot(n.id);
+    if (n.type === "child" && n.into && FULL.e[n.into] && n.into !== n.id) return n.into === ROOT && byId[ROOT] ? openPanel(byId[ROOT], "status") : openDot(n.into);
+    if (n.type === "project" && ((n.kids || []).length || (n.subs || []).length || canRoot(n.id))) return setRoot(n.id);
     if (n.type === "child" && !n.owned) {
         const up = byId[n.up];
         return up && up.type === "hub" ? toggleDrawer(up) : setRoot(n.up);
@@ -728,19 +751,28 @@ const lsGet = k => {
     }
 };
 
-const HIDE = {
-    done: QS.get("done") !== "1" && lsGet("nsHideDone") !== "0",
-    quiet: QS.get("done") !== "1" && QS.get("quiet") !== "1" && lsGet("nsHideQuiet") !== "0"
+const LSK = {
+    done: "nsHideDone",
+    idle: "nsHideQuiet",
+    life: "nsHideLife"
 };
 
-let SHOW_DONE = !HIDE.done && !HIDE.quiet;
+const HIDE = {
+    done: QS.get("done") !== "1" && lsGet(LSK.done) !== "0",
+    idle: QS.get("done") !== "1" && QS.get("quiet") !== "1" && lsGet(LSK.idle) !== "0",
+    life: QS.get("done") !== "1" && QS.get("life") !== "1" && lsGet(LSK.life) !== "0"
+};
+
+const anyHide = () => HIDE.done || HIDE.idle || HIDE.life;
+
+let SHOW_DONE = !anyHide();
 
 window.nsFilter = k => {
     HIDE[k] = !HIDE[k];
     try {
-        localStorage.setItem(k === "done" ? "nsHideDone" : "nsHideQuiet", HIDE[k] ? "1" : "0");
+        localStorage.setItem(LSK[k], HIDE[k] ? "1" : "0");
     } catch {}
-    SHOW_DONE = !HIDE.done && !HIDE.quiet;
+    SHOW_DONE = !anyHide();
     buildGraph(DATA);
     renderDoneToggle();
     if (SEARCH.q) runSearch(SEARCH.q);
@@ -750,10 +782,9 @@ let DONE_HIDDEN = 0;
 
 function setShowDone(on) {
     SHOW_DONE = !!on;
-    HIDE.done = HIDE.quiet = !SHOW_DONE;
+    HIDE.done = HIDE.idle = HIDE.life = !SHOW_DONE;
     try {
-        localStorage.setItem("nsHideDone", HIDE.done ? "1" : "0");
-        localStorage.setItem("nsHideQuiet", HIDE.quiet ? "1" : "0");
+        for (const k in LSK) localStorage.setItem(LSK[k], HIDE[k] ? "1" : "0");
     } catch {}
     buildGraph(DATA);
     renderDoneToggle();
@@ -762,7 +793,7 @@ function setShowDone(on) {
 
 function renderDoneToggle() {
     window.NS_SHOW_DONE = SHOW_DONE;
-    for (const [id, k, word] of [ [ "fDone", "done", "Hide done" ], [ "fQuiet", "quiet", "Hide quiet" ] ]) {
+    for (const [id, k, word] of [ [ "fDone", "done", "Hide done" ], [ "fIdle", "idle", "Hide idle" ], [ "fLife", "life", "Hide life" ] ]) {
         const b = document.getElementById(id);
         if (!b) continue;
         b.setAttribute("aria-pressed", HIDE[k] && !SHOW_DONE ? "true" : "false");
@@ -779,14 +810,21 @@ function buildGraph(full) {
     if (F && !SHOW_DONE && !buildGraph.opened && OPEN_WANT && full !== FALLBACK) {
         const id0 = full.aliases && full.aliases[OPEN_WANT] || OPEN_WANT;
         const hit = (full.projects || []).find(p => p.id === id0 || (p.children || []).some(c => c.id === id0));
-        if (hit && (hit.id === id0 ? F.projPast(hit) : F.leafPast(hit.children.find(c => c.id === id0)))) SHOW_DONE = true;
+        if (hit && HIDE.done && (hit.id === id0 ? hit.stage === "done" || hit.status === "done" || hit.archived : F.leafPast(hit.children.find(c => c.id === id0), Date.now(), {
+            done: true,
+            idle: false
+        }))) SHOW_DONE = true;
+        buildGraph.want = id0;
     }
     if (F && !SHOW_DONE) {
         const r = F.hideDone(full, {
             done: HIDE.done,
-            quiet: HIDE.quiet
+            idle: HIDE.idle,
+            life: HIDE.life,
+            root: ROOT,
+            want: buildGraph.opened ? null : buildGraph.want
         });
-        DONE_HIDDEN = r.hidden;
+        DONE_HIDDEN = r.hidden + r.life;
         full = r.data;
     } else if (F) DONE_HIDDEN = 0;
     renderDoneToggle();
@@ -795,11 +833,12 @@ function buildGraph(full) {
     if (!buildGraph.opened && full !== FALLBACK && want && FULL.e[want]) {
         buildGraph.opened = true;
         resolveOpen(want);
+        buildGraph.openNow = !!ROOT && (ROOT === want || ROOT === FULL.e[want].into);
     }
     if (ROOT && !canRoot(ROOT)) ROOT = null;
     window.NS_ROOT = ROOT;
     renderCrumbs();
-    const data = ROOT ? rerootData(full, ROOT) : full;
+    const data = twoRings(ROOT ? rerootData(full, ROOT) : full);
     nodes = [];
     links = [];
     byId = {};
@@ -866,6 +905,7 @@ function buildGraph(full) {
         });
         k.done = c.stage === "done";
         k.merged = !!c.mergedInto;
+        k.into = c.mergedInto || null;
         k.doneOld = !!c.archived || k.merged || k.done && !!c.doneAt && Date.now() - Date.parse(c.doneAt) > DONE_FOLD_MS;
         k.loud = !k.done && !k.doneOld && (k.status === "needs-you" || k.status === "working" || k.pin || k.live);
         k.fold = !k.loud && (!owned || MINOR_KINDS.has(k.kind) || k.planned || k.doneOld || k.kind === "howto" && !ROOT);
@@ -981,6 +1021,10 @@ function buildGraph(full) {
     if (window.syncOverlay) window.syncOverlay(true);
     for (let i = 0; i < 300; i++) step();
     fitAll();
+    if (buildGraph.openNow && ROOT && byId[ROOT] && !MINI && !PUBLIC && !isMobile()) {
+        buildGraph.openNow = false;
+        setTimeout(() => openPanel(byId[ROOT], "status"), 0);
+    }
     if (PENDING_LEAF && byId[PENDING_LEAF]) {
         const id = PENDING_LEAF;
         PENDING_LEAF = null;
@@ -2647,7 +2691,9 @@ function openPanel(n, tab) {
         return;
     }
     let html = "";
-    if (d.asks && d.asks.length) html += `<div class="card"><h4>Needs you — ${d.asks.length} question${d.asks.length > 1 ? "s" : ""}</h4><ul>${d.asks.map(a => `<li class="hot"><b>${esc(a.title)}</b></li>`).join("")}</ul>\n      <div class="ask" style="cursor:pointer" onclick="openInbox('${target.id}')"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> Answer in the inbox</div></div>`;
+    const isNow = !!(ROOT && target.id === ROOT && window.nsDotView);
+    if (isNow) html += `<div class="now-view" data-dot="${esc(target.id)}">${nowHtml(window.nsDotView.build(DATA, target.id))}</div>`;
+    if (d.asks && d.asks.length && !isNow) html += `<div class="card"><h4>Needs you — ${d.asks.length} question${d.asks.length > 1 ? "s" : ""}</h4><ul>${d.asks.map(a => `<li class="hot"><b>${esc(a.title)}</b></li>`).join("")}</ul>\n      <div class="ask" style="cursor:pointer" onclick="openInbox('${target.id}')"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> Answer in the inbox</div></div>`;
     if (d.why) html += `<div class="card why"><h4>Why</h4><p>${d.why}</p></div>`;
     if (d.ideas && d.ideas.length) html += `<div class="card"><h4>From Talk</h4><ul>${d.ideas.map(x => `<li><b>${esc(new Date(x.at).toLocaleDateString("en-US", {
         month: "numeric",
@@ -2677,6 +2723,38 @@ function openPanel(n, tab) {
     pBody.innerHTML = html;
     const live = pBody.querySelector(".live-refs");
     if (live) fillLiveRefs(live);
+    const nowEl = pBody.querySelector(".now-view");
+    if (nowEl) fillNow(nowEl);
+}
+
+function nowHtml(v) {
+    if (!v) return "";
+    const md = x => x.where ? ` <span style="color:var(--text-muted)">· ${esc(x.where)}</span>` : "";
+    const dd = iso => {
+        const t = new Date(iso);
+        return isNaN(t) ? "" : `${t.getMonth() + 1}/${t.getDate()}`;
+    };
+    const card = (title, body) => `<div class="card"><h4>${title}</h4>${body}</div>`;
+    const ul = (rows, cls) => `<ul>${rows.join("")}</ul>`;
+    let h = "";
+    if (v.needsYou.length) h += card(`Needs you — ${v.needsYou.length}`, ul(v.needsYou.map(q => `<li class="hot"><b>${esc(q.title)}</b>${md(q)}</li>`)) + `<div class="ask" style="cursor:pointer" onclick="openInbox('${esc(v.id)}')">Answer in the inbox</div>`);
+    h += card(`Working now — ${v.working.length}`, v.working.length ? ul(v.working.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:${t.status === "waiting" ? "var(--wait)" : "var(--text-muted)"}">${esc(t.status)}${t.line ? " · " + esc(t.line) : ""}</span></li>`)) : '<p style="color:var(--text-muted)">no worker on it right now</p>');
+    if (v.next.length) h += card("Next", ul(v.next.map(x => `<li>${esc(x.name)}${x.due ? ` <span style="color:var(--text-muted)">${esc(x.due)}</span>` : ""}${md(x)}</li>`)));
+    if (v.finished.length) h += card("Just finished", ul(v.finished.map(t => `<li><b>${esc(dd(t.at))} ${esc(t.name)}</b> ${esc(t.result)}</li>`)));
+    const docs = [ ...v.docs.latest, ...v.docs.past ], link = x => `<li><a href="${esc(macUrl(x.href))}" target="_blank" rel="noopener">${esc(x.label)}</a>${md(x)}</li>`;
+    if (docs.length) h += card("Docs", ul(v.docs.latest.map(link)) + (v.docs.past.length ? `<details><summary style="cursor:pointer;color:var(--text-muted)">past · ${v.docs.past.length}</summary>${ul(v.docs.past.map(link))}</details>` : ""));
+    if (v.convo && v.convo.length) h += card("Conversation — your newest words here", ul(v.convo.slice(0, 5).map(c => `<li><b>${esc(dd(c.at))}</b> ${esc(c.text)}${md(c)}</li>`)) + (v.convo.length > 5 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">older · ${v.convo.length - 5}</summary>${ul(v.convo.slice(5).map(c => `<li><b>${esc(dd(c.at))}</b> ${esc(c.text)}${md(c)}</li>`))}</details>` : ""));
+    if (v.progress.length) h += card("Where it stands", ul(v.progress.slice(0, 4).map(l => `<li><b>${esc(l.day.slice(5).replace("-", "/"))}</b> ${esc(l.text)}</li>`)));
+    return h;
+}
+
+function fillNow(el) {
+    const id = el.dataset.dot;
+    fetch(macUrl("/api/dot-view?id=" + encodeURIComponent(id)), {
+        cache: "no-store"
+    }).then(r => r.ok ? r.json() : null).then(v => {
+        if (v && el.isConnected && el.dataset.dot === id) el.innerHTML = nowHtml(v);
+    }).catch(() => {});
 }
 
 function fillLiveRefs(el) {
