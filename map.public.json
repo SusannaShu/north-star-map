@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-04T13:48:49.898Z",
+ "generatedAt": "2026-11-04T19:45:05.851Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -374,7 +374,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -420,7 +420,7 @@
     {
      "id": "mittens-2",
      "label": "MITTENS",
-     "status": "working",
+     "status": "idle",
      "why": "This is the running conversation where I shape my assistant and how it works.",
      "statusLine": "in progress",
      "caption": "This is the running conversation where I shape my assistant and how it works.",
@@ -1195,7 +1195,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1351,7 +1351,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3148,7 +3148,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -5164,7 +5164,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -5546,43 +5546,6 @@
      "planned": true,
      "embed": "pages/three-layers.html",
      "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-scenario-logic",
-   "label": "SCENARIOS",
-   "status": "idle",
-   "why": "Every scenario in Mittens' logic is a dot showing its prompt, gates, tools and what it made. The dots are built from one shared registry, so the map cannot drift away from the code.",
-   "statusLine": "live · new switches added",
-   "caption": "Every scenario in Mittens' logic is a dot showing its prompt, gates, tools and what it made.",
-   "stage": "active",
-   "embed": "pages/mittens-scenario-logic.html",
-   "visibility": "public",
-   "links": [
-    "brain-architecture",
-    "triage",
-    "scenarios"
-   ],
-   "parent": "mittens",
-   "parked": false,
-   "children": [
-    {
-     "id": "msl-routing",
-     "label": "ROUTING TREE",
-     "status": "idle",
-     "why": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
-     "statusLine": "read from the code · no gaps",
-     "caption": "A tree, read from the code, showing which pipeline each kind of situation goes to, so nothing is just vibes.",
-     "stage": "active",
-     "embed": "pages/msl-routing.html",
-     "visibility": "public",
-     "links": [
-      "triage",
-      "brain-architecture"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],

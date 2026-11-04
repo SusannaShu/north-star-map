@@ -677,6 +677,93 @@ function renderCodeFab() {
     }
 }
 
+const CO_APP = /^https?:\/\/(?:100\.96\.162\.2|ud-mini-1[^/:]*|its-47160[^/:]*):(4403|4401)(\/[^#]*)?(#.*)?$/i;
+
+const appHref = h => {
+    const m = CO_APP.exec(String(h || ""));
+    return m ? (m[1] === "4403" ? "/ud" : "/co") + (m[2] || "/") + (m[3] || "") : h;
+};
+
+function appOf(id) {
+    for (let x = id, n = 0; x && n < 14; x = (FULL.e[x] || {}).up, n++) {
+        const a = ((FULL.e[x] || {}).det || {}).app;
+        if (a && a.href) return {
+            ...a,
+            href: appHref(a.href),
+            dot: x
+        };
+    }
+    return null;
+}
+
+let APP = null;
+
+function appPane(a) {
+    const el = document.getElementById("appPane");
+    if (!el) return;
+    APP = a && a.href ? a : null;
+    if (APP) {
+        const fr = el.querySelector("iframe"), src = macUrl(APP.href);
+        if (el.dataset.src !== src) {
+            el.dataset.src = src;
+            fr.src = src;
+        }
+        fr.onload = () => {
+            try {
+                const h = fr.contentWindow.location.href;
+                if (h && h !== "about:blank") el.querySelector(".doc-full").href = h;
+            } catch {}
+        };
+        el.querySelector(".doc-title").textContent = APP.label || "APP";
+        el.querySelector(".doc-cap").textContent = APP.caption || APP.href;
+        el.querySelector(".doc-full").href = src;
+        if (panel.classList.contains("open")) setDrawer(false);
+    }
+    el.classList.toggle("open", !!APP);
+    document.body.classList.toggle("app-open", !!APP);
+    const fab = document.getElementById("appFab");
+    if (fab) fab.setAttribute("aria-pressed", APP ? "true" : "false");
+}
+
+function renderAppFab() {
+    const fab = document.getElementById("appFab");
+    if (!fab) return;
+    const a = !STILL && !PUBLIC ? appOf(LEAF || ROOT) : null;
+    fab.hidden = !a;
+    fab._app = a;
+    if (!a) return;
+    fab.title = "open " + (a.label || "the app");
+    fab.setAttribute("aria-label", fab.title);
+    const n = [ "docFab", "codeFab" ].filter(i => {
+        const f = document.getElementById(i);
+        return f && !f.hidden;
+    }).length;
+    fab.style.setProperty("--fabn", n);
+}
+
+{
+    const f = document.getElementById("appFab"), p = document.getElementById("appPane");
+    if (f) f.onclick = () => APP ? appPane(null) : appPane(f._app);
+    if (p) p.querySelector("#appClose").onclick = () => appPane(null);
+}
+
+window.nsOpenApp = a => appPane(typeof a === "string" ? {
+    href: appHref(a),
+    label: "APP"
+} : a || appOf(LEAF || ROOT));
+
+document.addEventListener("click", ev => {
+    const a = ev.target.closest && ev.target.closest("a[href]");
+    if (!a || ev.defaultPrevented || ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
+    if (!CO_APP.test(a.href) || PUBLIC) return;
+    ev.preventDefault();
+    appPane({
+        href: appHref(a.href),
+        label: (a.textContent || "").replace(/[↗\s]+$/, "").trim().slice(0, 60) || "UD APP",
+        caption: a.href
+    });
+}, true);
+
 window.nsOpenCode = id => codePane(id || codeDotOf(ROOT) || CODE_HOME);
 
 window.nsOpenVisual = () => {
@@ -700,6 +787,7 @@ function syncURL() {
 function renderCrumbs() {
     renderDocFab();
     renderCodeFab();
+    renderAppFab();
     const el = document.getElementById("nsCrumbs");
     if (!el) return;
     const cur = LEAF || ROOT;
@@ -2649,6 +2737,7 @@ function syncPanelW() {
     const mini = panel.classList.contains("mini");
     document.documentElement.style.setProperty("--toph", document.getElementById("topbar").getBoundingClientRect().height + "px");
     document.documentElement.style.setProperty("--pnow", "0px");
+    document.documentElement.style.setProperty("--pfab", (open && !mini && !isMobile() ? Math.round(panel.getBoundingClientRect().width) : 0) + "px");
     const pbtn = document.getElementById("panelBtn");
     if (pbtn) pbtn.setAttribute("aria-pressed", open ? "true" : "false");
     document.documentElement.style.setProperty("--pcard", "0px");
