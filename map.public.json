@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-05T02:17:17.715Z",
+ "generatedAt": "2026-11-05T07:40:43.970Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -775,7 +775,7 @@
      "label": "SELF-IMPROVING LOOP",
      "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-     "statusLine": "live · learning nightly",
+     "statusLine": "live · learning nightly, brief pause",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
      "stage": "active",
      "embed": "pages/mittens-self-improve.html",
@@ -783,6 +783,22 @@
      "links": [
       "aurora",
       "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-ask-guard",
+     "label": "EVERY ASK BECOMES A TASK",
+     "status": "idle",
+     "why": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone. A guard checks each thing I said once the turn ends and files anything that was missed.",
+     "statusLine": "restored · live",
+     "caption": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone.",
+     "stage": "active",
+     "embed": "pages/mittens-ask-guard.html",
+     "visibility": "public",
+     "links": [
+      "mittens-self-improve",
+      "mittens-chat-threads"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -1351,7 +1367,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3148,7 +3164,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -4858,7 +4874,7 @@
      "label": "PENDANT ELECTRONICS CHECK",
      "status": "idle",
      "why": "I am checking the electronics of the pendant so the hardware can be trusted.",
-     "statusLine": "in progress",
+     "statusLine": "checked · not ready yet",
      "caption": "I am checking the electronics of the pendant so the hardware can be trusted.",
      "stage": "active",
      "embed": "pages/pendant-electronics-check.html",
@@ -5164,7 +5180,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -5549,6 +5565,25 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "automation-audit",
+   "label": "AUTOMATION AUDIT",
+   "status": "idle",
+   "why": "Automations break quietly, so every day the system replays the day against each trigger to check it fired when it should. Broken ones get flagged and fixed, so the assistant only speaks up at the right moments.",
+   "statusLine": "live · runs every night",
+   "caption": "Automations break quietly, so every day the system replays the day against each trigger to check it fired when it should.",
+   "stage": "active",
+   "embed": "pages/automation-audit.html",
+   "visibility": "public",
+   "links": [
+    "triggers",
+    "mittens-proactive"
+   ],
+   "parent": "mittens-proactive",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
