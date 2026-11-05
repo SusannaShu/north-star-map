@@ -87,7 +87,17 @@ window.api = async function(path, opts = {}) {
 
 window.MAC_BASE = CLOUD ? String(window.NS_TTS_BASE || "").replace(/\/+$/, "") : "";
 
-window.macUrl = u => CLOUD && window.MAC_BASE && /^\/(?!\/)/.test(String(u || "")) ? window.MAC_BASE + u : u;
+const CO_RAW = /^https?:\/\/(?:100\.96\.162\.2|ud-mini-1[^/:]*|its-47160[^/:]*):(4403|4401)(\/[^#]*)?(#.*)?$/i;
+
+window.coLocal = u => {
+    const m = CO_RAW.exec(String(u || ""));
+    return m ? (m[1] === "4403" ? "/ud" : "/co") + (m[2] || "/") + (m[3] || "") : u;
+};
+
+window.macUrl = u => {
+    u = window.coLocal(u);
+    return CLOUD && window.MAC_BASE && /^\/(?!\/)/.test(String(u || "")) ? window.MAC_BASE + u : u;
+};
 
 const macKnown = CLOUD && !window.MAC_BASE ? api("/api/status").then(r => r.json()).then(j => {
     const d = j && j.voice && j.voice.direct;
@@ -677,12 +687,7 @@ function renderCodeFab() {
     }
 }
 
-const CO_APP = /^https?:\/\/(?:100\.96\.162\.2|ud-mini-1[^/:]*|its-47160[^/:]*):(4403|4401)(\/[^#]*)?(#.*)?$/i;
-
-const appHref = h => {
-    const m = CO_APP.exec(String(h || ""));
-    return m ? (m[1] === "4403" ? "/ud" : "/co") + (m[2] || "/") + (m[3] || "") : h;
-};
+const appHref = h => window.coLocal(h);
 
 function appOf(id) {
     for (let x = id, n = 0; x && n < 14; x = (FULL.e[x] || {}).up, n++) {
@@ -755,7 +760,8 @@ window.nsOpenApp = a => appPane(typeof a === "string" ? {
 document.addEventListener("click", ev => {
     const a = ev.target.closest && ev.target.closest("a[href]");
     if (!a || ev.defaultPrevented || ev.metaKey || ev.ctrlKey || ev.shiftKey) return;
-    if (!CO_APP.test(a.href) || PUBLIC) return;
+    const coHere = a.origin === location.origin && /^\/(co|ud)\//.test(a.pathname);
+    if (!(CO_RAW.test(a.href) || coHere) || PUBLIC) return;
     ev.preventDefault();
     appPane({
         href: appHref(a.href),
@@ -2827,7 +2833,9 @@ function nowHtml(v) {
     const ul = (rows, cls) => `<ul>${rows.join("")}</ul>`;
     let h = "";
     if (v.needsYou.length) h += card(`Needs you — ${v.needsYou.length}`, ul(v.needsYou.map(q => `<li class="hot"><b>${esc(q.title)}</b>${md(q)}</li>`)) + `<div class="ask" style="cursor:pointer" onclick="openInbox('${esc(v.id)}')">Answer in the inbox</div>`);
-    h += card(`Working now — ${v.working.length}`, v.working.length ? ul(v.working.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:${t.status === "waiting" ? "var(--wait)" : "var(--text-muted)"}">${esc(t.status)}${t.line ? " · " + esc(t.line) : ""}</span></li>`)) : '<p style="color:var(--text-muted)">no worker on it right now</p>');
+    h += card(`Working now — ${v.working.length}`, v.working.length ? ul(v.working.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--text-muted)">running${t.line ? " · " + esc(t.line) : ""}</span></li>`)) : '<p style="color:var(--text-muted)">no agent running on it right now</p>');
+    const wt = v.waiting || [];
+    if (wt.length) h += card(`Waiting — ${wt.length}`, ul(wt.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--wait)">${esc(t.kind || "waiting")}${t.resumes ? " · resumes " + esc(t.resumes) : ""}</span> <span style="color:var(--text-muted)">${esc(t.reason || t.line || "")}</span></li>`)));
     if (v.next.length) h += card("Next", ul(v.next.map(x => `<li>${esc(x.name)}${x.due ? ` <span style="color:var(--text-muted)">${esc(x.due)}</span>` : ""}${md(x)}</li>`)));
     if (v.finished.length) h += card("Just finished", ul(v.finished.map(t => `<li><b>${esc(dd(t.at))} ${esc(t.name)}</b> ${esc(t.result)}</li>`)));
     const docs = [ ...v.docs.latest, ...v.docs.past ], link = x => `<li><a href="${esc(macUrl(x.href))}" target="_blank" rel="noopener">${esc(x.label)}</a>${md(x)}</li>`;
