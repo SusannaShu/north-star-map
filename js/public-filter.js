@@ -85,6 +85,35 @@
         for (const k of Object.keys(o)) if (o[k] === null || o[k] === undefined || o[k] === "") delete o[k];
         return o;
     }
+    const reEsc = x => String(x).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    function nameRe(names) {
+        const multi = names.filter(n => /\s/.test(n)), single = names.filter(n => !/\s/.test(n));
+        const parts = [];
+        if (multi.length) parts.push(new RegExp("(^|[^\\w])(" + multi.map(reEsc).join("|") + ")(?![\\w])", "gi"));
+        if (single.length) parts.push(new RegExp("(^|[^\\w])(" + single.map(reEsc).join("|") + ")(?![\\w])", "g"));
+        return parts;
+    }
+    let nameCache = null, nameKey = "";
+    function redact(o, names) {
+        const key = names.length + ":" + names[0];
+        if (key !== nameKey) {
+            nameCache = nameRe(names);
+            nameKey = key;
+        }
+        const res = nameCache, hit = t => res.some(r => {
+            r.lastIndex = 0;
+            return r.test(String(t || ""));
+        });
+        const fix = t => res.reduce((x, r) => x.replace(r, "$1someone"), String(t));
+        for (const k of [ "label", "why", "caption", "statusLine", "embedCaption" ]) if (typeof o[k] === "string" && hit(o[k])) o[k] = fix(o[k]);
+        for (const k of [ "docs", "refs", "cases" ]) if (Array.isArray(o[k])) {
+            o[k] = o[k].filter(d => !hit(d.label) && !hit(d.title));
+            if (!o[k].length) delete o[k];
+        }
+        if (o.case && hit(o.case.title)) delete o.case;
+        if (o.paper && hit(o.paper.title)) delete o.paper;
+        return o;
+    }
     function nodeOut(n, extra) {
         const o = {
             id: n.id,
@@ -158,10 +187,11 @@
                 fixLinks(c);
                 if (c.kind === "ptype") {
                     const ls = (c.links || []).map(t => String(label[t] || "").toLowerCase()).filter(Boolean);
-                    c.label = String(c.label || "").replace(/\s*·\s*\d+\s*$/, "") + ` · ${c.count}`;
+                    c.label = String(c.label || "").replace(/\s*·\s*\d+\s*$/, "");
                     c.caption = ls.length ? `People in ${ls.join(", ").replace(/, ([^,]*)$/, " and $1")} I learn from.` : "People I learn from.";
-                    c.why = `${c.count} people`;
+                    c.why = "People I learn from.";
                     delete c.statusLine;
+                    delete c.count;
                 }
             });
         });
@@ -173,10 +203,19 @@
             if (p.parent) up[p.id] = p.parent;
             for (const c of p.children || []) if (!up[c.id]) up[c.id] = p.id;
         }
+        const kidsOf = {};
+        for (const [k, v] of Object.entries(up)) (kidsOf[v] = kidsOf[v] || new Set).add(k);
         const pubOf = id => {
-            let q = id, d = 0;
+            let q = id, prev = null, d = 0;
             while (q && d < 10) {
-                if (ids.has(q)) return q;
+                if (ids.has(q)) {
+                    if (prev && q !== id) {
+                        const k = kidsOf[q];
+                        if (k && k.size === 1 && !ids.has(prev)) return hubId;
+                    }
+                    return q;
+                }
+                prev = q;
                 q = up[q];
                 d++;
             }
@@ -224,6 +263,7 @@
             label: "NORTH STAR"
         };
         const pv = hub.public || {};
+        if (Array.isArray(opts.privateNames) && opts.privateNames.length) projects.forEach(p => [ p, ...p.children ].forEach(o => redact(o, opts.privateNames)));
         return {
             public: true,
             generatedAt: m.generatedAt || null,
