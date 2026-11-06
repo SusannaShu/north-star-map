@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-06T07:10:27.729Z",
+ "generatedAt": "2026-11-06T07:44:28.657Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -775,7 +775,7 @@
      "label": "SELF-IMPROVING LOOP",
      "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-     "statusLine": "live · learning nightly, brief pause",
+     "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
      "stage": "active",
      "embed": "pages/mittens-self-improve.html",
@@ -1242,7 +1242,7 @@
      "label": "CODE ARCHITECTURE TREE",
      "status": "idle",
      "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
-     "statusLine": "in progress",
+     "statusLine": "one task list with folders built",
      "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
      "stage": "active",
      "embed": "pages/code-architecture-tree-2.html",
@@ -1483,6 +1483,18 @@
    "parent": "man-g-agents",
    "parked": false,
    "children": [
+    {
+     "id": "rules-audit",
+     "label": "RULES AUDIT",
+     "status": "idle",
+     "why": "I kept adding rules and the assistant took every one at face value, even when two of them disagreed. I had it find the conflicts and repeats, I picked which to keep, and now it checks for duplicates before saving a new rule.",
+     "statusLine": "done · rules merged and trimmed",
+     "caption": "I kept adding rules and the assistant took every one at face value, even when two of them disagreed.",
+     "stage": "done",
+     "embed": "pages/rules-audit.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "howto-start-here",
      "label": "START HERE",
@@ -2832,6 +2844,19 @@
      "links": [
       "ns-talk"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-js-modules",
+     "label": "WHAT .MJS MEANS",
+     "status": "idle",
+     "why": "I want to understand why so many of my files end in .mjs and what that changes about how code is loaded.",
+     "statusLine": "plan",
+     "caption": "I want to understand why so many of my files end in .mjs and what that changes about how code is loaded.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/learn-js-modules.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -5580,6 +5605,25 @@
    "links": [
     "triggers",
     "mittens-proactive"
+   ],
+   "parent": "mittens-proactive",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "v2-dropped-audit",
+   "label": "WHAT V2 DROPPED",
+   "status": "idle",
+   "why": "When I rebuilt the assistant, some of the things it used to bring up on its own went quiet. I listed what was lost and am bringing it back one piece at a time.",
+   "statusLine": "restoring · most back",
+   "caption": "When I rebuilt the assistant, some of the things it used to bring up on its own went quiet.",
+   "stage": "active",
+   "embed": "pages/v2-dropped-audit.html",
+   "visibility": "public",
+   "links": [
+    "automation-audit",
+    "mittens"
    ],
    "parent": "mittens-proactive",
    "parked": false,
