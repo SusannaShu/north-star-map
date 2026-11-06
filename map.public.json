@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-06T18:20:34.273Z",
+ "generatedAt": "2026-11-06T18:25:14.341Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -233,7 +233,7 @@
     {
      "id": "susu-map-pin-accuracy",
      "label": "MAP PIN ACCURACY",
-     "status": "idle",
+     "status": "done",
      "why": "I am making the pins on my map land exactly where they belong.",
      "statusLine": "in progress",
      "caption": "I am making the pins on my map land exactly where they belong.",
@@ -248,7 +248,7 @@
     {
      "id": "susu-map-daily-posts",
      "label": "SUSU MAP DAILY POSTS",
-     "status": "idle",
+     "status": "done",
      "why": "I want a daily post about what's on the map, so people have a reason to come back to it.",
      "statusLine": "just started",
      "caption": "I want a daily post about what's on the map, so people have a reason to come back to it.",
@@ -1213,7 +1213,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1320,7 +1320,7 @@
     {
      "id": "chrome-flashing-open-render-scripts",
      "label": "BROWSER FLASH FIX",
-     "status": "idle",
+     "status": "done",
      "why": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
      "statusLine": "fixing",
      "caption": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
@@ -1338,7 +1338,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1605,7 +1605,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1921,7 +1921,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -2821,7 +2821,7 @@
     {
      "id": "atahualpa",
      "label": "ATAHUALPA",
-     "status": "idle",
+     "status": "done",
      "why": "A history learning episode my agent made for me.",
      "statusLine": "episode made",
      "caption": "A history learning episode my agent made for me.",
@@ -3650,7 +3650,7 @@
     {
      "id": "sheyou-code-architecture",
      "label": "SHEYOU CODE ARCHITECTURE",
-     "status": "idle",
+     "status": "done",
      "why": "This is where I look at how the SHEYOU code fits together.",
      "statusLine": "in progress",
      "caption": "This is where I look at how the SHEYOU code fits together.",
@@ -3914,7 +3914,7 @@
     {
      "id": "north-star-intro-animation-pop",
      "label": "INTRO ANIMATION",
-     "status": "idle",
+     "status": "done",
      "why": "The map's intro animation now plays only as a pop-up, not every time.",
      "statusLine": "in progress",
      "caption": "The map's intro animation now plays only as a pop-up, not every time.",
@@ -4867,7 +4867,7 @@
     {
      "id": "pendant-brand-moodboard",
      "label": "PENDANT MOODBOARD",
-     "status": "idle",
+     "status": "done",
      "why": "I'm collecting the look and feel for the pendant's brand before I design it.",
      "statusLine": "collecting references",
      "caption": "I'm collecting the look and feel for the pendant's brand before I design it.",
@@ -4964,7 +4964,7 @@
     {
      "id": "podcast-episode-collections",
      "label": "PODCAST EPISODE COLLECTIONS",
-     "status": "idle",
+     "status": "done",
      "why": "I group podcast episodes into collections so they are easier to follow.",
      "statusLine": "in progress",
      "caption": "I group podcast episodes into collections so they are easier to follow.",
@@ -5097,7 +5097,7 @@
     {
      "id": "viral-clips-mittens-positioned-s1",
      "label": "VIRAL CLIPS SEASON ONE",
-     "status": "idle",
+     "status": "done",
      "why": "The first season of short clips, made to position my assistant as the product.",
      "statusLine": "in progress",
      "caption": "The first season of short clips, made to position my assistant as the product.",
@@ -5112,7 +5112,7 @@
     {
      "id": "trend-sensing-for-products",
      "label": "TREND SENSING",
-     "status": "idle",
+     "status": "done",
      "why": "I want the machine to spot trends that matter for a product before it makes anything.",
      "statusLine": "active · early thread",
      "caption": "I want the machine to spot trends that matter for a product before it makes anything.",
@@ -5189,7 +5189,7 @@
     {
      "id": "glasses-photo-button-flaky",
      "label": "GLASSES PHOTO BUTTON",
-     "status": "idle",
+     "status": "done",
      "why": "The photo button on the glasses only works some of the time. I'm tracking down why so capture is reliable.",
      "statusLine": "fix in progress",
      "caption": "The photo button on the glasses only works some of the time.",
@@ -5225,7 +5225,7 @@
     {
      "id": "mem-census-watchdog",
      "label": "MEMORY WATCHDOG",
-     "status": "idle",
+     "status": "done",
      "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
      "statusLine": "in progress",
      "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
@@ -5244,7 +5244,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "working",
+   "status": "idle",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "noted this week",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
