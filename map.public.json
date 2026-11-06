@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-06T07:44:28.657Z",
+ "generatedAt": "2026-11-06T16:01:03.144Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1367,7 +1367,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -3189,7 +3189,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3213,7 +3213,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "idle",
+     "status": "working",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "live · greets on waking",
      "caption": "One morning notification:",
@@ -3931,7 +3931,7 @@
   {
    "id": "mittens-makes-calls-for-her",
    "label": "AGENT MAKES CALLS",
-   "status": "idle",
+   "status": "dormant",
    "why": "My agent can place phone calls for me and handle the conversation.",
    "statusLine": "in progress",
    "caption": "My agent can place phone calls for me and handle the conversation.",
@@ -3942,7 +3942,7 @@
     "mittens"
    ],
    "parent": "talk-phone-calls",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -4077,7 +4077,7 @@
   {
    "id": "scheduling-screen-like-messages-and",
    "label": "SCHEDULING SCREEN",
-   "status": "idle",
+   "status": "dormant",
    "why": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
    "statusLine": "in progress",
    "caption": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
@@ -4088,7 +4088,7 @@
     "mittens-daily"
    ],
    "parent": "mittens-daily",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "bot-detection-bot-like-a",
@@ -4321,7 +4321,7 @@
   {
    "id": "question-watcher-works-answer-trim",
    "label": "QUESTION WATCHER",
-   "status": "idle",
+   "status": "dormant",
    "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
    "statusLine": "works · trim awaits approval",
    "caption": "My agent notices open questions and answers them first.",
@@ -4332,7 +4332,7 @@
     "mittens-daily"
    ],
    "parent": "mittens-proactive",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "promised-hand-it-to-a",
@@ -4356,7 +4356,7 @@
   {
    "id": "from-t3083-the-one-architect",
    "label": "NEEDS-ME GATE",
-   "status": "idle",
+   "status": "dormant",
    "why": "I fixed the step that decides what really needs me, so stale cards stop piling up.",
    "statusLine": "fixed · moved to architecture",
    "caption": "I fixed the step that decides what really needs me, so stale cards stop piling up.",
@@ -4367,7 +4367,7 @@
     "ns-talk"
    ],
    "parent": "ns-talk",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "hows-architect-research-and-did",
@@ -4512,7 +4512,7 @@
   {
    "id": "app-zoom-waits-install-data",
    "label": "APP ZOOM + DATA PLAN",
-   "status": "idle",
+   "status": "dormant",
    "why": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
    "statusLine": "waiting on install",
    "caption": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
@@ -4524,7 +4524,7 @@
     "learn-with-mittens"
    ],
    "parent": "learn-with-mittens",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "app-zoom-waits-install-data-2",
@@ -4598,7 +4598,7 @@
   {
    "id": "learn-ep-french-1",
    "label": "FRENCH EPISODE ONE",
-   "status": "idle",
+   "status": "dormant",
    "why": "A short French lesson built from sentences about my own day. Each one is read at normal speed, then slowly, with a gap for me to repeat it.",
    "statusLine": "ready",
    "caption": "A short French lesson built from sentences about my own day.",
@@ -4606,7 +4606,7 @@
    "embed": "pages/learn-ep-french-1.html",
    "visibility": "public",
    "parent": "learn-episodes",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "ep-french-1-your-wednesday",
@@ -4788,7 +4788,7 @@
   {
    "id": "open-button-crash-fix",
    "label": "OPEN BUTTON CRASH FIX",
-   "status": "idle",
+   "status": "dormant",
    "why": "I am fixing a crash in the app that happens around the open button.",
    "statusLine": "in progress",
    "caption": "I am fixing a crash in the app that happens around the open button.",
@@ -4799,7 +4799,7 @@
     "mittens-app"
    ],
    "parent": "mittens-app",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -4977,7 +4977,7 @@
   {
    "id": "mittens-desktop-panels-2",
    "label": "MITTENS DESKTOP PANELS",
-   "status": "idle",
+   "status": "dormant",
    "why": "The panels that show Mittens at work on the desktop.",
    "statusLine": "in progress",
    "caption": "The panels that show Mittens at work on the desktop.",
@@ -4989,7 +4989,7 @@
     "mittens-knows"
    ],
    "parent": "mittens-desktop",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
