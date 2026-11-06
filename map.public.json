@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-06T16:06:05.422Z",
+ "generatedAt": "2026-11-06T18:20:34.273Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -374,7 +374,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -692,7 +692,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -957,10 +957,11 @@
     {
      "id": "cuddle-vision",
      "label": "VISION",
-     "status": "idle",
+     "status": "done",
      "why": "A soft robot that holds -- warm fluid skin, textile body, breathing that syncs to yours. Care you can hold, accessible outside romance, gender and family norms. The reason the hardware line exists.",
      "statusLine": "paper + zine",
      "caption": "A soft robot that holds -- warm fluid skin, textile body, breathing that syncs to yours.",
+     "stage": "done",
      "images": [
       "img/paper-spread.jpg",
       "img/zine-spread.jpg"
@@ -972,11 +973,11 @@
     {
      "id": "skin-materials",
      "label": "MATERIALS",
-     "status": "idle",
+     "status": "done",
      "why": "The Warm Skin v1 parts list -- muscle, bladder, warmth, sensing, control.",
      "statusLine": "parts arriving",
      "caption": "The Warm Skin v1 parts list -- muscle, bladder, warmth, sensing, control.",
-     "stage": "active",
+     "stage": "done",
      "images": [
       "img/warm-skin-layers.jpg"
      ],
@@ -1023,11 +1024,11 @@
     {
      "id": "three-actuators",
      "label": "THREE ACTUATORS",
-     "status": "idle",
+     "status": "done",
      "why": "Which muscle for v1: electrohydraulic (HASEL), the electrofluidic fibre, or living muscle cells. Decided on room and signature, not performance: HASEL first, electrofluidic in v2, living muscle needs an institution.",
      "statusLine": "decided: HASEL first",
      "caption": "Which muscle for v1:",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/three-actuators.html",
      "visibility": "public",
      "links": [
@@ -1167,10 +1168,11 @@
     {
      "id": "wet-lab",
      "label": "WET LAB",
-     "status": "idle",
+     "status": "done",
      "why": "Where cells can be grown: cleanrooms open to startups at published rates; cell culture needs a sponsor or a commercial wet lab.",
      "statusLine": "researching access",
      "caption": "Where cells can be grown:",
+     "stage": "done",
      "embed": "pages/wet-lab.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1211,7 +1213,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1336,7 +1338,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1367,7 +1369,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1603,7 +1605,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -1919,7 +1921,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -3466,7 +3468,7 @@
     {
      "id": "sichuanese-dialect-transcription",
      "label": "DIALECT TRANSCRIPTION",
-     "status": "idle",
+     "status": "done",
      "why": "I am working on live transcription that can follow a regional dialect, not only the standard language.",
      "statusLine": "in progress",
      "caption": "I am working on live transcription that can follow a regional dialect, not only the standard language.",
@@ -3730,7 +3732,7 @@
     {
      "id": "learn-ep-business-strategy",
      "label": "BUSINESS EPISODE",
-     "status": "idle",
+     "status": "done",
      "why": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
      "statusLine": "ready",
      "caption": "An episode on who we sell to, what we sell and how each product launches, ending with open questions.",
@@ -4240,7 +4242,7 @@
   {
    "id": "mittens-architecture",
    "label": "MITTENS ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
    "statusLine": "migration underway · first steps live",
    "caption": "Personal data moves off the shared cloud backend onto a small home server:",
@@ -4598,7 +4600,7 @@
   {
    "id": "learn-ep-french-1",
    "label": "FRENCH EPISODE ONE",
-   "status": "dormant",
+   "status": "done",
    "why": "A short French lesson built from sentences about my own day. Each one is read at normal speed, then slowly, with a gap for me to repeat it.",
    "statusLine": "ready",
    "caption": "A short French lesson built from sentences about my own day.",
@@ -4881,7 +4883,7 @@
     {
      "id": "pendant-brand-direction",
      "label": "PENDANT BRAND DIRECTION",
-     "status": "idle",
+     "status": "done",
      "why": "Turning the moodboard into a clear brand direction for the pendant.",
      "statusLine": "shaping the direction",
      "caption": "Turning the moodboard into a clear brand direction for the pendant.",
@@ -4996,7 +4998,7 @@
   {
    "id": "flaggers-haiku-only-flags-mittens",
    "label": "TRIAGE FLAGGERS",
-   "status": "idle",
+   "status": "done",
    "why": "A small fast model only raises flags, and Mittens decides what actually runs.",
    "statusLine": "in use · still refining",
    "caption": "A small fast model only raises flags, and Mittens decides what actually runs.",
@@ -5240,55 +5242,9 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "lens-home",
-   "label": "MITTENS LENS HOME",
-   "status": "idle",
-   "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
-   "statusLine": "step 1 live",
-   "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
-   "stage": "active",
-   "embed": "pages/lens-home.html",
-   "visibility": "public",
-   "parent": "smart-glasses",
-   "parked": false,
-   "children": [
-    {
-     "id": "not-done-b-roll-tile",
-     "label": "B-ROLL TILE",
-     "status": "idle",
-     "why": "A tile next to Capture in the lens home screen for grabbing extra footage. It isn't finished yet.",
-     "statusLine": "not done yet",
-     "caption": "A tile next to Capture in the lens home screen for grabbing extra footage.",
-     "stage": "active",
-     "embed": "pages/not-done-b-roll-tile.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "worker-progress-reports",
-   "label": "WORKER PROGRESS REPORTS",
-   "status": "idle",
-   "why": "I can ask what is running right now, and workers report what they finished and what held them up.",
-   "statusLine": "in use",
-   "caption": "I can ask what is running right now, and workers report what they finished and what held them up.",
-   "stage": "active",
-   "embed": "pages/worker-progress-reports.html",
-   "visibility": "public",
-   "links": [
-    "wake-report"
-   ],
-   "parent": "wake-report",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "idle",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "noted this week",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -5367,6 +5323,52 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "lens-home",
+   "label": "MITTENS LENS HOME",
+   "status": "idle",
+   "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
+   "statusLine": "step 1 live",
+   "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
+   "stage": "active",
+   "embed": "pages/lens-home.html",
+   "visibility": "public",
+   "parent": "smart-glasses",
+   "parked": false,
+   "children": [
+    {
+     "id": "not-done-b-roll-tile",
+     "label": "B-ROLL TILE",
+     "status": "done",
+     "why": "A tile next to Capture in the lens home screen for grabbing extra footage. It isn't finished yet.",
+     "statusLine": "not done yet",
+     "caption": "A tile next to Capture in the lens home screen for grabbing extra footage.",
+     "stage": "active",
+     "embed": "pages/not-done-b-roll-tile.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "worker-progress-reports",
+   "label": "WORKER PROGRESS REPORTS",
+   "status": "idle",
+   "why": "I can ask what is running right now, and workers report what they finished and what held them up.",
+   "statusLine": "in use",
+   "caption": "I can ask what is running right now, and workers report what they finished and what held them up.",
+   "stage": "active",
+   "embed": "pages/worker-progress-reports.html",
+   "visibility": "public",
+   "links": [
+    "wake-report"
+   ],
+   "parent": "wake-report",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
