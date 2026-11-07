@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-07T06:28:35.005Z",
+ "generatedAt": "2026-11-07T09:35:50.355Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -3566,6 +3566,8 @@
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "codeRepos": [
