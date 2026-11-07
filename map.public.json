@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-07T09:35:50.355Z",
+ "generatedAt": "2026-11-07T21:44:53.837Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -5008,7 +5008,7 @@
    "embed": "pages/flaggers-haiku-only-flags-mittens.html",
    "visibility": "public",
    "parent": "triage",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
