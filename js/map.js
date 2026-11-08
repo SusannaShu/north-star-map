@@ -1560,6 +1560,7 @@ function avail() {
     if (DOC && !saver && !STILL) {
         if (isMobile()) bot = Math.round(H * .58) + 12; else rx = Math.round(W / 2);
     }
+    if (saverCalOn() && document.body.classList.contains("saver-cal-on")) rx = saverCalW();
     if (STILL) {
         top = H * .27;
         side = 8;
@@ -3415,11 +3416,36 @@ window.openSituationPanel = openSituationPanel;
 
 const saverBtn = document.getElementById("saverBtn");
 
+function saverCalOn() {
+    return saver && !PUBLIC && !STILL && !WALL && !MINI && !isMobile() && W >= 900;
+}
+
+function saverCalW() {
+    return Math.round(Math.min(Math.max(W * .42, 460), 900));
+}
+
+function saverCal() {
+    const box = document.getElementById("saverCal");
+    if (!box) return;
+    const on = saverCalOn();
+    document.body.classList.toggle("saver-cal-on", on);
+    if (!on) return;
+    document.documentElement.style.setProperty("--scw", saverCalW() + "px");
+    if (!box.firstChild) {
+        const f = document.createElement("iframe");
+        f.title = "Mittens calendar";
+        f.src = "/day.html?app=1&saver=1";
+        box.appendChild(f);
+        box.onclick = () => exitSaver();
+    }
+}
+
 function enterSaver() {
     saver = true;
     document.body.classList.add("saver");
     closePanel();
     overlay.classList.remove("open");
+    saverCal();
     setGravity();
     fitAll();
 }
@@ -3427,6 +3453,7 @@ function enterSaver() {
 function exitSaver() {
     saver = false;
     document.body.classList.remove("saver");
+    saverCal();
     lastActive = Date.now();
     setGravity();
     fitAll();

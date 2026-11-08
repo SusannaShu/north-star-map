@@ -373,6 +373,12 @@ body.saver .panel { transform:translateX(105%) !important; }
   pointer-events:none; opacity:0; transition:opacity .8s ease;
 }
 body.saver .saver-clock { opacity:1; }
+/* the screensaver calendar (T4528): a right column, the map fits the rest (map.js avail rx) */
+.saver-cal { display:none; position:fixed; top:0; right:0; bottom:0; width:var(--scw, 600px); z-index:9; background:var(--bg);
+  border-left:1px solid var(--border); overflow:hidden; }
+.saver-cal iframe { width:100%; height:100%; border:0; pointer-events:none; background:var(--bg); }
+body.saver.saver-cal-on .saver-cal { display:block; }
+body.saver.saver-cal-on .saver-clock { right:var(--scw, 600px); }
 /* No clock of our own (2026-10-08): the Mac's screensaver and the phone's lock screen
    already show the time, so the saver keeps only the status line. */
 .saver-clock .time { display:none; }
@@ -849,6 +855,8 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <div class="ticker" id="ticker"><b>sync</b> · loading map…</div>
 
 <div class="still-cap" id="stillCap"></div>
+
+<div class="saver-cal" id="saverCal" aria-label="Mittens calendar"></div>
 <div class="saver-clock">
   <div class="time" id="saverTime">00:00</div>
   <div class="sub" id="saverSub">agents working · tap to wake</div>
@@ -903,7 +911,7 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/done-filter.js?v=20261103b"></script>
 <script src="js/dot-view.js?v=20261103b"></script>
 <script src="js/public-live.js"></script>
-<script src="js/map.js?v=20261104app"></script>
+<script src="js/map.js?v=20261107t4528"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/public-time.js?v=20261022changes" defer="defer"></script>
 <script src="js/live.js?v=20261102done"></script>
