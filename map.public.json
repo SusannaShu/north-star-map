@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-08T13:28:29.681Z",
+ "generatedAt": "2026-11-08T19:29:59.819Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -5536,7 +5536,7 @@
    "embed": "pages/man-g-agents.html",
    "visibility": "public",
    "parent": "manual-map",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -5551,7 +5551,7 @@
    "embed": "pages/man-g-machines.html",
    "visibility": "public",
    "parent": "manual-map",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -5566,7 +5566,7 @@
    "embed": "pages/man-g-ship.html",
    "visibility": "public",
    "parent": "manual-map",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
