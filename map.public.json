@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-08T05:16:20.893Z",
+ "generatedAt": "2026-11-08T07:40:50.773Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -374,7 +374,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1213,7 +1213,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1338,7 +1338,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1921,7 +1921,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -2009,7 +2009,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2453,7 +2453,7 @@
   {
    "id": "aurora",
    "label": "AURORA",
-   "status": "working",
+   "status": "idle",
    "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
    "statusLine": "first voice file built · in review",
    "caption": "A voice layer so an agent stops sounding like AI:",
@@ -2490,6 +2490,21 @@
      "stage": "done",
      "embed": "pages/small-models.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "nudge-review",
+     "label": "NUDGE REVIEW",
+     "status": "idle",
+     "why": "Every night my agents read back where I had to nudge, correct or repeat myself, group those moments by root cause, and fix them on their own. In the morning I only see the decisions that are really mine.",
+     "statusLine": "live · every night",
+     "caption": "Every night my agents read back where I had to nudge, correct or repeat myself, group those moments by root cause, and fix them on their own.",
+     "stage": "active",
+     "embed": "pages/nudge-review.html",
+     "visibility": "public",
+     "links": [
+      "mittens-self-improve"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4955,7 +4970,7 @@
    "label": "MITTENS PODCAST",
    "status": "idle",
    "why": "A podcast made just for me that I can pause to ask questions or practice speaking. A French sound check runs on my own machine and points out my pronunciation mistakes.",
-   "statusLine": "built · new episode nightly",
+   "statusLine": "built · new plan attached",
    "caption": "A podcast made just for me that I can pause to ask questions or practice speaking.",
    "stage": "active",
    "embed": "pages/mittens-podcast.html",
@@ -4968,9 +4983,9 @@
      "label": "PODCAST EPISODE COLLECTIONS",
      "status": "done",
      "why": "I group podcast episodes into collections so they are easier to follow.",
-     "statusLine": "in progress",
+     "statusLine": "merged into the podcast",
      "caption": "I group podcast episodes into collections so they are easier to follow.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/podcast-episode-collections.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -5002,9 +5017,9 @@
    "label": "TRIAGE FLAGGERS",
    "status": "done",
    "why": "A small fast model only raises flags, and Mittens decides what actually runs.",
-   "statusLine": "in use · still refining",
+   "statusLine": "merged into triage",
    "caption": "A small fast model only raises flags, and Mittens decides what actually runs.",
-   "stage": "active",
+   "stage": "done",
    "embed": "pages/flaggers-haiku-only-flags-mittens.html",
    "visibility": "public",
    "parent": "triage",
@@ -5101,9 +5116,9 @@
      "label": "VIRAL CLIPS SEASON ONE",
      "status": "done",
      "why": "The first season of short clips, made to position my assistant as the product.",
-     "statusLine": "in progress",
+     "statusLine": "merged into viral machine",
      "caption": "The first season of short clips, made to position my assistant as the product.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/viral-clips-mittens-positioned-s1.html",
      "visibility": "public",
      "links": [
@@ -5116,9 +5131,9 @@
      "label": "TREND SENSING",
      "status": "done",
      "why": "I want the machine to spot trends that matter for a product before it makes anything.",
-     "statusLine": "active · early thread",
+     "statusLine": "merged into viral machine",
      "caption": "I want the machine to spot trends that matter for a product before it makes anything.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/trend-sensing-for-products.html",
      "visibility": "public",
      "links": [
@@ -5193,9 +5208,9 @@
      "label": "GLASSES PHOTO BUTTON",
      "status": "done",
      "why": "The photo button on the glasses only works some of the time. I'm tracking down why so capture is reliable.",
-     "statusLine": "fix in progress",
+     "statusLine": "merged into glasses work",
      "caption": "The photo button on the glasses only works some of the time.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/glasses-photo-button-flaky.html",
      "visibility": "public",
      "links": [
@@ -5229,9 +5244,9 @@
      "label": "MEMORY WATCHDOG",
      "status": "done",
      "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
-     "statusLine": "in progress",
+     "statusLine": "merged into watchdog",
      "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/mem-census-watchdog.html",
      "visibility": "public",
      "links": [
@@ -5345,9 +5360,9 @@
      "label": "B-ROLL TILE",
      "status": "done",
      "why": "A tile next to Capture in the lens home screen for grabbing extra footage. It isn't finished yet.",
-     "statusLine": "not done yet",
+     "statusLine": "merged into lens home",
      "caption": "A tile next to Capture in the lens home screen for grabbing extra footage.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/not-done-b-roll-tile.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -5391,7 +5406,7 @@
      "label": "MITTENS DECISION MAP",
      "status": "idle",
      "why": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use. Build requests are now judged from context instead of fixed phrases.",
-     "statusLine": "proposal · being tested",
+     "statusLine": "plan ready · waiting for my yes",
      "caption": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use.",
      "stage": "active",
      "embed": "pages/mittens-decision-map.html",
