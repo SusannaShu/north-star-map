@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-08T12:55:16.144Z",
+ "generatedAt": "2026-11-08T13:28:29.681Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -374,7 +374,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -692,7 +692,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2779,7 +2779,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -2851,7 +2851,7 @@
     {
      "id": "podcast-youtube-episode-watch",
      "label": "EPISODE WATCH",
-     "status": "working",
+     "status": "idle",
      "why": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
      "statusLine": "live · daily bundle",
      "caption": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
@@ -4182,7 +4182,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
