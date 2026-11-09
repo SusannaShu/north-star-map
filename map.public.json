@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-09T21:07:48.132Z",
+ "generatedAt": "2026-11-09T21:18:18.372Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -500,18 +500,6 @@
       "mittens-daily",
       "outing-thread"
      ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "live-day-plan",
-     "label": "LIVE DAY PLAN",
-     "status": "idle",
-     "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
-     "statusLine": "active · in progress",
-     "caption": "My assistant keeps one plan for the day and updates it as things change.",
-     "stage": "active",
-     "embed": "pages/live-day-plan.html",
-     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1440,7 +1428,7 @@
     {
      "id": "briefs-unsorted",
      "label": "UNSORTED BRIEFS",
-     "status": "idle",
+     "status": "working",
      "why": "Every brief, plan and research page belongs on the map so I can find it. A page with no clear home waits here until it gets moved to the right dot.",
      "statusLine": "live · sorted every night",
      "caption": "Every brief, plan and research page belongs on the map so I can find it.",
@@ -5785,6 +5773,21 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "live-day-plan",
+   "label": "LIVE DAY PLAN",
+   "status": "dormant",
+   "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
+   "statusLine": "active · in progress",
+   "caption": "My assistant keeps one plan for the day and updates it as things change.",
+   "stage": "active",
+   "embed": "pages/live-day-plan.html",
+   "visibility": "public",
+   "parent": "mittens-daily",
+   "parked": true,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
