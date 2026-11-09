@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-09T21:18:18.372Z",
+ "generatedAt": "2026-11-09T21:38:33.293Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -823,7 +823,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1381,7 +1381,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1428,7 +1428,7 @@
     {
      "id": "briefs-unsorted",
      "label": "UNSORTED BRIEFS",
-     "status": "working",
+     "status": "idle",
      "why": "Every brief, plan and research page belongs on the map so I can find it. A page with no clear home waits here until it gets moved to the right dot.",
      "statusLine": "live · sorted every night",
      "caption": "Every brief, plan and research page belongs on the map so I can find it.",
@@ -4780,7 +4780,7 @@
   {
    "id": "code-architecture-tree",
    "label": "CODE ARCHITECTURE TREE",
-   "status": "working",
+   "status": "done",
    "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
    "statusLine": "built · code tree on every coded dot",
    "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
