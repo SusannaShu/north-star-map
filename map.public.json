@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-09T12:52:19.270Z",
+ "generatedAt": "2026-11-09T12:57:34.800Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -158,7 +158,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -1237,7 +1237,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1266,7 +1266,7 @@
     {
      "id": "code-architecture-tree-2",
      "label": "CODE ARCHITECTURE TREE",
-     "status": "working",
+     "status": "idle",
      "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
      "statusLine": "reviewed · cleanup plan drafted",
      "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
@@ -3601,10 +3601,12 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "codeRepos": [
