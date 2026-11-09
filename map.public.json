@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-09T02:00:49.059Z",
+ "generatedAt": "2026-11-09T07:40:54.338Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -374,7 +374,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -438,7 +438,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -500,6 +500,18 @@
       "mittens-daily",
       "outing-thread"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "live-day-plan",
+     "label": "LIVE DAY PLAN",
+     "status": "idle",
+     "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
+     "statusLine": "active · in progress",
+     "caption": "My assistant keeps one plan for the day and updates it as things change.",
+     "stage": "active",
+     "embed": "pages/live-day-plan.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -692,7 +704,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -732,7 +744,7 @@
      "label": "I CAN DO WHAT MITTENS DOES",
      "status": "idle",
      "why": "Anything my agent can do to an item, I should be able to do with one tap. Each item page now has buttons for done, waiting, snooze, do it now and send to another device.",
-     "statusLine": "built · live on my phone",
+     "statusLine": "built · playback controls added",
      "caption": "Anything my agent can do to an item, I should be able to do with one tap.",
      "stage": "active",
      "embed": "pages/mittens-ui-parity.html",
@@ -758,7 +770,7 @@
     {
      "id": "devices",
      "label": "DEVICES",
-     "status": "working",
+     "status": "idle",
      "why": "A duplicate devices dot that got folded back into the main one.",
      "statusLine": "merged · duplicate",
      "caption": "A duplicate devices dot that got folded back into the main one.",
@@ -888,7 +900,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "working",
+   "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -928,7 +940,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "working",
+   "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -1069,6 +1081,18 @@
      "links": [
       "robot-skin"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "leg-warmer-skin",
+     "label": "LEG WARMER SKIN",
+     "status": "idle",
+     "why": "This is a version of my soft robot skin shaped like a leg warmer. It tests how the skin wraps around a curved shape and moves with it.",
+     "statusLine": "idle · on hold",
+     "caption": "This is a version of my soft robot skin shaped like a leg warmer.",
+     "stage": "active",
+     "embed": "pages/leg-warmer-skin.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -1244,7 +1268,7 @@
      "label": "CODE ARCHITECTURE TREE",
      "status": "idle",
      "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
-     "statusLine": "one task list with folders built",
+     "statusLine": "reviewed · cleanup plan drafted",
      "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
      "stage": "active",
      "embed": "pages/code-architecture-tree-2.html",
@@ -2513,7 +2537,7 @@
   {
    "id": "mittens-knows",
    "label": "ALWAYS KNOWS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
    "statusLine": "live",
    "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
@@ -4070,6 +4094,18 @@
      "links": [
       "mittens-proactive"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "project-briefs",
+     "label": "PROJECT BRIEFS",
+     "status": "idle",
+     "why": "My assistant writes me short briefs on my projects before I ask. Each one says what moved, what is stuck and what comes next.",
+     "statusLine": "active · in progress",
+     "caption": "My assistant writes me short briefs on my projects before I ask.",
+     "stage": "active",
+     "embed": "pages/project-briefs.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
