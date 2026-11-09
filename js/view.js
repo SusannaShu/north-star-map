@@ -136,6 +136,23 @@
         if (p.top) out.push(row("hangs from · the top goal", `Mittens is reliable: “${esc(clip(p.top.goal, 160))}”`, [ p.top.measure ? esc(p.top.measure) : "", "from " + esc(clip(p.top.source || "", 90)) ].filter(Boolean).join(" · ")));
         if (p.serves) out.push(row("serves · " + esc(p.serves.life), `<a href="${esc(p.serves.page)}" target="_blank" style="text-decoration:underline">${esc(p.serves.branch)}</a>`, "her Odyssey plan · guiding page"));
         if (p.goal) out.push(row("goal" + (p.deadline ? ` · by ${esc(p.deadline)}` : ""), `“${esc(p.goal)}”`, [ p.why ? "why: " + esc(clip(p.why, 160)) : "", "from " + esc(clip(p.goalSource || "", 90)) ].filter(Boolean).join(" · ")));
+        if (p.goal && (p.who || p.measure || p.stage || p.loop)) {
+            const ST = [ "plan", "research", "design", "prototype", "experiment", "measure" ], AL = {
+                implement: "prototype",
+                learn: "measure"
+            };
+            const L = p.loop, cur = L?.stages?.length ? L.stages[L.stages.length - 1] : null, stage = cur?.stage || AL[p.stage] || p.stage, at = ST.indexOf(stage);
+            const done = new Set((L?.stages || []).filter(x => x.done && x.round === (cur?.round || 1)).map(x => x.stage));
+            const chip = (s, i) => {
+                const d = done.has(s), c = i === at;
+                return `<span style="font-size:11px;padding:2px 6px;border:1px solid ${c || d ? "var(--text)" : "var(--text-dim)"};${d ? "background:var(--text);color:var(--bg);" : `color:${c ? "var(--text)" : "var(--text-muted)"};`}${c ? "font-weight:600" : ""}">${s}</span>`;
+            };
+            const strip = `<div style="display:flex;gap:4px;flex-wrap:wrap;margin:2px 0 4px">${ST.map(chip).join("")}</div>`;
+            const sc = p.score ? `<div style="margin:2px 0">score ${p.score.score}/100 <span class="vw-meta">loop ${p.score.parts.loop} · evidence ${p.score.parts.evidence} · fresh ${p.score.parts.fresh} · record ${p.score.parts.record}${p.score.trend?.length > 1 ? " · last days " + p.score.trend.join(" ") : ""}</span></div>` : "";
+            const needs = L?.needs ? `<div>this stage must produce: ${esc(clip(L.needs, 160))}</div>` : "";
+            const trail = (L?.stages || []).filter(x => x.done).slice(-4).map(x => `<div class="vw-meta">r${x.round} ${esc(x.stage)} · ${esc(x.at)}: ${esc(clip(x.evidence || "", 140))} [${esc(clip(x.ref || "", 40))}]</div>`).join("");
+            out.push(row("improve loop" + (cur ? ` · round ${cur.round}` : "") + (at < 0 ? " · stage not set" : ""), strip + sc + needs + (p.measure ? `<div>measure: ${esc(clip(p.measure, 200))}</div>` : "") + trail, p.who ? "for " + esc(clip(p.who, 120)) : ""));
+        }
         if (p.summary) out.push(row(`where it is · ${esc(p.summaryDay || "")}`, esc(p.summary), p.sources ? `${p.sources} source${p.sources > 1 ? "s" : ""} · built by code from tasks, notes and the activity log` : ""));
         if ((p.next || []).length) out.push(row("next", p.next.map(s => `<div>– ${esc(clip(s, 160))}</div>`).join("")));
         return out.length ? `<div class="vw-block vw-progress" style="margin:4px 0 14px">${out.join("")}</div>` : "";
