@@ -3136,21 +3136,29 @@ async function renderChrome() {
     if (mbtn) mbtn.setAttribute("aria-label", n ? `Menu, ${n} in the inbox` : "Menu");
 }
 
+const MITTENS_PATH = "M13.86.64c1.75.83,1.14,3.05.41,4.52l-2.68,5.37c-.79,1.95-2.09,3.45-4.1,4.15-.65.23-1.3.36-1.99.42l-5.5-.58V2.86C0,1.7.58.66,1.66.23,2.03.08,2.4,0,2.81,0h5.52c.66,0,1.29.26,1.78.68.56.47.83,1.14.91,1.84l.02-.48c.44-1.17,1.64-1.95,2.82-1.39ZM8.64,6.1c0-.44-.36-.8-.8-.8s-.8.36-.8.8.36.8.8.8.8-.36.8-.8ZM5.66,6.68c0-.56-.46-1.02-1.02-1.02s-1.02.46-1.02,1.02.46,1.02,1.02,1.02,1.02-.46,1.02-1.02ZM7.71,8.85c-.91.7-1.72.71-2.63,0-.1-.08-.23-.07-.31.03-.07.09-.04.22.07.3,1.08.81,2.04.81,3.12-.01.1-.07.11-.2.05-.28-.07-.1-.2-.12-.3-.04Z";
+
+const MITTENS_BOT = `<svg class="ico bot" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" class="bot-disc"/><path class="bot-face" transform="translate(5.6 5.3) scale(.86)" d="${MITTENS_PATH}"/></svg>`;
+
 function setAgentsInd(n, names, clickable, queued) {
     const box = document.getElementById("healthChips");
     if (!box) return;
-    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "");
+    const talk = PUBLIC ? window.NS_TALK || null : null;
+    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "") + "|" + (talk ? JSON.stringify(talk) : "");
     if (box.dataset.sig === sig) return;
     box.dataset.sig = sig;
-    box.querySelectorAll(".agents-ind:not(.presence-ind):not(.ud-ind)").forEach(el => el.remove());
-    if (!n && !queued) return;
+    box.querySelectorAll(".agents-ind:not(.ud-ind)").forEach(el => el.remove());
+    if (!n && !queued && !talk) return;
     const el = document.createElement(clickable ? "button" : "div");
-    el.className = "agents-ind";
+    el.className = "agents-ind" + (!n && !(talk && talk.on) ? " off" : "");
     el.id = "agentsChip";
     const label = `${n} agent${n === 1 ? "" : "s"} working` + (queued ? ` · ${queued}` : "");
-    el.title = clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label;
-    el.setAttribute("aria-label", clickable ? `${label}, show them` : label);
-    el.innerHTML = `<span class="pulse" aria-hidden="true"></span><b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>${names ? `<span class="who">${esc(names)}</span>` : ""}`;
+    const tt = talk ? ` · ${talk.title}` : "";
+    el.title = (clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label) + tt;
+    el.setAttribute("aria-label", (clickable ? `${label}, show them` : label) + tt);
+    const count = n ? `<b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>` : queued ? `<span class="lbl">${esc(queued)}</span>` : "";
+    const talkPart = !talk ? "" : talk.on ? `<span class="talk">${talk.icons || ""}<span class="lbl">${esc(talk.short)}</span></span>` : !n && !queued ? `<span class="lbl">${esc(talk.short)}</span>` : "";
+    el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${MITTENS_BOT}${count}${talkPart}${names ? `<span class="who">${esc(names)}</span>` : ""}`;
     if (clickable) el.onclick = PUBLIC ? openPublicAgentsPanel : openAgentsPanel;
     const ud = box.querySelector(".ud-ind");
     ud ? box.insertBefore(el, ud) : box.appendChild(el);

@@ -91,11 +91,17 @@ button.agents-ind { cursor:pointer; } button.agents-ind:hover { border-color:var
 .ud-h { display:flex; align-items:center; gap:7px; font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--text); }
 .ud-h .ico { width:15px; height:15px; }
 .agents-ind .who { color:var(--text-muted); max-width:22vw; overflow:hidden; text-overflow:ellipsis; }
-/* public status strip (T1786): the talk pill -- pulsing while she talks to Mittens, grey when idle */
-.presence-ind .ico, .agents-ind > .ico { width:15px; height:15px; color:var(--text); }
-.presence-ind .lbl { color:var(--text); font-weight:600; }
-.presence-ind.off .pulse { background:var(--text-dim); animation:none; }
-.presence-ind.off .ico, .presence-ind.off .lbl { color:var(--text-muted); }
+/* public status strip (T1786): talk state + workers. T4620 (her 8:57 am 11/9): ONE pill -- the Mittens bot badge (her bots'
+   avatar, mitten face on a dark disc) replaces the person icon and the separate "Mittens idle" pill; the device icon +
+   "Talking" ride inside it while she talks. .off = nobody working and not talking (grey pulse). */
+.agents-ind > .ico, .agents-ind .talk .ico { width:15px; height:15px; color:var(--text); }
+.agents-ind .ico.bot { width:18px; height:18px; flex-shrink:0; stroke:none; vertical-align:0; }
+.agents-ind .bot-disc { fill:var(--text); }
+.agents-ind .bot-face { fill:var(--bg); }
+.agents-ind .talk { display:flex; align-items:center; gap:5px; padding-left:7px; border-left:1px solid var(--border); }
+.agents-ind .talk .lbl { color:var(--text); font-weight:600; }
+.agents-ind.off .pulse { background:var(--text-dim); animation:none; }
+.agents-ind.off .lbl { color:var(--text-muted); }
 /* Portfolio frame (map.js body.framed). T2176 (her 8:18 am 10/24): no title -- the portfolio's compact Menu pill sits
    top-left, 132 px of room. T2182 (her 8:32 + 8:34 am 10/24): the status pills are back in the TOP bar, and the bar holds
    only search + talk status (device icon) + worker status: no details-panel button, no "..." (a dot already opens its why). */
