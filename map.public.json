@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-09T01:31:41.739Z",
+ "generatedAt": "2026-11-09T01:48:47.570Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1369,7 +1369,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2779,7 +2779,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -2851,7 +2851,7 @@
     {
      "id": "podcast-youtube-episode-watch",
      "label": "EPISODE WATCH",
-     "status": "working",
+     "status": "idle",
      "why": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
      "statusLine": "live · daily bundle",
      "caption": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
@@ -3950,7 +3950,7 @@
   {
    "id": "mittens-makes-calls-for-her",
    "label": "AGENT MAKES CALLS",
-   "status": "dormant",
+   "status": "done",
    "why": "My agent can place phone calls for me and handle the conversation.",
    "statusLine": "in progress",
    "caption": "My agent can place phone calls for me and handle the conversation.",
@@ -4321,7 +4321,7 @@
   {
    "id": "mittens-desktop-panels",
    "label": "DESKTOP PANELS",
-   "status": "dormant",
+   "status": "done",
    "why": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
    "statusLine": "being built",
    "caption": "My agent shows its work in panels on my desktop so I can see what it's doing at a glance.",
@@ -4340,7 +4340,7 @@
   {
    "id": "question-watcher-works-answer-trim",
    "label": "QUESTION WATCHER",
-   "status": "dormant",
+   "status": "done",
    "why": "My agent notices open questions and answers them first. It works, and a shorter answer style is waiting on my yes.",
    "statusLine": "works · trim awaits approval",
    "caption": "My agent notices open questions and answers them first.",
@@ -4375,7 +4375,7 @@
   {
    "id": "from-t3083-the-one-architect",
    "label": "NEEDS-ME GATE",
-   "status": "dormant",
+   "status": "done",
    "why": "I fixed the step that decides what really needs me, so stale cards stop piling up.",
    "statusLine": "fixed · moved to architecture",
    "caption": "I fixed the step that decides what really needs me, so stale cards stop piling up.",
@@ -4531,7 +4531,7 @@
   {
    "id": "app-zoom-waits-install-data",
    "label": "APP ZOOM + DATA PLAN",
-   "status": "dormant",
+   "status": "done",
    "why": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
    "statusLine": "waiting on install",
    "caption": "Zoom in the reading app is waiting to be installed, and a plan for where its data lives is waiting on my approval.",
@@ -4756,7 +4756,7 @@
   {
    "id": "code-architecture-tree",
    "label": "CODE ARCHITECTURE TREE",
-   "status": "idle",
+   "status": "working",
    "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
    "statusLine": "built · code tree on every coded dot",
    "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -4807,7 +4807,7 @@
   {
    "id": "open-button-crash-fix",
    "label": "OPEN BUTTON CRASH FIX",
-   "status": "dormant",
+   "status": "done",
    "why": "I am fixing a crash in the app that happens around the open button.",
    "statusLine": "in progress",
    "caption": "I am fixing a crash in the app that happens around the open button.",

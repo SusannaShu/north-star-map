@@ -351,10 +351,39 @@ function rerootData(data, id) {
 function twoRings(data) {
     const P = data.projects || [], ids = new Set(P.map(p => p.id)), depth = {};
     const d = p => depth[p.id] ??= p.parent && ids.has(p.parent) && p.parent !== p.id ? 1 + d(P.find(q => q.id === p.parent)) : 1;
+    const soon = x => {
+        if (!x || !x.deadline || x.stage === "done" || x.status === "done" || x.archived || x.mergedInto || x.life) return false;
+        const t = Date.parse(x.deadline + "T23:59:00");
+        return t >= Date.now() - 864e5 && t - Date.now() <= 14 * 864e5;
+    };
+    const anc2 = p => {
+        let x = p;
+        for (let i = 0; x && d(x) > 2 && i < 12; i++) x = P.find(q => q.id === x.parent);
+        return x && d(x) === 2 ? x : null;
+    };
+    const rise = {};
+    for (const p of P) {
+        if (d(p) < 2 || p.life) continue;
+        const a = anc2(p);
+        if (!a) continue;
+        const up = [ ...d(p) > 2 && soon(p) ? [ {
+            ...p,
+            children: undefined,
+            parent: undefined
+        } ] : [], ...(p.children || []).filter(soon) ];
+        for (const c of up) (rise[a.id] ||= []).push({
+            ...c,
+            pin: true,
+            risen: true
+        });
+    }
     const projects = P.filter(p => d(p) <= 2).map(p => d(p) === 2 && (p.children || []).length && !(byIdLayout(P, p.parent) === "chain") ? {
         ...p,
-        children: [],
+        children: rise[p.id] || [],
         moreKids: p.children.length
+    } : d(p) === 2 && rise[p.id] ? {
+        ...p,
+        children: [ ...p.children || [], ...rise[p.id] ]
     } : p);
     return projects.length === P.length && projects.every((p, i) => p === P[i]) ? data : {
         ...data,
@@ -966,7 +995,7 @@ function buildGraph(full) {
     P.forEach(p => {
         if (p.parent && ids.has(p.parent)) (subsOf[p.parent] ||= []).push(p);
     });
-    const top = P.filter(p => !p.parent || !ids.has(p.parent));
+    const top = P.filter(p => !p.parent || !ids.has(p.parent) && !p.mergedInto);
     const rank = p => {
         const i = SECTORS.indexOf(p.id);
         return i < 0 ? 100 + P.indexOf(p) : i;
