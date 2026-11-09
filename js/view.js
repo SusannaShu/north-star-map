@@ -102,6 +102,7 @@
         imgs.forEach(src => hero.push(imgCard(src)));
         if (d.view === "location" || id === "location") parts.push(locationBlock());
         if (d.kind === "ptype") parts.push(clusterBlock(d));
+        if (d.progress && !window.NS_PUBLIC) parts.push(progressBlock(d.progress));
         if (d.deadline || d.checklist) parts.push(deadlineBlock(d));
         if (hero.length) parts.push(`<div class="vw-cards">${hero.join("")}</div>`);
         const linked = (DATA.peopleAt || {})[id] || [];
@@ -129,6 +130,16 @@
         focusEl.scrollTop = 0;
         wire(id, d);
     };
+    function progressBlock(p) {
+        const row = (cap, body, meta) => `<div class="vw-pg-row" style="margin-bottom:10px"><div class="vw-cap">${cap}</div>\n    <div style="color:var(--text);font-size:13px;line-height:1.45">${body}</div>${meta ? `<div class="vw-meta">${meta}</div>` : ""}</div>`;
+        const out = [];
+        if (p.top) out.push(row("hangs from · the top goal", `Mittens is reliable: “${esc(clip(p.top.goal, 160))}”`, [ p.top.measure ? esc(p.top.measure) : "", "from " + esc(clip(p.top.source || "", 90)) ].filter(Boolean).join(" · ")));
+        if (p.serves) out.push(row("serves · " + esc(p.serves.life), `<a href="${esc(p.serves.page)}" target="_blank" style="text-decoration:underline">${esc(p.serves.branch)}</a>`, "her Odyssey plan · guiding page"));
+        if (p.goal) out.push(row("goal" + (p.deadline ? ` · by ${esc(p.deadline)}` : ""), `“${esc(p.goal)}”`, [ p.why ? "why: " + esc(clip(p.why, 160)) : "", "from " + esc(clip(p.goalSource || "", 90)) ].filter(Boolean).join(" · ")));
+        if (p.summary) out.push(row(`where it is · ${esc(p.summaryDay || "")}`, esc(p.summary), p.sources ? `${p.sources} source${p.sources > 1 ? "s" : ""} · built by code from tasks, notes and the activity log` : ""));
+        if ((p.next || []).length) out.push(row("next", p.next.map(s => `<div>– ${esc(clip(s, 160))}</div>`).join("")));
+        return out.length ? `<div class="vw-block vw-progress" style="margin:4px 0 14px">${out.join("")}</div>` : "";
+    }
     function wire(id, d) {
         focusEl.querySelectorAll("[data-jump]").forEach(el => el.onclick = e => {
             e.stopPropagation();
