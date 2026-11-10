@@ -2044,7 +2044,7 @@ function draw() {
             if (n.type === "intent" && /^(done|dismissed|closed)$/.test(n.status || "")) return;
             window.drawOverlayNode(ctx, n, t, dim);
         } else if (n.type === "project" || n.owned) {
-            if (n.status === "working" && n.activity === "research") {
+            if (working(n) && n.activity === "research") {
                 ctx.save();
                 ctx.strokeStyle = "#000";
                 ctx.lineWidth = 1.4;
@@ -2054,7 +2054,7 @@ function draw() {
                 ctx.arc(n.x, n.y, n.r + 5, 0, 7);
                 ctx.stroke();
                 ctx.restore();
-            } else if (n.status === "working") {
+            } else if (working(n)) {
                 const p = (Math.sin(t * 2.4 + n.x) + 1) / 2;
                 ctx.strokeStyle = `rgba(0,0,0,${.25 * (1 - p)})`;
                 ctx.lineWidth = 2;
@@ -2225,6 +2225,15 @@ const underY = n => n.lab && n.lab.pos === "b" ? n.y + n.lab.dy + fontPx(n) * 1.
 
 let AT = {}, atSig = "", atT = 0;
 
+const drawnUp = id => {
+    for (let k = id, i = 0; k && i < 16; k = FULL.e[k] && FULL.e[k].up, i++) if (byId[k]) return k;
+    return null;
+};
+
+window.drawnUp = drawnUp;
+
+const working = n => n.status === "working" || PUBLIC && !!(agentsAt()[n.id] || []).length;
+
 function agentsAt() {
     if (performance.now() - atT < 400) return AT;
     atT = performance.now();
@@ -2234,7 +2243,7 @@ function agentsAt() {
         atSig = sig;
         AT = {};
         for (const [id, n] of Object.entries(at)) {
-            const k = FULL.e[id] ? id : FULL.hub;
+            const k = drawnUp(id) || (FULL.e[id] ? id : FULL.hub);
             if (k) (AT[k] ||= []).push(...Array.from({
                 length: n
             }, (_, i) => ({
@@ -2252,7 +2261,7 @@ function agentsAt() {
         let id = (DATA.workerAt || {})[x.id] || x.project || null;
         if (id && !FULL.e[id] && id.startsWith("r:")) id = null;
         if (!id && x.kind === "routine" && FULL.e["r:" + x.id]) id = "r:" + x.id;
-        if (!id || !FULL.e[id]) id = FULL.e["ns-talk"] ? "ns-talk" : FULL.hub;
+        if (!id || !FULL.e[id]) id = FULL.e["ns-talk"] ? "ns-talk" : FULL.hub; else if (!byId[id]) id = drawnUp(id) || id;
         (AT[id] ||= []).push(x);
     }
     return AT;
