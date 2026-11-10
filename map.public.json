@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-10T02:36:07.553Z",
+ "generatedAt": "2026-11-10T02:49:10.855Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -692,7 +692,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -773,7 +773,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -888,7 +888,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "idle",
+   "status": "working",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -1254,7 +1254,7 @@
     {
      "id": "code-architecture-tree-2",
      "label": "CODE ARCHITECTURE TREE",
-     "status": "idle",
+     "status": "done",
      "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
      "statusLine": "reviewed · cleanup plan drafted",
      "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
@@ -1598,7 +1598,7 @@
     {
      "id": "remind-me-cards-after-lost",
      "label": "REMIND-ME CARDS",
-     "status": "idle",
+     "status": "done",
      "why": "When a quick request gets lost, my agent now turns it into a reminder card so it doesn't slip again.",
      "statusLine": "being built",
      "caption": "When a quick request gets lost, my agent now turns it into a reminder card so it doesn't slip again.",
@@ -1968,7 +1968,7 @@
     {
      "id": "shared-fetchable-agent-context",
      "label": "SHARED AGENT CONTEXT",
-     "status": "idle",
+     "status": "done",
      "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
      "statusLine": "designing",
      "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
@@ -2021,7 +2021,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -2058,7 +2058,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "idle",
+     "status": "working",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -2581,7 +2581,7 @@
     {
      "id": "mini-app-navigation",
      "label": "GLASSES APP NAVIGATION",
-     "status": "idle",
+     "status": "done",
      "why": "Making it easy to move around the small app on the smart glasses.",
      "statusLine": "being built",
      "caption": "Making it easy to move around the small app on the smart glasses.",
@@ -2863,7 +2863,7 @@
     {
      "id": "podcast-youtube-episode-watch",
      "label": "EPISODE WATCH",
-     "status": "idle",
+     "status": "done",
      "why": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
      "statusLine": "live · daily bundle",
      "caption": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
@@ -3463,7 +3463,7 @@
     {
      "id": "gospel-daily-research-account",
      "label": "GOSPEL DAILY RESEARCH",
-     "status": "idle",
+     "status": "done",
      "why": "A thread for shaping how the daily research gets shared.",
      "statusLine": "in discussion",
      "caption": "A thread for shaping how the daily research gets shared.",
@@ -3664,7 +3664,7 @@
     {
      "id": "sheyou-report-sources",
      "label": "SHEYOU REPORT SOURCES",
-     "status": "idle",
+     "status": "done",
      "why": "This is where I keep track of the sources behind a report on SHEYOU.",
      "statusLine": "in progress",
      "caption": "This is where I keep track of the sources behind a report on SHEYOU.",
@@ -4120,7 +4120,7 @@
   {
    "id": "scheduling-screen-like-messages-and",
    "label": "SCHEDULING SCREEN",
-   "status": "dormant",
+   "status": "done",
    "why": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
    "statusLine": "in progress",
    "caption": "Scheduling requests get screened the same way my messages and email are, before they reach me.",
@@ -4219,7 +4219,7 @@
     {
      "id": "music-playback",
      "label": "MUSIC PLAYBACK",
-     "status": "idle",
+     "status": "done",
      "why": "My agent can play music through the app and my glasses.",
      "statusLine": "in progress",
      "caption": "My agent can play music through the app and my glasses.",
@@ -4780,7 +4780,7 @@
   {
    "id": "code-architecture-tree",
    "label": "CODE ARCHITECTURE TREE",
-   "status": "working",
+   "status": "done",
    "why": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
    "statusLine": "built · code tree on every coded dot",
    "caption": "Every coding project gets its own branch that mirrors the real codebase, so anyone can see how each thing is built.",
@@ -4891,7 +4891,7 @@
     {
      "id": "pendant-pre-sale",
      "label": "PENDANT PRE-SALE",
-     "status": "idle",
+     "status": "done",
      "why": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
      "statusLine": "thinking it through",
      "caption": "I am thinking through a pre-sale for the pendant, to learn who wants it before building at scale.",
@@ -4940,7 +4940,7 @@
     {
      "id": "pendant-electronics-check",
      "label": "PENDANT ELECTRONICS CHECK",
-     "status": "idle",
+     "status": "done",
      "why": "I am checking the electronics of the pendant so the hardware can be trusted.",
      "statusLine": "checked · not ready yet",
      "caption": "I am checking the electronics of the pendant so the hardware can be trusted.",
@@ -5020,7 +5020,7 @@
   {
    "id": "mittens-desktop-panels-2",
    "label": "MITTENS DESKTOP PANELS",
-   "status": "dormant",
+   "status": "done",
    "why": "The panels that show Mittens at work on the desktop.",
    "statusLine": "in progress",
    "caption": "The panels that show Mittens at work on the desktop.",
@@ -5168,7 +5168,7 @@
     {
      "id": "trend-to-concept-design",
      "label": "TREND TO CONCEPT",
-     "status": "idle",
+     "status": "done",
      "why": "A trend is only useful once it becomes a concept. This step turns trends into product and content ideas.",
      "statusLine": "active · early thread",
      "caption": "A trend is only useful once it becomes a concept.",
@@ -5397,7 +5397,7 @@
   {
    "id": "worker-progress-reports",
    "label": "WORKER PROGRESS REPORTS",
-   "status": "idle",
+   "status": "done",
    "why": "I can ask what is running right now, and workers report what they finished and what held them up.",
    "statusLine": "in use",
    "caption": "I can ask what is running right now, and workers report what they finished and what held them up.",
@@ -5456,7 +5456,7 @@
     {
      "id": "bug-voice-tools-unknown-area",
      "label": "VOICE ROUTING BUG",
-     "status": "idle",
+     "status": "done",
      "why": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
      "statusLine": "fixing",
      "caption": "Fixing voice requests that land in the wrong place when the agent can't tell which area they belong to.",
@@ -5515,7 +5515,7 @@
     {
      "id": "parallel-worker-capacity",
      "label": "PARALLEL WORKER CAPACITY",
-     "status": "idle",
+     "status": "done",
      "why": "I am working out how many agents can run side by side, and why so many processes pile up.",
      "statusLine": "being worked out",
      "caption": "I am working out how many agents can run side by side, and why so many processes pile up.",

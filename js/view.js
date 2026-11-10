@@ -103,6 +103,7 @@
         if (d.view === "location" || id === "location") parts.push(locationBlock());
         if (d.kind === "ptype") parts.push(clusterBlock(d));
         if (d.progress && !window.NS_PUBLIC) parts.push(progressBlock(d.progress));
+        if (Array.isArray(d.vision) && d.vision.length && !window.NS_PUBLIC) parts.push(`<div class="vw-pg-row" style="margin-bottom:10px"><div class="vw-cap">vision</div>${d.vision.map(v => `<div style="color:var(--text);font-size:13px;line-height:1.45">${esc(v.text || "")}</div>`).join("")}</div>`);
         if (d.deadline || d.checklist) parts.push(deadlineBlock(d));
         if (hero.length) parts.push(`<div class="vw-cards">${hero.join("")}</div>`);
         const linked = (DATA.peopleAt || {})[id] || [];

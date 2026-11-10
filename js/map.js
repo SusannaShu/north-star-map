@@ -1003,6 +1003,7 @@ function buildGraph(full) {
     top.sort((a, b) => rank(a) - rank(b));
     const addKid = (p, n, c, depth) => {
         if (byId[c.id]) return;
+        if (c.rehomed && !c.rehomed.keep) return;
         const owned = !!(c.why || c.yesterday || c.today || c.kind);
         const k = push({
             id: c.id,
@@ -1050,6 +1051,7 @@ function buildGraph(full) {
     const make = (p, depth, up, seen) => {
         if (seen.has(p.id)) return null;
         seen.add(p.id);
+        if (p.rehomed && !p.rehomed.keep) return null;
         const n = push({
             id: p.id,
             label: p.label,

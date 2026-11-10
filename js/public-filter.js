@@ -32,6 +32,8 @@
     const clone = x => x == null ? x : JSON.parse(JSON.stringify(x));
     const pubStatus = s => s === "working" ? "working" : s === "waiting" ? "waiting" : s === "queued" ? "queued" : s === "dormant" ? "dormant" : s === "planned" ? "planned" : s === "done" ? "done" : "idle";
     function sanitize(o) {
+        delete o.vision;
+        delete o.rehomed;
         if (o.why != null) o.why = strip(o.why);
         if (o.caption != null) o.caption = strip(o.caption);
         if (o.statusLine != null) o.statusLine = strip(o.statusLine);
