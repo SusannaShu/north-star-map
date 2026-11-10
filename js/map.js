@@ -2046,7 +2046,7 @@ function draw() {
             if (n.type === "intent" && /^(done|dismissed|closed)$/.test(n.status || "")) return;
             window.drawOverlayNode(ctx, n, t, dim);
         } else if (n.type === "project" || n.owned) {
-            if (working(n) && n.activity === "research") {
+            if (n.status === "working" && n.activity === "research") {
                 ctx.save();
                 ctx.strokeStyle = "#000";
                 ctx.lineWidth = 1.4;
@@ -2056,7 +2056,7 @@ function draw() {
                 ctx.arc(n.x, n.y, n.r + 5, 0, 7);
                 ctx.stroke();
                 ctx.restore();
-            } else if (working(n)) {
+            } else if (n.status === "working") {
                 const p = (Math.sin(t * 2.4 + n.x) + 1) / 2;
                 ctx.strokeStyle = `rgba(0,0,0,${.25 * (1 - p)})`;
                 ctx.lineWidth = 2;
@@ -2227,15 +2227,6 @@ const underY = n => n.lab && n.lab.pos === "b" ? n.y + n.lab.dy + fontPx(n) * 1.
 
 let AT = {}, atSig = "", atT = 0;
 
-const drawnUp = id => {
-    for (let k = id, i = 0; k && i < 16; k = FULL.e[k] && FULL.e[k].up, i++) if (byId[k]) return k;
-    return null;
-};
-
-window.drawnUp = drawnUp;
-
-const working = n => n.status === "working" || PUBLIC && !!(agentsAt()[n.id] || []).length;
-
 function agentsAt() {
     if (performance.now() - atT < 400) return AT;
     atT = performance.now();
@@ -2245,7 +2236,7 @@ function agentsAt() {
         atSig = sig;
         AT = {};
         for (const [id, n] of Object.entries(at)) {
-            const k = drawnUp(id) || (FULL.e[id] ? id : FULL.hub);
+            const k = FULL.e[id] ? id : FULL.hub;
             if (k) (AT[k] ||= []).push(...Array.from({
                 length: n
             }, (_, i) => ({
@@ -2263,7 +2254,7 @@ function agentsAt() {
         let id = (DATA.workerAt || {})[x.id] || x.project || null;
         if (id && !FULL.e[id] && id.startsWith("r:")) id = null;
         if (!id && x.kind === "routine" && FULL.e["r:" + x.id]) id = "r:" + x.id;
-        if (!id || !FULL.e[id]) id = FULL.e["ns-talk"] ? "ns-talk" : FULL.hub; else if (!byId[id]) id = drawnUp(id) || id;
+        if (!id || !FULL.e[id]) id = FULL.e["ns-talk"] ? "ns-talk" : FULL.hub;
         (AT[id] ||= []).push(x);
     }
     return AT;
@@ -2874,6 +2865,10 @@ function nowHtml(v) {
     const ul = (rows, cls) => `<ul>${rows.join("")}</ul>`;
     let h = "";
     if (v.needsYou.length) h += card(`Needs you — ${v.needsYou.length}`, ul(v.needsYou.map(q => `<li class="hot"><b>${esc(q.title)}</b>${md(q)}</li>`)) + `<div class="ask" style="cursor:pointer" onclick="openInbox('${esc(v.id)}')">Answer in the inbox</div>`);
+    h += card(`Working now — ${v.working.length}`, v.working.length ? ul(v.working.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--text-muted)">running${t.line ? " · " + esc(t.line) : ""}</span></li>`)) : '<p style="color:var(--text-muted)">no agent running on it right now</p>');
+    const wt = v.waiting || [];
+    if (wt.length) h += card(`Waiting — ${wt.length}`, ul(wt.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--wait)">${esc(t.kind || "waiting")}${t.resumes ? " · resumes " + esc(t.resumes) : ""}</span> <span style="color:var(--text-muted)">${esc(t.reason || t.line || "")}</span></li>`)));
+    if (v.next.length) h += card("Next", ul(v.next.map(x => `<li>${esc(x.name)}${x.due ? ` <span style="color:var(--text-muted)">${esc(x.due)}</span>` : ""}${md(x)}</li>`)));
     if (v.goal) {
         const g = v.goal, o = g.open || {}, COLS = [ [ "research", "Research" ], [ "data", "Needs data" ], [ "her", "Needs you" ] ];
         const col = ([k, cap]) => {
@@ -2886,10 +2881,6 @@ function nowHtml(v) {
         const any = COLS.some(([k]) => (o[k] || []).length);
         h += card(`Goal${g.stage ? " · " + esc(g.stage) : ""}`, (g.text ? `<p style="margin:0 0 8px">${esc(g.text)}</p>` : "") + (any ? `<div class="goal-cols" style="display:flex;gap:10px">${COLS.map(col).join("")}</div>` : '<p style="color:var(--text-muted);margin:0">no open questions on the goal yet</p>'));
     }
-    h += card(`Working now — ${v.working.length}`, v.working.length ? ul(v.working.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--text-muted)">running${t.line ? " · " + esc(t.line) : ""}</span></li>`)) : '<p style="color:var(--text-muted)">no agent running on it right now</p>');
-    const wt = v.waiting || [];
-    if (wt.length) h += card(`Waiting — ${wt.length}`, ul(wt.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--wait)">${esc(t.kind || "waiting")}${t.resumes ? " · resumes " + esc(t.resumes) : ""}</span> <span style="color:var(--text-muted)">${esc(t.reason || t.line || "")}</span></li>`)));
-    if (v.next.length) h += card("Next", ul(v.next.map(x => `<li>${esc(x.name)}${x.due ? ` <span style="color:var(--text-muted)">${esc(x.due)}</span>` : ""}${md(x)}</li>`)));
     if (v.finished.length) h += card("Just finished", ul(v.finished.map(t => `<li><b>${esc(dd(t.at))} ${esc(t.name)}</b> ${esc(t.result)}</li>`)));
     const docs = [ ...v.docs.latest, ...v.docs.past ], link = x => `<li><a href="${esc(macUrl(x.href))}" target="_blank" rel="noopener">${esc(x.label)}</a>${md(x)}</li>`;
     if (docs.length) h += card("Docs", ul(v.docs.latest.map(link)) + (v.docs.past.length ? `<details><summary style="cursor:pointer;color:var(--text-muted)">past · ${v.docs.past.length}</summary>${ul(v.docs.past.map(link))}</details>` : ""));
@@ -3159,29 +3150,21 @@ async function renderChrome() {
     if (mbtn) mbtn.setAttribute("aria-label", n ? `Menu, ${n} in the inbox` : "Menu");
 }
 
-const MITTENS_PATH = "M13.86.64c1.75.83,1.14,3.05.41,4.52l-2.68,5.37c-.79,1.95-2.09,3.45-4.1,4.15-.65.23-1.3.36-1.99.42l-5.5-.58V2.86C0,1.7.58.66,1.66.23,2.03.08,2.4,0,2.81,0h5.52c.66,0,1.29.26,1.78.68.56.47.83,1.14.91,1.84l.02-.48c.44-1.17,1.64-1.95,2.82-1.39ZM8.64,6.1c0-.44-.36-.8-.8-.8s-.8.36-.8.8.36.8.8.8.8-.36.8-.8ZM5.66,6.68c0-.56-.46-1.02-1.02-1.02s-1.02.46-1.02,1.02.46,1.02,1.02,1.02,1.02-.46,1.02-1.02ZM7.71,8.85c-.91.7-1.72.71-2.63,0-.1-.08-.23-.07-.31.03-.07.09-.04.22.07.3,1.08.81,2.04.81,3.12-.01.1-.07.11-.2.05-.28-.07-.1-.2-.12-.3-.04Z";
-
-const MITTENS_BOT = `<svg class="ico bot" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" class="bot-disc"/><path class="bot-face" transform="translate(5.6 5.3) scale(.86)" d="${MITTENS_PATH}"/></svg>`;
-
 function setAgentsInd(n, names, clickable, queued) {
     const box = document.getElementById("healthChips");
     if (!box) return;
-    const talk = PUBLIC ? window.NS_TALK || null : null;
-    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "") + "|" + (talk ? JSON.stringify(talk) : "");
+    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "");
     if (box.dataset.sig === sig) return;
     box.dataset.sig = sig;
-    box.querySelectorAll(".agents-ind:not(.ud-ind)").forEach(el => el.remove());
-    if (!n && !queued && !talk) return;
+    box.querySelectorAll(".agents-ind:not(.presence-ind):not(.ud-ind)").forEach(el => el.remove());
+    if (!n && !queued) return;
     const el = document.createElement(clickable ? "button" : "div");
-    el.className = "agents-ind" + (!n && !(talk && talk.on) ? " off" : "");
+    el.className = "agents-ind";
     el.id = "agentsChip";
     const label = `${n} agent${n === 1 ? "" : "s"} working` + (queued ? ` · ${queued}` : "");
-    const tt = talk ? ` · ${talk.title}` : "";
-    el.title = (clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label) + tt;
-    el.setAttribute("aria-label", (clickable ? `${label}, show them` : label) + tt);
-    const count = n ? `<b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>` : queued ? `<span class="lbl">${esc(queued)}</span>` : "";
-    const talkPart = !talk ? "" : talk.on ? `<span class="talk">${talk.icons || ""}<span class="lbl">${esc(talk.short)}</span></span>` : !n && !queued ? `<span class="lbl">${esc(talk.short)}</span>` : "";
-    el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${MITTENS_BOT}${count}${talkPart}${names ? `<span class="who">${esc(names)}</span>` : ""}`;
+    el.title = clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label;
+    el.setAttribute("aria-label", clickable ? `${label}, show them` : label);
+    el.innerHTML = `<span class="pulse" aria-hidden="true"></span><b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>${names ? `<span class="who">${esc(names)}</span>` : ""}`;
     if (clickable) el.onclick = PUBLIC ? openPublicAgentsPanel : openAgentsPanel;
     const ud = box.querySelector(".ud-ind");
     ud ? box.insertBefore(el, ud) : box.appendChild(el);
