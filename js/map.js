@@ -817,6 +817,9 @@ function syncURL() {
     try {
         history.replaceState(history.state, "", location.pathname + (s ? "?" + s : "") + location.hash);
     } catch {}
+    try {
+        document.title = id && FULL.e[id] && FULL.e[id].label ? `${FULL.e[id].label} · North Star` : "North Star";
+    } catch {}
 }
 
 function renderCrumbs() {
