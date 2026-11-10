@@ -2872,6 +2872,18 @@ function nowHtml(v) {
     const ul = (rows, cls) => `<ul>${rows.join("")}</ul>`;
     let h = "";
     if (v.needsYou.length) h += card(`Needs you — ${v.needsYou.length}`, ul(v.needsYou.map(q => `<li class="hot"><b>${esc(q.title)}</b>${md(q)}</li>`)) + `<div class="ask" style="cursor:pointer" onclick="openInbox('${esc(v.id)}')">Answer in the inbox</div>`);
+    if (v.goal) {
+        const g = v.goal, o = g.open || {}, COLS = [ [ "research", "Research" ], [ "data", "Needs data" ], [ "her", "Needs you" ] ];
+        const col = ([k, cap]) => {
+            const xs = o[k] || [];
+            return `<div style="flex:1 1 0;min-width:0"><div style="font-size:11px;font-weight:600;color:var(--text-muted);margin-bottom:4px">${cap} · ${xs.length}</div>${xs.length ? xs.slice(0, 4).map(q => {
+                const t = String(q.text || "").replace(/^needs you:\s*/i, "");
+                return `<div style="font-size:12px;line-height:1.35;margin-bottom:5px" title="${esc(t)}">${esc(t.length > 70 ? t.slice(0, 69).replace(/\s+\S*$/, "") + "…" : t)}</div>`;
+            }).join("") + (xs.length > 4 ? `<div style="font-size:11px;color:var(--text-muted)">+${xs.length - 4} more</div>` : "") : '<div style="font-size:12px;color:var(--text-muted)">none open</div>'}</div>`;
+        };
+        const any = COLS.some(([k]) => (o[k] || []).length);
+        h += card(`Goal${g.stage ? " · " + esc(g.stage) : ""}`, (g.text ? `<p style="margin:0 0 8px">${esc(g.text)}</p>` : "") + (any ? `<div class="goal-cols" style="display:flex;gap:10px">${COLS.map(col).join("")}</div>` : '<p style="color:var(--text-muted);margin:0">no open questions on the goal yet</p>'));
+    }
     h += card(`Working now — ${v.working.length}`, v.working.length ? ul(v.working.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--text-muted)">running${t.line ? " · " + esc(t.line) : ""}</span></li>`)) : '<p style="color:var(--text-muted)">no agent running on it right now</p>');
     const wt = v.waiting || [];
     if (wt.length) h += card(`Waiting — ${wt.length}`, ul(wt.map(t => `<li><b>${esc(t.name)}</b>${md(t)}<br><span style="color:var(--wait)">${esc(t.kind || "waiting")}${t.resumes ? " · resumes " + esc(t.resumes) : ""}</span> <span style="color:var(--text-muted)">${esc(t.reason || t.line || "")}</span></li>`)));

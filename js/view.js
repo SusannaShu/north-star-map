@@ -153,9 +153,18 @@
             const trail = (L?.stages || []).filter(x => x.done).slice(-4).map(x => `<div class="vw-meta">r${x.round} ${esc(x.stage)} · ${esc(x.at)}: ${esc(clip(x.evidence || "", 140))} [${esc(clip(x.ref || "", 40))}]</div>`).join("");
             out.push(row("improve loop" + (cur ? ` · round ${cur.round}` : "") + (at < 0 ? " · stage not set" : ""), strip + sc + needs + (p.measure ? `<div>measure: ${esc(clip(p.measure, 200))}</div>` : "") + trail, p.who ? "for " + esc(clip(p.who, 120)) : ""));
         }
+        if ((p.questions || []).length) out.push(row("open · by who can move it", questionCols(p.questions), "from the goal record · agents start on research and data by themselves"));
         if (p.summary) out.push(row(`where it is · ${esc(p.summaryDay || "")}`, esc(p.summary), p.sources ? `${p.sources} source${p.sources > 1 ? "s" : ""} · built by code from tasks, notes and the activity log` : ""));
         if ((p.next || []).length) out.push(row("next", p.next.map(s => `<div>– ${esc(clip(s, 160))}</div>`).join("")));
         return out.length ? `<div class="vw-block vw-progress" style="margin:4px 0 14px">${out.join("")}</div>` : "";
+    }
+    function questionCols(qs) {
+        const COLS = [ [ "research", "research" ], [ "data", "needs data" ], [ "her", "needs you" ] ];
+        const col = ([k, cap]) => {
+            const xs = qs.filter(q => q.kind === k);
+            return `<div style="flex:1 1 0;min-width:0"><div class="vw-meta" style="margin-bottom:4px;font-weight:600">${cap} · ${xs.length}</div>${xs.length ? xs.slice(0, 4).map(q => `<div style="font-size:12px;line-height:1.4;margin-bottom:5px"${q.why ? ` title="${esc(clip(q.why, 200))}"` : ""}>– ${esc(clip(q.text, 110))}${q.ref ? ` <span class="vw-meta">${esc(clip(q.ref, 24))}</span>` : ""}</div>`).join("") + (xs.length > 4 ? `<div class="vw-meta">+${xs.length - 4} more</div>` : "") : '<div class="vw-meta">none open</div>'}</div>`;
+        };
+        return `<div class="vw-qcols" style="display:flex;gap:12px;flex-wrap:wrap">${COLS.map(col).join("")}</div>`;
     }
     function wire(id, d) {
         focusEl.querySelectorAll("[data-jump]").forEach(el => el.onclick = e => {
