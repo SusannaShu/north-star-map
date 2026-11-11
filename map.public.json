@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T15:19:24.307Z",
+ "generatedAt": "2026-11-11T18:40:35.274Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -397,71 +397,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "daily-content",
-   "label": "DAILY CONTENT",
-   "status": "idle",
-   "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
-   "statusLine": "nightly · offered each morning",
-   "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
-   "stage": "active",
-   "embed": "pages/daily-content.html",
-   "visibility": "public",
-   "links": [
-    "viral-machine",
-    "smart-glasses"
-   ],
-   "parent": "mittens",
-   "parked": false,
-   "children": [
-    {
-     "id": "content-cleanup",
-     "label": "CONTENT CLEAN-UP",
-     "status": "idle",
-     "why": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
-     "statusLine": "proposal ready · script check built",
-     "caption": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/content-cleanup.html",
-     "visibility": "public",
-     "links": [
-      "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-icon",
-     "label": "MITTENS ICON",
-     "status": "idle",
-     "why": "I am redrawing the Mittens icon to make it better. Three redraws are ready for me to pick from.",
-     "statusLine": "three redraws ready · waiting on my pick",
-     "caption": "I am redrawing the Mittens icon to make it better.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/mittens-icon.html",
-     "visibility": "public",
-     "links": [
-      "brand-style",
-      "today-page-north-star-icon"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "about-mittens",
-     "label": "ABOUT MITTENS",
-     "status": "idle",
-     "why": "I am writing down who I need Mittens to be: an assistant, a coach and a thoughtful teammate. Every night it adds notes on how it can do better.",
-     "statusLine": "draft · waiting on my yes",
-     "caption": "I am writing down who I need Mittens to be:",
-     "stage": "active",
-     "embed": "pages/about-mittens.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "content-references",
    "label": "CONTENT REFERENCES",
    "status": "done",
@@ -562,6 +497,71 @@
      "links": [
       "content-references"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "daily-content",
+   "label": "DAILY CONTENT",
+   "status": "idle",
+   "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
+   "statusLine": "nightly · offered each morning",
+   "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
+   "stage": "active",
+   "embed": "pages/daily-content.html",
+   "visibility": "public",
+   "links": [
+    "viral-machine",
+    "smart-glasses"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "content-cleanup",
+     "label": "CONTENT CLEAN-UP",
+     "status": "idle",
+     "why": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
+     "statusLine": "proposal ready · script check built",
+     "caption": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/content-cleanup.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-icon",
+     "label": "MITTENS ICON",
+     "status": "idle",
+     "why": "I am redrawing the Mittens icon to make it better. Three redraws are ready for me to pick from.",
+     "statusLine": "three redraws ready · waiting on my pick",
+     "caption": "I am redrawing the Mittens icon to make it better.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-icon.html",
+     "visibility": "public",
+     "links": [
+      "brand-style",
+      "today-page-north-star-icon"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "about-mittens",
+     "label": "ABOUT MITTENS",
+     "status": "idle",
+     "why": "I am writing down who I need Mittens to be: an assistant, a coach and a thoughtful teammate. Every night it adds notes on how it can do better.",
+     "statusLine": "draft · waiting on my yes",
+     "caption": "I am writing down who I need Mittens to be:",
+     "stage": "active",
+     "embed": "pages/about-mittens.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -993,7 +993,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1055,7 +1055,7 @@
     {
      "id": "north-star-as-product",
      "label": "NORTH STAR AS PRODUCT",
-     "status": "idle",
+     "status": "done",
      "why": "I am thinking through how the map could become a product for other people, not just my own system.",
      "statusLine": "exploring the idea",
      "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
@@ -2992,7 +2992,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3844,24 +3844,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "mittens-makes-calls-for-her",
-   "label": "AGENT MAKES CALLS",
-   "status": "done",
-   "why": "My agent can place phone calls for me and handle the conversation.",
-   "statusLine": "in progress",
-   "caption": "My agent can place phone calls for me and handle the conversation.",
-   "stage": "active",
-   "embed": "pages/mittens-makes-calls-for-her.html",
-   "visibility": "public",
-   "links": [
-    "mittens"
-   ],
-   "parent": "talk-phone-calls",
-   "parked": true,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "mittens-vision",
    "label": "THE NEW OPENCLAW",
    "status": "idle",
@@ -3935,6 +3917,24 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-makes-calls-for-her",
+   "label": "AGENT MAKES CALLS",
+   "status": "done",
+   "why": "My agent can place phone calls for me and handle the conversation.",
+   "statusLine": "in progress",
+   "caption": "My agent can place phone calls for me and handle the conversation.",
+   "stage": "active",
+   "embed": "pages/mittens-makes-calls-for-her.html",
+   "visibility": "public",
+   "links": [
+    "mittens"
+   ],
+   "parent": "talk-phone-calls",
+   "parked": true,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -4341,42 +4341,9 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "mittens-speaker",
-   "label": "SPEAKER + MIC",
-   "status": "planned",
-   "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
-   "statusLine": "plan · not built yet",
-   "caption": "Mittens with a speaker and a microphone:",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/mittens-speaker.html",
-   "visibility": "public",
-   "parent": "wearables",
-   "parked": false,
-   "children": [
-    {
-     "id": "speaker-mic",
-     "label": "SPEAKER + MIC",
-     "status": "idle",
-     "why": "The sound hardware that lets Mittens hear and speak.",
-     "statusLine": "folded into its twin",
-     "caption": "The sound hardware that lets Mittens hear and speak.",
-     "stage": "active",
-     "embed": "pages/speaker-mic.html",
-     "visibility": "public",
-     "links": [
-      "mittens-speaker",
-      "wearables"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -4404,6 +4371,39 @@
      "links": [
       "watchdog",
       "ns-daily-loops"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-speaker",
+   "label": "SPEAKER + MIC",
+   "status": "planned",
+   "why": "Mittens with a speaker and a microphone: a body to talk to without the phone.",
+   "statusLine": "plan · not built yet",
+   "caption": "Mittens with a speaker and a microphone:",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/mittens-speaker.html",
+   "visibility": "public",
+   "parent": "wearables",
+   "parked": false,
+   "children": [
+    {
+     "id": "speaker-mic",
+     "label": "SPEAKER + MIC",
+     "status": "idle",
+     "why": "The sound hardware that lets Mittens hear and speak.",
+     "statusLine": "folded into its twin",
+     "caption": "The sound hardware that lets Mittens hear and speak.",
+     "stage": "active",
+     "embed": "pages/speaker-mic.html",
+     "visibility": "public",
+     "links": [
+      "mittens-speaker",
+      "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }

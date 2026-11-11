@@ -1390,12 +1390,56 @@ function unfolded() {
 
 const showLabel = n => isOverlay(n) || !!n.lab;
 
+const LABEL_MAX = 30;
+
+const RUN_CODE = /(^|\s)(?:[TRVQH]\d{3,6}|P\d{1,2}|[A-Z])(?=\s|$)/g;
+
+function shortLabel(s) {
+    s = String(s || "").trim();
+    if (!s) return s;
+    let t = s;
+    const parts = s.replace(/\b(\d{1,2})\/(\d{1,2})(?:\/(\d{2,4}))?\b/g, "$1∕$2" + "$3").replace(/\s\/\s/g, " ∕ ").split("/").map(x => x.trim().replace(/\u2215/g, "/")).filter(Boolean);
+    if (parts.length >= 3) {
+        const step = (/^(\d+(?:\.\d+)?)\s/.exec(s) || [])[1];
+        const said = x => x.replace(/^\d+[\s.)-]*/, "").replace(RUN_CODE, " ").replace(/\s+/g, " ").trim();
+        let last = "";
+        for (let i = parts.length - 1; i >= 0 && !last; i--) {
+            const c = said(parts[i]);
+            if (c && !/^\d*$/.test(c) && !/^(BEFORE|AFTER|RUNS?|TRIES|TRY|OUT|OUTPUTS?)$/i.test(c)) last = c;
+        }
+        t = (step != null ? step + " " : "") + (last || parts[parts.length - 1]);
+    }
+    if (t.length > LABEL_MAX) {
+        const cut = t.slice(0, LABEL_MAX + 1);
+        const sp = cut.lastIndexOf(" ");
+        t = (sp > 12 ? cut.slice(0, sp) : t.slice(0, LABEL_MAX)).replace(/[\s,:;+·/-]+$/, "") + "…";
+    }
+    return t;
+}
+
+let tipNode = null, tipAt = 0;
+
+const TIP_MS = 4e3;
+
+const fullShown = n => n === hoverNode || n === tipNode && Date.now() - tipAt < TIP_MS;
+
+function txtOf(n) {
+    const L = n.label || "";
+    if (n.shortOf !== L) {
+        n.shortOf = L;
+        n.short = shortLabel(L);
+    }
+    return fullShown(n) ? L : n.short;
+}
+
+window.nsShortLabel = shortLabel;
+
 let measureCtx = null;
 
 function measure(n) {
     measureCtx ||= document.createElement("canvas").getContext("2d");
     measureCtx.font = fontOf(n);
-    return measureCtx.measureText(n.label || "").width;
+    return measureCtx.measureText(txtOf(n)).width;
 }
 
 function tierOf(n, home) {
@@ -1411,7 +1455,7 @@ function tierOf(n, home) {
 
 function labRect(n, pos, x, y) {
     const R0 = n.r + (LEAFMAP && n.id === LEAF ? 9 : 0);
-    const w = n.lw || (n.label || "").length * 6, h = fontPx(n) * 1.18, g = n.type === "hub" ? 8 : 5;
+    const w = n.lw || txtOf(n).length * 6, h = fontPx(n) * 1.18, g = n.type === "hub" ? 8 : 5;
     if (pos === "b") return {
         pos: pos,
         al: "center",
@@ -1498,7 +1542,7 @@ function placeLabels(forced, home) {
     });
     if (!home) nodes.forEach(n => {
         if (isOverlay(n)) {
-            const w = (n.label || "").length * 3;
+            const w = txtOf(n).length * 3;
             obst.push({
                 l: n.x - Math.max(n.r, w),
                 r: n.x + Math.max(n.r, w),
@@ -1797,7 +1841,7 @@ function fitAll() {
     for (const R of placeLabels(null, true).values()) grow(R.l, R.r, R.t, R.b);
     nodes.forEach(n => {
         if (!isOverlay(n)) return;
-        const w = Math.max(n.r, (n.label || "").length * 3.1);
+        const w = Math.max(n.r, txtOf(n).length * 3.1);
         grow(n.x - w, n.x + w, n.y - n.r, n.y + n.r + 16);
     });
     const A = avail();
@@ -2003,13 +2047,19 @@ function labelText(n, color) {
     ctx.font = fontOf(n);
     ctx.textAlign = L.al;
     ctx.textBaseline = "top";
+    const T = txtOf(n);
+    let X = n.x + L.dx;
+    if (T !== n.short) {
+        const tw = ctx.measureText(T).width, a = toWorld(0, 0), z = toWorld(W, H), l0 = L.al === "left" ? X : L.al === "right" ? X - tw : X - tw / 2;
+        X += Math.max(0, a.x + 4 - l0) - Math.max(0, l0 + tw - (z.x - 4));
+    }
     ctx.strokeStyle = "rgba(255,255,255,0.9)";
     ctx.lineWidth = 3;
     ctx.lineJoin = "round";
-    ctx.strokeText(n.label, n.x + L.dx, n.y + L.dy);
+    ctx.strokeText(T, X, n.y + L.dy);
     ctx.fillStyle = color;
-    ctx.fillText(n.label, n.x + L.dx, n.y + L.dy);
-    const w = ctx.measureText(n.label).width;
+    ctx.fillText(T, X, n.y + L.dy);
+    const w = ctx.measureText(T).width;
     if (Math.abs(w - (n.lw || 0)) > .5) n.lw = w;
 }
 
@@ -2639,8 +2689,22 @@ function pointerEnd(e) {
         return;
     }
     if (dragNode && !moved) {
-        clearSearch();
-        clickDot(dragNode);
+        if (e.pointerType !== "mouse" && !WALL && !MINI && dragNode.short && dragNode.short !== dragNode.label && !(tipNode === dragNode && Date.now() - tipAt < TIP_MS)) {
+            tipNode = dragNode;
+            tipAt = Date.now();
+            hoverNode = dragNode;
+            const t = dragNode;
+            setTimeout(() => {
+                if (tipNode === t && Date.now() - tipAt >= TIP_MS - 50) {
+                    tipNode = null;
+                    if (hoverNode === t) hoverNode = null;
+                }
+            }, TIP_MS);
+        } else {
+            tipNode = null;
+            clearSearch();
+            clickDot(dragNode);
+        }
     } else if (WALL && dragNode && moved && lastP) {
         const t = pick(lastP.x, lastP.y, dragNode);
         hoverNode = null;
@@ -3035,7 +3099,7 @@ function codeCard(c) {
     if (c.folder) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:2px 0 4px">ITS FOLDER</div><ul>${place(c.folder, c.folder.path)}</ul>`;
     if (c.repos.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">${c.via === "above" ? "IN THE REPO OF " + esc(byId[c.from] && byId[c.from].label || c.from) : c.via === "parts" ? "ITS PARTS · " + c.parts.map(p => esc(p.label)).join(", ") : "REPOS"}</div>` + `<ul>${(c.via === "own" ? c.repos.map(r => place(r)) : c.repos.map(r => `<li><b>${esc(r.name)}</b> ${muted(r.remote ? "on the " + esc(r.where) : r.files + " files" + (r.lastCommit ? " · last commit " + dd(r.lastCommit) : ""))}${r.uncommitted ? ` <span style="color:var(--wait)">· ${r.uncommitted} not committed</span>` : ""}</li>`)).join("")}</ul>`;
     const runs = c.via === "parts" ? [] : c.runs || [], job = j => `<li><b>${esc(j.name.replace(/^com\.susu\./, ""))}</b> ${muted(esc(j.when) + (j.runs.length ? " · " + esc(j.runs.filter(x => !/heartbeat\.mjs$/.test(x)).join(", ") || j.runs[0]) : ""))}</li>`;
-    if (runs.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT RUNS IT · ${runs.length} job${runs.length === 1 ? "" : "s"}</div><ul>${runs.slice(0, 4).map(job).join("")}</ul>` + (runs.length > 4 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">all ${runs.length}</summary><ul>${runs.slice(4).map(job).join("")}</ul></details>` : ""); else if (c.npm && c.npm.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT RUNS IT</div><p style="margin:0;font-size:12px">${esc(c.npm.join(" · "))}</p>`;
+    if (runs.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT RUNS IT · ${runs.length} job${runs.length === 1 ? "" : "s"}</div><ul>${runs.slice(0, 4).map(job).join("")}</ul>` + (runs.length > 4 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">all ${runs.length}</summary><ul>${runs.slice(4).map(job).join("")}</ul></details>` : ""); else if (c.via !== "parts" && c.npm && c.npm.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT RUNS IT</div><p style="margin:0;font-size:12px">${esc(c.npm.join(" · "))}</p>`;
     const f = c.faults || [], fl = x => `<li style="${x.level === "red" ? "color:var(--red)" : "color:var(--wait)"}">${esc(x.text)}</li>`;
     if (f.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT IS WRONG · ${f.length}</div><ul>${f.slice(0, 4).map(fl).join("")}</ul>` + (f.length > 4 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">all ${f.length}</summary><ul>${f.slice(4).map(fl).join("")}</ul></details>` : "");
     if (c.tree) b += `<div class="ask" style="margin-top:8px"><a href="${esc(macUrl(c.tree.href))}" target="_blank" rel="noopener">every file, import and store</a> ${muted(c.tree.scannedAt ? "parsed " + esc(new Date(c.tree.scannedAt).toLocaleString("en-US", {
