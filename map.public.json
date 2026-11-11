@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T18:40:35.274Z",
+ "generatedAt": "2026-11-11T19:18:49.464Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -343,6 +343,21 @@
      "links": [
       "mittens-daily",
       "outing-thread"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "live-day-plan",
+     "label": "LIVE DAY PLAN",
+     "status": "idle",
+     "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
+     "statusLine": "active · in progress",
+     "caption": "My assistant keeps one plan for the day and updates it as things change.",
+     "stage": "active",
+     "embed": "pages/live-day-plan.html",
+     "visibility": "public",
+     "links": [
+      "mittens-proactive"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -993,7 +1008,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -5290,6 +5305,9 @@
      "stage": "active",
      "embed": "pages/now-view.html",
      "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -5673,12 +5691,49 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "live-day-design",
+   "label": "LIVE DAY DESIGN",
+   "status": "idle",
+   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "statusLine": "active · designing",
+   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "stage": "active",
+   "embed": "pages/live-day-design.html",
+   "visibility": "public",
+   "links": [
+    "live-day-plan",
+    "mittens-daily",
+    "code-architecture-tree"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "one-day-store",
+   "label": "ONE DAY STORE",
+   "status": "idle",
+   "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
+   "statusLine": "active · being built",
+   "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
+   "stage": "active",
+   "embed": "pages/one-day-store.html",
+   "visibility": "public",
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "sheyou",
    "label": "SHEYOU",
    "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "codeRepos": [
@@ -5694,7 +5749,7 @@
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "dormant",
+   "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
@@ -5706,7 +5761,7 @@
     }
    ],
    "parent": "fashion",
-   "parked": true,
+   "parked": false,
    "children": [],
    "embedCaption": "case study"
   },
@@ -5759,46 +5814,6 @@
    "parent": "devhub",
    "parked": false,
    "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "live-day-plan",
-   "label": "LIVE DAY PLAN",
-   "status": "dormant",
-   "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
-   "statusLine": "active · in progress",
-   "caption": "My assistant keeps one plan for the day and updates it as things change.",
-   "stage": "active",
-   "embed": "pages/live-day-plan.html",
-   "visibility": "public",
-   "parent": "mittens-daily",
-   "parked": true,
-   "children": [
-    {
-     "id": "live-day-design",
-     "label": "LIVE DAY DESIGN",
-     "status": "idle",
-     "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
-     "statusLine": "active · designing",
-     "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
-     "stage": "active",
-     "embed": "pages/live-day-design.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "one-day-store",
-     "label": "ONE DAY STORE",
-     "status": "idle",
-     "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-     "statusLine": "active · being built",
-     "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-     "stage": "active",
-     "embed": "pages/one-day-store.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
