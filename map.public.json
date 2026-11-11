@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T05:11:46.677Z",
+ "generatedAt": "2026-11-11T05:18:05.968Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -262,30 +262,16 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "mittens",
-   "label": "MITTENS",
-   "status": "working",
-   "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
-   "statusLine": "active · being rebuilt",
-   "caption": "All my bots, digital and physical:",
-   "stage": "active",
-   "embed": "pages/mittens.html",
-   "visibility": "public",
-   "parked": false,
-   "children": [],
-   "embedCaption": "case study"
-  },
-  {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
    "stage": "active",
    "embed": "pages/mittens-hw.html",
    "visibility": "public",
-   "parked": true,
+   "parked": false,
    "children": [
     {
      "id": "local-watch",
@@ -439,101 +425,6 @@
      "stage": "plan",
      "planned": true,
      "embed": "pages/portfolio-mittens-scenes.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "northstar",
-   "label": "NORTH STAR MAP",
-   "status": "working",
-   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active · busy week",
-   "caption": "The map itself:",
-   "stage": "active",
-   "embed": "pages/northstar.html",
-   "visibility": "public",
-   "codeRepos": [
-    {
-     "vis": "private"
-    }
-   ],
-   "parked": false,
-   "children": [
-    {
-     "id": "code-northstar",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
-     "stage": "active",
-     "embed": "pages/code-northstar.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "briefs-unsorted",
-     "label": "UNSORTED BRIEFS",
-     "status": "idle",
-     "why": "Every brief, plan and research page belongs on the map so I can find it. A page with no clear home waits here until it gets moved to the right dot.",
-     "statusLine": "live · sorted every night",
-     "caption": "Every brief, plan and research page belongs on the map so I can find it.",
-     "stage": "active",
-     "embed": "pages/briefs-unsorted.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "ns-desk",
-     "label": "NORTH STAR DESK",
-     "status": "idle",
-     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
-     "statusLine": "done · panes now searchable",
-     "caption": "A native desktop app that tiles the open pages in one window:",
-     "stage": "done",
-     "embed": "pages/ns-desk.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "grand-threads",
-     "label": "GRAND THREADS",
-     "status": "idle",
-     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
-     "statusLine": "built · chat threads tied to dots",
-     "caption": "Each dot on my map is now a chat thread.",
-     "stage": "active",
-     "embed": "pages/grand-threads.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "north-star-as-product",
-     "label": "NORTH STAR AS PRODUCT",
-     "status": "idle",
-     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
-     "statusLine": "exploring the idea",
-     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
-     "stage": "active",
-     "embed": "pages/north-star-as-product.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "ui-style",
-     "label": "UI STYLE",
-     "status": "idle",
-     "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-     "statusLine": "checked nightly · cleanup ongoing",
-     "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-     "stage": "active",
-     "embed": "pages/ui-style.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1689,6 +1580,81 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "northstar",
+   "label": "NORTH STAR MAP",
+   "status": "idle",
+   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
+   "statusLine": "active · busy week",
+   "caption": "The map itself:",
+   "stage": "active",
+   "embed": "pages/northstar.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [
+    {
+     "id": "briefs-unsorted",
+     "label": "UNSORTED BRIEFS",
+     "status": "idle",
+     "why": "Every brief, plan and research page belongs on the map so I can find it. A page with no clear home waits here until it gets moved to the right dot.",
+     "statusLine": "live · sorted every night",
+     "caption": "Every brief, plan and research page belongs on the map so I can find it.",
+     "stage": "active",
+     "embed": "pages/briefs-unsorted.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ns-desk",
+     "label": "NORTH STAR DESK",
+     "status": "idle",
+     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
+     "statusLine": "done · panes now searchable",
+     "caption": "A native desktop app that tiles the open pages in one window:",
+     "stage": "done",
+     "embed": "pages/ns-desk.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "grand-threads",
+     "label": "GRAND THREADS",
+     "status": "idle",
+     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
+     "statusLine": "built · chat threads tied to dots",
+     "caption": "Each dot on my map is now a chat thread.",
+     "stage": "active",
+     "embed": "pages/grand-threads.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "north-star-as-product",
+     "label": "NORTH STAR AS PRODUCT",
+     "status": "idle",
+     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "statusLine": "exploring the idea",
+     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "stage": "active",
+     "embed": "pages/north-star-as-product.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ui-style",
+     "label": "UI STYLE",
+     "status": "idle",
+     "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+     "statusLine": "checked nightly · cleanup ongoing",
+     "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+     "stage": "active",
+     "embed": "pages/ui-style.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "action-tree",
    "label": "ACTION TREE",
    "status": "dormant",
@@ -1869,6 +1835,21 @@
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens",
+   "label": "MITTENS",
+   "status": "working",
+   "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
+   "statusLine": "active · being rebuilt",
+   "caption": "All my bots, digital and physical:",
+   "stage": "active",
+   "embed": "pages/mittens.html",
+   "visibility": "public",
+   "parent": "northstar",
+   "parked": false,
+   "children": [],
+   "embedCaption": "case study"
   },
   {
    "id": "mittens-digital",
