@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T06:11:36.494Z",
+ "generatedAt": "2026-11-11T07:40:47.907Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -207,9 +207,9 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
-   "statusLine": "paused for the redesign",
+   "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
    "embed": "pages/marketing.html",
    "visibility": "public",
@@ -300,7 +300,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -358,69 +358,6 @@
    "visibility": "public",
    "parked": false,
    "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "devhub",
-   "label": "DEV HUB",
-   "status": "idle",
-   "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
-   "statusLine": "live · in regular use",
-   "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
-   "stage": "active",
-   "embed": "pages/devhub.html",
-   "visibility": "public",
-   "codeRepos": [
-    {
-     "vis": "private"
-    }
-   ],
-   "parked": false,
-   "children": [
-    {
-     "id": "views-check",
-     "label": "VIEWS CHECK",
-     "status": "idle",
-     "why": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
-     "statusLine": "live · every 5 min",
-     "caption": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
-     "stage": "active",
-     "embed": "pages/views-check.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-architecture-tree-2",
-     "label": "CODE ARCHITECTURE TREE",
-     "status": "done",
-     "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
-     "statusLine": "done · filed into project docs",
-     "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
-     "stage": "done",
-     "embed": "pages/code-architecture-tree-2.html",
-     "visibility": "public",
-     "links": [
-      "code-architecture-tree",
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-devhub",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the Dev Hub server, launcher and manual, and its phone app.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-devhub.html",
-     "visibility": "public",
-     "links": [
-      "devhub"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -501,6 +438,69 @@
      "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "devhub",
+   "label": "DEV HUB",
+   "status": "idle",
+   "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
+   "statusLine": "live · in regular use",
+   "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
+   "stage": "active",
+   "embed": "pages/devhub.html",
+   "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
+   "parked": false,
+   "children": [
+    {
+     "id": "views-check",
+     "label": "VIEWS CHECK",
+     "status": "idle",
+     "why": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
+     "statusLine": "live · every 5 min",
+     "caption": "Every view -- status bar, workers, widget, action tree -- is compared with the ledgers every five minutes; a disagreement is a bug.",
+     "stage": "active",
+     "embed": "pages/views-check.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-architecture-tree-2",
+     "label": "CODE ARCHITECTURE TREE",
+     "status": "done",
+     "why": "I want one complete tree of how the code is built, covering what happens in each scenario. It should show what is really implemented.",
+     "statusLine": "done · filed into project docs",
+     "caption": "I want one complete tree of how the code is built, covering what happens in each scenario.",
+     "stage": "done",
+     "embed": "pages/code-architecture-tree-2.html",
+     "visibility": "public",
+     "links": [
+      "code-architecture-tree",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-devhub",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the Dev Hub server, launcher and manual, and its phone app.",
+     "statusLine": "mapped from the code · rescanned",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-devhub.html",
+     "visibility": "public",
+     "links": [
+      "devhub"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -720,101 +720,6 @@
      "visibility": "public",
      "links": [
       "content-references"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "northstar",
-   "label": "NORTH STAR MAP",
-   "status": "idle",
-   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active · busy week",
-   "caption": "The map itself:",
-   "stage": "active",
-   "embed": "pages/northstar.html",
-   "visibility": "public",
-   "codeRepos": [
-    {
-     "vis": "private"
-    }
-   ],
-   "parked": false,
-   "children": [
-    {
-     "id": "ns-desk",
-     "label": "NORTH STAR DESK",
-     "status": "idle",
-     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
-     "statusLine": "done · panes now searchable",
-     "caption": "A native desktop app that tiles the open pages in one window:",
-     "stage": "done",
-     "embed": "pages/ns-desk.html",
-     "visibility": "public",
-     "links": [
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "grand-threads",
-     "label": "GRAND THREADS",
-     "status": "idle",
-     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
-     "statusLine": "built · chat threads tied to dots",
-     "caption": "Each dot on my map is now a chat thread.",
-     "stage": "active",
-     "embed": "pages/grand-threads.html",
-     "visibility": "public",
-     "links": [
-      "work-in-threads"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "north-star-map",
-     "label": "NORTH STAR MAP",
-     "status": "idle",
-     "why": "This is the working thread for the map that holds my projects and agents.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for the map that holds my projects and agents.",
-     "stage": "active",
-     "embed": "pages/north-star-map.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "north-star-as-product",
-     "label": "NORTH STAR AS PRODUCT",
-     "status": "idle",
-     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
-     "statusLine": "exploring the idea",
-     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
-     "stage": "active",
-     "embed": "pages/north-star-as-product.html",
-     "visibility": "public",
-     "links": [
-      "aurora"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-northstar",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
-     "stage": "active",
-     "embed": "pages/code-northstar.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1088,6 +993,101 @@
    "embedCaption": "case study"
   },
   {
+   "id": "northstar",
+   "label": "NORTH STAR MAP",
+   "status": "idle",
+   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
+   "statusLine": "active · busy week",
+   "caption": "The map itself:",
+   "stage": "active",
+   "embed": "pages/northstar.html",
+   "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
+   "parked": false,
+   "children": [
+    {
+     "id": "ns-desk",
+     "label": "NORTH STAR DESK",
+     "status": "idle",
+     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
+     "statusLine": "done · panes now searchable",
+     "caption": "A native desktop app that tiles the open pages in one window:",
+     "stage": "done",
+     "embed": "pages/ns-desk.html",
+     "visibility": "public",
+     "links": [
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "grand-threads",
+     "label": "GRAND THREADS",
+     "status": "idle",
+     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
+     "statusLine": "built · chat threads tied to dots",
+     "caption": "Each dot on my map is now a chat thread.",
+     "stage": "active",
+     "embed": "pages/grand-threads.html",
+     "visibility": "public",
+     "links": [
+      "work-in-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "north-star-map",
+     "label": "NORTH STAR MAP",
+     "status": "idle",
+     "why": "This is the working thread for the map that holds my projects and agents.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the map that holds my projects and agents.",
+     "stage": "active",
+     "embed": "pages/north-star-map.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "north-star-as-product",
+     "label": "NORTH STAR AS PRODUCT",
+     "status": "idle",
+     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "statusLine": "exploring the idea",
+     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "stage": "active",
+     "embed": "pages/north-star-as-product.html",
+     "visibility": "public",
+     "links": [
+      "aurora"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-northstar",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
+     "statusLine": "mapped from the code · rescanned",
+     "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
+     "stage": "active",
+     "embed": "pages/code-northstar.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "skin-build",
    "label": "BUILD PLAN",
    "status": "idle",
@@ -1206,9 +1206,102 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "manual-map",
+   "label": "MANUAL MAP",
+   "status": "idle",
+   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
+   "statusLine": "live · organized as a graph",
+   "caption": "Where \"how\" lives:",
+   "stage": "active",
+   "embed": "pages/manual-map.html",
+   "visibility": "public",
+   "parent": "devhub",
+   "parked": false,
+   "children": [
+    {
+     "id": "rule-saves-need-review",
+     "label": "RULE SAVES REVIEWED",
+     "status": "idle",
+     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
+     "statusLine": "in progress",
+     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
+     "stage": "active",
+     "embed": "pages/rule-saves-need-review.html",
+     "visibility": "public",
+     "links": [
+      "manual-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "housekeeping",
+   "label": "HOUSEKEEPING",
+   "status": "idle",
+   "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
+   "statusLine": "nightly cleanup running",
+   "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
+   "stage": "active",
+   "embed": "pages/housekeeping.html",
+   "visibility": "public",
+   "links": [
+    "howto-cleanup",
+    "context-graph"
+   ],
+   "parent": "devhub",
+   "parked": false,
+   "children": [
+    {
+     "id": "disk",
+     "label": "DISK CLEANUP",
+     "status": "idle",
+     "why": "I wanted to know what takes up space on the agents' computer and get it back. The agents measure every folder, clear old models and caches, and ask me before removing anything big.",
+     "statusLine": "cleared · more waits on my yes",
+     "caption": "I wanted to know what takes up space on the agents' computer and get it back.",
+     "stage": "active",
+     "embed": "pages/disk.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "housekeeping-nightly-chrome-ai-model",
+     "label": "NIGHTLY BROWSER CLEANUP",
+     "status": "idle",
+     "why": "A nightly housekeeping rule keeps the browser's built-in AI model from piling up on my machine.",
+     "statusLine": "live · every night",
+     "caption": "A nightly housekeeping rule keeps the browser's built-in AI model from piling up on my machine.",
+     "stage": "active",
+     "embed": "pages/housekeeping-nightly-chrome-ai-model.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "chrome-flashing-open-render-scripts",
+     "label": "BROWSER FLASH FIX",
+     "status": "done",
+     "why": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
+     "statusLine": "fixing",
+     "caption": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
+     "stage": "active",
+     "embed": "pages/chrome-flashing-open-render-scripts.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -1330,99 +1423,6 @@
      "visibility": "public",
      "links": [
       "mittens-digital"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "manual-map",
-   "label": "MANUAL MAP",
-   "status": "idle",
-   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
-   "statusLine": "live · organized as a graph",
-   "caption": "Where \"how\" lives:",
-   "stage": "active",
-   "embed": "pages/manual-map.html",
-   "visibility": "public",
-   "parent": "devhub",
-   "parked": false,
-   "children": [
-    {
-     "id": "rule-saves-need-review",
-     "label": "RULE SAVES REVIEWED",
-     "status": "idle",
-     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
-     "statusLine": "in progress",
-     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
-     "stage": "active",
-     "embed": "pages/rule-saves-need-review.html",
-     "visibility": "public",
-     "links": [
-      "manual-map"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "housekeeping",
-   "label": "HOUSEKEEPING",
-   "status": "idle",
-   "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
-   "statusLine": "nightly cleanup running",
-   "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
-   "stage": "active",
-   "embed": "pages/housekeeping.html",
-   "visibility": "public",
-   "links": [
-    "howto-cleanup",
-    "context-graph"
-   ],
-   "parent": "devhub",
-   "parked": false,
-   "children": [
-    {
-     "id": "disk",
-     "label": "DISK CLEANUP",
-     "status": "idle",
-     "why": "I wanted to know what takes up space on the agents' computer and get it back. The agents measure every folder, clear old models and caches, and ask me before removing anything big.",
-     "statusLine": "cleared · more waits on my yes",
-     "caption": "I wanted to know what takes up space on the agents' computer and get it back.",
-     "stage": "active",
-     "embed": "pages/disk.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "housekeeping-nightly-chrome-ai-model",
-     "label": "NIGHTLY BROWSER CLEANUP",
-     "status": "idle",
-     "why": "A nightly housekeeping rule keeps the browser's built-in AI model from piling up on my machine.",
-     "statusLine": "live · every night",
-     "caption": "A nightly housekeeping rule keeps the browser's built-in AI model from piling up on my machine.",
-     "stage": "active",
-     "embed": "pages/housekeeping-nightly-chrome-ai-model.html",
-     "visibility": "public",
-     "links": [
-      "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "chrome-flashing-open-render-scripts",
-     "label": "BROWSER FLASH FIX",
-     "status": "done",
-     "why": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
-     "statusLine": "fixing",
-     "caption": "Some of my render scripts kept flashing a browser window open, so I am making them run quietly.",
-     "stage": "active",
-     "embed": "pages/chrome-flashing-open-render-scripts.html",
-     "visibility": "public",
-     "links": [
-      "housekeeping"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1875,6 +1875,59 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "context-graph",
+   "label": "CONTEXT GRAPH",
+   "status": "idle",
+   "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
+   "statusLine": "phase 3 built",
+   "caption": "Agents get only the context the situation needs:",
+   "stage": "active",
+   "embed": "pages/context-graph.html",
+   "visibility": "public",
+   "links": [
+    "mittens-daily",
+    "proactive-rules",
+    "map-upkeep"
+   ],
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "context-map",
+     "label": "CONTEXT MAP",
+     "status": "idle",
+     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "statusLine": "built",
+     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "stage": "active",
+     "embed": "pages/context-map.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture",
+      "mittens-chat-threads",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "shared-fetchable-agent-context",
+     "label": "SHARED AGENT CONTEXT",
+     "status": "done",
+     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "statusLine": "done · filed with the project",
+     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "stage": "done",
+     "embed": "pages/shared-fetchable-agent-context.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
    "status": "idle",
@@ -2309,59 +2362,6 @@
      "caption": "A map of the code that runs talking with Mittens, generated from the code itself.",
      "stage": "active",
      "embed": "pages/code-ns-talk.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "context-graph",
-   "label": "CONTEXT GRAPH",
-   "status": "idle",
-   "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
-   "statusLine": "phase 3 built",
-   "caption": "Agents get only the context the situation needs:",
-   "stage": "active",
-   "embed": "pages/context-graph.html",
-   "visibility": "public",
-   "links": [
-    "mittens-daily",
-    "proactive-rules",
-    "map-upkeep"
-   ],
-   "parent": "manual-map",
-   "parked": false,
-   "children": [
-    {
-     "id": "context-map",
-     "label": "CONTEXT MAP",
-     "status": "idle",
-     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
-     "statusLine": "built",
-     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
-     "stage": "active",
-     "embed": "pages/context-map.html",
-     "visibility": "public",
-     "links": [
-      "brain-architecture",
-      "mittens-chat-threads",
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "shared-fetchable-agent-context",
-     "label": "SHARED AGENT CONTEXT",
-     "status": "done",
-     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-     "statusLine": "done · filed with the project",
-     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-     "stage": "done",
-     "embed": "pages/shared-fetchable-agent-context.html",
      "visibility": "public",
      "links": [
       "ns-talk"
@@ -3643,9 +3643,9 @@
      "label": "PORTFOLIO MEDIA HOSTING",
      "status": "done",
      "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "statusLine": "moving over",
+     "statusLine": "merged into site and media",
      "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/portfolio-media-on-cloudflare-r2.html",
      "visibility": "public",
      "links": [
@@ -3658,13 +3658,28 @@
      "label": "PORTFOLIO PREVIEW LAUNCHER",
      "status": "done",
      "why": "My dev hub can now launch a live preview of my portfolio.",
-     "statusLine": "in progress",
+     "statusLine": "merged into site and media",
      "caption": "My dev hub can now launch a live preview of my portfolio.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/dev-hub-launcher-portfolio-preview.html",
      "visibility": "public",
      "links": [
       "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "message-reactions-as-eq",
+     "label": "MESSAGE REACTIONS AS EQ",
+     "status": "done",
+     "why": "I wrote a scenario about how the reactions people leave on messages can show emotional intelligence. It now lives on my portfolio site.",
+     "statusLine": "done · on the portfolio",
+     "caption": "I wrote a scenario about how the reactions people leave on messages can show emotional intelligence.",
+     "stage": "done",
+     "embed": "pages/message-reactions-as-eq.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-site"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3890,6 +3905,37 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-architecture",
+   "label": "MITTENS ARCHITECTURE",
+   "status": "idle",
+   "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
+   "statusLine": "migration underway · first steps live",
+   "caption": "Personal data moves off the shared cloud backend onto a small home server:",
+   "stage": "active",
+   "embed": "pages/mittens-architecture.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-architecture-2",
+     "label": "MITTENS ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how the parts of my assistant fit together.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how the parts of my assistant fit together.",
+     "stage": "active",
+     "embed": "pages/mittens-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "mittens-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ui-style",
    "label": "UI STYLE",
    "status": "idle",
@@ -3940,9 +3986,9 @@
      "label": "SOFT ROBOT FILM",
      "status": "done",
      "why": "I am making a dark version of the short film about my soft robot companion.",
-     "statusLine": "in progress",
+     "statusLine": "merged into the scenes",
      "caption": "I am making a dark version of the short film about my soft robot companion.",
-     "stage": "active",
+     "stage": "done",
      "embed": "pages/mittens-soft-robot-film-dark.html",
      "visibility": "public",
      "links": [
@@ -3963,37 +4009,6 @@
      "visibility": "public",
      "links": [
       "portfolio-mittens-scenes"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-architecture",
-   "label": "MITTENS ARCHITECTURE",
-   "status": "idle",
-   "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-   "statusLine": "migration underway · first steps live",
-   "caption": "Personal data moves off the shared cloud backend onto a small home server:",
-   "stage": "active",
-   "embed": "pages/mittens-architecture.html",
-   "visibility": "public",
-   "parent": "mittens-digital",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-architecture-2",
-     "label": "MITTENS ARCHITECTURE",
-     "status": "idle",
-     "why": "This is where I work out how the parts of my assistant fit together.",
-     "statusLine": "in progress",
-     "caption": "This is where I work out how the parts of my assistant fit together.",
-     "stage": "active",
-     "embed": "pages/mittens-architecture-2.html",
-     "visibility": "public",
-     "links": [
-      "mittens-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -4531,6 +4546,43 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "watchdog",
+   "label": "WATCHDOG",
+   "status": "idle",
+   "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
+   "statusLine": "live",
+   "caption": "Nothing fails silently:",
+   "stage": "active",
+   "embed": "pages/watchdog.html",
+   "visibility": "public",
+   "links": [
+    "mittens-proactive",
+    "howto-routines",
+    "housekeeping"
+   ],
+   "parent": "ns-daily-loops",
+   "parked": false,
+   "children": [
+    {
+     "id": "mem-census-watchdog",
+     "label": "MEMORY WATCHDOG",
+     "status": "done",
+     "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
+     "statusLine": "merged into watchdog",
+     "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
+     "stage": "done",
+     "embed": "pages/mem-census-watchdog.html",
+     "visibility": "public",
+     "links": [
+      "watchdog",
+      "ns-daily-loops"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "triggers",
    "label": "TRIGGERS",
    "status": "idle",
@@ -4649,43 +4701,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "watchdog",
-   "label": "WATCHDOG",
-   "status": "idle",
-   "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
-   "statusLine": "live",
-   "caption": "Nothing fails silently:",
-   "stage": "active",
-   "embed": "pages/watchdog.html",
-   "visibility": "public",
-   "links": [
-    "mittens-proactive",
-    "howto-routines",
-    "housekeeping"
-   ],
-   "parent": "ns-daily-loops",
-   "parked": false,
-   "children": [
-    {
-     "id": "mem-census-watchdog",
-     "label": "MEMORY WATCHDOG",
-     "status": "done",
-     "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
-     "statusLine": "merged into watchdog",
-     "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
-     "stage": "done",
-     "embed": "pages/mem-census-watchdog.html",
-     "visibility": "public",
-     "links": [
-      "watchdog",
-      "ns-daily-loops"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "learn-ep-french-1",
    "label": "FRENCH EPISODE ONE",
    "status": "done",
@@ -4711,6 +4726,44 @@
      "links": [
       "learn-ep-french-1",
       "learn-episodes"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "map-upkeep",
+   "label": "MAP UPKEEP",
+   "status": "idle",
+   "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "statusLine": "hourly tidy · placement audit run",
+   "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "stage": "active",
+   "embed": "pages/map-upkeep.html",
+   "visibility": "public",
+   "links": [
+    "context-graph",
+    "proactive-rules",
+    "howto-map-organizing",
+    "northstar"
+   ],
+   "parent": "man-rules",
+   "parked": false,
+   "children": [
+    {
+     "id": "map-upkeep-2",
+     "label": "MAP UPKEEP",
+     "status": "idle",
+     "why": "The ongoing work of keeping the map tidy and true.",
+     "statusLine": "folded into its twin",
+     "caption": "The ongoing work of keeping the map tidy and true.",
+     "stage": "active",
+     "embed": "pages/map-upkeep-2.html",
+     "visibility": "public",
+     "links": [
+      "map-upkeep",
+      "man-rules"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -4776,44 +4829,6 @@
      "links": [
       "portfolio-chapters",
       "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "map-upkeep",
-   "label": "MAP UPKEEP",
-   "status": "idle",
-   "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-   "statusLine": "hourly tidy · placement audit run",
-   "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-   "stage": "active",
-   "embed": "pages/map-upkeep.html",
-   "visibility": "public",
-   "links": [
-    "context-graph",
-    "proactive-rules",
-    "howto-map-organizing",
-    "northstar"
-   ],
-   "parent": "man-rules",
-   "parked": false,
-   "children": [
-    {
-     "id": "map-upkeep-2",
-     "label": "MAP UPKEEP",
-     "status": "idle",
-     "why": "The ongoing work of keeping the map tidy and true.",
-     "statusLine": "folded into its twin",
-     "caption": "The ongoing work of keeping the map tidy and true.",
-     "stage": "active",
-     "embed": "pages/map-upkeep-2.html",
-     "visibility": "public",
-     "links": [
-      "map-upkeep",
-      "man-rules"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5116,56 +5131,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "flaggers-haiku-only-flags-mittens",
-   "label": "TRIAGE FLAGGERS",
-   "status": "done",
-   "why": "A small fast model only raises flags, and Mittens decides what actually runs.",
-   "statusLine": "merged into triage",
-   "caption": "A small fast model only raises flags, and Mittens decides what actually runs.",
-   "stage": "done",
-   "embed": "pages/flaggers-haiku-only-flags-mittens.html",
-   "visibility": "public",
-   "parent": "triage",
-   "parked": true,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "nothing-ran-didn-t-hear",
-   "label": "LOST SPEECH FIX",
-   "status": "idle",
-   "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
-   "statusLine": "fixed",
-   "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
-   "stage": "done",
-   "embed": "pages/nothing-ran-didn-t-hear.html",
-   "visibility": "public",
-   "links": [
-    "ns-talk"
-   ],
-   "parent": "talk-phone-calls",
-   "parked": false,
-   "children": [
-    {
-     "id": "what-s-the-sound-like",
-     "label": "SILENT REPLY",
-     "status": "idle",
-     "why": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
-     "statusLine": "archived",
-     "caption": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
-     "stage": "done",
-     "embed": "pages/what-s-the-sound-like.html",
-     "visibility": "public",
-     "links": [
-      "nothing-ran-didn-t-hear",
-      "talk-phone-calls"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
    "status": "idle",
@@ -5271,6 +5236,56 @@
      "visibility": "public",
      "links": [
       "viral-machine"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "flaggers-haiku-only-flags-mittens",
+   "label": "TRIAGE FLAGGERS",
+   "status": "done",
+   "why": "A small fast model only raises flags, and Mittens decides what actually runs.",
+   "statusLine": "merged into triage",
+   "caption": "A small fast model only raises flags, and Mittens decides what actually runs.",
+   "stage": "done",
+   "embed": "pages/flaggers-haiku-only-flags-mittens.html",
+   "visibility": "public",
+   "parent": "triage",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "nothing-ran-didn-t-hear",
+   "label": "LOST SPEECH FIX",
+   "status": "idle",
+   "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
+   "statusLine": "fixed",
+   "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
+   "stage": "done",
+   "embed": "pages/nothing-ran-didn-t-hear.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk"
+   ],
+   "parent": "talk-phone-calls",
+   "parked": false,
+   "children": [
+    {
+     "id": "what-s-the-sound-like",
+     "label": "SILENT REPLY",
+     "status": "idle",
+     "why": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
+     "statusLine": "archived",
+     "caption": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
+     "stage": "done",
+     "embed": "pages/what-s-the-sound-like.html",
+     "visibility": "public",
+     "links": [
+      "nothing-ran-didn-t-hear",
+      "talk-phone-calls"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5485,7 +5500,7 @@
      "label": "MITTENS DECISION MAP",
      "status": "idle",
      "why": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use. Build requests are now judged from context instead of fixed phrases.",
-     "statusLine": "plan ready · waiting for my yes",
+     "statusLine": "plan built · being tested nightly",
      "caption": "I am drawing one map of how Mittens and North Star decide what to do, and testing it against real use.",
      "stage": "active",
      "embed": "pages/mittens-decision-map.html",
@@ -5899,7 +5914,7 @@
    "label": "SUSU CLOSET",
    "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
-   "statusLine": "live · business model still open",
+   "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "embed": "pages/susu-closet.html",
    "visibility": "public",
