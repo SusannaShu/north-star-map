@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T13:46:46.442Z",
+ "generatedAt": "2026-11-11T15:19:24.307Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -63,21 +63,6 @@
       "outreach"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-outreach",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code, so the map always matches what is really built. It covers the outreach records and automation, the phone app and the outreach agent.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code, so the map always matches what is really built.",
-     "stage": "active",
-     "embed": "pages/code-outreach.html",
-     "visibility": "public",
-     "links": [
-      "outreach"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -100,22 +85,6 @@
    ],
    "parked": false,
    "children": [
-    {
-     "id": "code-fashion",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "I show the code behind my fashion projects as one tree, so anyone can see how the parts fit together.",
-     "statusLine": "two coded parts mapped",
-     "caption": "I show the code behind my fashion projects as one tree, so anyone can see how the parts fit together.",
-     "stage": "active",
-     "embed": "pages/code-fashion.html",
-     "visibility": "public",
-     "links": [
-      "sheyou",
-      "susu-closet"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "fit-data",
      "label": "FIT DATA FROM BRANDS",
@@ -180,21 +149,6 @@
      "caption": "I want a daily post about what's on the map, so people have a reason to come back to it.",
      "stage": "active",
      "embed": "pages/susu-map-daily-posts.html",
-     "visibility": "public",
-     "links": [
-      "susu-map"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-susu-map",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the web map, the phone app and the display.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-susu-map.html",
      "visibility": "public",
      "links": [
       "susu-map"
@@ -278,21 +232,6 @@
      "embed": "pages/agentic-marketing.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-marketing",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the content pipeline with its lanes, and the marketing phone app.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-marketing.html",
-     "visibility": "public",
-     "links": [
-      "marketing"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -323,27 +262,7 @@
     }
    ],
    "parked": false,
-   "children": [
-    {
-     "id": "code-mittens",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
-     "statusLine": "six coded parts mapped",
-     "caption": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
-     "stage": "active",
-     "embed": "pages/code-mittens.html",
-     "visibility": "public",
-     "links": [
-      "mittens-digital",
-      "soft-robot",
-      "omi",
-      "pendant",
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "children": [],
    "embedCaption": "case study"
   },
   {
@@ -468,21 +387,6 @@
      "caption": "A duplicate portfolio dot that the map's tidy pass merged back into the main one.",
      "stage": "done",
      "embed": "pages/portfolio-2.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-portfolio",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code of my portfolio site.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code of my portfolio site.",
-     "stage": "active",
-     "embed": "pages/code-portfolio.html",
      "visibility": "public",
      "links": [
       "portfolio"
@@ -840,9 +744,24 @@
    "embedCaption": "the layer stack, part by part"
   },
   {
+   "id": "skin-schedule",
+   "label": "BUILD SCHEDULE",
+   "status": "idle",
+   "why": "The Warm Skin v1 build as a path of numbered sessions, Day 1 to Day 9, each sized to one evening and unlocked in order: touch and the 40 C cutoff, the seal and flanges, pressure, the 5 V rail and heater, the water bladder, the sensing stack, gestures and pumps, mount and plumb, then a first breath. Tap a stone for that Day, step by step.",
+   "statusLine": "Day 1 of 9 next",
+   "caption": "The Warm Skin v1 build as a path of numbered sessions, Day 1 to Day 9, each sized to one evening and unlocked in order:",
+   "stage": "active",
+   "embed": "pages/skin-schedule.html",
+   "visibility": "public",
+   "parent": "skin-build",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -883,38 +802,8 @@
       "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-devhub",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the Dev Hub server, launcher and manual, and its phone app.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-devhub.html",
-     "visibility": "public",
-     "links": [
-      "devhub"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "skin-schedule",
-   "label": "BUILD SCHEDULE",
-   "status": "idle",
-   "why": "The Warm Skin v1 build as a path of numbered sessions, Day 1 to Day 9, each sized to one evening and unlocked in order: touch and the 40 C cutoff, the seal and flanges, pressure, the 5 V rail and heater, the water bladder, the sensing stack, gestures and pumps, mount and plumb, then a first breath. Tap a stone for that Day, step by step.",
-   "statusLine": "Day 1 of 9 next",
-   "caption": "The Warm Skin v1 build as a path of numbered sessions, Day 1 to Day 9, each sized to one evening and unlocked in order:",
-   "stage": "active",
-   "embed": "pages/skin-schedule.html",
-   "visibility": "public",
-   "parent": "skin-build",
-   "parked": false,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1104,7 +993,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1177,21 +1066,6 @@
       "aurora"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-northstar",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
-     "stage": "active",
-     "embed": "pages/code-northstar.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -1217,23 +1091,7 @@
    ],
    "parent": "mittens",
    "parked": false,
-   "children": [
-    {
-     "id": "code-soft-robot",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the soft robot firmware, its parts list and its build schedule.",
-     "statusLine": "mapped · early code",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-soft-robot.html",
-     "visibility": "public",
-     "links": [
-      "soft-robot"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1408,21 +1266,6 @@
      "links": [
       "mittens-self-improve",
       "mittens-chat-threads"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-mittens-digital",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the Mittens phone app with chat, talk, glasses and day views, the open pendant capture and its triage, and the core skills.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-mittens-digital.html",
-     "visibility": "public",
-     "links": [
-      "mittens-digital"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -2352,21 +2195,6 @@
       "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-ns-talk",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "A map of the code that runs talking with Mittens, generated from the code itself.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "A map of the code that runs talking with Mittens, generated from the code itself.",
-     "stage": "active",
-     "embed": "pages/code-ns-talk.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3164,7 +2992,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -4548,7 +4376,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "idle",
+   "status": "working",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -4651,6 +4479,44 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "map-upkeep",
+   "label": "MAP UPKEEP",
+   "status": "idle",
+   "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "statusLine": "hourly tidy · placement audit run",
+   "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
+   "stage": "active",
+   "embed": "pages/map-upkeep.html",
+   "visibility": "public",
+   "links": [
+    "context-graph",
+    "proactive-rules",
+    "howto-map-organizing",
+    "northstar"
+   ],
+   "parent": "man-rules",
+   "parked": false,
+   "children": [
+    {
+     "id": "map-upkeep-2",
+     "label": "MAP UPKEEP",
+     "status": "idle",
+     "why": "The ongoing work of keeping the map tidy and true.",
+     "statusLine": "folded into its twin",
+     "caption": "The ongoing work of keeping the map tidy and true.",
+     "stage": "active",
+     "embed": "pages/map-upkeep-2.html",
+     "visibility": "public",
+     "links": [
+      "map-upkeep",
+      "man-rules"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "work-in-threads",
    "label": "WORK IN THREADS",
    "status": "idle",
@@ -4701,44 +4567,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "map-upkeep",
-   "label": "MAP UPKEEP",
-   "status": "idle",
-   "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-   "statusLine": "hourly tidy · placement audit run",
-   "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
-   "stage": "active",
-   "embed": "pages/map-upkeep.html",
-   "visibility": "public",
-   "links": [
-    "context-graph",
-    "proactive-rules",
-    "howto-map-organizing",
-    "northstar"
-   ],
-   "parent": "man-rules",
-   "parked": false,
-   "children": [
-    {
-     "id": "map-upkeep-2",
-     "label": "MAP UPKEEP",
-     "status": "idle",
-     "why": "The ongoing work of keeping the map tidy and true.",
-     "statusLine": "folded into its twin",
-     "caption": "The ongoing work of keeping the map tidy and true.",
-     "stage": "active",
-     "embed": "pages/map-upkeep-2.html",
-     "visibility": "public",
-     "links": [
-      "map-upkeep",
-      "man-rules"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "learn-ep-french-1",
    "label": "FRENCH EPISODE ONE",
    "status": "done",
@@ -4764,38 +4592,6 @@
      "links": [
       "learn-ep-french-1",
       "learn-episodes"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "susu-daily",
-   "label": "DAILY FREE LIST",
-   "status": "idle",
-   "why": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post. Nothing goes out until I approve it.",
-   "statusLine": "built · posts wait for accounts",
-   "caption": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post.",
-   "stage": "active",
-   "embed": "pages/susu-daily.html",
-   "visibility": "public",
-   "parent": "susu-map",
-   "parked": false,
-   "children": [
-    {
-     "id": "daily-free-list",
-     "label": "DAILY FREE LIST",
-     "status": "idle",
-     "why": "A short list of free things, made automatically each day.",
-     "statusLine": "folded into its twin",
-     "caption": "A short list of free things, made automatically each day.",
-     "stage": "active",
-     "embed": "pages/daily-free-list.html",
-     "visibility": "public",
-     "links": [
-      "susu-daily",
-      "susu-map"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -4833,6 +4629,38 @@
      "links": [
       "thread-architecture",
       "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "susu-daily",
+   "label": "DAILY FREE LIST",
+   "status": "idle",
+   "why": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post. Nothing goes out until I approve it.",
+   "statusLine": "built · posts wait for accounts",
+   "caption": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post.",
+   "stage": "active",
+   "embed": "pages/susu-daily.html",
+   "visibility": "public",
+   "parent": "susu-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "daily-free-list",
+     "label": "DAILY FREE LIST",
+     "status": "idle",
+     "why": "A short list of free things, made automatically each day.",
+     "statusLine": "folded into its twin",
+     "caption": "A short list of free things, made automatically each day.",
+     "stage": "active",
+     "embed": "pages/daily-free-list.html",
+     "visibility": "public",
+     "links": [
+      "susu-daily",
+      "susu-map"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5045,21 +4873,6 @@
       "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-pendant",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "The pendant's firmware mapped from the code: camera capture and wireless transfer to the phone. An old copy still needs clearing out.",
-     "statusLine": "mapped · duplicate to clear",
-     "caption": "The pendant's firmware mapped from the code:",
-     "stage": "active",
-     "embed": "pages/code-pendant.html",
-     "visibility": "public",
-     "links": [
-      "pendant"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -5218,21 +5031,6 @@
      "caption": "A trend is only useful once it becomes a concept.",
      "stage": "done",
      "embed": "pages/trend-to-concept-design.html",
-     "visibility": "public",
-     "links": [
-      "viral-machine"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "code-viral-machine",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "The code map of the viral machine. It turns any product into trend research, scripts, generated video and judged quality checks.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "The code map of the viral machine.",
-     "stage": "active",
-     "embed": "pages/code-viral-machine.html",
      "visibility": "public",
      "links": [
       "viral-machine"
@@ -5421,6 +5219,21 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "man-g-agents",
+   "label": "HOW AGENTS WORK",
+   "status": "idle",
+   "why": "The rules my agents follow and the manual for talking with them.",
+   "statusLine": "noted this week",
+   "caption": "The rules my agents follow and the manual for talking with them.",
+   "stage": "active",
+   "embed": "pages/man-g-agents.html",
+   "visibility": "public",
+   "parent": "manual-map",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5617,21 +5430,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "man-g-agents",
-   "label": "HOW AGENTS WORK",
-   "status": "idle",
-   "why": "The rules my agents follow and the manual for talking with them.",
-   "statusLine": "noted this week",
-   "caption": "The rules my agents follow and the manual for talking with them.",
-   "stage": "active",
-   "embed": "pages/man-g-agents.html",
-   "visibility": "public",
-   "parent": "manual-map",
-   "parked": false,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5890,29 +5688,13 @@
    ],
    "parent": "fashion",
    "parked": false,
-   "children": [
-    {
-     "id": "code-sheyou",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code: the iOS app, the web store, the live backend for products and orders, and an unfinished move to a newer backend.",
-     "statusLine": "mapped · backend move unfinished",
-     "caption": "This branch is mapped straight from the code:",
-     "stage": "active",
-     "embed": "pages/code-sheyou.html",
-     "visibility": "public",
-     "links": [
-      "sheyou"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "children": [],
    "embedCaption": "case study"
   },
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "idle",
+   "status": "dormant",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
@@ -5924,24 +5706,8 @@
     }
    ],
    "parent": "fashion",
-   "parked": false,
-   "children": [
-    {
-     "id": "code-susu-closet",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This branch is mapped straight from the code of the closet phone app.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code of the closet phone app.",
-     "stage": "active",
-     "embed": "pages/code-susu-closet.html",
-     "visibility": "public",
-     "links": [
-      "susu-closet"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "parked": true,
+   "children": [],
    "embedCaption": "case study"
   },
   {
@@ -5992,23 +5758,7 @@
    ],
    "parent": "devhub",
    "parked": false,
-   "children": [
-    {
-     "id": "code-firstpower",
-     "label": "CODE ARCHITECTURE",
-     "status": "idle",
-     "why": "This map mirrors the real code of my shared hardware engine: a gate, a panel of judges and a loop that fixes its own mistakes. It is built from the code itself, so it stays true as the code changes.",
-     "statusLine": "mapped from the code · rescanned",
-     "caption": "This map mirrors the real code of my shared hardware engine:",
-     "stage": "active",
-     "embed": "pages/code-firstpower.html",
-     "visibility": "public",
-     "links": [
-      "firstpower"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {

@@ -698,6 +698,20 @@ body.still .search, body.saver .search .hits { display:none !important; }
 .crumbs { position:fixed; top:calc(var(--toph, 57px) + 10px); left:16px; right:16px; z-index:26; display:flex; align-items:center; flex-wrap:wrap; gap:4px 6px;
   pointer-events:none; font-family:var(--mono); font-size:11px; letter-spacing:.6px; text-transform:uppercase; color:var(--text-muted); transition:opacity .4s ease; }
 .crumbs[hidden] { display:none; }
+/* T5331: the open dot's goal under the crumbs -- metric, target, a 0-100% bar, which of why / goal / how are its own; tap = the view */
+.crumbs .crumb-goal { flex-basis:100%; margin-top:6px; padding:8px 10px; background:var(--bg); border:1px solid var(--border); border-radius:6px; cursor:pointer; text-transform:none; letter-spacing:0; max-width:520px; }
+.crumbs .crumb-goal .cg-row { display:flex; align-items:center; gap:6px; }
+.crumbs .crumb-goal b { font-weight:700; color:var(--text); letter-spacing:.8px; background:none; padding:0; }
+.crumbs .crumb-goal .cg-from { color:var(--text-muted); }
+.crumbs .crumb-goal .cg-p { margin-left:auto; padding:1px 5px; border:1px solid var(--text-dim); color:var(--text-dim); font-size:10px; text-transform:uppercase; }
+.crumbs .crumb-goal .cg-p + .cg-p { margin-left:0; }
+.crumbs .crumb-goal .cg-p.on { background:var(--text); color:var(--bg); border-color:var(--text); }
+.crumbs .crumb-goal .cg-text { color:var(--text); font-family:var(--sans, Inter, sans-serif); font-size:12px; line-height:1.35; margin:4px 0; }
+.crumbs .crumb-goal .cg-bar { flex:1; height:6px; border:1px solid var(--text-dim); position:relative; }
+.crumbs .crumb-goal .cg-bar.none { border-style:dashed; }
+.crumbs .crumb-goal .cg-bar i { position:absolute; left:0; top:0; bottom:0; background:var(--text); }
+.crumbs .crumb-goal .cg-pct { color:var(--text-muted); white-space:nowrap; }
+.crumbs .crumb-goal .cg-why { color:var(--text-muted); font-family:var(--sans, Inter, sans-serif); font-size:11px; line-height:1.35; margin-top:4px; }
 .crumbs > * { pointer-events:auto; }
 .crumbs button { font:inherit; letter-spacing:inherit; text-transform:inherit; color:var(--text-secondary); background:var(--bg-glass); border:0; border-radius:4px; padding:4px 3px; cursor:pointer; }
 .crumbs button:hover, .crumbs button:focus-visible { color:var(--text); text-decoration:underline; text-underline-offset:3px; outline:none; }

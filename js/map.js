@@ -546,6 +546,22 @@ function closeLeaf() {
     if (wasMap) fitAll();
 }
 
+function leafGoal(d) {
+    const r = d && d.progress && d.progress.record;
+    if (!r) return "";
+    const cut = (s, k) => {
+        s = String(s || "");
+        return s.length > k ? s.slice(0, k - 1).replace(/\s+\S*$/, "") + "…" : s;
+    };
+    const g = r.goal, ih = r.inherited, b = r.baseline, a = r.attempt;
+    const red = r.state === "unknown" || a && a.stalled ? '<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:5px"></span>' : "";
+    const line = g ? `“${esc(cut(g.text, 160))}” <span class="lc-meta">${esc(cut((g.date ? g.date + " · " : "") + g.source, 90))}</span>` : ih ? `serves ${esc(ih.label || ih.from)}: “${esc(cut(ih.text, 130))}”` : r.state === "held (personal)" ? "personal: pieced together only in a personal task" : "no goal found in her words yet";
+    const m = r.metric ? `<div class="lc-meta">measure: ${esc(cut(r.metric, 90))}${b && b.value != null ? " · today " + esc(String(b.value)) : ""}${r.target ? " · target " + esc(r.target) : ""}</div>` : "";
+    const at = a ? `<div class="lc-meta">last attempt: ${esc(a.method || "-")}${a.decision ? " · " + esc(a.decision) : ""}${a.task ? " · " + esc(a.task) : ""}${a.stalled ? " · stalled" : ""}</div>` : "";
+    const more = (r.more || []).slice(0, 5).map(l => `<div class="lc-meta" style="margin:1px 0">– ${esc(cut(l.text, 110))} <i>(${esc(cut(l.source.replace(/https?:\/\/[^ )]+/g, "").replace(/\(screenshot[^)]*\)/g, ""), 50))})</i></div>`).join("");
+    return `<div class="lc-goal" style="margin-top:6px;border-top:1px solid #E5E5E5;padding-top:6px"><div class="lc-meta">${red}goal · ${esc(r.state)}</div><p style="margin:2px 0">${line}</p>${more}${m}${at}</div>`;
+}
+
 function renderLeafCap() {
     const el = document.getElementById("leafCap");
     if (!el) return;
@@ -559,7 +575,7 @@ function renderLeafCap() {
     const cut = (s, k) => s.length > k ? s.slice(0, k - 1).replace(/\s+\S*$/, "") + "…" : s;
     const why = txt(d.why || d.caption), sl = txt(d.statusLine);
     const st = e.status === "needs-you" ? "needs-you" : e.status === "working" ? "working" : e.status === "waiting" ? "waiting" : e.status === "queued" ? "queued" : "done";
-    el.innerHTML = `<div class="lc-title"><span class="dot ${st}"></span>${esc(e.label)}</div>${why ? `<p>${esc(cut(why, 220))}</p>` : ""}${sl && sl !== why ? `<div class="lc-meta">${esc(cut(sl, 120))}</div>` : ""}`;
+    el.innerHTML = `<div class="lc-title"><span class="dot ${st}"></span>${esc(e.label)}</div>${why ? `<p>${esc(cut(why, 220))}</p>` : ""}${sl && sl !== why ? `<div class="lc-meta">${esc(cut(sl, 120))}</div>` : ""}${PUBLIC ? "" : leafGoal(d)}`;
     el.hidden = false;
 }
 
@@ -693,7 +709,7 @@ function renderCodeFab() {
     renderRepoChip();
     const fab = document.getElementById("codeFab");
     if (!fab) return;
-    const id = !STILL && !PUBLIC && (!LEAF || LEAFMAP) ? codeDotOf(ROOT) : null;
+    const id = null;
     fab.hidden = !id;
     fab.dataset.dot = id || "";
     if (id) {
@@ -822,6 +838,56 @@ function syncURL() {
     } catch {}
 }
 
+let WGH_IDX = null, WGH_SRC = null;
+
+function wghOf(id) {
+    if (PUBLIC || !DATA) return null;
+    if (WGH_SRC !== DATA) {
+        WGH_SRC = DATA;
+        WGH_IDX = {};
+        (function walk(ns) {
+            for (const p of ns || []) {
+                if (p && p.progress && p.progress.wgh) WGH_IDX[p.id] = p.progress.wgh;
+                walk(p && p.children);
+            }
+        })(DATA.projects);
+    }
+    return WGH_IDX[id] || null;
+}
+
+window.nsWghOf = wghOf;
+
+function goalFor(id) {
+    for (let k = id, i = 0; k && i < 16; k = FULL.e[k] && FULL.e[k].up, i++) {
+        const w = wghOf(k);
+        if (w && w.goal) return {
+            w: wghOf(id) || {},
+            g: w.goal,
+            from: k === id ? null : k
+        };
+    }
+    return {
+        w: wghOf(id) || {},
+        g: null,
+        from: null
+    };
+}
+
+function goalCard(id) {
+    const clipTxt = (x, n) => {
+        x = String(x || "").replace(/\s+/g, " ").trim();
+        return x.length > n ? x.slice(0, n - 1).replace(/\s+\S*$/, "") + "…" : x;
+    };
+    const {w: w, g: g, from: from} = goalFor(id);
+    if (!g && !w.why) return "";
+    const lab = x => esc((FULL.e[x] || {}).label || x);
+    const pct = g && g.grade != null ? Math.round(g.grade * 100) : null;
+    const bar = g ? `<span class="cg-bar${pct == null ? " none" : ""}"><i style="width:${pct == null ? 0 : Math.max(pct, 1)}%"></i></span><span class="cg-pct">${pct == null ? g.value == null ? "not measured" : "no number target" : pct + "%"}</span>` : "";
+    const now = g && g.value != null ? ` · now ${esc(String(g.value))}${g.start != null && g.start !== g.value ? " from " + esc(String(g.start)) : ""}` : "";
+    const parts = [ "why", "goal", "how" ].map(k => `<span class="cg-p${(k === "why" ? w.why : k === "goal" ? w.goal : w.how && w.how.own) ? " on" : ""}">${k}</span>`).join("");
+    return `<div class="crumb-goal" id="crumbGoal" role="button" tabindex="0" title="open why / goal / how with sources">\n    <div class="cg-row"><b>GOAL</b>${from ? `<span class="cg-from">serves ${lab(from)}</span>` : ""}${parts}</div>\n    <div class="cg-text">${g ? esc(clipTxt(g.metric, 110)) + (g.target ? " · " + esc(g.target) : "") + now : "“" + esc(clipTxt(w.why.text, 110)) + "”"}</div>\n    ${bar ? `<div class="cg-row">${bar}</div>` : ""}${g && w.why ? `<div class="cg-why">why · “${esc(clipTxt(w.why.text, 90))}”</div>` : ""}</div>`;
+}
+
 function renderCrumbs() {
     renderDocFab();
     renderCodeFab();
@@ -851,7 +917,7 @@ function renderCrumbs() {
     }, ...items.slice(-2) ];
     const rd = ROOT && FULL.e[ROOT] && FULL.e[ROOT].det;
     const chip = "";
-    el.innerHTML = items.map((c, i) => (i ? '<i aria-hidden="true">›</i>' : "") + (i === items.length - 1 ? `<b aria-current="page">${esc(c.label)}</b>` : `<button type="button" data-go="${esc(c.id)}">${esc(c.label)}</button>`)).join("") + chip;
+    el.innerHTML = items.map((c, i) => (i ? '<i aria-hidden="true">›</i>' : "") + (i === items.length - 1 ? `<b aria-current="page">${esc(c.label)}</b>` : `<button type="button" data-go="${esc(c.id)}">${esc(c.label)}</button>`)).join("") + chip + (LEAF && !LEAFMAP ? "" : goalCard(cur));
     el.hidden = false;
     document.body.classList.add("has-crumbs");
 }
@@ -861,6 +927,11 @@ function renderCrumbs() {
     if (cr) cr.addEventListener("click", e => {
         if (e.target.closest("#crumbPlan")) {
             if (LEAF && LEAF === ROOT) closeLeaf(); else window.nsOpenVisual();
+            return;
+        }
+        if (e.target.closest("#crumbGoal")) {
+            const k = LEAF || ROOT, n = byId[k];
+            if (n) openPanel(n, "status"); else if (window.nsDotView) window.nsDotView(k);
             return;
         }
         const b = e.target.closest("button[data-go]");
@@ -2084,6 +2155,28 @@ function draw() {
                 ctx.fill();
                 ctx.stroke();
             }
+            {
+                const wg = !PUBLIC && !STILL && wghOf(n.id);
+                if (wg && wg.goal) {
+                    const R = n.r + 3.2;
+                    ctx.save();
+                    ctx.globalAlpha = a0;
+                    ctx.setLineDash([]);
+                    ctx.strokeStyle = "#D6D6D6";
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc(n.x, n.y, R, 0, 7);
+                    ctx.stroke();
+                    if (wg.goal.grade != null && wg.goal.grade > 0) {
+                        ctx.strokeStyle = "#000";
+                        ctx.lineWidth = 2.4;
+                        ctx.beginPath();
+                        ctx.arc(n.x, n.y, R, -Math.PI / 2, -Math.PI / 2 + Math.max(.04, wg.goal.grade) * Math.PI * 2);
+                        ctx.stroke();
+                    }
+                    ctx.restore();
+                }
+            }
             if (n.find) {
                 ctx.fillStyle = "#555";
                 ctx.font = `700 ${Math.round(n.r * 1.15)}px Inter, sans-serif`;
@@ -2126,6 +2219,18 @@ function draw() {
                 ctx.strokeStyle = "#FFF";
                 ctx.lineWidth = 1.6;
                 ctx.stroke();
+            }
+            {
+                const rc = !PUBLIC && (DETAILS[n.id] || {}).progress?.record;
+                if (rc && (rc.state === "unknown" || rc.attempt?.stalled)) {
+                    ctx.fillStyle = css("--red") || "#D32F2F";
+                    ctx.beginPath();
+                    ctx.arc(n.x + n.r * .72, n.y + n.r * .72, 3.4, 0, 7);
+                    ctx.fill();
+                    ctx.strokeStyle = "#FFF";
+                    ctx.lineWidth = 1.2;
+                    ctx.stroke();
+                }
             }
             const owe = n.type === "project" && window.PEOPLE_OWED && window.PEOPLE_OWED[n.id];
             if (owe) {
@@ -2830,6 +2935,10 @@ function openPanel(n, tab) {
         return;
     }
     let html = "";
+    {
+        const wg = !PUBLIC && wghOf(target.id);
+        if (wg && window.nsWghBlock) html += window.nsWghBlock(wg);
+    }
     const isNow = !!(ROOT && target.id === ROOT && window.nsDotView);
     if (isNow) html += `<div class="now-view" data-dot="${esc(target.id)}">${nowHtml(window.nsDotView.build(DATA, target.id))}</div>`;
     if (d.asks && d.asks.length && !isNow) html += `<div class="card"><h4>Needs you — ${d.asks.length} question${d.asks.length > 1 ? "s" : ""}</h4><ul>${d.asks.map(a => `<li class="hot"><b>${esc(a.title)}</b></li>`).join("")}</ul>\n      <div class="ask" style="cursor:pointer" onclick="openInbox('${target.id}')"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> Answer in the inbox</div></div>`;
@@ -2859,9 +2968,16 @@ function openPanel(n, tab) {
     if (target.id !== FULL.hub && (folder || d.resume)) {
         html += `<div class="panel-actions">\n      ${folder ? `<button class="topbtn" onclick="location.href='http://localhost:4000/#folder=${folder}'">Open in Dev Hub</button>` : ""}\n      ${d.resume ? `<button class="topbtn primary" onclick="resumeConvo('${d.resume.cliSessionId}','${d.resume.cwd}')">Resume in Terminal</button>` : ""}\n    </div>`;
     }
+    if (!isNow && !PUBLIC && target.id !== FULL.hub) html += `<div class="code-slot" data-dot="${esc(target.id)}"></div>`;
     pBody.innerHTML = html;
     const live = pBody.querySelector(".live-refs");
     if (live) fillLiveRefs(live);
+    const cs = pBody.querySelector(".code-slot");
+    if (cs) fetch(macUrl("/api/dot-view?id=" + encodeURIComponent(cs.dataset.dot)), {
+        cache: "no-store"
+    }).then(r => r.ok ? r.json() : null).then(v => {
+        if (v && v.code && cs.isConnected) cs.innerHTML = codeCard(v.code);
+    }).catch(() => {});
     const nowEl = pBody.querySelector(".now-view");
     if (nowEl) fillNow(nowEl);
 }
@@ -2897,8 +3013,38 @@ function nowHtml(v) {
     const docs = [ ...v.docs.latest, ...v.docs.past ], link = x => `<li><a href="${esc(macUrl(x.href))}" target="_blank" rel="noopener">${esc(x.label)}</a>${md(x)}</li>`;
     if (docs.length) h += card("Docs", ul(v.docs.latest.map(link)) + (v.docs.past.length ? `<details><summary style="cursor:pointer;color:var(--text-muted)">past · ${v.docs.past.length}</summary>${ul(v.docs.past.map(link))}</details>` : ""));
     if (v.convo && v.convo.length) h += card("Conversation — your newest words here", ul(v.convo.slice(0, 5).map(c => `<li><b>${esc(dd(c.at))}</b> ${esc(c.text)}${md(c)}</li>`)) + (v.convo.length > 5 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">older · ${v.convo.length - 5}</summary>${ul(v.convo.slice(5).map(c => `<li><b>${esc(dd(c.at))}</b> ${esc(c.text)}${md(c)}</li>`))}</details>` : ""));
+    if (v.code) h += codeCard(v.code);
     if (v.progress.length) h += card("Where it stands", ul(v.progress.slice(0, 4).map(l => `<li><b>${esc(l.day.slice(5).replace("-", "/"))}</b> ${esc(l.text)}</li>`)));
     return h;
+}
+
+function codeCard(c) {
+    const muted = t => `<span style="color:var(--text-muted)">${t}</span>`, dd = iso => {
+        const t = new Date(iso);
+        return isNaN(t) ? "" : `${t.getMonth() + 1}/${t.getDate()}`;
+    };
+    const bar = (name, n, max) => `<div style="display:flex;align-items:center;gap:8px;font-size:12px;line-height:1.3;margin:2px 0"><span style="flex:0 0 38%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--mono)">${esc(name)}</span><span style="flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden"><span style="display:block;height:100%;width:${Math.max(3, Math.round(100 * n / max))}%;background:var(--text)"></span></span><span style="flex:0 0 auto;color:var(--text-muted);font-family:var(--mono)">${n}</span></div>`;
+    const place = (r, label) => {
+        if (r.remote) return `<li><b>${esc(label || r.name)}</b> ${muted("on the " + esc(r.where) + " · " + esc(r.vis))}</li>`;
+        if (r.missing) return `<li class="hot"><b>${esc(label || r.path)}</b> folder is gone</li>`;
+        const name = r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(label || r.name || r.path)}</a>` : `<b>${esc(label || r.name || r.path)}</b>`;
+        const top = r.top || [], max = Math.max(1, ...top.map(t => t.files));
+        return `<li>${name} ${muted(esc(r.path) + " · " + r.files + " files" + (r.url ? "" : " · private") + (r.lastCommit ? " · last commit " + dd(r.lastCommit) : ""))}${r.uncommitted ? ` <span style="color:var(--wait)">· ${r.uncommitted} not committed</span>` : ""}${top.length > 1 ? `<div style="margin:5px 0 2px">${top.map(t => bar(t.name, t.files, max)).join("")}</div>` : ""}</li>`;
+    };
+    let b = "";
+    if (c.folder) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:2px 0 4px">ITS FOLDER</div><ul>${place(c.folder, c.folder.path)}</ul>`;
+    if (c.repos.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">${c.via === "above" ? "IN THE REPO OF " + esc(byId[c.from] && byId[c.from].label || c.from) : c.via === "parts" ? "ITS PARTS · " + c.parts.map(p => esc(p.label)).join(", ") : "REPOS"}</div>` + `<ul>${(c.via === "own" ? c.repos.map(r => place(r)) : c.repos.map(r => `<li><b>${esc(r.name)}</b> ${muted(r.remote ? "on the " + esc(r.where) : r.files + " files" + (r.lastCommit ? " · last commit " + dd(r.lastCommit) : ""))}${r.uncommitted ? ` <span style="color:var(--wait)">· ${r.uncommitted} not committed</span>` : ""}</li>`)).join("")}</ul>`;
+    const runs = c.via === "parts" ? [] : c.runs || [], job = j => `<li><b>${esc(j.name.replace(/^com\.susu\./, ""))}</b> ${muted(esc(j.when) + (j.runs.length ? " · " + esc(j.runs.filter(x => !/heartbeat\.mjs$/.test(x)).join(", ") || j.runs[0]) : ""))}</li>`;
+    if (runs.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT RUNS IT · ${runs.length} job${runs.length === 1 ? "" : "s"}</div><ul>${runs.slice(0, 4).map(job).join("")}</ul>` + (runs.length > 4 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">all ${runs.length}</summary><ul>${runs.slice(4).map(job).join("")}</ul></details>` : ""); else if (c.npm && c.npm.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT RUNS IT</div><p style="margin:0;font-size:12px">${esc(c.npm.join(" · "))}</p>`;
+    const f = c.faults || [], fl = x => `<li style="${x.level === "red" ? "color:var(--red)" : "color:var(--wait)"}">${esc(x.text)}</li>`;
+    if (f.length) b += `<div style="font-size:11px;font-weight:600;color:var(--text-muted);margin:8px 0 4px">WHAT IS WRONG · ${f.length}</div><ul>${f.slice(0, 4).map(fl).join("")}</ul>` + (f.length > 4 ? `<details><summary style="cursor:pointer;color:var(--text-muted)">all ${f.length}</summary><ul>${f.slice(4).map(fl).join("")}</ul></details>` : "");
+    if (c.tree) b += `<div class="ask" style="margin-top:8px"><a href="${esc(macUrl(c.tree.href))}" target="_blank" rel="noopener">every file, import and store</a> ${muted(c.tree.scannedAt ? "parsed " + esc(new Date(c.tree.scannedAt).toLocaleString("en-US", {
+        month: "numeric",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit"
+    })) : "")}</div>`;
+    return `<div class="card code-card"><h4>Code ${muted("· read now from the repo")}</h4>${b}</div>`;
 }
 
 function fillNow(el) {

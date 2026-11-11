@@ -93,6 +93,7 @@
         const id = target.id, n = byId[id] || target, d = DETAILS[id] || {};
         VIEW = id;
         const parts = [];
+        if (d.progress && d.progress.wgh && !window.NS_PUBLIC) parts.push(wghBlock(d.progress.wgh));
         parts.push(`<div id="vwAgents">${agentStrip(id)}</div>`);
         const hero = [];
         (d.cases || (d.case ? [ d.case ] : [])).forEach(c => hero.push(caseCard(c)));
@@ -136,6 +137,7 @@
         const out = [];
         if (p.top) out.push(row("hangs from · the top goal", `Mittens is reliable: “${esc(clip(p.top.goal, 160))}”`, [ p.top.measure ? esc(p.top.measure) : "", "from " + esc(clip(p.top.source || "", 90)) ].filter(Boolean).join(" · ")));
         if (p.serves) out.push(row("serves · " + esc(p.serves.life), `<a href="${esc(p.serves.page)}" target="_blank" style="text-decoration:underline">${esc(p.serves.branch)}</a>`, "her Odyssey plan · guiding page"));
+        if (p.record) out.push(recordRow(p.record, row));
         if (p.goal) out.push(row("goal" + (p.deadline ? ` · by ${esc(p.deadline)}` : ""), `“${esc(p.goal)}”`, [ p.why ? "why: " + esc(clip(p.why, 160)) : "", "from " + esc(clip(p.goalSource || "", 90)) ].filter(Boolean).join(" · ")));
         if (p.goal && (p.who || p.measure || p.stage || p.loop)) {
             const ST = [ "plan", "research", "design", "prototype", "experiment", "measure" ], AL = {
@@ -158,6 +160,35 @@
         if (p.summary) out.push(row(`where it is · ${esc(p.summaryDay || "")}`, esc(p.summary), p.sources ? `${p.sources} source${p.sources > 1 ? "s" : ""} · built by code from tasks, notes and the activity log` : ""));
         if ((p.next || []).length) out.push(row("next", p.next.map(s => `<div>– ${esc(clip(s, 160))}</div>`).join("")));
         return out.length ? `<div class="vw-block vw-progress" style="margin:4px 0 14px">${out.join("")}</div>` : "";
+    }
+    window.nsGoalBar = function(g, w) {
+        if (!g) return "";
+        const pct = g.grade == null ? null : Math.round(g.grade * 100);
+        return `<div style="display:flex;align-items:center;gap:8px;margin:4px 0"><div style="flex:1;height:6px;border:1px solid var(--text-dim);position:relative;${pct == null ? "border-style:dashed" : ""}">${pct == null ? "" : `<div style="position:absolute;left:0;top:0;bottom:0;width:${Math.max(pct, 1)}%;background:var(--text)"></div>`}</div><span class="vw-meta" style="white-space:nowrap">${pct == null ? g.value == null ? "not measured yet" : "no number target" : pct + "%"}</span></div>`;
+    };
+    window.nsWghBlock = w => wghBlock(w);
+    function wghBlock(w) {
+        const src = x => `<div class="vw-meta">${esc(clip(x || "", 160))}</div>`;
+        const sec = (cap, body) => `<div style="margin-bottom:10px"><div class="vw-cap" style="font-weight:600;letter-spacing:.08em">${cap}</div><div style="color:var(--text);font-size:13px;line-height:1.45">${body}</div></div>`;
+        const up = w.inheritedFrom ? ` · serves <a data-jump="${esc(w.inheritedFrom)}" style="text-decoration:underline;cursor:pointer">${esc(w.inheritedFrom)}</a>` : "";
+        const why = w.why ? `“${esc(clip(w.why.text, 260))}”${src((w.why.date ? w.why.date + " · " : "") + w.why.source)}` : `<span class="vw-meta">not found in her own words yet${up}</span>`;
+        const g = w.goal;
+        const goal = g ? `${esc(clip(g.metric, 160))}<div>${g.target ? "target " + esc(g.target) : ""}${g.value != null ? ` · now ${esc(String(g.value))}${g.start != null && g.start !== g.value ? " (from " + esc(String(g.start)) + ")" : ""}` : ""}${g.unit && g.value != null ? " " + esc(clip(g.unit, 60)) : ""}</div>${window.nsGoalBar(g)}${src(g.source)}${g.wired === "no" || g.missing ? src("not wired: " + (g.missing || "no reader yet")) : ""}` : `<span class="vw-meta">no measure of its own yet${up}</span>`;
+        const h = w.how;
+        const how = h ? (h.steps || []).map(x => `<div style="margin:2px 0">– ${esc(clip(x.text, 170))}${src(x.source)}</div>`).join("") + ((h.design || []).length ? `<div style="margin-top:4px">design: ${h.design.map(x => esc(clip(x.text, 80))).join(" · ")}</div>${src(h.design.map(x => x.source).join(" · "))}` : "") + `<div class="vw-meta">${esc(h.state || "")}</div>` : '<span class="vw-meta">no researched plan yet -- the overseer adds sourced methods on its next attempt</span>';
+        return `<div class="vw-block vw-wgh" style="margin:4px 0 14px;padding:10px 12px;border:1px solid var(--border)">${sec("WHY", why)}${sec("GOAL", goal)}${sec("HOW", how)}<div class="vw-meta">${w.parts} of 3 parts its own · core/goals/wgh.mjs</div></div>`;
+    }
+    function recordRow(r, row) {
+        const g = r.goal, ih = r.inherited, src = x => `<span class="vw-meta">${esc(clip(x || "", 140))}</span>`;
+        const body = g ? `“${esc(clip(g.text, 220))}”<div>${src((g.date ? g.date + " · " : "") + g.source)}</div>` : ih ? `serves <a data-jump="${esc(ih.from)}" style="text-decoration:underline;cursor:pointer">${esc(ih.label || ih.from)}</a>: “${esc(clip(ih.text, 180))}”<div>${src(ih.source)}</div>` : r.state === "held (personal)" ? "personal dot: its goal is pieced together only inside a personal task" : `no goal found in her words yet${r.searched ? `<div>${src("searched: " + r.searched.join("; "))}</div>` : ""}`;
+        const more = (r.more || []).map(l => `<div style="margin:2px 0">– ${esc(clip(l.text, 160))} ${src(l.source)}</div>`).join("");
+        const b = r.baseline, m = r.metric ? `<div>measure: ${esc(clip(r.metric, 160))}${r.target ? " · target " + esc(r.target) : ""}${b ? ` · today ${b.value ?? "-"} ${esc(clip(b.unit || "", 60))}` : ""}</div><div>${src([ r.metricFrom, b?.source ].filter(Boolean).join(" · "))}</div>` : '<div class="vw-meta">no outcome metric named yet</div>';
+        const tn = +String(r.target || "").replace(/[^0-9.]/g, ""), bv = b && Number.isFinite(+b.value) && b.value !== null ? +b.value : null;
+        const up = /at least/.test(r.target || ""), pct = bv == null || !/\d/.test(r.target || "") ? null : up ? tn > 0 ? Math.min(1, bv / tn) : 1 : bv <= tn ? 1 : Math.max(.04, tn / bv);
+        const bar = pct == null ? "" : `<div style="display:flex;align-items:center;gap:8px;margin:4px 0"><div style="flex:1;height:6px;border:1px solid var(--text-dim);position:relative"><div style="position:absolute;left:0;top:0;bottom:0;width:${Math.round(pct * 100)}%;background:var(--text)"></div></div><span class="vw-meta">${bv} → ${esc(r.target)}</span></div>`;
+        const a = r.attempt, at = a ? `<div>last attempt: ${esc(a.method || "-")}${a.decision ? " · " + esc(a.decision) : ""}${a.task ? " · " + esc(a.task) : ""}${a.at ? " · " + esc(String(a.at).slice(0, 10)) : ""} · ${a.attempts} attempt${a.attempts === 1 ? "" : "s"}${a.pivots ? ", " + a.pivots + " pivot" + (a.pivots === 1 ? "" : "s") : ""}${a.stalled ? ' <b style="color:var(--red)">stalled</b>' : ""}</div>` : '<div class="vw-meta">no overseer attempt yet</div>';
+        const flag = r.state === "unknown" || a?.stalled ? '<span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--red);margin-right:5px"></span>' : "";
+        return row(`${flag}goal record · ${esc(r.state)}${r.client ? " · from client evidence" : ""}`, body + more + m + bar + at, r.serves ? `serves her Odyssey plan · ${esc(r.serves.life)} · ${esc(r.serves.branch)}` : "");
     }
     function questionCols(qs) {
         const COLS = [ [ "research", "research" ], [ "data", "needs data" ], [ "her", "needs you" ] ];
