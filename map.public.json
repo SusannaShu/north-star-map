@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T05:32:59.407Z",
+ "generatedAt": "2026-11-11T06:11:36.494Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -207,7 +207,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "paused for the redesign",
    "caption": "Spread the vision and actually sell:",
@@ -296,6 +296,55 @@
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens",
+   "label": "MITTENS",
+   "status": "working",
+   "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
+   "statusLine": "active · being rebuilt",
+   "caption": "All my bots, digital and physical:",
+   "stage": "active",
+   "embed": "pages/mittens.html",
+   "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "mittens-open",
+     "url": "https://github.com/SusannaShu/mittens-open"
+    },
+    {
+     "vis": "public",
+     "name": "omi",
+     "url": "https://github.com/BasedHardware/omi"
+    },
+    {
+     "vis": "private"
+    }
+   ],
+   "parked": false,
+   "children": [
+    {
+     "id": "code-mittens",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
+     "statusLine": "six coded parts mapped",
+     "caption": "I map every coded part of Mittens, from the app and devices to the soft robot and pendant, into one tree that mirrors the real code.",
+     "stage": "active",
+     "embed": "pages/code-mittens.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital",
+      "soft-robot",
+      "omi",
+      "pendant",
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "case study"
   },
   {
    "id": "mittens-hw",
@@ -678,130 +727,94 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "mittens-digital",
-   "label": "APP & DEVICES",
+   "id": "northstar",
+   "label": "NORTH STAR MAP",
    "status": "idle",
-   "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
-   "statusLine": "active",
-   "caption": "The digital half of Mittens:",
+   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
+   "statusLine": "active · busy week",
+   "caption": "The map itself:",
    "stage": "active",
-   "embed": "pages/mittens-digital.html",
+   "embed": "pages/northstar.html",
    "visibility": "public",
    "codeRepos": [
-    {
-     "vis": "public",
-     "name": "mittens-open",
-     "url": "https://github.com/SusannaShu/mittens-open"
-    },
     {
      "vis": "private"
     }
    ],
-   "parent": "mittens",
    "parked": false,
    "children": [
     {
-     "id": "mittens-ota",
-     "label": "UPDATES ANYWHERE",
+     "id": "ns-desk",
+     "label": "NORTH STAR DESK",
      "status": "idle",
-     "why": "App updates reach the phone anywhere, signed and served from the home server -- no waiting for home Wi-Fi.",
-     "statusLine": "live",
-     "caption": "App updates reach the phone anywhere, signed and served from the home server -- no waiting for home Wi-Fi.",
-     "stage": "active",
-     "embed": "pages/mittens-ota.html",
-     "visibility": "public",
-     "links": [
-      "mittens-app"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-ui-parity",
-     "label": "I CAN DO WHAT MITTENS DOES",
-     "status": "idle",
-     "why": "Anything my agent can do to an item, I should be able to do with one tap. Each item page now has buttons for done, waiting, snooze, do it now and send to another device.",
-     "statusLine": "built · playback controls added",
-     "caption": "Anything my agent can do to an item, I should be able to do with one tap.",
-     "stage": "active",
-     "embed": "pages/mittens-ui-parity.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-workstation",
-     "label": "MITTENS WORKSTATION",
-     "status": "done",
-     "why": "A narrow Mittens column beside the map on the desktop: today, chat, workers and the action tree at a glance.",
-     "statusLine": "done",
-     "caption": "A narrow Mittens column beside the map on the desktop:",
+     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
+     "statusLine": "done · panes now searchable",
+     "caption": "A native desktop app that tiles the open pages in one window:",
      "stage": "done",
-     "embed": "pages/mittens-workstation.html",
+     "embed": "pages/ns-desk.html",
      "visibility": "public",
      "links": [
-      "mittens-desktop",
       "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "devices",
-     "label": "DEVICES",
+     "id": "grand-threads",
+     "label": "GRAND THREADS",
      "status": "idle",
-     "why": "A duplicate devices dot that got folded back into the main one.",
-     "statusLine": "merged · duplicate",
-     "caption": "A duplicate devices dot that got folded back into the main one.",
-     "stage": "done",
-     "embed": "pages/devices.html",
-     "visibility": "public",
-     "links": [
-      "mittens-digital"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-self-improve",
-     "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
-     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-     "statusLine": "live · learns nightly and from my words",
-     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
+     "statusLine": "built · chat threads tied to dots",
+     "caption": "Each dot on my map is now a chat thread.",
      "stage": "active",
-     "embed": "pages/mittens-self-improve.html",
+     "embed": "pages/grand-threads.html",
      "visibility": "public",
      "links": [
-      "aurora",
-      "brain-architecture"
+      "work-in-threads"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "mittens-ask-guard",
-     "label": "EVERY ASK BECOMES A TASK",
+     "id": "north-star-map",
+     "label": "NORTH STAR MAP",
      "status": "idle",
-     "why": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone. A guard checks each thing I said once the turn ends and files anything that was missed.",
-     "statusLine": "restored · live",
-     "caption": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone.",
+     "why": "This is the working thread for the map that holds my projects and agents.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the map that holds my projects and agents.",
      "stage": "active",
-     "embed": "pages/mittens-ask-guard.html",
+     "embed": "pages/north-star-map.html",
      "visibility": "public",
      "links": [
-      "mittens-self-improve",
-      "mittens-chat-threads"
+      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "code-mittens-digital",
+     "id": "north-star-as-product",
+     "label": "NORTH STAR AS PRODUCT",
+     "status": "idle",
+     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "statusLine": "exploring the idea",
+     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "stage": "active",
+     "embed": "pages/north-star-as-product.html",
+     "visibility": "public",
+     "links": [
+      "aurora"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-northstar",
      "label": "CODE ARCHITECTURE",
      "status": "idle",
-     "why": "This branch is mapped straight from the code: the Mittens phone app with chat, talk, glasses and day views, the open pendant capture and its triage, and the core skills.",
+     "why": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain: the server, the loop pipelines and the pages.",
      "statusLine": "mapped from the code · rescanned",
-     "caption": "This branch is mapped straight from the code:",
+     "caption": "This branch is mapped straight from the code of the map itself, which is also Mittens' brain:",
      "stage": "active",
-     "embed": "pages/code-mittens-digital.html",
+     "embed": "pages/code-northstar.html",
      "visibility": "public",
      "links": [
-      "mittens-digital"
+      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -823,21 +836,6 @@
    ],
    "embed": "pages/wearables.html",
    "visibility": "public",
-   "codeRepos": [
-    {
-     "vis": "public",
-     "name": "omi",
-     "url": "https://github.com/BasedHardware/omi"
-    },
-    {
-     "vis": "public",
-     "name": "mittens-open",
-     "url": "https://github.com/SusannaShu/mittens-open/tree/main/mittens_pendant"
-    },
-    {
-     "vis": "private"
-    }
-   ],
    "parent": "mittens",
    "parked": false,
    "children": [
@@ -1208,6 +1206,168 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-digital",
+   "label": "APP & DEVICES",
+   "status": "working",
+   "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
+   "statusLine": "active",
+   "caption": "The digital half of Mittens:",
+   "stage": "active",
+   "embed": "pages/mittens-digital.html",
+   "visibility": "public",
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "mittens-open",
+     "url": "https://github.com/SusannaShu/mittens-open"
+    },
+    {
+     "vis": "private"
+    }
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-ota",
+     "label": "UPDATES ANYWHERE",
+     "status": "idle",
+     "why": "App updates reach the phone anywhere, signed and served from the home server -- no waiting for home Wi-Fi.",
+     "statusLine": "live",
+     "caption": "App updates reach the phone anywhere, signed and served from the home server -- no waiting for home Wi-Fi.",
+     "stage": "active",
+     "embed": "pages/mittens-ota.html",
+     "visibility": "public",
+     "links": [
+      "mittens-app"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-ui-parity",
+     "label": "I CAN DO WHAT MITTENS DOES",
+     "status": "idle",
+     "why": "Anything my agent can do to an item, I should be able to do with one tap. Each item page now has buttons for done, waiting, snooze, do it now and send to another device.",
+     "statusLine": "built · playback controls added",
+     "caption": "Anything my agent can do to an item, I should be able to do with one tap.",
+     "stage": "active",
+     "embed": "pages/mittens-ui-parity.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-workstation",
+     "label": "MITTENS WORKSTATION",
+     "status": "done",
+     "why": "A narrow Mittens column beside the map on the desktop: today, chat, workers and the action tree at a glance.",
+     "statusLine": "done",
+     "caption": "A narrow Mittens column beside the map on the desktop:",
+     "stage": "done",
+     "embed": "pages/mittens-workstation.html",
+     "visibility": "public",
+     "links": [
+      "mittens-desktop",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "devices",
+     "label": "DEVICES",
+     "status": "idle",
+     "why": "A duplicate devices dot that got folded back into the main one.",
+     "statusLine": "merged · duplicate",
+     "caption": "A duplicate devices dot that got folded back into the main one.",
+     "stage": "done",
+     "embed": "pages/devices.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-self-improve",
+     "label": "SELF-IMPROVING LOOP",
+     "status": "idle",
+     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
+     "statusLine": "live · learns nightly and from my words",
+     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+     "stage": "active",
+     "embed": "pages/mittens-self-improve.html",
+     "visibility": "public",
+     "links": [
+      "aurora",
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-ask-guard",
+     "label": "EVERY ASK BECOMES A TASK",
+     "status": "idle",
+     "why": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone. A guard checks each thing I said once the turn ends and files anything that was missed.",
+     "statusLine": "restored · live",
+     "caption": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone.",
+     "stage": "active",
+     "embed": "pages/mittens-ask-guard.html",
+     "visibility": "public",
+     "links": [
+      "mittens-self-improve",
+      "mittens-chat-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "code-mittens-digital",
+     "label": "CODE ARCHITECTURE",
+     "status": "idle",
+     "why": "This branch is mapped straight from the code: the Mittens phone app with chat, talk, glasses and day views, the open pendant capture and its triage, and the core skills.",
+     "statusLine": "mapped from the code · rescanned",
+     "caption": "This branch is mapped straight from the code:",
+     "stage": "active",
+     "embed": "pages/code-mittens-digital.html",
+     "visibility": "public",
+     "links": [
+      "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "manual-map",
+   "label": "MANUAL MAP",
+   "status": "idle",
+   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
+   "statusLine": "live · organized as a graph",
+   "caption": "Where \"how\" lives:",
+   "stage": "active",
+   "embed": "pages/manual-map.html",
+   "visibility": "public",
+   "parent": "devhub",
+   "parked": false,
+   "children": [
+    {
+     "id": "rule-saves-need-review",
+     "label": "RULE SAVES REVIEWED",
+     "status": "idle",
+     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
+     "statusLine": "in progress",
+     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
+     "stage": "active",
+     "embed": "pages/rule-saves-need-review.html",
+     "visibility": "public",
+     "links": [
+      "manual-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
    "status": "idle",
@@ -1263,37 +1423,6 @@
      "visibility": "public",
      "links": [
       "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "manual-map",
-   "label": "MANUAL MAP",
-   "status": "idle",
-   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
-   "statusLine": "live · organized as a graph",
-   "caption": "Where \"how\" lives:",
-   "stage": "active",
-   "embed": "pages/manual-map.html",
-   "visibility": "public",
-   "parent": "devhub",
-   "parked": false,
-   "children": [
-    {
-     "id": "rule-saves-need-review",
-     "label": "RULE SAVES REVIEWED",
-     "status": "idle",
-     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
-     "statusLine": "in progress",
-     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
-     "stage": "active",
-     "embed": "pages/rule-saves-need-review.html",
-     "visibility": "public",
-     "links": [
-      "manual-map"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -1746,94 +1875,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "context-graph",
-   "label": "CONTEXT GRAPH",
-   "status": "idle",
-   "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
-   "statusLine": "phase 3 built",
-   "caption": "Agents get only the context the situation needs:",
-   "stage": "active",
-   "embed": "pages/context-graph.html",
-   "visibility": "public",
-   "links": [
-    "mittens-daily",
-    "proactive-rules",
-    "map-upkeep"
-   ],
-   "parent": "manual-map",
-   "parked": false,
-   "children": [
-    {
-     "id": "context-map",
-     "label": "CONTEXT MAP",
-     "status": "idle",
-     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
-     "statusLine": "built",
-     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
-     "stage": "active",
-     "embed": "pages/context-map.html",
-     "visibility": "public",
-     "links": [
-      "brain-architecture",
-      "mittens-chat-threads",
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "shared-fetchable-agent-context",
-     "label": "SHARED AGENT CONTEXT",
-     "status": "done",
-     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-     "statusLine": "done · filed with the project",
-     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-     "stage": "done",
-     "embed": "pages/shared-fetchable-agent-context.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "one-mittens-brain",
-   "label": "ONE MITTENS BRAIN",
-   "status": "idle",
-   "why": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
-   "statusLine": "built · one shared brain",
-   "caption": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
-   "stage": "active",
-   "embed": "pages/one-mittens-brain.html",
-   "visibility": "public",
-   "links": [
-    "ns-talk",
-    "mittens-digital"
-   ],
-   "parent": "context-graph",
-   "parked": false,
-   "children": [
-    {
-     "id": "agent-swap",
-     "label": "AGENT SWAP",
-     "status": "idle",
-     "why": "The map and my assistant's memory are the real context, so any AI agent can plug in. When one runs out or goes down, the work moves to another automatically.",
-     "statusLine": "router live · fallback tested",
-     "caption": "The map and my assistant's memory are the real context, so any AI agent can plug in.",
-     "stage": "active",
-     "embed": "pages/agent-swap.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
    "status": "idle",
@@ -2271,6 +2312,94 @@
      "visibility": "public",
      "links": [
       "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "context-graph",
+   "label": "CONTEXT GRAPH",
+   "status": "idle",
+   "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
+   "statusLine": "phase 3 built",
+   "caption": "Agents get only the context the situation needs:",
+   "stage": "active",
+   "embed": "pages/context-graph.html",
+   "visibility": "public",
+   "links": [
+    "mittens-daily",
+    "proactive-rules",
+    "map-upkeep"
+   ],
+   "parent": "manual-map",
+   "parked": false,
+   "children": [
+    {
+     "id": "context-map",
+     "label": "CONTEXT MAP",
+     "status": "idle",
+     "why": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "statusLine": "built",
+     "caption": "One page for where each kind of context lives, so an agent always knows where to fetch it.",
+     "stage": "active",
+     "embed": "pages/context-map.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture",
+      "mittens-chat-threads",
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "shared-fetchable-agent-context",
+     "label": "SHARED AGENT CONTEXT",
+     "status": "done",
+     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "statusLine": "done · filed with the project",
+     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "stage": "done",
+     "embed": "pages/shared-fetchable-agent-context.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "one-mittens-brain",
+   "label": "ONE MITTENS BRAIN",
+   "status": "idle",
+   "why": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
+   "statusLine": "built · one shared brain",
+   "caption": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
+   "stage": "active",
+   "embed": "pages/one-mittens-brain.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk",
+    "mittens-digital"
+   ],
+   "parent": "context-graph",
+   "parked": false,
+   "children": [
+    {
+     "id": "agent-swap",
+     "label": "AGENT SWAP",
+     "status": "idle",
+     "why": "The map and my assistant's memory are the real context, so any AI agent can plug in. When one runs out or goes down, the work moves to another automatically.",
+     "statusLine": "router live · fallback tested",
+     "caption": "The map and my assistant's memory are the real context, so any AI agent can plug in.",
+     "stage": "active",
+     "embed": "pages/agent-swap.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3035,7 +3164,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -3094,92 +3223,6 @@
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
      "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "talk-phone-calls",
-   "label": "PHONE CALLS",
-   "status": "idle",
-   "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
-   "statusLine": "live",
-   "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
-   "stage": "active",
-   "embed": "pages/talk-phone-calls.html",
-   "visibility": "public",
-   "parent": "ns-talk",
-   "parked": false,
-   "children": [
-    {
-     "id": "mw-calls",
-     "label": "CALLS AS MITTENS",
-     "status": "idle",
-     "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "statusLine": "live · Mittens answers calls first",
-     "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
-     "stage": "active",
-     "embed": "pages/mw-calls.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mw-call-voice",
-     "label": "CALL VOICE",
-     "status": "done",
-     "why": "Phone calls that sound less like AI: a short opener, one sentence per turn, an instant \"mm-hm\", half-second turns -- free, no paid voice service.",
-     "statusLine": "done",
-     "caption": "Phone calls that sound less like AI:",
-     "stage": "done",
-     "embed": "pages/mw-call-voice.html",
-     "visibility": "public",
-     "links": [
-      "mw-calls"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mw-blind",
-     "label": "CAN'T SEE -> ASK",
-     "status": "idle",
-     "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
-     "statusLine": "built · spoken recaps planned",
-     "caption": "Glasses off or a useless frame:",
-     "stage": "active",
-     "embed": "pages/mw-blind.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "phone-calls",
-     "label": "PHONE CALLS",
-     "status": "idle",
-     "why": "This is the working thread for talking with my assistant over a phone call.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for talking with my assistant over a phone call.",
-     "stage": "active",
-     "embed": "pages/phone-calls.html",
-     "visibility": "public",
-     "links": [
-      "talk-phone-calls"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "you-didn-t-catch-any",
-     "label": "CALL VOICE ROLLBACK",
-     "status": "idle",
-     "why": "When a new voice sounds worse on a call, I want to be able to go back to the last good one.",
-     "statusLine": "being fixed",
-     "caption": "When a new voice sounds worse on a call, I want to be able to go back to the last good one.",
-     "stage": "active",
-     "embed": "pages/you-didn-t-catch-any.html",
-     "visibility": "public",
-     "links": [
-      "talk-phone-calls",
-      "nothing-ran-didn-t-hear"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -3289,6 +3332,92 @@
      "visibility": "public",
      "links": [
       "gospel"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "talk-phone-calls",
+   "label": "PHONE CALLS",
+   "status": "idle",
+   "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
+   "statusLine": "live",
+   "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
+   "stage": "active",
+   "embed": "pages/talk-phone-calls.html",
+   "visibility": "public",
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [
+    {
+     "id": "mw-calls",
+     "label": "CALLS AS MITTENS",
+     "status": "idle",
+     "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "statusLine": "live · Mittens answers calls first",
+     "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
+     "stage": "active",
+     "embed": "pages/mw-calls.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mw-call-voice",
+     "label": "CALL VOICE",
+     "status": "done",
+     "why": "Phone calls that sound less like AI: a short opener, one sentence per turn, an instant \"mm-hm\", half-second turns -- free, no paid voice service.",
+     "statusLine": "done",
+     "caption": "Phone calls that sound less like AI:",
+     "stage": "done",
+     "embed": "pages/mw-call-voice.html",
+     "visibility": "public",
+     "links": [
+      "mw-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mw-blind",
+     "label": "CAN'T SEE -> ASK",
+     "status": "idle",
+     "why": "Glasses off or a useless frame: one question through the speaker; no answer in a few minutes, Mittens calls.",
+     "statusLine": "built · spoken recaps planned",
+     "caption": "Glasses off or a useless frame:",
+     "stage": "active",
+     "embed": "pages/mw-blind.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "phone-calls",
+     "label": "PHONE CALLS",
+     "status": "idle",
+     "why": "This is the working thread for talking with my assistant over a phone call.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for talking with my assistant over a phone call.",
+     "stage": "active",
+     "embed": "pages/phone-calls.html",
+     "visibility": "public",
+     "links": [
+      "talk-phone-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "you-didn-t-catch-any",
+     "label": "CALL VOICE ROLLBACK",
+     "status": "idle",
+     "why": "When a new voice sounds worse on a call, I want to be able to go back to the last good one.",
+     "statusLine": "being fixed",
+     "caption": "When a new voice sounds worse on a call, I want to be able to go back to the last good one.",
+     "stage": "active",
+     "embed": "pages/you-didn-t-catch-any.html",
+     "visibility": "public",
+     "links": [
+      "talk-phone-calls",
+      "nothing-ran-didn-t-hear"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3841,6 +3970,37 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-architecture",
+   "label": "MITTENS ARCHITECTURE",
+   "status": "idle",
+   "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
+   "statusLine": "migration underway · first steps live",
+   "caption": "Personal data moves off the shared cloud backend onto a small home server:",
+   "stage": "active",
+   "embed": "pages/mittens-architecture.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-architecture-2",
+     "label": "MITTENS ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how the parts of my assistant fit together.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how the parts of my assistant fit together.",
+     "stage": "active",
+     "embed": "pages/mittens-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "mittens-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-makes-calls-for-her",
    "label": "AGENT MAKES CALLS",
    "status": "done",
@@ -4160,37 +4320,6 @@
     }
    ],
    "embedCaption": "case study"
-  },
-  {
-   "id": "mittens-architecture",
-   "label": "MITTENS ARCHITECTURE",
-   "status": "idle",
-   "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
-   "statusLine": "migration underway · first steps live",
-   "caption": "Personal data moves off the shared cloud backend onto a small home server:",
-   "stage": "active",
-   "embed": "pages/mittens-architecture.html",
-   "visibility": "public",
-   "parent": "mittens-digital",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-architecture-2",
-     "label": "MITTENS ARCHITECTURE",
-     "status": "idle",
-     "why": "This is where I work out how the parts of my assistant fit together.",
-     "statusLine": "in progress",
-     "caption": "This is where I work out how the parts of my assistant fit together.",
-     "stage": "active",
-     "embed": "pages/mittens-architecture-2.html",
-     "visibility": "public",
-     "links": [
-      "mittens-architecture"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "wake-report",
@@ -4520,6 +4649,43 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "watchdog",
+   "label": "WATCHDOG",
+   "status": "idle",
+   "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
+   "statusLine": "live",
+   "caption": "Nothing fails silently:",
+   "stage": "active",
+   "embed": "pages/watchdog.html",
+   "visibility": "public",
+   "links": [
+    "mittens-proactive",
+    "howto-routines",
+    "housekeeping"
+   ],
+   "parent": "ns-daily-loops",
+   "parked": false,
+   "children": [
+    {
+     "id": "mem-census-watchdog",
+     "label": "MEMORY WATCHDOG",
+     "status": "done",
+     "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
+     "statusLine": "merged into watchdog",
+     "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
+     "stage": "done",
+     "embed": "pages/mem-census-watchdog.html",
+     "visibility": "public",
+     "links": [
+      "watchdog",
+      "ns-daily-loops"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "learn-ep-french-1",
    "label": "FRENCH EPISODE ONE",
    "status": "done",
@@ -4758,43 +4924,6 @@
    "parent": "mittens-app",
    "parked": true,
    "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "watchdog",
-   "label": "WATCHDOG",
-   "status": "working",
-   "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
-   "statusLine": "live",
-   "caption": "Nothing fails silently:",
-   "stage": "active",
-   "embed": "pages/watchdog.html",
-   "visibility": "public",
-   "links": [
-    "mittens-proactive",
-    "howto-routines",
-    "housekeeping"
-   ],
-   "parent": "ns-daily-loops",
-   "parked": false,
-   "children": [
-    {
-     "id": "mem-census-watchdog",
-     "label": "MEMORY WATCHDOG",
-     "status": "done",
-     "why": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
-     "statusLine": "merged into watchdog",
-     "caption": "A watchdog that keeps count of what is using memory on my machines, so runaway jobs get caught early.",
-     "stage": "done",
-     "embed": "pages/mem-census-watchdog.html",
-     "visibility": "public",
-     "links": [
-      "watchdog",
-      "ns-daily-loops"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5731,78 +5860,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "ns-desk",
-   "label": "NORTH STAR DESK",
-   "status": "idle",
-   "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
-   "statusLine": "done · panes now searchable",
-   "caption": "A native desktop app that tiles the open pages in one window:",
-   "stage": "done",
-   "embed": "pages/ns-desk.html",
-   "visibility": "public",
-   "links": [
-    "action-tree"
-   ],
-   "parent": "northstar",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "grand-threads",
-   "label": "GRAND THREADS",
-   "status": "idle",
-   "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
-   "statusLine": "built · chat threads tied to dots",
-   "caption": "Each dot on my map is now a chat thread.",
-   "stage": "active",
-   "embed": "pages/grand-threads.html",
-   "visibility": "public",
-   "links": [
-    "work-in-threads"
-   ],
-   "parent": "northstar",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "north-star-as-product",
-   "label": "NORTH STAR AS PRODUCT",
-   "status": "idle",
-   "why": "I am thinking through how the map could become a product for other people, not just my own system.",
-   "statusLine": "exploring the idea",
-   "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
-   "stage": "active",
-   "embed": "pages/north-star-as-product.html",
-   "visibility": "public",
-   "links": [
-    "aurora"
-   ],
-   "parent": "northstar",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "north-star-map",
-   "label": "NORTH STAR MAP",
-   "status": "done",
-   "why": "This is the working thread for the map that holds my projects and agents.",
-   "statusLine": "in progress",
-   "caption": "This is the working thread for the map that holds my projects and agents.",
-   "stage": "active",
-   "embed": "pages/north-star-map.html",
-   "visibility": "public",
-   "links": [
-    "northstar"
-   ],
-   "parent": "northstar",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "sheyou",
    "label": "SHEYOU",
    "status": "idle",
@@ -5938,35 +5995,6 @@
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "northstar",
-   "label": "NORTH STAR MAP",
-   "status": "idle",
-   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active · busy week",
-   "caption": "The map itself:",
-   "stage": "active",
-   "embed": "pages/northstar.html",
-   "visibility": "public",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens",
-   "label": "MITTENS",
-   "status": "idle",
-   "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
-   "statusLine": "active · being rebuilt",
-   "caption": "All my bots, digital and physical:",
-   "stage": "active",
-   "embed": "pages/mittens.html",
-   "visibility": "public",
-   "parent": "northstar",
-   "parked": false,
-   "children": [],
-   "embedCaption": "case study"
   },
   {
    "id": "live-day-plan",
