@@ -3065,6 +3065,17 @@ async function sendMsg() {
     }
 }
 
+window.nsPaneContext = () => {
+    const n = panelNode && !String(panelNode.id).startsWith("__") && panelNode || LEAF && byId[LEAF] || null;
+    const q = new URLSearchParams(location.search).get("q");
+    return n ? {
+        dot: n.id,
+        item: n.label || n.id
+    } : {
+        item: q ? `the map, searching ${q}` : "the whole map"
+    };
+};
+
 document.getElementById("pSend").onclick = sendMsg;
 
 document.getElementById("pInput").addEventListener("keydown", e => {
