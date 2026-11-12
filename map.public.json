@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T22:30:31.051Z",
+ "generatedAt": "2026-11-12T22:43:19.179Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -369,7 +369,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 50
+       "v": 57
       }
      ]
     },
@@ -388,7 +388,7 @@
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 4,
      "round": 1
     }
    },
@@ -1952,7 +1952,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2817,7 +2817,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2896,14 +2896,14 @@
         {
          "t": "2026-11-12",
          "v": 12
+        },
+        {
+         "t": "2026-11-12",
+         "v": 8
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3219,6 +3219,10 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -3251,7 +3255,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3696,7 +3700,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -5650,7 +5654,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "idle",
+   "status": "working",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -7567,7 +7571,7 @@
   {
    "id": "triage",
    "label": "TRIAGE",
-   "status": "working",
+   "status": "idle",
    "why": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one. Mittens just does the talking, and it corrects the record when the context calls for it.",
    "statusLine": "built · watcher proposes, Mittens decides",
    "caption": "A separate triage clerk now reads each incoming message and decides which scenarios it belongs to, then plain code runs the steps for each one.",
@@ -7668,7 +7672,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -7722,6 +7726,10 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -8183,7 +8191,7 @@
   {
    "id": "brain-deciding",
    "label": "DECIDING + ROUTING",
-   "status": "working",
+   "status": "idle",
    "why": "How each message is sorted and sent to the right place.",
    "statusLine": "noted this week",
    "caption": "How each message is sorted and sent to the right place.",
