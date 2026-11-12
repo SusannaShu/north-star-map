@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T17:01:21.767Z",
+ "generatedAt": "2026-11-12T17:49:02.847Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -816,10 +816,6 @@
      },
      {
       "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
       "v": "unmeasured"
      },
      {
@@ -873,6 +869,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
      },
      {
       "d": "2026-11-12",
@@ -1975,7 +1975,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 50
+       "v": 51
       }
      ],
      "partial": "2026-11-12",
@@ -2060,7 +2060,7 @@
         9,
         4,
         22,
-        43
+        44
        ]
       },
       {
@@ -2304,6 +2304,14 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2748,14 +2756,14 @@
         {
          "t": "2026-11-12",
          "v": 27
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -2941,10 +2949,6 @@
         "v": "unmeasured"
        },
        {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-12",
         "v": "no effect"
        },
@@ -3071,6 +3075,14 @@
        {
         "d": "2026-11-12",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -5800,79 +5812,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "portfolio-site",
-   "label": "SITE + MEDIA",
-   "status": "idle",
-   "why": "How my portfolio site is built and served, including media storage and previews.",
-   "statusLine": "edited this week",
-   "caption": "How my portfolio site is built and served, including media storage and previews.",
-   "stage": "active",
-   "embed": "pages/portfolio-site.html",
-   "visibility": "public",
-   "parent": "portfolio",
-   "parked": false,
-   "children": [
-    {
-     "id": "stack-audit",
-     "label": "STACK AUDIT",
-     "status": "idle",
-     "why": "Every technical claim on the case studies checked against the code: 106 claims -- 57 proven, 29 partial, 20 corrected.",
-     "statusLine": "done",
-     "caption": "Every technical claim on the case studies checked against the code:",
-     "stage": "active",
-     "embed": "pages/stack-audit.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "portfolio-media-on-cloudflare-r2",
-     "label": "PORTFOLIO MEDIA HOSTING",
-     "status": "done",
-     "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "statusLine": "merged into site and media",
-     "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
-     "stage": "done",
-     "embed": "pages/portfolio-media-on-cloudflare-r2.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "dev-hub-launcher-portfolio-preview",
-     "label": "PORTFOLIO PREVIEW LAUNCHER",
-     "status": "done",
-     "why": "My dev hub can now launch a live preview of my portfolio.",
-     "statusLine": "merged into site and media",
-     "caption": "My dev hub can now launch a live preview of my portfolio.",
-     "stage": "done",
-     "embed": "pages/dev-hub-launcher-portfolio-preview.html",
-     "visibility": "public",
-     "links": [
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "message-reactions-as-eq",
-     "label": "MESSAGE REACTIONS AS EQ",
-     "status": "done",
-     "why": "I wrote a scenario about how the reactions people leave on messages can show emotional intelligence. It now lives on my portfolio site.",
-     "statusLine": "done · on the portfolio",
-     "caption": "I wrote a scenario about how the reactions people leave on messages can show emotional intelligence.",
-     "stage": "done",
-     "embed": "pages/message-reactions-as-eq.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-site"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "action-tree",
    "label": "ACTION TREE",
    "status": "idle",
@@ -6098,6 +6037,79 @@
      "visibility": "public",
      "links": [
       "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "portfolio-site",
+   "label": "SITE + MEDIA",
+   "status": "idle",
+   "why": "How my portfolio site is built and served, including media storage and previews.",
+   "statusLine": "edited this week",
+   "caption": "How my portfolio site is built and served, including media storage and previews.",
+   "stage": "active",
+   "embed": "pages/portfolio-site.html",
+   "visibility": "public",
+   "parent": "portfolio",
+   "parked": false,
+   "children": [
+    {
+     "id": "stack-audit",
+     "label": "STACK AUDIT",
+     "status": "idle",
+     "why": "Every technical claim on the case studies checked against the code: 106 claims -- 57 proven, 29 partial, 20 corrected.",
+     "statusLine": "done",
+     "caption": "Every technical claim on the case studies checked against the code:",
+     "stage": "active",
+     "embed": "pages/stack-audit.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "portfolio-media-on-cloudflare-r2",
+     "label": "PORTFOLIO MEDIA HOSTING",
+     "status": "done",
+     "why": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
+     "statusLine": "merged into site and media",
+     "caption": "I am moving my portfolio's videos and images to cloud storage so they load fast.",
+     "stage": "done",
+     "embed": "pages/portfolio-media-on-cloudflare-r2.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "dev-hub-launcher-portfolio-preview",
+     "label": "PORTFOLIO PREVIEW LAUNCHER",
+     "status": "done",
+     "why": "My dev hub can now launch a live preview of my portfolio.",
+     "statusLine": "merged into site and media",
+     "caption": "My dev hub can now launch a live preview of my portfolio.",
+     "stage": "done",
+     "embed": "pages/dev-hub-launcher-portfolio-preview.html",
+     "visibility": "public",
+     "links": [
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "message-reactions-as-eq",
+     "label": "MESSAGE REACTIONS AS EQ",
+     "status": "done",
+     "why": "I wrote a scenario about how the reactions people leave on messages can show emotional intelligence. It now lives on my portfolio site.",
+     "statusLine": "done · on the portfolio",
+     "caption": "I wrote a scenario about how the reactions people leave on messages can show emotional intelligence.",
+     "stage": "done",
+     "embed": "pages/message-reactions-as-eq.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-site"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -7756,6 +7768,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -8298,7 +8314,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
