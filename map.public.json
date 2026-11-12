@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T06:31:09.186Z",
+ "generatedAt": "2026-11-12T06:52:58.882Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -154,7 +154,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -449,7 +449,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -585,10 +585,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -862,6 +858,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      },
      {
       "d": "2026-11-12",
@@ -1930,7 +1930,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2735,10 +2735,6 @@
         "v": "unmeasured"
        },
        {
-        "d": "2026-11-10",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-11",
         "v": "unmeasured"
        },
@@ -3013,6 +3009,10 @@
        {
         "d": "2026-11-12",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-12",
@@ -8072,6 +8072,24 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-2",
+   "label": "MITTENS",
+   "status": "done",
+   "why": "This is the running conversation where I shape my assistant and how it works.",
+   "statusLine": "in progress",
+   "caption": "This is the running conversation where I shape my assistant and how it works.",
+   "stage": "active",
+   "embed": "pages/mittens-2.html",
+   "visibility": "public",
+   "links": [
+    "mittens"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "live-day-design",
    "label": "LIVE DAY DESIGN",
    "status": "idle",
@@ -8087,24 +8105,6 @@
     "code-architecture-tree"
    ],
    "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-2",
-   "label": "MITTENS",
-   "status": "done",
-   "why": "This is the running conversation where I shape my assistant and how it works.",
-   "statusLine": "in progress",
-   "caption": "This is the running conversation where I shape my assistant and how it works.",
-   "stage": "active",
-   "embed": "pages/mittens-2.html",
-   "visibility": "public",
-   "links": [
-    "mittens"
-   ],
-   "parent": "mittens",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -8205,10 +8205,12 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
