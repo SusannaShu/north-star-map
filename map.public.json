@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T13:51:03.744Z",
+ "generatedAt": "2026-11-12T14:05:57.357Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -498,7 +498,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 100
+       "v": 101
       }
      ],
      "partial": "2026-11-09",
@@ -512,7 +512,7 @@
         0,
         0,
         4,
-        19
+        20
        ]
       },
       {
@@ -1585,7 +1585,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 16
+       "v": 21
       }
      ],
      "partial": "2026-11-12",
@@ -2049,7 +2049,7 @@
         0,
         0,
         1,
-        29
+        30
        ]
       },
       {
@@ -2060,7 +2060,7 @@
         9,
         4,
         22,
-        35
+        37
        ]
       },
       {
@@ -2082,7 +2082,7 @@
         0,
         0,
         0,
-        17
+        18
        ]
       },
       {
@@ -2104,7 +2104,7 @@
         4,
         3,
         15,
-        20
+        21
        ]
       },
       {
@@ -2300,6 +2300,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2458,7 +2462,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "working",
+   "status": "idle",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -2582,7 +2586,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2721,7 +2725,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2734,64 +2738,20 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-09",
-         "v": 56
-        },
-        {
-         "t": "2026-11-10",
-         "v": 5
-        },
-        {
-         "t": "2026-11-10",
-         "v": 6
-        },
-        {
-         "t": "2026-11-10",
-         "v": 64
-        },
-        {
-         "t": "2026-11-10",
-         "v": 7
-        },
-        {
-         "t": "2026-11-10",
-         "v": 17.1
-        },
-        {
          "t": "2026-11-11",
-         "v": 273
-        },
-        {
-         "t": "2026-11-11",
-         "v": 10
-        },
-        {
-         "t": "2026-11-11",
-         "v": 13
-        },
-        {
-         "t": "2026-11-11",
-         "v": 33
-        },
-        {
-         "t": "2026-11-11",
-         "v": 27
+         "v": 1
         },
         {
          "t": "2026-11-12",
-         "v": 7
+         "v": 2
         },
         {
          "t": "2026-11-12",
-         "v": 0.75
+         "v": 22
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3055,6 +3015,10 @@
        {
         "d": "2026-11-12",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-12",
@@ -4449,7 +4413,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 122
+         "v": 127
         }
        ]
       },
@@ -7052,7 +7016,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 122
+       "v": 127
       }
      ]
     },
@@ -7116,7 +7080,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 122
+       "v": 127
       }
      ]
     },
@@ -7365,7 +7329,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 122
+         "v": 127
         }
        ]
       },
@@ -7457,7 +7421,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 60
+       "v": 61
       }
      ]
     },
@@ -8074,7 +8038,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 60
+         "v": 61
         }
        ]
       },
