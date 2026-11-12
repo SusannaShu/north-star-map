@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T12:26:57.063Z",
+ "generatedAt": "2026-11-12T12:39:24.243Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -498,7 +498,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 93
+       "v": 94
       }
      ],
      "partial": "2026-11-09",
@@ -523,7 +523,7 @@
         4,
         2,
         2,
-        12
+        13
        ]
       },
       {
@@ -564,10 +564,6 @@
     "tries": [
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -881,6 +877,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1033,7 +1033,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1581,7 +1581,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1940,7 +1940,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -1980,36 +1980,51 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "vision",
-     "label": "repeats of the vision, per week",
+     "kind": "repeats",
+     "label": "repeated complaints and catches, per day",
      "points": [
       {
-       "t": "2026-10-05",
+       "t": "2026-11-03",
        "v": 0
       },
       {
-       "t": "2026-10-12",
-       "v": 14
+       "t": "2026-11-04",
+       "v": 3
       },
       {
-       "t": "2026-10-19",
-       "v": 22
+       "t": "2026-11-05",
+       "v": 18
       },
       {
-       "t": "2026-10-26",
-       "v": 15
+       "t": "2026-11-06",
+       "v": 13
       },
       {
-       "t": "2026-11-02",
-       "v": 72
+       "t": "2026-11-07",
+       "v": 0
+      },
+      {
+       "t": "2026-11-08",
+       "v": 3
       },
       {
        "t": "2026-11-09",
-       "v": 169
+       "v": 25
+      },
+      {
+       "t": "2026-11-10",
+       "v": 40
+      },
+      {
+       "t": "2026-11-11",
+       "v": 47
+      },
+      {
+       "t": "2026-11-12",
+       "v": 8
       }
      ],
-     "partial": "2026-11-09",
-     "note": "Talk counted from 10-09, typed chat from 11-03: earlier weeks undercount",
+     "partial": "2026-11-12",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -2253,6 +2268,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      },
      {
       "d": "2026-11-12",
@@ -2730,10 +2749,6 @@
         "v": "unmeasured"
        },
        {
-        "d": "2026-11-10",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-11",
         "v": "unmeasured"
        },
@@ -3032,10 +3047,14 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
       "stage": {
-       "at": 1,
+       "at": 2,
        "round": 6
       }
      },
@@ -3196,7 +3215,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3512,7 +3531,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4377,7 +4396,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 115
+         "v": 117
         }
        ]
       },
@@ -6980,7 +6999,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 115
+       "v": 117
       }
      ]
     },
@@ -7044,7 +7063,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 115
+       "v": 117
       }
      ]
     },
@@ -7293,7 +7312,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 115
+         "v": 117
         }
        ]
       },
@@ -7385,7 +7404,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 64
+       "v": 63
       }
      ]
     },
@@ -7654,13 +7673,68 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
    "stage": "done",
    "embed": "pages/brain-context-flow.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 7991
+      },
+      {
+       "t": "2026-11-11",
+       "v": 12000
+      },
+      {
+       "t": "2026-11-12",
+       "v": 11919
+      },
+      {
+       "t": "2026-11-12",
+       "v": 6
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-09",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
    "parent": "brain-architecture",
    "parked": false,
    "children": [
@@ -7943,7 +8017,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 64
+         "v": 63
         }
        ]
       },

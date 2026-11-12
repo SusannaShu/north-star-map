@@ -120,10 +120,10 @@
     const VERD = [ "helped", "no effect", "hurt", "confounded", "unmeasured" ], DAY = /^\d{4}-\d{2}-\d{2}$/;
     function nsPublicStory(s) {
         if (!s || typeof s !== "object") return null;
-        const m = s.metric && typeof s.metric === "object" && [ "vision", "score", "values" ].includes(s.metric.kind) ? s.metric : null;
+        const m = s.metric && typeof s.metric === "object" && [ "vision", "repeats", "score", "values" ].includes(s.metric.kind) ? s.metric : null;
         const metric = m ? {
             kind: m.kind,
-            label: m.kind === "vision" ? "repeats of the vision, per week" : m.kind === "score" ? "improve-loop score" : "measured result",
+            label: m.kind === "repeats" ? "repeated complaints and catches, per day" : m.kind === "vision" ? "repeats of the vision, per week" : m.kind === "score" ? "improve-loop score" : "measured result",
             points: (Array.isArray(m.points) ? m.points : []).filter(p => p && DAY.test(p.t) && Number.isFinite(+p.v)).slice(-30).map(p => ({
                 t: p.t,
                 v: +p.v
@@ -134,7 +134,7 @@
             ...typeof m.note === "string" && /^Talk counted from \d\d-\d\d, typed chat from \d\d-\d\d: earlier weeks undercount$/.test(m.note) ? {
                 note: m.note
             } : {},
-            ...m.kind === "vision" && Array.isArray(m.perPoint) ? {
+            ...(m.kind === "vision" || m.kind === "repeats") && Array.isArray(m.perPoint) ? {
                 perPoint: m.perPoint.slice(0, 12).map(p => ({
                     text: strip(p && p.text).slice(0, 200),
                     weekly: (Array.isArray(p && p.weekly) ? p.weekly : []).slice(-30).map(v => +v || 0)
