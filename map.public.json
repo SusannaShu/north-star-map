@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T07:27:10.715Z",
+ "generatedAt": "2026-11-12T07:43:10.769Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -341,6 +341,7 @@
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
+   "stage": "active",
    "embed": "pages/marketing.html",
    "visibility": "public",
    "goalStory": {
@@ -956,7 +957,7 @@
      "label": "LIVE DAY PLAN",
      "status": "idle",
      "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
-     "statusLine": "active · in progress",
+     "statusLine": "first phase built · next steps planned",
      "caption": "My assistant keeps one plan for the day and updates it as things change.",
      "stage": "active",
      "embed": "pages/live-day-plan.html",
@@ -985,7 +986,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1516,9 +1517,10 @@
      "label": "LEG WARMER SKIN",
      "status": "idle",
      "why": "This is a version of my soft robot skin shaped like a leg warmer. It tests how the skin wraps around a curved shape and moves with it.",
-     "statusLine": "idle · on hold",
+     "statusLine": "on hold · waiting on first bench test",
      "caption": "This is a version of my soft robot skin shaped like a leg warmer.",
-     "stage": "active",
+     "stage": "plan",
+     "planned": true,
      "embed": "pages/leg-warmer-skin.html",
      "visibility": "public",
      "goalStory": {
@@ -2254,7 +2256,7 @@
     {
      "id": "grand-threads",
      "label": "GRAND THREADS",
-     "status": "idle",
+     "status": "working",
      "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
      "statusLine": "built · chat threads tied to dots",
      "caption": "Each dot on my map is now a chat thread.",
@@ -2278,6 +2280,35 @@
      "visibility": "public",
      "links": [
       "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "solve-disease",
+     "label": "SOLVE DISEASE",
+     "status": "idle",
+     "why": "I want to help solve disease, one disease at a time, and fund it from my own product revenue. Agents build an evidence map from primary sources of what is known and what is still open.",
+     "statusLine": "active · research underway",
+     "caption": "I want to help solve disease, one disease at a time, and fund it from my own product revenue.",
+     "stage": "active",
+     "embed": "pages/solve-disease.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
+     "links": [
+      "susu-closet"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5029,7 +5060,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -5083,7 +5114,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · fixes issues nightly",
+     "statusLine": "live · reviews and fixes nightly",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -5169,7 +5200,7 @@
      "label": "THE SERIES",
      "status": "idle",
      "why": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant. Each good news item can become a story beat: the real news, then the world where it went right.",
-     "statusLine": "pilot waiting on my yes",
+     "statusLine": "pilot waiting on my yes · first short proposed",
      "caption": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant.",
      "stage": "active",
      "embed": "pages/gospel-series.html",
@@ -6239,7 +6270,7 @@
      "label": "PROJECT BRIEFS",
      "status": "idle",
      "why": "My assistant writes me short briefs on my projects before I ask. Each one says what moved, what is stuck and what comes next.",
-     "statusLine": "active · in progress",
+     "statusLine": "built · daily brief per project",
      "caption": "My assistant writes me short briefs on my projects before I ask.",
      "stage": "active",
      "embed": "pages/project-briefs.html",
@@ -6685,7 +6716,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -7570,9 +7601,9 @@
    "label": "HOW CONTEXT FLOWS",
    "status": "done",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
-   "statusLine": "noted this week",
+   "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
-   "stage": "active",
+   "stage": "done",
    "embed": "pages/brain-context-flow.html",
    "visibility": "public",
    "parent": "brain-architecture",
@@ -8115,6 +8146,77 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "ui-experience",
+   "label": "UI EXPERIENCE",
+   "status": "idle",
+   "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
+   "statusLine": "built · self-improving",
+   "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
+   "stage": "active",
+   "embed": "pages/ui-experience.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-11",
+       "v": 87
+      },
+      {
+       "t": "2026-11-12",
+       "v": 87
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     }
+    ],
+    "stage": {
+     "at": 4,
+     "round": 1
+    }
+   },
+   "parent": "northstar",
+   "parked": false,
+   "children": [
+    {
+     "id": "ns-desk",
+     "label": "NORTH STAR DESK",
+     "status": "idle",
+     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
+     "statusLine": "done · panes now searchable",
+     "caption": "A native desktop app that tiles the open pages in one window:",
+     "stage": "done",
+     "embed": "pages/ns-desk.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 17
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
+     "links": [
+      "action-tree"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "live-day-design",
    "label": "LIVE DAY DESIGN",
    "status": "idle",
@@ -8217,12 +8319,42 @@
    "label": "ONE DAY STORE",
    "status": "idle",
    "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-   "statusLine": "active · being built",
+   "statusLine": "plan written · being built",
    "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
    "stage": "active",
    "embed": "pages/one-day-store.html",
    "visibility": "public",
    "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "architect",
+   "label": "ARCHITECT LOOP",
+   "status": "idle",
+   "why": "An agent loop that looks at how my apps and devices fit together and proposes cleaner designs.",
+   "statusLine": "plan written",
+   "caption": "An agent loop that looks at how my apps and devices fit together and proposes cleaner designs.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/architect.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 30.7
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
+   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
