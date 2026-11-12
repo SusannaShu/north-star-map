@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T06:07:58.784Z",
+ "generatedAt": "2026-11-12T06:31:09.186Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -154,7 +154,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -449,7 +449,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1046,7 +1046,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 44
+       "v": 43
       }
      ]
     },
@@ -1086,6 +1086,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1747,7 +1751,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1806,6 +1810,10 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
@@ -1956,7 +1964,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 164
+       "v": 165
       }
      ],
      "partial": "2026-11-09",
@@ -2036,7 +2044,7 @@
         4,
         3,
         15,
-        18
+        19
        ]
       },
       {
@@ -2524,7 +2532,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2663,7 +2671,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -7535,7 +7543,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "idle",
+   "status": "done",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "noted this week",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -8197,12 +8205,10 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
