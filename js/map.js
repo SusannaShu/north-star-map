@@ -2919,6 +2919,8 @@ const panel = document.getElementById("panel");
 
 const pTitle = document.getElementById("pTitle"), pStatus = document.getElementById("pStatus"), pBody = document.getElementById("pBody");
 
+pStatus.onclick = () => pStatus.classList.toggle("show");
+
 let panelNode = null;
 
 let panelTab = null;
@@ -2984,10 +2986,20 @@ function openPanel(n, tab) {
     const d = DETAILS[target.id];
     if (!d) return;
     pTitle.textContent = target.label;
+    pStatus.classList.remove("on-demand");
     pStatus.innerHTML = `<span class="dot ${target.status || ""}"></span><span>${target.status === "queued" && d.queuedLine ? esc(d.queuedLine) + (d.statusLine ? " · " + d.statusLine : "") : d.statusLine || "—"}</span>`;
     document.querySelectorAll("#pTabs .tab").forEach(b => {
         b.classList.toggle("on", b.dataset.tab === panelTab);
         b.disabled = b.dataset.tab === "flow" && !hasFlow(target) || b.dataset.tab === "skill" && !target.id.startsWith("r:");
+    });
+    if (!PUBLIC && panelMode() !== "words") {
+        const tabs = [ ...document.querySelectorAll("#pTabs .tab") ];
+        tabs.forEach(b => {
+            b.hidden = b.disabled;
+        });
+        if (tabs.filter(b => !b.disabled).length < 2) document.getElementById("pTabs").style.display = "none";
+    } else document.querySelectorAll("#pTabs .tab").forEach(b => {
+        b.hidden = false;
     });
     panel.classList.remove("mini");
     panel.classList.toggle("wide", panelTab === "flow" || panelTab === "skill");
@@ -3045,11 +3057,11 @@ function openPanel(n, tab) {
         foldCards(pBody);
         wireGlance(pBody);
         const sp = pStatus.lastElementChild;
-        if (sp && sp.textContent.length > 46) {
-            sp.title = sp.textContent;
-            sp.textContent = clipTxt(sp.textContent, 44);
+        if (sp) {
+            pStatus.title = sp.textContent;
+            pStatus.classList.add("on-demand");
         }
-    }
+    } else pStatus.classList.remove("on-demand");
     const live = pBody.querySelector(".live-refs");
     if (live) fillLiveRefs(live);
     const cs = pBody.querySelector(".code-slot");
@@ -3602,6 +3614,7 @@ function openAgentsPanel() {
     document.getElementById("pTabs").style.display = "none";
     syncPanelW();
     document.getElementById("pTitle").textContent = "Agents working";
+    pStatus.classList.remove("on-demand");
     document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${w.length ? w.length + " running" : "none running"}</span>`;
     const kind = k => ({
         task: "voice task",
@@ -3632,6 +3645,7 @@ function openPublicAgentsPanel() {
         waiting: a.waiting || 0,
         queued: a.queued || 0
     }[s];
+    pStatus.classList.remove("on-demand");
     document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${[ `${cnt("working")} working`, cnt("waiting") ? `${cnt("waiting")} waiting` : "", cnt("queued") ? `${cnt("queued")} queued` : "" ].filter(Boolean).join(" · ")}</span>`;
     const PRIV = "Private project";
     const areas = new Map;
@@ -3838,6 +3852,7 @@ function openSituationPanel() {
     document.getElementById("pTabs").style.display = "none";
     syncPanelW();
     document.getElementById("pTitle").textContent = "What is going on";
+    pStatus.classList.remove("on-demand");
     document.getElementById("pStatus").innerHTML = `<span class="dot ${LIVE.working || 0 ? "working" : ""}"></span><span>${esc(workingSentence())}</span>`;
     const go = n => n.item ? `onclick="location.href='/item.html?id=${encodeURIComponent(n.item)}'"` : n.id && n.id !== "inbox" && FULL.e[n.id] ? `onclick="jumpTo('${n.id}')"` : 'onclick="openInbox()"';
     document.getElementById("pBody").innerHTML = `\n    <div class="card why"><h4>${s.verified ? "Today · read from your messages " + esc(new Date(s.at).toLocaleTimeString("en-US", {

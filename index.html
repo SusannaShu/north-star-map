@@ -153,6 +153,7 @@ html.public .nsmenu .msep, html.public .morebadge { display:none !important; }
 }
 .panel-title { font-family:var(--font-heading); font-size:22px; letter-spacing:-0.5px; line-height:1.1; }
 .panel-status { font-family:var(--mono); font-size:11px; color:var(--text-muted); margin-top:6px; display:flex; align-items:center; gap:6px; }
+.panel-status.on-demand { cursor:help; } .panel-status.on-demand > span:last-child { display:none; } .panel-status.on-demand.show > span:last-child, .panel-status.on-demand:hover > span:last-child { display:inline; }   /* T5791 */
 .dot { width:7px; height:7px; border-radius:50%; background:var(--text-dim); flex-shrink:0; }
 .dot.working { background:var(--accent); animation:pulse 1.6s infinite; }
 .dot.needs-you { background:var(--red); }
