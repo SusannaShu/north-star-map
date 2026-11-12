@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T21:54:28.596Z",
+ "generatedAt": "2026-11-12T22:16:01.556Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -498,7 +498,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 116
+       "v": 117
       }
      ],
      "partial": "2026-11-09",
@@ -545,7 +545,7 @@
         6,
         9,
         20,
-        43
+        44
        ]
       },
       {
@@ -910,7 +910,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2033,7 +2033,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 68
+       "v": 69
       }
      ],
      "partial": "2026-11-12",
@@ -2068,7 +2068,7 @@
         9,
         4,
         22,
-        48
+        49
        ]
       },
       {
@@ -2364,6 +2364,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      },
      {
       "d": "2026-11-12",
@@ -2692,7 +2696,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 47
+       "v": 53
       }
      ]
     },
@@ -2735,7 +2739,7 @@
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 1
     }
    },
@@ -2896,10 +2900,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "no effect"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3215,6 +3215,10 @@
        {
         "d": "2026-11-12",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4794,7 +4798,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -7664,7 +7668,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "working",
+   "status": "idle",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
