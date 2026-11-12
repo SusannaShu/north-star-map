@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T21:24:37.895Z",
+ "generatedAt": "2026-11-12T21:42:56.157Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -910,7 +910,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1585,7 +1585,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 65
+       "v": 68
       }
      ],
      "partial": "2026-11-12",
@@ -2060,7 +2060,7 @@
         9,
         4,
         22,
-        46
+        48
        ]
       },
       {
@@ -2082,7 +2082,7 @@
         0,
         0,
         0,
-        20
+        22
        ]
       },
       {
@@ -2104,7 +2104,7 @@
         4,
         3,
         15,
-        26
+        27
        ]
       },
       {
@@ -2360,6 +2360,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2518,7 +2522,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "idle",
+   "status": "working",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -2654,7 +2658,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2801,7 +2805,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2872,14 +2876,14 @@
         {
          "t": "2026-11-12",
          "v": 2
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3195,6 +3199,10 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -4537,7 +4545,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 185
+         "v": 189
         }
        ]
       },
@@ -7152,7 +7160,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 185
+       "v": 189
       }
      ]
     },
@@ -7216,7 +7224,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 185
+       "v": 189
       }
      ]
     },
@@ -7465,7 +7473,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 185
+         "v": 189
         }
        ]
       },
@@ -8549,26 +8557,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "live-day-design",
-   "label": "LIVE DAY DESIGN",
-   "status": "idle",
-   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "statusLine": "active · designing",
-   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "stage": "active",
-   "embed": "pages/live-day-design.html",
-   "visibility": "public",
-   "links": [
-    "live-day-plan",
-    "mittens-daily",
-    "code-architecture-tree"
-   ],
-   "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "sheyou-money-pitch",
    "label": "BUSINESS MODEL + PITCH",
    "status": "idle",
@@ -8606,6 +8594,56 @@
     "designers"
    ],
    "parent": "sheyou",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "live-day-design",
+   "label": "LIVE DAY DESIGN",
+   "status": "idle",
+   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "statusLine": "active · designing",
+   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "stage": "active",
+   "embed": "pages/live-day-design.html",
+   "visibility": "public",
+   "links": [
+    "live-day-plan",
+    "mittens-daily",
+    "code-architecture-tree"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "architect",
+   "label": "ARCHITECT LOOP",
+   "status": "idle",
+   "why": "An agent loop that looks at how my apps and devices fit together and proposes cleaner designs.",
+   "statusLine": "plan written",
+   "caption": "An agent loop that looks at how my apps and devices fit together and proposes cleaner designs.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/architect.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 30.7
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
+   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -8657,36 +8695,6 @@
    "embed": "pages/one-day-store.html",
    "visibility": "public",
    "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "architect",
-   "label": "ARCHITECT LOOP",
-   "status": "idle",
-   "why": "An agent loop that looks at how my apps and devices fit together and proposes cleaner designs.",
-   "statusLine": "plan written",
-   "caption": "An agent loop that looks at how my apps and devices fit together and proposes cleaner designs.",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/architect.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-12",
-       "v": 30.7
-      }
-     ]
-    },
-    "tries": [],
-    "stage": null
-   },
-   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
