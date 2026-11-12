@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T23:41:10.405Z",
+ "generatedAt": "2026-11-12T23:51:53.093Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1679,6 +1679,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": null
@@ -1812,7 +1816,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1999,7 +2003,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2841,7 +2845,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2932,10 +2936,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3251,6 +3251,10 @@
        {
         "d": "2026-11-12",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -3957,6 +3961,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3975,22 +3983,6 @@
    "parent": "mittens",
    "parked": false,
    "children": [
-    {
-     "id": "need-her-once",
-     "label": "NEED HER ONCE",
-     "status": "idle",
-     "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
-     "statusLine": "live",
-     "caption": "Anything that needs me needs me once:",
-     "stage": "active",
-     "embed": "pages/need-her-once.html",
-     "visibility": "public",
-     "links": [
-      "mittens-vision",
-      "proactive-rules"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
@@ -6713,7 +6705,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 37
+       "v": 39
       }
      ]
     },
@@ -6737,6 +6729,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -7452,7 +7448,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -7763,6 +7759,10 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
@@ -8925,6 +8925,25 @@
     "robot-skin"
    ],
    "parent": "devhub",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "need-her-once",
+   "label": "NEED HER ONCE",
+   "status": "idle",
+   "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
+   "statusLine": "live",
+   "caption": "Anything that needs me needs me once:",
+   "stage": "active",
+   "embed": "pages/need-her-once.html",
+   "visibility": "public",
+   "links": [
+    "mittens-vision",
+    "proactive-rules"
+   ],
+   "parent": "ns-talk",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
