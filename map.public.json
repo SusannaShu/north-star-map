@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T06:52:58.882Z",
+ "generatedAt": "2026-11-12T07:15:55.787Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -49,6 +49,10 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
       "v": "unmeasured"
      }
     ],
@@ -154,7 +158,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -449,7 +453,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -581,10 +585,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -866,6 +866,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -928,22 +932,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "outing-thread",
-     "label": "OUTING THREAD",
-     "status": "done",
-     "why": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
-     "statusLine": "done",
-     "caption": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
-     "stage": "done",
-     "embed": "pages/outing-thread.html",
-     "visibility": "public",
-     "links": [
-      "go-anywhere",
-      "local-watch"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "how-about-the-question-threads",
      "label": "TEST THREAD",
      "status": "done",
@@ -993,7 +981,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1011,7 +999,12 @@
       }
      ]
     },
-    "tries": [],
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     }
+    ],
     "stage": null
    },
    "parked": false,
@@ -1046,7 +1039,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 43
+       "v": 42
       }
      ]
     },
@@ -1086,6 +1079,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
@@ -1564,7 +1561,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1930,7 +1927,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2212,6 +2209,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2226,35 +2227,6 @@
    ],
    "parked": false,
    "children": [
-    {
-     "id": "ns-desk",
-     "label": "NORTH STAR DESK",
-     "status": "idle",
-     "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
-     "statusLine": "done · panes now searchable",
-     "caption": "A native desktop app that tiles the open pages in one window:",
-     "stage": "done",
-     "embed": "pages/ns-desk.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-12",
-         "v": 17
-        }
-       ]
-      },
-      "tries": [],
-      "stage": null
-     },
-     "links": [
-      "action-tree"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
     {
      "id": "grand-threads",
      "label": "GRAND THREADS",
@@ -2282,52 +2254,6 @@
      "visibility": "public",
      "links": [
       "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "north-star-as-product",
-     "label": "NORTH STAR AS PRODUCT",
-     "status": "done",
-     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
-     "statusLine": "exploring the idea",
-     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
-     "stage": "active",
-     "embed": "pages/north-star-as-product.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "score",
-       "label": "improve-loop score",
-       "points": [
-        {
-         "t": "2026-11-09",
-         "v": 24
-        },
-        {
-         "t": "2026-11-10",
-         "v": 24
-        },
-        {
-         "t": "2026-11-11",
-         "v": 36
-        },
-        {
-         "t": "2026-11-12",
-         "v": 36
-        }
-       ]
-      },
-      "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "no effect"
-       }
-      ],
-      "stage": null
-     },
-     "links": [
-      "aurora"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3721,6 +3647,10 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
       "v": "unmeasured"
      }
     ],
@@ -5450,7 +5380,24 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "outing-thread",
+     "label": "OUTING THREAD",
+     "status": "done",
+     "why": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
+     "statusLine": "done",
+     "caption": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
+     "stage": "done",
+     "embed": "pages/outing-thread.html",
+     "visibility": "public",
+     "links": [
+      "go-anywhere",
+      "local-watch"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5506,6 +5453,52 @@
       "ns-public"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "north-star-as-product",
+     "label": "NORTH STAR AS PRODUCT",
+     "status": "done",
+     "why": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "statusLine": "exploring the idea",
+     "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
+     "stage": "active",
+     "embed": "pages/north-star-as-product.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "score",
+       "label": "improve-loop score",
+       "points": [
+        {
+         "t": "2026-11-09",
+         "v": 24
+        },
+        {
+         "t": "2026-11-10",
+         "v": 24
+        },
+        {
+         "t": "2026-11-11",
+         "v": 36
+        },
+        {
+         "t": "2026-11-12",
+         "v": 36
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
+     "links": [
+      "aurora"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -5535,7 +5528,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 49
+       "v": 47
       }
      ]
     },
@@ -5558,6 +5551,14 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
       "v": "unmeasured"
      }
     ],
