@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T21:42:56.157Z",
+ "generatedAt": "2026-11-12T21:54:28.596Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -343,7 +343,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -910,7 +910,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1033,7 +1033,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1055,6 +1055,10 @@
       {
        "t": "2026-11-12",
        "v": 3
+      },
+      {
+       "t": "2026-11-12",
+       "v": 38
       }
      ]
     },
@@ -1110,10 +1114,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
-     "at": 2,
+     "at": 3,
      "round": 1
     }
    },
@@ -2049,7 +2057,7 @@
         0,
         0,
         1,
-        34
+        35
        ]
       },
       {
@@ -2880,14 +2888,14 @@
         {
          "t": "2026-11-12",
          "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 12
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "no effect"
@@ -3199,6 +3207,10 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
        },
        {
         "d": "2026-11-12",
@@ -4782,7 +4794,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -7652,7 +7664,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -8462,7 +8474,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -8599,26 +8611,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "live-day-design",
-   "label": "LIVE DAY DESIGN",
-   "status": "idle",
-   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "statusLine": "active · designing",
-   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "stage": "active",
-   "embed": "pages/live-day-design.html",
-   "visibility": "public",
-   "links": [
-    "live-day-plan",
-    "mittens-daily",
-    "code-architecture-tree"
-   ],
-   "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "architect",
    "label": "ARCHITECT LOOP",
    "status": "idle",
@@ -8644,6 +8636,26 @@
     "stage": null
    },
    "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "live-day-design",
+   "label": "LIVE DAY DESIGN",
+   "status": "idle",
+   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "statusLine": "active · designing",
+   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "stage": "active",
+   "embed": "pages/live-day-design.html",
+   "visibility": "public",
+   "links": [
+    "live-day-plan",
+    "mittens-daily",
+    "code-architecture-tree"
+   ],
+   "parent": "mittens-daily",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
