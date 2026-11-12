@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T15:24:39.236Z",
+ "generatedAt": "2026-11-12T15:35:19.366Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -464,7 +464,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 31
+       "v": 36
       }
      ],
      "partial": "2026-11-12",
@@ -2586,7 +2586,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2725,7 +2725,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2738,24 +2738,64 @@
        "label": "measured result",
        "points": [
         {
+         "t": "2026-11-09",
+         "v": 56
+        },
+        {
+         "t": "2026-11-10",
+         "v": 5
+        },
+        {
+         "t": "2026-11-10",
+         "v": 6
+        },
+        {
+         "t": "2026-11-10",
+         "v": 64
+        },
+        {
+         "t": "2026-11-10",
+         "v": 7
+        },
+        {
+         "t": "2026-11-10",
+         "v": 17.1
+        },
+        {
          "t": "2026-11-11",
-         "v": 1
+         "v": 273
+        },
+        {
+         "t": "2026-11-11",
+         "v": 10
+        },
+        {
+         "t": "2026-11-11",
+         "v": 13
+        },
+        {
+         "t": "2026-11-11",
+         "v": 33
+        },
+        {
+         "t": "2026-11-11",
+         "v": 27
         },
         {
          "t": "2026-11-12",
-         "v": 2
+         "v": 7
         },
         {
          "t": "2026-11-12",
-         "v": 24
+         "v": 0.75
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3066,11 +3106,15 @@
        },
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
+        "v": "no effect"
        },
        {
         "d": "2026-11-12",
-        "v": "no effect"
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
       "stage": null
