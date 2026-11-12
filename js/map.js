@@ -3044,6 +3044,11 @@ function openPanel(n, tab) {
     if (PMODE !== "words") {
         foldCards(pBody);
         wireGlance(pBody);
+        const sp = pStatus.lastElementChild;
+        if (sp && sp.textContent.length > 46) {
+            sp.title = sp.textContent;
+            sp.textContent = clipTxt(sp.textContent, 44);
+        }
     }
     const live = pBody.querySelector(".live-refs");
     if (live) fillLiveRefs(live);
