@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T05:21:10.892Z",
+ "generatedAt": "2026-11-12T05:32:48.629Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -154,7 +154,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -329,7 +329,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -449,7 +449,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1046,7 +1046,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 37
+       "v": 41
       }
      ]
     },
@@ -1078,6 +1078,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1735,7 +1739,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1749,24 +1753,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 56
-      },
-      {
-       "t": "2026-11-10",
-       "v": 34
-      },
-      {
-       "t": "2026-11-11",
-       "v": 32
+       "t": "2026-11-12",
+       "v": 0.4
       },
       {
        "t": "2026-11-12",
        "v": 32
+      },
+      {
+       "t": "2026-11-12",
+       "v": 98
       }
      ]
     },
@@ -1798,6 +1798,14 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
@@ -2355,6 +2363,10 @@
      {
       "d": "2026-11-11",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2629,6 +2641,368 @@
      "visibility": "public",
      "links": [
       "mittens-digital"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-self-improve",
+     "label": "SELF-IMPROVING LOOP",
+     "status": "idle",
+     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
+     "statusLine": "live · learns nightly and from my words",
+     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+     "stage": "active",
+     "embed": "pages/mittens-self-improve.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-11",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 19
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-10",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "confounded"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": {
+       "at": 0,
+       "round": 6
+      }
+     },
+     "links": [
+      "aurora",
+      "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -7803,12 +8177,10 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
@@ -7954,371 +8326,6 @@
     "robot-skin"
    ],
    "parent": "devhub",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-self-improve",
-   "label": "SELF-IMPROVING LOOP",
-   "status": "idle",
-   "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-   "statusLine": "live · learns nightly and from my words",
-   "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
-   "stage": "active",
-   "embed": "pages/mittens-self-improve.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-11",
-       "v": 1
-      },
-      {
-       "t": "2026-11-12",
-       "v": 19
-      },
-      {
-       "t": "2026-11-12",
-       "v": 1
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "confounded"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": {
-     "at": 0,
-     "round": 6
-    }
-   },
-   "links": [
-    "aurora",
-    "brain-architecture"
-   ],
-   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
