@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T01:52:09.733Z",
+ "generatedAt": "2026-11-12T02:05:08.816Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -70,7 +70,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -239,7 +239,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -776,7 +776,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1008,7 +1008,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -1174,7 +1174,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3007,7 +3007,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -4358,7 +4358,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -5575,6 +5575,26 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "sheyou-business-logic",
+   "label": "TRY-ON BUSINESS LOGIC",
+   "status": "working",
+   "why": "I tested whether designer-priced virtual try-on is a real business. The answer is yes: a free try-on works as the advert, people pay to keep what they love, and the designer sets the price and keeps most of it.",
+   "statusLine": "plan · verdict in, decisions pending",
+   "caption": "I tested whether designer-priced virtual try-on is a real business.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/sheyou-business-logic.html",
+   "visibility": "public",
+   "links": [
+    "sheyou",
+    "designers"
+   ],
+   "parent": "sheyou",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-2",
    "label": "MITTENS",
    "status": "done",
@@ -5588,26 +5608,6 @@
     "mittens"
    ],
    "parent": "mittens",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "sheyou-business-logic",
-   "label": "TRY-ON BUSINESS LOGIC",
-   "status": "idle",
-   "why": "I tested whether designer-priced virtual try-on is a real business. The answer is yes: a free try-on works as the advert, people pay to keep what they love, and the designer sets the price and keeps most of it.",
-   "statusLine": "plan · verdict in, decisions pending",
-   "caption": "I tested whether designer-priced virtual try-on is a real business.",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/sheyou-business-logic.html",
-   "visibility": "public",
-   "links": [
-    "sheyou",
-    "designers"
-   ],
-   "parent": "sheyou",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -5728,12 +5728,10 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "codeRepos": [

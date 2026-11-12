@@ -1,7 +1,7 @@
 (function(root) {
     const PUBLIC_FIELDS = [ "why", "caption", "image", "images", "case", "cases", "embed", "embedCaption", "docs", "refs", "paper" ];
     const OVERRIDABLE = [ "label", "statusLine", ...PUBLIC_FIELDS ];
-    const BAD_HREF = /^(?:mailto:|file:|https?:\/\/(?:localhost|127\.|0\.0\.0\.0|10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.|[^/]*\.ts\.net|[^/]*\.local\b|mail\.google\.|docs\.google\.|drive\.google\.|calendar\.google\.))/i;
+    const BAD_HREF = /^(?:mailto:|file:|https?:\/\/(?:localhost|127\.|0\.0\.0\.0|10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.|100\.(?:6[4-9]|[7-9]\d|1[01]\d|12[0-7])\.|[^/]*\.ts\.net|[^/]*\.local\b|mail\.google\.|docs\.google\.|drive\.google\.|calendar\.google\.))/i;
     const okHref = h => typeof h === "string" && h.length > 0 && !BAD_HREF.test(h) && !/^javascript:/i.test(h) && (!/^\/(?!\/)/.test(h) || okAsset(h));
     const okAsset = s => typeof s === "string" && /^\/(img|js)\/[\w.\-\/]+$|^\/[\w.\-]+\.(html|pdf|jpg|png|svg)(\?[\w=&.\-]*)?$/.test(s);
     const strip = x => String(x == null ? "" : x).replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim();
