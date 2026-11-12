@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T05:32:48.629Z",
+ "generatedAt": "2026-11-12T05:44:33.003Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -449,7 +449,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1021,7 +1021,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1046,7 +1046,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 41
+       "v": 44
       }
      ]
     },
@@ -1078,6 +1078,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      },
      {
       "d": "2026-11-12",
@@ -1257,6 +1261,10 @@
      {
       "d": "2026-11-11",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
      }
     ],
     "stage": {
@@ -2188,10 +2196,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 3
     }
    },
@@ -4551,7 +4563,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -8238,6 +8250,8 @@
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/susu-closet.html",
    "visibility": "public",
    "goalStory": {
@@ -8263,7 +8277,12 @@
       }
      ]
     },
-    "tries": [],
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
     "stage": {
      "at": 3,
      "round": 1
