@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T03:24:42.374Z",
+ "generatedAt": "2026-11-12T03:39:23.418Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -19,6 +19,44 @@
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
    "embed": "pages/outreach.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-10",
+       "v": 9
+      },
+      {
+       "t": "2026-11-11",
+       "v": 9
+      },
+      {
+       "t": "2026-11-11",
+       "v": 4
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 2,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -36,6 +74,25 @@
      "stage": "active",
      "embed": "pages/designers.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "score",
+       "label": "improve-loop score",
+       "points": [
+        {
+         "t": "2026-11-11",
+         "v": 28
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -47,6 +104,25 @@
      "caption": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
      "embed": "pages/influencers.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "score",
+       "label": "improve-loop score",
+       "points": [
+        {
+         "t": "2026-11-11",
+         "v": 28
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -78,6 +154,60 @@
    "planned": true,
    "embed": "pages/fashion.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 37
+      },
+      {
+       "t": "2026-11-11",
+       "v": 54
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 3,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -113,6 +243,28 @@
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
    "embed": "pages/susu-map.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 28
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "codeRepos": [
     {
      "vis": "public",
@@ -167,6 +319,44 @@
    "caption": "Spread the vision and actually sell:",
    "embed": "pages/marketing.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 37
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -246,6 +436,423 @@
    "stage": "active",
    "embed": "pages/mittens.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "vision",
+     "label": "repeats of the vision, per week",
+     "points": [
+      {
+       "t": "2026-10-05",
+       "v": 1
+      },
+      {
+       "t": "2026-10-12",
+       "v": 8
+      },
+      {
+       "t": "2026-10-19",
+       "v": 26
+      },
+      {
+       "t": "2026-10-26",
+       "v": 13
+      },
+      {
+       "t": "2026-11-02",
+       "v": 45
+      },
+      {
+       "t": "2026-11-09",
+       "v": 93
+      }
+     ],
+     "partial": "2026-11-09",
+     "note": "Talk counted from 10-09, typed chat from 11-03: earlier weeks undercount",
+     "perPoint": [
+      {
+       "text": "Mittens is her cyborg extension: it sees what she sees on every screen, device and wearable, and knows where she is and what is planned.",
+       "weekly": [
+        0,
+        3,
+        0,
+        0,
+        4,
+        18
+       ]
+      },
+      {
+       "text": "Health is half of Mittens: it plans her days for a healthy life (meals, sun, movement, rest) by itself, with life-design methods as the reference.",
+       "weekly": [
+        0,
+        1,
+        4,
+        2,
+        2,
+        12
+       ]
+      },
+      {
+       "text": "Mittens acts first: knows when to call, when to show and when to hang up, without waiting to be asked.",
+       "weekly": [
+        0,
+        4,
+        12,
+        1,
+        17,
+        16
+       ]
+      },
+      {
+       "text": "Mittens is reliable: every claim it makes is backed by a source and current.",
+       "weekly": [
+        0,
+        0,
+        6,
+        9,
+        20,
+        38
+       ]
+      },
+      {
+       "text": "Mittens takes the software, correspondence and errands off her so her time goes to the soft robot and alignment.",
+       "weekly": [
+        1,
+        0,
+        4,
+        1,
+        2,
+        9
+       ]
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-09",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 2
+    }
+   },
    "codeRepos": [
     {
      "vis": "public",
@@ -373,6 +980,20 @@
    "stage": "active",
    "embed": "pages/mittens-hw.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -386,6 +1007,56 @@
    "caption": "Where the work shows itself.",
    "embed": "pages/portfolio.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 37
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -527,6 +1198,36 @@
    "stage": "active",
    "embed": "pages/daily-content.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 37
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
    "links": [
     "viral-machine",
     "smart-glasses"
@@ -592,6 +1293,31 @@
    "stage": "active",
    "embed": "pages/robot-skin.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 35
+      },
+      {
+       "t": "2026-11-10",
+       "v": 35
+      },
+      {
+       "t": "2026-11-11",
+       "v": 35
+      }
+     ]
+    },
+    "tries": [],
+    "stage": {
+     "at": 4,
+     "round": 1
+    }
+   },
    "parent": "soft-robot",
    "parked": false,
    "children": [
@@ -738,6 +1464,16 @@
      "stage": "active",
      "embed": "pages/leg-warmer-skin.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": null,
+      "tries": [
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -783,6 +1519,57 @@
    "stage": "active",
    "embed": "pages/devhub.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 17
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -924,6 +1711,69 @@
    ],
    "embed": "pages/wearables.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 56
+      },
+      {
+       "t": "2026-11-10",
+       "v": 34
+      },
+      {
+       "t": "2026-11-11",
+       "v": 33
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-09",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
    "parent": "mittens",
    "parked": false,
    "children": [
@@ -1015,6 +1865,272 @@
    "stage": "active",
    "embed": "pages/northstar.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "vision",
+     "label": "repeats of the vision, per week",
+     "points": [
+      {
+       "t": "2026-10-05",
+       "v": 0
+      },
+      {
+       "t": "2026-10-12",
+       "v": 14
+      },
+      {
+       "t": "2026-10-19",
+       "v": 22
+      },
+      {
+       "t": "2026-10-26",
+       "v": 15
+      },
+      {
+       "t": "2026-11-02",
+       "v": 72
+      },
+      {
+       "t": "2026-11-09",
+       "v": 155
+      }
+     ],
+     "partial": "2026-11-09",
+     "note": "Talk counted from 10-09, typed chat from 11-03: earlier weeks undercount",
+     "perPoint": [
+      {
+       "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
+       "weekly": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        18
+       ]
+      },
+      {
+       "text": "A recursive self-improve loop pushes each goal until it is met: it measures, tries other methods, catches a stall and pivots, and never stops at one fix.",
+       "weekly": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        25
+       ]
+      },
+      {
+       "text": "She is out of the loop: one data point, needed only for physical work, money, an access she alone has, or an outward yes.",
+       "weekly": [
+        0,
+        6,
+        9,
+        4,
+        22,
+        35
+       ]
+      },
+      {
+       "text": "Every design is grounded: researched beyond web search, learned from what others do well, and run as a measured experiment when evidence is thin.",
+       "weekly": [
+        0,
+        1,
+        0,
+        1,
+        3,
+        28
+       ]
+      },
+      {
+       "text": "Her complaints are user feedback: the system finds the cause at the design level and fixes it there, and an overseer catches faults before she does.",
+       "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        15
+       ]
+      },
+      {
+       "text": "The goal, what is going on and what everyone tried are visible on the map, for her and for every agent, so nobody reinvents the wheel.",
+       "weekly": [
+        0,
+        5,
+        6,
+        5,
+        26,
+        15
+       ]
+      },
+      {
+       "text": "Every agent retrieves only the context its work needs, knows when it can find it itself and when to ask.",
+       "weekly": [
+        0,
+        0,
+        4,
+        3,
+        15,
+        17
+       ]
+      },
+      {
+       "text": "Give it any goal and it improves to that goal; when it is reliable, it is open-sourced to benefit everyone.",
+       "weekly": [
+        0,
+        2,
+        3,
+        2,
+        1,
+        2
+       ]
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-09",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 4,
+     "round": 2
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -1032,6 +2148,20 @@
      "stage": "done",
      "embed": "pages/ns-desk.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 17
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
      "links": [
       "action-tree"
      ],
@@ -1077,6 +2207,33 @@
      "stage": "active",
      "embed": "pages/north-star-as-product.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "score",
+       "label": "improve-loop score",
+       "points": [
+        {
+         "t": "2026-11-09",
+         "v": 24
+        },
+        {
+         "t": "2026-11-10",
+         "v": 24
+        },
+        {
+         "t": "2026-11-11",
+         "v": 36
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "links": [
       "aurora"
      ],
@@ -1099,6 +2256,48 @@
    ],
    "embed": "pages/soft-robot.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 33
+      },
+      {
+       "t": "2026-11-11",
+       "v": 33
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 4,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -1119,6 +2318,65 @@
    "stage": "active",
    "embed": "pages/housekeeping.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-10",
+       "v": 0
+      },
+      {
+       "t": "2026-11-10",
+       "v": 0
+      },
+      {
+       "t": "2026-11-10",
+       "v": 18
+      },
+      {
+       "t": "2026-11-11",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
    "links": [
     "howto-cleanup",
     "context-graph"
@@ -1181,6 +2439,60 @@
    "stage": "active",
    "embed": "pages/mittens-digital.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 56
+      },
+      {
+       "t": "2026-11-10",
+       "v": 60
+      },
+      {
+       "t": "2026-11-11",
+       "v": 46
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "public",
@@ -1726,6 +3038,57 @@
    "stage": "active",
    "embed": "pages/context-graph.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-10",
+       "v": 2427
+      },
+      {
+       "t": "2026-11-10",
+       "v": 74
+      },
+      {
+       "t": "2026-11-10",
+       "v": 32
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0.81
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     }
+    ],
+    "stage": null
+   },
    "links": [
     "mittens-daily",
     "proactive-rules",
@@ -1779,6 +3142,88 @@
    "stage": "active",
    "embed": "pages/ns-talk.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 30
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 0,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -2243,6 +3688,40 @@
    "stage": "active",
    "embed": "pages/aurora.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 33
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 5,
+     "round": 1
+    }
+   },
    "links": [
     "ns-talk",
     "omi",
@@ -2322,6 +3801,25 @@
    "stage": "active",
    "embed": "pages/smart-glasses.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-11",
+       "v": 38
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
    "parent": "wearables",
    "parked": false,
    "children": [
@@ -2347,6 +3845,20 @@
      "stage": "active",
      "embed": "pages/neural-band-cursor.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 83
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -2479,6 +3991,20 @@
    "stage": "active",
    "embed": "pages/watch-picks.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "links": [
     "research-watch",
     "local-watch",
@@ -2570,6 +4096,52 @@
    "stage": "active",
    "embed": "pages/learn-with-mittens.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 43
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 2,
+     "round": 1
+    }
+   },
    "links": [
     "sheyou",
     "ns-talk"
@@ -2612,6 +4184,20 @@
      "stage": "active",
      "embed": "pages/read-to-me.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 83
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
      "links": [
       "howto-read-to-me"
      ],
@@ -3066,6 +4652,41 @@
    "planned": true,
    "embed": "pages/gospel.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 48
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
    "links": [
     "mittens-hw",
     "aurora"
@@ -3114,6 +4735,20 @@
      "planned": true,
      "embed": "pages/basic-needs.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 30
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -3326,6 +4961,20 @@
    "stage": "active",
    "embed": "pages/ns-public.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 17
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "parent": "northstar",
    "parked": false,
    "children": [
@@ -3369,6 +5018,48 @@
    "stage": "active",
    "embed": "pages/mittens-architecture.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-10",
+       "v": 30
+      },
+      {
+       "t": "2026-11-11",
+       "v": 49
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 2,
+     "round": 1
+    }
+   },
    "parent": "mittens-digital",
    "parked": false,
    "children": [
@@ -3630,6 +5321,20 @@
    "stage": "active",
    "embed": "pages/action-tree.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 17
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "links": [
     "context-graph",
     "housekeeping"
@@ -3852,6 +5557,33 @@
    "stage": "active",
    "embed": "pages/mittens-vision.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 58
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
    "parent": "mittens",
    "parked": false,
    "children": [
@@ -4045,6 +5777,40 @@
    "stage": "active",
    "embed": "pages/mittens-chat-threads.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 60
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     }
+    ],
+    "stage": {
+     "at": 3,
+     "round": 1
+    }
+   },
    "links": [
     "mittens-app",
     "thread-architecture"
@@ -4089,13 +5855,39 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
    "stage": "active",
    "embed": "pages/mittens-app.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 37
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
    "parent": "mittens-digital",
    "parked": false,
    "children": [
@@ -4557,6 +6349,20 @@
    "stage": "active",
    "embed": "pages/voice-clone.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 83
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "links": [
     "ns-talk"
    ],
@@ -4607,6 +6413,20 @@
    "stage": "active",
    "embed": "pages/thread-architecture.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 83
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "links": [
     "mittens-chat-threads",
     "brain-architecture",
@@ -4782,6 +6602,36 @@
    ],
    "embed": "pages/pendant.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 63
+      },
+      {
+       "t": "2026-11-10",
+       "v": 63
+      },
+      {
+       "t": "2026-11-11",
+       "v": 63
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "helped"
+     }
+    ],
+    "stage": {
+     "at": 5,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "public",
@@ -4808,6 +6658,20 @@
      "stage": "active",
      "embed": "pages/pendant-no-flip.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 83
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -4886,6 +6750,20 @@
    "stage": "active",
    "embed": "pages/triage.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 17
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
    "links": [
     "context-architecture",
     "latest-wins"
@@ -4952,6 +6830,49 @@
    "stage": "active",
    "embed": "pages/viral-machine.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -5183,6 +7104,40 @@
    "stage": "active",
    "embed": "pages/glasses-mittens.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-11",
+       "v": 37
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
    "parent": "smart-glasses",
    "parked": false,
    "children": [
@@ -5720,6 +7675,40 @@
    "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 33
+      },
+      {
+       "t": "2026-11-10",
+       "v": 33
+      },
+      {
+       "t": "2026-11-11",
+       "v": 43
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 3,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -5739,6 +7728,31 @@
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "embed": "pages/susu-closet.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 43
+      }
+     ]
+    },
+    "tries": [],
+    "stage": {
+     "at": 3,
+     "round": 1
+    }
+   },
    "codeRepos": [
     {
      "vis": "private"
@@ -5810,6 +7824,352 @@
    "stage": "active",
    "embed": "pages/mittens-self-improve.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 57
+      },
+      {
+       "t": "2026-11-10",
+       "v": 43
+      },
+      {
+       "t": "2026-11-11",
+       "v": 61
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-10",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "confounded"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 4,
+     "round": 5
+    }
+   },
    "links": [
     "aurora",
     "brain-architecture"

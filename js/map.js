@@ -3002,6 +3002,10 @@ function openPanel(n, tab) {
     const PMODE = PUBLIC ? "words" : panelMode();
     if (PMODE === "glance" && window.nsGlance) html += window.nsGlance(glanceOf(target, d));
     {
+        const st = PUBLIC ? d.goalStory || target.goalStory : d.progress && d.progress.story;
+        if (st && window.nsStoryBlock) html += window.nsStoryBlock(st, PUBLIC, PUBLIC ? String(d.why || "").replace(/<[^>]+>/g, "").split(/(?<=[.!?])\s/)[0] : null);
+    }
+    {
         const wg = !PUBLIC && wghOf(target.id);
         if (wg && window.nsWghBlock) html += PMODE === "words" ? window.nsWghBlock(wg) : `<details class="card fold" data-fold="wgh"><summary>Why · goal · how <span class="n">${wg.parts} of 3</span></summary><div class="fold-body">${window.nsWghBlock(wg)}</div></details>`;
     }

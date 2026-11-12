@@ -94,6 +94,10 @@
         VIEW = id;
         const parts = [];
         if (d.progress && d.progress.wgh && !window.NS_PUBLIC) parts.push(wghBlock(d.progress.wgh));
+        {
+            const st = !window.NS_PUBLIC ? d.progress && d.progress.story : d.goalStory || n.goalStory;
+            if (st) parts.unshift(storyBlock(st, !!window.NS_PUBLIC, window.NS_PUBLIC ? firstSentence(d.why || n.why || "") : null));
+        }
         parts.push(`<div id="vwAgents">${agentStrip(id)}</div>`);
         const hero = [];
         (d.cases || (d.case ? [ d.case ] : [])).forEach(c => hero.push(caseCard(c)));
@@ -234,6 +238,57 @@
         return `<div class="gl" data-glance>${head}${tiles}${pips}${track}</div>`;
     };
     window.nsFilesBlock = f => filesBlock(f);
+    const STORY_ST = [ "plan", "research", "design", "prototype", "experiment", "measure" ];
+    function storyBlock(s, pub, goalText) {
+        if (!s) return "";
+        const m = s.metric, W = 300, rows = [];
+        const cap = (k, extra) => `<div class="vw-cap" style="font-weight:600;letter-spacing:.08em;margin:0 0 3px">${k}${extra ? ` <span style="font-weight:400;letter-spacing:0;text-transform:none">· ${extra}</span>` : ""}</div>`;
+        const g = pub ? goalText : s.goal;
+        if (g) rows.push(`<div data-story="goal">${cap("GOAL")}<div style="color:var(--text);font-size:14px;font-weight:600;line-height:1.35" title="${esc(pub ? "" : s.goalSource || "")}">${esc(clip(g, 200))}</div></div>`);
+        if (m && (m.points || []).length) {
+            const P = m.points, H = 64, top = 8, bot = 18, max = Math.max(1, ...P.map(p => +p.v || 0)), min = m.kind === "vision" ? 0 : Math.min(...P.map(p => +p.v || 0));
+            const x = i => P.length < 2 ? W / 2 : 6 + i * (W - 48) / (P.length - 1), y = v => top + (H - top - bot) * (1 - ((+v || 0) - min) / (max - min || 1));
+            const solidN = m.partial && P.at(-1).t === m.partial ? P.length - 1 : P.length;
+            const path = arr => arr.map((p, i) => `${i ? "L" : "M"}${x(p.i).toFixed(1)} ${y(p.v).toFixed(1)}`).join("");
+            const pts = P.map((p, i) => ({
+                ...p,
+                i: i
+            }));
+            const last = P.at(-1), tip = p => `${p.t}: ${p.v}${m.unit ? " " + m.unit : ""}`;
+            rows.push(`<div data-story="metric">${cap("METRIC", esc(clip(m.label, 70)))}<svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${esc(m.label + ": " + P.map(tip).join(", "))}" data-visual>\n      <path d="M6 ${H - bot}H${W - 42}" stroke="var(--border)" stroke-width="1"/>\n      <path d="${path(pts.slice(0, solidN))}" fill="none" stroke="var(--text)" stroke-width="1.8"/>\n      ${solidN < P.length && P.length > 1 ? `<path d="${path(pts.slice(solidN - 1))}" fill="none" stroke="var(--text)" stroke-width="1.8" stroke-dasharray="3 3"/>` : ""}\n      ${pts.map(p => `<circle cx="${x(p.i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="2.6" fill="var(--text)"><title>${esc(tip(p))}${m.partial === p.t ? " (week still running)" : ""}</title></circle>`).join("")}\n      <text x="${W - 36}" y="${(y(last.v) + 5).toFixed(1)}" font-size="15" font-weight="700" fill="var(--text)" font-family="var(--font-heading, inherit)">${esc(String(last.v))}</text>\n      <text x="6" y="${H - 4}" font-size="9" fill="var(--text-muted)" font-family="var(--mono, monospace)">${esc(String(P[0].t).slice(5))}</text>\n      <text x="${W - 42}" y="${H - 4}" text-anchor="end" font-size="9" fill="var(--text-muted)" font-family="var(--mono, monospace)">${esc(String(last.t).slice(5))}${m.partial === last.t ? " (so far)" : ""}</text></svg>\n      ${m.note ? `<div class="vw-meta" style="margin:1px 0 2px">${esc(m.note)}</div>` : ""}\n      ${(m.perPoint || []).length ? `<div style="margin-top:4px">${m.perPoint.map(pp => {
+                const mx = Math.max(1, ...pp.weekly);
+                const lastN = pp.weekly.at(-1);
+                return `<div style="display:flex;align-items:center;gap:8px;margin:2px 0" title="${esc(pp.text + (pp.carriedBy && pp.carriedBy.length ? " -- carried by " + pp.carriedBy.join(", ") : pub ? "" : " -- no code carries it yet"))}">\n          <svg viewBox="0 0 ${pp.weekly.length * 7} 16" width="${pp.weekly.length * 7}" height="16" aria-hidden="true">${pp.weekly.map((n, i) => `<rect x="${i * 7}" y="${16 - Math.max(n ? 1.5 : 0, 16 * n / mx)}" width="5" height="${Math.max(n ? 1.5 : 0, 16 * n / mx)}" fill="${i === pp.weekly.length - 1 ? "var(--text)" : "var(--text-muted)"}"/>`).join("")}</svg>\n          <b style="width:22px;text-align:right;font-size:12px">${lastN}</b><span style="font-size:12px;line-height:1.3;color:var(--text)">${esc(clip(pp.text, 78))}</span></div>`;
+            }).join("")}</div>` : ""}</div>`);
+        } else rows.push(`<div data-story="metric">${cap("METRIC")}<span class="vw-meta">no series measured yet</span></div>`);
+        const T = s.tries || [], day = t => pub ? t.d : String(t.at).slice(0, 10), verdict = t => pub ? t.v : t.verdict;
+        if (T.length) {
+            const end = Date.now(), start = end - 30 * 864e5, X = t => 6 + (W - 12) * Math.min(1, Math.max(0, (Date.parse(day(t) + "T12:00:00Z") - start) / (end - start)));
+            const stack = {}, over = {}, mark = t => {
+                const d = day(t), k = stack[d] = (stack[d] || 0) + 1, cx = X(t).toFixed(1), cy = 36 - (k - 1) * 5, v = verdict(t);
+                const tip = esc(`${d} · ${v}${pub ? "" : " -- " + clip(t.tried, 160) + (t.data ? " => " + clip(t.data, 140) : "") + (t.task ? " (" + t.task + ")" : "")}`);
+                if (cy < 6) {
+                    over[d] = (over[d] || 0) + 1;
+                    return "";
+                }
+                return `<g><title>${tip}</title>${v === "helped" ? `<circle cx="${cx}" cy="${cy}" r="2.4" fill="var(--text)"/>` : v === "no effect" ? `<circle cx="${cx}" cy="${cy}" r="2.2" fill="none" stroke="var(--text)" stroke-width="1.2"/>` : v === "hurt" ? `<path d="M${cx - 3} ${cy - 3}l6 6m0 -6l-6 6" stroke="var(--red, #c00)" stroke-width="1.6"/>` : v === "confounded" ? `<path d="M${cx} ${cy - 3}a3 3 0 0 0 0 6z" fill="var(--text)"/><circle cx="${cx}" cy="${cy}" r="3" fill="none" stroke="var(--text)" stroke-width="1"/>` : `<circle cx="${cx}" cy="${cy}" r="1.8" fill="var(--text-muted)"/>`}</g>`;
+            };
+            const tally = [ "helped", "no effect", "hurt", "confounded", "unmeasured" ].map(v => [ v, T.filter(t => verdict(t) === v).length ]).filter(a => a[1]);
+            rows.push(`<div data-story="tried">${cap("TRIED", `${T.length} in 30 days · ${tally.map(([v, n]) => `${n} ${v === "unmeasured" ? "not measured" : v}`).join(" · ")}`)}<svg viewBox="0 0 ${W} 48" width="100%" role="img" aria-label="${esc(T.length + " tries in 30 days: " + tally.map(a => a[1] + " " + a[0]).join(", "))}" data-visual>\n      <path d="M6 40H${W - 6}" stroke="var(--border)" stroke-width="1"/>${T.map(mark).join("")}${Object.entries(over).map(([d, n]) => `<text x="${(X({
+                d: d,
+                at: d
+            }) - 4).toFixed(1)}" y="6" text-anchor="end" font-size="9" fill="var(--text-muted)" font-family="var(--mono, monospace)">+${n}</text>`).join("")}\n      <text x="6" y="48" font-size="9" fill="var(--text-muted)" font-family="var(--mono, monospace)">30 days ago</text><text x="${W - 6}" y="48" text-anchor="end" font-size="9" fill="var(--text-muted)" font-family="var(--mono, monospace)">today</text></svg>\n      ${pub ? "" : (() => {
+                const lastT = T.at(-1);
+                return `<div class="vw-meta" style="margin-top:2px">last: ${esc(clip(lastT.tried, 120))} -- ${esc(lastT.verdict === "unmeasured" ? "not measured yet" : lastT.verdict)}</div>`;
+            })()}</div>`);
+        } else rows.push(`<div data-story="tried">${cap("TRIED")}<span class="vw-meta">nothing tried in the last 30 days</span></div>`);
+        const st = s.stage, arrow = '<svg viewBox="0 0 16 10" width="16" height="10" aria-hidden="true" style="flex:0 0 16px;margin-top:4px"><path d="M1 5H13M9 1.5L13 5L9 8.5" fill="none" stroke="var(--text)" stroke-width="1.5"/></svg>';
+        const nextRows = pub ? st ? [ `improve loop${st.round ? " round " + st.round : ""}: ${STORY_ST[st.at]} now, then ${STORY_ST[(st.at + 1) % 6]}` ] : [] : (s.next || []).slice(0, 2);
+        if (!pub && st) nextRows.unshift(`loop${st.round ? " round " + st.round : ""} at ${STORY_ST[st.at]}${st.needs ? " -- must produce: " + st.needs : ""}`);
+        if (nextRows.length) rows.push(`<div data-story="next">${cap("NEXT")}${nextRows.map(n => `<div style="display:flex;gap:6px;font-size:12.5px;line-height:1.35;color:var(--text);margin:2px 0">${arrow}<span>${esc(clip(n, 170))}</span></div>`).join("")}</div>`);
+        return `<div class="vw-block vw-story" data-story-block style="margin:4px 0 14px;padding:10px 12px;border:1px solid var(--border);display:flex;flex-direction:column;gap:10px">${rows.join("")}</div>`;
+    }
+    window.nsStoryBlock = (s, pub, g) => storyBlock(s, pub, g);
     function wghBlock(w) {
         const src = x => `<div class="vw-meta">${esc(clip(x || "", 160))}</div>`;
         const sec = (cap, body) => `<div style="margin-bottom:10px"><div class="vw-cap" style="font-weight:600;letter-spacing:.08em">${cap}</div><div style="color:var(--text);font-size:13px;line-height:1.45">${body}</div></div>`;

@@ -1,5 +1,5 @@
 (function(root) {
-    const PUBLIC_FIELDS = [ "why", "caption", "image", "images", "case", "cases", "embed", "embedCaption", "docs", "refs", "paper" ];
+    const PUBLIC_FIELDS = [ "why", "caption", "image", "images", "case", "cases", "embed", "embedCaption", "docs", "refs", "paper", "goalStory" ];
     const OVERRIDABLE = [ "label", "statusLine", ...PUBLIC_FIELDS ];
     const BAD_HREF = /^(?:mailto:|file:|https?:\/\/(?:localhost|127\.|0\.0\.0\.0|10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.|100\.(?:6[4-9]|[7-9]\d|1[01]\d|12[0-7])\.|[^/]*\.ts\.net|[^/]*\.local\b|mail\.google\.|docs\.google\.|drive\.google\.|calendar\.google\.))/i;
     const okHref = h => typeof h === "string" && h.length > 0 && !BAD_HREF.test(h) && !/^javascript:/i.test(h) && (!/^\/(?!\/)/.test(h) || okAsset(h));
@@ -117,6 +117,45 @@
         if (o.paper && hit(o.paper.title)) delete o.paper;
         return o;
     }
+    const VERD = [ "helped", "no effect", "hurt", "confounded", "unmeasured" ], DAY = /^\d{4}-\d{2}-\d{2}$/;
+    function nsPublicStory(s) {
+        if (!s || typeof s !== "object") return null;
+        const m = s.metric && typeof s.metric === "object" && [ "vision", "score", "values" ].includes(s.metric.kind) ? s.metric : null;
+        const metric = m ? {
+            kind: m.kind,
+            label: m.kind === "vision" ? "repeats of the vision, per week" : m.kind === "score" ? "improve-loop score" : "measured result",
+            points: (Array.isArray(m.points) ? m.points : []).filter(p => p && DAY.test(p.t) && Number.isFinite(+p.v)).slice(-30).map(p => ({
+                t: p.t,
+                v: +p.v
+            })),
+            ...DAY.test(m.partial || "") ? {
+                partial: m.partial
+            } : {},
+            ...typeof m.note === "string" && /^Talk counted from \d\d-\d\d, typed chat from \d\d-\d\d: earlier weeks undercount$/.test(m.note) ? {
+                note: m.note
+            } : {},
+            ...m.kind === "vision" && Array.isArray(m.perPoint) ? {
+                perPoint: m.perPoint.slice(0, 12).map(p => ({
+                    text: strip(p && p.text).slice(0, 200),
+                    weekly: (Array.isArray(p && p.weekly) ? p.weekly : []).slice(-30).map(v => +v || 0)
+                }))
+            } : {}
+        } : null;
+        const tries = (Array.isArray(s.tries) ? s.tries : []).filter(t => t && DAY.test(t.d) && VERD.includes(t.v)).slice(-80).map(t => ({
+            d: t.d,
+            v: t.v
+        }));
+        const st = s.stage && Number.isInteger(s.stage.at) && s.stage.at >= 0 && s.stage.at < 6 ? {
+            at: s.stage.at,
+            round: Number.isInteger(s.stage.round) ? s.stage.round : 1
+        } : null;
+        return metric || tries.length || st ? {
+            metric: metric,
+            tries: tries,
+            stage: st
+        } : null;
+    }
+    root.nsPublicStory = nsPublicStory;
     function nodeOut(n, extra) {
         const o = {
             id: n.id,
@@ -126,6 +165,10 @@
         for (const k of PUBLIC_FIELDS) if (n[k] !== undefined) o[k] = clone(n[k]);
         const pv = n.public && typeof n.public === "object" ? n.public : {};
         for (const k of OVERRIDABLE) if (k in pv) o[k] = clone(pv[k]);
+        if (o.goalStory !== undefined) {
+            const gs = nsPublicStory(o.goalStory);
+            if (gs) o.goalStory = gs; else delete o.goalStory;
+        }
         if (n.planned || n.status === "planned") o.planned = true;
         if (n.stage === "plan" || n.stage === "active") o.stage = n.stage;
         if (n.pin) o.pin = true;
