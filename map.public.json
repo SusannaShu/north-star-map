@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T04:25:57.106Z",
+ "generatedAt": "2026-11-12T04:37:58.295Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -753,10 +753,6 @@
      },
      {
       "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
       "v": "unmeasured"
      },
      {
@@ -766,10 +762,6 @@
      {
       "d": "2026-11-11",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
      },
      {
       "d": "2026-11-11",
@@ -814,10 +806,6 @@
      {
       "d": "2026-11-11",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
      },
      {
       "d": "2026-11-11",
@@ -846,6 +834,18 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -1001,7 +1001,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1041,6 +1041,10 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
       "v": "unmeasured"
      },
      {
@@ -1699,7 +1703,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1896,7 +1900,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 162
+       "v": 163
       }
      ],
      "partial": "2026-11-09",
@@ -1943,7 +1947,7 @@
         0,
         1,
         3,
-        31
+        32
        ]
       },
       {
@@ -4101,7 +4105,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -4123,7 +4127,7 @@
       },
       {
        "t": "2026-11-11",
-       "v": 43
+       "v": 50
       }
      ]
     },
@@ -4147,10 +4151,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 2,
+     "at": 3,
      "round": 1
     }
    },
@@ -7878,14 +7886,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "no effect"
      },
      {
@@ -8163,6 +8163,14 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
