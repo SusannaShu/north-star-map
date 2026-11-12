@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T13:02:40.997Z",
+ "generatedAt": "2026-11-12T13:13:32.891Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1975,7 +1975,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 8
+       "v": 9
       }
      ],
      "partial": "2026-11-12",
@@ -2753,14 +2753,6 @@
         "v": "unmeasured"
        },
        {
-        "d": "2026-11-10",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-10",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-11",
         "v": "unmeasured"
        },
@@ -3063,12 +3055,17 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
-      "stage": {
-       "at": 2,
-       "round": 6
-      }
+      "stage": null
      },
      "links": [
       "aurora",
@@ -4408,7 +4405,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 117
+         "v": 118
         }
        ]
       },
@@ -7011,7 +7008,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 117
+       "v": 118
       }
      ]
     },
@@ -7075,7 +7072,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 117
+       "v": 118
       }
      ]
     },
@@ -7324,7 +7321,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 117
+         "v": 118
         }
        ]
       },
@@ -7416,7 +7413,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 64
+       "v": 61
       }
      ]
     },
@@ -7743,6 +7740,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -8029,7 +8030,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 64
+         "v": 61
         }
        ]
       },
