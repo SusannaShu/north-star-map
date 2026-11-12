@@ -2999,10 +2999,13 @@ function openPanel(n, tab) {
         return;
     }
     let html = "";
+    const PMODE = PUBLIC ? "words" : panelMode();
+    if (PMODE === "glance" && window.nsGlance) html += window.nsGlance(glanceOf(target, d));
     {
         const wg = !PUBLIC && wghOf(target.id);
-        if (wg && window.nsWghBlock) html += window.nsWghBlock(wg);
+        if (wg && window.nsWghBlock) html += PMODE === "words" ? window.nsWghBlock(wg) : `<details class="card fold" data-fold="wgh"><summary>Why · goal · how <span class="n">${wg.parts} of 3</span></summary><div class="fold-body">${window.nsWghBlock(wg)}</div></details>`;
     }
+    if (!PUBLIC && Array.isArray(d.files) && d.files.length && window.nsFilesBlock) html += window.nsFilesBlock(d.files);
     const isNow = !!(ROOT && target.id === ROOT && window.nsDotView);
     if (isNow) html += `<div class="now-view" data-dot="${esc(target.id)}">${nowHtml(window.nsDotView.build(DATA, target.id))}</div>`;
     if (d.asks && d.asks.length && !isNow) html += `<div class="card"><h4>Needs you — ${d.asks.length} question${d.asks.length > 1 ? "s" : ""}</h4><ul>${d.asks.map(a => `<li class="hot"><b>${esc(a.title)}</b></li>`).join("")}</ul>\n      <div class="ask" style="cursor:pointer" onclick="openInbox('${target.id}')"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> Answer in the inbox</div></div>`;
@@ -3034,16 +3037,109 @@ function openPanel(n, tab) {
     }
     if (!isNow && !PUBLIC && target.id !== FULL.hub) html += `<div class="code-slot" data-dot="${esc(target.id)}"></div>`;
     pBody.innerHTML = html;
+    if (PMODE !== "words") {
+        foldCards(pBody);
+        wireGlance(pBody);
+    }
     const live = pBody.querySelector(".live-refs");
     if (live) fillLiveRefs(live);
     const cs = pBody.querySelector(".code-slot");
     if (cs) fetch(macUrl("/api/dot-view?id=" + encodeURIComponent(cs.dataset.dot)), {
         cache: "no-store"
     }).then(r => r.ok ? r.json() : null).then(v => {
-        if (v && v.code && cs.isConnected) cs.innerHTML = codeCard(v.code);
+        if (v && v.code && cs.isConnected) {
+            cs.innerHTML = codeCard(v.code);
+            if (PMODE !== "words") foldCards(cs);
+        }
     }).catch(() => {});
     const nowEl = pBody.querySelector(".now-view");
     if (nowEl) fillNow(nowEl);
+}
+
+function panelMode() {
+    const q = QS.get("panel");
+    if (q && /^(glance|fold|words)$/.test(q)) {
+        store.set("ns.panel", q);
+        return q;
+    }
+    const m = store.get("ns.panel");
+    return /^(fold|words)$/.test(m || "") ? m : "glance";
+}
+
+function glanceOf(target, d) {
+    const {w: w, g: g, from: from} = goalFor(target.id), lw = d.liveWork || {}, pr = d.progress || {}, L = pr.loop;
+    const ST = [ "plan", "research", "design", "prototype", "experiment", "measure" ], AL = {
+        implement: "prototype",
+        learn: "measure"
+    };
+    const cur = L && L.stages && L.stages.length ? L.stages[L.stages.length - 1] : null, stg = cur && cur.stage || AL[pr.stage] || pr.stage, at = ST.indexOf(stg);
+    const needs = (d.asks || []).length + (lw.cards || 0);
+    return {
+        goal: g,
+        goalFrom: from ? (FULL.e[from] || {}).label || from : null,
+        parts: {
+            why: w.why && w.why.text,
+            goal: w.goal && w.goal.metric,
+            how: w.how && ((w.how.steps || [])[0] || {}).text || w.how && w.how.state
+        },
+        nums: [ {
+            k: "needs",
+            label: "needs you",
+            n: needs,
+            tone: "red",
+            tip: needs + " open question" + (needs === 1 ? "" : "s") + " or card" + (needs === 1 ? "" : "s") + " waiting for you on this dot"
+        }, {
+            k: "working",
+            label: "working",
+            n: lw.working || 0,
+            tip: (lw.working || 0) + " agent" + (lw.working === 1 ? "" : "s") + " running on this dot now"
+        }, {
+            k: "waiting",
+            label: "waiting",
+            n: lw.queued || 0,
+            tone: "wait",
+            tip: (lw.queued || 0) + " job" + (lw.queued === 1 ? "" : "s") + " queued or waiting on this dot"
+        } ],
+        stage: at >= 0 ? {
+            at: at,
+            round: cur && cur.round,
+            needs: L && L.needs,
+            done: (L && L.stages || []).filter(x => x.done && x.round === (cur && cur.round || 1)).map(x => x.stage)
+        } : null
+    };
+}
+
+function foldCards(root) {
+    root.querySelectorAll("div.card").forEach(c => {
+        if (c.closest("details.fold")) return;
+        const h = c.querySelector(":scope > h4");
+        if (!h) return;
+        const det = document.createElement("details"), sum = document.createElement("summary"), body = document.createElement("div");
+        const hot = !!c.querySelector("li.hot") || /^(needs you|blocked)/i.test(h.textContent), n = c.querySelectorAll(":scope > ul > li").length;
+        det.className = "card fold" + (hot ? " hot" : "") + (c.classList.contains("code-card") ? " code-card" : "");
+        det.open = hot;
+        const title = h.textContent.replace(/\s+/g, " ").trim();
+        det.dataset.fold = /^needs you/i.test(title) ? "needs" : /^working/i.test(title) ? "working" : /^(waiting|next)/i.test(title) ? "waiting" : title.toLowerCase().split(/[^a-z]+/)[0];
+        sum.innerHTML = esc(title.replace(/\s*[—·-]\s*\d+$/, "").replace(/ · read now from the repo$/, "")) + (/\d+$/.test(title) ? ` <span class="n">${esc(title.match(/\d+$/)[0])}</span>` : n ? ` <span class="n">${n}</span>` : "");
+        body.className = "fold-body";
+        h.remove();
+        while (c.firstChild) body.appendChild(c.firstChild);
+        det.append(sum, body);
+        c.replaceWith(det);
+    });
+}
+
+function wireGlance(root) {
+    root.querySelectorAll("[data-gl]").forEach(el => el.onclick = () => {
+        const d = root.querySelector(`details[data-fold="${el.dataset.gl}"]`);
+        if (d) {
+            d.open = true;
+            d.scrollIntoView({
+                block: "nearest",
+                behavior: "smooth"
+            });
+        }
+    });
 }
 
 function nowHtml(v) {
@@ -3116,7 +3212,21 @@ function fillNow(el) {
     fetch(macUrl("/api/dot-view?id=" + encodeURIComponent(id)), {
         cache: "no-store"
     }).then(r => r.ok ? r.json() : null).then(v => {
-        if (v && el.isConnected && el.dataset.dot === id) el.innerHTML = nowHtml(v);
+        if (!(v && el.isConnected && el.dataset.dot === id)) return;
+        el.innerHTML = nowHtml(v);
+        if (el.parentElement && el.parentElement.querySelector("[data-glance]")) {
+            foldCards(el);
+            const set = (k, n) => {
+                const b = el.parentElement.querySelector(`.gl-tile[data-gl="${k}"]`);
+                if (b) {
+                    b.querySelector("b").textContent = n;
+                    b.classList.toggle(k === "needs" ? "red" : "wait", n > 0 && k !== "working");
+                }
+            };
+            set("needs", (v.needsYou || []).length);
+            set("working", (v.working || []).length);
+            set("waiting", (v.waiting || []).length);
+        } else if (el.parentElement && el.parentElement.querySelector("details.fold")) foldCards(el);
     }).catch(() => {});
 }
 

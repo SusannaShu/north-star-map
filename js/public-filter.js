@@ -34,6 +34,7 @@
     function sanitize(o) {
         delete o.vision;
         delete o.rehomed;
+        delete o.files;
         if (o.why != null) o.why = strip(o.why);
         if (o.caption != null) o.caption = strip(o.caption);
         if (o.statusLine != null) o.statusLine = strip(o.statusLine);

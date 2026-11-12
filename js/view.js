@@ -105,6 +105,7 @@
         if (d.kind === "ptype") parts.push(clusterBlock(d));
         if (d.progress && !window.NS_PUBLIC) parts.push(progressBlock(d.progress));
         if (Array.isArray(d.vision) && d.vision.length && !window.NS_PUBLIC) parts.push(`<div class="vw-pg-row" style="margin-bottom:10px"><div class="vw-cap">vision</div>${d.vision.map(v => `<div style="color:var(--text);font-size:13px;line-height:1.45">${esc(v.text || "")}</div>`).join("")}</div>`);
+        if (Array.isArray(d.files) && d.files.length && !window.NS_PUBLIC) parts.push(filesBlock(d.files));
         if (d.deadline || d.checklist) parts.push(deadlineBlock(d));
         if (hero.length) parts.push(`<div class="vw-cards">${hero.join("")}</div>`);
         const linked = (DATA.peopleAt || {})[id] || [];
@@ -132,6 +133,46 @@
         focusEl.scrollTop = 0;
         wire(id, d);
     };
+    const FILE_KIND = {
+        workflow: "workflow",
+        scenario: "scenario",
+        skill: "how-to",
+        rule: "rule"
+    };
+    const fileGlyph = (k, x, y) => k === "rule" ? `<path d="M${x} ${y - 7}L${x + 7} ${y}L${x} ${y + 7}L${x - 7} ${y}Z" fill="none" stroke="var(--text)" stroke-width="1.4"/>` : k === "workflow" ? `<circle cx="${x - 6}" cy="${y}" r="2.6" fill="var(--text)"/><circle cx="${x + 6}" cy="${y}" r="2.6" fill="var(--text)"/><path d="M${x - 3} ${y}H${x + 3}" stroke="var(--text)" stroke-width="1.4"/>` : k === "scenario" ? `<circle cx="${x}" cy="${y}" r="6.5" fill="none" stroke="var(--text)" stroke-width="1.4"/><circle cx="${x}" cy="${y}" r="2" fill="var(--text)"/>` : `<rect x="${x - 6}" y="${y - 6}" width="12" height="12" rx="2" fill="none" stroke="var(--text)" stroke-width="1.4"/>`;
+    const SRC_WORD = {
+        udmail: "company mail",
+        teams: "Teams",
+        items: "its tasks",
+        chat: "chat",
+        thread: "chat",
+        gmail: "Gmail",
+        slack: "Slack",
+        imessage: "iMessage",
+        whatsapp: "WhatsApp",
+        wechat: "WeChat",
+        icloudmail: "iCloud mail"
+    };
+    function fileCard(f) {
+        const W = 300, H = 58, y = 34, end = f.second ? clip(f.homeLabel || f.home, 18).toLowerCase() : clip(f.lives || f.where, 18);
+        const rule = f.kind === "rule", inCode = rule && f.inCode;
+        const endMark = rule ? inCode ? `<circle cx="${W - 12}" cy="${y}" r="5" fill="var(--text)"/>` : `<circle cx="${W - 12}" cy="${y}" r="5" fill="none" stroke="#B7791F" stroke-width="1.6"/>` : `<rect x="${W - 17}" y="${y - 5}" width="10" height="10" rx="1.5" fill="none" stroke="var(--text-secondary)" stroke-width="1.2"/>`;
+        const dash = f.second ? ' stroke-dasharray="4 3"' : "", ax = Math.max(W / 2 + 26, W - 30 - end.length * 6.4);
+        const tip = `${FILE_KIND[f.kind] || f.kind}: ${f.label} -- from ${SRC_WORD[f.from] || f.from}, lives in ${f.where === "company mini" ? "the company Mac mini " : ""}${f.path || ""}${f.second ? " (its home is " + (f.homeLabel || f.home) + "; used here too)" : ""}${rule ? inCode ? " -- held in code" : " -- not in code yet" : ""}`;
+        return `<svg class="vw-file" viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="${esc(tip)}"><title>${esc(tip)}</title>\n    <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="7" fill="var(--bg-card, #fff)" stroke="var(--border)"${dash}/>\n    <text x="12" y="17" font-size="12" font-weight="600" fill="var(--text)" font-family="var(--font-heading, inherit)">${esc(clip(f.label, 34))}</text>\n    <text x="12" y="${y + 4}" font-size="10.5" fill="var(--text-secondary)" font-family="var(--font-mono, monospace)">${esc(SRC_WORD[f.from] || f.from)}</text>\n    <path d="M${Math.min(W / 2 - 24, Math.max(86, 18 + String(SRC_WORD[f.from] || f.from).length * 6.5))} ${y}H${W / 2 - 14}" stroke="var(--text-secondary)" stroke-width="1"${dash}/><path d="M${W / 2 - 18} ${y - 3}L${W / 2 - 14} ${y}L${W / 2 - 18} ${y + 3}" fill="none" stroke="var(--text-secondary)"/>\n    ${fileGlyph(f.kind, W / 2, y)}\n    <path d="M${W / 2 + 14} ${y}H${ax}" stroke="var(--text-secondary)" stroke-width="1"${dash}/><path d="M${ax - 4} ${y - 3}L${ax} ${y}L${ax - 4} ${y + 3}" fill="none" stroke="var(--text-secondary)"/>\n    <text x="${W - 24}" y="${y + 4}" font-size="10.5" text-anchor="end" fill="var(--text-secondary)" font-family="var(--font-mono, monospace)">${esc(end)}</text>\n    ${endMark}</svg>`;
+    }
+    function filesBlock(files) {
+        const own = files.filter(f => !f.second), kinds = [ "workflow", "scenario", "skill", "rule" ], n = k => own.filter(f => f.kind === k).length;
+        const total = own.length || 1, BW = 300;
+        let x = 0;
+        const bar = own.length ? kinds.filter(n).map(k => {
+            const w = Math.max(18, BW * n(k) / total), g = `<g><rect x="${x}" y="0" width="${w - 2}" height="18" rx="3" fill="${k === "rule" && own.some(f => f.kind === "rule" && !f.inCode) ? "none" : "var(--text)"}" stroke="var(--text)"/>\n    <text x="${x + 6}" y="13" font-size="10.5" fill="${k === "rule" && own.some(f => f.kind === "rule" && !f.inCode) ? "var(--text)" : "var(--bg, #fff)"}" font-family="var(--font-mono, monospace)">${n(k)} ${FILE_KIND[k]}</text></g>`;
+            x += w;
+            return g;
+        }).join("") : "";
+        const sorted = [ ...own.sort((a, b) => kinds.indexOf(a.kind) - kinds.indexOf(b.kind)), ...files.filter(f => f.second) ];
+        return `<div class="vw-block vw-files"><div class="vw-cap">files · from -> what -> where it lives</div>\n    ${bar ? `<svg viewBox="0 0 ${Math.max(BW, x)} 18" width="100%" style="max-width:420px;display:block;margin:4px 0 8px" role="img" aria-label="files by kind">${bar}</svg>` : ""}\n    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:6px">${sorted.map(fileCard).join("")}</div></div>`;
+    }
     function progressBlock(p) {
         const row = (cap, body, meta) => `<div class="vw-pg-row" style="margin-bottom:10px"><div class="vw-cap">${cap}</div>\n    <div style="color:var(--text);font-size:13px;line-height:1.45">${body}</div>${meta ? `<div class="vw-meta">${meta}</div>` : ""}</div>`;
         const out = [];
@@ -167,6 +208,32 @@
         return `<div style="display:flex;align-items:center;gap:8px;margin:4px 0"><div style="flex:1;height:6px;border:1px solid var(--text-dim);position:relative;${pct == null ? "border-style:dashed" : ""}">${pct == null ? "" : `<div style="position:absolute;left:0;top:0;bottom:0;width:${Math.max(pct, 1)}%;background:var(--text)"></div>`}</div><span class="vw-meta" style="white-space:nowrap">${pct == null ? g.value == null ? "not measured yet" : "no number target" : pct + "%"}</span></div>`;
     };
     window.nsWghBlock = w => wghBlock(w);
+    window.nsGlance = function(o) {
+        const g = o.goal, pct = g && g.grade != null ? Math.round(g.grade * 100) : null, R = 25, C = 2 * Math.PI * R;
+        const gTip = g ? `${g.metric || "goal"} -- target ${g.target || "not set"}${g.value != null ? ", now " + g.value + (g.unit ? " " + g.unit : "") : ", not measured yet"}${o.goalFrom ? " (the goal of " + o.goalFrom + ", which this dot serves)" : ""}` : "no goal with a number on this dot yet";
+        const ring = `<svg class="gl-ring" data-point data-visual viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="${esc(gTip)}"><title>${esc(gTip)}</title>\n    <circle cx="32" cy="32" r="${R}" fill="none" stroke="var(--border)" stroke-width="6"${pct == null ? ' stroke-dasharray="3 5"' : ""}/>\n    ${pct == null ? "" : `<circle cx="32" cy="32" r="${R}" fill="none" stroke="var(--text)" stroke-width="6" stroke-linecap="butt" stroke-dasharray="${(C * Math.max(pct, 1) / 100).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 32 32)"/>`}\n    <text x="32" y="37" text-anchor="middle" font-size="${pct == null ? 18 : 15}" font-weight="700" fill="${pct == null ? "var(--text-muted)" : "var(--text)"}" font-family="var(--font-heading, inherit)">${pct == null ? "–" : pct + "%"}</text></svg>`;
+        const tgt = g ? String(g.target || "").replace(/^at (?:most|least)\s*/i, "") : "";
+        const nums = !g ? '<span class="gl-none">no goal number yet</span>' : g.value != null ? `<b>${esc(String(g.value))}</b><svg viewBox="0 0 22 10" width="22" height="10" aria-hidden="true"><path d="M1 5H19M15 1.5L19 5L15 8.5" fill="none" stroke="var(--text-muted)" stroke-width="1.4"/></svg><b class="gl-t">${esc(tgt || "?")}</b>` : `<span class="gl-none">not measured</span><svg viewBox="0 0 22 10" width="22" height="10" aria-hidden="true"><path d="M1 5H19M15 1.5L19 5L15 8.5" fill="none" stroke="var(--text-muted)" stroke-width="1.4"/></svg><b class="gl-t">${esc(tgt || "?")}</b>`;
+        const unit = g ? clip(g.unit || g.metric || "", 30) : "";
+        const head = `<div class="gl-goal" title="${esc(gTip)}">${ring}<div class="gl-goalnum" data-point><div class="gl-now">${nums}</div>${unit ? `<div class="gl-unit">${esc(unit)}${o.goalFrom ? " · " + esc(clip(o.goalFrom, 18)) : ""}</div>` : ""}</div></div>`;
+        const tile = t => `<button type="button" class="gl-tile${t.n > 0 && t.tone ? " " + t.tone : ""}" data-point data-visual data-gl="${esc(t.k)}" title="${esc(t.tip || t.label)}"><b>${t.n == null ? "–" : t.n}</b><span>${esc(t.label)}</span></button>`;
+        const tiles = `<div class="gl-tiles">${(o.nums || []).map(tile).join("")}</div>`;
+        const P = [ [ "why", o.parts && o.parts.why ], [ "goal", o.parts && o.parts.goal ], [ "how", o.parts && o.parts.how ] ];
+        const pips = `<svg class="gl-pips" data-point data-visual viewBox="0 0 300 30" width="100%" role="img" aria-label="why, goal, how: ${P.filter(x => x[1]).length} of 3 are this dot's own"><title>${esc(P.map(([k, v]) => k + (v ? ": its own" : ": missing")).join(" · "))}</title>\n    <path d="M30 10H270" stroke="var(--border)" stroke-width="1.4"/>\n    ${P.map(([k, v], i) => {
+            const x = 30 + i * 120;
+            return `<g data-gl="wgh" style="cursor:pointer"><title>${esc(k + (v ? " -- " + clip(v, 200) : ": not found for this dot yet"))}</title><circle cx="${x}" cy="10" r="6" fill="${v ? "var(--text)" : "var(--bg, #fff)"}" stroke="${v ? "var(--text)" : "var(--text-muted)"}" stroke-width="1.5"${v ? "" : ' stroke-dasharray="2.5 2.5"'}/><text x="${x}" y="28" text-anchor="middle" font-size="10" letter-spacing=".8" fill="${v ? "var(--text)" : "var(--text-muted)"}" font-family="var(--mono, monospace)">${k.toUpperCase()}</text></g>`;
+        }).join("")}</svg>`;
+        let track = "";
+        if (o.stage && o.stage.at >= 0) {
+            const ST = [ "plan", "research", "design", "prototype", "experiment", "measure" ], st = o.stage;
+            track = `<svg class="gl-track" data-point data-visual viewBox="0 0 300 30" width="100%" role="img" aria-label="improve loop${st.round ? " round " + st.round : ""}: at ${ST[st.at]}"><title>${esc("improve loop" + (st.round ? " round " + st.round : "") + ": at " + ST[st.at] + (st.needs ? " -- this stage must produce: " + st.needs : ""))}</title>\n      <path d="M20 10H280" stroke="var(--border)" stroke-width="1.4"/><path d="M20 10H${20 + st.at * 52}" stroke="var(--text)" stroke-width="1.4"/>\n      ${ST.map((s, i) => {
+                const x = 20 + i * 52, d = i < st.at || (st.done || []).includes(s), c = i === st.at;
+                return `<circle cx="${x}" cy="10" r="${c ? 6 : 4}" fill="${d && !c ? "var(--text)" : "var(--bg, #fff)"}" stroke="${d || c ? "var(--text)" : "var(--text-dim, #bbb)"}" stroke-width="${c ? 2.4 : 1.4}"/>${c ? `<text x="${Math.min(Math.max(x, 28), 272)}" y="28" text-anchor="middle" font-size="10" font-weight="700" fill="var(--text)" font-family="var(--mono, monospace)">${s}</text>` : ""}`;
+            }).join("")}</svg>`;
+        }
+        return `<div class="gl" data-glance>${head}${tiles}${pips}${track}</div>`;
+    };
+    window.nsFilesBlock = f => filesBlock(f);
     function wghBlock(w) {
         const src = x => `<div class="vw-meta">${esc(clip(x || "", 160))}</div>`;
         const sec = (cap, body) => `<div style="margin-bottom:10px"><div class="vw-cap" style="font-weight:600;letter-spacing:.08em">${cap}</div><div style="color:var(--text);font-size:13px;line-height:1.45">${body}</div></div>`;

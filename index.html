@@ -186,6 +186,30 @@ html.public .nsmenu .msep, html.public .morebadge { display:none !important; }
   margin-top:10px; font-size:13px; color:var(--text); background:var(--bg);
   border:1px dashed var(--border); border-radius:var(--radius-sm); padding:10px 12px;
 }
+/* T5644: the panel at a glance -- ring, three numbers, why/goal/how marks, loop track; prose folds under each card title */
+.gl { display:flex; flex-direction:column; gap:12px; }
+.gl-goal { display:flex; align-items:center; gap:14px; }
+.gl-ring { flex:0 0 64px; }
+.gl-now { display:flex; align-items:center; gap:8px; font-family:var(--font-heading); font-size:26px; letter-spacing:-.5px; line-height:1; }
+.gl-now b { font-weight:700; } .gl-now .gl-t { color:var(--text-muted); }
+.gl-none { font-family:var(--mono); font-size:12px; color:var(--text-muted); letter-spacing:0; }
+.gl-unit { font-family:var(--mono); font-size:10.5px; color:var(--text-muted); margin-top:6px; }
+.gl-tiles { display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; }
+.gl-tile { border:1px solid var(--border); border-radius:var(--radius-sm); background:var(--bg-card); padding:9px 10px 8px; text-align:left; cursor:pointer; font-family:inherit; color:var(--text); }
+.gl-tile b { display:block; font-family:var(--font-heading); font-size:24px; line-height:1; letter-spacing:-.4px; }
+.gl-tile span { display:block; font-family:var(--mono); font-size:9.5px; letter-spacing:.7px; text-transform:uppercase; color:var(--text-muted); margin-top:5px; }
+.gl-tile.red b { color:var(--red); } .gl-tile.red { border-color:var(--red); }
+.gl-tile.wait b { color:#B7791F; }
+.gl-pips, .gl-track { display:block; max-width:360px; }
+details.card.fold { padding:0; }
+details.card.fold > summary { list-style:none; cursor:pointer; display:flex; align-items:center; gap:8px; padding:10px 14px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--text-muted); }
+details.card.fold > summary::-webkit-details-marker { display:none; }
+details.card.fold > summary::after { content:''; margin-left:auto; width:6px; height:6px; border-right:1.5px solid var(--text-muted); border-bottom:1.5px solid var(--text-muted); transform:rotate(-45deg); transition:transform .15s; }
+details.card.fold[open] > summary::after { transform:rotate(45deg); }
+details.card.fold > summary .n { color:var(--text); font-family:var(--mono); letter-spacing:0; }
+details.card.fold > .fold-body { padding:0 14px 12px; }
+details.card.fold.hot > summary { color:var(--red); }
+details.card.fold .vw-wgh { border:0 !important; padding:0 !important; margin:0 !important; }
 .panel-actions { display:flex; gap:8px; }
 .panel-actions .topbtn { flex:1; text-align:center; padding:11px; }
 .panel-chat {

@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T02:17:04.743Z",
+ "generatedAt": "2026-11-12T03:24:42.374Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -239,7 +239,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1174,7 +1174,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -1249,22 +1249,6 @@
      "visibility": "public",
      "links": [
       "mittens-digital"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-self-improve",
-     "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
-     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-     "statusLine": "live · learns nightly and from my words",
-     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
-     "stage": "active",
-     "embed": "pages/mittens-self-improve.html",
-     "visibility": "public",
-     "links": [
-      "aurora",
-      "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -3637,6 +3621,42 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "action-tree",
+   "label": "ACTION TREE",
+   "status": "idle",
+   "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
+   "statusLine": "live · stale items repaired daily",
+   "caption": "The one source of truth for what is open:",
+   "stage": "active",
+   "embed": "pages/action-tree.html",
+   "visibility": "public",
+   "links": [
+    "context-graph",
+    "housekeeping"
+   ],
+   "parent": "northstar",
+   "parked": false,
+   "children": [
+    {
+     "id": "action-tree-mittens-decides-small",
+     "label": "AGENT DECIDES SMALL CARDS",
+     "status": "idle",
+     "why": "My agent now handles small decisions on its own so only the bigger ones come to me.",
+     "statusLine": "being built",
+     "caption": "My agent now handles small decisions on its own so only the bigger ones come to me.",
+     "stage": "active",
+     "embed": "pages/action-tree-mittens-decides-small.html",
+     "visibility": "public",
+     "links": [
+      "action-tree",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "talk-short-chats",
    "label": "SHORT CHATS",
    "status": "idle",
@@ -3736,42 +3756,6 @@
      "visibility": "public",
      "links": [
       "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "action-tree",
-   "label": "ACTION TREE",
-   "status": "idle",
-   "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
-   "statusLine": "live · stale items repaired daily",
-   "caption": "The one source of truth for what is open:",
-   "stage": "active",
-   "embed": "pages/action-tree.html",
-   "visibility": "public",
-   "links": [
-    "context-graph",
-    "housekeeping"
-   ],
-   "parent": "northstar",
-   "parked": false,
-   "children": [
-    {
-     "id": "action-tree-mittens-decides-small",
-     "label": "AGENT DECIDES SMALL CARDS",
-     "status": "idle",
-     "why": "My agent now handles small decisions on its own so only the bigger ones come to me.",
-     "statusLine": "being built",
-     "caption": "My agent now handles small decisions on its own so only the bigger ones come to me.",
-     "stage": "active",
-     "embed": "pages/action-tree-mittens-decides-small.html",
-     "visibility": "public",
-     "links": [
-      "action-tree",
-      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5595,6 +5579,26 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "live-day-design",
+   "label": "LIVE DAY DESIGN",
+   "status": "idle",
+   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "statusLine": "active · designing",
+   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
+   "stage": "active",
+   "embed": "pages/live-day-design.html",
+   "visibility": "public",
+   "links": [
+    "live-day-plan",
+    "mittens-daily",
+    "code-architecture-tree"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens-2",
    "label": "MITTENS",
    "status": "done",
@@ -5687,26 +5691,6 @@
    ],
    "parent": "sheyou",
    "parked": true,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "live-day-design",
-   "label": "LIVE DAY DESIGN",
-   "status": "idle",
-   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "statusLine": "active · designing",
-   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "stage": "active",
-   "embed": "pages/live-day-design.html",
-   "visibility": "public",
-   "links": [
-    "live-day-plan",
-    "mittens-daily",
-    "code-architecture-tree"
-   ],
-   "parent": "mittens-daily",
-   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -5812,6 +5796,25 @@
     "robot-skin"
    ],
    "parent": "devhub",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-self-improve",
+   "label": "SELF-IMPROVING LOOP",
+   "status": "working",
+   "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
+   "statusLine": "live · learns nightly and from my words",
+   "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+   "stage": "active",
+   "embed": "pages/mittens-self-improve.html",
+   "visibility": "public",
+   "links": [
+    "aurora",
+    "brain-architecture"
+   ],
+   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
