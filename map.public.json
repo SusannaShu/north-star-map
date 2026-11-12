@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T15:46:05.384Z",
+ "generatedAt": "2026-11-12T17:01:21.767Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -498,7 +498,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 109
+       "v": 111
       }
      ],
      "partial": "2026-11-09",
@@ -545,7 +545,7 @@
         6,
         9,
         20,
-        40
+        42
        ]
       },
       {
@@ -872,11 +872,11 @@
      },
      {
       "d": "2026-11-12",
-      "v": "no effect"
+      "v": "helped"
      },
      {
       "d": "2026-11-12",
-      "v": "helped"
+      "v": "no effect"
      },
      {
       "d": "2026-11-12",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 44
+       "v": 50
       }
      ],
      "partial": "2026-11-12",
@@ -2093,7 +2093,7 @@
         6,
         5,
         26,
-        16
+        17
        ]
       },
       {
@@ -2104,7 +2104,7 @@
         4,
         3,
         15,
-        22
+        24
        ]
       },
       {
@@ -2747,7 +2747,7 @@
         },
         {
          "t": "2026-11-12",
-         "v": 25
+         "v": 27
         }
        ]
       },
@@ -4413,7 +4413,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 156
+         "v": 161
         }
        ]
       },
@@ -6761,7 +6761,7 @@
   {
    "id": "mittens-barge-in",
    "label": "BARGE-IN",
-   "status": "idle",
+   "status": "dormant",
    "why": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
    "statusLine": "live",
    "caption": "Talk over Mittens and it stops and listens; while it works it says which step it is on instead of going silent.",
@@ -6774,7 +6774,7 @@
     "ns-talk"
    ],
    "parent": "ns-talk",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "barge-in",
@@ -7020,7 +7020,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 156
+       "v": 161
       }
      ]
     },
@@ -7084,7 +7084,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 156
+       "v": 161
       }
      ]
     },
@@ -7333,7 +7333,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 156
+         "v": 161
         }
        ]
       },
