@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T14:05:57.357Z",
+ "generatedAt": "2026-11-12T15:13:53.631Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -498,7 +498,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 101
+       "v": 104
       }
      ],
      "partial": "2026-11-09",
@@ -534,7 +534,7 @@
         12,
         1,
         17,
-        18
+        20
        ]
       },
       {
@@ -556,7 +556,7 @@
         4,
         1,
         2,
-        9
+        10
        ]
       }
      ]
@@ -660,10 +660,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -789,10 +785,6 @@
      {
       "d": "2026-11-11",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
      },
      {
       "d": "2026-11-11",
@@ -821,10 +813,6 @@
      {
       "d": "2026-11-12",
       "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
      },
      {
       "d": "2026-11-12",
@@ -881,6 +869,18 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1585,7 +1585,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1944,7 +1944,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 21
+       "v": 28
       }
      ],
      "partial": "2026-11-12",
@@ -2049,7 +2049,7 @@
         0,
         0,
         1,
-        30
+        32
        ]
       },
       {
@@ -2060,7 +2060,7 @@
         9,
         4,
         22,
-        37
+        42
        ]
       },
       {
@@ -2071,7 +2071,7 @@
         0,
         1,
         3,
-        33
+        35
        ]
       },
       {
@@ -2093,7 +2093,7 @@
         6,
         5,
         26,
-        15
+        16
        ]
       },
       {
@@ -2747,7 +2747,7 @@
         },
         {
          "t": "2026-11-12",
-         "v": 22
+         "v": 24
         }
        ]
       },
@@ -3066,11 +3066,11 @@
        },
        {
         "d": "2026-11-12",
-        "v": "no effect"
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -3232,7 +3232,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3548,7 +3548,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4413,7 +4413,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 127
+         "v": 141
         }
        ]
       },
@@ -6541,6 +6541,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -7016,7 +7020,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 127
+       "v": 141
       }
      ]
     },
@@ -7080,7 +7084,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 127
+       "v": 141
       }
      ]
     },
@@ -7329,7 +7333,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 127
+         "v": 141
         }
        ]
       },
@@ -7421,7 +7425,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 61
+       "v": 63
       }
      ]
     },
@@ -7690,7 +7694,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -8038,7 +8042,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 61
+         "v": 63
         }
        ]
       },
