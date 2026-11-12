@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-11T19:18:49.464Z",
+ "generatedAt": "2026-11-12T01:52:09.733Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -239,7 +239,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -264,20 +264,6 @@
    "parked": false,
    "children": [],
    "embedCaption": "case study"
-  },
-  {
-   "id": "mittens-hw",
-   "label": "WATCH",
-   "status": "idle",
-   "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
-   "statusLine": "running · three digests a day",
-   "caption": "Mittens scrolls so I don't:",
-   "stage": "active",
-   "embed": "pages/mittens-hw.html",
-   "visibility": "public",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "mittens-daily",
@@ -375,6 +361,20 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-hw",
+   "label": "WATCH",
+   "status": "idle",
+   "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
+   "statusLine": "running · three digests a day",
+   "caption": "Mittens scrolls so I don't:",
+   "stage": "active",
+   "embed": "pages/mittens-hw.html",
+   "visibility": "public",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1174,7 +1174,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -1255,7 +1255,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3007,7 +3007,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -4358,7 +4358,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "idle",
+   "status": "working",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
