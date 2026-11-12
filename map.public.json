@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T08:11:10.282Z",
+ "generatedAt": "2026-11-12T08:23:09.861Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -89,7 +89,7 @@
         },
         {
          "t": "2026-11-12",
-         "v": 28
+         "v": 30
         }
        ]
       },
@@ -99,7 +99,10 @@
         "v": "unmeasured"
        }
       ],
-      "stage": null
+      "stage": {
+       "at": 1,
+       "round": 1
+      }
      },
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -123,7 +126,7 @@
         },
         {
          "t": "2026-11-12",
-         "v": 28
+         "v": 30
         }
        ]
       },
@@ -133,7 +136,10 @@
         "v": "unmeasured"
        }
       ],
-      "stage": null
+      "stage": {
+       "at": 0,
+       "round": 1
+      }
      },
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -574,10 +580,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -871,6 +873,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
@@ -1035,24 +1041,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 28
-      },
-      {
        "t": "2026-11-11",
-       "v": 37
+       "v": 16
       },
       {
        "t": "2026-11-12",
-       "v": 42
+       "v": 65
+      },
+      {
+       "t": "2026-11-12",
+       "v": 3
       }
      ]
     },
@@ -1100,10 +1102,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 1
     }
    },
@@ -1806,6 +1812,10 @@
       {
        "t": "2026-11-12",
        "v": 98
+      },
+      {
+       "t": "2026-11-12",
+       "v": 106
       }
      ]
     },
@@ -1869,6 +1879,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -2465,7 +2479,10 @@
       "v": "helped"
      }
     ],
-    "stage": null
+    "stage": {
+     "at": 0,
+     "round": 1
+    }
    },
    "links": [
     "howto-cleanup",
@@ -4171,7 +4188,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 33
+       "v": 26
       }
      ]
     },
@@ -4186,8 +4203,8 @@
      }
     ],
     "stage": {
-     "at": 5,
-     "round": 1
+     "at": 0,
+     "round": 2
     }
    },
    "links": [
@@ -4262,7 +4279,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -4280,7 +4297,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 29
+       "v": 28
       }
      ]
     },
@@ -4288,6 +4305,10 @@
      {
       "d": "2026-11-11",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-12",
@@ -5181,7 +5202,10 @@
       "v": "no effect"
      }
     ],
-    "stage": null
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
    },
    "links": [
     "mittens-hw",
@@ -6147,7 +6171,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 58
+       "v": 60
       }
      ]
     },
@@ -6157,7 +6181,10 @@
       "v": "helped"
      }
     ],
-    "stage": null
+    "stage": {
+     "at": 0,
+     "round": 1
+    }
    },
    "parent": "mittens",
    "parked": false,
@@ -6367,7 +6394,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 60
+       "v": 67
       }
      ]
     },
@@ -6386,7 +6413,7 @@
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 4,
      "round": 1
     }
    },
