@@ -3708,6 +3708,28 @@ function situation() {
         text: r.text,
         review: true
     }));
+    if (Array.isArray(s.cards)) {
+        const prog = T ? (T.inProgress || []).map(x => {
+            const id = nodeFor(x.project);
+            return {
+                id: id,
+                label: id && FULL.e[id] ? FULL.e[id].label : String(x.project || ""),
+                text: x.text
+            };
+        }) : [];
+        return {
+            verified: true,
+            at: T && T.generatedAt,
+            summary: T && T.summary || "",
+            today: T && T.summary || s.today || "",
+            needs: s.cards.map(c => ({
+                ...c,
+                id: "",
+                item: c.item
+            })),
+            progress: prog
+        };
+    }
     if (T) {
         const nm = (id, raw) => (id && FULL.e[id] ? FULL.e[id].label : String(raw || "")).replace(/ HUB$| MAP$/, "").toLowerCase().replace(/^./, c => c.toUpperCase());
         const needs = (T.needsYou || []).map(x => {
@@ -3768,7 +3790,7 @@ const plainText = x => String(x == null ? "" : x).replace(/<[^>]+>/g, "");
 function needsHtml(list, max) {
     const rv = list.filter(n => n.review), rest = list.filter(n => !n.review);
     list = [ ...rest.slice(0, Math.max(0, max - rv.length)), ...rv, ...rest.slice(Math.max(0, max - rv.length)) ];
-    const rows = list.slice(0, max).map(n => `<li class="${n.review ? "rv" : ""}" data-id="${esc(n.id || "")}"><b>${esc(n.label)}</b> — ${esc(plainText(n.text))}</li>`);
+    const rows = list.slice(0, max).map(n => `<li class="${n.review ? "rv" : ""}" data-id="${esc(n.id || "")}"${n.item ? ` data-item="${esc(n.item)}"` : ""}><b>${esc(n.label)}</b>${n.text ? ` — ${esc(plainText(n.text))}` : ""}</li>`);
     if (list.length > max) {
         const more = list.slice(max), names = [ ...new Set(more.map(n => n.label)) ];
         rows.push(`<li class="more">and ${more.length} more — ${names.map(esc).join(", ")}</li>`);
@@ -3785,6 +3807,15 @@ function progressHtml(s, max) {
     if (!s.progress || !s.progress.length) return "";
     return `<div class="sit-prog"><span>in progress</span> ${s.progress.slice(0, max).map(p => `<b>${esc(p.label)}</b> ${esc(clipTxt(p.text, 60))}`).join(" · ")}</div>`;
 }
+
+document.addEventListener("click", e => {
+    const ci = e.target.closest && e.target.closest(".sit-needs li[data-item]");
+    if (ci && !saver) {
+        e.stopPropagation();
+        window.open("/item.html?id=" + encodeURIComponent(ci.dataset.item), "_self");
+        return;
+    }
+});
 
 document.addEventListener("click", e => {
     const li = e.target.closest && e.target.closest(".sit-needs li[data-id]");
@@ -3808,7 +3839,7 @@ function openSituationPanel() {
     syncPanelW();
     document.getElementById("pTitle").textContent = "What is going on";
     document.getElementById("pStatus").innerHTML = `<span class="dot ${LIVE.working || 0 ? "working" : ""}"></span><span>${esc(workingSentence())}</span>`;
-    const go = n => n.id && n.id !== "inbox" && FULL.e[n.id] ? `onclick="jumpTo('${n.id}')"` : 'onclick="openInbox()"';
+    const go = n => n.item ? `onclick="location.href='/item.html?id=${encodeURIComponent(n.item)}'"` : n.id && n.id !== "inbox" && FULL.e[n.id] ? `onclick="jumpTo('${n.id}')"` : 'onclick="openInbox()"';
     document.getElementById("pBody").innerHTML = `\n    <div class="card why"><h4>${s.verified ? "Today · read from your messages " + esc(new Date(s.at).toLocaleTimeString("en-US", {
         hour: "numeric",
         minute: "2-digit"
