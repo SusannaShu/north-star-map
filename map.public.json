@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T17:49:02.847Z",
+ "generatedAt": "2026-11-12T18:51:51.589Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -464,7 +464,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -498,7 +498,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 111
+       "v": 112
       }
      ],
      "partial": "2026-11-09",
@@ -545,7 +545,7 @@
         6,
         9,
         20,
-        42
+        43
        ]
       },
       {
@@ -564,10 +564,6 @@
     "tries": [
      {
       "d": "2026-11-10",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-10",
       "v": "unmeasured"
      },
      {
@@ -881,6 +877,10 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1585,7 +1585,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -1975,7 +1975,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2025,7 +2025,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 51
+       "v": 54
       }
      ],
      "partial": "2026-11-12",
@@ -2312,6 +2312,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2470,7 +2478,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "idle",
+   "status": "working",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -2535,7 +2543,7 @@
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 1
     }
    },
@@ -2620,7 +2628,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 46
+       "v": 45
       }
      ]
     },
@@ -2651,6 +2659,10 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
       "v": "unmeasured"
      }
     ],
@@ -2764,10 +2776,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3083,6 +3091,10 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -3106,6 +3118,49 @@
      "links": [
       "mittens-self-improve",
       "mittens-chat-threads"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brain-architecture",
+   "label": "BRAIN ARCHITECTURE",
+   "status": "idle",
+   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
+   "statusLine": "done · cold-start drill passes nightly",
+   "caption": "Swap the model and nothing is lost:",
+   "stage": "done",
+   "embed": "pages/brain-architecture.html",
+   "visibility": "public",
+   "parent": "context-graph",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-design",
+     "label": "MITTENS = CLAUDE + SENSES",
+     "status": "idle",
+     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
+     "statusLine": "designed · new version going live",
+     "caption": "My assistant is a strong language model plus senses:",
+     "stage": "active",
+     "embed": "pages/mittens-design.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "brain-architecture-2",
+     "label": "BRAIN ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "stage": "active",
+     "embed": "pages/brain-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3235,49 +3290,6 @@
      "links": [
       "triggers",
       "man-rules"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "brain-architecture",
-   "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
-   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
-   "statusLine": "done · cold-start drill passes nightly",
-   "caption": "Swap the model and nothing is lost:",
-   "stage": "done",
-   "embed": "pages/brain-architecture.html",
-   "visibility": "public",
-   "parent": "context-graph",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-design",
-     "label": "MITTENS = CLAUDE + SENSES",
-     "status": "idle",
-     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
-     "statusLine": "designed · new version going live",
-     "caption": "My assistant is a strong language model plus senses:",
-     "stage": "active",
-     "embed": "pages/mittens-design.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "brain-architecture-2",
-     "label": "BRAIN ARCHITECTURE",
-     "status": "idle",
-     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
-     "statusLine": "in progress",
-     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
-     "stage": "active",
-     "embed": "pages/brain-architecture-2.html",
-     "visibility": "public",
-     "links": [
-      "brain-architecture"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -4216,6 +4228,25 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-knows",
+   "label": "ALWAYS KNOWS",
+   "status": "idle",
+   "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
+   "statusLine": "live",
+   "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
+   "stage": "active",
+   "embed": "pages/mittens-knows.html",
+   "visibility": "public",
+   "links": [
+    "mw-blind",
+    "mittens-desktop"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "aurora",
    "label": "AURORA",
    "status": "idle",
@@ -4314,25 +4345,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "mittens-knows",
-   "label": "ALWAYS KNOWS",
-   "status": "idle",
-   "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
-   "statusLine": "live",
-   "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
-   "stage": "active",
-   "embed": "pages/mittens-knows.html",
-   "visibility": "public",
-   "links": [
-    "mw-blind",
-    "mittens-desktop"
-   ],
-   "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "smart-glasses",
    "label": "GLASSES",
    "status": "idle",
@@ -4425,7 +4437,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 161
+         "v": 177
         }
        ]
       },
@@ -6557,6 +6569,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -7032,7 +7048,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 161
+       "v": 177
       }
      ]
     },
@@ -7096,7 +7112,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 161
+       "v": 177
       }
      ]
     },
@@ -7345,7 +7361,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 161
+         "v": 177
         }
        ]
       },
@@ -7437,7 +7453,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 62
+       "v": 61
       }
      ]
     },
@@ -8058,7 +8074,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 62
+         "v": 61
         }
        ]
       },
@@ -8314,7 +8330,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -8332,7 +8348,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 87
+       "v": 72
       }
      ]
     },
@@ -8340,6 +8356,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
