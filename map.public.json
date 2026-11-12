@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T23:10:47.119Z",
+ "generatedAt": "2026-11-12T23:41:10.405Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -343,7 +343,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -502,7 +502,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 118
+       "v": 119
       }
      ],
      "partial": "2026-11-09",
@@ -538,7 +538,7 @@
         12,
         1,
         17,
-        26
+        27
        ]
       },
       {
@@ -632,10 +632,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -876,15 +872,19 @@
      },
      {
       "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
       "v": "helped"
      },
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -914,7 +914,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1999,7 +1999,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2049,7 +2049,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 72
+       "v": 73
       }
      ],
      "partial": "2026-11-12",
@@ -2073,7 +2073,7 @@
         0,
         0,
         1,
-        37
+        38
        ]
       },
       {
@@ -2084,7 +2084,7 @@
         9,
         4,
         22,
-        51
+        52
        ]
       },
       {
@@ -2624,6 +2624,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2712,7 +2716,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 53
+       "v": 55
       }
      ]
     },
@@ -2748,6 +2752,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
      },
      {
       "d": "2026-11-12",
@@ -2833,7 +2841,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2916,14 +2924,14 @@
         {
          "t": "2026-11-12",
          "v": 8
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3235,6 +3243,10 @@
        {
         "d": "2026-11-12",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
        },
        {
         "d": "2026-11-12",
@@ -4863,6 +4875,10 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
       "v": "unmeasured"
      },
      {
@@ -7246,7 +7262,7 @@
   {
    "id": "thread-architecture",
    "label": "THREAD ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply. One panel shows my threads and the agents working on them.",
    "statusLine": "live · every write double-checked",
    "caption": "Every input becomes one row in a ledger, gets sorted into a topic thread, and gets a draft only when I need to reply.",
@@ -7693,7 +7709,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
