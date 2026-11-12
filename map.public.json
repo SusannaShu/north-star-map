@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-12T08:23:09.861Z",
+ "generatedAt": "2026-11-12T08:35:10.628Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1784,7 +1784,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2539,7 +2539,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2678,7 +2678,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -2705,10 +2705,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-10",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-10",
         "v": "unmeasured"
@@ -3012,6 +3008,10 @@
        {
         "d": "2026-11-12",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-12",
@@ -4279,7 +4279,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -4288,16 +4288,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-11",
-       "v": 32
+       "t": "2026-11-12",
+       "v": 31
       },
       {
        "t": "2026-11-12",
-       "v": 28
+       "v": 0.372
+      },
+      {
+       "t": "2026-11-12",
+       "v": 37.2
       }
      ]
     },
@@ -4321,6 +4325,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -4357,7 +4369,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 83
+         "v": 106
         }
        ]
       },
@@ -4697,20 +4709,6 @@
      "stage": "active",
      "embed": "pages/read-to-me.html",
      "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-12",
-         "v": 83
-        }
-       ]
-      },
-      "tries": [],
-      "stage": null
-     },
      "links": [
       "howto-read-to-me"
      ],
@@ -5262,7 +5260,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 30
+         "v": 31
         }
        ]
       },
@@ -5505,7 +5503,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 17
+       "v": 8
       }
      ]
     },
@@ -5847,7 +5845,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 17
+       "v": 8
       }
      ]
     },
@@ -6974,7 +6972,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 83
+       "v": 106
       }
      ]
     },
@@ -7038,7 +7036,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 83
+       "v": 106
       }
      ]
     },
@@ -7287,7 +7285,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 83
+         "v": 106
         }
        ]
       },
@@ -7379,7 +7377,7 @@
      "points": [
       {
        "t": "2026-11-12",
-       "v": 17
+       "v": 63
       }
      ]
     },
@@ -7930,6 +7928,20 @@
      "stage": "active",
      "embed": "pages/scenarios.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 63
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
      "links": [
       "triage",
       "brain-architecture"
@@ -8250,7 +8262,7 @@
        "points": [
         {
          "t": "2026-11-12",
-         "v": 17
+         "v": 8
         }
        ]
       },
