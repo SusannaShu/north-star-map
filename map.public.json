@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T14:30:19.597Z",
+ "generatedAt": "2026-11-13T14:42:52.077Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -571,7 +571,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 120
+       "v": 121
       }
      ],
      "partial": "2026-11-09",
@@ -618,7 +618,7 @@
         6,
         9,
         20,
-        44
+        45
        ]
       },
       {
@@ -949,11 +949,11 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
+      "v": "helped"
      },
      {
       "d": "2026-11-13",
-      "v": "helped"
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2232,7 +2232,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 2
+       "v": 5
       }
      ],
      "partial": "2026-11-13",
@@ -2245,7 +2245,7 @@
         0,
         0,
         4,
-        21
+        22
        ]
       },
       {
@@ -2256,7 +2256,7 @@
         0,
         0,
         1,
-        39
+        40
        ]
       },
       {
@@ -2267,7 +2267,7 @@
         9,
         4,
         22,
-        56
+        58
        ]
       },
       {
@@ -2278,7 +2278,7 @@
         0,
         1,
         3,
-        35
+        36
        ]
       },
       {
@@ -2328,10 +2328,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-11",
       "v": "unmeasured"
@@ -2631,6 +2627,10 @@
      {
       "d": "2026-11-13",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -7108,10 +7108,6 @@
       {
        "t": "2026-11-13",
        "v": 149
-      },
-      {
-       "t": "2026-11-13",
-       "v": 94.7
       }
      ]
     },
@@ -7162,7 +7158,7 @@
      },
      {
       "d": "2026-11-13",
-      "v": "helped"
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -9074,7 +9070,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9422,6 +9418,39 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "owner-decides",
+   "label": "THE OWNER DECIDES",
+   "status": "idle",
+   "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
+   "statusLine": "built · being tuned",
+   "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
+   "stage": "active",
+   "embed": "pages/owner-decides.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 134
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
+   "links": [
+    "need-her-once",
+    "mittens-self-improve"
+   ],
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "rg-self-serve-first",
    "label": "SELF-SERVE FIRST",
    "status": "idle",
@@ -9504,39 +9533,6 @@
     "stage": null
    },
    "parent": "mittens-digital",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "owner-decides",
-   "label": "THE OWNER DECIDES",
-   "status": "idle",
-   "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
-   "statusLine": "built · being tuned",
-   "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
-   "stage": "active",
-   "embed": "pages/owner-decides.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-13",
-       "v": 134
-      }
-     ]
-    },
-    "tries": [],
-    "stage": null
-   },
-   "links": [
-    "need-her-once",
-    "mittens-self-improve"
-   ],
-   "parent": "ns-talk",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
