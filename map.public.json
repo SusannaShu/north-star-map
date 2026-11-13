@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T19:39:53.059Z",
+ "generatedAt": "2026-11-13T20:24:04.848Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -406,7 +406,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -588,7 +588,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 124
+       "v": 125
       }
      ],
      "partial": "2026-11-09",
@@ -635,7 +635,7 @@
         6,
         9,
         20,
-        46
+        47
        ]
       },
       {
@@ -662,10 +662,6 @@
      },
      {
       "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
       "v": "helped"
      },
      {
@@ -943,6 +939,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2356,7 +2356,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 14
+       "v": 16
       }
      ],
      "partial": "2026-11-13",
@@ -3674,7 +3674,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4138,7 +4138,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -8414,7 +8414,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -8432,6 +8432,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 2.9
+      },
+      {
+       "t": "2026-11-13",
        "v": 2.9
       },
       {
@@ -8488,6 +8492,14 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      },
      {
       "d": "2026-11-13",
@@ -8904,7 +8916,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "idle",
+   "status": "working",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -8934,6 +8946,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -9008,7 +9024,7 @@
   {
    "id": "brain-deciding",
    "label": "DECIDING + ROUTING",
-   "status": "working",
+   "status": "idle",
    "why": "How each message is sorted and sent to the right place.",
    "statusLine": "noted this week",
    "caption": "How each message is sorted and sent to the right place.",
@@ -9022,11 +9038,15 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 54
+       "v": 46
       }
      ]
     },
     "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
      {
       "d": "2026-11-13",
       "v": "helped"
