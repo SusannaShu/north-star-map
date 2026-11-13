@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T04:30:21.557Z",
+ "generatedAt": "2026-11-13T05:04:05.733Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -98,6 +98,10 @@
         {
          "t": "2026-11-12",
          "v": 30
+        },
+        {
+         "t": "2026-11-13",
+         "v": 30
         }
        ]
       },
@@ -134,6 +138,10 @@
         },
         {
          "t": "2026-11-12",
+         "v": 30
+        },
+        {
+         "t": "2026-11-13",
          "v": 30
         }
        ]
@@ -199,6 +207,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 54
+      },
+      {
+       "t": "2026-11-13",
        "v": 54
       }
      ]
@@ -297,6 +309,10 @@
       {
        "t": "2026-11-12",
        "v": 28
+      },
+      {
+       "t": "2026-11-13",
+       "v": 28
       }
      ]
     },
@@ -377,6 +393,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 57
+      },
+      {
+       "t": "2026-11-13",
        "v": 57
       }
      ]
@@ -1333,6 +1353,10 @@
       {
        "t": "2026-11-12",
        "v": 37
+      },
+      {
+       "t": "2026-11-13",
+       "v": 37
       }
      ]
     },
@@ -1435,6 +1459,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 35
+      },
+      {
+       "t": "2026-11-13",
        "v": 35
       }
      ]
@@ -1640,7 +1668,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2003,7 +2031,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2034,7 +2062,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2087,7 +2115,6 @@
        "v": 77
       }
      ],
-     "partial": "2026-11-12",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -2495,6 +2522,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2609,6 +2640,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 33
+      },
+      {
+       "t": "2026-11-13",
        "v": 33
       }
      ]
@@ -2809,7 +2844,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2835,6 +2870,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 55
+      },
+      {
+       "t": "2026-11-13",
        "v": 55
       }
      ]
@@ -3449,7 +3488,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "working",
+   "status": "idle",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -4040,6 +4079,10 @@
       {
        "t": "2026-11-12",
        "v": 30
+      },
+      {
+       "t": "2026-11-13",
+       "v": 30
       }
      ]
     },
@@ -4582,6 +4625,10 @@
       {
        "t": "2026-11-12",
        "v": 46
+      },
+      {
+       "t": "2026-11-13",
+       "v": 46
       }
      ]
     },
@@ -5025,6 +5072,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 30
+      },
+      {
+       "t": "2026-11-13",
        "v": 30
       }
      ]
@@ -5975,6 +6026,10 @@
         {
          "t": "2026-11-12",
          "v": 36
+        },
+        {
+         "t": "2026-11-13",
+         "v": 36
         }
        ]
       },
@@ -6019,6 +6074,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 47
+      },
+      {
+       "t": "2026-11-13",
        "v": 47
       }
      ]
@@ -6575,6 +6634,10 @@
       {
        "t": "2026-11-12",
        "v": 60
+      },
+      {
+       "t": "2026-11-13",
+       "v": 60
       }
      ]
     },
@@ -6798,6 +6861,10 @@
       {
        "t": "2026-11-12",
        "v": 67
+      },
+      {
+       "t": "2026-11-13",
+       "v": 67
       }
      ]
     },
@@ -6864,7 +6931,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -6886,7 +6953,11 @@
       },
       {
        "t": "2026-11-12",
-       "v": 46
+       "v": 45
+      },
+      {
+       "t": "2026-11-13",
+       "v": 45
       }
      ]
     },
@@ -6922,6 +6993,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -7313,7 +7388,7 @@
   {
    "id": "map-upkeep",
    "label": "MAP UPKEEP",
-   "status": "working",
+   "status": "idle",
    "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
    "statusLine": "hourly tidy · placement audit run",
    "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
@@ -8008,6 +8083,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -8322,6 +8401,10 @@
       {
        "t": "2026-11-12",
        "v": 41
+      },
+      {
+       "t": "2026-11-13",
+       "v": 41
       }
      ]
     },
@@ -8400,7 +8483,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -8818,6 +8901,10 @@
       {
        "t": "2026-11-12",
        "v": 77
+      },
+      {
+       "t": "2026-11-13",
+       "v": 77
       }
      ]
     },
@@ -9079,6 +9166,10 @@
       {
        "t": "2026-11-12",
        "v": 50
+      },
+      {
+       "t": "2026-11-13",
+       "v": 50
       }
      ]
     },
@@ -9137,6 +9228,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 43
+      },
+      {
+       "t": "2026-11-13",
        "v": 43
       }
      ]
