@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T05:04:05.733Z",
+ "generatedAt": "2026-11-13T05:16:05.656Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1185,6 +1185,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1974,6 +1978,10 @@
      {
       "d": "2026-11-12",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -2062,7 +2070,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2357,10 +2365,6 @@
      },
      {
       "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
       "v": "helped"
      },
      {
@@ -2526,6 +2530,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2999,7 +3007,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3012,60 +3020,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-10",
-         "v": 5
-        },
-        {
-         "t": "2026-11-10",
-         "v": 6
-        },
-        {
-         "t": "2026-11-10",
-         "v": 64
-        },
-        {
-         "t": "2026-11-10",
-         "v": 7
-        },
-        {
-         "t": "2026-11-10",
-         "v": 17.1
-        },
-        {
          "t": "2026-11-11",
-         "v": 273
-        },
-        {
-         "t": "2026-11-11",
-         "v": 10
-        },
-        {
-         "t": "2026-11-11",
-         "v": 13
-        },
-        {
-         "t": "2026-11-11",
-         "v": 33
-        },
-        {
-         "t": "2026-11-11",
-         "v": 27
-        },
-        {
-         "t": "2026-11-12",
-         "v": 7
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0.75
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
+         "v": 1
         },
         {
          "t": "2026-11-12",
@@ -3073,23 +3029,15 @@
         },
         {
          "t": "2026-11-12",
-         "v": 12
+         "v": 31
         },
         {
          "t": "2026-11-12",
-         "v": 8
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
-        {
-         "t": "2026-11-13",
          "v": 0
         },
         {
          "t": "2026-11-13",
-         "v": 5.92
+         "v": 3
         }
        ]
       },
@@ -3276,10 +3224,6 @@
        },
        {
         "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
         "v": "unmeasured"
        },
        {
@@ -3409,6 +3353,10 @@
        {
         "d": "2026-11-13",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "no effect"
        },
        {
         "d": "2026-11-13",
@@ -5046,7 +4994,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -5111,6 +5059,10 @@
      },
      {
       "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -6931,7 +6883,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
