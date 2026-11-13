@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T14:06:36.114Z",
+ "generatedAt": "2026-11-13T14:18:09.603Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -53,6 +53,10 @@
      },
      {
       "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -533,7 +537,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -979,7 +983,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2225,8 +2229,13 @@
       {
        "t": "2026-11-12",
        "v": 47
+      },
+      {
+       "t": "2026-11-13",
+       "v": 0
       }
      ],
+     "partial": "2026-11-13",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -2319,10 +2328,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-11",
       "v": "unmeasured"
@@ -2626,6 +2631,10 @@
      {
       "d": "2026-11-13",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -5627,7 +5636,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -6994,6 +7003,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      }
     ],
     "stage": {
