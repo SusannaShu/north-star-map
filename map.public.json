@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T05:56:57.427Z",
+ "generatedAt": "2026-11-13T06:19:27.950Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2092,15 +2092,15 @@
       },
       {
        "t": "2026-11-04",
-       "v": 3
+       "v": 0
       },
       {
        "t": "2026-11-05",
-       "v": 18
+       "v": 7
       },
       {
        "t": "2026-11-06",
-       "v": 13
+       "v": 6
       },
       {
        "t": "2026-11-07",
@@ -2112,19 +2112,19 @@
       },
       {
        "t": "2026-11-09",
-       "v": 25
+       "v": 17
       },
       {
        "t": "2026-11-10",
-       "v": 38
+       "v": 25
       },
       {
        "t": "2026-11-11",
-       "v": 35
+       "v": 32
       },
       {
        "t": "2026-11-12",
-       "v": 60
+       "v": 47
       }
      ],
      "perPoint": [
@@ -2220,22 +2220,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-10",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-11",
       "v": "unmeasured"
      },
@@ -2538,10 +2522,26 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 5
     }
    },
@@ -2856,7 +2856,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4038,7 +4038,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 30
+       "v": 37
       }
      ]
     },
@@ -4106,10 +4106,14 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 1
     }
    },
@@ -5067,6 +5071,10 @@
      },
      {
       "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -6891,7 +6899,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -6900,24 +6908,24 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-10",
-       "v": 28
-      },
-      {
        "t": "2026-11-11",
-       "v": 37
+       "v": 79
       },
       {
        "t": "2026-11-12",
-       "v": 45
+       "v": 169
       },
       {
        "t": "2026-11-13",
-       "v": 45
+       "v": 151
+      },
+      {
+       "t": "2026-11-13",
+       "v": 149
       }
      ]
     },
@@ -6957,10 +6965,18 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 1
     }
    },
@@ -8842,7 +8858,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
