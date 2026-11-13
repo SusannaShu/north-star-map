@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T05:16:05.656Z",
+ "generatedAt": "2026-11-13T05:46:12.917Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -515,7 +515,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1372,6 +1372,10 @@
      {
       "d": "2026-11-12",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "hurt"
      }
     ],
     "stage": {
@@ -2216,10 +2220,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-09",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-10",
       "v": "helped"
      },
@@ -2534,10 +2534,14 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 4,
+     "at": 5,
      "round": 4
     }
    },
@@ -2852,7 +2856,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -2882,7 +2886,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 55
+       "v": 57
       }
      ]
     },
@@ -2925,6 +2929,10 @@
      },
      {
       "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
       "v": "helped"
      }
     ],
@@ -3007,7 +3015,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3037,15 +3045,11 @@
         },
         {
          "t": "2026-11-13",
-         "v": 3
+         "v": 4
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3357,6 +3361,10 @@
        {
         "d": "2026-11-13",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-13",
@@ -4994,7 +5002,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
