@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T17:19:25.887Z",
+ "generatedAt": "2026-11-13T17:31:46.399Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -218,28 +218,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 37
+       "t": "2026-11-11",
+       "v": 0
       },
       {
        "t": "2026-11-11",
-       "v": 54
-      },
-      {
-       "t": "2026-11-12",
-       "v": 54
+       "v": 0
       },
       {
        "t": "2026-11-13",
-       "v": 54
+       "v": 0
       }
      ]
     },
@@ -275,6 +267,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      }
     ],
     "stage": null
@@ -1483,6 +1479,10 @@
       {
        "t": "2026-11-13",
        "v": 7
+      },
+      {
+       "t": "2026-11-13",
+       "v": 7
       }
      ]
     },
@@ -1526,6 +1526,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1591,7 +1595,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "working",
+   "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -1621,13 +1625,18 @@
       },
       {
        "t": "2026-11-13",
-       "v": 34
+       "v": 71
       }
      ]
     },
-    "tries": [],
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     }
+    ],
     "stage": {
-     "at": 4,
+     "at": 3,
      "round": 1
     }
    },
@@ -2416,10 +2425,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-12",
       "v": "helped"
      },
@@ -2734,6 +2739,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2818,7 +2827,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "working",
+   "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -9612,6 +9621,21 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "one-day-store",
+   "label": "ONE DAY STORE",
+   "status": "idle",
+   "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
+   "statusLine": "plan written · being built",
+   "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
+   "stage": "active",
+   "embed": "pages/one-day-store.html",
+   "visibility": "public",
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "rg-self-serve-first",
    "label": "SELF-SERVE FIRST",
    "status": "idle",
@@ -9694,21 +9718,6 @@
     "stage": null
    },
    "parent": "mittens-digital",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "one-day-store",
-   "label": "ONE DAY STORE",
-   "status": "idle",
-   "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-   "statusLine": "plan written · being built",
-   "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-   "stage": "active",
-   "embed": "pages/one-day-store.html",
-   "visibility": "public",
-   "parent": "mittens-daily",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
