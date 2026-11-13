@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T01:22:27.900Z",
+ "generatedAt": "2026-11-13T01:33:11.512Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -472,7 +472,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -628,10 +628,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -889,10 +885,14 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 2
     }
    },
@@ -918,7 +918,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1824,7 +1824,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2011,7 +2011,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -7554,7 +7554,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -7589,6 +7589,10 @@
       {
        "t": "2026-11-13",
        "v": 0.66
+      },
+      {
+       "t": "2026-11-13",
+       "v": 0
       }
      ]
     },
@@ -7608,6 +7612,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      },
      {
       "d": "2026-11-13",
@@ -8688,7 +8696,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
