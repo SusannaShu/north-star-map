@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T18:15:22.744Z",
+ "generatedAt": "2026-11-13T18:33:06.041Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -208,7 +208,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -2371,7 +2371,7 @@
         9,
         4,
         22,
-        62
+        64
        ]
       },
       {
@@ -2415,7 +2415,7 @@
         4,
         3,
         15,
-        29
+        30
        ]
       },
       {
@@ -2432,18 +2432,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-12",
       "v": "helped"
@@ -2747,6 +2735,18 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -3295,6 +3295,10 @@
         {
          "t": "2026-11-13",
          "v": 36
+        },
+        {
+         "t": "2026-11-13",
+         "v": 1
         }
        ]
       },
@@ -3441,10 +3445,6 @@
        },
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "helped"
        },
        {
@@ -3614,6 +3614,10 @@
        {
         "d": "2026-11-13",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "no effect"
        },
        {
         "d": "2026-11-13",
@@ -9862,6 +9866,10 @@
      },
      {
       "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
       "v": "unmeasured"
      }
     ],
