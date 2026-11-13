@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T05:46:12.917Z",
+ "generatedAt": "2026-11-13T05:56:57.427Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -515,7 +515,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2116,15 +2116,15 @@
       },
       {
        "t": "2026-11-10",
-       "v": 40
+       "v": 38
       },
       {
        "t": "2026-11-11",
-       "v": 47
+       "v": 35
       },
       {
        "t": "2026-11-12",
-       "v": 77
+       "v": 60
       }
      ],
      "perPoint": [
@@ -2221,10 +2221,6 @@
     "tries": [
      {
       "d": "2026-11-10",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-10",
       "v": "no effect"
      },
      {
@@ -2538,11 +2534,15 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      }
     ],
     "stage": {
-     "at": 5,
-     "round": 4
+     "at": 0,
+     "round": 5
     }
    },
    "codeRepos": [
