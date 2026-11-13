@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T16:51:08.989Z",
+ "generatedAt": "2026-11-13T17:07:25.445Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -678,10 +678,6 @@
      },
      {
       "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
       "v": "helped"
      },
      {
@@ -959,6 +955,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -1161,7 +1161,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1452,7 +1452,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "working",
+   "status": "idle",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -1461,28 +1461,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 26
-      },
-      {
-       "t": "2026-11-11",
-       "v": 37
-      },
-      {
-       "t": "2026-11-12",
-       "v": 37
+       "t": "2026-11-13",
+       "v": 0
       },
       {
        "t": "2026-11-13",
-       "v": 37
+       "v": 102
+      },
+      {
+       "t": "2026-11-13",
+       "v": 102
       }
      ]
     },
@@ -1502,10 +1494,22 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 1
     }
    },
@@ -2222,7 +2226,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2372,10 +2376,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-11",
       "v": "unmeasured"
@@ -2691,6 +2691,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -9184,7 +9188,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
