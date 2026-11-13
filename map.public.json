@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T21:59:35.255Z",
+ "generatedAt": "2026-11-13T23:17:36.625Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -554,7 +554,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -588,7 +588,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 126
+       "v": 127
       }
      ],
      "partial": "2026-11-09",
@@ -624,7 +624,7 @@
         12,
         1,
         17,
-        28
+        29
        ]
       },
       {
@@ -653,26 +653,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-12",
       "v": "unmeasured"
      },
@@ -951,6 +931,26 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2380,7 +2380,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 22
+       "v": 23
       }
      ],
      "partial": "2026-11-13",
@@ -2415,7 +2415,7 @@
         9,
         4,
         22,
-        65
+        66
        ]
       },
       {
@@ -7350,6 +7350,10 @@
       {
        "t": "2026-11-13",
        "v": 149
+      },
+      {
+       "t": "2026-11-13",
+       "v": 11
       }
      ]
     },
@@ -7400,7 +7404,7 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
+      "v": "no effect"
      }
     ],
     "stage": {
