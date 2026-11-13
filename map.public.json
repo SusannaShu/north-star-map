@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T08:42:53.088Z",
+ "generatedAt": "2026-11-13T08:54:27.993Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -291,10 +291,12 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/susu-map.html",
    "visibility": "public",
    "goalStory": {
@@ -320,13 +322,18 @@
       },
       {
        "t": "2026-11-13",
-       "v": 30
+       "v": 37
       }
      ]
     },
-    "tries": [],
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     }
+    ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 1
     }
    },
@@ -526,7 +533,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -650,10 +657,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -931,6 +934,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2167,7 +2174,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2350,10 +2357,6 @@
      },
      {
       "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
       "v": "no effect"
      },
      {
@@ -2631,6 +2634,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2953,7 +2960,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3120,7 +3127,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3155,14 +3162,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3474,6 +3473,14 @@
        {
         "d": "2026-11-13",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -5620,7 +5627,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -7338,7 +7345,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
