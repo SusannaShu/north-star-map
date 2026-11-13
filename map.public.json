@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T04:19:29.440Z",
+ "generatedAt": "2026-11-13T04:30:21.557Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -495,7 +495,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2034,7 +2034,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2467,6 +2467,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2954,6 +2958,433 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "mittens-self-improve",
+     "label": "SELF-IMPROVING LOOP",
+     "status": "idle",
+     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
+     "statusLine": "live · learns nightly and from my words",
+     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+     "stage": "active",
+     "embed": "pages/mittens-self-improve.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-10",
+         "v": 5
+        },
+        {
+         "t": "2026-11-10",
+         "v": 6
+        },
+        {
+         "t": "2026-11-10",
+         "v": 64
+        },
+        {
+         "t": "2026-11-10",
+         "v": 7
+        },
+        {
+         "t": "2026-11-10",
+         "v": 17.1
+        },
+        {
+         "t": "2026-11-11",
+         "v": 273
+        },
+        {
+         "t": "2026-11-11",
+         "v": 10
+        },
+        {
+         "t": "2026-11-11",
+         "v": 13
+        },
+        {
+         "t": "2026-11-11",
+         "v": 33
+        },
+        {
+         "t": "2026-11-11",
+         "v": 27
+        },
+        {
+         "t": "2026-11-12",
+         "v": 7
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0.75
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 12
+        },
+        {
+         "t": "2026-11-12",
+         "v": 8
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
+        },
+        {
+         "t": "2026-11-13",
+         "v": 5.92
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "confounded"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-11",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
+     "links": [
+      "aurora",
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "mittens-ask-guard",
      "label": "EVERY ASK BECOMES A TASK",
      "status": "idle",
@@ -2975,7 +3406,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3439,7 +3870,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -7280,6 +7711,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -7886,7 +8321,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 43
+       "v": 41
       }
      ]
     },
@@ -7910,6 +8345,14 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -8487,7 +8930,7 @@
     "tries": [],
     "stage": null
    },
-   "parent": "mittens-self-improve",
+   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -8770,436 +9213,6 @@
     "robot-skin"
    ],
    "parent": "devhub",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-self-improve",
-   "label": "SELF-IMPROVING LOOP",
-   "status": "idle",
-   "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-   "statusLine": "live · learns nightly and from my words",
-   "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
-   "stage": "active",
-   "embed": "pages/mittens-self-improve.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-09",
-       "v": 56
-      },
-      {
-       "t": "2026-11-10",
-       "v": 5
-      },
-      {
-       "t": "2026-11-10",
-       "v": 6
-      },
-      {
-       "t": "2026-11-10",
-       "v": 64
-      },
-      {
-       "t": "2026-11-10",
-       "v": 7
-      },
-      {
-       "t": "2026-11-10",
-       "v": 17.1
-      },
-      {
-       "t": "2026-11-11",
-       "v": 273
-      },
-      {
-       "t": "2026-11-11",
-       "v": 10
-      },
-      {
-       "t": "2026-11-11",
-       "v": 13
-      },
-      {
-       "t": "2026-11-11",
-       "v": 33
-      },
-      {
-       "t": "2026-11-11",
-       "v": 27
-      },
-      {
-       "t": "2026-11-12",
-       "v": 7
-      },
-      {
-       "t": "2026-11-12",
-       "v": 0.75
-      },
-      {
-       "t": "2026-11-12",
-       "v": 0
-      },
-      {
-       "t": "2026-11-12",
-       "v": 2
-      },
-      {
-       "t": "2026-11-12",
-       "v": 1
-      },
-      {
-       "t": "2026-11-12",
-       "v": 12
-      },
-      {
-       "t": "2026-11-12",
-       "v": 8
-      },
-      {
-       "t": "2026-11-12",
-       "v": 2
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "confounded"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": null
-   },
-   "links": [
-    "aurora",
-    "brain-architecture"
-   ],
-   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
