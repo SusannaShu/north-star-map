@@ -103,11 +103,16 @@
             nameCache = nameRe(names);
             nameKey = key;
         }
-        const res = nameCache, hit = t => res.some(r => {
+        const low = names.map(n => String(n).toLowerCase().replace(/\s+/g, "-")), FILE = /[\w.-]+\.(?:png|jpe?g|webp|gif|pdf|mp4|mov|html|md|json|jsonl|txt)\b/gi;
+        const fileHit = f => {
+            const parts = f.toLowerCase();
+            return low.some(n => new RegExp("(^|[-_./])" + reEsc(n) + "(?=$|[-_./])").test(parts));
+        };
+        const res = nameCache, hit = t => (String(t || "").match(FILE) || []).some(fileHit) || res.some(r => {
             r.lastIndex = 0;
             return r.test(String(t || ""));
         });
-        const fix = t => res.reduce((x, r) => x.replace(r, "$1someone"), String(t));
+        const fix = t => res.reduce((x, r) => x.replace(r, "$1someone"), String(t).replace(FILE, f => fileHit(f) ? "a file" : f));
         for (const k of [ "label", "why", "caption", "statusLine", "embedCaption" ]) if (typeof o[k] === "string" && hit(o[k])) o[k] = fix(o[k]);
         for (const k of [ "docs", "refs", "cases" ]) if (Array.isArray(o[k])) {
             o[k] = o[k].filter(d => !hit(d.label) && !hit(d.title));

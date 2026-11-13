@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T11:58:03.663Z",
+ "generatedAt": "2026-11-13T13:04:18.287Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -533,7 +533,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -633,18 +633,6 @@
     "tries": [
      {
       "d": "2026-11-10",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-10",
       "v": "unmeasured"
      },
      {
@@ -910,6 +898,18 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -1980,7 +1980,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2174,7 +2174,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2349,14 +2349,6 @@
      },
      {
       "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
       "v": "no effect"
      },
      {
@@ -2638,6 +2630,14 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -4791,7 +4791,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -4884,7 +4884,7 @@
        "points": [
         {
          "t": "2026-11-13",
-         "v": 149
+         "v": 137
         }
        ]
       },
@@ -5627,7 +5627,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -5651,7 +5651,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "working",
+     "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "live · greets when I wake",
      "caption": "One morning notification:",
@@ -6035,20 +6035,6 @@
    "stage": "active",
    "embed": "pages/ns-public.html",
    "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-13",
-       "v": 47
-      }
-     ]
-    },
-    "tries": [],
-    "stage": null
-   },
    "parent": "northstar",
    "parked": false,
    "children": [
@@ -6720,7 +6706,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 60
+       "v": 64
       }
      ]
     },
@@ -6728,10 +6714,14 @@
      {
       "d": "2026-11-11",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 2,
      "round": 1
     }
    },
@@ -7567,7 +7557,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 149
+       "v": 137
       }
      ]
     },
@@ -7631,7 +7621,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 149
+       "v": 137
       }
      ]
     },
@@ -8487,7 +8477,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -8987,7 +8977,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9079,7 +9069,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "working",
+     "status": "idle",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic holding goal",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -9298,7 +9288,7 @@
   {
    "id": "feature-lock-screen",
    "label": "CALENDAR FIRST SCREEN",
-   "status": "working",
+   "status": "idle",
    "why": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one. It replaces the default widgets.",
    "statusLine": "plan · nothing yet",
    "caption": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one.",
@@ -9318,6 +9308,10 @@
      ]
     },
     "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -9485,7 +9479,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 149
+       "v": 137
       }
      ]
     },
