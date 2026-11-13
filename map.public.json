@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T06:51:11.087Z",
+ "generatedAt": "2026-11-13T07:46:42.159Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -53,6 +53,10 @@
      },
      {
       "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -515,7 +519,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -655,14 +659,6 @@
      },
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -920,6 +916,14 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -961,7 +965,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1022,6 +1026,85 @@
      "links": [
       "mittens-proactive"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-reminders-match-her-day",
+     "label": "REMINDERS KNOW WHAT'S DONE",
+     "status": "idle",
+     "why": "A reminder should never tell me to do something I already did. I turned this rule into a goal that counts misfires, and the target is none.",
+     "statusLine": "active · counting misfires",
+     "caption": "A reminder should never tell me to do something I already did.",
+     "stage": "active",
+     "embed": "pages/rg-reminders-match-her-day.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 5
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-12",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-12",
+        "v": "hurt"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
@@ -1676,7 +1759,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2043,7 +2126,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2277,14 +2360,6 @@
      },
      {
       "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
       "v": "no effect"
      },
      {
@@ -2538,6 +2613,14 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3401,7 +3484,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3865,7 +3948,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4632,9 +4715,9 @@
      "label": "SMALL LOCAL MODELS",
      "status": "idle",
      "why": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "statusLine": "benchmarked · triage moved to larger model",
+     "statusLine": "reopened · tuning toward voice target",
      "caption": "A 2B-parameter open model on a desktop rewrites a reply in about a second and a half; too big for an older phone, so the phone calls home.",
-     "stage": "done",
+     "stage": "active",
      "embed": "pages/small-models.html",
      "visibility": "public",
      "goalStory": {
@@ -5538,7 +5621,7 @@
      "label": "MORNING BRIEF",
      "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
-     "statusLine": "live · greets on waking",
+     "statusLine": "live · greets when I wake",
      "caption": "One morning notification:",
      "stage": "active",
      "embed": "pages/morning-brief.html",
@@ -5566,7 +5649,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · reviews and fixes nightly",
+     "statusLine": "live · finds and fixes issues nightly",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -5655,7 +5738,7 @@
      "label": "THE SERIES",
      "status": "idle",
      "why": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant. Each good news item can become a story beat: the real news, then the world where it went right.",
-     "statusLine": "pilot waiting on my yes · first short proposed",
+     "statusLine": "pilot waiting on my yes · may be stale",
      "caption": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant.",
      "stage": "active",
      "embed": "pages/gospel-series.html",
@@ -7302,7 +7385,7 @@
    "label": "TRIGGERS",
    "status": "idle",
    "why": "When Mittens speaks first, as one list any model reads: the event, what it does, the code behind it.",
-   "statusLine": "live · read by every lane",
+   "statusLine": "live · new plan attached",
    "caption": "When Mittens speaks first, as one list any model reads:",
    "stage": "active",
    "embed": "pages/triggers.html",
@@ -7881,6 +7964,22 @@
       "wearables"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-open",
+     "label": "FIRST PENDANT",
+     "status": "idle",
+     "why": "The first pendant works, but it is too heavy to wear all day and the battery runs out too soon. A smaller, lighter version with its own board and case is half designed.",
+     "statusLine": "in use · lighter version designed",
+     "caption": "The first pendant works, but it is too heavy to wear all day and the battery runs out too soon.",
+     "stage": "active",
+     "embed": "pages/mittens-open.html",
+     "visibility": "public",
+     "links": [
+      "pendant",
+      "firstpower"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -8211,7 +8310,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -8950,6 +9049,30 @@
       "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "ux-maxer",
+     "label": "UX MAXER",
+     "status": "idle",
+     "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
+     "statusLine": "active · critic holding goal",
+     "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
+     "stage": "active",
+     "embed": "pages/ux-maxer.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-card-states",
+     "label": "CARD STATES",
+     "status": "idle",
+     "why": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
+     "statusLine": "in progress",
+     "caption": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
+     "stage": "active",
+     "embed": "pages/feature-card-states.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -9065,6 +9188,210 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "rg-loop-files-card-work",
+   "label": "NO CARDS FOR SELF-RUN WORK",
+   "status": "idle",
+   "why": "If a loop can finish a task by itself, it should not hand me a card for it. Only things that truly need me reach me, and the target is none of the others.",
+   "statusLine": "active · tracked nightly",
+   "caption": "If a loop can finish a task by itself, it should not hand me a card for it.",
+   "stage": "active",
+   "embed": "pages/rg-loop-files-card-work.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 7
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-12",
+       "v": 1
+      },
+      {
+       "t": "2026-11-12",
+       "v": 4
+      },
+      {
+       "t": "2026-11-12",
+       "v": 3
+      },
+      {
+       "t": "2026-11-12",
+       "v": 6
+      },
+      {
+       "t": "2026-11-12",
+       "v": 6
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-lock-screen",
+   "label": "CALENDAR FIRST SCREEN",
+   "status": "dormant",
+   "why": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one. It replaces the default widgets.",
+   "statusLine": "plan · nothing yet",
+   "caption": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/feature-lock-screen.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 47
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "ui-experience",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-self-serve-first",
+   "label": "SELF-SERVE FIRST",
+   "status": "idle",
+   "why": "Workers should gather the context and access they need themselves before asking anyone. So far there is a one-page plan.",
+   "statusLine": "plan written · not built",
+   "caption": "Workers should gather the context and access they need themselves before asking anyone.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/rg-self-serve-first.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-12",
+       "v": 1
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-12",
+       "v": 1
+      },
+      {
+       "t": "2026-11-12",
+       "v": 1
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "sheyou-report-sources",
    "label": "SHEYOU REPORT SOURCES",
    "status": "done",
@@ -9112,6 +9439,41 @@
    "visibility": "public",
    "parent": "mittens-daily",
    "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "owner-decides",
+   "label": "THE OWNER DECIDES",
+   "status": "idle",
+   "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
+   "statusLine": "built · being tuned",
+   "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
+   "stage": "active",
+   "embed": "pages/owner-decides.html",
+   "visibility": "public",
+   "links": [
+    "need-her-once",
+    "mittens-self-improve"
+   ],
+   "parent": "ns-talk",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "ux-teaching",
+   "label": "TEACHING UX",
+   "status": "dormant",
+   "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
+   "statusLine": "plan · nothing yet",
+   "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/ux-teaching.html",
+   "visibility": "public",
+   "parent": "ui-experience",
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
