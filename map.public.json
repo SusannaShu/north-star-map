@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T10:57:28.168Z",
+ "generatedAt": "2026-11-13T11:58:03.663Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -633,14 +633,6 @@
     "tries": [
      {
       "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
       "v": "helped"
      },
      {
@@ -918,6 +910,14 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2174,7 +2174,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -5627,7 +5627,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -5651,7 +5651,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "idle",
+     "status": "working",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "live · greets when I wake",
      "caption": "One morning notification:",
@@ -8987,7 +8987,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9079,7 +9079,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "idle",
+     "status": "working",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic holding goal",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -9298,7 +9298,7 @@
   {
    "id": "feature-lock-screen",
    "label": "CALENDAR FIRST SCREEN",
-   "status": "dormant",
+   "status": "working",
    "why": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one. It replaces the default widgets.",
    "statusLine": "plan · nothing yet",
    "caption": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one.",
@@ -9326,7 +9326,7 @@
     "stage": null
    },
    "parent": "ui-experience",
-   "parked": true,
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
