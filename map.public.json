@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T04:08:32.149Z",
+ "generatedAt": "2026-11-13T04:19:29.440Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -53,6 +53,10 @@
      },
      {
       "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -168,7 +172,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -491,7 +495,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1843,7 +1847,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -1999,7 +2003,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2030,7 +2034,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2483,6 +2487,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2641,7 +2649,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "working",
+   "status": "idle",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -2671,6 +2679,10 @@
       },
       {
        "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-13",
        "v": 0
       }
      ]
@@ -2727,10 +2739,14 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 1
     }
    },
@@ -2938,433 +2954,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "mittens-self-improve",
-     "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
-     "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
-     "statusLine": "live · learns nightly and from my words",
-     "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
-     "stage": "active",
-     "embed": "pages/mittens-self-improve.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-09",
-         "v": 56
-        },
-        {
-         "t": "2026-11-10",
-         "v": 5
-        },
-        {
-         "t": "2026-11-10",
-         "v": 6
-        },
-        {
-         "t": "2026-11-10",
-         "v": 64
-        },
-        {
-         "t": "2026-11-10",
-         "v": 7
-        },
-        {
-         "t": "2026-11-10",
-         "v": 17.1
-        },
-        {
-         "t": "2026-11-11",
-         "v": 273
-        },
-        {
-         "t": "2026-11-11",
-         "v": 10
-        },
-        {
-         "t": "2026-11-11",
-         "v": 13
-        },
-        {
-         "t": "2026-11-11",
-         "v": 33
-        },
-        {
-         "t": "2026-11-11",
-         "v": 27
-        },
-        {
-         "t": "2026-11-12",
-         "v": 7
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0.75
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
-        {
-         "t": "2026-11-12",
-         "v": 1
-        },
-        {
-         "t": "2026-11-12",
-         "v": 12
-        },
-        {
-         "t": "2026-11-12",
-         "v": 8
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
-        }
-       ]
-      },
-      "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "confounded"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "unmeasured"
-       }
-      ],
-      "stage": null
-     },
-     "links": [
-      "aurora",
-      "brain-architecture"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "mittens-ask-guard",
      "label": "EVERY ASK BECOMES A TASK",
      "status": "idle",
@@ -3386,7 +2975,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3429,7 +3018,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "idle",
+   "status": "working",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -3850,7 +3439,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -7293,7 +6882,7 @@
   {
    "id": "map-upkeep",
    "label": "MAP UPKEEP",
-   "status": "idle",
+   "status": "working",
    "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
    "statusLine": "hourly tidy · placement audit run",
    "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
@@ -7617,7 +7206,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -8368,7 +7957,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "idle",
+   "status": "working",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -8898,7 +8487,7 @@
     "tries": [],
     "stage": null
    },
-   "parent": "mittens-digital",
+   "parent": "mittens-self-improve",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -9019,10 +8608,12 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
@@ -9044,7 +8635,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 43
+       "v": 50
       }
      ]
     },
@@ -9059,7 +8650,7 @@
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 4,
      "round": 1
     }
    },
@@ -9179,6 +8770,436 @@
     "robot-skin"
    ],
    "parent": "devhub",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-self-improve",
+   "label": "SELF-IMPROVING LOOP",
+   "status": "idle",
+   "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
+   "statusLine": "live · learns nightly and from my words",
+   "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
+   "stage": "active",
+   "embed": "pages/mittens-self-improve.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 56
+      },
+      {
+       "t": "2026-11-10",
+       "v": 5
+      },
+      {
+       "t": "2026-11-10",
+       "v": 6
+      },
+      {
+       "t": "2026-11-10",
+       "v": 64
+      },
+      {
+       "t": "2026-11-10",
+       "v": 7
+      },
+      {
+       "t": "2026-11-10",
+       "v": 17.1
+      },
+      {
+       "t": "2026-11-11",
+       "v": 273
+      },
+      {
+       "t": "2026-11-11",
+       "v": 10
+      },
+      {
+       "t": "2026-11-11",
+       "v": 13
+      },
+      {
+       "t": "2026-11-11",
+       "v": 33
+      },
+      {
+       "t": "2026-11-11",
+       "v": 27
+      },
+      {
+       "t": "2026-11-12",
+       "v": 7
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0.75
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0
+      },
+      {
+       "t": "2026-11-12",
+       "v": 2
+      },
+      {
+       "t": "2026-11-12",
+       "v": 1
+      },
+      {
+       "t": "2026-11-12",
+       "v": 12
+      },
+      {
+       "t": "2026-11-12",
+       "v": 8
+      },
+      {
+       "t": "2026-11-12",
+       "v": 2
+      },
+      {
+       "t": "2026-11-13",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "confounded"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
+   "links": [
+    "aurora",
+    "brain-architecture"
+   ],
+   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
