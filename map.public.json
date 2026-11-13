@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T21:36:02.149Z",
+ "generatedAt": "2026-11-13T21:48:47.564Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -406,7 +406,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -654,18 +654,6 @@
     "tries": [
      {
       "d": "2026-11-11",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
       "v": "unmeasured"
      },
      {
@@ -971,6 +959,18 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1188,6 +1188,10 @@
       {
        "t": "2026-11-12",
        "v": 0
+      },
+      {
+       "t": "2026-11-13",
+       "v": 0
       }
      ]
     },
@@ -1207,6 +1211,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -1890,7 +1898,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2260,7 +2268,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3105,7 +3113,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -8422,7 +8430,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -8449,6 +8457,10 @@
       {
        "t": "2026-11-13",
        "v": 2.9
+      },
+      {
+       "t": "2026-11-13",
+       "v": 1
       },
       {
        "t": "2026-11-13",
@@ -8520,6 +8532,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      },
      {
       "d": "2026-11-13",
@@ -8944,7 +8960,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -8982,6 +8998,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
