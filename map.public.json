@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T17:07:25.445Z",
+ "generatedAt": "2026-11-13T17:19:25.887Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -996,7 +996,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1047,7 +1047,7 @@
     {
      "id": "live-day-plan",
      "label": "LIVE DAY PLAN",
-     "status": "idle",
+     "status": "working",
      "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
      "statusLine": "first phase built · next steps planned",
      "caption": "My assistant keeps one plan for the day and updates it as things change.",
@@ -1475,6 +1475,14 @@
       {
        "t": "2026-11-13",
        "v": 102
+      },
+      {
+       "t": "2026-11-13",
+       "v": 102
+      },
+      {
+       "t": "2026-11-13",
+       "v": 7
       }
      ]
     },
@@ -1506,10 +1514,22 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
      }
     ],
     "stage": {
-     "at": 2,
+     "at": 3,
      "round": 1
     }
    },
@@ -1571,7 +1591,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "idle",
+   "status": "working",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -1783,6 +1803,25 @@
    "stage": "active",
    "embed": "pages/skin-build.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
    "parent": "robot-skin",
    "parked": false,
    "children": [],
@@ -2779,7 +2818,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "idle",
+   "status": "working",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
