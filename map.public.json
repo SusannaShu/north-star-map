@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T01:33:11.512Z",
+ "generatedAt": "2026-11-13T01:50:42.252Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -464,6 +464,25 @@
      "planned": true,
      "embed": "pages/agentic-marketing.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-13",
+         "v": 0.077
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-13",
+        "v": "helped"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -472,7 +491,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1824,7 +1843,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2061,7 +2080,7 @@
       },
       {
        "t": "2026-11-12",
-       "v": 75
+       "v": 76
       }
      ],
      "partial": "2026-11-12",
@@ -2085,7 +2104,7 @@
         0,
         0,
         1,
-        38
+        39
        ]
       },
       {
@@ -2096,7 +2115,7 @@
         9,
         4,
         22,
-        52
+        53
        ]
       },
       {
@@ -2129,7 +2148,7 @@
         6,
         5,
         26,
-        17
+        18
        ]
       },
       {
@@ -2140,7 +2159,7 @@
         4,
         3,
         15,
-        28
+        29
        ]
       },
       {
@@ -4062,6 +4081,22 @@
    "parent": "mittens",
    "parked": false,
    "children": [
+    {
+     "id": "need-her-once",
+     "label": "NEED HER ONCE",
+     "status": "idle",
+     "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
+     "statusLine": "live",
+     "caption": "Anything that needs me needs me once:",
+     "stage": "active",
+     "embed": "pages/need-her-once.html",
+     "visibility": "public",
+     "links": [
+      "mittens-vision",
+      "proactive-rules"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
@@ -7554,7 +7589,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -9102,25 +9137,6 @@
     "robot-skin"
    ],
    "parent": "devhub",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "need-her-once",
-   "label": "NEED HER ONCE",
-   "status": "idle",
-   "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
-   "statusLine": "live",
-   "caption": "Anything that needs me needs me once:",
-   "stage": "active",
-   "embed": "pages/need-her-once.html",
-   "visibility": "public",
-   "links": [
-    "mittens-vision",
-    "proactive-rules"
-   ],
-   "parent": "ns-talk",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
