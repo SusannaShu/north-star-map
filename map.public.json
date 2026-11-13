@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T14:54:29.065Z",
+ "generatedAt": "2026-11-13T15:09:54.057Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -261,10 +261,7 @@
       "v": "unmeasured"
      }
     ],
-    "stage": {
-     "at": 3,
-     "round": 1
-    }
+    "stage": null
    },
    "codeRepos": [
     {
@@ -571,7 +568,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 122
+       "v": 123
       }
      ],
      "partial": "2026-11-09",
@@ -618,7 +615,7 @@
         6,
         9,
         20,
-        45
+        46
        ]
       },
       {
@@ -949,11 +946,11 @@
      },
      {
       "d": "2026-11-13",
-      "v": "no effect"
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2154,6 +2151,25 @@
    "stage": "active",
    "embed": "pages/manual-map.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 34
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
    "parent": "devhub",
    "parked": false,
    "children": [
@@ -2178,7 +2194,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2232,7 +2248,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 7
+       "v": 9
       }
      ],
      "partial": "2026-11-13",
@@ -2289,7 +2305,7 @@
         0,
         0,
         0,
-        24
+        25
        ]
       },
       {
@@ -2328,14 +2344,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-11",
       "v": "no effect"
@@ -2623,6 +2631,14 @@
      {
       "d": "2026-11-13",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2969,7 +2985,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4129,7 +4145,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -4893,7 +4909,7 @@
        "points": [
         {
          "t": "2026-11-13",
-         "v": 134
+         "v": 115
         }
        ]
       },
@@ -5666,6 +5682,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -7638,7 +7658,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 134
+       "v": 115
       }
      ]
     },
@@ -7702,7 +7722,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 134
+       "v": 115
       }
      ]
     },
@@ -8708,7 +8728,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 52
+       "v": 53
       }
      ]
     },
@@ -9457,7 +9477,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 134
+       "v": 115
       }
      ]
     },
@@ -9799,7 +9819,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 52
+       "v": 53
       }
      ]
     },
