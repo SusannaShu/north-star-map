@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T13:05:58.948Z",
+ "generatedAt": "2026-11-13T13:42:14.692Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -533,7 +533,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -648,14 +648,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-11",
       "v": "unmeasured"
      },
@@ -898,6 +890,14 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2174,7 +2174,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2319,10 +2319,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-11",
       "v": "unmeasured"
@@ -2634,6 +2630,10 @@
      {
       "d": "2026-11-13",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -2960,7 +2960,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4884,7 +4884,7 @@
        "points": [
         {
          "t": "2026-11-13",
-         "v": 137
+         "v": 134
         }
        ]
       },
@@ -6291,7 +6291,7 @@
   {
    "id": "action-tree",
    "label": "ACTION TREE",
-   "status": "idle",
+   "status": "working",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
    "statusLine": "live · stale items repaired daily",
    "caption": "The one source of truth for what is open:",
@@ -6911,7 +6911,7 @@
   {
    "id": "mittens-chat-threads",
    "label": "CHAT THREADS",
-   "status": "idle",
+   "status": "working",
    "why": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
    "statusLine": "built · more events into threads",
    "caption": "Chat as topic threads instead of one long scroll; answered threads go grey on their own.",
@@ -6920,24 +6920,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-10",
-       "v": 28
-      },
-      {
        "t": "2026-11-11",
-       "v": 60
-      },
-      {
-       "t": "2026-11-12",
-       "v": 67
+       "v": 0
       },
       {
        "t": "2026-11-13",
-       "v": 67
+       "v": 0
+      },
+      {
+       "t": "2026-11-13",
+       "v": 0
       }
      ]
     },
@@ -6953,10 +6949,22 @@
      {
       "d": "2026-11-11",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      }
     ],
     "stage": {
-     "at": 4,
+     "at": 5,
      "round": 1
     }
    },
@@ -7557,7 +7565,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 137
+       "v": 134
       }
      ]
     },
@@ -7621,7 +7629,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 137
+       "v": 134
       }
      ]
     },
@@ -8523,6 +8531,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -9479,7 +9491,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 137
+       "v": 134
       }
      ]
     },
