@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T14:42:52.077Z",
+ "generatedAt": "2026-11-13T14:54:29.065Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -571,7 +571,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 121
+       "v": 122
       }
      ],
      "partial": "2026-11-09",
@@ -596,7 +596,7 @@
         4,
         2,
         2,
-        15
+        16
        ]
       },
       {
@@ -640,10 +640,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-10",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-11",
       "v": "unmeasured"
      },
@@ -954,6 +950,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2232,7 +2232,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 5
+       "v": 7
       }
      ],
      "partial": "2026-11-13",
@@ -2328,10 +2328,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-11",
       "v": "unmeasured"
@@ -2627,6 +2623,10 @@
      {
       "d": "2026-11-13",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -4129,7 +4129,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5658,6 +5658,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
      },
      {
       "d": "2026-11-13",
@@ -8141,6 +8145,25 @@
    "stage": "active",
    "embed": "pages/mittens-podcast.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
    "parent": "learn-with-mittens",
    "parked": false,
    "children": [
