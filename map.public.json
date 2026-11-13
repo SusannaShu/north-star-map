@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T20:35:37.856Z",
+ "generatedAt": "2026-11-13T20:48:25.065Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -588,7 +588,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 125
+       "v": 126
       }
      ],
      "partial": "2026-11-09",
@@ -602,7 +602,7 @@
         0,
         0,
         4,
-        22
+        23
        ]
       },
       {
@@ -1882,7 +1882,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2252,7 +2252,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2266,7 +2266,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 33
+       "v": 34
       }
      ]
     },
@@ -2302,7 +2302,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2356,7 +2356,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 16
+       "v": 19
       }
      ],
      "partial": "2026-11-13",
@@ -2369,7 +2369,7 @@
         0,
         0,
         4,
-        23
+        24
        ]
       },
       {
@@ -2391,7 +2391,7 @@
         9,
         4,
         22,
-        64
+        65
        ]
       },
       {
@@ -2452,10 +2452,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
      {
       "d": "2026-11-12",
       "v": "helped"
@@ -2763,6 +2759,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-13",
@@ -3097,7 +3097,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3297,36 +3297,88 @@
        "label": "measured result",
        "points": [
         {
+         "t": "2026-11-10",
+         "v": 6
+        },
+        {
+         "t": "2026-11-10",
+         "v": 64
+        },
+        {
+         "t": "2026-11-10",
+         "v": 7
+        },
+        {
+         "t": "2026-11-10",
+         "v": 17.1
+        },
+        {
          "t": "2026-11-11",
-         "v": 1
+         "v": 273
+        },
+        {
+         "t": "2026-11-11",
+         "v": 10
+        },
+        {
+         "t": "2026-11-11",
+         "v": 13
+        },
+        {
+         "t": "2026-11-11",
+         "v": 33
+        },
+        {
+         "t": "2026-11-11",
+         "v": 27
         },
         {
          "t": "2026-11-12",
-         "v": 1
+         "v": 7
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0.75
         },
         {
          "t": "2026-11-12",
          "v": 0
         },
         {
-         "t": "2026-11-13",
-         "v": 4
+         "t": "2026-11-12",
+         "v": 2
         },
         {
-         "t": "2026-11-13",
-         "v": 36
-        },
-        {
-         "t": "2026-11-13",
+         "t": "2026-11-12",
          "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 12
+        },
+        {
+         "t": "2026-11-12",
+         "v": 8
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
+        },
+        {
+         "t": "2026-11-13",
+         "v": 5.92
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3642,6 +3694,10 @@
        {
         "d": "2026-11-13",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -5057,7 +5113,7 @@
        "points": [
         {
          "t": "2026-11-13",
-         "v": 104
+         "v": 95
         }
        ]
       },
@@ -7295,7 +7351,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -7848,7 +7904,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 104
+       "v": 95
       }
      ]
     },
@@ -7912,7 +7968,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 104
+       "v": 95
       }
      ]
     },
@@ -8308,7 +8364,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 40
+       "v": 46
       }
      ]
     },
@@ -8924,7 +8980,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -8938,7 +8994,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 55
+       "v": 57
       }
      ]
     },
@@ -9094,7 +9150,7 @@
        "points": [
         {
          "t": "2026-11-13",
-         "v": 40
+         "v": 46
         }
        ]
       },
@@ -9506,7 +9562,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 30.9
+       "v": 31.4
       }
      ]
     },
@@ -9718,7 +9774,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 104
+       "v": 95
       }
      ]
     },
@@ -9737,7 +9793,7 @@
   {
    "id": "one-day-store",
    "label": "ONE DAY STORE",
-   "status": "idle",
+   "status": "working",
    "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
    "statusLine": "plan written · being built",
    "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
@@ -10064,7 +10120,7 @@
      "points": [
       {
        "t": "2026-11-13",
-       "v": 54
+       "v": 51
       }
      ]
     },
