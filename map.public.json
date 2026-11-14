@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T00:17:48.046Z",
+ "generatedAt": "2026-11-14T00:48:18.622Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -533,7 +533,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 0.077
         }
        ]
@@ -1165,7 +1165,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1234,6 +1234,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
@@ -1870,7 +1874,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 0
       }
      ]
@@ -2289,7 +2293,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 34
       }
      ]
@@ -2855,7 +2859,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 0
         }
        ]
@@ -3757,7 +3761,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 160
       }
      ]
@@ -4948,7 +4952,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 0.904
         }
        ]
@@ -5084,7 +5088,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 106
         }
        ]
@@ -5230,7 +5234,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 0
       }
      ]
@@ -5841,7 +5845,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 25
       }
      ]
@@ -6034,7 +6038,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 32
         }
        ]
@@ -6544,7 +6548,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 47
       }
      ]
@@ -6854,7 +6858,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 56
       }
      ]
@@ -6906,7 +6910,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 0
       }
      ]
@@ -7887,7 +7891,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 106
       }
      ]
@@ -7951,7 +7955,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 106
       }
      ]
@@ -8347,7 +8351,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 46
       }
      ]
@@ -8401,7 +8405,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 0
       }
      ]
@@ -9005,7 +9009,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 60
       }
      ]
@@ -9129,7 +9133,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 46
       }
      ]
@@ -9177,7 +9181,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 46
         }
        ]
@@ -9518,7 +9522,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
+         "t": "2026-11-14",
          "v": 47
         }
        ]
@@ -9534,7 +9538,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "idle",
+     "status": "working",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic holding goal",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -9546,7 +9550,7 @@
     {
      "id": "feature-card-states",
      "label": "CARD STATES",
-     "status": "working",
+     "status": "idle",
      "why": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
      "statusLine": "in progress",
      "caption": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
@@ -9567,6 +9571,10 @@
       "tries": [
        {
         "d": "2026-11-13",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-14",
         "v": "unmeasured"
        }
       ],
@@ -9615,7 +9623,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 31.4
       }
      ]
@@ -9775,7 +9783,7 @@
   {
    "id": "feature-lock-screen",
    "label": "CALENDAR FIRST SCREEN",
-   "status": "idle",
+   "status": "working",
    "why": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one. It replaces the default widgets.",
    "statusLine": "plan · nothing yet",
    "caption": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one.",
@@ -9789,7 +9797,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 47
       }
      ]
@@ -9801,6 +9809,18 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -9831,7 +9851,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 106
       }
      ]
@@ -10177,7 +10197,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-14",
        "v": 52
       }
      ]
