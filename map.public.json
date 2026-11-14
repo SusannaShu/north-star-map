@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T22:20:41.230Z",
+ "generatedAt": "2026-11-14T22:24:00.620Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2410,7 +2410,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2564,10 +2564,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-12",
       "v": "helped"
@@ -2879,6 +2875,10 @@
      {
       "d": "2026-11-14",
       "v": "confounded"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
@@ -5113,7 +5113,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -9052,7 +9052,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
