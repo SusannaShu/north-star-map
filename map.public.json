@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T22:54:15.437Z",
+ "generatedAt": "2026-11-14T23:20:59.066Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -686,14 +686,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -995,6 +987,14 @@
      {
       "d": "2026-11-14",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      },
      {
       "d": "2026-11-14",
@@ -1201,7 +1201,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1236,6 +1236,10 @@
       {
        "t": "2026-11-14",
        "v": 131
+      },
+      {
+       "t": "2026-11-14",
+       "v": 0
       }
      ]
     },
@@ -1291,6 +1295,10 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      },
      {
       "d": "2026-11-14",
@@ -2418,7 +2426,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2476,7 +2484,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 22
+       "v": 27
       }
      ],
      "partial": "2026-11-14",
@@ -5544,6 +5552,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
