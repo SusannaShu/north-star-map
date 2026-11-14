@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T01:40:18.203Z",
+ "generatedAt": "2026-11-14T02:04:39.279Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -588,7 +588,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 127
+       "v": 128
       }
      ],
      "partial": "2026-11-09",
@@ -602,7 +602,7 @@
         0,
         0,
         4,
-        23
+        24
        ]
       },
       {
@@ -652,22 +652,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-12",
       "v": "unmeasured"
@@ -971,6 +955,22 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1165,7 +1165,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2125,7 +2125,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2338,7 +2338,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2392,7 +2392,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 25
+       "v": 29
       }
      ],
      "partial": "2026-11-13",
@@ -4321,7 +4321,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -4351,7 +4351,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 39
+       "v": 45
       }
      ]
     },
@@ -4427,10 +4427,14 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 1
     }
    },
