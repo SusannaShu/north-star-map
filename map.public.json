@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T09:06:12.841Z",
+ "generatedAt": "2026-11-14T13:00:47.801Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2433,8 +2433,13 @@
       {
        "t": "2026-11-13",
        "v": 32
+      },
+      {
+       "t": "2026-11-14",
+       "v": 0
       }
      ],
+     "partial": "2026-11-14",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
