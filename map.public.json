@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T22:24:00.620Z",
+ "generatedAt": "2026-11-14T22:54:15.437Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -682,10 +682,6 @@
     "tries": [
      {
       "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -962,10 +958,6 @@
      },
      {
       "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -979,10 +971,6 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
      },
      {
       "d": "2026-11-14",
@@ -995,6 +983,18 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
      },
      {
       "d": "2026-11-14",
@@ -1332,6 +1332,10 @@
       {
        "t": "2026-11-12",
        "v": 38
+      },
+      {
+       "t": "2026-11-14",
+       "v": 6.78
       }
      ]
     },
@@ -1403,6 +1407,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2468,7 +2476,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 18
+       "v": 22
       }
      ],
      "partial": "2026-11-14",
@@ -2564,10 +2572,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
      {
       "d": "2026-11-12",
       "v": "unmeasured"
@@ -2875,6 +2879,10 @@
      {
       "d": "2026-11-14",
       "v": "confounded"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
@@ -5113,7 +5121,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -5455,7 +5463,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -5536,6 +5544,14 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -9052,7 +9068,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
