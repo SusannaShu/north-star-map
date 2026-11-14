@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T05:02:08.179Z",
+ "generatedAt": "2026-11-14T07:41:04.325Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1088,7 +1088,7 @@
      "label": "REMINDERS KNOW WHAT'S DONE",
      "status": "idle",
      "why": "A reminder should never tell me to do something I already did. I turned this rule into a goal that counts misfires, and the target is none.",
-     "statusLine": "active · counting misfires",
+     "statusLine": "active · tracking misfires",
      "caption": "A reminder should never tell me to do something I already did.",
      "stage": "active",
      "embed": "pages/rg-reminders-match-her-day.html",
@@ -2372,7 +2372,7 @@
    "label": "NORTH STAR MAP",
    "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active · busy week",
+   "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
    "stage": "active",
    "embed": "pages/northstar.html",
@@ -2645,10 +2645,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -2838,6 +2834,10 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -3385,15 +3385,15 @@
         },
         {
          "t": "2026-11-13",
-         "v": 4
-        },
-        {
-         "t": "2026-11-13",
          "v": 36
         },
         {
          "t": "2026-11-13",
          "v": 2
+        },
+        {
+         "t": "2026-11-14",
+         "v": 5
         }
        ]
       },
@@ -3684,10 +3684,6 @@
        },
        {
         "d": "2026-11-13",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-13",
         "v": "unmeasured"
        },
        {
@@ -3716,6 +3712,10 @@
        },
        {
         "d": "2026-11-13",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-14",
         "v": "no effect"
        }
       ],
@@ -4916,7 +4916,20 @@
    ],
    "parent": "mittens-daily",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "feature-ambient-awareness",
+     "label": "AMBIENT AWARENESS",
+     "status": "idle",
+     "why": "I want my assistant to know what is going on around me without my having to explain it. A picture or a passing remark should be enough context.",
+     "statusLine": "exploring the design",
+     "caption": "I want my assistant to know what is going on around me without my having to explain it.",
+     "stage": "active",
+     "embed": "pages/feature-ambient-awareness.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5984,7 +5997,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · finds and fixes issues nightly",
+     "statusLine": "live · nightly, some issues open",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -7402,6 +7415,19 @@
      "links": [
       "mittens-chat-threads"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-me-agent-all-filter",
+     "label": "CHAT THREAD FILTER",
+     "status": "idle",
+     "why": "I want to filter my chat threads to show only me, only the agents, or everyone, and also by planned, done or cared about.",
+     "statusLine": "plan written · awaits approval",
+     "caption": "I want to filter my chat threads to show only me, only the agents, or everyone, and also by planned, done or cared about.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/feature-me-agent-all-filter.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -9639,7 +9665,7 @@
      "label": "UX MAXER",
      "status": "idle",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
-     "statusLine": "active · critic holding goal",
+     "statusLine": "active · critic flagging weak spots",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
      "stage": "active",
      "embed": "pages/ux-maxer.html",
@@ -9972,7 +9998,70 @@
    ],
    "parent": "ns-talk",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "rg-her-words-reach-goal",
+     "label": "MY WORDS REACH DOTS",
+     "status": "idle",
+     "why": "Everything I say about a project should land on the right dot of the map within a day. A rule became a measurable goal that the system checks by itself.",
+     "statusLine": "met · nothing left over",
+     "caption": "Everything I say about a project should land on the right dot of the map within a day.",
+     "stage": "active",
+     "embed": "pages/rg-her-words-reach-goal.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-14",
+         "v": 339
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-no-dot-parked-on-her",
+     "label": "NOTHING WAITS ON ME",
+     "status": "idle",
+     "why": "No piece of work should stall while waiting for my taste call. The agents decide by a clear standard and keep moving.",
+     "statusLine": "met · none waiting",
+     "caption": "No piece of work should stall while waiting for my taste call.",
+     "stage": "active",
+     "embed": "pages/rg-no-dot-parked-on-her.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-14",
+         "v": 13
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -10110,6 +10199,36 @@
    ],
    "parent": "sheyou",
    "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-merges-one-already-there",
+   "label": "RULES MERGE, NOT PILE",
+   "status": "idle",
+   "why": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
+   "statusLine": "noted · in progress",
+   "caption": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
+   "stage": "active",
+   "embed": "pages/rg-merges-one-already-there.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-still-reacting-t6153-found",
+   "label": "RULES TAKE EFFECT",
+   "status": "idle",
+   "why": "Once a new rule is saved, the agents should follow it right away instead of repeating the old behavior.",
+   "statusLine": "noted · being checked",
+   "caption": "Once a new rule is saved, the agents should follow it right away instead of repeating the old behavior.",
+   "stage": "active",
+   "embed": "pages/rg-still-reacting-t6153-found.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
