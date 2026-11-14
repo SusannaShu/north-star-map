@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T02:15:48.758Z",
+ "generatedAt": "2026-11-14T03:15:54.385Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -93,6 +93,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
@@ -588,7 +592,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 128
+       "v": 129
       }
      ],
      "partial": "2026-11-09",
@@ -624,7 +628,7 @@
         12,
         1,
         17,
-        29
+        30
        ]
       },
       {
@@ -654,22 +658,6 @@
     "tries": [
      {
       "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
       "v": "helped"
      },
      {
@@ -971,6 +959,22 @@
      {
       "d": "2026-11-14",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2346,7 +2350,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2400,7 +2404,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 29
+       "v": 32
       }
      ],
      "partial": "2026-11-13",
@@ -2496,18 +2500,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-12",
       "v": "helped"
@@ -2815,10 +2807,22 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 4,
+     "at": 5,
      "round": 5
     }
    },
@@ -5074,6 +5078,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -7300,6 +7308,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      }
     ],
     "stage": {
