@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-13T23:47:20.361Z",
+ "generatedAt": "2026-11-14T00:17:48.046Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -654,10 +654,6 @@
     "tries": [
      {
       "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
       "v": "unmeasured"
      },
      {
@@ -970,6 +966,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
@@ -1000,7 +1000,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1165,7 +1165,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2326,7 +2326,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -9434,7 +9434,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9546,13 +9546,35 @@
     {
      "id": "feature-card-states",
      "label": "CARD STATES",
-     "status": "idle",
+     "status": "working",
      "why": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
      "statusLine": "in progress",
      "caption": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
      "stage": "active",
      "embed": "pages/feature-card-states.html",
      "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "score",
+       "label": "improve-loop score",
+       "points": [
+        {
+         "t": "2026-11-13",
+         "v": 28
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-13",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": {
+       "at": 4,
+       "round": 1
+      }
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -9779,6 +9801,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
