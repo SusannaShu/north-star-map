@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T02:04:39.279Z",
+ "generatedAt": "2026-11-14T02:15:48.758Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -554,7 +554,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2125,7 +2125,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2157,6 +2157,10 @@
       {
        "t": "2026-11-12",
        "v": 106
+      },
+      {
+       "t": "2026-11-14",
+       "v": 12
       }
      ]
     },
@@ -2228,6 +2232,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -4321,7 +4329,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -4427,6 +4435,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
@@ -8189,8 +8201,8 @@
        "v": 159
       },
       {
-       "t": "2026-11-13",
-       "v": 0.429
+       "t": "2026-11-14",
+       "v": 0.333
       }
      ]
     },
@@ -8228,7 +8240,7 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-13",
+      "d": "2026-11-14",
       "v": "no effect"
      }
     ],
