@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T00:48:18.622Z",
+ "generatedAt": "2026-11-14T01:28:52.016Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -554,7 +554,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1000,7 +1000,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1234,6 +1234,14 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -1910,7 +1918,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2280,7 +2288,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2330,7 +2338,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · busy week",
    "caption": "The map itself:",
@@ -2384,7 +2392,7 @@
       },
       {
        "t": "2026-11-13",
-       "v": 23
+       "v": 24
       }
      ],
      "partial": "2026-11-13",
@@ -2463,7 +2471,7 @@
         4,
         3,
         15,
-        30
+        31
        ]
       },
       {
@@ -2480,10 +2488,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
      {
       "d": "2026-11-12",
       "v": "unmeasured"
@@ -2798,6 +2802,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
@@ -3706,7 +3714,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4170,7 +4178,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -8724,7 +8732,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -9438,7 +9446,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9538,7 +9546,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "working",
+     "status": "idle",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic holding goal",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -9783,7 +9791,7 @@
   {
    "id": "feature-lock-screen",
    "label": "CALENDAR FIRST SCREEN",
-   "status": "working",
+   "status": "idle",
    "why": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one. It replaces the default widgets.",
    "statusLine": "plan · nothing yet",
    "caption": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one.",
@@ -9809,6 +9817,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
