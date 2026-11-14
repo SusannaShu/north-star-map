@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T19:05:00.785Z",
+ "generatedAt": "2026-11-14T19:36:12.509Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -608,7 +608,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 135
+       "v": 136
       }
      ],
      "partial": "2026-11-09",
@@ -644,7 +644,7 @@
         12,
         1,
         17,
-        34
+        35
        ]
       },
       {
@@ -674,22 +674,6 @@
     "tries": [
      {
       "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
       "v": "unmeasured"
      },
      {
@@ -862,10 +846,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -970,27 +950,47 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "no effect"
      },
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
+      "v": "no effect"
      },
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -1262,6 +1262,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -1687,7 +1691,7 @@
   {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
-   "status": "working",
+   "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
    "statusLine": "v1 build under way · Day 1 of 9 next",
    "caption": "Warm Skin v1:",
@@ -1789,7 +1793,7 @@
     {
      "id": "cuddle-bot-paper",
      "label": "CUDDLE BOT PAPER",
-     "status": "working",
+     "status": "idle",
      "why": "Getting the Cuddle Bot paper out: a working paper with a DOI first, then a late-breaking-results venue.",
      "statusLine": "working paper staged",
      "caption": "Getting the Cuddle Bot paper out:",
@@ -1950,7 +1954,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2157,7 +2161,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2336,7 +2340,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2444,7 +2448,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 11
+       "v": 14
       }
      ],
      "partial": "2026-11-14",
@@ -2523,7 +2527,7 @@
         4,
         3,
         15,
-        33
+        34
        ]
       },
       {
@@ -2540,18 +2544,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
      {
       "d": "2026-11-12",
       "v": "unmeasured"
@@ -2859,6 +2851,18 @@
      {
       "d": "2026-11-14",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2943,7 +2947,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "working",
+   "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -3398,39 +3402,7 @@
        "points": [
         {
          "t": "2026-11-11",
-         "v": 273
-        },
-        {
-         "t": "2026-11-11",
-         "v": 10
-        },
-        {
-         "t": "2026-11-11",
-         "v": 13
-        },
-        {
-         "t": "2026-11-11",
-         "v": 33
-        },
-        {
-         "t": "2026-11-11",
-         "v": 27
-        },
-        {
-         "t": "2026-11-12",
-         "v": 7
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0.75
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
+         "v": 1
         },
         {
          "t": "2026-11-12",
@@ -3438,43 +3410,19 @@
         },
         {
          "t": "2026-11-12",
-         "v": 12
-        },
-        {
-         "t": "2026-11-12",
-         "v": 8
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
-        {
-         "t": "2026-11-13",
          "v": 0
         },
         {
          "t": "2026-11-13",
-         "v": 5.92
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
+         "v": 36
         },
         {
          "t": "2026-11-14",
-         "v": 1
+         "v": 6
         },
         {
          "t": "2026-11-14",
          "v": 3
-        },
-        {
-         "t": "2026-11-14",
-         "v": 12
         }
        ]
       },
@@ -3773,10 +3721,6 @@
        },
        {
         "d": "2026-11-14",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-14",
         "v": "no effect"
        },
        {
@@ -3798,6 +3742,10 @@
        {
         "d": "2026-11-14",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-14",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -3830,7 +3778,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4294,7 +4242,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -5145,7 +5093,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -9084,7 +9032,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -9110,7 +9058,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 47
+       "v": 49
       }
      ]
     },
@@ -9145,6 +9093,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
       "v": "helped"
      },
      {
