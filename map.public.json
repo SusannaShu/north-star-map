@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T20:20:24.269Z",
+ "generatedAt": "2026-11-14T22:20:41.230Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -682,26 +682,6 @@
     "tries": [
      {
       "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -862,10 +842,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -990,7 +966,31 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      },
      {
       "d": "2026-11-14",
@@ -1201,7 +1201,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1232,6 +1232,10 @@
       {
        "t": "2026-11-13",
        "v": 0
+      },
+      {
+       "t": "2026-11-14",
+       "v": 131
       }
      ]
     },
@@ -1287,6 +1291,10 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
      }
     ],
     "stage": null
@@ -1298,7 +1306,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1962,7 +1970,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2169,7 +2177,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2352,7 +2360,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2460,7 +2468,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 16
+       "v": 18
       }
      ],
      "partial": "2026-11-14",
@@ -2556,14 +2564,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-12",
       "v": "unmeasured"
@@ -2871,6 +2871,14 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "confounded"
      },
      {
       "d": "2026-11-14",
@@ -5528,6 +5536,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
@@ -8273,7 +8285,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -9066,7 +9078,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 49
+       "v": 50
       }
      ]
     },
@@ -9106,6 +9118,14 @@
      {
       "d": "2026-11-14",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
@@ -9157,7 +9177,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -9206,6 +9226,14 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      }
     ],
