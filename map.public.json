@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T07:12:03.639Z",
+ "generatedAt": "2026-11-15T07:26:17.128Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -244,7 +244,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -344,12 +344,10 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/susu-map.html",
    "visibility": "public",
    "goalStory": {
@@ -10796,44 +10794,30 @@
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "working",
+   "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/susu-closet.html",
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 26
-      },
-      {
-       "t": "2026-11-11",
-       "v": 43
-      },
-      {
        "t": "2026-11-12",
-       "v": 43
+       "v": 0
       },
       {
        "t": "2026-11-13",
-       "v": 50
-      },
-      {
-       "t": "2026-11-14",
-       "v": 50
+       "v": 0
       },
       {
        "t": "2026-11-15",
-       "v": 50
+       "v": 0
       }
      ]
     },
@@ -10848,6 +10832,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
