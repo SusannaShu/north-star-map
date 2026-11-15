@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T04:06:08.005Z",
+ "generatedAt": "2026-11-15T04:41:18.738Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -718,10 +718,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "no effect"
      },
      {
@@ -1003,6 +999,10 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
@@ -1998,7 +1998,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2396,7 +2396,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2600,18 +2600,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -2883,6 +2871,18 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -3493,14 +3493,6 @@
       "tries": [
        {
         "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
         "v": "helped"
        },
        {
@@ -3810,6 +3802,14 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -3842,7 +3842,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4306,7 +4306,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -9266,8 +9266,16 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-13",
+       "v": 6
+      },
+      {
+       "t": "2026-11-13",
        "v": 61
+      },
+      {
+       "t": "2026-11-15",
+       "v": 68
       }
      ]
     },
@@ -9314,6 +9322,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
