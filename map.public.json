@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T05:16:46.411Z",
+ "generatedAt": "2026-11-15T05:28:54.937Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -1229,7 +1229,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2470,7 +2470,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -3285,7 +3285,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3480,7 +3480,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3494,7 +3494,35 @@
        "points": [
         {
          "t": "2026-11-11",
-         "v": 1
+         "v": 10
+        },
+        {
+         "t": "2026-11-11",
+         "v": 13
+        },
+        {
+         "t": "2026-11-11",
+         "v": 33
+        },
+        {
+         "t": "2026-11-11",
+         "v": 27
+        },
+        {
+         "t": "2026-11-12",
+         "v": 7
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0.75
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
         },
         {
          "t": "2026-11-12",
@@ -3502,31 +3530,51 @@
         },
         {
          "t": "2026-11-12",
+         "v": 12
+        },
+        {
+         "t": "2026-11-12",
+         "v": 8
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
+        },
+        {
+         "t": "2026-11-13",
          "v": 0
         },
         {
          "t": "2026-11-13",
-         "v": 36
+         "v": 5.92
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
         },
         {
          "t": "2026-11-14",
-         "v": 6
+         "v": 1
+        },
+        {
+         "t": "2026-11-14",
+         "v": 3
+        },
+        {
+         "t": "2026-11-14",
+         "v": 12
         },
         {
          "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "v": 26
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "helped"
-       },
        {
         "d": "2026-11-11",
         "v": "no effect"
@@ -3842,6 +3890,10 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -3874,7 +3926,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4338,7 +4390,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4481,7 +4533,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -4519,7 +4571,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 45
+       "v": 46
       }
      ]
     },
@@ -4603,6 +4655,10 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5333,7 +5389,7 @@
   {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
    "statusLine": "live · every day",
    "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
@@ -9395,6 +9451,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
