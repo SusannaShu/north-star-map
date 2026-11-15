@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T17:50:31.543Z",
+ "generatedAt": "2026-11-15T18:05:16.719Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -672,7 +672,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 139
+       "v": 141
       }
      ],
      "partial": "2026-11-09",
@@ -708,7 +708,7 @@
         12,
         1,
         17,
-        36
+        37
        ]
       },
       {
@@ -730,7 +730,7 @@
         4,
         1,
         2,
-        13
+        14
        ]
       }
      ]
@@ -750,10 +750,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -1051,6 +1047,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -1135,7 +1135,7 @@
     {
      "id": "live-day-plan",
      "label": "LIVE DAY PLAN",
-     "status": "working",
+     "status": "idle",
      "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
      "statusLine": "first phase built · next steps planned",
      "caption": "My assistant keeps one plan for the day and updates it as things change.",
@@ -2285,7 +2285,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2494,7 +2494,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 34
+       "v": 35
       }
      ]
     },
@@ -2592,7 +2592,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 20
+       "v": 36
       }
      ],
      "partial": "2026-11-15",
@@ -2627,7 +2627,7 @@
         9,
         4,
         23,
-        75
+        76
        ]
       },
       {
@@ -3357,7 +3357,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3572,7 +3572,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3631,6 +3631,10 @@
         {
          "t": "2026-11-15",
          "v": 1
+        },
+        {
+         "t": "2026-11-15",
+         "v": 3
         }
        ]
       },
@@ -3861,10 +3865,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
         "v": "helped"
        },
        {
@@ -3950,6 +3950,10 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
        },
        {
         "d": "2026-11-15",
@@ -5326,7 +5330,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -5413,7 +5417,7 @@
     {
      "id": "glasses-launch",
      "label": "LAUNCH FROM THE GLASSES",
-     "status": "working",
+     "status": "idle",
      "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
      "statusLine": "built · first install next",
      "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
@@ -5439,7 +5443,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 141
+         "v": 162
         }
        ]
       },
@@ -8319,7 +8323,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 141
+       "v": 162
       }
      ]
     },
@@ -8383,7 +8387,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 141
+       "v": 162
       }
      ]
     },
@@ -8799,7 +8803,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 59
+       "v": 63
       }
      ]
     },
@@ -9673,7 +9677,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 59
+       "v": 63
       }
      ]
     },
@@ -9721,7 +9725,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 59
+         "v": 63
         }
        ]
       },
@@ -10439,7 +10443,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 141
+       "v": 162
       }
      ]
     },
@@ -10849,6 +10853,22 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "ux-teaching",
+   "label": "TEACHING UX",
+   "status": "dormant",
+   "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
+   "statusLine": "plan · nothing yet",
+   "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/ux-teaching.html",
+   "visibility": "public",
+   "parent": "ui-experience",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "sheyou-report-sources",
    "label": "SHEYOU REPORT SOURCES",
    "status": "done",
@@ -10880,22 +10900,6 @@
     "sheyou"
    ],
    "parent": "sheyou",
-   "parked": true,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "ux-teaching",
-   "label": "TEACHING UX",
-   "status": "dormant",
-   "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
-   "statusLine": "plan · nothing yet",
-   "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/ux-teaching.html",
-   "visibility": "public",
-   "parent": "ui-experience",
    "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
@@ -11084,7 +11088,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 68
+       "v": 69
       }
      ]
     },
