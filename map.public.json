@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T07:37:56.775Z",
+ "generatedAt": "2026-11-15T07:50:45.924Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -579,7 +579,7 @@
      "label": "AGENTIC MARKETING",
      "status": "idle",
      "why": "Research: how agent-run marketing goes wrong -- persona farms, undisclosed ads, fake engagement -- and the redesign: founder and brand accounts, labelled virtual models, paid creators, official APIs only.",
-     "statusLine": "research done · redesign needs my call",
+     "statusLine": "redesign needs my call · tracking sign-ups",
      "caption": "Research:",
      "stage": "plan",
      "planned": true,
@@ -612,7 +612,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -723,10 +723,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-14",
       "v": "unmeasured"
      },
@@ -1029,6 +1025,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1126,7 +1126,7 @@
      "label": "REMINDERS KNOW WHAT'S DONE",
      "status": "idle",
      "why": "A reminder should never tell me to do something I already did. I turned this rule into a goal that counts misfires, and the target is none.",
-     "statusLine": "active · tracking misfires",
+     "statusLine": "met · no misfires lately",
      "caption": "A reminder should never tell me to do something I already did.",
      "stage": "active",
      "embed": "pages/rg-reminders-match-her-day.html",
@@ -2020,7 +2020,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2227,7 +2227,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2422,7 +2422,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3287,7 +3287,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3482,7 +3482,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3577,10 +3577,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "unmeasured"
@@ -3896,6 +3892,10 @@
        {
         "d": "2026-11-15",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -3928,7 +3928,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -3963,6 +3963,19 @@
      "links": [
       "brain-architecture"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "one-clean-record",
+     "label": "ONE CLEAN RECORD",
+     "status": "idle",
+     "why": "I want the system to keep one clean, trusted version of every record. Each record gets a type and a tag for where it came from, so a weaker source can't overwrite a stronger one.",
+     "statusLine": "plan · design chosen",
+     "caption": "I want the system to keep one clean, trusted version of every record.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/one-clean-record.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4392,7 +4405,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -5255,7 +5268,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -5726,7 +5739,7 @@
      "label": "MITTENS TEACHES",
      "status": "idle",
      "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "statusLine": "now podcast episodes",
+     "statusLine": "next: quiz until mastered",
      "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
      "stage": "active",
      "embed": "pages/mittens-tutor.html",
@@ -6220,7 +6233,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · nightly, some issues open",
+     "statusLine": "live · nightly, most fixes automatic",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -6313,7 +6326,7 @@
      "label": "THE SERIES",
      "status": "idle",
      "why": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant. Each good news item can become a story beat: the real news, then the world where it went right.",
-     "statusLine": "pilot waiting on my yes · may be stale",
+     "statusLine": "pilot and first short await my yes",
      "caption": "This is a hopeful series about a future where AI brings abundance, meaning and love, plus funny shorts about real hiccups with my assistant.",
      "stage": "active",
      "embed": "pages/gospel-series.html",
@@ -9071,7 +9084,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
