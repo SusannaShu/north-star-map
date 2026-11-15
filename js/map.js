@@ -3451,9 +3451,20 @@ const tickerEl = document.getElementById("ticker");
 
 let tickI = 0;
 
-function tick(html) {
-    tickerEl.innerHTML = html;
+function tickFit(html) {
+    return String(html).split(" · ").map(p => p.replace(/ (?![^<]*>)/g, " ")).join(" · ");
 }
+
+function tickH() {
+    document.documentElement.style.setProperty("--tk-h", (tickerEl.offsetHeight || 34) + "px");
+}
+
+function tick(html) {
+    tickerEl.innerHTML = tickFit(html);
+    tickH();
+}
+
+if (window.ResizeObserver) new ResizeObserver(tickH).observe(tickerEl);
 
 function ago(t) {
     const m = Math.round((Date.now() - new Date(t)) / 6e4);

@@ -373,7 +373,10 @@ body.saver .voice { opacity:0; pointer-events:none; }
   background:var(--bg-glass); backdrop-filter:blur(12px);
   border-top:1px solid var(--border);
   font-family:var(--mono); font-size:11px; color:var(--text-muted);
-  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  /* M261113-4: never clipped. map.js tick() keeps each ' · ' part of a line whole (no-break spaces) and the bar
+     wraps BETWEEN parts on a narrow screen (iPhone 375 px needs 403 for the job line; Desk tiles 100-446 px);
+     a part wider than the whole bar breaks inside only as the last resort. Nothing is dropped: no hover on iPhone. */
+  white-space:normal; overflow-wrap:anywhere; line-height:1.45;
   transition:transform .4s ease, opacity .4s ease;
 }
 .ticker b { color:var(--text); font-weight:600; }
@@ -490,7 +493,8 @@ body.saver .legend { opacity:0; }
 .legend .show-done[aria-pressed="true"] .sd-box { background:currentColor; }
 .card li a { color:var(--text); text-underline-offset:3px; }
 /* ── Live layer: CEO box, intents, the people sketch (live.js) ── */
-.askbar { position:fixed; left:50%; transform:translateX(-50%); bottom:46px; z-index:16; width:min(560px, calc(100vw - 32px));
+.askbar { position:fixed; left:50%; transform:translateX(-50%); bottom:calc(var(--tk-h, 34px) + 12px);   /* sits on the ticker, however many lines it wraps to (M261113-4) */
+  z-index:16; width:min(560px, calc(100vw - 32px));
   display:flex; gap:8px; transition:opacity .4s ease; }
 .askbar input { flex:1; padding:12px 16px; border:1px dashed #000; border-radius:999px; background:var(--bg-glass); backdrop-filter:blur(10px);
   font-family:var(--font); font-size:14px; outline:none; color:var(--text); }
@@ -958,7 +962,7 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/done-filter.js?v=20261103b"></script>
 <script src="js/dot-view.js?v=20261103b"></script>
 <script src="js/public-live.js"></script>
-<script src="js/map.js?v=20261107t4528"></script>
+<script src="js/map.js?v=20261115t6813"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/public-time.js?v=20261022changes" defer="defer"></script>
 <script src="js/live.js?v=20261102done"></script>

@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T05:28:54.937Z",
+ "generatedAt": "2026-11-15T06:00:10.246Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -610,7 +610,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -714,14 +714,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "no effect"
      },
      {
@@ -1023,6 +1015,14 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -2018,7 +2018,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2420,7 +2420,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2628,22 +2628,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
      {
       "d": "2026-11-13",
       "v": "no effect"
@@ -2946,7 +2930,23 @@
      },
      {
       "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3494,35 +3494,7 @@
        "points": [
         {
          "t": "2026-11-11",
-         "v": 10
-        },
-        {
-         "t": "2026-11-11",
-         "v": 13
-        },
-        {
-         "t": "2026-11-11",
-         "v": 33
-        },
-        {
-         "t": "2026-11-11",
-         "v": 27
-        },
-        {
-         "t": "2026-11-12",
-         "v": 7
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0.75
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
+         "v": 1
         },
         {
          "t": "2026-11-12",
@@ -3530,59 +3502,31 @@
         },
         {
          "t": "2026-11-12",
-         "v": 12
-        },
-        {
-         "t": "2026-11-12",
-         "v": 8
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
-        {
-         "t": "2026-11-13",
          "v": 0
         },
         {
          "t": "2026-11-13",
-         "v": 5.92
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
+         "v": 36
         },
         {
          "t": "2026-11-14",
-         "v": 1
-        },
-        {
-         "t": "2026-11-14",
-         "v": 3
-        },
-        {
-         "t": "2026-11-14",
-         "v": 12
+         "v": 6
         },
         {
          "t": "2026-11-15",
-         "v": 26
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 1
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-11",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-11",
         "v": "no effect"
@@ -3894,6 +3838,14 @@
        {
         "d": "2026-11-15",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -3926,7 +3878,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4390,7 +4342,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -9373,7 +9325,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
