@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T15:26:37.562Z",
+ "generatedAt": "2026-11-15T15:53:07.988Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -734,10 +734,6 @@
      },
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
       "v": "helped"
      },
      {
@@ -894,10 +890,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -1039,6 +1031,14 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      },
      {
       "d": "2026-11-15",
@@ -1072,7 +1072,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1253,7 +1253,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2269,7 +2269,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2576,7 +2576,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 13
+       "v": 18
       }
      ],
      "partial": "2026-11-15",
@@ -2611,7 +2611,7 @@
         9,
         4,
         22,
-        74
+        75
        ]
       },
       {
@@ -2655,7 +2655,7 @@
         4,
         3,
         15,
-        39
+        40
        ]
       },
       {
@@ -5435,7 +5435,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 126
+         "v": 135
         }
        ]
       },
@@ -8311,7 +8311,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 126
+       "v": 135
       }
      ]
     },
@@ -8375,7 +8375,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 126
+       "v": 135
       }
      ]
     },
@@ -8555,7 +8555,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -8602,6 +8602,10 @@
       {
        "t": "2026-11-14",
        "v": 0.333
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0.5
       }
      ]
     },
@@ -8648,6 +8652,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
@@ -10411,7 +10419,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 126
+       "v": 135
       }
      ]
     },
@@ -11056,7 +11064,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 67
+       "v": 68
       }
      ]
     },
