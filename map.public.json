@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T14:23:54.201Z",
+ "generatedAt": "2026-11-15T14:47:40.526Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -462,7 +462,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -660,7 +660,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 138
+       "v": 139
       }
      ],
      "partial": "2026-11-09",
@@ -707,7 +707,7 @@
         6,
         9,
         20,
-        48
+        49
        ]
       },
       {
@@ -1072,7 +1072,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2050,7 +2050,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2456,7 +2456,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2568,7 +2568,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 10
+       "v": 12
       }
      ],
      "partial": "2026-11-15",
@@ -2664,10 +2664,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -2979,6 +2975,10 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -8841,7 +8841,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -9415,7 +9415,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -9438,6 +9438,10 @@
       {
        "t": "2026-11-15",
        "v": 68
+      },
+      {
+       "t": "2026-11-15",
+       "v": 7
       }
      ]
     },
@@ -9493,6 +9497,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
@@ -9893,7 +9901,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9923,7 +9931,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 82
+       "v": 80
       }
      ]
     },
@@ -9958,6 +9966,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
