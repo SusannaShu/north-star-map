@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T01:28:42.177Z",
+ "generatedAt": "2026-11-15T02:50:26.538Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -332,12 +332,10 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/susu-map.html",
    "visibility": "public",
    "goalStory": {
@@ -367,7 +365,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 43
+       "v": 41
       }
      ]
     },
@@ -379,6 +377,10 @@
      {
       "d": "2026-11-14",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -624,7 +626,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 137
+       "v": 138
       }
      ],
      "partial": "2026-11-09",
@@ -682,7 +684,7 @@
         4,
         1,
         2,
-        12
+        13
        ]
       }
      ]
@@ -690,46 +692,6 @@
     "tries": [
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -958,19 +920,11 @@
      },
      {
       "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
      },
      {
       "d": "2026-11-14",
@@ -1007,6 +961,54 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2201,7 +2203,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2500,7 +2502,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 34
+       "v": 36
       }
      ],
      "partial": "2026-11-14",
@@ -2596,26 +2598,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -2915,6 +2897,26 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3037,7 +3039,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 37
+       "v": 39
       }
      ]
     },
@@ -3069,6 +3071,10 @@
      {
       "d": "2026-11-13",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -3481,10 +3487,6 @@
       "tries": [
        {
         "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-11",
         "v": "helped"
        },
        {
@@ -3798,6 +3800,10 @@
        {
         "d": "2026-11-14",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -5145,7 +5151,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -5224,7 +5230,7 @@
     {
      "id": "glasses-launch",
      "label": "LAUNCH FROM THE GLASSES",
-     "status": "working",
+     "status": "idle",
      "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
      "statusLine": "built · first install next",
      "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
@@ -5487,7 +5493,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -5584,6 +5590,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
@@ -9294,6 +9304,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
