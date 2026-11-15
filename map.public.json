@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T16:54:47.160Z",
+ "generatedAt": "2026-11-15T17:08:52.594Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -127,7 +127,7 @@
     {
      "id": "designers",
      "label": "DESIGNERS",
-     "status": "idle",
+     "status": "working",
      "why": "Student designers and young independent brands. Their work goes on SHEYOU with a claim link; every time a member wears a piece, the designer earns.",
      "statusLine": "pipeline · try-on pricing idea added",
      "caption": "Student designers and young independent brands.",
@@ -462,7 +462,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -626,7 +626,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -674,7 +674,7 @@
         0,
         0,
         4,
-        25
+        24
        ]
       },
       {
@@ -696,7 +696,7 @@
         12,
         1,
         17,
-        35
+        36
        ]
       },
       {
@@ -2518,7 +2518,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2604,7 +2604,7 @@
         0,
         0,
         1,
-        42
+        41
        ]
       },
       {
@@ -2614,7 +2614,7 @@
         6,
         9,
         4,
-        22,
+        23,
         75
        ]
       },
@@ -2647,7 +2647,7 @@
         5,
         6,
         5,
-        26,
+        27,
         19
        ]
       },
@@ -2658,8 +2658,8 @@
         0,
         4,
         3,
-        15,
-        40
+        16,
+        42
        ]
       },
       {
@@ -2726,10 +2726,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -2987,6 +2983,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -3345,7 +3345,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3560,7 +3560,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3572,10 +3572,6 @@
        "kind": "values",
        "label": "measured result",
        "points": [
-        {
-         "t": "2026-11-14",
-         "v": 12
-        },
         {
          "t": "2026-11-15",
          "v": 26
@@ -3651,20 +3647,16 @@
         {
          "t": "2026-11-15",
          "v": 18
+        },
+        {
+         "t": "2026-11-15",
+         "v": 899
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "unmeasured"
        },
        {
@@ -3974,6 +3966,14 @@
        {
         "d": "2026-11-15",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -6238,7 +6238,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -8117,7 +8117,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -8925,7 +8925,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "idle",
+   "status": "working",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -8966,7 +8966,7 @@
        "v": 1
       },
       {
-       "t": "2026-11-13",
+       "t": "2026-11-15",
        "v": 1
       }
      ]
@@ -9045,8 +9045,12 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-13",
+      "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": null
