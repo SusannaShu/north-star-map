@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T20:13:55.640Z",
+ "generatedAt": "2026-11-15T21:04:17.654Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -326,6 +326,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -766,10 +770,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1059,11 +1059,15 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 5,
-     "round": 2
+     "at": 0,
+     "round": 3
     }
    },
    "codeRepos": [
@@ -1088,7 +1092,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1244,6 +1248,10 @@
        {
         "d": "2026-11-15",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -2297,7 +2305,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2542,7 +2550,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2604,7 +2612,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 46
+       "v": 49
       }
      ],
      "partial": "2026-11-15",
@@ -2650,7 +2658,7 @@
         0,
         1,
         3,
-        38
+        39
        ]
       },
       {
@@ -2694,7 +2702,7 @@
         3,
         2,
         1,
-        2
+        3
        ]
       }
      ]
@@ -2730,14 +2738,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -3019,6 +3019,14 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3665,10 +3673,6 @@
       "tries": [
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "helped"
        },
        {
@@ -3982,6 +3986,10 @@
        {
         "d": "2026-11-15",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4014,7 +4022,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4070,7 +4078,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "idle",
+   "status": "working",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -4491,7 +4499,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -5467,7 +5475,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 159
+         "v": 157
         }
        ]
       },
@@ -5742,7 +5750,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 32
+       "v": 38
       }
      ]
     },
@@ -5822,10 +5830,18 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 2
     }
    },
@@ -8368,7 +8384,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 159
+       "v": 157
       }
      ]
     },
@@ -8432,7 +8448,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 159
+       "v": 157
       }
      ]
     },
@@ -8612,7 +8628,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -9540,7 +9556,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "idle",
+   "status": "working",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -10500,7 +10516,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 159
+       "v": 157
       }
      ]
     },
@@ -11081,6 +11097,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
