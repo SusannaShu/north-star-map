@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T21:04:17.654Z",
+ "generatedAt": "2026-11-15T21:42:01.268Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -284,6 +284,10 @@
       {
        "t": "2026-11-15",
        "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
       }
      ]
     },
@@ -326,6 +330,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -486,7 +494,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "idle",
+   "status": "working",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "content drafted · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -500,6 +508,10 @@
      "points": [
       {
        "t": "2026-11-11",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
        "v": 0
       },
       {
@@ -548,6 +560,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -758,18 +774,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1058,11 +1062,23 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -1092,7 +1108,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2094,7 +2110,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2305,7 +2321,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2500,7 +2516,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2550,7 +2566,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2612,7 +2628,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 49
+       "v": 57
       }
      ],
      "partial": "2026-11-15",
@@ -3600,7 +3616,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3671,10 +3687,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
        {
         "d": "2026-11-12",
         "v": "helped"
@@ -3990,6 +4002,10 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4078,7 +4094,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "working",
+   "status": "idle",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -4099,6 +4115,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -5385,6 +5405,10 @@
       {
        "t": "2026-11-12",
        "v": 37.2
+      },
+      {
+       "t": "2026-11-15",
+       "v": 50
       }
      ]
     },
@@ -5436,6 +5460,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5475,7 +5503,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 157
+         "v": 166
         }
        ]
       },
@@ -5826,6 +5854,14 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -8384,7 +8420,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 157
+       "v": 166
       }
      ]
     },
@@ -8448,7 +8484,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 157
+       "v": 166
       }
      ]
     },
@@ -8628,7 +8664,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -8725,6 +8761,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -9556,7 +9596,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -10516,7 +10556,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 157
+       "v": 166
       }
      ]
     },
@@ -11165,7 +11205,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 70
+       "v": 77
       }
      ]
     },
