@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T13:14:20.675Z",
+ "generatedAt": "2026-11-15T13:46:36.748Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -248,7 +248,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -2502,7 +2502,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2564,7 +2564,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 0
+       "v": 5
       }
      ],
      "partial": "2026-11-15",
@@ -2643,7 +2643,7 @@
         4,
         3,
         15,
-        36
+        37
        ]
       },
       {
@@ -3524,7 +3524,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3665,10 +3665,6 @@
        },
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "helped"
        },
        {
@@ -3934,6 +3930,10 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
        },
        {
         "d": "2026-11-15",
@@ -5423,7 +5423,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 121
+         "v": 116
         }
        ]
       },
@@ -6198,7 +6198,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -6253,7 +6253,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "working",
+     "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "live · greets when I wake",
      "caption": "One morning notification:",
@@ -7734,7 +7734,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -8299,7 +8299,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 121
+       "v": 116
       }
      ]
     },
@@ -8363,7 +8363,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 121
+       "v": 116
       }
      ]
     },
@@ -10387,7 +10387,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 121
+       "v": 116
       }
      ]
     },
@@ -10851,12 +10851,10 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
