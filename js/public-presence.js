@@ -36,7 +36,7 @@
             at: isNaN(at) ? null : at,
             talk: talk,
             device: talk === "on" && DEVICES.includes(j.device) ? j.device : null,
-            devices: talk === "on" && Array.isArray(j.devices) ? [ ...new Set(j.devices.filter(d => d in TYPES)) ].slice(0, 4) : talk === "on" && j.device === "glasses" ? [ "glasses" ] : [],
+            devices: Array.isArray(j.devices) ? [ ...new Set(j.devices.filter(d => d in TYPES)) ].slice(0, 4) : talk === "on" && j.device === "glasses" ? [ "glasses" ] : [],
             seen: talk === "off" && SEEN.includes(j.seen) ? j.seen : null,
             working: n99(j.working),
             waiting: n99(j.waiting)
@@ -80,11 +80,12 @@
         let t = null;
         if (live) {
             const on = p.talk === "on";
-            const words = on ? "Susanna is talking to Mittens" : "Mittens idle";
-            const short = document.body.classList.contains("framed") ? on ? "Talking" : "Idle" : on ? "Talking" : "Mittens idle";
-            const sub = on ? fromWords(p) || (p.device ? `on ${p.device === "glasses" ? "the glasses" : `a ${p.device}`}` : "now") : p.seen ? `talked ${p.seen}` : "";
-            const ico = on ? p.devices.length ? TYPE_ICON[p.devices[0]] : p.device : null;
-            const icons = !on ? "" : p.devices.length > 1 ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : ico ? svg(ico) : "";
+            const here = !on && p.devices.length ? "Susanna is on her " + both(p.devices.map(d => TYPES[d])) : "";
+            const words = on ? "Susanna is talking to Mittens" : here || "Mittens idle";
+            const short = document.body.classList.contains("framed") ? on ? "Talking" : here ? "Here" : "Idle" : on ? "Talking" : here ? "Susanna here" : "Mittens idle";
+            const sub = on ? fromWords(p) || (p.device ? `on ${p.device === "glasses" ? "the glasses" : `a ${p.device}`}` : "now") : here ? "" : p.seen ? `talked ${p.seen}` : "";
+            const ico = p.devices.length ? TYPE_ICON[p.devices[0]] : on ? p.device : null;
+            const icons = p.devices.length > 1 ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : ico ? svg(ico) : "";
             t = {
                 on: on,
                 short: short,

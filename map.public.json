@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T22:52:57.925Z",
+ "generatedAt": "2026-11-15T23:35:23.624Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -21,28 +21,36 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "values",
-     "label": "measured result",
+     "kind": "score",
+     "label": "improve-loop score",
      "points": [
       {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
        "t": "2026-11-10",
-       "v": 9
+       "v": 37
       },
       {
        "t": "2026-11-11",
-       "v": 9
+       "v": 43
       },
       {
-       "t": "2026-11-11",
-       "v": 4
-      },
-      {
-       "t": "2026-11-13",
-       "v": 1
+       "t": "2026-11-12",
+       "v": 43
       },
       {
        "t": "2026-11-13",
-       "v": 0
+       "v": 52
+      },
+      {
+       "t": "2026-11-14",
+       "v": 52
+      },
+      {
+       "t": "2026-11-15",
+       "v": 60
       }
      ]
     },
@@ -92,10 +100,6 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-14",
       "v": "unmeasured"
      },
@@ -114,6 +118,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -774,10 +782,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -962,10 +966,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1087,6 +1087,14 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1434,7 +1442,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1853,7 +1861,7 @@
    "label": "ROBOT SKIN",
    "status": "idle",
    "why": "Warm Skin v1: a palm-sized, warm, touch-responsive fluid skin, built by hand. Organic fabric top, capacitive mesh, Velostat pressure layer, McKibben fluid muscle, TPU water bladder, heater film, ESP32-S3. Module one of the soft robot companion.",
-   "statusLine": "v1 build under way · Day 1 of 9 next",
+   "statusLine": "parts in hand · build day 1 of 9 next",
    "caption": "Warm Skin v1:",
    "stage": "active",
    "embed": "pages/robot-skin.html",
@@ -2574,7 +2582,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2636,7 +2644,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 67
+       "v": 74
       }
      ],
      "partial": "2026-11-15",
@@ -2746,18 +2754,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -3039,6 +3035,18 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -3137,7 +3145,7 @@
    "label": "SOFT ROBOT",
    "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
-   "statusLine": "module one build under way",
+   "statusLine": "module one: parts in hand · build next",
    "caption": "The soft healthcare companion:",
    "stage": "active",
    "images": [
@@ -3439,7 +3447,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 0
+       "v": 2
       }
      ]
     },
@@ -3678,10 +3686,6 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
          "v": 3
         },
         {
@@ -3691,15 +3695,15 @@
         {
          "t": "2026-11-15",
          "v": 2
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-13",
         "v": "helped"
        },
@@ -3934,10 +3938,6 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
        },
        {
         "d": "2026-11-15",
@@ -4014,6 +4014,14 @@
        {
         "d": "2026-11-15",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -5391,9 +5399,9 @@
    "id": "smart-glasses",
    "label": "GLASSES",
    "status": "idle",
-   "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
-   "statusLine": "testing",
-   "caption": "Smart glasses as the eyes beside the pendant:",
+   "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
+   "statusLine": "in daily use",
+   "caption": "Meta Ray-Ban Display glasses:",
    "stage": "active",
    "embed": "pages/smart-glasses.html",
    "visibility": "public",
@@ -5515,7 +5523,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 169
+         "v": 176
         }
        ]
       },
@@ -6720,7 +6728,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "working",
+   "status": "idle",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -8436,7 +8444,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 169
+       "v": 176
       }
      ]
     },
@@ -8500,7 +8508,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 169
+       "v": 176
       }
      ]
     },
@@ -8681,9 +8689,9 @@
    "id": "pendant",
    "label": "PENDANT",
    "status": "working",
-   "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
-   "statusLine": "three form designs · picking one",
-   "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
+   "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
+   "statusLine": "v1 on the bench · own board in design",
+   "caption": "A pendant that sees and hears, so you log less.",
    "stage": "active",
    "images": [
     "img/pendant-workbench.jpg",
@@ -9629,24 +9637,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
-       "v": 6
-      },
-      {
-       "t": "2026-11-13",
-       "v": 61
-      },
-      {
        "t": "2026-11-15",
-       "v": 68
-      },
-      {
-       "t": "2026-11-15",
-       "v": 7
-      },
-      {
-       "t": "2026-11-15",
-       "v": 3
+       "v": 84
       }
      ]
     },
@@ -9665,10 +9657,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -9702,6 +9690,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
@@ -10576,7 +10568,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 169
+       "v": 176
       }
      ]
     },
@@ -11225,7 +11217,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 77
+       "v": 76
       }
      ]
     },

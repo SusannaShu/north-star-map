@@ -3025,7 +3025,10 @@ function openPanel(n, tab) {
     const isNow = !!(ROOT && target.id === ROOT && window.nsDotView);
     if (isNow) html += `<div class="now-view" data-dot="${esc(target.id)}">${nowHtml(window.nsDotView.build(DATA, target.id))}</div>`;
     if (d.asks && d.asks.length && !isNow) html += `<div class="card"><h4>Needs you — ${d.asks.length} question${d.asks.length > 1 ? "s" : ""}</h4><ul>${d.asks.map(a => `<li class="hot"><b>${esc(a.title)}</b></li>`).join("")}</ul>\n      <div class="ask" style="cursor:pointer" onclick="openInbox('${target.id}')"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 3.5h11v7h-6l-3 2.5v-2.5h-2z"/></svg> Answer in the inbox</div></div>`;
-    if (d.why) html += `<div class="card why"><h4>Why</h4><p>${d.why}</p></div>`;
+    {
+        const whyRest = PUBLIC && (d.goalStory || target.goalStory) ? String(d.why || "").split(/(?<=[.!?])\s/).slice(1).join(" ").trim() : d.why;
+        if (whyRest) html += `<div class="card why"><h4>Why</h4><p>${whyRest}</p></div>`;
+    }
     if (d.ideas && d.ideas.length) html += `<div class="card"><h4>From Talk</h4><ul>${d.ideas.map(x => `<li><b>${esc(new Date(x.at).toLocaleDateString("en-US", {
         month: "numeric",
         day: "numeric"
@@ -3876,27 +3879,77 @@ window.openSituationPanel = openSituationPanel;
 
 const saverBtn = document.getElementById("saverBtn");
 
+const IN_DESK = document.documentElement.classList.contains("ns-desk-pane");
+
+let SLOT = IN_DESK ? null : {
+    slot: "calendar"
+};
+
+function askSlot() {
+    if (!IN_DESK || PUBLIC) return;
+    fetch("/api/screen-now", {
+        cache: "no-store"
+    }).then(r => r.ok ? r.json() : null).then(j => {
+        const d = j?.desk;
+        SLOT = d && d.up ? d : {
+            slot: "calendar"
+        };
+        if (saver) {
+            saverCal();
+            fitAll();
+        }
+    }).catch(() => {
+        SLOT = {
+            slot: "calendar"
+        };
+        if (saver) {
+            saverCal();
+            fitAll();
+        }
+    });
+}
+
+document.addEventListener("visibilitychange", () => {
+    if (!document.hidden) askSlot();
+});
+
+const slotKind = () => !SLOT ? "wait" : SLOT.slot === "now" ? SLOT.now ? "now" : "none" : "calendar";
+
 function saverCalOn() {
-    return saver && !PUBLIC && !STILL && !WALL && !MINI && !isMobile() && W >= 900;
+    return saver && !PUBLIC && !STILL && !WALL && !MINI && !isMobile() && W >= 900 && [ "calendar", "now" ].includes(slotKind());
 }
 
 function saverCalW() {
-    return Math.round(Math.min(Math.max(W * .42, 460), 900));
+    return slotKind() === "now" ? Math.round(Math.min(Math.max(W * .3, 380), 560)) : Math.round(Math.min(Math.max(W * .42, 460), 900));
 }
 
 function saverCal() {
     const box = document.getElementById("saverCal");
     if (!box) return;
-    const on = saverCalOn();
+    const on = saverCalOn(), kind = slotKind();
     document.body.classList.toggle("saver-cal-on", on);
+    box.classList.toggle("now", on && kind === "now");
     if (!on) return;
     document.documentElement.style.setProperty("--scw", saverCalW() + "px");
+    box.onclick = () => exitSaver();
+    if (kind === "now") {
+        const n = SLOT.now, where = SLOT.calendarWhere || "the Mittens column";
+        const html = `<div class="now-card"><div class="now-k">NOW</div><div class="now-t">${esc(n.title || n.url)}</div>` + `<div class="now-s">${n.drawn ? "open in a Desk tile" : "opened for you on the Desk"}</div>` + `<div class="now-f">Your day is in ${esc(where)}</div></div>`;
+        if (box.dataset.sig !== html) {
+            box.dataset.sig = html;
+            box.innerHTML = html;
+        }
+        return;
+    }
+    if (box.dataset.sig !== "cal") {
+        box.dataset.sig = "cal";
+        box.innerHTML = "";
+    }
     if (!box.firstChild) {
         const f = document.createElement("iframe");
         f.title = "Mittens calendar";
         f.src = "/day.html?app=1&saver=1";
         box.appendChild(f);
-        box.onclick = () => exitSaver();
     }
 }
 
@@ -3905,6 +3958,7 @@ function enterSaver() {
     document.body.classList.add("saver");
     closePanel();
     overlay.classList.remove("open");
+    askSlot();
     saverCal();
     setGravity();
     fitAll();
