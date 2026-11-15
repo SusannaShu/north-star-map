@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T05:04:48.678Z",
+ "generatedAt": "2026-11-15T05:16:46.411Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -722,10 +722,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "no effect"
      },
      {
@@ -1027,6 +1023,10 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1229,7 +1229,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2356,6 +2356,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2466,7 +2470,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2524,9 +2528,14 @@
       },
       {
        "t": "2026-11-14",
-       "v": 37
+       "v": 43
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
       }
      ],
+     "partial": "2026-11-15",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -2619,10 +2628,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -2938,6 +2943,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -4472,7 +4481,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5324,7 +5333,7 @@
   {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
    "statusLine": "live · every day",
    "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
@@ -9782,7 +9791,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -9890,7 +9899,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "working",
+     "status": "idle",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic flagging weak spots",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -9935,6 +9944,10 @@
        },
        {
         "d": "2026-11-14",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
         "v": "unmeasured"
        }
       ],
@@ -10151,7 +10164,7 @@
   {
    "id": "feature-lock-screen",
    "label": "CALENDAR FIRST SCREEN",
-   "status": "working",
+   "status": "idle",
    "why": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one. It replaces the default widgets.",
    "statusLine": "plan · nothing yet",
    "caption": "The first thing I see on my phone, locked or unlocked, should be my own calendar, plus a route when there is one.",
@@ -10198,6 +10211,10 @@
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": null
