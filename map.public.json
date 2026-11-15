@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T16:22:31.765Z",
+ "generatedAt": "2026-11-15T16:54:47.160Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -248,7 +248,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -725,14 +725,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-15",
       "v": "unmeasured"
      },
@@ -1039,6 +1031,14 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
@@ -1072,7 +1072,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -3279,6 +3279,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3570,10 +3574,6 @@
        "points": [
         {
          "t": "2026-11-14",
-         "v": 3
-        },
-        {
-         "t": "2026-11-14",
          "v": 12
         },
         {
@@ -3647,16 +3647,16 @@
         {
          "t": "2026-11-15",
          "v": 32
+        },
+        {
+         "t": "2026-11-15",
+         "v": 18
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
         "v": "no effect"
        },
        {
@@ -3950,6 +3950,10 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
        },
        {
         "d": "2026-11-15",
@@ -5730,7 +5734,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 30
+       "v": 32
       }
      ]
     },
@@ -5802,6 +5806,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -9518,6 +9526,10 @@
       {
        "t": "2026-11-15",
        "v": 7
+      },
+      {
+       "t": "2026-11-15",
+       "v": 3
       }
      ]
     },
@@ -9573,6 +9585,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
