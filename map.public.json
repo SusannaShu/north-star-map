@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T18:20:38.785Z",
+ "generatedAt": "2026-11-15T18:53:55.327Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -738,18 +738,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -1038,7 +1026,11 @@
      },
      {
       "d": "2026-11-15",
-      "v": "no effect"
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      },
      {
       "d": "2026-11-15",
@@ -1046,7 +1038,15 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -1308,6 +1308,10 @@
       {
        "t": "2026-11-15",
        "v": 3.4
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
       }
      ]
     },
@@ -1379,6 +1383,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": null
@@ -2074,7 +2082,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2285,7 +2293,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2494,7 +2502,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 35
+       "v": 34
       }
      ]
     },
@@ -2592,7 +2600,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 38
+       "v": 41
       }
      ],
      "partial": "2026-11-15",
@@ -2627,7 +2635,7 @@
         9,
         4,
         23,
-        76
+        78
        ]
       },
       {
@@ -2649,7 +2657,7 @@
         0,
         0,
         0,
-        27
+        28
        ]
       },
       {
@@ -2671,7 +2679,7 @@
         4,
         3,
         16,
-        42
+        44
        ]
       },
       {
@@ -2730,10 +2738,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -2991,6 +2995,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -3193,7 +3201,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "working",
+   "status": "idle",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -3641,10 +3649,6 @@
       "tries": [
        {
         "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
         "v": "unmeasured"
        },
        {
@@ -3958,6 +3962,10 @@
        {
         "d": "2026-11-15",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -5443,7 +5451,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 162
+         "v": 178
         }
        ]
       },
@@ -7407,7 +7415,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 64
+       "v": 57
       }
      ]
     },
@@ -7419,6 +7427,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -7693,6 +7705,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
@@ -8327,7 +8343,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 162
+       "v": 178
       }
      ]
     },
@@ -8391,7 +8407,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 162
+       "v": 178
       }
      ]
     },
@@ -8571,7 +8587,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -8668,6 +8684,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -8807,7 +8827,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 63
+       "v": 64
       }
      ]
     },
@@ -9681,7 +9701,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 63
+       "v": 64
       }
      ]
     },
@@ -9729,7 +9749,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 63
+         "v": 64
         }
        ]
       },
@@ -10272,7 +10292,7 @@
   {
    "id": "rg-loop-files-card-work",
    "label": "NO CARDS FOR SELF-RUN WORK",
-   "status": "idle",
+   "status": "working",
    "why": "If a loop can finish a task by itself, it should not hand me a card for it. Only things that truly need me reach me, and the target is none of the others.",
    "statusLine": "active · tracked nightly",
    "caption": "If a loop can finish a task by itself, it should not hand me a card for it.",
@@ -10447,7 +10467,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 162
+       "v": 178
       }
      ]
     },
@@ -11092,7 +11112,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 69
+       "v": 70
       }
      ]
     },
