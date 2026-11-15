@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T10:48:19.536Z",
+ "generatedAt": "2026-11-15T13:12:46.248Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -722,22 +722,6 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -1039,6 +1023,22 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2502,7 +2502,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2660,22 +2660,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -2975,6 +2959,22 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      },
      {
       "d": "2026-11-15",
@@ -3524,7 +3524,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3536,18 +3536,6 @@
        "kind": "values",
        "label": "measured result",
        "points": [
-        {
-         "t": "2026-11-12",
-         "v": 12
-        },
-        {
-         "t": "2026-11-12",
-         "v": 8
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
         {
          "t": "2026-11-13",
          "v": 0
@@ -3615,6 +3603,18 @@
         {
          "t": "2026-11-15",
          "v": 1
+        },
+        {
+         "t": "2026-11-15",
+         "v": 14
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         }
        ]
       },
@@ -3645,46 +3645,6 @@
        },
        {
         "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "unmeasured"
        },
        {
@@ -3934,6 +3894,46 @@
        {
         "d": "2026-11-15",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-15",
@@ -5423,7 +5423,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 124
+         "v": 123
         }
        ]
       },
@@ -6198,7 +6198,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -6212,7 +6212,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 3
+       "v": 12
       }
      ]
     },
@@ -6253,7 +6253,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "idle",
+     "status": "working",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "live · greets when I wake",
      "caption": "One morning notification:",
@@ -6712,7 +6712,7 @@
         },
         {
          "t": "2026-11-15",
-         "v": 35
+         "v": 34
         }
        ]
       },
@@ -7241,7 +7241,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 56
+       "v": 55
       }
      ]
     },
@@ -7287,7 +7287,16 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": null,
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-15",
+       "v": 0
+      }
+     ]
+    },
     "tries": [
      {
       "d": "2026-11-13",
@@ -7725,7 +7734,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -8290,7 +8299,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 124
+       "v": 123
       }
      ]
     },
@@ -8354,7 +8363,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 124
+       "v": 123
       }
      ]
     },
@@ -8762,7 +8771,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 60
+       "v": 59
       }
      ]
     },
@@ -9616,7 +9625,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 60
+       "v": 59
       }
      ]
     },
@@ -9664,7 +9673,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 60
+         "v": 59
         }
        ]
       },
@@ -10378,7 +10387,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 124
+       "v": 123
       }
      ]
     },
