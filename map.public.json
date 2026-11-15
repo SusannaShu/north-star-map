@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-14T23:20:59.066Z",
+ "generatedAt": "2026-11-15T01:24:56.314Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -101,6 +101,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
@@ -484,6 +488,10 @@
      {
       "d": "2026-11-12",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -616,7 +624,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 136
+       "v": 137
       }
      ],
      "partial": "2026-11-09",
@@ -630,7 +638,7 @@
         0,
         0,
         4,
-        24
+        25
        ]
       },
       {
@@ -710,34 +718,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -946,10 +926,6 @@
      },
      {
       "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -994,11 +970,43 @@
      },
      {
       "d": "2026-11-14",
-      "v": "helped"
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
      },
      {
       "d": "2026-11-14",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -1314,7 +1322,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -2229,6 +2237,10 @@
       {
        "t": "2026-11-14",
        "v": 12
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0.022
       }
      ]
     },
@@ -2316,10 +2328,14 @@
      {
       "d": "2026-11-14",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 1
     }
    },
@@ -2426,7 +2442,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2484,7 +2500,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 27
+       "v": 34
       }
      ],
      "partial": "2026-11-14",
@@ -2580,30 +2596,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-13",
       "v": "unmeasured"
@@ -2886,7 +2878,11 @@
      },
      {
       "d": "2026-11-14",
-      "v": "confounded"
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
@@ -2897,7 +2893,27 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      }
     ],
@@ -5129,7 +5145,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -5208,7 +5224,7 @@
     {
      "id": "glasses-launch",
      "label": "LAUNCH FROM THE GLASSES",
-     "status": "idle",
+     "status": "working",
      "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
      "statusLine": "built · first install next",
      "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
@@ -5471,7 +5487,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6507,7 +6523,7 @@
         },
         {
          "t": "2026-11-14",
-         "v": 36
+         "v": 35
         }
        ]
       },
@@ -8145,6 +8161,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -8313,7 +8333,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -8399,6 +8419,10 @@
      {
       "d": "2026-11-14",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-14",
@@ -9106,7 +9130,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 50
+       "v": 49
       }
      ]
     },
@@ -9158,6 +9182,10 @@
      {
       "d": "2026-11-14",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -9254,6 +9282,10 @@
      },
      {
       "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
