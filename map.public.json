@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T09:25:50.943Z",
+ "generatedAt": "2026-11-15T10:10:15.631Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -722,10 +722,6 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
       "v": "helped"
      },
      {
@@ -1018,27 +1014,31 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2120,6 +2120,10 @@
      {
       "d": "2026-11-12",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -2658,10 +2662,6 @@
     "tries": [
      {
       "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -2975,6 +2975,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3059,7 +3063,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "working",
+   "status": "idle",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -3529,16 +3533,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-12",
-         "v": 0.75
-        },
-        {
-         "t": "2026-11-12",
-         "v": 0
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
+         "t": "2026-11-11",
+         "v": 1
         },
         {
          "t": "2026-11-12",
@@ -3546,59 +3542,23 @@
         },
         {
          "t": "2026-11-12",
-         "v": 12
-        },
-        {
-         "t": "2026-11-12",
-         "v": 8
-        },
-        {
-         "t": "2026-11-12",
-         "v": 2
-        },
-        {
-         "t": "2026-11-13",
          "v": 0
         },
         {
          "t": "2026-11-13",
-         "v": 5.92
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
-        },
-        {
-         "t": "2026-11-13",
-         "v": 0
+         "v": 36
         },
         {
          "t": "2026-11-14",
+         "v": 6
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
          "v": 1
-        },
-        {
-         "t": "2026-11-14",
-         "v": 3
-        },
-        {
-         "t": "2026-11-14",
-         "v": 12
-        },
-        {
-         "t": "2026-11-15",
-         "v": 26
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
         },
         {
          "t": "2026-11-15",
@@ -3613,22 +3573,6 @@
       "tries": [
        {
         "d": "2026-11-12",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "unmeasured"
        },
        {
@@ -3913,15 +3857,31 @@
        },
        {
         "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
         "v": "helped"
        },
        {
         "d": "2026-11-15",
-        "v": "unmeasured"
+        "v": "helped"
        },
        {
         "d": "2026-11-15",
-        "v": "unmeasured"
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
        },
        {
         "d": "2026-11-15",
