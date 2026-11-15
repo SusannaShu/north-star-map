@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T13:58:41.188Z",
+ "generatedAt": "2026-11-15T14:10:36.128Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -248,7 +248,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -722,14 +722,6 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -1039,6 +1031,14 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2564,7 +2564,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 8
+       "v": 10
       }
      ],
      "partial": "2026-11-15",
@@ -2599,7 +2599,7 @@
         9,
         4,
         22,
-        72
+        73
        ]
       },
       {
@@ -2621,7 +2621,7 @@
         0,
         0,
         0,
-        26
+        27
        ]
       },
       {
@@ -2643,7 +2643,7 @@
         4,
         3,
         15,
-        38
+        39
        ]
       },
       {
@@ -3613,14 +3613,6 @@
        },
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "helped"
        },
        {
@@ -3894,6 +3886,14 @@
        {
         "d": "2026-11-15",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-15",
@@ -10811,12 +10811,10 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "idle",
+   "status": "working",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
