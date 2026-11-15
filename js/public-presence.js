@@ -9,7 +9,9 @@
         phone: "phone",
         "mac-mini": "Mac mini",
         macbook: "MacBook",
-        laptop: "laptop"
+        laptop: "laptop",
+        headphones: "headphones",
+        device: "device"
     };
     const TYPE_ICON = {
         glasses: "glasses",
@@ -18,7 +20,9 @@
         phone: "phone",
         "mac-mini": "mini",
         macbook: "laptop",
-        laptop: "laptop"
+        laptop: "laptop",
+        headphones: "headphones",
+        device: "device"
     };
     const both = a => a.length < 2 ? a.join("") : a.slice(0, -1).join(", ") + " and " + a[a.length - 1];
     const fromWords = p => p && p.talk === "on" && p.devices.length ? "from her " + both(p.devices.map(d => TYPES[d])) : "";
@@ -48,6 +52,8 @@
         tablet: '<rect x="2.75" y="1.75" width="10.5" height="12.5" rx="1.6"/><path d="M7 12h2"/>',
         laptop: '<rect x="3" y="3" width="10" height="7" rx="1"/><path d="M1.5 12.5h13"/>',
         mini: '<rect x="2" y="5.5" width="12" height="5" rx="1.6"/><path d="M4.5 12.5h7M4.5 8h.01"/>',
+        headphones: '<path d="M2.5 10V8a5.5 5.5 0 0 1 11 0v2"/><rect x="2" y="9.5" width="3" height="4.5" rx="1.2"/><rect x="11" y="9.5" width="3" height="4.5" rx="1.2"/>',
+        device: '<rect x="3" y="3" width="10" height="10" rx="2.5"/><circle cx="8" cy="8" r="1.4"/>',
         mitten: '<path d="M5 14.25V7.5a3 3 0 0 1 6 0v1.25l1.4-1.4a1.2 1.2 0 0 1 1.7 1.7L11 12.2v2.05zM5 12h6"/>'
     };
     const svg = k => `<svg class="ico" viewBox="0 0 16 16" aria-hidden="true">${ICON[k]}</svg>`;
