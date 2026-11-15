@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T18:53:55.327Z",
+ "generatedAt": "2026-11-15T20:13:55.640Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -540,6 +540,10 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -672,7 +676,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 141
+       "v": 143
       }
      ],
      "partial": "2026-11-09",
@@ -708,7 +712,7 @@
         12,
         1,
         17,
-        37
+        38
        ]
       },
       {
@@ -719,7 +723,7 @@
         6,
         9,
         20,
-        49
+        50
        ]
       },
       {
@@ -738,22 +742,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1042,19 +1030,35 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1135,7 +1139,7 @@
     {
      "id": "live-day-plan",
      "label": "LIVE DAY PLAN",
-     "status": "working",
+     "status": "idle",
      "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
      "statusLine": "first phase built · next steps planned",
      "caption": "My assistant keeps one plan for the day and updates it as things change.",
@@ -2082,7 +2086,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2293,7 +2297,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2488,7 +2492,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2600,7 +2604,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 41
+       "v": 46
       }
      ],
      "partial": "2026-11-15",
@@ -2635,7 +2639,7 @@
         9,
         4,
         23,
-        78
+        81
        ]
       },
       {
@@ -2734,10 +2738,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -3015,6 +3015,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -3236,6 +3240,10 @@
       {
        "t": "2026-11-13",
        "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 14.9
       }
      ]
     },
@@ -3303,6 +3311,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3643,6 +3655,10 @@
         {
          "t": "2026-11-15",
          "v": 3
+        },
+        {
+         "t": "2026-11-15",
+         "v": 1
         }
        ]
       },
@@ -3653,30 +3669,6 @@
        },
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "helped"
        },
        {
@@ -3949,6 +3941,22 @@
        },
        {
         "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
         "v": "helped"
        },
        {
@@ -3957,15 +3965,23 @@
        },
        {
         "d": "2026-11-15",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "no effect"
+        "v": "confounded"
        },
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -3998,7 +4014,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4475,7 +4491,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -5451,7 +5467,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 178
+         "v": 159
         }
        ]
       },
@@ -5802,6 +5818,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -5811,7 +5831,8 @@
    },
    "links": [
     "sheyou",
-    "ns-talk"
+    "ns-talk",
+    "ux-teaching"
    ],
    "parent": "mittens",
    "parked": false,
@@ -7415,7 +7436,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 57
+       "v": 54
       }
      ]
     },
@@ -7427,6 +7448,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -8343,7 +8368,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 178
+       "v": 159
       }
      ]
     },
@@ -8407,7 +8432,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 178
+       "v": 159
       }
      ]
     },
@@ -8587,7 +8612,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
@@ -8684,6 +8709,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -8827,7 +8856,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 64
+       "v": 65
       }
      ]
     },
@@ -9701,7 +9730,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 64
+       "v": 65
       }
      ]
     },
@@ -9749,7 +9778,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 64
+         "v": 65
         }
        ]
       },
@@ -10215,7 +10244,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 31.4
+       "v": 32.3
       }
      ]
     },
@@ -10292,7 +10321,7 @@
   {
    "id": "rg-loop-files-card-work",
    "label": "NO CARDS FOR SELF-RUN WORK",
-   "status": "working",
+   "status": "idle",
    "why": "If a loop can finish a task by itself, it should not hand me a card for it. Only things that truly need me reach me, and the target is none of the others.",
    "statusLine": "active · tracked nightly",
    "caption": "If a loop can finish a task by itself, it should not hand me a card for it.",
@@ -10378,6 +10407,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -10467,7 +10500,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 178
+       "v": 159
       }
      ]
     },
@@ -10787,6 +10820,22 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "ux-teaching",
+   "label": "TEACHING UX",
+   "status": "dormant",
+   "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
+   "statusLine": "plan · nothing yet",
+   "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/ux-teaching.html",
+   "visibility": "public",
+   "parent": "ui-experience",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "rg-merges-one-already-there",
    "label": "RULES MERGE, NOT PILE",
    "status": "idle",
@@ -10873,22 +10922,6 @@
    },
    "parent": "mittens-digital",
    "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "ux-teaching",
-   "label": "TEACHING UX",
-   "status": "dormant",
-   "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
-   "statusLine": "plan · nothing yet",
-   "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/ux-teaching.html",
-   "visibility": "public",
-   "parent": "ui-experience",
-   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
