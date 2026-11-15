@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T17:23:47.078Z",
+ "generatedAt": "2026-11-15T17:36:07.494Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -101,6 +101,10 @@
      },
      {
       "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -252,7 +256,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -479,36 +483,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 26
-      },
-      {
        "t": "2026-11-11",
-       "v": 37
-      },
-      {
-       "t": "2026-11-12",
-       "v": 57
-      },
-      {
-       "t": "2026-11-13",
-       "v": 57
-      },
-      {
-       "t": "2026-11-14",
-       "v": 57
+       "v": 0
       },
       {
        "t": "2026-11-15",
-       "v": 30
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
       }
      ]
     },
@@ -540,6 +528,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2285,7 +2277,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2530,7 +2522,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2592,7 +2584,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 18
+       "v": 19
       }
      ],
      "partial": "2026-11-15",
@@ -2734,10 +2726,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -2995,6 +2983,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-15",
@@ -3585,8 +3577,24 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
-         "v": 26
+         "t": "2026-11-11",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-13",
+         "v": 36
+        },
+        {
+         "t": "2026-11-14",
+         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3594,7 +3602,7 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 1
         },
         {
          "t": "2026-11-15",
@@ -3602,15 +3610,7 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "v": 1
         },
         {
          "t": "2026-11-15",
@@ -3623,56 +3623,12 @@
         {
          "t": "2026-11-15",
          "v": 1
-        },
-        {
-         "t": "2026-11-15",
-         "v": 14
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 9
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0.636
-        },
-        {
-         "t": "2026-11-15",
-         "v": 32
-        },
-        {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
-         "v": 899
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-12",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-12",
         "v": "helped"
        },
        {
@@ -3986,6 +3942,10 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -5358,7 +5318,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Smart glasses as the eyes beside the pendant: Mittens draws its own cards on the display.",
    "statusLine": "testing",
    "caption": "Smart glasses as the eyes beside the pendant:",
@@ -5445,7 +5405,7 @@
     {
      "id": "glasses-launch",
      "label": "LAUNCH FROM THE GLASSES",
-     "status": "idle",
+     "status": "working",
      "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
      "statusLine": "built · first install next",
      "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
@@ -8595,7 +8555,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less. Wake on motion, camera, five-second audio, upload over Wi-Fi.",
    "statusLine": "three form designs · picking one",
    "caption": "An ESP32-S3 pendant in steel and glass that sees and hears ambiently, so you log less.",
