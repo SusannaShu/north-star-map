@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T08:52:28.704Z",
+ "generatedAt": "2026-11-15T09:04:36.087Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -725,10 +725,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-14",
       "v": "unmeasured"
      },
@@ -1039,6 +1035,10 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1249,7 +1249,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1608,7 +1608,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "working",
+   "status": "idle",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -2498,7 +2498,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -3059,7 +3059,7 @@
   {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
-   "status": "idle",
+   "status": "working",
    "why": "The soft healthcare companion: a soft robot that holds, with warm fluid skin, a textile body and breathing that syncs to yours. Built in modules; Warm Skin v1 (ROBOT SKIN) is module one.",
    "statusLine": "module one build under way",
    "caption": "The soft healthcare companion:",
@@ -3525,8 +3525,20 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-11",
-         "v": 1
+         "t": "2026-11-12",
+         "v": 7
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0.75
+        },
+        {
+         "t": "2026-11-12",
+         "v": 0
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
         },
         {
          "t": "2026-11-12",
@@ -3534,15 +3546,47 @@
         },
         {
          "t": "2026-11-12",
+         "v": 12
+        },
+        {
+         "t": "2026-11-12",
+         "v": 8
+        },
+        {
+         "t": "2026-11-12",
+         "v": 2
+        },
+        {
+         "t": "2026-11-13",
          "v": 0
         },
         {
          "t": "2026-11-13",
-         "v": 36
+         "v": 5.92
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
+        },
+        {
+         "t": "2026-11-13",
+         "v": 0
         },
         {
          "t": "2026-11-14",
-         "v": 6
+         "v": 1
+        },
+        {
+         "t": "2026-11-14",
+         "v": 3
+        },
+        {
+         "t": "2026-11-14",
+         "v": 12
+        },
+        {
+         "t": "2026-11-15",
+         "v": 26
         },
         {
          "t": "2026-11-15",
@@ -3550,7 +3594,7 @@
         },
         {
          "t": "2026-11-15",
-         "v": 1
+         "v": 0
         },
         {
          "t": "2026-11-15",
@@ -3568,14 +3612,6 @@
         "v": "unmeasured"
        },
        {
-        "d": "2026-11-11",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-11",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-12",
         "v": "no effect"
        },
@@ -3882,6 +3918,14 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -5398,7 +5442,7 @@
   {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
    "statusLine": "live · every day",
    "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
