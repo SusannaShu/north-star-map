@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T08:27:14.019Z",
+ "generatedAt": "2026-11-15T08:39:51.117Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -106,10 +106,14 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 4,
      "round": 1
     }
    },
@@ -597,8 +601,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 0.073
+         "t": "2026-11-15",
+         "v": 0.072
         }
        ]
       },
@@ -1151,27 +1155,31 @@
          "v": 0
         },
         {
-         "t": "2026-11-14",
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
          "v": 5
         },
         {
-         "t": "2026-11-14",
+         "t": "2026-11-15",
          "v": 0
         },
         {
-         "t": "2026-11-14",
+         "t": "2026-11-15",
          "v": 0
         },
         {
-         "t": "2026-11-14",
+         "t": "2026-11-15",
          "v": 0
         },
         {
-         "t": "2026-11-14",
-         "v": 0
-        },
-        {
-         "t": "2026-11-14",
+         "t": "2026-11-15",
          "v": 0
         }
        ]
@@ -1190,27 +1198,31 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
         "v": "hurt"
        },
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
         "v": "helped"
        },
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
         "v": "no effect"
        },
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
         "v": "no effect"
        },
        {
-        "d": "2026-11-14",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
         "v": "no effect"
        }
       ],
@@ -1237,7 +1249,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1596,7 +1608,7 @@
   {
    "id": "daily-content",
    "label": "DAILY CONTENT",
-   "status": "idle",
+   "status": "working",
    "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
    "statusLine": "nightly · offered each morning",
    "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
@@ -1990,7 +2002,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       }
      ]
@@ -2441,8 +2453,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 34
+       "t": "2026-11-15",
+       "v": 35
       }
      ]
     },
@@ -2478,7 +2490,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -3015,7 +3027,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
+         "t": "2026-11-15",
          "v": 0
         }
        ]
@@ -3293,7 +3305,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3407,6 +3419,10 @@
      {
       "d": "2026-11-14",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3958,7 +3974,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 161
       }
      ]
@@ -5190,8 +5206,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 0.911
+         "t": "2026-11-15",
+         "v": 0.919
         }
        ]
       },
@@ -5300,6 +5316,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -5338,8 +5358,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 114
+         "t": "2026-11-15",
+         "v": 124
         }
        ]
       },
@@ -5370,7 +5390,7 @@
   {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
    "statusLine": "live · every day",
    "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
@@ -5484,7 +5504,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       }
      ]
@@ -6127,8 +6147,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 25
+       "t": "2026-11-15",
+       "v": 3
       }
      ]
     },
@@ -6320,8 +6340,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 33
+         "t": "2026-11-15",
+         "v": 31
         }
        ]
       },
@@ -6846,8 +6866,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 32
+       "t": "2026-11-15",
+       "v": 43
       }
      ]
     },
@@ -7156,7 +7176,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 56
       }
      ]
@@ -8205,8 +8225,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 114
+       "t": "2026-11-15",
+       "v": 124
       }
      ]
     },
@@ -8269,8 +8289,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 114
+       "t": "2026-11-15",
+       "v": 124
       }
      ]
     },
@@ -8677,8 +8697,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 54
+       "t": "2026-11-15",
+       "v": 60
       }
      ]
     },
@@ -8731,7 +8751,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       }
      ]
@@ -9531,8 +9551,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 54
+       "t": "2026-11-15",
+       "v": 60
       }
      ]
     },
@@ -9579,8 +9599,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 54
+         "t": "2026-11-15",
+         "v": 60
         }
        ]
       },
@@ -9928,8 +9948,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 32
+         "t": "2026-11-15",
+         "v": 43
         }
        ]
       },
@@ -10041,7 +10061,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 31.4
       }
      ]
@@ -10137,31 +10157,35 @@
       },
       {
        "t": "2026-11-14",
-       "v": 1
-      },
-      {
-       "t": "2026-11-14",
-       "v": 8
-      },
-      {
-       "t": "2026-11-14",
-       "v": 8
-      },
-      {
-       "t": "2026-11-14",
-       "v": 4
-      },
-      {
-       "t": "2026-11-14",
-       "v": 4
-      },
-      {
-       "t": "2026-11-14",
-       "v": 1
-      },
-      {
-       "t": "2026-11-14",
        "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 1
+      },
+      {
+       "t": "2026-11-15",
+       "v": 8
+      },
+      {
+       "t": "2026-11-15",
+       "v": 8
+      },
+      {
+       "t": "2026-11-15",
+       "v": 4
+      },
+      {
+       "t": "2026-11-15",
+       "v": 4
+      },
+      {
+       "t": "2026-11-15",
+       "v": 1
       }
      ]
     },
@@ -10175,27 +10199,31 @@
       "v": "helped"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "hurt"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "helped"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "helped"
      }
     ],
@@ -10223,8 +10251,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 32
+       "t": "2026-11-15",
+       "v": 43
       }
      ]
     },
@@ -10285,8 +10313,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 114
+       "t": "2026-11-15",
+       "v": 124
       }
      ]
     },
@@ -10316,18 +10344,30 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 339
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
         "v": "no effect"
        },
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
         "v": "no effect"
        }
       ],
@@ -10351,18 +10391,30 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 13
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
         "v": "no effect"
        },
        {
-        "d": "2026-11-14",
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
         "v": "no effect"
        }
       ],
@@ -10413,27 +10465,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-14",
-       "v": 1
-      },
-      {
-       "t": "2026-11-14",
-       "v": 1
-      },
-      {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
-       "v": 1
-      },
-      {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
+       "v": 1
+      },
+      {
+       "t": "2026-11-15",
+       "v": 1
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 1
+      },
+      {
+       "t": "2026-11-15",
        "v": 0
       }
      ]
@@ -10452,28 +10508,32 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
-      "v": "helped"
+      "d": "2026-11-15",
+      "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "hurt"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "helped"
      },
      {
-      "d": "2026-11-14",
-      "v": "no effect"
+      "d": "2026-11-15",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
      }
     ],
     "stage": null
@@ -10503,27 +10563,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
        "v": 0
       }
      ]
@@ -10531,30 +10595,34 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "no effect"
      }
     ],
@@ -10585,27 +10653,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
        "v": 0
       },
       {
-       "t": "2026-11-14",
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
        "v": 0
       }
      ]
@@ -10613,30 +10685,34 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
       "v": "no effect"
      },
      {
-      "d": "2026-11-14",
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
       "v": "no effect"
      }
     ],
@@ -10878,8 +10954,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-14",
-       "v": 49
+       "t": "2026-11-15",
+       "v": 67
       }
      ]
     },
