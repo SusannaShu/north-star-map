@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T03:59:20.449Z",
+ "generatedAt": "2026-11-16T04:22:41.995Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -686,7 +686,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2150,7 +2150,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2556,7 +2556,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2765,18 +2765,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-14",
       "v": "unmeasured"
      },
@@ -3083,6 +3071,18 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3124,40 +3124,6 @@
      "visibility": "public",
      "links": [
       "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "solve-disease",
-     "label": "SOLVE DISEASE",
-     "status": "idle",
-     "why": "I want to help solve disease, one disease at a time, and fund it from my own product revenue. Agents build an evidence map from primary sources of what is known and what is still open.",
-     "statusLine": "active · research underway",
-     "caption": "I want to help solve disease, one disease at a time, and fund it from my own product revenue.",
-     "stage": "active",
-     "embed": "pages/solve-disease.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-16",
-         "v": 0
-        }
-       ]
-      },
-      "tries": [
-       {
-        "d": "2026-11-12",
-        "v": "unmeasured"
-       }
-      ],
-      "stage": null
-     },
-     "links": [
-      "susu-closet"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3441,7 +3407,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3660,7 +3626,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3755,10 +3721,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-13",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-13",
         "v": "helped"
@@ -4074,6 +4036,10 @@
        {
         "d": "2026-11-16",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4106,7 +4072,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4587,7 +4553,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -6739,6 +6705,44 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "solve-disease",
+   "label": "SOLVE DISEASE",
+   "status": "idle",
+   "why": "I want to help solve disease, one disease at a time, and fund it from my own product revenue. Agents build an evidence map from primary sources of what is known and what is still open.",
+   "statusLine": "active · research underway",
+   "caption": "I want to help solve disease, one disease at a time, and fund it from my own product revenue.",
+   "stage": "active",
+   "embed": "pages/solve-disease.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-16",
+       "v": 6
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
+   "links": [
+    "gospel",
+    "susu-closet",
+    "fashion"
+   ],
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk-live-stt",
    "label": "LIVE TRANSCRIPTION",
    "status": "idle",
@@ -7106,7 +7110,7 @@
   {
    "id": "action-tree",
    "label": "ACTION TREE",
-   "status": "working",
+   "status": "idle",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
    "statusLine": "live · stale items repaired daily",
    "caption": "The one source of truth for what is open:",
@@ -7127,6 +7131,10 @@
     "tries": [
      {
       "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
       "v": "helped"
      }
     ],
@@ -9868,7 +9876,7 @@
   {
    "id": "brain-deciding",
    "label": "DECIDING + ROUTING",
-   "status": "working",
+   "status": "idle",
    "why": "How each message is sorted and sent to the right place.",
    "statusLine": "noted this week",
    "caption": "How each message is sorted and sent to the right place.",
@@ -9916,7 +9924,7 @@
     {
      "id": "scenarios",
      "label": "SCENARIOS",
-     "status": "working",
+     "status": "idle",
      "why": "Each scenario has its own full logic: which gates it opens, what actions it takes and what it updates. Each one is also a dot on the map, and every code path it points to is checked to make sure it exists.",
      "statusLine": "built · all code paths checked",
      "caption": "Each scenario has its own full logic:",
@@ -9934,7 +9942,12 @@
         }
        ]
       },
-      "tries": [],
+      "tries": [
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       }
+      ],
       "stage": null
      },
      "links": [
