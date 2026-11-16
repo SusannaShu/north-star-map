@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T04:46:37.391Z",
+ "generatedAt": "2026-11-16T05:09:24.119Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -50,6 +50,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 60
+      },
+      {
+       "t": "2026-11-16",
        "v": 60
       }
      ]
@@ -170,6 +174,10 @@
         {
          "t": "2026-11-15",
          "v": 45
+        },
+        {
+         "t": "2026-11-16",
+         "v": 45
         }
        ]
       },
@@ -222,6 +230,10 @@
         },
         {
          "t": "2026-11-15",
+         "v": 37
+        },
+        {
+         "t": "2026-11-16",
          "v": 37
         }
        ]
@@ -427,6 +439,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 39
+      },
+      {
+       "t": "2026-11-16",
        "v": 39
       }
      ]
@@ -723,7 +739,6 @@
        "v": 146
       }
      ],
-     "partial": "2026-11-09",
      "note": "Talk counted from 10-09, typed chat from 11-03: earlier weeks undercount",
      "perPoint": [
       {
@@ -786,10 +801,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1102,6 +1113,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
       "v": "helped"
      }
     ],
@@ -1751,6 +1766,10 @@
       {
        "t": "2026-11-15",
        "v": 61
+      },
+      {
+       "t": "2026-11-16",
+       "v": 61
       }
      ]
     },
@@ -1921,6 +1940,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 71
+      },
+      {
+       "t": "2026-11-16",
        "v": 71
       }
      ]
@@ -2361,7 +2384,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2671,7 +2694,6 @@
        "v": 94
       }
      ],
-     "partial": "2026-11-15",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -2766,18 +2788,6 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
       "v": "helped"
      },
      {
@@ -3079,6 +3089,18 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
      },
      {
       "d": "2026-11-16",
@@ -3175,6 +3197,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 44
+      },
+      {
+       "t": "2026-11-16",
        "v": 44
       }
      ]
@@ -3407,7 +3433,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3626,7 +3652,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3721,10 +3747,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-13",
-        "v": "helped"
-       },
        {
         "d": "2026-11-13",
         "v": "no effect"
@@ -4028,6 +4050,10 @@
        {
         "d": "2026-11-16",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-16",
@@ -4735,6 +4761,10 @@
       {
        "t": "2026-11-15",
        "v": 46
+      },
+      {
+       "t": "2026-11-16",
+       "v": 46
       }
      ]
     },
@@ -5322,6 +5352,10 @@
       {
        "t": "2026-11-15",
        "v": 46
+      },
+      {
+       "t": "2026-11-16",
+       "v": 46
       }
      ]
     },
@@ -5785,6 +5819,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 38
+      },
+      {
+       "t": "2026-11-16",
        "v": 38
       }
      ]
@@ -6871,6 +6909,10 @@
         {
          "t": "2026-11-15",
          "v": 33
+        },
+        {
+         "t": "2026-11-16",
+         "v": 33
         }
        ]
       },
@@ -6927,6 +6969,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 55
+      },
+      {
+       "t": "2026-11-16",
        "v": 55
       }
      ]
@@ -7389,7 +7435,7 @@
   {
    "id": "ui-style",
    "label": "UI STYLE",
-   "status": "idle",
+   "status": "working",
    "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
    "statusLine": "checked nightly · cleanup ongoing",
    "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
@@ -7545,6 +7591,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 54
+      },
+      {
+       "t": "2026-11-16",
        "v": 54
       }
      ]
@@ -8789,9 +8839,56 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-podcast",
+   "label": "MITTENS PODCAST",
+   "status": "idle",
+   "why": "A podcast made just for me that I can pause to ask questions or practice speaking. A French sound check runs on my own machine and points out my pronunciation mistakes.",
+   "statusLine": "built · new plan attached",
+   "caption": "A podcast made just for me that I can pause to ask questions or practice speaking.",
+   "stage": "active",
+   "embed": "pages/mittens-podcast.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-16",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "learn-with-mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "podcast-episode-collections",
+     "label": "PODCAST EPISODE COLLECTIONS",
+     "status": "done",
+     "why": "I group podcast episodes into collections so they are easier to follow.",
+     "statusLine": "merged into the podcast",
+     "caption": "I group podcast episodes into collections so they are easier to follow.",
+     "stage": "done",
+     "embed": "pages/podcast-episode-collections.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -9041,53 +9138,6 @@
       "pendant",
       "firstpower"
      ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-podcast",
-   "label": "MITTENS PODCAST",
-   "status": "idle",
-   "why": "A podcast made just for me that I can pause to ask questions or practice speaking. A French sound check runs on my own machine and points out my pronunciation mistakes.",
-   "statusLine": "built · new plan attached",
-   "caption": "A podcast made just for me that I can pause to ask questions or practice speaking.",
-   "stage": "active",
-   "embed": "pages/mittens-podcast.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-16",
-       "v": 0
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     }
-    ],
-    "stage": null
-   },
-   "parent": "learn-with-mittens",
-   "parked": false,
-   "children": [
-    {
-     "id": "podcast-episode-collections",
-     "label": "PODCAST EPISODE COLLECTIONS",
-     "status": "done",
-     "why": "I group podcast episodes into collections so they are easier to follow.",
-     "statusLine": "merged into the podcast",
-     "caption": "I group podcast episodes into collections so they are easier to follow.",
-     "stage": "done",
-     "embed": "pages/podcast-episode-collections.html",
-     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -9590,6 +9640,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 48
+      },
+      {
+       "t": "2026-11-16",
        "v": 48
       }
      ]
@@ -10192,6 +10246,10 @@
       {
        "t": "2026-11-15",
        "v": 44
+      },
+      {
+       "t": "2026-11-16",
+       "v": 43
       }
      ]
     },
@@ -10230,6 +10288,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
@@ -10315,6 +10377,10 @@
         },
         {
          "t": "2026-11-15",
+         "v": 30
+        },
+        {
+         "t": "2026-11-16",
          "v": 30
         }
        ]
@@ -11179,6 +11245,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 57
+      },
+      {
+       "t": "2026-11-16",
        "v": 57
       }
      ]
