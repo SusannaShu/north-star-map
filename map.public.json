@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T15:57:52.953Z",
+ "generatedAt": "2026-11-16T16:56:16.359Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -851,7 +851,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 0
+       "v": 1
       }
      ],
      "partial": "2026-11-16",
@@ -914,7 +914,7 @@
         1,
         2,
         14,
-        0
+        1
        ]
       }
      ]
@@ -2768,7 +2768,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -2834,7 +2834,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 21
+       "v": 26
       }
      ],
      "partial": "2026-11-16",
@@ -2872,7 +2872,7 @@
         4,
         23,
         82,
-        2
+        3
        ]
       },
       {
@@ -2896,7 +2896,7 @@
         0,
         0,
         33,
-        1
+        2
        ]
       },
       {
@@ -2920,7 +2920,7 @@
         3,
         16,
         46,
-        2
+        4
        ]
       },
       {
@@ -2940,10 +2940,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -3233,6 +3229,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -5740,7 +5740,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 178
+         "v": 179
         }
        ]
       },
@@ -8802,7 +8802,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 178
+       "v": 179
       }
      ]
     },
@@ -8866,7 +8866,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 178
+       "v": 179
       }
      ]
     },
@@ -9060,7 +9060,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 71
+       "v": 75
       }
      ]
     },
@@ -10212,7 +10212,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 71
+       "v": 75
       }
      ]
     },
@@ -10260,7 +10260,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 71
+         "v": 75
         }
        ]
       },
@@ -10992,7 +10992,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 178
+       "v": 179
       }
      ]
     },
@@ -11597,7 +11597,7 @@
   {
    "id": "feature-human-like-page-browsing",
    "label": "HUMAN-LIKE BROWSING",
-   "status": "dormant",
+   "status": "idle",
    "why": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
    "statusLine": "idle this week",
    "caption": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
@@ -12049,7 +12049,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 75
+       "v": 76
       }
      ]
     },
