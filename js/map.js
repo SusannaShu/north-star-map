@@ -3546,7 +3546,7 @@ function setAgentsInd(n, names, clickable, queued) {
         her.id = "herChip";
         her.title = talk.title;
         her.setAttribute("aria-label", talk.title);
-        her.innerHTML = `<span class="lbl who-lbl">Susanna</span><span class="devs">${talk.icons}</span>`;
+        her.innerHTML = `<span class="devs">${talk.icons}</span>`;
         const ud0 = box.querySelector(".ud-ind");
         ud0 ? box.insertBefore(her, ud0) : box.appendChild(her);
     }

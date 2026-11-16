@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T03:21:00.566Z",
+ "generatedAt": "2026-11-16T03:43:35.305Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1450,7 +1450,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -1567,6 +1567,10 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2146,7 +2150,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2552,7 +2556,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2762,10 +2766,6 @@
     "tries": [
      {
       "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -3075,6 +3075,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
      },
      {
       "d": "2026-11-16",
@@ -3669,24 +3673,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-11",
-         "v": 1
-        },
-        {
-         "t": "2026-11-12",
-         "v": 1
-        },
-        {
-         "t": "2026-11-12",
+         "t": "2026-11-15",
          "v": 0
-        },
-        {
-         "t": "2026-11-13",
-         "v": 36
-        },
-        {
-         "t": "2026-11-14",
-         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3694,7 +3682,19 @@
         },
         {
          "t": "2026-11-15",
-         "v": 1
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         },
         {
          "t": "2026-11-15",
@@ -3706,15 +3706,7 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 3
-        },
-        {
-         "t": "2026-11-15",
-         "v": 2
+         "v": 14
         },
         {
          "t": "2026-11-15",
@@ -3722,39 +3714,47 @@
         },
         {
          "t": "2026-11-15",
-         "v": 3
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 9
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 32
+        },
+        {
+         "t": "2026-11-15",
+         "v": 18
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         },
         {
          "t": "2026-11-16",
-         "v": 1
+         "v": 0
         },
         {
          "t": "2026-11-16",
-         "v": 1
+         "v": 7
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-13",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "no effect"
-       },
        {
         "d": "2026-11-13",
         "v": "unmeasured"
@@ -4054,6 +4054,26 @@
        {
         "d": "2026-11-16",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4086,7 +4106,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4567,7 +4587,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -10166,7 +10186,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -10196,7 +10216,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 45
+       "v": 44
       }
      ]
     },
@@ -10235,6 +10255,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
