@@ -29,7 +29,7 @@
     window.nsTalkLine = () => {
         const p = last;
         if (!p || p.talk !== "on" || p.at != null && Date.now() - p.at > FRESH) return "";
-        return "Susanna is talking to Mittens" + (fromWords(p) ? " " + fromWords(p) : "");
+        return p.devices.length ? "Susanna is on her " + both(p.devices.map(d => TYPES[d])) : "Susanna is with Mittens";
     };
     const n99 = v => Number.isInteger(v) && v >= 0 && v < 100 ? v : 0;
     const clean = j => {
@@ -87,11 +87,11 @@
         if (live) {
             const on = p.talk === "on";
             const here = !on && p.devices.length ? "Susanna is on her " + both(p.devices.map(d => TYPES[d])) : "";
-            const words = on ? "Susanna is talking to Mittens" : here || "Mittens idle";
+            const words = here || (on ? "Susanna is with Mittens" : "Mittens idle");
             const short = document.body.classList.contains("framed") ? on ? "Talking" : here ? "Here" : "Idle" : on ? "Talking" : here ? "Susanna here" : "Mittens idle";
             const sub = on ? fromWords(p) || (p.device ? `on ${p.device === "glasses" ? "the glasses" : `a ${p.device}`}` : "now") : here ? "" : p.seen ? `talked ${p.seen}` : "";
             const ico = p.devices.length ? TYPE_ICON[p.devices[0]] : on ? p.device : null;
-            const icons = p.devices.length > 1 ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : ico ? svg(ico) : "";
+            const icons = p.devices.length ? p.devices.map(d => TYPE_ICON[d]).filter((k, i, a) => a.indexOf(k) === i).map(svg).join("") : ico ? svg(ico) : "";
             t = {
                 on: on,
                 short: short,

@@ -691,7 +691,7 @@ window.nsRepoRow = id => {
     const list = reposOf(id);
     if (!list) return "";
     const pub = list.filter(r => r.vis === "public" && r.url), priv = list.filter(r => !pub.includes(r));
-    return pub.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)} ↗</a>`).join("") + (priv.length ? `<span>${PUBLIC ? "" : priv.map(r => esc(r.name)).join(", ") + " "}<b>private</b></span>` : "");
+    return pub.map(r => `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)} ↗</a>`).join("") + (priv.length && !PUBLIC ? `<span>${priv.map(r => esc(r.name)).join(", ")} <b>private</b></span>` : "");
 };
 
 function renderRepoChip() {
@@ -3540,17 +3540,25 @@ function setAgentsInd(n, names, clickable, queued) {
     if (box.dataset.sig === sig) return;
     box.dataset.sig = sig;
     box.querySelectorAll(".agents-ind:not(.ud-ind)").forEach(el => el.remove());
-    if (!n && !queued && !talk) return;
+    if (talk && talk.icons) {
+        const her = document.createElement("div");
+        her.className = "agents-ind her-ind";
+        her.id = "herChip";
+        her.title = talk.title;
+        her.setAttribute("aria-label", talk.title);
+        her.innerHTML = `<span class="lbl who-lbl">Susanna</span><span class="devs">${talk.icons}</span>`;
+        const ud0 = box.querySelector(".ud-ind");
+        ud0 ? box.insertBefore(her, ud0) : box.appendChild(her);
+    }
+    if (!n && !queued) return;
     const el = document.createElement(clickable ? "button" : "div");
-    el.className = "agents-ind" + (!n && !(talk && talk.on) ? " off" : "");
+    el.className = "agents-ind" + (!n ? " off" : "");
     el.id = "agentsChip";
     const label = `${n} agent${n === 1 ? "" : "s"} working` + (queued ? ` · ${queued}` : "");
-    const tt = talk ? ` · ${talk.title}` : "";
-    el.title = (clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label) + tt;
-    el.setAttribute("aria-label", (clickable ? `${label}, show them` : label) + tt);
+    el.title = clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label;
+    el.setAttribute("aria-label", clickable ? `${label}, show them` : label);
     const count = n ? `<b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>` : queued ? `<span class="lbl">${esc(queued)}</span>` : "";
-    const talkPart = !talk ? "" : talk.on ? `<span class="talk">${talk.icons || ""}<span class="lbl">${esc(talk.short)}</span></span>` : !n && !queued ? `<span class="lbl">${esc(talk.short)}</span>` : "";
-    el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${MITTENS_BOT}${count}${talkPart}${names ? `<span class="who">${esc(names)}</span>` : ""}`;
+    el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${MITTENS_BOT}${count}${names ? `<span class="who">${esc(names)}</span>` : ""}`;
     if (clickable) el.onclick = PUBLIC ? openPublicAgentsPanel : openAgentsPanel;
     const ud = box.querySelector(".ud-ind");
     ud ? box.insertBefore(el, ud) : box.appendChild(el);

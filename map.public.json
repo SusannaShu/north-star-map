@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T02:58:48.421Z",
+ "generatedAt": "2026-11-16T03:21:00.566Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -264,7 +264,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -686,7 +686,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1450,7 +1450,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -2664,7 +2664,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 92
+       "v": 94
       }
      ],
      "partial": "2026-11-15",
@@ -2762,14 +2762,6 @@
     "tries": [
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "helped"
      },
      {
@@ -3079,6 +3071,14 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3437,7 +3437,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3656,7 +3656,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3723,6 +3723,10 @@
         {
          "t": "2026-11-15",
          "v": 3
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
         },
         {
          "t": "2026-11-16",
@@ -3977,10 +3981,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
         "v": "unmeasured"
        },
        {
@@ -4046,6 +4046,10 @@
        {
         "d": "2026-11-16",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
        },
        {
         "d": "2026-11-16",
@@ -5929,6 +5933,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      }
     ],
@@ -11171,10 +11179,12 @@
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "working",
+   "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/susu-closet.html",
    "visibility": "public",
    "goalStory": {
