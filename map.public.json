@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T08:35:02.493Z",
+ "generatedAt": "2026-11-16T08:49:47.331Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -837,10 +837,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1150,6 +1146,10 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1179,7 +1179,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2449,7 +2449,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2872,10 +2872,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-15",
       "v": "unmeasured"
      },
@@ -3170,6 +3166,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3510,7 +3510,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3668,10 +3668,14 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 4,
      "round": 1
     }
    },
@@ -4933,6 +4937,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -6915,7 +6923,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "working",
+   "status": "idle",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
@@ -6955,7 +6963,7 @@
     {
      "id": "north-star-as-product",
      "label": "NORTH STAR AS PRODUCT",
-     "status": "working",
+     "status": "done",
      "why": "I am thinking through how the map could become a product for other people, not just my own system.",
      "statusLine": "exploring the idea",
      "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
@@ -6997,7 +7005,7 @@
         },
         {
          "t": "2026-11-16",
-         "v": 33
+         "v": 30
         }
        ]
       },
@@ -7005,6 +7013,10 @@
        {
         "d": "2026-11-11",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -9034,7 +9046,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -9160,6 +9172,10 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
