@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T03:43:35.305Z",
+ "generatedAt": "2026-11-16T03:59:20.449Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -3761,10 +3761,6 @@
        },
        {
         "d": "2026-11-13",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-13",
         "v": "helped"
        },
        {
@@ -4070,6 +4066,10 @@
        {
         "d": "2026-11-16",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-16",
@@ -7106,7 +7106,7 @@
   {
    "id": "action-tree",
    "label": "ACTION TREE",
-   "status": "idle",
+   "status": "working",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
    "statusLine": "live · stale items repaired daily",
    "caption": "The one source of truth for what is open:",
@@ -9868,7 +9868,7 @@
   {
    "id": "brain-deciding",
    "label": "DECIDING + ROUTING",
-   "status": "idle",
+   "status": "working",
    "why": "How each message is sorted and sent to the right place.",
    "statusLine": "noted this week",
    "caption": "How each message is sorted and sent to the right place.",
@@ -9916,7 +9916,7 @@
     {
      "id": "scenarios",
      "label": "SCENARIOS",
-     "status": "idle",
+     "status": "working",
      "why": "Each scenario has its own full logic: which gates it opens, what actions it takes and what it updates. Each one is also a dot on the map, and every code path it points to is checked to make sure it exists.",
      "statusLine": "built · all code paths checked",
      "caption": "Each scenario has its own full logic:",
@@ -10186,7 +10186,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",

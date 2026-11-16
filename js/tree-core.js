@@ -2,9 +2,26 @@
     const PROMOTE = new Set([ "unique-designs", "robot-skin" ]);
     const INPUTS = "life-inputs";
     const strip = s => String(s == null ? "" : s).replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
-    const clip = (s, n) => {
+    const JOIN = new Set("a an the of to and or on in for with its their her his our at by from as is are be so that which when while during then before after until even because into via".split(" "));
+    const clip = (s, n, whole) => {
         s = strip(s);
-        return s.length > n ? s.slice(0, n - 1).replace(/[\s,;:.-]+\S*$/, "") + "…" : s;
+        if (!whole) return s.length > n ? s.slice(0, n - 1).replace(/[\s,;:.-]+\S*$/, "") + "…" : s;
+        let t = s.replace(/(?:…|\.{3})$/, "").trim().replace(/^(?:her idea|her question|idea|content idea|plan|review|portfolio piece|follow-up on|re)\b\s*(?:\([^)]*\))?\s*:\s*/i, "").replace(/\s*\([^)]*\)?/g, "").replace(/\s+/g, " ").trim();
+        const first = t.split(/\s+(?:--|—|–)\s+|:\s+|;\s+|\.\s+|,\s+/)[0];
+        if (first.length >= 20 || /^\S+ asked$/i.test(first) || t.length > n && first.length >= 12 && t.length - first.length > n) t = first;
+        if (t.length > n) {
+            let w = [];
+            for (const x of t.split(" ")) {
+                if (w.concat(x).join(" ").length > n) break;
+                w.push(x);
+            }
+            const cut = w.map((x, k) => JOIN.has(x.toLowerCase()) && w.slice(0, k).join(" ").length >= n * .6 ? k : -1).filter(k => k > 0).pop();
+            t = (cut ? w.slice(0, cut) : w).join(" ");
+        }
+        const ws = t.replace(/[\s,;:.\-–—]+$/, "").split(" ");
+        while (ws.length > 1 && JOIN.has(ws[ws.length - 1].toLowerCase())) ws.pop();
+        t = ws.join(" ");
+        return t.charAt(0).toUpperCase() + t.slice(1);
     };
     const ago = at => {
         const m = (Date.now() - Date.parse(at)) / 6e4;
@@ -1746,6 +1763,7 @@
         fires: fires,
         TRIG: TRIG,
         build: build,
+        clip: clip,
         spoken: spoken,
         openNow: openNow,
         split: split,
