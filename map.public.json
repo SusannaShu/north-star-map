@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-15T23:40:45.440Z",
+ "generatedAt": "2026-11-16T00:05:56.792Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1124,7 +1124,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1309,7 +1309,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1547,6 +1547,10 @@
      {
       "d": "2026-11-14",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2644,7 +2648,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 74
+       "v": 82
       }
      ],
      "partial": "2026-11-15",
@@ -2701,7 +2705,7 @@
         0,
         0,
         0,
-        31
+        32
        ]
       },
       {
@@ -3694,11 +3698,11 @@
         },
         {
          "t": "2026-11-15",
-         "v": 2
+         "v": 0
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 3
         }
        ]
       },
@@ -4013,15 +4017,15 @@
        },
        {
         "d": "2026-11-15",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-15",
         "v": "helped"
        },
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -5497,7 +5501,7 @@
     {
      "id": "glasses-launch",
      "label": "LAUNCH FROM THE GLASSES",
-     "status": "working",
+     "status": "idle",
      "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
      "statusLine": "built · first install next",
      "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
@@ -8802,6 +8806,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -8936,7 +8944,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 65
+       "v": 68
       }
      ]
     },
@@ -9798,7 +9806,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 65
+       "v": 68
       }
      ]
     },
@@ -9846,7 +9854,7 @@
        "points": [
         {
          "t": "2026-11-15",
-         "v": 65
+         "v": 68
         }
        ]
       },
@@ -11217,7 +11225,7 @@
      "points": [
       {
        "t": "2026-11-15",
-       "v": 76
+       "v": 77
       }
      ]
     },
