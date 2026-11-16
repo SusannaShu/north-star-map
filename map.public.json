@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T07:53:57.681Z",
+ "generatedAt": "2026-11-16T08:15:35.851Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1797,12 +1797,32 @@
        "v": 0
       },
       {
-       "t": "2026-11-15",
-       "v": 0.69
+       "t": "2026-11-13",
+       "v": 102
+      },
+      {
+       "t": "2026-11-13",
+       "v": 102
+      },
+      {
+       "t": "2026-11-13",
+       "v": 102
+      },
+      {
+       "t": "2026-11-13",
+       "v": 7
+      },
+      {
+       "t": "2026-11-13",
+       "v": 7
+      },
+      {
+       "t": "2026-11-13",
+       "v": 7
       },
       {
        "t": "2026-11-16",
-       "v": 1
+       "v": 6
       }
      ]
     },
@@ -1878,6 +1898,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "confounded"
      }
     ],
     "stage": {
@@ -2214,7 +2238,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2670,7 +2694,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5858,7 +5882,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6433,7 +6457,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -6701,7 +6725,7 @@
   {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
    "statusLine": "live",
    "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
@@ -8424,7 +8448,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -10539,7 +10563,7 @@
   {
    "id": "mittens-2",
    "label": "MITTENS",
-   "status": "done",
+   "status": "working",
    "why": "This is the running conversation where I shape my assistant and how it works.",
    "statusLine": "in progress",
    "caption": "This is the running conversation where I shape my assistant and how it works.",
