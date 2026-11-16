@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T00:38:22.147Z",
+ "generatedAt": "2026-11-16T00:58:25.064Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -579,6 +579,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
@@ -1446,7 +1450,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -2652,7 +2656,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 83
+       "v": 85
       }
      ],
      "partial": "2026-11-15",
@@ -2731,7 +2735,7 @@
         4,
         3,
         16,
-        45
+        46
        ]
       },
       {
@@ -2754,22 +2758,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
       "v": "unmeasured"
      },
      {
@@ -3067,6 +3055,22 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -5410,7 +5414,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -5496,6 +5500,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -5535,7 +5543,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 180
+         "v": 181
         }
        ]
       },
@@ -8456,7 +8464,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 180
+       "v": 181
       }
      ]
     },
@@ -8520,7 +8528,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 180
+       "v": 181
       }
      ]
     },
@@ -8700,7 +8708,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -8826,6 +8834,18 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -10126,7 +10146,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -10592,7 +10612,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 180
+       "v": 181
       }
      ]
     },
