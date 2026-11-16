@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T06:33:10.414Z",
+ "generatedAt": "2026-11-16T06:57:40.544Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -803,10 +803,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -1116,6 +1112,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1145,7 +1145,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1330,7 +1330,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1463,7 +1463,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -2370,7 +2370,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2615,7 +2615,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -3667,24 +3667,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-11",
-         "v": 1
-        },
-        {
-         "t": "2026-11-12",
-         "v": 1
-        },
-        {
-         "t": "2026-11-12",
+         "t": "2026-11-15",
          "v": 0
-        },
-        {
-         "t": "2026-11-13",
-         "v": 36
-        },
-        {
-         "t": "2026-11-14",
-         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3692,7 +3676,15 @@
         },
         {
          "t": "2026-11-15",
-         "v": 1
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
         },
         {
          "t": "2026-11-15",
@@ -3704,43 +3696,59 @@
         },
         {
          "t": "2026-11-15",
+         "v": 14
+        },
+        {
+         "t": "2026-11-15",
          "v": 0
         },
         {
          "t": "2026-11-15",
-         "v": 3
+         "v": 0
         },
         {
          "t": "2026-11-15",
-         "v": 2
+         "v": 0
         },
         {
          "t": "2026-11-15",
-         "v": 3
+         "v": 9
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 32
+        },
+        {
+         "t": "2026-11-15",
+         "v": 18
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 7
         },
         {
          "t": "2026-11-16",
          "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 0
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-14",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-14",
-        "v": "helped"
-       },
        {
         "d": "2026-11-14",
         "v": "helped"
@@ -4048,6 +4056,14 @@
        {
         "d": "2026-11-16",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-16",
@@ -5267,7 +5283,7 @@
   {
    "id": "mittens-knows",
    "label": "ALWAYS KNOWS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
    "statusLine": "live",
    "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
@@ -8880,9 +8896,28 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-desktop-panels-2",
+   "label": "MITTENS DESKTOP PANELS",
+   "status": "done",
+   "why": "The panels that show Mittens at work on the desktop.",
+   "statusLine": "done · quiet this week",
+   "caption": "The panels that show Mittens at work on the desktop.",
+   "stage": "done",
+   "embed": "pages/mittens-desktop-panels-2.html",
+   "visibility": "public",
+   "links": [
+    "mittens-desktop",
+    "mittens-knows"
+   ],
+   "parent": "mittens-desktop",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -9139,25 +9174,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-desktop-panels-2",
-   "label": "MITTENS DESKTOP PANELS",
-   "status": "done",
-   "why": "The panels that show Mittens at work on the desktop.",
-   "statusLine": "done · quiet this week",
-   "caption": "The panels that show Mittens at work on the desktop.",
-   "stage": "done",
-   "embed": "pages/mittens-desktop-panels-2.html",
-   "visibility": "public",
-   "links": [
-    "mittens-desktop",
-    "mittens-knows"
-   ],
-   "parent": "mittens-desktop",
-   "parked": true,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -10205,7 +10221,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
