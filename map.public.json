@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T16:56:16.359Z",
+ "generatedAt": "2026-11-16T19:46:12.867Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -851,7 +851,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 1
+       "v": 2
       }
      ],
      "partial": "2026-11-16",
@@ -902,7 +902,7 @@
         9,
         20,
         51,
-        0
+        1
        ]
       },
       {
@@ -2768,7 +2768,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -2834,7 +2834,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 26
+       "v": 27
       }
      ],
      "partial": "2026-11-16",
@@ -2896,7 +2896,7 @@
         0,
         0,
         33,
-        2
+        3
        ]
       },
       {
@@ -2940,14 +2940,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -3229,6 +3221,14 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -3914,15 +3914,15 @@
         },
         {
          "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
          "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
         }
        ]
       },
@@ -4229,23 +4229,23 @@
        },
        {
         "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
         "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
        }
       ],
       "stage": null
@@ -5740,7 +5740,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 179
+         "v": 145
         }
        ]
       },
@@ -8802,7 +8802,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 179
+       "v": 145
       }
      ]
     },
@@ -8866,7 +8866,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 179
+       "v": 145
       }
      ]
     },
@@ -9060,7 +9060,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 75
+       "v": 74
       }
      ]
     },
@@ -10212,7 +10212,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 75
+       "v": 74
       }
      ]
     },
@@ -10260,7 +10260,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 75
+         "v": 74
         }
        ]
       },
@@ -10992,7 +10992,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 179
+       "v": 145
       }
      ]
     },
@@ -11546,7 +11546,7 @@
   {
    "id": "feature-self-evolving-mittens",
    "label": "SELF-EVOLVING ASSISTANT",
-   "status": "dormant",
+   "status": "idle",
    "why": "My assistant should teach itself, plan for itself and improve itself, so it can work for anyone.",
    "statusLine": "vision · idle this week",
    "caption": "My assistant should teach itself, plan for itself and improve itself, so it can work for anyone.",
@@ -11554,7 +11554,7 @@
    "embed": "pages/feature-self-evolving-mittens.html",
    "visibility": "public",
    "parent": "mittens-digital",
-   "parked": true,
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
