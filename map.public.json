@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T05:59:47.533Z",
+ "generatedAt": "2026-11-16T06:12:07.157Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2370,7 +2370,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -3419,7 +3419,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -5385,7 +5385,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -5470,6 +5470,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
@@ -9588,7 +9592,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -9597,32 +9601,20 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
        "t": "2026-11-11",
-       "v": 43
+       "v": 404
       },
       {
        "t": "2026-11-12",
-       "v": 41
-      },
-      {
-       "t": "2026-11-13",
-       "v": 44
-      },
-      {
-       "t": "2026-11-14",
-       "v": 49
-      },
-      {
-       "t": "2026-11-15",
-       "v": 48
+       "v": 1
       },
       {
        "t": "2026-11-16",
-       "v": 48
+       "v": 1
       }
      ]
     },
@@ -9682,6 +9674,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -9827,7 +9823,7 @@
   {
    "id": "lens-home",
    "label": "MITTENS LENS HOME",
-   "status": "working",
+   "status": "idle",
    "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
    "statusLine": "step 1 live",
    "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
