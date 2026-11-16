@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T09:40:34.859Z",
+ "generatedAt": "2026-11-16T09:53:49.277Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -205,7 +205,7 @@
     {
      "id": "influencers",
      "label": "CREATORS",
-     "status": "idle",
+     "status": "working",
      "why": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
      "statusLine": "pipeline",
      "caption": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
@@ -238,7 +238,7 @@
         },
         {
          "t": "2026-11-16",
-         "v": 37
+         "v": 53
         }
        ]
       },
@@ -250,10 +250,14 @@
        {
         "d": "2026-11-15",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
        }
       ],
       "stage": {
-       "at": 1,
+       "at": 2,
        "round": 1
       }
      },
@@ -280,7 +284,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · sourcing numbers for tests",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -1212,15 +1216,15 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1295,21 +1299,6 @@
      "links": [
       "mittens-daily",
       "outing-thread"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "live-day-plan",
-     "label": "LIVE DAY PLAN",
-     "status": "idle",
-     "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
-     "statusLine": "first phase built · next steps planned",
-     "caption": "My assistant keeps one plan for the day and updates it as things change.",
-     "stage": "active",
-     "embed": "pages/live-day-plan.html",
-     "visibility": "public",
-     "links": [
-      "mittens-proactive"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -2395,6 +2384,10 @@
      {
       "d": "2026-11-15",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -2731,7 +2724,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3597,7 +3590,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3840,7 +3833,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -4326,7 +4319,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "working",
+   "status": "idle",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -8689,7 +8682,7 @@
   {
    "id": "map-upkeep",
    "label": "MAP UPKEEP",
-   "status": "working",
+   "status": "idle",
    "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
    "statusLine": "hourly tidy · placement audit run",
    "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
@@ -9981,7 +9974,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "working",
+   "status": "idle",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -10742,26 +10735,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "live-day-design",
-   "label": "LIVE DAY DESIGN",
-   "status": "idle",
-   "why": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "statusLine": "active · designing",
-   "caption": "How my assistant lays out the day and keeps the plan up to date as things change.",
-   "stage": "active",
-   "embed": "pages/live-day-design.html",
-   "visibility": "public",
-   "links": [
-    "live-day-plan",
-    "mittens-daily",
-    "code-architecture-tree"
-   ],
-   "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "rg-loop-files-card-work",
    "label": "NO CARDS FOR SELF-RUN WORK",
    "status": "idle",
@@ -11080,21 +11053,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "one-day-store",
-   "label": "ONE DAY STORE",
-   "status": "idle",
-   "why": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-   "statusLine": "plan written · being built",
-   "caption": "One store that holds everything for a single day, so every part of the day plan reads from the same place.",
-   "stage": "active",
-   "embed": "pages/one-day-store.html",
-   "visibility": "public",
-   "parent": "mittens-daily",
-   "parked": false,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -11895,7 +11853,7 @@
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "working",
+   "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
