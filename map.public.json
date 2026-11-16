@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T05:42:00.359Z",
+ "generatedAt": "2026-11-16T05:59:47.533Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2615,7 +2615,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · goals on every dot",
    "caption": "The map itself:",
@@ -2797,10 +2797,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-15",
       "v": "unmeasured"
      },
@@ -3091,10 +3087,14 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 0,
+     "at": 1,
      "round": 6
     }
    },
@@ -5251,7 +5251,7 @@
   {
    "id": "mittens-knows",
    "label": "ALWAYS KNOWS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
    "statusLine": "live",
    "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
@@ -5385,7 +5385,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -8862,7 +8862,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -8988,6 +8988,10 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -9584,7 +9588,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -9823,7 +9827,7 @@
   {
    "id": "lens-home",
    "label": "MITTENS LENS HOME",
-   "status": "idle",
+   "status": "working",
    "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
    "statusLine": "step 1 live",
    "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
