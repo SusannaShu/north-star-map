@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T09:06:22.860Z",
+ "generatedAt": "2026-11-16T09:21:39.230Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -143,7 +143,7 @@
     {
      "id": "designers",
      "label": "DESIGNERS",
-     "status": "idle",
+     "status": "working",
      "why": "Student designers and young independent brands. Their work goes on SHEYOU with a claim link; every time a member wears a piece, the designer earns.",
      "statusLine": "pipeline · try-on pricing idea added",
      "caption": "Student designers and young independent brands.",
@@ -201,7 +201,7 @@
     {
      "id": "influencers",
      "label": "CREATORS",
-     "status": "idle",
+     "status": "working",
      "why": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
      "statusLine": "pipeline",
      "caption": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
@@ -1439,7 +1439,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2524,7 +2524,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2564,6 +2564,10 @@
       {
        "t": "2026-11-15",
        "v": 0.022
+      },
+      {
+       "t": "2026-11-16",
+       "v": 0.571
       }
      ]
     },
@@ -2659,6 +2663,10 @@
      {
       "d": "2026-11-15",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "confounded"
      }
     ],
     "stage": {
@@ -2769,7 +2777,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5747,7 +5755,7 @@
   {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
-   "status": "idle",
+   "status": "working",
    "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
    "statusLine": "live · every day",
    "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
@@ -5953,7 +5961,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -10433,7 +10441,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -10561,7 +10569,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "working",
+     "status": "idle",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic flagging weak spots",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -11297,7 +11305,7 @@
   {
    "id": "ux-teaching",
    "label": "TEACHING UX",
-   "status": "working",
+   "status": "idle",
    "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
    "statusLine": "plan · nothing yet",
    "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
