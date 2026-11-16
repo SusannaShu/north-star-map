@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T06:12:07.157Z",
+ "generatedAt": "2026-11-16T06:33:10.414Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1196,7 +1196,7 @@
     {
      "id": "live-day-plan",
      "label": "LIVE DAY PLAN",
-     "status": "working",
+     "status": "idle",
      "why": "My assistant keeps one plan for the day and updates it as things change. That way the plan always matches what is really happening.",
      "statusLine": "first phase built · next steps planned",
      "caption": "My assistant keeps one plan for the day and updates it as things change.",
@@ -3450,6 +3450,10 @@
       {
        "t": "2026-11-15",
        "v": 2
+      },
+      {
+       "t": "2026-11-16",
+       "v": 43
       }
      ]
     },
@@ -3557,6 +3561,18 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3638,7 +3654,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3717,10 +3733,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-14",
-        "v": "no effect"
-       },
        {
         "d": "2026-11-14",
         "v": "helped"
@@ -4036,6 +4048,10 @@
        {
         "d": "2026-11-16",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        }
       ],
       "stage": null
