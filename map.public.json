@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T07:22:46.298Z",
+ "generatedAt": "2026-11-16T07:53:57.681Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -278,7 +278,7 @@
    "label": "FASHION FUTURE",
    "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
-   "statusLine": "planning · first garment test next",
+   "statusLine": "planning · sourcing numbers for tests",
    "caption": "A creative economy platform -- authenticity + creativity.",
    "stage": "plan",
    "planned": true,
@@ -523,6 +523,18 @@
       "susu-map"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-crowd-check",
+     "label": "CROWD CHECK",
+     "status": "idle",
+     "why": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
+     "statusLine": "built · map chip next",
+     "caption": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
+     "stage": "active",
+     "embed": "pages/feature-crowd-check.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -532,7 +544,7 @@
    "label": "MARKETING",
    "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
-   "statusLine": "content drafted · none published yet",
+   "statusLine": "drafts ready · none published yet",
    "caption": "Spread the vision and actually sell:",
    "stage": "active",
    "embed": "pages/marketing.html",
@@ -677,7 +689,7 @@
      "label": "AGENTIC MARKETING",
      "status": "idle",
      "why": "Research: how agent-run marketing goes wrong -- persona farms, undisclosed ads, fake engagement -- and the redesign: founder and brand accounts, labelled virtual models, paid creators, official APIs only.",
-     "statusLine": "redesign needs my call · tracking sign-ups",
+     "statusLine": "redesign waits on my call",
      "caption": "Research:",
      "stage": "plan",
      "planned": true,
@@ -702,6 +714,18 @@
       ],
       "stage": null
      },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-verified-yet-whether-persona",
+     "label": "PERSONA BROWSER CHECK",
+     "status": "idle",
+     "why": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
+     "statusLine": "not verified yet",
+     "caption": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
+     "stage": "active",
+     "embed": "pages/rg-verified-yet-whether-persona.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -1340,7 +1364,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -1467,7 +1491,20 @@
     "stage": null
    },
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "feature-band-gesture-talk",
+     "label": "BAND GESTURE TALK",
+     "status": "idle",
+     "why": "I want simple wrist gestures that reach my assistant when I can't talk out loud or reach my phone.",
+     "statusLine": "designing gestures",
+     "caption": "I want simple wrist gestures that reach my assistant when I can't talk out loud or reach my phone.",
+     "stage": "active",
+     "embed": "pages/feature-band-gesture-talk.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -1860,7 +1897,7 @@
      "label": "CONTENT CLEAN-UP",
      "status": "idle",
      "why": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
-     "statusLine": "proposal ready · script check built",
+     "statusLine": "proposal ready · waiting on my yes",
      "caption": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
      "stage": "plan",
      "planned": true,
@@ -2177,7 +2214,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2633,9 +2670,9 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active · goals on every dot",
+   "statusLine": "active · used every day",
    "caption": "The map itself:",
    "stage": "active",
    "embed": "pages/northstar.html",
@@ -3430,6 +3467,18 @@
       "housekeeping"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "overseer-coverage",
+     "label": "OVERSEER COVERAGE",
+     "status": "idle",
+     "why": "I make sure the overseer agent can see every part of the system it is meant to watch.",
+     "statusLine": "in progress",
+     "caption": "I make sure the overseer agent can see every part of the system it is meant to watch.",
+     "stage": "active",
+     "embed": "pages/overseer-coverage.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -3437,7 +3486,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3587,6 +3636,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -4742,7 +4795,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5771,7 +5824,7 @@
    "label": "SCENARIOS",
    "status": "idle",
    "why": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home: which device leads, what is said out loud, what waits.",
-   "statusLine": "built · 10 scenarios",
+   "statusLine": "built · rules per situation",
    "caption": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home:",
    "stage": "active",
    "embed": "pages/mittens-scenarios.html",
@@ -5805,7 +5858,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6380,7 +6433,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -6437,7 +6490,7 @@
      "label": "MORNING BRIEF",
      "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
-     "statusLine": "live · greets when I wake",
+     "statusLine": "paused · coming back shorter",
      "caption": "One morning notification:",
      "stage": "active",
      "embed": "pages/morning-brief.html",
@@ -6465,7 +6518,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · nightly, most fixes automatic",
+     "statusLine": "live · some fixes made overnight",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -6648,7 +6701,7 @@
   {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
    "statusLine": "live",
    "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
@@ -7196,6 +7249,18 @@
       "action-tree",
       "northstar"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-action-tree-panel",
+     "label": "ACTION TREE PANEL",
+     "status": "idle",
+     "why": "I want the action tree to show what matters with clear visuals and much less crammed text.",
+     "statusLine": "redesign in progress",
+     "caption": "I want the action tree to show what matters with clear visuals and much less crammed text.",
+     "stage": "active",
+     "embed": "pages/feature-action-tree-panel.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -7776,6 +7841,32 @@
      "embed": "pages/project-briefs.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-project-brief-follows-priority",
+     "label": "PROJECT BRIEF PRIORITY",
+     "status": "idle",
+     "why": "My project brief should follow whatever I am focused on right now and recheck its facts before it speaks.",
+     "statusLine": "rechecks facts · misses left",
+     "caption": "My project brief should follow whatever I am focused on right now and recheck its facts before it speaks.",
+     "stage": "active",
+     "embed": "pages/rg-project-brief-follows-priority.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-16",
+         "v": 6
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -8333,7 +8424,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "idle",
+   "status": "working",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -8434,7 +8525,7 @@
      "label": "AUTOMATION AUDIT",
      "status": "idle",
      "why": "Automations break quietly, so every day the system replays the day against each trigger to check it fired when it should. Broken ones get flagged and fixed, so the assistant only speaks up at the right moments.",
-     "statusLine": "live · runs every night",
+     "statusLine": "live · checked every night",
      "caption": "Automations break quietly, so every day the system replays the day against each trigger to check it fired when it should.",
      "stage": "active",
      "embed": "pages/automation-audit.html",
@@ -10429,6 +10520,18 @@
       }
      },
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-desk-pane-layout",
+     "label": "DESK PANE LAYOUT",
+     "status": "idle",
+     "why": "My desk screen tiles open work side by side with no duplicate windows.",
+     "statusLine": "fixing duplicate windows",
+     "caption": "My desk screen tiles open work side by side with no duplicate windows.",
+     "stage": "active",
+     "embed": "pages/feature-desk-pane-layout.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -10699,6 +10802,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -10744,7 +10851,7 @@
      "label": "MY WORDS REACH DOTS",
      "status": "idle",
      "why": "Everything I say about a project should land on the right dot of the map within a day. A rule became a measurable goal that the system checks by itself.",
-     "statusLine": "met · nothing left over",
+     "statusLine": "not met · some lines waiting",
      "caption": "Everything I say about a project should land on the right dot of the map within a day.",
      "stage": "active",
      "embed": "pages/rg-her-words-reach-goal.html",
@@ -11155,6 +11262,65 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "rg-verdict-said-filed-part",
+   "label": "SAME RECORD GATE",
+   "status": "idle",
+   "why": "My assistant's own actions now pass the same record check as the worker agents.",
+   "statusLine": "built · replay passes",
+   "caption": "My assistant's own actions now pass the same record check as the worker agents.",
+   "stage": "active",
+   "embed": "pages/rg-verdict-said-filed-part.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-16",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-portfolio-landing-scroll",
+   "label": "LANDING SCROLL",
+   "status": "dormant",
+   "why": "A scrolling landing page that walks visitors through my projects.",
+   "statusLine": "idle this week",
+   "caption": "A scrolling landing page that walks visitors through my projects.",
+   "stage": "active",
+   "embed": "pages/feature-portfolio-landing-scroll.html",
+   "visibility": "public",
+   "parent": "portfolio-landing",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-self-evolving-mittens",
+   "label": "SELF-EVOLVING ASSISTANT",
+   "status": "dormant",
+   "why": "My assistant should teach itself, plan for itself and improve itself, so it can work for anyone.",
+   "statusLine": "vision · idle this week",
+   "caption": "My assistant should teach itself, plan for itself and improve itself, so it can work for anyone.",
+   "stage": "active",
+   "embed": "pages/feature-self-evolving-mittens.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "sheyou-report-sources",
    "label": "SHEYOU REPORT SOURCES",
    "status": "done",
@@ -11187,6 +11353,66 @@
    ],
    "parent": "sheyou",
    "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-human-like-page-browsing",
+   "label": "HUMAN-LIKE BROWSING",
+   "status": "dormant",
+   "why": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
+   "statusLine": "idle this week",
+   "caption": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
+   "stage": "active",
+   "embed": "pages/feature-human-like-page-browsing.html",
+   "visibility": "public",
+   "parent": "man-browsers",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-pre-outing-research",
+   "label": "PRE-OUTING RESEARCH",
+   "status": "dormant",
+   "why": "Before I go somewhere, an agent looks at recent public posts to guess the lines and the crowd.",
+   "statusLine": "idle this week",
+   "caption": "Before I go somewhere, an agent looks at recent public posts to guess the lines and the crowd.",
+   "stage": "active",
+   "embed": "pages/feature-pre-outing-research.html",
+   "visibility": "public",
+   "parent": "go-anywhere",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-exception-cache-names-source",
+   "label": "CACHE NAMES SOURCE",
+   "status": "idle",
+   "why": "Answers come from live data. The only exception is a saved copy that names its source and when it was last refreshed.",
+   "statusLine": "noted this week",
+   "caption": "Answers come from live data.",
+   "stage": "active",
+   "embed": "pages/rg-exception-cache-names-source.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-marking-urgent-system-work",
+   "label": "SYSTEM WORK URGENT",
+   "status": "idle",
+   "why": "Fixes to the system itself get marked urgent so they don't wait behind other work.",
+   "statusLine": "noted this week",
+   "caption": "Fixes to the system itself get marked urgent so they don't wait behind other work.",
+   "stage": "active",
+   "embed": "pages/rg-marking-urgent-system-work.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -11234,7 +11460,7 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
@@ -11294,6 +11520,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      }
     ],
@@ -11359,6 +11589,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
