@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T01:12:34.100Z",
+ "generatedAt": "2026-11-16T02:40:39.347Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -264,7 +264,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "idle",
+   "status": "working",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · first garment test next",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -686,7 +686,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -720,7 +720,7 @@
       },
       {
        "t": "2026-11-09",
-       "v": 144
+       "v": 146
       }
      ],
      "partial": "2026-11-09",
@@ -756,7 +756,7 @@
         12,
         1,
         17,
-        39
+        40
        ]
       },
       {
@@ -767,7 +767,7 @@
         6,
         9,
         20,
-        50
+        51
        ]
       },
       {
@@ -1480,6 +1480,10 @@
       {
        "t": "2026-11-14",
        "v": 6.78
+      },
+      {
+       "t": "2026-11-16",
+       "v": 6.75
       }
      ]
     },
@@ -1559,6 +1563,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -2656,7 +2664,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 86
+       "v": 89
       }
      ],
      "partial": "2026-11-15",
@@ -2680,7 +2688,7 @@
         0,
         0,
         1,
-        41
+        42
        ]
       },
       {
@@ -2691,7 +2699,7 @@
         9,
         4,
         23,
-        81
+        82
        ]
       },
       {
@@ -2713,7 +2721,7 @@
         0,
         0,
         0,
-        32
+        33
        ]
       },
       {
@@ -3429,7 +3437,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3648,7 +3656,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3715,6 +3723,10 @@
         {
          "t": "2026-11-15",
          "v": 3
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
         }
        ]
       },
@@ -3949,10 +3961,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
         "v": "helped"
        },
        {
@@ -4038,6 +4046,10 @@
        {
         "d": "2026-11-16",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -5780,7 +5792,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6861,7 +6873,7 @@
         },
         {
          "t": "2026-11-15",
-         "v": 34
+         "v": 33
         }
        ]
       },
@@ -11159,12 +11171,10 @@
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "idle",
+   "status": "working",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/susu-closet.html",
    "visibility": "public",
    "goalStory": {
