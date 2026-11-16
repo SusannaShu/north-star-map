@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T13:35:58.061Z",
+ "generatedAt": "2026-11-16T13:52:51.774Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1689,6 +1689,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2227,6 +2231,10 @@
        {
         "d": "2026-11-11",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -2507,7 +2515,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2826,7 +2834,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 8
+       "v": 11
       }
      ],
      "partial": "2026-11-16",
@@ -3589,7 +3597,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3832,7 +3840,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -5728,7 +5736,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 176
+         "v": 182
         }
        ]
       },
@@ -6562,7 +6570,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 12
+       "v": 9
       }
      ]
     },
@@ -8790,7 +8798,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 176
+       "v": 182
       }
      ]
     },
@@ -8854,7 +8862,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 176
+       "v": 182
       }
      ]
     },
@@ -9154,7 +9162,7 @@
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "working",
+   "status": "idle",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -9280,6 +9288,10 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -10976,7 +10988,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 176
+       "v": 182
       }
      ]
     },
@@ -12033,7 +12045,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 78
+       "v": 79
       }
      ]
     },
