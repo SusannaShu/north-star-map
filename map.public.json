@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T08:15:35.851Z",
+ "generatedAt": "2026-11-16T08:35:02.493Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -276,7 +276,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · sourcing numbers for tests",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -833,10 +833,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -1133,10 +1129,6 @@
      },
      {
       "d": "2026-11-16",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
       "v": "helped"
      },
      {
@@ -1150,6 +1142,14 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -1179,7 +1179,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2449,7 +2449,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2694,7 +2694,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -2756,7 +2756,7 @@
       },
       {
        "t": "2026-11-15",
-       "v": 94
+       "v": 98
       }
      ],
      "perPoint": [
@@ -3762,24 +3762,24 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
+         "t": "2026-11-11",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
          "v": 0
         },
         {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-13",
+         "v": 36
         },
         {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-14",
+         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3791,7 +3791,11 @@
         },
         {
          "t": "2026-11-15",
-         "v": 14
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 1
         },
         {
          "t": "2026-11-15",
@@ -3799,47 +3803,27 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 3
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 2
         },
         {
          "t": "2026-11-15",
-         "v": 9
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 32
-        },
-        {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 7
+         "v": 3
         },
         {
          "t": "2026-11-16",
          "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 0
         }
        ]
       },
@@ -4146,23 +4130,23 @@
        },
        {
         "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
         "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -6931,7 +6915,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "idle",
+   "status": "working",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
@@ -6971,7 +6955,7 @@
     {
      "id": "north-star-as-product",
      "label": "NORTH STAR AS PRODUCT",
-     "status": "done",
+     "status": "working",
      "why": "I am thinking through how the map could become a product for other people, not just my own system.",
      "statusLine": "exploring the idea",
      "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
@@ -9043,14 +9027,14 @@
     "mittens-knows"
    ],
    "parent": "mittens-desktop",
-   "parked": true,
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "pendant",
    "label": "PENDANT",
-   "status": "idle",
+   "status": "working",
    "why": "A pendant that sees and hears, so you log less. Version one is hand-wired on an ESP32-S3: wakes on motion, takes a photo, records push-to-talk audio and sends both to the phone over Bluetooth. Next: my own board and case, in design.",
    "statusLine": "v1 on the bench · own board in design",
    "caption": "A pendant that sees and hears, so you log less.",
@@ -10563,7 +10547,7 @@
   {
    "id": "mittens-2",
    "label": "MITTENS",
-   "status": "working",
+   "status": "done",
    "why": "This is the running conversation where I shape my assistant and how it works.",
    "statusLine": "in progress",
    "caption": "This is the running conversation where I shape my assistant and how it works.",
@@ -11569,7 +11553,7 @@
   {
    "id": "susu-closet",
    "label": "SUSU CLOSET",
-   "status": "working",
+   "status": "idle",
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
@@ -11590,6 +11574,10 @@
       },
       {
        "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-16",
        "v": 0
       }
      ]
@@ -11613,6 +11601,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
