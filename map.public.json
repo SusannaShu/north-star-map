@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T09:21:39.230Z",
+ "generatedAt": "2026-11-16T09:40:34.859Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -143,7 +143,7 @@
     {
      "id": "designers",
      "label": "DESIGNERS",
-     "status": "working",
+     "status": "idle",
      "why": "Student designers and young independent brands. Their work goes on SHEYOU with a claim link; every time a member wears a piece, the designer earns.",
      "statusLine": "pipeline · try-on pricing idea added",
      "caption": "Student designers and young independent brands.",
@@ -177,7 +177,7 @@
         },
         {
          "t": "2026-11-16",
-         "v": 45
+         "v": 60
         }
        ]
       },
@@ -189,10 +189,14 @@
        {
         "d": "2026-11-15",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "unmeasured"
        }
       ],
       "stage": {
-       "at": 1,
+       "at": 2,
        "round": 1
       }
      },
@@ -201,7 +205,7 @@
     {
      "id": "influencers",
      "label": "CREATORS",
-     "status": "working",
+     "status": "idle",
      "why": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
      "statusLine": "pipeline",
      "caption": "Fashion creators on Instagram and TikTok get a closet already filled with designer pieces; anyone who subscribes through their link earns them a cut.",
@@ -1439,7 +1443,7 @@
   {
    "id": "mittens-hw",
    "label": "WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
    "statusLine": "running · three digests a day",
    "caption": "Mittens scrolls so I don't:",
@@ -2313,7 +2317,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2727,7 +2731,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2943,10 +2947,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-15",
       "v": "unmeasured"
      },
@@ -3249,6 +3249,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -4322,7 +4326,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "idle",
+   "status": "working",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -5755,7 +5759,7 @@
   {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
-   "status": "working",
+   "status": "idle",
    "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
    "statusLine": "live · every day",
    "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
@@ -5961,7 +5965,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -8685,7 +8689,7 @@
   {
    "id": "map-upkeep",
    "label": "MAP UPKEEP",
-   "status": "idle",
+   "status": "working",
    "why": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
    "statusLine": "hourly tidy · placement audit run",
    "caption": "When the map changes (the same step as the work), how stale dots get checked, and how done work fades instead of being deleted.",
@@ -9977,7 +9981,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "idle",
+   "status": "working",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -11956,6 +11960,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": {
