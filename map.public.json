@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T19:46:12.867Z",
+ "generatedAt": "2026-11-16T20:08:18.950Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2996,10 +2996,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -3221,6 +3217,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -3260,7 +3260,7 @@
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 6
     }
    },
