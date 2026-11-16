@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T05:09:24.119Z",
+ "generatedAt": "2026-11-16T05:25:15.090Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -801,22 +801,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1109,10 +1093,26 @@
      },
      {
       "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
       "v": "no effect"
      },
      {
-      "d": "2026-11-15",
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
       "v": "helped"
      },
      {
@@ -2788,10 +2788,6 @@
     "tries": [
      {
       "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
       "v": "unmeasured"
      },
      {
@@ -3101,6 +3097,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -3665,28 +3665,24 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
+         "t": "2026-11-11",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
+         "v": 1
+        },
+        {
+         "t": "2026-11-12",
          "v": 0
         },
         {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-13",
+         "v": 36
         },
         {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-14",
+         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3698,7 +3694,11 @@
         },
         {
          "t": "2026-11-15",
-         "v": 14
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 1
         },
         {
          "t": "2026-11-15",
@@ -3706,51 +3706,31 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 3
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 2
         },
         {
          "t": "2026-11-15",
-         "v": 9
+         "v": 3
         },
         {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-16",
+         "v": 1
         },
         {
-         "t": "2026-11-15",
-         "v": 32
-        },
-        {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-16",
+         "v": 1
         },
         {
          "t": "2026-11-16",
          "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 7
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-13",
-        "v": "no effect"
-       },
        {
         "d": "2026-11-13",
         "v": "helped"
@@ -4013,10 +3993,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
         "v": "unmeasured"
        },
        {
@@ -4066,6 +4042,14 @@
        {
         "d": "2026-11-16",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -7435,7 +7419,7 @@
   {
    "id": "ui-style",
    "label": "UI STYLE",
-   "status": "working",
+   "status": "idle",
    "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
    "statusLine": "checked nightly · cleanup ongoing",
    "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
@@ -7457,6 +7441,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -10012,7 +10000,7 @@
   {
    "id": "brain-running",
    "label": "RUNNING THE BRAIN",
-   "status": "idle",
+   "status": "working",
    "why": "The steady pulse, events, worker capacity and keeping everything tidy.",
    "statusLine": "noted this week",
    "caption": "The steady pulse, events, worker capacity and keeping everything tidy.",
@@ -11039,7 +11027,7 @@
   {
    "id": "rg-merges-one-already-there",
    "label": "RULES MERGE, NOT PILE",
-   "status": "idle",
+   "status": "working",
    "why": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
    "statusLine": "noted · in progress",
    "caption": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
