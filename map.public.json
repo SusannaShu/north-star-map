@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-16T13:52:51.774Z",
+ "generatedAt": "2026-11-16T15:48:43.143Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -813,7 +813,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2834,7 +2834,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 11
+       "v": 21
       }
      ],
      "partial": "2026-11-16",
@@ -2872,7 +2872,7 @@
         4,
         23,
         82,
-        0
+        2
        ]
       },
       {
@@ -2896,7 +2896,7 @@
         0,
         0,
         33,
-        0
+        1
        ]
       },
       {
@@ -2920,7 +2920,7 @@
         3,
         16,
         46,
-        1
+        2
        ]
       },
       {
@@ -2939,14 +2939,6 @@
     },
     "tries": [
      {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-15",
       "v": "unmeasured"
      },
@@ -3245,6 +3237,14 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -3597,7 +3597,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3840,7 +3840,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3915,6 +3915,10 @@
         {
          "t": "2026-11-16",
          "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
         },
         {
          "t": "2026-11-16",
@@ -4081,10 +4085,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
         "v": "no effect"
        },
        {
@@ -4238,6 +4238,10 @@
        {
         "d": "2026-11-16",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
        },
        {
         "d": "2026-11-16",
@@ -5736,7 +5740,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 182
+         "v": 178
         }
        ]
       },
@@ -8798,7 +8802,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 182
+       "v": 178
       }
      ]
     },
@@ -8862,7 +8866,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 182
+       "v": 178
       }
      ]
     },
@@ -9056,7 +9060,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 75
+       "v": 71
       }
      ]
     },
@@ -10208,7 +10212,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 75
+       "v": 71
       }
      ]
     },
@@ -10256,7 +10260,7 @@
        "points": [
         {
          "t": "2026-11-16",
-         "v": 75
+         "v": 71
         }
        ]
       },
@@ -10740,7 +10744,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 32.3
+       "v": 33
       }
      ]
     },
@@ -10988,7 +10992,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 182
+       "v": 178
       }
      ]
     },
@@ -12045,7 +12049,7 @@
      "points": [
       {
        "t": "2026-11-16",
-       "v": 79
+       "v": 75
       }
      ]
     },
