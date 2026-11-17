@@ -40,7 +40,7 @@
             at: isNaN(at) ? null : at,
             talk: talk,
             device: talk === "on" && DEVICES.includes(j.device) ? j.device : null,
-            devices: Array.isArray(j.devices) ? [ ...new Set(j.devices.filter(d => d in TYPES)) ].slice(0, 4) : talk === "on" && j.device === "glasses" ? [ "glasses" ] : [],
+            devices: Array.isArray(j.devices) ? [ ...new Set(j.devices.filter(d => d in TYPES)) ].slice(0, 12) : talk === "on" && j.device === "glasses" ? [ "glasses" ] : [],
             seen: talk === "off" && SEEN.includes(j.seen) ? j.seen : null,
             working: n99(j.working),
             waiting: n99(j.waiting)

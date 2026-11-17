@@ -747,6 +747,27 @@
         return [ ...g.values() ].filter(x => x.items.length);
     }
     const CO = "company", CO_LABEL = "UNIQUE DESIGNS -- COMPANY MAC MINI";
+    const echoWords = label => String(label || "").toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length >= 6);
+    function expVerdict(item, exp) {
+        const get = d => d && exp ? exp[d] : null;
+        const dot = [ item.dot, item.open, item.taskDot ].find(get);
+        if (!dot) return {
+            verdict: "keep"
+        };
+        const e = get(dot), name = String(item.name || item.title || "").toLowerCase();
+        const echo = echoWords(e.label || dot).some(w => name.includes(w));
+        const own = Date.parse(item.born || item.since || "");
+        if (!echo && Number.isFinite(own) && own > Date.parse(e.until)) return {
+            verdict: "detach",
+            dot: dot,
+            why: "a fresh row filed on the expired " + dot
+        };
+        return {
+            verdict: "drop",
+            dot: dot,
+            why: e.why
+        };
+    }
     function build({map: map, workers: workers, now: NOW} = {}) {
         map = map || {};
         const X = index(map), P = map.projects || [], SUBJ = subjects(map), held = [];
@@ -779,7 +800,29 @@
             }
             return null;
         };
+        const EXP = map.expired && typeof map.expired === "object" && Object.keys(map.expired).length ? map.expired : null, expiredRows = [];
+        const expGate = (item, seg) => {
+            if (!EXP || seg === "done") return item;
+            const v = expVerdict({
+                ...item,
+                taskDot: item.taskId ? taskDot[item.taskId] : null
+            }, EXP);
+            if (v.verdict === "keep") return item;
+            expiredRows.push({
+                name: item.name,
+                dot: v.dot,
+                verdict: v.verdict,
+                seg: seg,
+                why: v.why
+            });
+            return v.verdict === "drop" ? null : {
+                ...item,
+                open: item.open === v.dot ? null : item.open
+            };
+        };
         const add = (seg, groupId, item) => {
+            item = expGate(item, seg);
+            if (!item) return;
             if (HID.size && [ item.open, item.qid, item.askId, item.laterId, item.task, item.item ].some(r => r && HID.has(String(r)))) return;
             if (seg === "needs" && item.qid) {
                 const c = claimOf(item);
@@ -1639,6 +1682,11 @@
         for (const w of Array.isArray(map.waits) ? map.waits : []) {
             if (!w || !w.title || w.ref && refs.has(String(w.ref)) || w.task && refs.has(String(w.task))) continue;
             if (HID.size && w.ref && HID.has(String(w.ref))) continue;
+            if (EXP && !expGate({
+                name: w.title,
+                open: w.dot || null,
+                since: w.since || null
+            }, "waiting")) continue;
             W0.push({
                 name: clip(w.title, 60),
                 line: w.line || "",
@@ -1697,6 +1745,7 @@
             segments: segments,
             subjects: [ ...SUBJ.keys() ],
             held: held,
+            expiredRows: expiredRows,
             watches: Array.isArray(map.watches) ? map.watches : []
         };
     }
@@ -1758,6 +1807,7 @@
         };
     }
     G.NSTree = {
+        expVerdict: expVerdict,
         triggerOf: triggerOf,
         byTrigger: byTrigger,
         fires: fires,

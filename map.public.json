@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T06:17:40.831Z",
+ "generatedAt": "2026-11-17T06:52:35.388Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2981,10 +2981,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -3278,6 +3274,10 @@
      {
       "d": "2026-11-17",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3878,16 +3878,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 6
-        },
-        {
          "t": "2026-11-15",
          "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 1
         },
         {
          "t": "2026-11-15",
@@ -3899,51 +3891,59 @@
         },
         {
          "t": "2026-11-15",
-         "v": 3
+         "v": 0
         },
         {
          "t": "2026-11-15",
-         "v": 2
+         "v": 1
+        },
+        {
+         "t": "2026-11-15",
+         "v": 14
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 9
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 18
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 7
         },
         {
          "t": "2026-11-16",
          "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 2
-        },
-        {
-         "t": "2026-11-17",
-         "v": 1
-        },
-        {
-         "t": "2026-11-17",
-         "v": 2
-        },
-        {
-         "t": "2026-11-17",
-         "v": 6
-        },
-        {
-         "t": "2026-11-17",
-         "v": 1
-        },
-        {
-         "t": "2026-11-17",
-         "v": 2
         },
         {
          "t": "2026-11-17",
@@ -3960,34 +3960,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
        {
         "d": "2026-11-15",
         "v": "unmeasured"
@@ -4275,6 +4247,34 @@
        {
         "d": "2026-11-17",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
        },
        {
         "d": "2026-11-17",
@@ -7406,7 +7406,7 @@
   {
    "id": "action-tree",
    "label": "ACTION TREE",
-   "status": "idle",
+   "status": "working",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
    "statusLine": "live · stale items repaired daily",
    "caption": "The one source of truth for what is open:",
@@ -10583,7 +10583,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -10686,7 +10686,7 @@
     {
      "id": "ns-desk",
      "label": "NORTH STAR DESK",
-     "status": "idle",
+     "status": "working",
      "why": "A native desktop app that tiles the open pages in one window: the build plan on the left, the map and review pages on the right.",
      "statusLine": "done · panes now searchable",
      "caption": "A native desktop app that tiles the open pages in one window:",
