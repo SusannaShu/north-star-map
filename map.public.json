@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T03:54:20.206Z",
+ "generatedAt": "2026-11-17T04:13:32.322Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1268,7 +1268,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2300,7 +2300,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2726,7 +2726,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2946,10 +2946,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
      {
       "d": "2026-11-15",
       "v": "helped"
@@ -3237,6 +3233,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
@@ -3882,10 +3882,6 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
          "v": 1
         },
         {
@@ -3939,22 +3935,14 @@
         {
          "t": "2026-11-17",
          "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
        {
         "d": "2026-11-15",
         "v": "helped"
@@ -4258,6 +4246,18 @@
        {
         "d": "2026-11-17",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-17",
@@ -4775,7 +4775,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4802,6 +4802,10 @@
       {
        "t": "2026-11-12",
        "v": 0.81
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
       }
      ]
     },
@@ -4833,6 +4837,14 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": null
