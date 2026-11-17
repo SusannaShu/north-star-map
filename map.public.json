@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T20:41:50.624Z",
+ "generatedAt": "2026-11-17T22:20:48.964Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1569,7 +1569,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 14
+       "v": 16
       }
      ],
      "partial": "2026-11-16",
@@ -1620,7 +1620,7 @@
         9,
         20,
         51,
-        4
+        6
        ]
       },
       {
@@ -1692,14 +1692,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1957,6 +1949,14 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2246,7 +2246,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2465,7 +2465,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2616,6 +2616,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2676,7 +2680,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2690,7 +2694,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 34
+       "v": 35
       }
      ]
     },
@@ -3009,6 +3013,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3228,7 +3236,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3471,7 +3479,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3517,19 +3525,11 @@
         },
         {
          "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
          "v": 3
         },
         {
          "t": "2026-11-17",
          "v": 2
-        },
-        {
-         "t": "2026-11-17",
-         "v": 4
         },
         {
          "t": "2026-11-17",
@@ -3545,10 +3545,6 @@
         },
         {
          "t": "2026-11-17",
-         "v": 6
-        },
-        {
-         "t": "2026-11-17",
          "v": 0
         },
         {
@@ -3562,16 +3558,24 @@
         {
          "t": "2026-11-17",
          "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 7
+        },
+        {
+         "t": "2026-11-17",
+         "v": 5
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
         "v": "helped"
        },
        {
@@ -3665,10 +3669,6 @@
        {
         "d": "2026-11-17",
         "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
        },
        {
         "d": "2026-11-17",
@@ -3824,10 +3824,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-17",
         "v": "unmeasured"
        },
        {
@@ -3860,31 +3856,43 @@
        },
        {
         "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
         "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
         "v": "unmeasured"
        },
        {
         "d": "2026-11-17",
-        "v": "helped"
+        "v": "no effect"
        },
        {
         "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -3950,6 +3958,10 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -4350,7 +4362,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4478,7 +4490,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4711,7 +4723,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -4777,7 +4789,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 49
+       "v": 53
       }
      ],
      "partial": "2026-11-17",
@@ -4863,7 +4875,7 @@
         3,
         16,
         46,
-        15
+        17
        ]
       },
       {
@@ -4881,10 +4893,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-16",
       "v": "helped"
@@ -5200,6 +5208,10 @@
      {
       "d": "2026-11-17",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -5250,7 +5262,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -5383,7 +5395,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 197
+         "v": 196
         }
        ]
       },
@@ -6200,7 +6212,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6357,6 +6369,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
       "v": "unmeasured"
      },
      {
@@ -6807,7 +6823,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -7072,6 +7088,42 @@
       "gospel"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "solve-disease",
+     "label": "SOLVE DISEASE",
+     "status": "idle",
+     "why": "I want to help solve disease, one disease at a time, and fund it from my own product revenue. Agents build an evidence map from primary sources of what is known and what is still open.",
+     "statusLine": "active · research underway",
+     "caption": "I want to help solve disease, one disease at a time, and fund it from my own product revenue.",
+     "stage": "active",
+     "embed": "pages/solve-disease.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-17",
+         "v": 6
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-12",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
+     "links": [
+      "susu-closet",
+      "fashion",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -7160,44 +7212,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "solve-disease",
-   "label": "SOLVE DISEASE",
-   "status": "idle",
-   "why": "I want to help solve disease, one disease at a time, and fund it from my own product revenue. Agents build an evidence map from primary sources of what is known and what is still open.",
-   "statusLine": "active · research underway",
-   "caption": "I want to help solve disease, one disease at a time, and fund it from my own product revenue.",
-   "stage": "active",
-   "embed": "pages/solve-disease.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-17",
-       "v": 6
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": null
-   },
-   "links": [
-    "gospel",
-    "susu-closet",
-    "fashion"
-   ],
-   "parked": false,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -8851,7 +8865,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -9089,7 +9103,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 197
+       "v": 196
       }
      ]
     },
@@ -9153,7 +9167,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 197
+       "v": 196
       }
      ]
     },
@@ -9751,36 +9765,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-12",
+       "t": "2026-11-17",
        "v": 2.9
-      },
-      {
-       "t": "2026-11-12",
-       "v": 2.9
-      },
-      {
-       "t": "2026-11-13",
-       "v": 2.9
-      },
-      {
-       "t": "2026-11-13",
-       "v": 2.9
-      },
-      {
-       "t": "2026-11-13",
-       "v": 1
-      },
-      {
-       "t": "2026-11-13",
-       "v": 1
-      },
-      {
-       "t": "2026-11-13",
-       "v": 1
-      },
-      {
-       "t": "2026-11-15",
-       "v": 1
       }
      ]
     },
@@ -9867,7 +9853,7 @@
      },
      {
       "d": "2026-11-17",
-      "v": "unmeasured"
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -9975,41 +9961,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "nothing-ran-didn-t-hear",
-   "label": "LOST SPEECH FIX",
-   "status": "idle",
-   "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
-   "statusLine": "fixed",
-   "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
-   "stage": "done",
-   "embed": "pages/nothing-ran-didn-t-hear.html",
-   "visibility": "public",
-   "links": [
-    "ns-talk"
-   ],
-   "parent": "talk-phone-calls",
-   "parked": false,
-   "children": [
-    {
-     "id": "what-s-the-sound-like",
-     "label": "SILENT REPLY",
-     "status": "idle",
-     "why": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
-     "statusLine": "archived",
-     "caption": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
-     "stage": "done",
-     "embed": "pages/what-s-the-sound-like.html",
-     "visibility": "public",
-     "links": [
-      "nothing-ran-didn-t-hear",
-      "talk-phone-calls"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
    "status": "done",
@@ -10047,6 +9998,10 @@
       {
        "t": "2026-11-17",
        "v": 5
+      },
+      {
+       "t": "2026-11-17",
+       "v": 15.7
       }
      ]
     },
@@ -10126,6 +10081,14 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -10199,6 +10162,41 @@
      "stage": "active",
      "embed": "pages/truth-check.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "nothing-ran-didn-t-hear",
+   "label": "LOST SPEECH FIX",
+   "status": "idle",
+   "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
+   "statusLine": "fixed",
+   "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
+   "stage": "done",
+   "embed": "pages/nothing-ran-didn-t-hear.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk"
+   ],
+   "parent": "talk-phone-calls",
+   "parked": false,
+   "children": [
+    {
+     "id": "what-s-the-sound-like",
+     "label": "SILENT REPLY",
+     "status": "idle",
+     "why": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
+     "statusLine": "archived",
+     "caption": "Sometimes a reply shows on screen but no sound plays, which led to the lost speech fix.",
+     "stage": "done",
+     "embed": "pages/what-s-the-sound-like.html",
+     "visibility": "public",
+     "links": [
+      "nothing-ran-didn-t-hear",
+      "talk-phone-calls"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -10568,7 +10566,7 @@
   {
    "id": "brain-deciding",
    "label": "DECIDING + ROUTING",
-   "status": "working",
+   "status": "idle",
    "why": "How each message is sorted and sent to the right place.",
    "statusLine": "noted this week",
    "caption": "How each message is sorted and sent to the right place.",
@@ -10777,7 +10775,7 @@
   {
    "id": "one-dispatcher",
    "label": "ONE DISPATCHER",
-   "status": "working",
+   "status": "idle",
    "why": "I want one dispatcher that sorts everything I say into the right thread and acts on it, the way a good coding agent does. It should also give my assistant the same context every time.",
    "statusLine": "first step live",
    "caption": "I want one dispatcher that sorts everything I say into the right thread and acts on it, the way a good coding agent does.",
@@ -10872,7 +10870,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -11021,7 +11019,7 @@
     {
      "id": "feature-card-states",
      "label": "CARD STATES",
-     "status": "working",
+     "status": "idle",
      "why": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
      "statusLine": "in progress",
      "caption": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
@@ -11066,6 +11064,14 @@
        },
        {
         "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
         "v": "unmeasured"
        }
       ],
@@ -11355,7 +11361,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 197
+       "v": 196
       }
      ]
     },
@@ -12605,7 +12611,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 71
+       "v": 70
       }
      ]
     },
