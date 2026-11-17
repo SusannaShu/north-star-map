@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T22:20:48.964Z",
+ "generatedAt": "2026-11-17T22:38:04.735Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1688,10 +1688,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1949,6 +1945,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
@@ -2246,7 +2246,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2463,9 +2463,59 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "manual-map",
+   "label": "MANUAL MAP",
+   "status": "working",
+   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
+   "statusLine": "live · organized as a graph",
+   "caption": "Where \"how\" lives:",
+   "stage": "active",
+   "embed": "pages/manual-map.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-17",
+       "v": 35
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "devhub",
+   "parked": false,
+   "children": [
+    {
+     "id": "rule-saves-need-review",
+     "label": "RULE SAVES REVIEWED",
+     "status": "idle",
+     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
+     "statusLine": "in progress",
+     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
+     "stage": "active",
+     "embed": "pages/rule-saves-need-review.html",
+     "visibility": "public",
+     "links": [
+      "manual-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2671,56 +2721,6 @@
      "visibility": "public",
      "links": [
       "wearables"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "manual-map",
-   "label": "MANUAL MAP",
-   "status": "idle",
-   "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
-   "statusLine": "live · organized as a graph",
-   "caption": "Where \"how\" lives:",
-   "stage": "active",
-   "embed": "pages/manual-map.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-17",
-       "v": 35
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     }
-    ],
-    "stage": null
-   },
-   "parent": "devhub",
-   "parked": false,
-   "children": [
-    {
-     "id": "rule-saves-need-review",
-     "label": "RULE SAVES REVIEWED",
-     "status": "idle",
-     "why": "When my agents learn a new rule, it gets checked before it becomes part of the manual. This keeps bad rules from spreading.",
-     "statusLine": "in progress",
-     "caption": "When my agents learn a new rule, it gets checked before it becomes part of the manual.",
-     "stage": "active",
-     "embed": "pages/rule-saves-need-review.html",
-     "visibility": "public",
-     "links": [
-      "manual-map"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3565,11 +3565,11 @@
         },
         {
          "t": "2026-11-17",
-         "v": 5
+         "v": 1
         },
         {
          "t": "2026-11-17",
-         "v": 1
+         "v": 6
         }
        ]
       },
@@ -3925,7 +3925,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "idle",
+   "status": "working",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -4789,7 +4789,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 53
+       "v": 54
       }
      ],
      "partial": "2026-11-17",
@@ -5260,175 +5260,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "smart-glasses",
-   "label": "GLASSES",
-   "status": "working",
-   "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
-   "statusLine": "in daily use",
-   "caption": "Meta Ray-Ban Display glasses:",
-   "stage": "active",
-   "embed": "pages/smart-glasses.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-12",
-       "v": 31
-      },
-      {
-       "t": "2026-11-12",
-       "v": 0.372
-      },
-      {
-       "t": "2026-11-12",
-       "v": 37.2
-      },
-      {
-       "t": "2026-11-15",
-       "v": 50
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": {
-     "at": 2,
-     "round": 1
-    }
-   },
-   "parent": "wearables",
-   "parked": false,
-   "children": [
-    {
-     "id": "glasses-launch",
-     "label": "LAUNCH FROM THE GLASSES",
-     "status": "idle",
-     "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
-     "statusLine": "built · first install next",
-     "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
-     "stage": "active",
-     "embed": "pages/glasses-launch.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "neural-band-cursor",
-     "label": "CURSOR CONTROL",
-     "status": "idle",
-     "why": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
-     "statusLine": "works",
-     "caption": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
-     "stage": "active",
-     "embed": "pages/neural-band-cursor.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-17",
-         "v": 196
-        }
-       ]
-      },
-      "tries": [
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       }
-      ],
-      "stage": null
-     },
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mini-app-navigation",
-     "label": "GLASSES APP NAVIGATION",
-     "status": "done",
-     "why": "Making it easy to move around the small app on the smart glasses.",
-     "statusLine": "done · filed with the project",
-     "caption": "Making it easy to move around the small app on the smart glasses.",
-     "stage": "done",
-     "embed": "pages/mini-app-navigation.html",
-     "visibility": "public",
-     "links": [
-      "glasses-mittens",
-      "smart-glasses"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "research-watch",
    "label": "RESEARCH WATCH",
    "status": "idle",
@@ -5509,6 +5340,183 @@
    "parent": "mittens-hw",
    "parked": false,
    "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "smart-glasses",
+   "label": "GLASSES",
+   "status": "idle",
+   "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
+   "statusLine": "in daily use",
+   "caption": "Meta Ray-Ban Display glasses:",
+   "stage": "active",
+   "embed": "pages/smart-glasses.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 31
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0.372
+      },
+      {
+       "t": "2026-11-12",
+       "v": 37.2
+      },
+      {
+       "t": "2026-11-15",
+       "v": 50
+      },
+      {
+       "t": "2026-11-17",
+       "v": 21.2
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 2,
+     "round": 1
+    }
+   },
+   "parent": "wearables",
+   "parked": false,
+   "children": [
+    {
+     "id": "glasses-launch",
+     "label": "LAUNCH FROM THE GLASSES",
+     "status": "idle",
+     "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
+     "statusLine": "built · first install next",
+     "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
+     "stage": "active",
+     "embed": "pages/glasses-launch.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "neural-band-cursor",
+     "label": "CURSOR CONTROL",
+     "status": "idle",
+     "why": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
+     "statusLine": "works",
+     "caption": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
+     "stage": "active",
+     "embed": "pages/neural-band-cursor.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-17",
+         "v": 200
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mini-app-navigation",
+     "label": "GLASSES APP NAVIGATION",
+     "status": "done",
+     "why": "Making it easy to move around the small app on the smart glasses.",
+     "statusLine": "done · filed with the project",
+     "caption": "Making it easy to move around the small app on the smart glasses.",
+     "stage": "done",
+     "embed": "pages/mini-app-navigation.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -6369,6 +6377,14 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
       "v": "unmeasured"
      },
      {
@@ -9103,7 +9119,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 196
+       "v": 200
       }
      ]
     },
@@ -9167,7 +9183,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 196
+       "v": 200
       }
      ]
     },
@@ -10362,7 +10378,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "idle",
+   "status": "working",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -11361,7 +11377,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 196
+       "v": 200
       }
      ]
     },
