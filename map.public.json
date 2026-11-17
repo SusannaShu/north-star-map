@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T22:59:30.461Z",
+ "generatedAt": "2026-11-17T23:25:31.603Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1660,18 +1660,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1941,6 +1929,18 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      },
      {
       "d": "2026-11-17",
@@ -2234,7 +2234,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2453,7 +2453,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3557,7 +3557,7 @@
         },
         {
          "t": "2026-11-17",
-         "v": 7
+         "v": 8
         }
        ]
       },
@@ -3927,6 +3927,14 @@
       {
        "t": "2026-11-17",
        "v": 162
+      },
+      {
+       "t": "2026-11-17",
+       "v": 162
+      },
+      {
+       "t": "2026-11-17",
+       "v": 162
       }
      ]
     },
@@ -3950,6 +3958,10 @@
      {
       "d": "2026-11-17",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
@@ -4081,7 +4093,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
@@ -4781,7 +4793,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 56
+       "v": 58
       }
      ],
      "partial": "2026-11-17",
@@ -5532,7 +5544,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7264,7 +7276,7 @@
   {
    "id": "ns-talk-live-stt",
    "label": "LIVE TRANSCRIPTION",
-   "status": "working",
+   "status": "idle",
    "why": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
    "statusLine": "plan · picking a service",
    "caption": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
@@ -10757,7 +10769,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "working",
+   "status": "idle",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
