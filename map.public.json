@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T08:36:32.119Z",
+ "generatedAt": "2026-11-17T08:50:34.468Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -618,27 +618,31 @@
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
          "v": 0
         }
        ]
@@ -646,30 +650,34 @@
       "tries": [
        {
         "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        }
       ],
@@ -897,8 +905,48 @@
        "label": "measured result",
        "points": [
         {
+         "t": "2026-11-13",
+         "v": 0
+        },
+        {
+         "t": "2026-11-14",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 3
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
          "t": "2026-11-17",
          "v": 5
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
         }
        ]
       },
@@ -929,31 +977,35 @@
        },
        {
         "d": "2026-11-16",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "hurt"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "helped"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
-        "v": "no effect"
+        "d": "2026-11-17",
+        "v": "hurt"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -3438,18 +3490,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
         "v": "helped"
        },
        {
@@ -3747,6 +3787,18 @@
        {
         "d": "2026-11-17",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -3954,10 +4006,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -4267,6 +4315,10 @@
      {
       "d": "2026-11-17",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -4330,7 +4382,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 161
+       "v": 162
       }
      ]
     },
@@ -4467,62 +4519,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "brain-architecture",
-   "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
-   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
-   "statusLine": "done · cold-start drill passes nightly",
-   "caption": "Swap the model and nothing is lost:",
-   "stage": "done",
-   "embed": "pages/brain-architecture.html",
-   "visibility": "public",
-   "parent": "context-graph",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-design",
-     "label": "MITTENS = CLAUDE + SENSES",
-     "status": "idle",
-     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
-     "statusLine": "designed · new version going live",
-     "caption": "My assistant is a strong language model plus senses:",
-     "stage": "active",
-     "embed": "pages/mittens-design.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "brain-architecture-2",
-     "label": "BRAIN ARCHITECTURE",
-     "status": "idle",
-     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
-     "statusLine": "in progress",
-     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
-     "stage": "active",
-     "embed": "pages/brain-architecture-2.html",
-     "visibility": "public",
-     "links": [
-      "brain-architecture"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "one-clean-record",
-     "label": "ONE CLEAN RECORD",
-     "status": "idle",
-     "why": "I want the system to keep one clean, trusted version of every record. Each record gets a type and a tag for where it came from, so a weaker source can't overwrite a stronger one.",
-     "statusLine": "plan · design chosen",
-     "caption": "I want the system to keep one clean, trusted version of every record.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/one-clean-record.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "man-devices",
    "label": "DEVICES",
    "status": "idle",
@@ -4635,6 +4631,62 @@
      "links": [
       "devhub"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brain-architecture",
+   "label": "BRAIN ARCHITECTURE",
+   "status": "idle",
+   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
+   "statusLine": "done · cold-start drill passes nightly",
+   "caption": "Swap the model and nothing is lost:",
+   "stage": "done",
+   "embed": "pages/brain-architecture.html",
+   "visibility": "public",
+   "parent": "context-graph",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-design",
+     "label": "MITTENS = CLAUDE + SENSES",
+     "status": "idle",
+     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
+     "statusLine": "designed · new version going live",
+     "caption": "My assistant is a strong language model plus senses:",
+     "stage": "active",
+     "embed": "pages/mittens-design.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "brain-architecture-2",
+     "label": "BRAIN ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "stage": "active",
+     "embed": "pages/brain-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "one-clean-record",
+     "label": "ONE CLEAN RECORD",
+     "status": "idle",
+     "why": "I want the system to keep one clean, trusted version of every record. Each record gets a type and a tag for where it came from, so a weaker source can't overwrite a stronger one.",
+     "statusLine": "plan · design chosen",
+     "caption": "I want the system to keep one clean, trusted version of every record.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/one-clean-record.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4983,6 +5035,116 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "aurora",
+   "label": "AURORA",
+   "status": "idle",
+   "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
+   "statusLine": "first voice file built · in review",
+   "caption": "A voice layer so an agent stops sounding like AI:",
+   "stage": "active",
+   "embed": "pages/aurora.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 33
+      },
+      {
+       "t": "2026-11-12",
+       "v": 46
+      },
+      {
+       "t": "2026-11-13",
+       "v": 46
+      },
+      {
+       "t": "2026-11-14",
+       "v": 46
+      },
+      {
+       "t": "2026-11-15",
+       "v": 46
+      },
+      {
+       "t": "2026-11-16",
+       "v": 56
+      },
+      {
+       "t": "2026-11-17",
+       "v": 56
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     }
+    ],
+    "stage": {
+     "at": 3,
+     "round": 2
+    }
+   },
+   "links": [
+    "ns-talk",
+    "omi",
+    "gospel"
+   ],
+   "parent": "ns-talk",
+   "parked": false,
+   "children": [
+    {
+     "id": "aurora-market",
+     "label": "WHO ELSE DOES THIS",
+     "status": "done",
+     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
+     "statusLine": "research done",
+     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
+     "stage": "done",
+     "embed": "pages/aurora-market.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "nudge-review",
+     "label": "NUDGE REVIEW",
+     "status": "idle",
+     "why": "Every night my agents read back where I had to nudge, correct or repeat myself, group those moments by root cause, and fix them on their own. In the morning I only see the decisions that are really mine.",
+     "statusLine": "live · every night",
+     "caption": "Every night my agents read back where I had to nudge, correct or repeat myself, group those moments by root cause, and fix them on their own.",
+     "stage": "active",
+     "embed": "pages/nudge-review.html",
+     "visibility": "public",
+     "links": [
+      "mittens-self-improve"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
    "status": "idle",
@@ -5127,6 +5289,10 @@
      {
       "d": "2026-11-16",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -5554,116 +5720,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "aurora",
-   "label": "AURORA",
-   "status": "idle",
-   "why": "A voice layer so an agent stops sounding like AI: a small open model rewrites the agent's draft in my own voice, one voice per context.",
-   "statusLine": "first voice file built · in review",
-   "caption": "A voice layer so an agent stops sounding like AI:",
-   "stage": "active",
-   "embed": "pages/aurora.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
-     "points": [
-      {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 26
-      },
-      {
-       "t": "2026-11-11",
-       "v": 33
-      },
-      {
-       "t": "2026-11-12",
-       "v": 46
-      },
-      {
-       "t": "2026-11-13",
-       "v": 46
-      },
-      {
-       "t": "2026-11-14",
-       "v": 46
-      },
-      {
-       "t": "2026-11-15",
-       "v": 46
-      },
-      {
-       "t": "2026-11-16",
-       "v": 56
-      },
-      {
-       "t": "2026-11-17",
-       "v": 56
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     }
-    ],
-    "stage": {
-     "at": 3,
-     "round": 2
-    }
-   },
-   "links": [
-    "ns-talk",
-    "omi",
-    "gospel"
-   ],
-   "parent": "ns-talk",
-   "parked": false,
-   "children": [
-    {
-     "id": "aurora-market",
-     "label": "WHO ELSE DOES THIS",
-     "status": "done",
-     "why": "About twenty products learn to write like you, each keeping the voice inside its own app. The gap: separate voices per context, callable by any agent, passing a blind test.",
-     "statusLine": "research done",
-     "caption": "About twenty products learn to write like you, each keeping the voice inside its own app.",
-     "stage": "done",
-     "embed": "pages/aurora-market.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "nudge-review",
-     "label": "NUDGE REVIEW",
-     "status": "idle",
-     "why": "Every night my agents read back where I had to nudge, correct or repeat myself, group those moments by root cause, and fix them on their own. In the morning I only see the decisions that are really mine.",
-     "statusLine": "live · every night",
-     "caption": "Every night my agents read back where I had to nudge, correct or repeat myself, group those moments by root cause, and fix them on their own.",
-     "stage": "active",
-     "embed": "pages/nudge-review.html",
-     "visibility": "public",
-     "links": [
-      "mittens-self-improve"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "smart-glasses",
    "label": "GLASSES",
    "status": "idle",
@@ -5799,7 +5855,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 138
+         "v": 146
         }
        ]
       },
@@ -6036,7 +6092,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6842,7 +6898,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 33
+         "v": 31
         }
        ]
       },
@@ -7426,7 +7482,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 98
+       "v": 82
       }
      ]
     },
@@ -7810,16 +7866,7 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-17",
-       "v": 0
-      }
-     ]
-    },
+    "metric": null,
     "tries": [
      {
       "d": "2026-11-13",
@@ -8095,8 +8142,12 @@
       },
       "tries": [
        {
-        "d": "2026-11-16",
-        "v": "unmeasured"
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "hurt"
        }
       ],
       "stage": null
@@ -8897,7 +8948,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 138
+       "v": 146
       }
      ]
     },
@@ -8961,7 +9012,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 138
+       "v": 146
       }
      ]
     },
@@ -9155,7 +9206,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 64
+       "v": 68
       }
      ]
     },
@@ -10346,7 +10397,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 64
+       "v": 68
       }
      ]
     },
@@ -10394,7 +10445,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 64
+         "v": 68
         }
        ]
       },
@@ -10753,7 +10804,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 98
+         "v": 82
         }
        ]
       },
@@ -10986,30 +11037,34 @@
       },
       {
        "t": "2026-11-16",
-       "v": 0
-      },
-      {
-       "t": "2026-11-16",
-       "v": 0
-      },
-      {
-       "t": "2026-11-16",
-       "v": 1
-      },
-      {
-       "t": "2026-11-16",
-       "v": 8
-      },
-      {
-       "t": "2026-11-16",
-       "v": 8
-      },
-      {
-       "t": "2026-11-16",
        "v": 4
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 8
+      },
+      {
+       "t": "2026-11-17",
+       "v": 8
+      },
+      {
+       "t": "2026-11-17",
        "v": 4
       }
      ]
@@ -11033,31 +11088,35 @@
      },
      {
       "d": "2026-11-16",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
       "v": "helped"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
       "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "no effect"
      }
     ],
     "stage": null
@@ -11085,7 +11144,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 98
+       "v": 82
       }
      ]
     },
@@ -11151,7 +11210,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 138
+       "v": 146
       }
      ]
     },
@@ -11181,38 +11240,46 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 2
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "hurt"
        },
        {
-        "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        }
       ],
@@ -11236,38 +11303,46 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
          "v": 1
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-16",
-        "v": "hurt"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
+        "d": "2026-11-17",
+        "v": "hurt"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        }
       ],
@@ -11311,28 +11386,32 @@
        "v": 1
       },
       {
-       "t": "2026-11-16",
-       "v": 0
-      },
-      {
-       "t": "2026-11-16",
-       "v": 0
-      },
-      {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 1
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 1
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
        "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
       }
      ]
     },
@@ -11358,28 +11437,32 @@
       "v": "hurt"
      },
      {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "helped"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": null
@@ -11417,27 +11500,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
        "v": 0
       }
      ]
@@ -11456,27 +11543,31 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
      }
     ],
@@ -11544,27 +11635,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
        "v": 0
       }
      ]
@@ -11587,27 +11682,31 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
      }
     ],
@@ -11638,59 +11737,67 @@
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
        "v": 1
-      },
-      {
-       "t": "2026-11-16",
-       "v": 0
       }
      ]
     },
     "tries": [
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "hurt"
      }
     ],
     "stage": null
@@ -11816,27 +11923,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
        "v": 0
       }
      ]
@@ -11844,30 +11955,34 @@
     "tries": [
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
      }
     ],
@@ -11895,30 +12010,34 @@
      "points": [
       {
        "t": "2026-11-16",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
        "v": 1
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-16",
-       "v": 0
-      },
-      {
-       "t": "2026-11-16",
+       "t": "2026-11-17",
        "v": 0
       }
      ]
@@ -11926,30 +12045,34 @@
     "tries": [
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
+      "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
       "v": "helped"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
-      "d": "2026-11-16",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
+      "d": "2026-11-17",
       "v": "no effect"
      }
     ],
@@ -12011,6 +12134,73 @@
    "stage": "active",
    "embed": "pages/rg-north-star-loop-budget.html",
    "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-17",
+       "v": 2
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
    "parent": "mittens-digital",
    "parked": false,
    "children": [],
@@ -12240,7 +12430,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 72
+       "v": 73
       }
      ]
     },
