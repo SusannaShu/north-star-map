@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T12:30:12.507Z",
+ "generatedAt": "2026-11-17T12:44:29.477Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2196,7 +2196,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2415,7 +2415,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2626,7 +2626,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2939,6 +2939,10 @@
      {
       "d": "2026-11-17",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3158,7 +3162,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4276,7 +4280,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4342,6 +4346,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
@@ -4504,10 +4512,6 @@
      "label": "repeated complaints and catches, per day",
      "points": [
       {
-       "t": "2026-11-03",
-       "v": 0
-      },
-      {
        "t": "2026-11-04",
        "v": 0
       },
@@ -4558,8 +4562,13 @@
       {
        "t": "2026-11-16",
        "v": 82
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
       }
      ],
+     "partial": "2026-11-17",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -4662,10 +4671,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -4979,6 +4984,10 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5171,7 +5180,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5746,7 +5755,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "working",
+   "status": "idle",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -6996,7 +7005,7 @@
   {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
    "statusLine": "live",
    "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
@@ -7009,7 +7018,7 @@
     {
      "id": "mw-calls",
      "label": "CALLS AS MITTENS",
-     "status": "idle",
+     "status": "working",
      "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
      "statusLine": "live · Mittens answers calls first",
      "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
@@ -7315,7 +7324,7 @@
   {
    "id": "mittens-architecture",
    "label": "MITTENS ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
    "statusLine": "migration underway · first steps live",
    "caption": "Personal data moves off the shared cloud backend onto a small home server:",
@@ -10079,7 +10088,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -10165,6 +10174,10 @@
      {
       "d": "2026-11-16",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -10958,7 +10971,7 @@
   {
    "id": "mittens-2",
    "label": "MITTENS",
-   "status": "done",
+   "status": "working",
    "why": "This is the running conversation where I shape my assistant and how it works.",
    "statusLine": "in progress",
    "caption": "This is the running conversation where I shape my assistant and how it works.",
