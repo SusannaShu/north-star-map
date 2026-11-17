@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T05:41:51.512Z",
+ "generatedAt": "2026-11-17T06:17:40.831Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -424,12 +424,10 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/susu-map.html",
    "visibility": "public",
    "goalStory": {
@@ -829,7 +827,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -938,50 +936,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1203,10 +1157,6 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "no effect"
      },
      {
       "d": "2026-11-16",
@@ -1255,6 +1205,54 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2792,7 +2790,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -3155,131 +3153,131 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3624,7 +3622,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3867,7 +3865,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3880,20 +3878,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-14",
+         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3905,10 +3891,6 @@
         },
         {
          "t": "2026-11-15",
-         "v": 14
-        },
-        {
-         "t": "2026-11-15",
          "v": 0
         },
         {
@@ -3917,39 +3899,55 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 3
         },
         {
          "t": "2026-11-15",
-         "v": 9
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 7
+         "v": 2
         },
         {
          "t": "2026-11-16",
          "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
+        },
+        {
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 6
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
+        },
+        {
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
         },
         {
          "t": "2026-11-17",
@@ -3962,26 +3960,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
        {
         "d": "2026-11-15",
         "v": "helped"
@@ -4231,10 +4209,6 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
         "d": "2026-11-17",
         "v": "no effect"
        },
@@ -4265,6 +4239,30 @@
        {
         "d": "2026-11-17",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
        },
        {
         "d": "2026-11-17",
