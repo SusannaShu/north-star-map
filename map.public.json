@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T18:29:11.302Z",
+ "generatedAt": "2026-11-17T19:29:57.998Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -373,7 +373,7 @@
   {
    "id": "fashion",
    "label": "FASHION FUTURE",
-   "status": "working",
+   "status": "idle",
    "why": "A creative economy platform -- authenticity + creativity. Monetize creative experience, license designs, and see them in a person's life.",
    "statusLine": "planning · sourcing numbers for tests",
    "caption": "A creative economy platform -- authenticity + creativity.",
@@ -497,7 +497,7 @@
   {
    "id": "marketing",
    "label": "MARKETING",
-   "status": "working",
+   "status": "idle",
    "why": "Spread the vision and actually sell: an agent content pipeline that researches trends, writes, generates, checks and publishes -- being redesigned around real sales and honest accounts.",
    "statusLine": "drafts ready · none published yet",
    "caption": "Spread the vision and actually sell:",
@@ -1362,6 +1362,185 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "daily-content",
+   "label": "DAILY CONTENT",
+   "status": "idle",
+   "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
+   "statusLine": "nightly · offered each morning",
+   "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
+   "stage": "active",
+   "embed": "pages/daily-content.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0.69
+      },
+      {
+       "t": "2026-11-16",
+       "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "confounded"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "hurt"
+     }
+    ],
+    "stage": {
+     "at": 4,
+     "round": 1
+    }
+   },
+   "links": [
+    "viral-machine",
+    "smart-glasses"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "content-cleanup",
+     "label": "CONTENT CLEAN-UP",
+     "status": "idle",
+     "why": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
+     "statusLine": "proposal ready · waiting on my yes",
+     "caption": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/content-cleanup.html",
+     "visibility": "public",
+     "links": [
+      "housekeeping"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-icon",
+     "label": "MITTENS ICON",
+     "status": "idle",
+     "why": "I am redrawing the Mittens icon to make it better. Three redraws are ready for me to pick from.",
+     "statusLine": "three redraws ready · waiting on my pick",
+     "caption": "I am redrawing the Mittens icon to make it better.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/mittens-icon.html",
+     "visibility": "public",
+     "links": [
+      "brand-style",
+      "today-page-north-star-icon"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "about-mittens",
+     "label": "ABOUT MITTENS",
+     "status": "idle",
+     "why": "I am writing down who I need Mittens to be: an assistant, a coach and a thoughtful teammate. Every night it adds notes on how it can do better.",
+     "statusLine": "draft · waiting on my yes",
+     "caption": "I am writing down who I need Mittens to be:",
+     "stage": "active",
+     "embed": "pages/about-mittens.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "mittens",
    "label": "MITTENS",
    "status": "working",
@@ -1402,7 +1581,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 11
+       "v": 12
       }
      ],
      "partial": "2026-11-16",
@@ -1441,7 +1620,7 @@
         1,
         17,
         40,
-        4
+        5
        ]
       },
       {
@@ -1817,185 +1996,6 @@
    "embedCaption": "case study"
   },
   {
-   "id": "daily-content",
-   "label": "DAILY CONTENT",
-   "status": "idle",
-   "why": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
-   "statusLine": "nightly · offered each morning",
-   "caption": "Every night agents cut the best real moments of the day into one short vertical video, offered in the morning; nothing is posted without my yes.",
-   "stage": "active",
-   "embed": "pages/daily-content.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-13",
-       "v": 0
-      },
-      {
-       "t": "2026-11-15",
-       "v": 0.69
-      },
-      {
-       "t": "2026-11-16",
-       "v": 1
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "confounded"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "hurt"
-     }
-    ],
-    "stage": {
-     "at": 4,
-     "round": 1
-    }
-   },
-   "links": [
-    "viral-machine",
-    "smart-glasses"
-   ],
-   "parent": "mittens",
-   "parked": false,
-   "children": [
-    {
-     "id": "content-cleanup",
-     "label": "CONTENT CLEAN-UP",
-     "status": "idle",
-     "why": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
-     "statusLine": "proposal ready · waiting on my yes",
-     "caption": "Raw video material piles up fast, so I'm adding a rule that clears it out once a cut is finished.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/content-cleanup.html",
-     "visibility": "public",
-     "links": [
-      "housekeeping"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-icon",
-     "label": "MITTENS ICON",
-     "status": "idle",
-     "why": "I am redrawing the Mittens icon to make it better. Three redraws are ready for me to pick from.",
-     "statusLine": "three redraws ready · waiting on my pick",
-     "caption": "I am redrawing the Mittens icon to make it better.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/mittens-icon.html",
-     "visibility": "public",
-     "links": [
-      "brand-style",
-      "today-page-north-star-icon"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "about-mittens",
-     "label": "ABOUT MITTENS",
-     "status": "idle",
-     "why": "I am writing down who I need Mittens to be: an assistant, a coach and a thoughtful teammate. Every night it adds notes on how it can do better.",
-     "statusLine": "draft · waiting on my yes",
-     "caption": "I am writing down who I need Mittens to be:",
-     "stage": "active",
-     "embed": "pages/about-mittens.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "robot-skin",
    "label": "ROBOT SKIN",
    "status": "idle",
@@ -2277,7 +2277,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2707,7 +2707,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2721,7 +2721,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 35
+       "v": 34
       }
      ]
     },
@@ -3515,14 +3515,6 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-16",
-         "v": 2
-        },
-        {
          "t": "2026-11-17",
          "v": 1
         },
@@ -3533,10 +3525,6 @@
         {
          "t": "2026-11-17",
          "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 8
         },
         {
          "t": "2026-11-17",
@@ -3593,20 +3581,24 @@
         {
          "t": "2026-11-17",
          "v": 4
+        },
+        {
+         "t": "2026-11-17",
+         "v": 9
+        },
+        {
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
         "v": "unmeasured"
        },
        {
@@ -3718,10 +3710,6 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
         "d": "2026-11-17",
         "v": "no effect"
        },
@@ -3759,10 +3747,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
         "v": "helped"
        },
        {
@@ -3856,10 +3840,6 @@
        {
         "d": "2026-11-17",
         "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "no effect"
        },
        {
         "d": "2026-11-17",
@@ -3916,6 +3896,26 @@
        {
         "d": "2026-11-17",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4108,7 +4108,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
@@ -4381,7 +4381,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4509,7 +4509,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4808,7 +4808,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 37
+       "v": 44
       }
      ],
      "partial": "2026-11-17",
@@ -4912,10 +4912,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-16",
       "v": "unmeasured"
@@ -5231,6 +5227,10 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5989,7 +5989,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 158
+         "v": 168
         }
        ]
       },
@@ -9108,7 +9108,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 158
+       "v": 168
       }
      ]
     },
@@ -9172,7 +9172,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 158
+       "v": 168
       }
      ]
     },
@@ -9366,7 +9366,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 67
+       "v": 65
       }
      ]
     },
@@ -9757,7 +9757,7 @@
   {
    "id": "viral-machine",
    "label": "VIRAL MACHINE",
-   "status": "working",
+   "status": "idle",
    "why": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots. Formats like costume swap and world swap, with consistent faces across clips.",
    "statusLine": "research under way · nothing posted",
    "caption": "Why posts go viral, read frame by frame -- a reference that looks like one take is often seven shots.",
@@ -10031,7 +10031,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -10593,7 +10593,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 67
+       "v": 65
       }
      ]
     },
@@ -10641,7 +10641,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 67
+         "v": 65
         }
        ]
       },
@@ -10758,7 +10758,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "idle",
+   "status": "working",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
@@ -11406,7 +11406,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 158
+       "v": 168
       }
      ]
     },
@@ -12405,10 +12405,12 @@
   {
    "id": "sheyou",
    "label": "SHEYOU",
-   "status": "working",
+   "status": "idle",
    "why": "Rent, buy and license fashion -- the storefront of the creative economy. Designed, built and shipped solo.",
    "statusLine": "live",
    "caption": "Rent, buy and license fashion -- the storefront of the creative economy.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/sheyou.html",
    "visibility": "public",
    "goalStory": {
@@ -12477,6 +12479,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
       "v": "unmeasured"
      },
      {
