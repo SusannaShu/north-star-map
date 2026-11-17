@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T19:29:57.998Z",
+ "generatedAt": "2026-11-17T20:25:13.921Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -506,24 +506,44 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "values",
-     "label": "measured result",
+     "kind": "score",
+     "label": "improve-loop score",
      "points": [
       {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
        "t": "2026-11-11",
-       "v": 0
+       "v": 37
+      },
+      {
+       "t": "2026-11-12",
+       "v": 57
+      },
+      {
+       "t": "2026-11-13",
+       "v": 57
+      },
+      {
+       "t": "2026-11-14",
+       "v": 57
       },
       {
        "t": "2026-11-15",
-       "v": 0
+       "v": 32
       },
       {
-       "t": "2026-11-15",
-       "v": 0
+       "t": "2026-11-16",
+       "v": 32
       },
       {
-       "t": "2026-11-15",
-       "v": 0
+       "t": "2026-11-17",
+       "v": 34
       }
      ]
     },
@@ -562,10 +582,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -579,6 +595,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -935,39 +955,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-12",
-       "v": 3
-      },
-      {
-       "t": "2026-11-12",
-       "v": 0
-      },
-      {
-       "t": "2026-11-12",
-       "v": 0
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0
-      },
-      {
-       "t": "2026-11-14",
-       "v": 131
-      },
-      {
-       "t": "2026-11-14",
-       "v": 0
-      },
-      {
-       "t": "2026-11-15",
-       "v": 3.4
-      },
-      {
-       "t": "2026-11-15",
+       "t": "2026-11-17",
        "v": 0
       }
      ]
@@ -1039,10 +1027,10 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
+      "v": "helped"
      },
      {
-      "d": "2026-11-15",
+      "d": "2026-11-17",
       "v": "helped"
      }
     ],
@@ -1581,7 +1569,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 12
+       "v": 14
       }
      ],
      "partial": "2026-11-16",
@@ -1620,7 +1608,7 @@
         1,
         17,
         40,
-        5
+        7
        ]
       },
       {
@@ -1656,18 +1644,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1956,15 +1932,27 @@
      },
      {
       "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
       "v": "helped"
      },
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
      },
      {
       "d": "2026-11-17",
@@ -2235,25 +2223,6 @@
    "stage": "active",
    "embed": "pages/skin-build.html",
    "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-17",
-       "v": 0
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     }
-    ],
-    "stage": null
-   },
    "parent": "robot-skin",
    "parked": false,
    "children": [],
@@ -3516,22 +3485,6 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 1
-        },
-        {
-         "t": "2026-11-17",
-         "v": 1
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
          "v": 0
         },
         {
@@ -3576,10 +3529,6 @@
         },
         {
          "t": "2026-11-17",
-         "v": 5
-        },
-        {
-         "t": "2026-11-17",
          "v": 4
         },
         {
@@ -3593,35 +3542,31 @@
         {
          "t": "2026-11-17",
          "v": 1
+        },
+        {
+         "t": "2026-11-17",
+         "v": 6
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
         "d": "2026-11-16",
         "v": "helped"
        },
@@ -3875,18 +3820,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-17",
         "v": "no effect"
        },
        {
@@ -3916,6 +3849,42 @@
        {
         "d": "2026-11-17",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -4381,7 +4350,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4509,7 +4478,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4808,7 +4777,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 44
+       "v": 49
       }
      ],
      "partial": "2026-11-17",
@@ -4846,7 +4815,7 @@
         4,
         23,
         82,
-        4
+        5
        ]
       },
       {
@@ -4894,7 +4863,7 @@
         3,
         16,
         46,
-        13
+        15
        ]
       },
       {
@@ -5182,55 +5151,55 @@
      },
      {
       "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
      }
     ],
     "stage": {
@@ -5421,12 +5390,12 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-16",
-      "v": "no effect"
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
-      "v": "unmeasured"
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -5989,7 +5958,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 168
+         "v": 197
         }
        ]
       },
@@ -6231,7 +6200,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -8382,32 +8351,40 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "values",
-     "label": "measured result",
+     "kind": "score",
+     "label": "improve-loop score",
      "points": [
       {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
        "t": "2026-11-11",
-       "v": 0
+       "v": 60
+      },
+      {
+       "t": "2026-11-12",
+       "v": 67
       },
       {
        "t": "2026-11-13",
-       "v": 0
+       "v": 79
       },
       {
-       "t": "2026-11-13",
-       "v": 0
+       "t": "2026-11-14",
+       "v": 79
       },
       {
-       "t": "2026-11-13",
-       "v": 0
+       "t": "2026-11-15",
+       "v": 78
       },
       {
-       "t": "2026-11-13",
-       "v": 4
+       "t": "2026-11-16",
+       "v": 78
       },
       {
-       "t": "2026-11-13",
-       "v": 1.9
+       "t": "2026-11-17",
+       "v": 80
       }
      ]
     },
@@ -8457,8 +8434,8 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-15",
-      "v": "unmeasured"
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -9108,7 +9085,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 168
+       "v": 197
       }
      ]
     },
@@ -9172,7 +9149,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 168
+       "v": 197
       }
      ]
     },
@@ -9366,7 +9343,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 65
+       "v": 66
       }
      ]
     },
@@ -10031,7 +10008,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "working",
+   "status": "done",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -10062,6 +10039,10 @@
       {
        "t": "2026-11-17",
        "v": 33
+      },
+      {
+       "t": "2026-11-17",
+       "v": 5
       }
      ]
     },
@@ -10133,6 +10114,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
@@ -10593,7 +10578,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 65
+       "v": 66
       }
      ]
     },
@@ -10641,7 +10626,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 65
+         "v": 66
         }
        ]
       },
@@ -11220,48 +11205,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-13",
+       "t": "2026-11-17",
        "v": 7
-      },
-      {
-       "t": "2026-11-14",
-       "v": 0
-      },
-      {
-       "t": "2026-11-15",
-       "v": 1
-      },
-      {
-       "t": "2026-11-16",
-       "v": 4
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 1
-      },
-      {
-       "t": "2026-11-17",
-       "v": 8
-      },
-      {
-       "t": "2026-11-17",
-       "v": 8
-      },
-      {
-       "t": "2026-11-17",
-       "v": 4
       }
      ]
     },
@@ -11277,10 +11222,6 @@
      {
       "d": "2026-11-15",
       "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
      },
      {
       "d": "2026-11-16",
@@ -11309,6 +11250,10 @@
      {
       "d": "2026-11-17",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      },
      {
       "d": "2026-11-17",
@@ -11406,7 +11351,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 168
+       "v": 197
       }
      ]
     },
@@ -12516,24 +12461,44 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "values",
-     "label": "measured result",
+     "kind": "score",
+     "label": "improve-loop score",
      "points": [
       {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 26
+      },
+      {
+       "t": "2026-11-11",
+       "v": 43
+      },
+      {
        "t": "2026-11-12",
-       "v": 0
+       "v": 43
       },
       {
        "t": "2026-11-13",
-       "v": 0
+       "v": 50
+      },
+      {
+       "t": "2026-11-14",
+       "v": 50
       },
       {
        "t": "2026-11-15",
-       "v": 0
+       "v": 50
       },
       {
        "t": "2026-11-16",
-       "v": 0
+       "v": 53
+      },
+      {
+       "t": "2026-11-17",
+       "v": 56
       }
      ]
     },
@@ -12548,10 +12513,6 @@
      },
      {
       "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -12577,6 +12538,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -12636,7 +12601,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 72
+       "v": 71
       }
      ]
     },
