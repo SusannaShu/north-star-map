@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T04:13:32.322Z",
+ "generatedAt": "2026-11-17T05:04:50.152Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -54,6 +54,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 60
+      },
+      {
+       "t": "2026-11-17",
        "v": 60
       }
      ]
@@ -178,6 +182,10 @@
         {
          "t": "2026-11-16",
          "v": 60
+        },
+        {
+         "t": "2026-11-17",
+         "v": 60
         }
        ]
       },
@@ -238,6 +246,10 @@
         },
         {
          "t": "2026-11-16",
+         "v": 51
+        },
+        {
+         "t": "2026-11-17",
          "v": 51
         }
        ]
@@ -455,6 +467,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 39
+      },
+      {
+       "t": "2026-11-17",
        "v": 39
       }
      ]
@@ -813,7 +829,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -851,7 +867,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 6
+       "v": 7
       }
      ],
      "partial": "2026-11-16",
@@ -890,7 +906,7 @@
         1,
         17,
         40,
-        1
+        2
        ]
       },
       {
@@ -2068,6 +2084,10 @@
       {
        "t": "2026-11-16",
        "v": 71
+      },
+      {
+       "t": "2026-11-17",
+       "v": 71
       }
      ]
     },
@@ -2567,6 +2587,10 @@
       {
        "t": "2026-11-16",
        "v": 44
+      },
+      {
+       "t": "2026-11-17",
+       "v": 44
       }
      ]
     },
@@ -2842,10 +2866,9 @@
       },
       {
        "t": "2026-11-16",
-       "v": 70
+       "v": 71
       }
      ],
-     "partial": "2026-11-16",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -2946,10 +2969,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
      {
       "d": "2026-11-15",
       "v": "unmeasured"
@@ -3233,6 +3252,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
@@ -3361,6 +3384,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 44
+      },
+      {
+       "t": "2026-11-17",
        "v": 44
       }
      ]
@@ -3605,7 +3632,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3848,7 +3875,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3943,18 +3970,6 @@
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
        {
         "d": "2026-11-15",
         "v": "helped"
@@ -4262,6 +4277,18 @@
        {
         "d": "2026-11-17",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4973,6 +5000,10 @@
       {
        "t": "2026-11-16",
        "v": 46
+      },
+      {
+       "t": "2026-11-17",
+       "v": 46
       }
      ]
     },
@@ -5572,6 +5603,10 @@
       {
        "t": "2026-11-16",
        "v": 56
+      },
+      {
+       "t": "2026-11-17",
+       "v": 56
       }
      ]
     },
@@ -6047,6 +6082,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 38
+      },
+      {
+       "t": "2026-11-17",
        "v": 38
       }
      ]
@@ -7157,6 +7196,10 @@
         {
          "t": "2026-11-16",
          "v": 30
+        },
+        {
+         "t": "2026-11-17",
+         "v": 30
         }
        ]
       },
@@ -7221,6 +7264,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 55
+      },
+      {
+       "t": "2026-11-17",
        "v": 55
       }
      ]
@@ -7877,6 +7924,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 51
+      },
+      {
+       "t": "2026-11-17",
        "v": 51
       }
      ]
@@ -10577,6 +10628,10 @@
       {
        "t": "2026-11-16",
        "v": 43
+      },
+      {
+       "t": "2026-11-17",
+       "v": 43
       }
      ]
     },
@@ -10708,6 +10763,10 @@
         },
         {
          "t": "2026-11-16",
+         "v": 30
+        },
+        {
+         "t": "2026-11-17",
          "v": 30
         }
        ]
@@ -11913,6 +11972,10 @@
       },
       {
        "t": "2026-11-16",
+       "v": 57
+      },
+      {
+       "t": "2026-11-17",
        "v": 57
       }
      ]
