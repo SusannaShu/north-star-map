@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T12:44:29.477Z",
+ "generatedAt": "2026-11-17T13:45:22.862Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2828,6 +2828,14 @@
       {
        "t": "2026-11-17",
        "v": 4.68
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 7.08
       }
      ]
     },
@@ -2943,6 +2951,14 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3491,19 +3507,15 @@
         },
         {
          "t": "2026-11-17",
-         "v": 7
+         "v": 0
         },
         {
          "t": "2026-11-17",
-         "v": 0
+         "v": 8
         }
        ]
       },
       "tries": [
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
        {
         "d": "2026-11-15",
         "v": "helped"
@@ -3794,10 +3806,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-17",
         "v": "helped"
        },
        {
@@ -3819,6 +3827,14 @@
        {
         "d": "2026-11-17",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -4565,7 +4581,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 0
+       "v": 2
       }
      ],
      "partial": "2026-11-17",
@@ -7005,7 +7021,7 @@
   {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
    "statusLine": "live",
    "caption": "My agent can answer calls, place calls for me, and call me when it can't see what it needs.",
@@ -7018,7 +7034,7 @@
     {
      "id": "mw-calls",
      "label": "CALLS AS MITTENS",
-     "status": "working",
+     "status": "idle",
      "why": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
      "statusLine": "live · Mittens answers calls first",
      "caption": "Every call from Mittens shows as Mittens, with its icon, on the phone and the glasses.",
@@ -7324,7 +7340,7 @@
   {
    "id": "mittens-architecture",
    "label": "MITTENS ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Personal data moves off the shared cloud backend onto a small home server: one SQLite database behind a private API, an offline copy on the phone with an outbox, event-driven sync, device tokens instead of bundled secrets, encrypted off-site backup.",
    "statusLine": "migration underway · first steps live",
    "caption": "Personal data moves off the shared cloud backend onto a small home server:",
@@ -7366,7 +7382,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 55
+       "v": 58
       }
      ]
     },
@@ -7402,6 +7418,10 @@
      {
       "d": "2026-11-13",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -7665,7 +7685,7 @@
   {
    "id": "talk-short-chats",
    "label": "SHORT CHATS",
-   "status": "idle",
+   "status": "working",
    "why": "One-off chats that don't belong to a bigger topic yet, each keeping its own thread.",
    "statusLine": "edited this week",
    "caption": "One-off chats that don't belong to a bigger topic yet, each keeping its own thread.",
@@ -8409,7 +8429,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -10971,7 +10991,7 @@
   {
    "id": "mittens-2",
    "label": "MITTENS",
-   "status": "working",
+   "status": "done",
    "why": "This is the running conversation where I shape my assistant and how it works.",
    "statusLine": "in progress",
    "caption": "This is the running conversation where I shape my assistant and how it works.",
