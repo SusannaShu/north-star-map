@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T07:51:25.196Z",
+ "generatedAt": "2026-11-17T08:36:32.119Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -422,150 +422,6 @@
    "embedCaption": "case study"
   },
   {
-   "id": "susu-map",
-   "label": "SUSU MAP",
-   "status": "working",
-   "why": "Community hyper-local resources -- the free city, mapped for everyone.",
-   "statusLine": "planned",
-   "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
-   "embed": "pages/susu-map.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
-     "points": [
-      {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 28
-      },
-      {
-       "t": "2026-11-11",
-       "v": 28
-      },
-      {
-       "t": "2026-11-12",
-       "v": 28
-      },
-      {
-       "t": "2026-11-13",
-       "v": 37
-      },
-      {
-       "t": "2026-11-14",
-       "v": 41
-      },
-      {
-       "t": "2026-11-15",
-       "v": 39
-      },
-      {
-       "t": "2026-11-16",
-       "v": 39
-      },
-      {
-       "t": "2026-11-17",
-       "v": 39
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": {
-     "at": 1,
-     "round": 1
-    }
-   },
-   "codeRepos": [
-    {
-     "vis": "public",
-     "name": "susu-map-display",
-     "url": "https://github.com/SusannaShu/susu-map-display"
-    },
-    {
-     "vis": "private"
-    }
-   ],
-   "parked": false,
-   "children": [
-    {
-     "id": "susu-map-pin-accuracy",
-     "label": "MAP PIN ACCURACY",
-     "status": "done",
-     "why": "I am making the pins on my map land exactly where they belong.",
-     "statusLine": "in progress",
-     "caption": "I am making the pins on my map land exactly where they belong.",
-     "stage": "active",
-     "embed": "pages/susu-map-pin-accuracy.html",
-     "visibility": "public",
-     "links": [
-      "susu-map"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "susu-map-daily-posts",
-     "label": "SUSU MAP DAILY POSTS",
-     "status": "done",
-     "why": "I want a daily post about what's on the map, so people have a reason to come back to it.",
-     "statusLine": "just started",
-     "caption": "I want a daily post about what's on the map, so people have a reason to come back to it.",
-     "stage": "active",
-     "embed": "pages/susu-map-daily-posts.html",
-     "visibility": "public",
-     "links": [
-      "susu-map"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "feature-crowd-check",
-     "label": "CROWD CHECK",
-     "status": "idle",
-     "why": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
-     "statusLine": "built · map chip sketched",
-     "caption": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
-     "stage": "active",
-     "embed": "pages/feature-crowd-check.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "marketing",
    "label": "MARKETING",
    "status": "idle",
@@ -819,6 +675,302 @@
       ],
       "stage": null
      },
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "susu-map",
+   "label": "SUSU MAP",
+   "status": "idle",
+   "why": "Community hyper-local resources -- the free city, mapped for everyone.",
+   "statusLine": "planned",
+   "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/susu-map.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 28
+      },
+      {
+       "t": "2026-11-12",
+       "v": 28
+      },
+      {
+       "t": "2026-11-13",
+       "v": 37
+      },
+      {
+       "t": "2026-11-14",
+       "v": 41
+      },
+      {
+       "t": "2026-11-15",
+       "v": 39
+      },
+      {
+       "t": "2026-11-16",
+       "v": 39
+      },
+      {
+       "t": "2026-11-17",
+       "v": 39
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 1
+    }
+   },
+   "codeRepos": [
+    {
+     "vis": "public",
+     "name": "susu-map-display",
+     "url": "https://github.com/SusannaShu/susu-map-display"
+    },
+    {
+     "vis": "private"
+    }
+   ],
+   "parked": false,
+   "children": [
+    {
+     "id": "susu-map-pin-accuracy",
+     "label": "MAP PIN ACCURACY",
+     "status": "done",
+     "why": "I am making the pins on my map land exactly where they belong.",
+     "statusLine": "in progress",
+     "caption": "I am making the pins on my map land exactly where they belong.",
+     "stage": "active",
+     "embed": "pages/susu-map-pin-accuracy.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "susu-map-daily-posts",
+     "label": "SUSU MAP DAILY POSTS",
+     "status": "done",
+     "why": "I want a daily post about what's on the map, so people have a reason to come back to it.",
+     "statusLine": "just started",
+     "caption": "I want a daily post about what's on the map, so people have a reason to come back to it.",
+     "stage": "active",
+     "embed": "pages/susu-map-daily-posts.html",
+     "visibility": "public",
+     "links": [
+      "susu-map"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-crowd-check",
+     "label": "CROWD CHECK",
+     "status": "idle",
+     "why": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
+     "statusLine": "built · map chip sketched",
+     "caption": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
+     "stage": "active",
+     "embed": "pages/feature-crowd-check.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "mittens-daily",
+   "label": "DAY & CALENDAR",
+   "status": "idle",
+   "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
+   "statusLine": "active",
+   "caption": "Mittens as the direct interface:",
+   "stage": "active",
+   "embed": "pages/mittens-daily.html",
+   "visibility": "public",
+   "links": [
+    "mittens"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "proactive-rules",
+     "label": "PROACTIVE RULES",
+     "status": "done",
+     "why": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
+     "statusLine": "merged into a newer feature",
+     "caption": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
+     "stage": "done",
+     "embed": "pages/proactive-rules.html",
+     "visibility": "public",
+     "links": [
+      "mittens-proactive",
+      "context-graph",
+      "map-upkeep",
+      "mw-blind",
+      "mw-calls"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "how-about-the-question-threads",
+     "label": "TEST THREAD",
+     "status": "done",
+     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
+     "statusLine": "merged · test leftover",
+     "caption": "A test run briefly made this thread dot.",
+     "stage": "done",
+     "embed": "pages/how-about-the-question-threads.html",
+     "visibility": "public",
+     "links": [
+      "mittens-daily",
+      "outing-thread"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-reminders-match-her-day",
+     "label": "REMINDERS KNOW WHAT'S DONE",
+     "status": "idle",
+     "why": "A reminder should never tell me to do something I already did. I turned this rule into a goal that counts misfires, and the target is none.",
+     "statusLine": "met · no misfires lately",
+     "caption": "A reminder should never tell me to do something I already did.",
+     "stage": "active",
+     "embed": "pages/rg-reminders-match-her-day.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-17",
+         "v": 5
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-13",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-13",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-14",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-15",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "hurt"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-16",
+        "v": "helped"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "meeting-notes",
+     "label": "MEETING NOTES",
+     "status": "idle",
+     "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
+     "statusLine": "installed",
+     "caption": "\"Start recording\" on the glasses:",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/meeting-notes.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -1208,51 +1360,51 @@
      },
      {
       "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
      }
     ],
     "stage": {
@@ -1278,152 +1430,6 @@
    "parked": false,
    "children": [],
    "embedCaption": "case study"
-  },
-  {
-   "id": "mittens-daily",
-   "label": "DAY & CALENDAR",
-   "status": "idle",
-   "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
-   "statusLine": "active",
-   "caption": "Mittens as the direct interface:",
-   "stage": "active",
-   "embed": "pages/mittens-daily.html",
-   "visibility": "public",
-   "links": [
-    "mittens"
-   ],
-   "parent": "mittens",
-   "parked": false,
-   "children": [
-    {
-     "id": "proactive-rules",
-     "label": "PROACTIVE RULES",
-     "status": "done",
-     "why": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
-     "statusLine": "merged into a newer feature",
-     "caption": "When Mittens should speak first, call instead of notify, and check the right apps before asking -- enough context, never everything.",
-     "stage": "done",
-     "embed": "pages/proactive-rules.html",
-     "visibility": "public",
-     "links": [
-      "mittens-proactive",
-      "context-graph",
-      "map-upkeep",
-      "mw-blind",
-      "mw-calls"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "how-about-the-question-threads",
-     "label": "TEST THREAD",
-     "status": "done",
-     "why": "A test run briefly made this thread dot. It was merged back into its parent.",
-     "statusLine": "merged · test leftover",
-     "caption": "A test run briefly made this thread dot.",
-     "stage": "done",
-     "embed": "pages/how-about-the-question-threads.html",
-     "visibility": "public",
-     "links": [
-      "mittens-daily",
-      "outing-thread"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "rg-reminders-match-her-day",
-     "label": "REMINDERS KNOW WHAT'S DONE",
-     "status": "idle",
-     "why": "A reminder should never tell me to do something I already did. I turned this rule into a goal that counts misfires, and the target is none.",
-     "statusLine": "met · no misfires lately",
-     "caption": "A reminder should never tell me to do something I already did.",
-     "stage": "active",
-     "embed": "pages/rg-reminders-match-her-day.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-17",
-         "v": 5
-        }
-       ]
-      },
-      "tries": [
-       {
-        "d": "2026-11-13",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-13",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-14",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "hurt"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "helped"
-       }
-      ],
-      "stage": null
-     },
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "meeting-notes",
-     "label": "MEETING NOTES",
-     "status": "idle",
-     "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
-     "statusLine": "installed",
-     "caption": "\"Start recording\" on the glasses:",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/meeting-notes.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "mittens-hw",
@@ -2788,544 +2794,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "northstar",
-   "label": "NORTH STAR MAP",
-   "status": "working",
-   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
-   "statusLine": "active · used every day",
-   "caption": "The map itself:",
-   "stage": "active",
-   "embed": "pages/northstar.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "repeats",
-     "label": "repeated complaints and catches, per day",
-     "points": [
-      {
-       "t": "2026-11-03",
-       "v": 0
-      },
-      {
-       "t": "2026-11-04",
-       "v": 0
-      },
-      {
-       "t": "2026-11-05",
-       "v": 7
-      },
-      {
-       "t": "2026-11-06",
-       "v": 6
-      },
-      {
-       "t": "2026-11-07",
-       "v": 0
-      },
-      {
-       "t": "2026-11-08",
-       "v": 3
-      },
-      {
-       "t": "2026-11-09",
-       "v": 17
-      },
-      {
-       "t": "2026-11-10",
-       "v": 25
-      },
-      {
-       "t": "2026-11-11",
-       "v": 32
-      },
-      {
-       "t": "2026-11-12",
-       "v": 47
-      },
-      {
-       "t": "2026-11-13",
-       "v": 32
-      },
-      {
-       "t": "2026-11-14",
-       "v": 43
-      },
-      {
-       "t": "2026-11-15",
-       "v": 98
-      },
-      {
-       "t": "2026-11-16",
-       "v": 71
-      }
-     ],
-     "perPoint": [
-      {
-       "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
-       "weekly": [
-        0,
-        0,
-        0,
-        0,
-        4,
-        26,
-        0
-       ]
-      },
-      {
-       "text": "A recursive self-improve loop pushes each goal until it is met: it measures, tries other methods, catches a stall and pivots, and never stops at one fix.",
-       "weekly": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        42,
-        1
-       ]
-      },
-      {
-       "text": "She is out of the loop: one data point, needed only for physical work, money, an access she alone has, or an outward yes.",
-       "weekly": [
-        0,
-        6,
-        9,
-        4,
-        23,
-        82,
-        4
-       ]
-      },
-      {
-       "text": "Every design is grounded: researched beyond web search, learned from what others do well, and run as a measured experiment when evidence is thin.",
-       "weekly": [
-        0,
-        1,
-        0,
-        1,
-        3,
-        39,
-        1
-       ]
-      },
-      {
-       "text": "Her complaints are user feedback: the system finds the cause at the design level and fixes it there, and an overseer catches faults before she does.",
-       "weekly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        33,
-        4
-       ]
-      },
-      {
-       "text": "The goal, what is going on and what everyone tried are visible on the map, for her and for every agent, so nobody reinvents the wheel.",
-       "weekly": [
-        0,
-        5,
-        6,
-        5,
-        27,
-        19,
-        0
-       ]
-      },
-      {
-       "text": "Every agent retrieves only the context its work needs, knows when it can find it itself and when to ask.",
-       "weekly": [
-        0,
-        0,
-        4,
-        3,
-        16,
-        46,
-        12
-       ]
-      },
-      {
-       "text": "Give it any goal and it improves to that goal; when it is reliable, it is open-sourced to benefit everyone.",
-       "weekly": [
-        0,
-        2,
-        3,
-        2,
-        1,
-        3,
-        0
-       ]
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     }
-    ],
-    "stage": {
-     "at": 0,
-     "round": 7
-    }
-   },
-   "codeRepos": [
-    {
-     "vis": "private"
-    }
-   ],
-   "parked": false,
-   "children": [
-    {
-     "id": "grand-threads",
-     "label": "GRAND THREADS",
-     "status": "idle",
-     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
-     "statusLine": "built · chat threads tied to dots",
-     "caption": "Each dot on my map is now a chat thread.",
-     "stage": "active",
-     "embed": "pages/grand-threads.html",
-     "visibility": "public",
-     "links": [
-      "work-in-threads"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "north-star-map",
-     "label": "NORTH STAR MAP",
-     "status": "idle",
-     "why": "This is the working thread for the map that holds my projects and agents.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for the map that holds my projects and agents.",
-     "stage": "active",
-     "embed": "pages/north-star-map.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "soft-robot",
    "label": "SOFT ROBOT",
    "status": "idle",
@@ -3865,7 +3333,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3878,12 +3346,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-14",
+         "v": 6
         },
         {
          "t": "2026-11-15",
@@ -3895,10 +3359,6 @@
         },
         {
          "t": "2026-11-15",
-         "v": 14
-        },
-        {
-         "t": "2026-11-15",
          "v": 0
         },
         {
@@ -3907,51 +3367,59 @@
         },
         {
          "t": "2026-11-15",
-         "v": 0
+         "v": 3
         },
         {
          "t": "2026-11-15",
-         "v": 9
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
+         "v": 2
         },
         {
          "t": "2026-11-16",
-         "v": 0
+         "v": 1
         },
         {
          "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 1
+        },
+        {
+         "t": "2026-11-16",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
+        },
+        {
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
+        },
+        {
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
          "v": 7
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
         },
         {
          "t": "2026-11-17",
@@ -4166,119 +3634,119 @@
        },
        {
         "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
         "d": "2026-11-17",
         "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4309,56 +3777,538 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "brain-architecture",
-   "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
-   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
-   "statusLine": "done · cold-start drill passes nightly",
-   "caption": "Swap the model and nothing is lost:",
-   "stage": "done",
-   "embed": "pages/brain-architecture.html",
+   "id": "northstar",
+   "label": "NORTH STAR MAP",
+   "status": "working",
+   "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
+   "statusLine": "active · used every day",
+   "caption": "The map itself:",
+   "stage": "active",
+   "embed": "pages/northstar.html",
    "visibility": "public",
-   "parent": "context-graph",
+   "goalStory": {
+    "metric": {
+     "kind": "repeats",
+     "label": "repeated complaints and catches, per day",
+     "points": [
+      {
+       "t": "2026-11-03",
+       "v": 0
+      },
+      {
+       "t": "2026-11-04",
+       "v": 0
+      },
+      {
+       "t": "2026-11-05",
+       "v": 7
+      },
+      {
+       "t": "2026-11-06",
+       "v": 6
+      },
+      {
+       "t": "2026-11-07",
+       "v": 0
+      },
+      {
+       "t": "2026-11-08",
+       "v": 3
+      },
+      {
+       "t": "2026-11-09",
+       "v": 17
+      },
+      {
+       "t": "2026-11-10",
+       "v": 25
+      },
+      {
+       "t": "2026-11-11",
+       "v": 32
+      },
+      {
+       "t": "2026-11-12",
+       "v": 47
+      },
+      {
+       "t": "2026-11-13",
+       "v": 32
+      },
+      {
+       "t": "2026-11-14",
+       "v": 43
+      },
+      {
+       "t": "2026-11-15",
+       "v": 98
+      },
+      {
+       "t": "2026-11-16",
+       "v": 82
+      }
+     ],
+     "perPoint": [
+      {
+       "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
+       "weekly": [
+        0,
+        0,
+        0,
+        0,
+        4,
+        26,
+        0
+       ]
+      },
+      {
+       "text": "A recursive self-improve loop pushes each goal until it is met: it measures, tries other methods, catches a stall and pivots, and never stops at one fix.",
+       "weekly": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        42,
+        1
+       ]
+      },
+      {
+       "text": "She is out of the loop: one data point, needed only for physical work, money, an access she alone has, or an outward yes.",
+       "weekly": [
+        0,
+        6,
+        9,
+        4,
+        23,
+        82,
+        4
+       ]
+      },
+      {
+       "text": "Every design is grounded: researched beyond web search, learned from what others do well, and run as a measured experiment when evidence is thin.",
+       "weekly": [
+        0,
+        1,
+        0,
+        1,
+        3,
+        39,
+        1
+       ]
+      },
+      {
+       "text": "Her complaints are user feedback: the system finds the cause at the design level and fixes it there, and an overseer catches faults before she does.",
+       "weekly": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        33,
+        4
+       ]
+      },
+      {
+       "text": "The goal, what is going on and what everyone tried are visible on the map, for her and for every agent, so nobody reinvents the wheel.",
+       "weekly": [
+        0,
+        5,
+        6,
+        5,
+        27,
+        19,
+        0
+       ]
+      },
+      {
+       "text": "Every agent retrieves only the context its work needs, knows when it can find it itself and when to ask.",
+       "weekly": [
+        0,
+        0,
+        4,
+        3,
+        16,
+        46,
+        12
+       ]
+      },
+      {
+       "text": "Give it any goal and it improves to that goal; when it is reliable, it is open-sourced to benefit everyone.",
+       "weekly": [
+        0,
+        2,
+        3,
+        2,
+        1,
+        3,
+        0
+       ]
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     }
+    ],
+    "stage": {
+     "at": 0,
+     "round": 7
+    }
+   },
+   "codeRepos": [
+    {
+     "vis": "private"
+    }
+   ],
    "parked": false,
    "children": [
     {
-     "id": "mittens-design",
-     "label": "MITTENS = CLAUDE + SENSES",
+     "id": "grand-threads",
+     "label": "GRAND THREADS",
      "status": "idle",
-     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
-     "statusLine": "designed · new version going live",
-     "caption": "My assistant is a strong language model plus senses:",
+     "why": "Each dot on my map is now a chat thread. The map gives every task its context, and each task's progress flows back onto its dot so the public map can pick it up.",
+     "statusLine": "built · chat threads tied to dots",
+     "caption": "Each dot on my map is now a chat thread.",
      "stage": "active",
-     "embed": "pages/mittens-design.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "brain-architecture-2",
-     "label": "BRAIN ARCHITECTURE",
-     "status": "idle",
-     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
-     "statusLine": "in progress",
-     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
-     "stage": "active",
-     "embed": "pages/brain-architecture-2.html",
+     "embed": "pages/grand-threads.html",
      "visibility": "public",
      "links": [
-      "brain-architecture"
+      "work-in-threads"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "one-clean-record",
-     "label": "ONE CLEAN RECORD",
+     "id": "north-star-map",
+     "label": "NORTH STAR MAP",
      "status": "idle",
-     "why": "I want the system to keep one clean, trusted version of every record. Each record gets a type and a tag for where it came from, so a weaker source can't overwrite a stronger one.",
-     "statusLine": "plan · design chosen",
-     "caption": "I want the system to keep one clean, trusted version of every record.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/one-clean-record.html",
+     "why": "This is the working thread for the map that holds my projects and agents.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the map that holds my projects and agents.",
+     "stage": "active",
+     "embed": "pages/north-star-map.html",
      "visibility": "public",
+     "links": [
+      "northstar"
+     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4511,6 +4461,62 @@
       "triggers",
       "man-rules"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "brain-architecture",
+   "label": "BRAIN ARCHITECTURE",
+   "status": "idle",
+   "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
+   "statusLine": "done · cold-start drill passes nightly",
+   "caption": "Swap the model and nothing is lost:",
+   "stage": "done",
+   "embed": "pages/brain-architecture.html",
+   "visibility": "public",
+   "parent": "context-graph",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-design",
+     "label": "MITTENS = CLAUDE + SENSES",
+     "status": "idle",
+     "why": "My assistant is a strong language model plus senses: what it can see, hear and know about my devices, all feeding one brain.",
+     "statusLine": "designed · new version going live",
+     "caption": "My assistant is a strong language model plus senses:",
+     "stage": "active",
+     "embed": "pages/mittens-design.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "brain-architecture-2",
+     "label": "BRAIN ARCHITECTURE",
+     "status": "idle",
+     "why": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "statusLine": "in progress",
+     "caption": "This is where I work out how my assistant remembers, thinks and keeps its context.",
+     "stage": "active",
+     "embed": "pages/brain-architecture-2.html",
+     "visibility": "public",
+     "links": [
+      "brain-architecture"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "one-clean-record",
+     "label": "ONE CLEAN RECORD",
+     "status": "idle",
+     "why": "I want the system to keep one clean, trusted version of every record. Each record gets a type and a tag for where it came from, so a weaker source can't overwrite a stronger one.",
+     "statusLine": "plan · design chosen",
+     "caption": "I want the system to keep one clean, trusted version of every record.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/one-clean-record.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4945,9 +4951,41 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-knows",
+   "label": "ALWAYS KNOWS",
+   "status": "idle",
+   "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
+   "statusLine": "live",
+   "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
+   "stage": "active",
+   "embed": "pages/mittens-knows.html",
+   "visibility": "public",
+   "links": [
+    "mw-blind",
+    "mittens-desktop"
+   ],
+   "parent": "mittens-daily",
+   "parked": false,
+   "children": [
+    {
+     "id": "feature-ambient-awareness",
+     "label": "AMBIENT AWARENESS",
+     "status": "idle",
+     "why": "I want my assistant to know what is going on around me without my having to explain it. A picture or a passing remark should be enough context.",
+     "statusLine": "exploring the design",
+     "caption": "I want my assistant to know what is going on around me without my having to explain it.",
+     "stage": "active",
+     "embed": "pages/feature-ambient-awareness.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5126,7 +5164,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "working",
+     "status": "idle",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -5510,38 +5548,6 @@
      "links": [
       "ns-talk"
      ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-knows",
-   "label": "ALWAYS KNOWS",
-   "status": "idle",
-   "why": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
-   "statusLine": "live",
-   "caption": "Mittens tries to know what I am doing -- from the glasses, the laptop and the calendar -- and when it cannot tell, it asks once instead of guessing.",
-   "stage": "active",
-   "embed": "pages/mittens-knows.html",
-   "visibility": "public",
-   "links": [
-    "mw-blind",
-    "mittens-desktop"
-   ],
-   "parent": "mittens-daily",
-   "parked": false,
-   "children": [
-    {
-     "id": "feature-ambient-awareness",
-     "label": "AMBIENT AWARENESS",
-     "status": "idle",
-     "why": "I want my assistant to know what is going on around me without my having to explain it. A picture or a passing remark should be enough context.",
-     "statusLine": "exploring the design",
-     "caption": "I want my assistant to know what is going on around me without my having to explain it.",
-     "stage": "active",
-     "embed": "pages/feature-ambient-awareness.html",
-     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -8306,7 +8312,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
