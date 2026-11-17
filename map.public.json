@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T13:45:22.862Z",
+ "generatedAt": "2026-11-17T14:41:57.980Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1177,7 +1177,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1286,10 +1286,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1594,11 +1590,15 @@
      },
      {
       "d": "2026-11-17",
-      "v": "no effect"
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
-      "v": "unmeasured"
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
      },
      {
       "d": "2026-11-17",
@@ -2196,7 +2196,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2626,7 +2626,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2786,7 +2786,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -3178,7 +3178,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3434,38 +3434,6 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-14",
-         "v": 6
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 1
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 3
-        },
-        {
-         "t": "2026-11-15",
-         "v": 2
-        },
-        {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
          "t": "2026-11-16",
          "v": 1
         },
@@ -3487,23 +3455,7 @@
         },
         {
          "t": "2026-11-17",
-         "v": 2
-        },
-        {
-         "t": "2026-11-17",
          "v": 1
-        },
-        {
-         "t": "2026-11-17",
-         "v": 2
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
         },
         {
          "t": "2026-11-17",
@@ -3512,6 +3464,54 @@
         {
          "t": "2026-11-17",
          "v": 8
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 3
+        },
+        {
+         "t": "2026-11-17",
+         "v": 2
         }
        ]
       },
@@ -3526,42 +3526,6 @@
        },
        {
         "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "confounded"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-15",
         "v": "unmeasured"
        },
        {
@@ -3690,147 +3654,183 @@
        },
        {
         "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
        },
        {
         "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-17",
         "v": "no effect"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
        },
        {
         "d": "2026-11-17",
@@ -3867,7 +3867,7 @@
   {
    "id": "man-rules",
    "label": "RULES",
-   "status": "idle",
+   "status": "working",
    "why": "How every agent starts, where things go on the map, which models.",
    "caption": "How every agent starts, where things go on the map, which models.",
    "stage": "active",
@@ -4515,7 +4515,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -4581,7 +4581,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 2
+       "v": 10
       }
      ],
      "partial": "2026-11-17",
@@ -4595,7 +4595,7 @@
         0,
         4,
         26,
-        0
+        2
        ]
       },
       {
@@ -4631,7 +4631,7 @@
         1,
         3,
         39,
-        1
+        2
        ]
       },
       {
@@ -4643,7 +4643,7 @@
         0,
         0,
         33,
-        4
+        5
        ]
       },
       {
@@ -4667,7 +4667,7 @@
         3,
         16,
         46,
-        12
+        13
        ]
       },
       {
@@ -4703,10 +4703,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "no effect"
      },
      {
@@ -4975,35 +4971,39 @@
      },
      {
       "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
       "v": "no effect"
      },
      {
       "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
      }
     ],
     "stage": {
@@ -5196,7 +5196,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5904,7 +5904,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 146
+         "v": 143
         }
        ]
       },
@@ -6763,7 +6763,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 9
+       "v": 6
       }
      ]
     },
@@ -7685,7 +7685,7 @@
   {
    "id": "talk-short-chats",
    "label": "SHORT CHATS",
-   "status": "working",
+   "status": "idle",
    "why": "One-off chats that don't belong to a bigger topic yet, each keeping its own thread.",
    "statusLine": "edited this week",
    "caption": "One-off chats that don't belong to a bigger topic yet, each keeping its own thread.",
@@ -7878,7 +7878,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 57
+       "v": 58
       }
      ]
     },
@@ -7932,7 +7932,16 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": null,
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-17",
+       "v": 0
+      }
+     ]
+    },
     "tries": [
      {
       "d": "2026-11-13",
@@ -8429,7 +8438,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -9014,7 +9023,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 146
+       "v": 143
       }
      ]
     },
@@ -9078,7 +9087,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 146
+       "v": 143
       }
      ]
     },
@@ -9272,7 +9281,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 68
+       "v": 69
       }
      ]
     },
@@ -10257,7 +10266,7 @@
   {
    "id": "man-g-agents",
    "label": "HOW AGENTS WORK",
-   "status": "idle",
+   "status": "working",
    "why": "The rules my agents follow and the manual for talking with them.",
    "statusLine": "noted this week",
    "caption": "The rules my agents follow and the manual for talking with them.",
@@ -10467,7 +10476,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 68
+       "v": 69
       }
      ]
     },
@@ -10515,7 +10524,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 68
+         "v": 69
         }
        ]
       },
@@ -11024,7 +11033,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 33
+       "v": 33.3
       }
      ]
     },
@@ -11280,7 +11289,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 146
+       "v": 143
       }
      ]
     },
@@ -12500,7 +12509,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 73
+       "v": 75
       }
      ]
     },
