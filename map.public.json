@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T07:37:31.832Z",
+ "generatedAt": "2026-11-17T07:51:25.196Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -555,7 +555,7 @@
      "label": "CROWD CHECK",
      "status": "idle",
      "why": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
-     "statusLine": "built · map chip next",
+     "statusLine": "built · map chip sketched",
      "caption": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
      "stage": "active",
      "embed": "pages/feature-crowd-check.html",
@@ -747,7 +747,7 @@
      "label": "PERSONA BROWSER CHECK",
      "status": "idle",
      "why": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
-     "statusLine": "not verified yet",
+     "statusLine": "partly fixed · still verifying",
      "caption": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
      "stage": "active",
      "embed": "pages/rg-verified-yet-whether-persona.html",
@@ -1282,7 +1282,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2969,18 +2969,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -3278,6 +3266,18 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3609,7 +3609,7 @@
      "label": "OVERSEER COVERAGE",
      "status": "idle",
      "why": "I make sure the overseer agent can see every part of the system it is meant to watch.",
-     "statusLine": "in progress",
+     "statusLine": "more signals covered · in progress",
      "caption": "I make sure the overseer agent can see every part of the system it is meant to watch.",
      "stage": "active",
      "embed": "pages/overseer-coverage.html",
@@ -3622,7 +3622,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4947,7 +4947,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5126,7 +5126,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "idle",
+     "status": "working",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -6216,7 +6216,7 @@
      "label": "MITTENS TEACHES",
      "status": "idle",
      "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "statusLine": "next: quiz until mastered",
+     "statusLine": "lessons target gaps · testing",
      "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
      "stage": "active",
      "embed": "pages/mittens-tutor.html",
@@ -6710,7 +6710,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · some fixes made overnight",
+     "statusLine": "live · recent misses not fixed",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -7736,7 +7736,7 @@
   {
    "id": "ui-style",
    "label": "UI STYLE",
-   "status": "working",
+   "status": "idle",
    "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
    "statusLine": "checked nightly · cleanup ongoing",
    "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
@@ -7761,6 +7761,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
       "v": "unmeasured"
      }
     ],
@@ -8302,7 +8306,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -9225,6 +9229,21 @@
      "embed": "pages/podcast-episode-collections.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-screensaver-podcast-widget",
+     "label": "SCREENSAVER PODCAST WIDGET",
+     "status": "idle",
+     "why": "I want my assistant's podcasts on my screensaver, so I can start or follow an episode without opening anything.",
+     "statusLine": "in progress",
+     "caption": "I want my assistant's podcasts on my screensaver, so I can start or follow an episode without opening anything.",
+     "stage": "active",
+     "embed": "pages/feature-screensaver-podcast-widget.html",
+     "visibility": "public",
+     "links": [
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -10092,6 +10111,18 @@
       "glasses-mittens"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-lens-view-sharing",
+     "label": "LENS VIEW SHARING",
+     "status": "idle",
+     "why": "My assistant should already see what is on my glasses and screens, without me telling it to look. That way it can improve whatever I am reading.",
+     "statusLine": "in progress",
+     "caption": "My assistant should already see what is on my glasses and screens, without me telling it to look.",
+     "stage": "active",
+     "embed": "pages/feature-lens-view-sharing.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -10240,6 +10271,18 @@
      "caption": "A tile next to Capture in the lens home screen for grabbing extra footage.",
      "stage": "done",
      "embed": "pages/not-done-b-roll-tile.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-contextual-glasses-hints",
+     "label": "CONTEXTUAL GLASSES HINTS",
+     "status": "idle",
+     "why": "The card on my glasses should update to match what I'm looking at, with useful hints or examples. All the screens I have should work together.",
+     "statusLine": "in progress",
+     "caption": "The card on my glasses should update to match what I'm looking at, with useful hints or examples.",
+     "stage": "active",
+     "embed": "pages/feature-contextual-glasses-hints.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -10802,6 +10845,18 @@
      "embed": "pages/feature-desk-pane-layout.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature--page",
+     "label": "PAGE FIX",
+     "status": "idle",
+     "why": "My interface watcher opened this when my use of a page showed something missing, so the page gets fixed.",
+     "statusLine": "flagged · fix pending",
+     "caption": "My interface watcher opened this when my use of a page showed something missing, so the page gets fixed.",
+     "stage": "active",
+     "embed": "pages/feature--page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -11109,7 +11164,7 @@
      "label": "MY WORDS REACH DOTS",
      "status": "idle",
      "why": "Everything I say about a project should land on the right dot of the map within a day. A rule became a measurable goal that the system checks by itself.",
-     "statusLine": "not met · some lines waiting",
+     "statusLine": "met · no lines waiting",
      "caption": "Everything I say about a project should land on the right dot of the map within a day.",
      "stage": "active",
      "embed": "pages/rg-her-words-reach-goal.html",
@@ -11439,7 +11494,20 @@
    "visibility": "public",
    "parent": "ui-experience",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "feature-red-study-page-comments",
+     "label": "RED STUDY COMMENTS",
+     "status": "idle",
+     "why": "My tutor should mark up my study pages in red, like a teacher, so I can see what to fix.",
+     "statusLine": "in progress",
+     "caption": "My tutor should mark up my study pages in red, like a teacher, so I can see what to fix.",
+     "stage": "active",
+     "embed": "pages/feature-red-study-page-comments.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -11923,6 +11991,21 @@
     "aurora"
    ],
    "parent": "ns-talk",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-north-star-loop-budget",
+   "label": "LOOP BUDGET GUARD",
+   "status": "idle",
+   "why": "I turned a rule about how the agent loop handles refusals into a measurable goal that is checked in code until it holds.",
+   "statusLine": "active · goal set",
+   "caption": "I turned a rule about how the agent loop handles refusals into a measurable goal that is checked in code until it holds.",
+   "stage": "active",
+   "embed": "pages/rg-north-star-loop-budget.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
    "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
