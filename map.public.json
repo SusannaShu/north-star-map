@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T20:25:13.921Z",
+ "generatedAt": "2026-11-17T20:41:50.624Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1640,14 +1640,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1957,6 +1949,14 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3568,10 +3568,6 @@
       "tries": [
        {
         "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
         "v": "unmeasured"
        },
        {
@@ -3885,6 +3881,10 @@
        {
         "d": "2026-11-17",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4077,7 +4077,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
@@ -4350,7 +4350,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4478,7 +4478,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4711,7 +4711,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5245,6 +5245,276 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "smart-glasses",
+   "label": "GLASSES",
+   "status": "idle",
+   "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
+   "statusLine": "in daily use",
+   "caption": "Meta Ray-Ban Display glasses:",
+   "stage": "active",
+   "embed": "pages/smart-glasses.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-12",
+       "v": 31
+      },
+      {
+       "t": "2026-11-12",
+       "v": 0.372
+      },
+      {
+       "t": "2026-11-12",
+       "v": 37.2
+      },
+      {
+       "t": "2026-11-15",
+       "v": 50
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": {
+     "at": 2,
+     "round": 1
+    }
+   },
+   "parent": "wearables",
+   "parked": false,
+   "children": [
+    {
+     "id": "glasses-launch",
+     "label": "LAUNCH FROM THE GLASSES",
+     "status": "idle",
+     "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
+     "statusLine": "built · first install next",
+     "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
+     "stage": "active",
+     "embed": "pages/glasses-launch.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "neural-band-cursor",
+     "label": "CURSOR CONTROL",
+     "status": "idle",
+     "why": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
+     "statusLine": "works",
+     "caption": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
+     "stage": "active",
+     "embed": "pages/neural-band-cursor.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-17",
+         "v": 197
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-17",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mini-app-navigation",
+     "label": "GLASSES APP NAVIGATION",
+     "status": "done",
+     "why": "Making it easy to move around the small app on the smart glasses.",
+     "statusLine": "done · filed with the project",
+     "caption": "Making it easy to move around the small app on the smart glasses.",
+     "stage": "done",
+     "embed": "pages/mini-app-navigation.html",
+     "visibility": "public",
+     "links": [
+      "glasses-mittens",
+      "smart-glasses"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "research-watch",
+   "label": "RESEARCH WATCH",
+   "status": "idle",
+   "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
+   "statusLine": "live · every day",
+   "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
+   "stage": "active",
+   "embed": "pages/research-watch.html",
+   "visibility": "public",
+   "links": [
+    "soft-robot",
+    "robot-skin",
+    "muscle-papers",
+    "mittens",
+    "actuation",
+    "three-actuators",
+    "electrofluidic",
+    "skin-build",
+    "skin-materials",
+    "lab-access",
+    "bench-or-cleanroom",
+    "wet-lab",
+    "biohybrid-muscle",
+    "muscle-recipe",
+    "skin-research",
+    "cuddle-bot-paper",
+    "cuddle-vision",
+    "mittens-speaker",
+    "context-graph",
+    "mittens-architecture",
+    "mittens-vision",
+    "northstar",
+    "nightly-reflection",
+    "mittens-knows",
+    "mittens-proactive",
+    "proactive-rules",
+    "mittens-daily",
+    "need-her-once",
+    "action-tree",
+    "morning-brief",
+    "mittens-hw",
+    "go-anywhere",
+    "mittens-digital",
+    "mittens-desktop",
+    "smart-glasses",
+    "glasses-mittens",
+    "wearables",
+    "meeting-notes",
+    "mw-blind",
+    "mittens-tutor",
+    "pendant",
+    "omi",
+    "neural-band-cursor",
+    "aurora",
+    "aurora-market",
+    "small-models",
+    "ns-talk",
+    "mw-call-voice",
+    "mittens-barge-in",
+    "mw-calls",
+    "mittens-app",
+    "fit-data",
+    "susu-closet",
+    "sheyou",
+    "fashion",
+    "designers",
+    "viral-machine",
+    "daily-content",
+    "marketing",
+    "agentic-marketing",
+    "marketing-analytics",
+    "influencers",
+    "outreach",
+    "susu-map",
+    "portfolio",
+    "guardian-angel"
+   ],
+   "parent": "mittens-hw",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "local-watch",
+   "label": "LOCAL EVENTS WATCH",
+   "status": "idle",
+   "why": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
+   "statusLine": "live · checks on demand",
+   "caption": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
+   "stage": "active",
+   "embed": "pages/local-watch.html",
+   "visibility": "public",
+   "links": [
+    "morning-brief"
+   ],
+   "parent": "mittens-hw",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -5823,276 +6093,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "smart-glasses",
-   "label": "GLASSES",
-   "status": "idle",
-   "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
-   "statusLine": "in daily use",
-   "caption": "Meta Ray-Ban Display glasses:",
-   "stage": "active",
-   "embed": "pages/smart-glasses.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-12",
-       "v": 31
-      },
-      {
-       "t": "2026-11-12",
-       "v": 0.372
-      },
-      {
-       "t": "2026-11-12",
-       "v": 37.2
-      },
-      {
-       "t": "2026-11-15",
-       "v": 50
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": {
-     "at": 2,
-     "round": 1
-    }
-   },
-   "parent": "wearables",
-   "parked": false,
-   "children": [
-    {
-     "id": "glasses-launch",
-     "label": "LAUNCH FROM THE GLASSES",
-     "status": "idle",
-     "why": "Open Mittens from the glasses' own app grid, not only from the phone.",
-     "statusLine": "built · first install next",
-     "caption": "Open Mittens from the glasses' own app grid, not only from the phone.",
-     "stage": "active",
-     "embed": "pages/glasses-launch.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "neural-band-cursor",
-     "label": "CURSOR CONTROL",
-     "status": "idle",
-     "why": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
-     "statusLine": "works",
-     "caption": "Move the desktop cursor with hand motion and click with a pinch, hands-free -- the wristband drives it, the lens shows the pointer.",
-     "stage": "active",
-     "embed": "pages/neural-band-cursor.html",
-     "visibility": "public",
-     "goalStory": {
-      "metric": {
-       "kind": "values",
-       "label": "measured result",
-       "points": [
-        {
-         "t": "2026-11-17",
-         "v": 197
-        }
-       ]
-      },
-      "tries": [
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       }
-      ],
-      "stage": null
-     },
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mini-app-navigation",
-     "label": "GLASSES APP NAVIGATION",
-     "status": "done",
-     "why": "Making it easy to move around the small app on the smart glasses.",
-     "statusLine": "done · filed with the project",
-     "caption": "Making it easy to move around the small app on the smart glasses.",
-     "stage": "done",
-     "embed": "pages/mini-app-navigation.html",
-     "visibility": "public",
-     "links": [
-      "glasses-mittens",
-      "smart-glasses"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "research-watch",
-   "label": "RESEARCH WATCH",
-   "status": "idle",
-   "why": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
-   "statusLine": "live · every day",
-   "caption": "Every day my system pulls new papers and preprints on soft robots, robot skin and personal AI, and it writes up only the serious work that matters to my projects.",
-   "stage": "active",
-   "embed": "pages/research-watch.html",
-   "visibility": "public",
-   "links": [
-    "soft-robot",
-    "robot-skin",
-    "muscle-papers",
-    "mittens",
-    "actuation",
-    "three-actuators",
-    "electrofluidic",
-    "skin-build",
-    "skin-materials",
-    "lab-access",
-    "bench-or-cleanroom",
-    "wet-lab",
-    "biohybrid-muscle",
-    "muscle-recipe",
-    "skin-research",
-    "cuddle-bot-paper",
-    "cuddle-vision",
-    "mittens-speaker",
-    "context-graph",
-    "mittens-architecture",
-    "mittens-vision",
-    "northstar",
-    "nightly-reflection",
-    "mittens-knows",
-    "mittens-proactive",
-    "proactive-rules",
-    "mittens-daily",
-    "need-her-once",
-    "action-tree",
-    "morning-brief",
-    "mittens-hw",
-    "go-anywhere",
-    "mittens-digital",
-    "mittens-desktop",
-    "smart-glasses",
-    "glasses-mittens",
-    "wearables",
-    "meeting-notes",
-    "mw-blind",
-    "mittens-tutor",
-    "pendant",
-    "omi",
-    "neural-band-cursor",
-    "aurora",
-    "aurora-market",
-    "small-models",
-    "ns-talk",
-    "mw-call-voice",
-    "mittens-barge-in",
-    "mw-calls",
-    "mittens-app",
-    "fit-data",
-    "susu-closet",
-    "sheyou",
-    "fashion",
-    "designers",
-    "viral-machine",
-    "daily-content",
-    "marketing",
-    "agentic-marketing",
-    "marketing-analytics",
-    "influencers",
-    "outreach",
-    "susu-map",
-    "portfolio",
-    "guardian-angel"
-   ],
-   "parent": "mittens-hw",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "local-watch",
-   "label": "LOCAL EVENTS WATCH",
-   "status": "idle",
-   "why": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
-   "statusLine": "live · checks on demand",
-   "caption": "Free city events -- food, coffee, fashion, art -- read before I wake and whenever I ask; good ones can become SUSU Map posts.",
-   "stage": "active",
-   "embed": "pages/local-watch.html",
-   "visibility": "public",
-   "links": [
-    "morning-brief"
-   ],
-   "parent": "mittens-hw",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "watch-picks",
    "label": "WATCH PICKS",
    "status": "idle",
@@ -6200,7 +6200,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6357,6 +6357,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
       "v": "unmeasured"
      },
      {
@@ -6803,7 +6807,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "idle",
+   "status": "working",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -8847,7 +8851,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "idle",
+   "status": "working",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -10564,7 +10568,7 @@
   {
    "id": "brain-deciding",
    "label": "DECIDING + ROUTING",
-   "status": "idle",
+   "status": "working",
    "why": "How each message is sorted and sent to the right place.",
    "statusLine": "noted this week",
    "caption": "How each message is sorted and sent to the right place.",
@@ -10743,7 +10747,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "working",
+   "status": "idle",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
@@ -10773,7 +10777,7 @@
   {
    "id": "one-dispatcher",
    "label": "ONE DISPATCHER",
-   "status": "idle",
+   "status": "working",
    "why": "I want one dispatcher that sorts everything I say into the right thread and acts on it, the way a good coding agent does. It should also give my assistant the same context every time.",
    "statusLine": "first step live",
    "caption": "I want one dispatcher that sorts everything I say into the right thread and acts on it, the way a good coding agent does.",
@@ -10868,7 +10872,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -11017,7 +11021,7 @@
     {
      "id": "feature-card-states",
      "label": "CARD STATES",
-     "status": "idle",
+     "status": "working",
      "why": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
      "statusLine": "in progress",
      "caption": "When a draft is already being fixed, its card should say it is updating, so I am not asked about the same thing twice.",
