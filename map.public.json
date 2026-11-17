@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T23:25:31.603Z",
+ "generatedAt": "2026-11-17T23:38:21.785Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1656,10 +1656,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1941,6 +1937,10 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-17",
