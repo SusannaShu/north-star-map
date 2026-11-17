@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-17T01:36:05.628Z",
+ "generatedAt": "2026-11-17T03:08:15.154Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -813,7 +813,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -920,10 +920,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-15",
-      "v": "no effect"
-     },
      {
       "d": "2026-11-15",
       "v": "helped"
@@ -1239,6 +1235,10 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1560,7 +1560,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "idle",
+   "status": "working",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -2838,7 +2838,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 56
+       "v": 68
       }
      ],
      "partial": "2026-11-16",
@@ -2864,7 +2864,7 @@
         0,
         1,
         42,
-        0
+        1
        ]
       },
       {
@@ -2876,7 +2876,7 @@
         4,
         23,
         82,
-        3
+        4
        ]
       },
       {
@@ -2942,26 +2942,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-15",
       "v": "unmeasured"
@@ -3261,10 +3241,30 @@
      {
       "d": "2026-11-17",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 5,
      "round": 6
     }
    },
@@ -3934,7 +3934,7 @@
         },
         {
          "t": "2026-11-17",
-         "v": 5
+         "v": 6
         }
        ]
       },
@@ -5752,7 +5752,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 136
+         "v": 138
         }
        ]
       },
@@ -8814,7 +8814,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 136
+       "v": 138
       }
      ]
     },
@@ -8878,7 +8878,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 136
+       "v": 138
       }
      ]
     },
@@ -9072,7 +9072,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 63
+       "v": 64
       }
      ]
     },
@@ -10224,7 +10224,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 63
+       "v": 64
       }
      ]
     },
@@ -10272,7 +10272,7 @@
        "points": [
         {
          "t": "2026-11-17",
-         "v": 63
+         "v": 64
         }
        ]
       },
@@ -11004,7 +11004,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 136
+       "v": 138
       }
      ]
     },
@@ -12061,7 +12061,7 @@
      "points": [
       {
        "t": "2026-11-17",
-       "v": 71
+       "v": 72
       }
      ]
     },
