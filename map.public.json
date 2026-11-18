@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T15:20:02.469Z",
+ "generatedAt": "2026-11-18T15:29:18.999Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1060,7 +1060,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1888,10 +1888,6 @@
      },
      {
       "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
       "v": "helped"
      },
      {
@@ -1981,6 +1977,10 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2495,7 +2495,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 35
+       "v": 34
       }
      ]
     },
@@ -3276,7 +3276,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3519,7 +3519,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -4861,7 +4861,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 10
+       "v": 11
       }
      ],
      "partial": "2026-11-18",
@@ -5576,7 +5576,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 178
+         "v": 170
         }
        ]
       },
@@ -6953,7 +6953,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 6
+       "v": 2
       }
      ]
     },
@@ -7337,7 +7337,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "idle",
+   "status": "working",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -9243,7 +9243,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 178
+       "v": 170
       }
      ]
     },
@@ -9307,7 +9307,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 178
+       "v": 170
       }
      ]
     },
@@ -9505,7 +9505,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 63
+       "v": 62
       }
      ]
     },
@@ -10756,7 +10756,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 63
+       "v": 62
       }
      ]
     },
@@ -10804,7 +10804,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 63
+         "v": 62
         }
        ]
       },
@@ -11408,7 +11408,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 178
+       "v": 170
       }
      ]
     },
@@ -12070,7 +12070,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 70
+       "v": 68
       }
      ]
     },
