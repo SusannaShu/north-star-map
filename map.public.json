@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T06:09:52.987Z",
+ "generatedAt": "2026-11-18T07:03:57.873Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1507,7 +1507,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2226,7 +2226,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2445,7 +2445,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3224,7 +3224,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3467,7 +3467,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3479,14 +3479,6 @@
        "kind": "values",
        "label": "measured result",
        "points": [
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
         {
          "t": "2026-11-15",
          "v": 0
@@ -3558,72 +3550,20 @@
         {
          "t": "2026-11-18",
          "v": 13
+        },
+        {
+         "t": "2026-11-18",
+         "v": 28
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
         "v": "unmeasured"
        },
        {
@@ -3881,6 +3821,66 @@
        {
         "d": "2026-11-18",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -4366,7 +4366,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4498,7 +4498,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4735,7 +4735,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -10031,7 +10031,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -10223,7 +10223,7 @@
     {
      "id": "truth-check",
      "label": "TRUTH CHECK",
-     "status": "idle",
+     "status": "working",
      "why": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
      "statusLine": "built · widening to every channel",
      "caption": "Before any agent reports it is finished, its claims are checked against the real records, so the system stops telling me things that are not true.",
@@ -10954,7 +10954,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -11083,6 +11083,10 @@
        {
         "d": "2026-11-17",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
        }
       ],
       "stage": null
@@ -11095,7 +11099,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "idle",
+     "status": "working",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic flagging weak spots",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -11141,7 +11145,7 @@
         },
         {
          "t": "2026-11-18",
-         "v": 30
+         "v": 34
         }
        ]
       },
@@ -11164,6 +11168,18 @@
        },
        {
         "d": "2026-11-17",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
         "v": "unmeasured"
        }
       ],
@@ -11824,7 +11840,7 @@
   {
    "id": "ux-teaching",
    "label": "TEACHING UX",
-   "status": "idle",
+   "status": "working",
    "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
    "statusLine": "plan · nothing yet",
    "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
