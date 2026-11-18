@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T10:45:49.850Z",
+ "generatedAt": "2026-11-18T13:12:06.037Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -5588,7 +5588,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 181
+         "v": 188
         }
        ]
       },
@@ -8140,7 +8140,16 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": null,
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-18",
+       "v": 0
+      }
+     ]
+    },
     "tries": [
      {
       "d": "2026-11-13",
@@ -9242,7 +9251,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 181
+       "v": 188
       }
      ]
     },
@@ -9306,7 +9315,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 181
+       "v": 188
       }
      ]
     },
@@ -11336,7 +11345,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 33.3
+       "v": 33.5
       }
      ]
     },
@@ -11407,7 +11416,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 181
+       "v": 188
       }
      ]
     },
