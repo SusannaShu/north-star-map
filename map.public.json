@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T03:17:34.472Z",
+ "generatedAt": "2026-11-18T05:00:54.033Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -58,6 +58,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 60
+      },
+      {
+       "t": "2026-11-18",
        "v": 60
       }
      ]
@@ -238,6 +242,10 @@
         },
         {
          "t": "2026-11-17",
+         "v": 51
+        },
+        {
+         "t": "2026-11-18",
          "v": 51
         }
        ]
@@ -531,6 +539,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 34
+      },
+      {
+       "t": "2026-11-18",
        "v": 34
       }
      ]
@@ -827,6 +839,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 39
+      },
+      {
+       "t": "2026-11-18",
        "v": 39
       }
      ]
@@ -1479,7 +1495,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1600,10 +1616,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1905,6 +1917,10 @@
      {
       "d": "2026-11-18",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1980,6 +1996,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 71
+      },
+      {
+       "t": "2026-11-18",
        "v": 71
       }
      ]
@@ -2194,7 +2214,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2514,6 +2534,10 @@
       {
        "t": "2026-11-17",
        "v": 44
+      },
+      {
+       "t": "2026-11-18",
+       "v": 44
       }
      ]
     },
@@ -2624,6 +2648,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 44
+      },
+      {
+       "t": "2026-11-18",
        "v": 44
       }
      ]
@@ -3496,10 +3524,6 @@
          "v": 1
         },
         {
-         "t": "2026-11-17",
-         "v": 9
-        },
-        {
          "t": "2026-11-18",
          "v": 0
         },
@@ -3518,6 +3542,10 @@
         {
          "t": "2026-11-18",
          "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 10
         }
        ]
       },
@@ -3819,28 +3847,28 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
         "v": "no effect"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
        }
       ],
       "stage": null
@@ -4624,6 +4652,10 @@
       {
        "t": "2026-11-17",
        "v": 56
+      },
+      {
+       "t": "2026-11-18",
+       "v": 56
       }
      ]
     },
@@ -4756,7 +4788,6 @@
        "v": 58
       }
      ],
-     "partial": "2026-11-17",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -5502,9 +5533,78 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "watch-picks",
+   "label": "WATCH PICKS",
+   "status": "idle",
+   "why": "The watch is judged on its picks, not volume: real breakthroughs for my projects, scored and tested, instead of general news.",
+   "statusLine": "being tuned",
+   "caption": "The watch is judged on its picks, not volume:",
+   "stage": "active",
+   "embed": "pages/watch-picks.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-18",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
+   "links": [
+    "research-watch",
+    "local-watch",
+    "soft-robot",
+    "smart-glasses",
+    "northstar",
+    "susu-closet",
+    "fashion"
+   ],
+   "parent": "mittens-hw",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "watch-redesign",
+   "label": "WATCH REDESIGN",
+   "status": "done",
+   "why": "My watch board had started to read like an admin log, and it made me want to scroll somewhere else. I rebuilt it to show more of the world and the people I follow.",
+   "statusLine": "redesigned",
+   "caption": "My watch board had started to read like an admin log, and it made me want to scroll somewhere else.",
+   "stage": "done",
+   "embed": "pages/watch-redesign.html",
+   "visibility": "public",
+   "parent": "watch-picks",
+   "parked": false,
+   "children": [
+    {
+     "id": "watch-redesign-2",
+     "label": "WATCH REDESIGN",
+     "status": "idle",
+     "why": "This is the working thread for making my watch board worth reading.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for making my watch board worth reading.",
+     "stage": "active",
+     "embed": "pages/watch-redesign-2.html",
+     "visibility": "public",
+     "links": [
+      "watch-redesign"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5550,6 +5650,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 46
+      },
+      {
+       "t": "2026-11-18",
        "v": 46
       }
      ]
@@ -6081,75 +6185,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "watch-picks",
-   "label": "WATCH PICKS",
-   "status": "idle",
-   "why": "The watch is judged on its picks, not volume: real breakthroughs for my projects, scored and tested, instead of general news.",
-   "statusLine": "being tuned",
-   "caption": "The watch is judged on its picks, not volume:",
-   "stage": "active",
-   "embed": "pages/watch-picks.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-18",
-       "v": 0
-      }
-     ]
-    },
-    "tries": [],
-    "stage": null
-   },
-   "links": [
-    "research-watch",
-    "local-watch",
-    "soft-robot",
-    "smart-glasses",
-    "northstar",
-    "susu-closet",
-    "fashion"
-   ],
-   "parent": "mittens-hw",
-   "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "watch-redesign",
-   "label": "WATCH REDESIGN",
-   "status": "done",
-   "why": "My watch board had started to read like an admin log, and it made me want to scroll somewhere else. I rebuilt it to show more of the world and the people I follow.",
-   "statusLine": "redesigned",
-   "caption": "My watch board had started to read like an admin log, and it made me want to scroll somewhere else.",
-   "stage": "done",
-   "embed": "pages/watch-redesign.html",
-   "visibility": "public",
-   "parent": "watch-picks",
-   "parked": false,
-   "children": [
-    {
-     "id": "watch-redesign-2",
-     "label": "WATCH REDESIGN",
-     "status": "idle",
-     "why": "This is the working thread for making my watch board worth reading.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for making my watch board worth reading.",
-     "stage": "active",
-     "embed": "pages/watch-redesign-2.html",
-     "visibility": "public",
-     "links": [
-      "watch-redesign"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "mittens-scenarios",
    "label": "SCENARIOS",
    "status": "idle",
@@ -6234,6 +6269,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 39
+      },
+      {
+       "t": "2026-11-18",
        "v": 39
       }
      ]
@@ -7378,6 +7417,10 @@
         {
          "t": "2026-11-17",
          "v": 30
+        },
+        {
+         "t": "2026-11-18",
+         "v": 30
         }
        ]
       },
@@ -7446,6 +7489,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 58
+      },
+      {
+       "t": "2026-11-18",
        "v": 58
       }
      ]
@@ -8119,6 +8166,10 @@
       {
        "t": "2026-11-17",
        "v": 51
+      },
+      {
+       "t": "2026-11-18",
+       "v": 51
       }
      ]
     },
@@ -8394,6 +8445,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 80
+      },
+      {
+       "t": "2026-11-18",
        "v": 80
       }
      ]
@@ -9525,6 +9580,10 @@
       {
        "t": "2026-11-17",
        "v": 38
+      },
+      {
+       "t": "2026-11-18",
+       "v": 38
       }
      ]
     },
@@ -10232,6 +10291,10 @@
       {
        "t": "2026-11-17",
        "v": 49
+      },
+      {
+       "t": "2026-11-18",
+       "v": 49
       }
      ]
     },
@@ -10909,6 +10972,10 @@
       {
        "t": "2026-11-17",
        "v": 43
+      },
+      {
+       "t": "2026-11-18",
+       "v": 43
       }
      ]
     },
@@ -11049,6 +11116,10 @@
         },
         {
          "t": "2026-11-17",
+         "v": 30
+        },
+        {
+         "t": "2026-11-18",
          "v": 30
         }
        ]
@@ -12408,6 +12479,10 @@
       {
        "t": "2026-11-17",
        "v": 57
+      },
+      {
+       "t": "2026-11-18",
+       "v": 57
       }
      ]
     },
@@ -12508,6 +12583,10 @@
       },
       {
        "t": "2026-11-17",
+       "v": 56
+      },
+      {
+       "t": "2026-11-18",
        "v": 56
       }
      ]
