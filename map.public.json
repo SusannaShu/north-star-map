@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T16:53:00.085Z",
+ "generatedAt": "2026-11-18T17:49:43.103Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1555,7 +1555,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2659,48 +2659,44 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
+     "kind": "values",
+     "label": "measured result",
      "points": [
       {
-       "t": "2026-11-09",
-       "v": 56
+       "t": "2026-11-12",
+       "v": 0.4
       },
       {
-       "t": "2026-11-10",
-       "v": 34
-      },
-      {
-       "t": "2026-11-11",
+       "t": "2026-11-12",
        "v": 32
       },
       {
        "t": "2026-11-12",
-       "v": 31
+       "v": 98
       },
       {
-       "t": "2026-11-13",
-       "v": 36
+       "t": "2026-11-12",
+       "v": 106
       },
       {
        "t": "2026-11-14",
-       "v": 43
+       "v": 12
       },
       {
        "t": "2026-11-15",
-       "v": 43
+       "v": 0.022
       },
       {
        "t": "2026-11-16",
-       "v": 44
-      },
-      {
-       "t": "2026-11-17",
-       "v": 44
+       "v": 0.571
       },
       {
        "t": "2026-11-18",
-       "v": 44
+       "v": 6
+      },
+      {
+       "t": "2026-11-18",
+       "v": 4
       }
      ]
     },
@@ -2803,6 +2799,18 @@
      },
      {
       "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      }
     ],
@@ -3624,10 +3632,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
         "v": "helped"
        },
        {
@@ -3929,6 +3933,10 @@
        {
         "d": "2026-11-18",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
        },
        {
         "d": "2026-11-18",
@@ -4979,18 +4987,6 @@
      },
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
       "v": "helped"
      },
      {
@@ -5284,6 +5280,18 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -10330,7 +10338,7 @@
   {
    "id": "nothing-ran-didn-t-hear",
    "label": "LOST SPEECH FIX",
-   "status": "idle",
+   "status": "dormant",
    "why": "The phone was cutting off voice conversations when they reopened, and my words were lost. I fixed it so recovered speech is kept.",
    "statusLine": "fixed",
    "caption": "The phone was cutting off voice conversations when they reopened, and my words were lost.",
@@ -10341,7 +10349,7 @@
     "ns-talk"
    ],
    "parent": "talk-phone-calls",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "what-s-the-sound-like",
