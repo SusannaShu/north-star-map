@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T17:49:43.103Z",
+ "generatedAt": "2026-11-18T19:59:08.851Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1593,7 +1593,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 22
+       "v": 26
       }
      ],
      "partial": "2026-11-16",
@@ -1608,7 +1608,7 @@
         0,
         4,
         24,
-        2
+        3
        ]
       },
       {
@@ -1632,7 +1632,7 @@
         1,
         17,
         40,
-        12
+        14
        ]
       },
       {
@@ -1656,7 +1656,7 @@
         1,
         2,
         14,
-        1
+        2
        ]
       }
      ]
@@ -1664,34 +1664,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
       "v": "helped"
      },
      {
@@ -1973,6 +1945,34 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-18",
@@ -2274,7 +2274,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2926,6 +2926,10 @@
       {
        "t": "2026-11-18",
        "v": 2
+      },
+      {
+       "t": "2026-11-18",
+       "v": 2
       }
      ]
     },
@@ -3065,11 +3069,15 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 5,
-     "round": 1
+     "at": 0,
+     "round": 2
     }
    },
    "codeRepos": [
@@ -3100,7 +3108,7 @@
   {
    "id": "housekeeping",
    "label": "HOUSEKEEPING",
-   "status": "idle",
+   "status": "working",
    "why": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
    "statusLine": "nightly cleanup running",
    "caption": "Every agent leaves the machine as it found it; every folder that grows has a retention rule and is swept nightly to the Trash.",
@@ -3284,7 +3292,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3527,7 +3535,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3540,55 +3548,35 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
-         "v": 9
-        },
-        {
-         "t": "2026-11-15",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-17",
+         "v": 7
         },
         {
-         "t": "2026-11-16",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 1
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
-         "v": 0
+         "t": "2026-11-18",
+         "v": 4
         },
         {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 33
-        },
-        {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 12
         },
         {
@@ -3597,19 +3585,7 @@
         },
         {
          "t": "2026-11-18",
-         "v": 3
-        },
-        {
-         "t": "2026-11-18",
          "v": 0
-        },
-        {
-         "t": "2026-11-18",
-         "v": 13
-        },
-        {
-         "t": "2026-11-18",
-         "v": 28
         },
         {
          "t": "2026-11-18",
@@ -3618,6 +3594,38 @@
         {
          "t": "2026-11-18",
          "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 1
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 1
         }
        ]
       },
@@ -3628,10 +3636,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
         "v": "helped"
        },
        {
@@ -3804,10 +3808,6 @@
        },
        {
         "d": "2026-11-18",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-18",
         "v": "helped"
        },
        {
@@ -3941,6 +3941,14 @@
        {
         "d": "2026-11-18",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -4564,6 +4572,41 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "one-mittens-brain",
+   "label": "ONE MITTENS BRAIN",
+   "status": "idle",
+   "why": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
+   "statusLine": "built · one shared brain",
+   "caption": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
+   "stage": "active",
+   "embed": "pages/one-mittens-brain.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk",
+    "mittens-digital"
+   ],
+   "parent": "context-graph",
+   "parked": false,
+   "children": [
+    {
+     "id": "agent-swap",
+     "label": "AGENT SWAP",
+     "status": "idle",
+     "why": "The map and my assistant's memory are the real context, so any AI agent can plug in. When one runs out or goes down, the work moves to another automatically.",
+     "statusLine": "router live · fallback tested",
+     "caption": "The map and my assistant's memory are the real context, so any AI agent can plug in.",
+     "stage": "active",
+     "embed": "pages/agent-swap.html",
+     "visibility": "public",
+     "links": [
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
    "status": "idle",
@@ -4614,41 +4657,6 @@
      "planned": true,
      "embed": "pages/one-clean-record.html",
      "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "one-mittens-brain",
-   "label": "ONE MITTENS BRAIN",
-   "status": "idle",
-   "why": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
-   "statusLine": "built · one shared brain",
-   "caption": "Every place I talk to Mittens -- Talk, chat, the pendant -- answers through one session and one memory.",
-   "stage": "active",
-   "embed": "pages/one-mittens-brain.html",
-   "visibility": "public",
-   "links": [
-    "ns-talk",
-    "mittens-digital"
-   ],
-   "parent": "context-graph",
-   "parked": false,
-   "children": [
-    {
-     "id": "agent-swap",
-     "label": "AGENT SWAP",
-     "status": "idle",
-     "why": "The map and my assistant's memory are the real context, so any AI agent can plug in. When one runs out or goes down, the work moves to another automatically.",
-     "statusLine": "router live · fallback tested",
-     "caption": "The map and my assistant's memory are the real context, so any AI agent can plug in.",
-     "stage": "active",
-     "embed": "pages/agent-swap.html",
-     "visibility": "public",
-     "links": [
-      "northstar"
-     ],
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4803,7 +4811,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -4869,7 +4877,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 19
+       "v": 32
       }
      ],
      "partial": "2026-11-18",
@@ -4907,7 +4915,7 @@
         4,
         23,
         82,
-        8
+        11
        ]
       },
       {
@@ -4931,7 +4939,7 @@
         0,
         0,
         33,
-        7
+        8
        ]
       },
       {
@@ -4955,7 +4963,7 @@
         3,
         16,
         46,
-        17
+        18
        ]
       },
       {
@@ -4975,14 +4983,6 @@
     "tries": [
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
       "v": "helped"
      },
      {
@@ -5292,6 +5292,14 @@
      {
       "d": "2026-11-18",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5727,9 +5735,315 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "learn-with-mittens",
+   "label": "LEARN WITH MITTENS",
+   "status": "idle",
+   "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
+   "statusLine": "built",
+   "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
+   "stage": "active",
+   "embed": "pages/learn-with-mittens.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-09",
+       "v": 26
+      },
+      {
+       "t": "2026-11-10",
+       "v": 28
+      },
+      {
+       "t": "2026-11-11",
+       "v": 50
+      },
+      {
+       "t": "2026-11-12",
+       "v": 30
+      },
+      {
+       "t": "2026-11-13",
+       "v": 30
+      },
+      {
+       "t": "2026-11-14",
+       "v": 30
+      },
+      {
+       "t": "2026-11-15",
+       "v": 38
+      },
+      {
+       "t": "2026-11-16",
+       "v": 38
+      },
+      {
+       "t": "2026-11-17",
+       "v": 39
+      },
+      {
+       "t": "2026-11-18",
+       "v": 39
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-11",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     }
+    ],
+    "stage": {
+     "at": 1,
+     "round": 2
+    }
+   },
+   "links": [
+    "sheyou",
+    "ns-talk",
+    "ux-teaching"
+   ],
+   "parent": "mittens",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-tutor",
+     "label": "MITTENS TEACHES",
+     "status": "idle",
+     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "statusLine": "lessons target gaps · testing",
+     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
+     "stage": "active",
+     "embed": "pages/mittens-tutor.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-sop",
+     "label": "BRIEF TO EPISODE",
+     "status": "idle",
+     "why": "Every topic starts as a research brief with sources. That brief becomes an interactive episode, and we discuss it at my next free moment.",
+     "statusLine": "plan",
+     "caption": "Every topic starts as a research brief with sources.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/learn-sop.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "read-to-me",
+     "label": "READ TO ME",
+     "status": "idle",
+     "why": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
+     "statusLine": "built",
+     "caption": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
+     "stage": "active",
+     "embed": "pages/read-to-me.html",
+     "visibility": "public",
+     "links": [
+      "howto-read-to-me"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "atahualpa",
+     "label": "ATAHUALPA",
+     "status": "done",
+     "why": "A history learning episode my agent made for me.",
+     "statusLine": "episode made",
+     "caption": "A history learning episode my agent made for me.",
+     "stage": "active",
+     "embed": "pages/atahualpa.html",
+     "visibility": "public",
+     "links": [
+      "learn-with-mittens"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "podcast-youtube-episode-watch",
+     "label": "EPISODE WATCH",
+     "status": "done",
+     "why": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
+     "statusLine": "done · daily bundle live",
+     "caption": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
+     "stage": "done",
+     "embed": "pages/podcast-youtube-episode-watch.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "learn-js-modules",
+     "label": "WHAT .MJS MEANS",
+     "status": "idle",
+     "why": "I want to understand why so many of my files end in .mjs and what that changes about how code is loaded.",
+     "statusLine": "plan",
+     "caption": "I want to understand why so many of my files end in .mjs and what that changes about how code is loaded.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/learn-js-modules.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -6314,312 +6628,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "learn-with-mittens",
-   "label": "LEARN WITH MITTENS",
-   "status": "idle",
-   "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
-   "statusLine": "built",
-   "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
-   "stage": "active",
-   "embed": "pages/learn-with-mittens.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
-     "points": [
-      {
-       "t": "2026-11-09",
-       "v": 26
-      },
-      {
-       "t": "2026-11-10",
-       "v": 28
-      },
-      {
-       "t": "2026-11-11",
-       "v": 50
-      },
-      {
-       "t": "2026-11-12",
-       "v": 30
-      },
-      {
-       "t": "2026-11-13",
-       "v": 30
-      },
-      {
-       "t": "2026-11-14",
-       "v": 30
-      },
-      {
-       "t": "2026-11-15",
-       "v": 38
-      },
-      {
-       "t": "2026-11-16",
-       "v": 38
-      },
-      {
-       "t": "2026-11-17",
-       "v": 39
-      },
-      {
-       "t": "2026-11-18",
-       "v": 39
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-11",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     }
-    ],
-    "stage": {
-     "at": 1,
-     "round": 2
-    }
-   },
-   "links": [
-    "sheyou",
-    "ns-talk",
-    "ux-teaching"
-   ],
-   "parent": "mittens",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-tutor",
-     "label": "MITTENS TEACHES",
-     "status": "idle",
-     "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "statusLine": "lessons target gaps · testing",
-     "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
-     "stage": "active",
-     "embed": "pages/mittens-tutor.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-sop",
-     "label": "BRIEF TO EPISODE",
-     "status": "idle",
-     "why": "Every topic starts as a research brief with sources. That brief becomes an interactive episode, and we discuss it at my next free moment.",
-     "statusLine": "plan",
-     "caption": "Every topic starts as a research brief with sources.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/learn-sop.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "read-to-me",
-     "label": "READ TO ME",
-     "status": "idle",
-     "why": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
-     "statusLine": "built",
-     "caption": "Any paper, plan or page read aloud on the phone while cooking or walking -- a plain reader, no model call.",
-     "stage": "active",
-     "embed": "pages/read-to-me.html",
-     "visibility": "public",
-     "links": [
-      "howto-read-to-me"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "atahualpa",
-     "label": "ATAHUALPA",
-     "status": "done",
-     "why": "A history learning episode my agent made for me.",
-     "statusLine": "episode made",
-     "caption": "A history learning episode my agent made for me.",
-     "stage": "active",
-     "embed": "pages/atahualpa.html",
-     "visibility": "public",
-     "links": [
-      "learn-with-mittens"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "podcast-youtube-episode-watch",
-     "label": "EPISODE WATCH",
-     "status": "done",
-     "why": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
-     "statusLine": "done · daily bundle live",
-     "caption": "New episodes from the shows I follow are gathered into one daily line, and only the shows I care most about get their own ping.",
-     "stage": "done",
-     "embed": "pages/podcast-youtube-episode-watch.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "learn-js-modules",
-     "label": "WHAT .MJS MEANS",
-     "status": "idle",
-     "why": "I want to understand why so many of my files end in .mjs and what that changes about how code is loaded.",
-     "statusLine": "plan",
-     "caption": "I want to understand why so many of my files end in .mjs and what that changes about how code is loaded.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/learn-js-modules.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "man-glasses",
    "label": "GLASSES MANUAL",
    "status": "idle",
@@ -7157,7 +7165,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -7392,7 +7400,7 @@
   {
    "id": "ns-talk-live-stt",
    "label": "LIVE TRANSCRIPTION",
-   "status": "idle",
+   "status": "working",
    "why": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
    "statusLine": "plan · picking a service",
    "caption": "Showing my words live as I speak in Talk, with a cleaner sense of when I finish talking.",
@@ -10487,6 +10495,10 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-18",
