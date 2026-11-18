@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T02:34:07.936Z",
+ "generatedAt": "2026-11-18T02:50:27.692Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -1108,48 +1108,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-13",
-         "v": 0
-        },
-        {
-         "t": "2026-11-14",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 3
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 5
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
         }
        ]
       },
@@ -1171,10 +1131,6 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-15",
-        "v": "unmeasured"
-       },
-       {
         "d": "2026-11-16",
         "v": "no effect"
        },
@@ -1209,6 +1165,10 @@
        {
         "d": "2026-11-17",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -1519,7 +1479,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1644,10 +1604,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1889,10 +1845,6 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
      },
      {
       "d": "2026-11-17",
@@ -1941,6 +1893,14 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
      },
      {
       "d": "2026-11-18",
@@ -3501,18 +3461,6 @@
         },
         {
          "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
          "v": 3
         },
         {
@@ -3541,14 +3489,6 @@
         },
         {
          "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
          "v": 7
         },
         {
@@ -3558,24 +3498,32 @@
         {
          "t": "2026-11-17",
          "v": 9
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
         }
        ]
       },
       "tries": [
        {
         "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-16",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-16",
         "v": "unmeasured"
        },
        {
@@ -3844,15 +3792,7 @@
        },
        {
         "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
         "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
        },
        {
         "d": "2026-11-17",
@@ -3881,6 +3821,26 @@
        {
         "d": "2026-11-17",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -4727,7 +4687,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -4927,18 +4887,6 @@
      },
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
       "v": "helped"
      },
      {
@@ -5211,10 +5159,22 @@
      },
      {
       "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      }
     ],
@@ -6274,7 +6234,7 @@
       },
       {
        "t": "2026-11-17",
-       "v": 38
+       "v": 39
       }
      ]
     },
@@ -6372,10 +6332,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-16",
       "v": "unmeasured"
      },
@@ -6426,6 +6382,10 @@
      {
       "d": "2026-11-18",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -9527,48 +9487,44 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "values",
-     "label": "measured result",
+     "kind": "score",
+     "label": "improve-loop score",
      "points": [
       {
+       "t": "2026-11-09",
+       "v": 63
+      },
+      {
        "t": "2026-11-10",
-       "v": 0.92
+       "v": 63
+      },
+      {
+       "t": "2026-11-11",
+       "v": 63
+      },
+      {
+       "t": "2026-11-12",
+       "v": 48
       },
       {
        "t": "2026-11-13",
-       "v": 0.667
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0.851
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0.66
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0
-      },
-      {
-       "t": "2026-11-13",
-       "v": 159
+       "v": 47
       },
       {
        "t": "2026-11-14",
-       "v": 0.333
+       "v": 45
       },
       {
        "t": "2026-11-15",
-       "v": 0.5
+       "v": 38
       },
       {
        "t": "2026-11-16",
-       "v": 8
+       "v": 37
+      },
+      {
+       "t": "2026-11-17",
+       "v": 38
       }
      ]
     },
@@ -9634,10 +9590,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-16",
       "v": "no effect"
      },
@@ -9664,6 +9616,10 @@
      {
       "d": "2026-11-16",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -10246,24 +10202,36 @@
    "visibility": "public",
    "goalStory": {
     "metric": {
-     "kind": "values",
-     "label": "measured result",
+     "kind": "score",
+     "label": "improve-loop score",
      "points": [
       {
        "t": "2026-11-11",
-       "v": 404
+       "v": 43
       },
       {
        "t": "2026-11-12",
-       "v": 1
+       "v": 41
+      },
+      {
+       "t": "2026-11-13",
+       "v": 44
+      },
+      {
+       "t": "2026-11-14",
+       "v": 49
+      },
+      {
+       "t": "2026-11-15",
+       "v": 48
       },
       {
        "t": "2026-11-16",
-       "v": 1
+       "v": 49
       },
       {
        "t": "2026-11-17",
-       "v": 1
+       "v": 49
       }
      ]
     },
@@ -10321,10 +10289,6 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-15",
-      "v": "unmeasured"
-     },
-     {
       "d": "2026-11-16",
       "v": "helped"
      },
@@ -10335,6 +10299,10 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
