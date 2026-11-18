@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T00:18:23.511Z",
+ "generatedAt": "2026-11-18T00:32:47.376Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1519,7 +1519,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1648,14 +1648,6 @@
      },
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1944,6 +1936,14 @@
      },
      {
       "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      }
     ],
@@ -5508,7 +5508,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 228
+         "v": 223
         }
        ]
       },
@@ -9131,7 +9131,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 228
+       "v": 223
       }
      ]
     },
@@ -9195,7 +9195,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 228
+       "v": 223
       }
      ]
     },
@@ -11389,7 +11389,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 228
+       "v": 223
       }
      ]
     },
@@ -12035,6 +12035,21 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "feature-human-like-page-browsing",
+   "label": "HUMAN-LIKE BROWSING",
+   "status": "idle",
+   "why": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
+   "statusLine": "idle this week",
+   "caption": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
+   "stage": "active",
+   "embed": "pages/feature-human-like-page-browsing.html",
+   "visibility": "public",
+   "parent": "man-browsers",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "sheyou-code-architecture",
    "label": "SHEYOU CODE ARCHITECTURE",
    "status": "done",
@@ -12049,21 +12064,6 @@
    ],
    "parent": "sheyou",
    "parked": true,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "feature-human-like-page-browsing",
-   "label": "HUMAN-LIKE BROWSING",
-   "status": "idle",
-   "why": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
-   "statusLine": "idle this week",
-   "caption": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
-   "stage": "active",
-   "embed": "pages/feature-human-like-page-browsing.html",
-   "visibility": "public",
-   "parent": "man-browsers",
-   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
