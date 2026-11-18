@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T15:29:18.999Z",
+ "generatedAt": "2026-11-18T16:53:00.085Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1060,7 +1060,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1555,7 +1555,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1593,7 +1593,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 16
+       "v": 22
       }
      ],
      "partial": "2026-11-16",
@@ -1632,7 +1632,7 @@
         1,
         17,
         40,
-        7
+        12
        ]
       },
       {
@@ -1644,7 +1644,7 @@
         9,
         20,
         51,
-        6
+        7
        ]
       },
       {
@@ -2585,7 +2585,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 44
+       "v": 43
       }
      ]
     },
@@ -3276,7 +3276,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3519,7 +3519,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3532,7 +3532,31 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-17",
+         "t": "2026-11-15",
+         "v": 9
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 18
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
          "v": 1
         },
         {
@@ -3545,26 +3569,18 @@
         },
         {
          "t": "2026-11-17",
-         "v": 7
+         "v": 0
         },
         {
          "t": "2026-11-17",
-         "v": 1
-        },
-        {
-         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-18",
-         "v": 0
+         "t": "2026-11-17",
+         "v": 33
         },
         {
-         "t": "2026-11-18",
-         "v": 4
-        },
-        {
-         "t": "2026-11-18",
+         "t": "2026-11-17",
          "v": 12
         },
         {
@@ -3573,7 +3589,7 @@
         },
         {
          "t": "2026-11-18",
-         "v": 0
+         "v": 3
         },
         {
          "t": "2026-11-18",
@@ -3581,27 +3597,11 @@
         },
         {
          "t": "2026-11-18",
-         "v": 0
+         "v": 13
         },
         {
          "t": "2026-11-18",
-         "v": 1
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
+         "v": 28
         },
         {
          "t": "2026-11-18",
@@ -3628,30 +3628,6 @@
        },
        {
         "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
         "v": "helped"
        },
        {
@@ -3929,6 +3905,30 @@
        {
         "d": "2026-11-18",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-18",
@@ -4795,7 +4795,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -4861,7 +4861,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 11
+       "v": 19
       }
      ],
      "partial": "2026-11-18",
@@ -4899,7 +4899,7 @@
         4,
         23,
         82,
-        7
+        8
        ]
       },
       {
@@ -4923,7 +4923,7 @@
         0,
         0,
         33,
-        6
+        7
        ]
       },
       {
@@ -4967,10 +4967,6 @@
     "tries": [
      {
       "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
@@ -5284,6 +5280,10 @@
      {
       "d": "2026-11-18",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5576,7 +5576,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 170
+         "v": 171
         }
        ]
       },
@@ -6937,108 +6937,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "ns-daily-loops",
-   "label": "DAILY LOOPS",
-   "status": "idle",
-   "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
-   "statusLine": "live · every day",
-   "caption": "What the map runs on its own every day:",
-   "stage": "active",
-   "embed": "pages/ns-daily-loops.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-18",
-       "v": 2
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": null
-   },
-   "parent": "northstar",
-   "parked": false,
-   "children": [
-    {
-     "id": "daily-sync",
-     "label": "DAILY SYNC",
-     "status": "idle",
-     "why": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
-     "statusLine": "live",
-     "caption": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
-     "embed": "pages/daily-sync.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "morning-brief",
-     "label": "MORNING BRIEF",
-     "status": "idle",
-     "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
-     "statusLine": "paused · coming back shorter",
-     "caption": "One morning notification:",
-     "stage": "active",
-     "embed": "pages/morning-brief.html",
-     "visibility": "public",
-     "links": [
-      "action-tree",
-      "research-watch"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "what-changed",
-     "label": "WHAT CHANGED",
-     "status": "idle",
-     "why": "Each morning: what got built, fixed or shipped yesterday, in five lines grouped by area.",
-     "statusLine": "built",
-     "caption": "Each morning:",
-     "stage": "active",
-     "embed": "pages/what-changed.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "nightly-reflection",
-     "label": "NIGHTLY REFLECTION",
-     "status": "idle",
-     "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · recent misses not fixed",
-     "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "stage": "active",
-     "embed": "pages/nightly-reflection.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "gospel",
    "label": "GOSPEL",
    "status": "idle",
@@ -7249,6 +7147,120 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "ns-daily-loops",
+   "label": "DAILY LOOPS",
+   "status": "working",
+   "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
+   "statusLine": "live · every day",
+   "caption": "What the map runs on its own every day:",
+   "stage": "active",
+   "embed": "pages/ns-daily-loops.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-18",
+       "v": 2
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "northstar",
+   "parked": false,
+   "children": [
+    {
+     "id": "daily-sync",
+     "label": "DAILY SYNC",
+     "status": "idle",
+     "why": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
+     "statusLine": "live",
+     "caption": "Three times a day, reads every channel so the summary is true -- nothing listed as owed that was already answered.",
+     "embed": "pages/daily-sync.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "morning-brief",
+     "label": "MORNING BRIEF",
+     "status": "idle",
+     "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
+     "statusLine": "paused · coming back shorter",
+     "caption": "One morning notification:",
+     "stage": "active",
+     "embed": "pages/morning-brief.html",
+     "visibility": "public",
+     "links": [
+      "action-tree",
+      "research-watch"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "what-changed",
+     "label": "WHAT CHANGED",
+     "status": "idle",
+     "why": "Each morning: what got built, fixed or shipped yesterday, in five lines grouped by area.",
+     "statusLine": "built",
+     "caption": "Each morning:",
+     "stage": "active",
+     "embed": "pages/what-changed.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "nightly-reflection",
+     "label": "NIGHTLY REFLECTION",
+     "status": "idle",
+     "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
+     "statusLine": "live · recent misses not fixed",
+     "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
+     "stage": "active",
+     "embed": "pages/nightly-reflection.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "talk-phone-calls",
    "label": "PHONE CALLS",
    "status": "idle",
@@ -7337,7 +7349,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "working",
+   "status": "idle",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -9243,7 +9255,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 170
+       "v": 171
       }
      ]
     },
@@ -9307,7 +9319,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 170
+       "v": 171
       }
      ]
     },
@@ -10395,7 +10407,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 48
+       "v": 47
       }
      ]
     },
@@ -10467,6 +10479,10 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-18",
@@ -11088,7 +11104,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 42
+       "v": 41
       }
      ]
     },
@@ -11139,6 +11155,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      },
      {
@@ -11241,7 +11261,7 @@
         },
         {
          "t": "2026-11-18",
-         "v": 34
+         "v": 33
         }
        ]
       },
@@ -11269,6 +11289,14 @@
        {
         "d": "2026-11-18",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-18",
@@ -11408,7 +11436,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 170
+       "v": 171
       }
      ]
     },
