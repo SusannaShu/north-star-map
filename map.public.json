@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T10:17:55.076Z",
+ "generatedAt": "2026-11-18T10:31:46.255Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -1676,10 +1676,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1993,6 +1989,10 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2669,7 +2669,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -2888,7 +2888,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -2938,6 +2938,10 @@
       {
        "t": "2026-11-17",
        "v": 7.08
+      },
+      {
+       "t": "2026-11-18",
+       "v": 2
       }
      ]
     },
@@ -3065,10 +3069,22 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
-     "at": 4,
+     "at": 5,
      "round": 1
     }
    },
@@ -3284,7 +3300,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3954,7 +3970,7 @@
     {
      "id": "mittens-ask-guard",
      "label": "EVERY ASK BECOMES A TASK",
-     "status": "working",
+     "status": "idle",
      "why": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone. A guard checks each thing I said once the turn ends and files anything that was missed.",
      "statusLine": "restored · live",
      "caption": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone.",
@@ -5443,7 +5459,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -10348,7 +10364,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
