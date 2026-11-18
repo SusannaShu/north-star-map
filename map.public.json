@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T07:19:43.164Z",
+ "generatedAt": "2026-11-18T07:51:52.159Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "idle",
+   "status": "working",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -134,6 +134,10 @@
      {
       "d": "2026-11-15",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1060,7 +1064,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -2609,7 +2613,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -3467,7 +3471,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3564,14 +3568,6 @@
       "tries": [
        {
         "d": "2026-11-17",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-17",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-17",
         "v": "helped"
        },
        {
@@ -3877,6 +3873,14 @@
        {
         "d": "2026-11-18",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
        },
        {
         "d": "2026-11-18",
@@ -3894,7 +3898,7 @@
     {
      "id": "mittens-ask-guard",
      "label": "EVERY ASK BECOMES A TASK",
-     "status": "idle",
+     "status": "working",
      "why": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone. A guard checks each thing I said once the turn ends and files anything that was missed.",
      "statusLine": "restored · live",
      "caption": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone.",
@@ -3935,6 +3939,10 @@
       {
        "t": "2026-11-17",
        "v": 162
+      },
+      {
+       "t": "2026-11-18",
+       "v": 162
       }
      ]
     },
@@ -3965,6 +3973,10 @@
      },
      {
       "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      }
     ],
@@ -5375,7 +5387,7 @@
   {
    "id": "smart-glasses",
    "label": "GLASSES",
-   "status": "idle",
+   "status": "working",
    "why": "Meta Ray-Ban Display glasses: how I talk with Mittens day to day. Mittens draws its own cards on the lens.",
    "statusLine": "in daily use",
    "caption": "Meta Ray-Ban Display glasses:",
@@ -5657,7 +5669,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5836,7 +5848,7 @@
     {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
-     "status": "idle",
+     "status": "working",
      "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
      "statusLine": "live",
      "caption": "Anything that needs me needs me once:",
@@ -8586,7 +8598,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "idle",
+   "status": "working",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -8933,7 +8945,7 @@
   {
    "id": "watchdog",
    "label": "WATCHDOG",
-   "status": "working",
+   "status": "idle",
    "why": "Nothing fails silently: every scheduled task beats at start and end, and a stuck one raises one alert.",
    "statusLine": "live",
    "caption": "Nothing fails silently:",
@@ -10277,7 +10289,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -10958,7 +10970,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -11000,7 +11012,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 43
+       "v": 42
       }
      ]
     },
@@ -11051,6 +11063,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      }
     ],
@@ -11103,7 +11119,7 @@
     {
      "id": "ux-maxer",
      "label": "UX MAXER",
-     "status": "working",
+     "status": "idle",
      "why": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard. It scores itself on my own complaints, not on code counts.",
      "statusLine": "active · critic flagging weak spots",
      "caption": "An agent that looks at every screen and every sound the system sends me and asks whether it made sense, led somewhere and was heard.",
@@ -11392,7 +11408,7 @@
   {
    "id": "owner-decides",
    "label": "THE OWNER DECIDES",
-   "status": "idle",
+   "status": "working",
    "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
    "statusLine": "built · being tuned",
    "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
@@ -11423,7 +11439,7 @@
     {
      "id": "rg-her-words-reach-goal",
      "label": "MY WORDS REACH DOTS",
-     "status": "idle",
+     "status": "working",
      "why": "Everything I say about a project should land on the right dot of the map within a day. A rule became a measurable goal that the system checks by itself.",
      "statusLine": "met · no lines waiting",
      "caption": "Everything I say about a project should land on the right dot of the map within a day.",
@@ -11844,7 +11860,7 @@
   {
    "id": "ux-teaching",
    "label": "TEACHING UX",
-   "status": "working",
+   "status": "idle",
    "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
    "statusLine": "plan · nothing yet",
    "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
