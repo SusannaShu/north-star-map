@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T05:00:54.033Z",
+ "generatedAt": "2026-11-18T05:15:31.525Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -2214,7 +2214,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -3212,7 +3212,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3455,7 +3455,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -4432,6 +4432,10 @@
      {
       "d": "2026-11-17",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -4732,10 +4736,6 @@
      "label": "repeated complaints and catches, per day",
      "points": [
       {
-       "t": "2026-11-04",
-       "v": 0
-      },
-      {
        "t": "2026-11-05",
        "v": 7
       },
@@ -4786,8 +4786,13 @@
       {
        "t": "2026-11-17",
        "v": 58
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
       }
      ],
+     "partial": "2026-11-18",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -5602,9 +5607,45 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-scenarios",
+   "label": "SCENARIOS",
+   "status": "idle",
+   "why": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home: which device leads, what is said out loud, what waits.",
+   "statusLine": "built · rules per situation",
+   "caption": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home:",
+   "stage": "active",
+   "embed": "pages/mittens-scenarios.html",
+   "visibility": "public",
+   "links": [
+    "mittens",
+    "mittens-digital",
+    "proactive-rules"
+   ],
+   "parent": "mittens-knows",
+   "parked": false,
+   "children": [
+    {
+     "id": "situations",
+     "label": "SITUATIONS",
+     "status": "idle",
+     "why": "This is where I think through what the system should do in each situation it meets.",
+     "statusLine": "in progress",
+     "caption": "This is where I think through what the system should do in each situation it meets.",
+     "stage": "active",
+     "embed": "pages/situations.html",
+     "visibility": "public",
+     "links": [
+      "mittens-scenarios"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -5654,7 +5695,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 46
+       "v": 47
       }
      ]
     },
@@ -5758,6 +5799,10 @@
      {
       "d": "2026-11-18",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -6178,42 +6223,6 @@
      "visibility": "public",
      "links": [
       "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-scenarios",
-   "label": "SCENARIOS",
-   "status": "idle",
-   "why": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home: which device leads, what is said out loud, what waits.",
-   "statusLine": "built · rules per situation",
-   "caption": "One table decides how Mittens behaves in each situation -- working, in a meeting, biking, with friends, at home:",
-   "stage": "active",
-   "embed": "pages/mittens-scenarios.html",
-   "visibility": "public",
-   "links": [
-    "mittens",
-    "mittens-digital",
-    "proactive-rules"
-   ],
-   "parent": "mittens-knows",
-   "parked": false,
-   "children": [
-    {
-     "id": "situations",
-     "label": "SITUATIONS",
-     "status": "idle",
-     "why": "This is where I think through what the system should do in each situation it meets.",
-     "statusLine": "in progress",
-     "caption": "This is where I think through what the system should do in each situation it meets.",
-     "stage": "active",
-     "embed": "pages/situations.html",
-     "visibility": "public",
-     "links": [
-      "mittens-scenarios"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
