@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T07:51:52.159Z",
+ "generatedAt": "2026-11-18T08:50:03.737Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -13,7 +13,7 @@
   {
    "id": "outreach",
    "label": "PEOPLE + OUTREACH",
-   "status": "working",
+   "status": "idle",
    "why": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform. Counts only, never names.",
    "statusLine": "counts only",
    "caption": "The people whose work I want to learn from, grouped by the kind of work they do -- and the daily pipeline that brings designers and creators onto the platform.",
@@ -727,27 +727,31 @@
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
          "v": 0
         }
        ]
@@ -762,27 +766,31 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
         "v": "no effect"
        }
       ],
@@ -1128,8 +1136,52 @@
        "label": "measured result",
        "points": [
         {
+         "t": "2026-11-13",
+         "v": 0
+        },
+        {
+         "t": "2026-11-14",
+         "v": 0
+        },
+        {
+         "t": "2026-11-15",
+         "v": 0
+        },
+        {
+         "t": "2026-11-16",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 3
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
          "t": "2026-11-18",
          "v": 5
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
         }
        ]
       },
@@ -1163,28 +1215,32 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
-        "v": "hurt"
-       },
-       {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "helped"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
         "v": "hurt"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "helped"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "hurt"
        },
        {
         "d": "2026-11-18",
@@ -1928,15 +1984,15 @@
      },
      {
       "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "helped"
      }
     ],
     "stage": {
@@ -3484,35 +3540,23 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
+         "t": "2026-11-17",
          "v": 0
         },
         {
-         "t": "2026-11-15",
+         "t": "2026-11-17",
+         "v": 2
+        },
+        {
+         "t": "2026-11-17",
          "v": 9
         },
         {
-         "t": "2026-11-15",
-         "v": 0
+         "t": "2026-11-17",
+         "v": 2
         },
         {
-         "t": "2026-11-15",
-         "v": 18
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
-         "v": 0
-        },
-        {
-         "t": "2026-11-16",
+         "t": "2026-11-17",
          "v": 1
         },
         {
@@ -3525,18 +3569,26 @@
         },
         {
          "t": "2026-11-17",
+         "v": 7
+        },
+        {
+         "t": "2026-11-17",
+         "v": 1
+        },
+        {
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
-         "v": 33
+         "t": "2026-11-18",
+         "v": 4
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 12
         },
         {
@@ -3545,7 +3597,7 @@
         },
         {
          "t": "2026-11-18",
-         "v": 3
+         "v": 0
         },
         {
          "t": "2026-11-18",
@@ -3553,11 +3605,15 @@
         },
         {
          "t": "2026-11-18",
-         "v": 13
+         "v": 0
         },
         {
          "t": "2026-11-18",
-         "v": 28
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
         },
         {
          "t": "2026-11-18",
@@ -3756,18 +3812,6 @@
        },
        {
         "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
         "v": "unmeasured"
        },
        {
@@ -3885,6 +3929,18 @@
        {
         "d": "2026-11-18",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -4747,7 +4803,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5528,7 +5584,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 223
+         "v": 181
         }
        ]
       },
@@ -6256,7 +6312,7 @@
   {
    "id": "learn-with-mittens",
    "label": "LEARN WITH MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through. What I say gets saved back onto the map.",
    "statusLine": "built",
    "caption": "Mittens turns my open plans into short podcast-style episodes and calls me when I have a free moment to talk them through.",
@@ -6476,7 +6532,7 @@
     {
      "id": "mittens-tutor",
      "label": "MITTENS TEACHES",
-     "status": "idle",
+     "status": "working",
      "why": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
      "statusLine": "lessons target gaps · testing",
      "caption": "Short daily lessons in chat -- databases, French, linear algebra -- voice for French, one recall question the next day.",
@@ -6887,7 +6943,7 @@
   {
    "id": "ns-daily-loops",
    "label": "DAILY LOOPS",
-   "status": "working",
+   "status": "idle",
    "why": "What the map runs on its own every day: the sync, debriefs, a morning brief, what changed, a nightly reflection and a watchdog.",
    "statusLine": "live · every day",
    "caption": "What the map runs on its own every day:",
@@ -6942,7 +6998,7 @@
     {
      "id": "morning-brief",
      "label": "MORNING BRIEF",
-     "status": "working",
+     "status": "idle",
      "why": "One morning notification: the day and the top three, spoken in the assistant's voice.",
      "statusLine": "paused · coming back shorter",
      "caption": "One morning notification:",
@@ -7281,7 +7337,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "idle",
+   "status": "working",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -7297,7 +7353,7 @@
     {
      "id": "outing-thread",
      "label": "OUTING THREAD",
-     "status": "done",
+     "status": "working",
      "why": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
      "statusLine": "done",
      "caption": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
@@ -7692,7 +7748,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 82
+       "v": 58
       }
      ]
     },
@@ -8076,20 +8132,15 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-18",
-       "v": 0
-      }
-     ]
-    },
+    "metric": null,
     "tries": [
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -8365,11 +8416,11 @@
       },
       "tries": [
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "helped"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "hurt"
        }
       ],
@@ -8598,7 +8649,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -9183,7 +9234,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 223
+       "v": 181
       }
      ]
     },
@@ -9247,7 +9298,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 223
+       "v": 181
       }
      ]
     },
@@ -9258,6 +9309,10 @@
      },
      {
       "d": "2026-11-15",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
       "v": "unmeasured"
      }
     ],
@@ -9441,7 +9496,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 65
+       "v": 63
       }
      ]
     },
@@ -10289,7 +10344,7 @@
   {
    "id": "glasses-mittens",
    "label": "GLASSES + MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens on the lens: its own app in developer mode, custom swipe and pinch, North Star cards, and a session that heals itself.",
    "statusLine": "testing · lens home live",
    "caption": "Mittens on the lens:",
@@ -10331,7 +10386,7 @@
       },
       {
        "t": "2026-11-18",
-       "v": 49
+       "v": 48
       }
      ]
     },
@@ -10403,6 +10458,14 @@
      {
       "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -10592,7 +10655,7 @@
   {
    "id": "lens-home",
    "label": "MITTENS LENS HOME",
-   "status": "idle",
+   "status": "working",
    "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
    "statusLine": "step 1 live",
    "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
@@ -10680,7 +10743,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 65
+       "v": 63
       }
      ]
     },
@@ -10728,7 +10791,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 65
+         "v": 63
         }
        ]
       },
@@ -11095,7 +11158,7 @@
        "points": [
         {
          "t": "2026-11-18",
-         "v": 82
+         "v": 58
         }
        ]
       },
@@ -11343,8 +11406,52 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-18",
+       "t": "2026-11-13",
        "v": 7
+      },
+      {
+       "t": "2026-11-14",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 1
+      },
+      {
+       "t": "2026-11-16",
+       "v": 4
+      },
+      {
+       "t": "2026-11-17",
+       "v": 4
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
+      },
+      {
+       "t": "2026-11-18",
+       "v": 8
+      },
+      {
+       "t": "2026-11-18",
+       "v": 8
       }
      ]
     },
@@ -11371,31 +11478,35 @@
      },
      {
       "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "hurt"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
       "v": "helped"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -11422,7 +11533,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 223
+       "v": 181
       }
      ]
     },
@@ -11452,46 +11563,58 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 2
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 2
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
+         "v": 2
+        },
+        {
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-18",
         "v": "hurt"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
         "v": "helped"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        }
       ],
@@ -11515,46 +11638,54 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
          "v": 1
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         },
         {
-         "t": "2026-11-17",
+         "t": "2026-11-18",
          "v": 0
         }
        ]
       },
       "tries": [
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
         "v": "hurt"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "helped"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        },
        {
-        "d": "2026-11-17",
+        "d": "2026-11-18",
         "v": "no effect"
        }
       ],
@@ -11583,7 +11714,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 82
+       "v": 58
       }
      ]
     },
@@ -11666,31 +11797,35 @@
       },
       {
        "t": "2026-11-17",
-       "v": 1
-      },
-      {
-       "t": "2026-11-17",
-       "v": 1
-      },
-      {
-       "t": "2026-11-17",
        "v": 0
       },
       {
-       "t": "2026-11-17",
-       "v": 0
+       "t": "2026-11-18",
+       "v": 4
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 1
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 1
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
       }
      ]
     },
@@ -11717,31 +11852,35 @@
      },
      {
       "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
       "v": "helped"
      },
      {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "hurt"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -11783,27 +11922,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
        "v": 0
       }
      ]
@@ -11826,27 +11969,31 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
      }
     ],
@@ -11918,27 +12065,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
        "v": 0
       }
      ]
@@ -11965,27 +12116,31 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
      }
     ],
@@ -12017,31 +12172,35 @@
       },
       {
        "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
        "v": 1
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
       }
      ]
     },
@@ -12052,31 +12211,35 @@
      },
      {
       "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
      }
     ],
     "stage": null
@@ -12206,27 +12369,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
        "v": 0
       }
      ]
@@ -12241,27 +12408,31 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
      }
     ],
@@ -12296,27 +12467,31 @@
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
        "v": 1
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
-       "v": 0
-      },
-      {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       }
      ]
@@ -12331,27 +12506,31 @@
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
       "v": "hurt"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "helped"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      }
     ],
@@ -12379,7 +12558,7 @@
      "points": [
       {
        "t": "2026-11-18",
-       "v": 0.914
+       "v": 0.911
       }
      ]
     },
@@ -12420,62 +12599,70 @@
      "points": [
       {
        "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
        "v": 2
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 0
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 1
       },
       {
-       "t": "2026-11-17",
+       "t": "2026-11-18",
        "v": 1
-      },
-      {
-       "t": "2026-11-17",
-       "v": 0
       }
      ]
     },
     "tries": [
      {
       "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
       "v": "helped"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
       "v": "hurt"
      },
      {
-      "d": "2026-11-17",
+      "d": "2026-11-18",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
       "v": "no effect"
      },
      {
-      "d": "2026-11-17",
-      "v": "helped"
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
      }
     ],
     "stage": null
