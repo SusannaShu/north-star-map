@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-18T08:50:03.737Z",
+ "generatedAt": "2026-11-18T09:14:07.192Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1072,7 +1072,7 @@
   {
    "id": "mittens-daily",
    "label": "DAY & CALENDAR",
-   "status": "working",
+   "status": "idle",
    "why": "Mittens as the direct interface: talk to it out loud, it keeps the calendar and acts only on a yes.",
    "statusLine": "active",
    "caption": "Mittens as the direct interface:",
@@ -1676,10 +1676,6 @@
     "tries": [
      {
       "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
       "v": "unmeasured"
      },
      {
@@ -1993,6 +1989,10 @@
      {
       "d": "2026-11-18",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3284,7 +3284,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3954,7 +3954,7 @@
     {
      "id": "mittens-ask-guard",
      "label": "EVERY ASK BECOMES A TASK",
-     "status": "working",
+     "status": "idle",
      "why": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone. A guard checks each thing I said once the turn ends and files anything that was missed.",
      "statusLine": "restored · live",
      "caption": "Every question or idea I say should turn into a task with work already started, without me having to remind anyone.",
@@ -5904,7 +5904,7 @@
     {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
-     "status": "working",
+     "status": "idle",
      "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
      "statusLine": "live",
      "caption": "Anything that needs me needs me once:",
@@ -5920,7 +5920,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "idle",
+     "status": "working",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -7337,7 +7337,7 @@
   {
    "id": "go-anywhere",
    "label": "GO ANYWHERE",
-   "status": "working",
+   "status": "idle",
    "why": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
    "statusLine": "live · bike-share arrival flow",
    "caption": "Say where you are heading and Mittens plans it your way -- bike share over subway, docks checked at both ends -- and shows a map on the glasses lens, not turn-by-turn.",
@@ -7353,7 +7353,7 @@
     {
      "id": "outing-thread",
      "label": "OUTING THREAD",
-     "status": "working",
+     "status": "done",
      "why": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
      "statusLine": "done",
      "caption": "One live card per errand -- route, bike docks, status -- updated in place and deleted when the trip ends.",
@@ -10655,7 +10655,7 @@
   {
    "id": "lens-home",
    "label": "MITTENS LENS HOME",
-   "status": "working",
+   "status": "idle",
    "why": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
    "statusLine": "step 1 live",
    "caption": "Only our interface on the glasses -- Talk, Capture, Workers, Needs -- driven with the wristband, working even when Talk is off.",
@@ -11519,7 +11519,7 @@
   {
    "id": "owner-decides",
    "label": "THE OWNER DECIDES",
-   "status": "working",
+   "status": "idle",
    "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
    "statusLine": "built · being tuned",
    "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
@@ -11550,7 +11550,7 @@
     {
      "id": "rg-her-words-reach-goal",
      "label": "MY WORDS REACH DOTS",
-     "status": "working",
+     "status": "idle",
      "why": "Everything I say about a project should land on the right dot of the map within a day. A rule became a measurable goal that the system checks by itself.",
      "statusLine": "met · no lines waiting",
      "caption": "Everything I say about a project should land on the right dot of the map within a day.",
@@ -11616,6 +11616,10 @@
        {
         "d": "2026-11-18",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-18",
+        "v": "unmeasured"
        }
       ],
       "stage": null
