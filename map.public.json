@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-19T17:59:02.815Z",
+ "generatedAt": "2026-11-19T19:07:59.937Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1665,7 +1665,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 44
+       "v": 47
       }
      ],
      "partial": "2026-11-16",
@@ -1680,7 +1680,7 @@
         0,
         4,
         24,
-        7
+        8
        ]
       },
       {
@@ -1692,7 +1692,7 @@
         2,
         2,
         17,
-        2
+        3
        ]
       },
       {
@@ -1704,7 +1704,7 @@
         1,
         17,
         40,
-        23
+        24
        ]
       },
       {
@@ -1734,10 +1734,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
      {
       "d": "2026-11-17",
       "v": "helped"
@@ -2044,15 +2040,19 @@
      },
      {
       "d": "2026-11-19",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
       "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-19",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-19",
-      "v": "helped"
      }
     ],
     "stage": {
@@ -2665,7 +2665,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 42
+       "v": 41
       }
      ]
     },
@@ -2968,7 +2968,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -3657,10 +3657,6 @@
        "points": [
         {
          "t": "2026-11-19",
-         "v": 1
-        },
-        {
-         "t": "2026-11-19",
          "v": 5
         },
         {
@@ -3721,10 +3717,6 @@
         },
         {
          "t": "2026-11-19",
-         "v": 2
-        },
-        {
-         "t": "2026-11-19",
          "v": 1
         },
         {
@@ -3733,7 +3725,15 @@
         },
         {
          "t": "2026-11-19",
-         "v": 2
+         "v": 3
+        },
+        {
+         "t": "2026-11-19",
+         "v": 1
+        },
+        {
+         "t": "2026-11-19",
+         "v": 3
         }
        ]
       },
@@ -3892,10 +3892,6 @@
        },
        {
         "d": "2026-11-18",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-18",
         "v": "helped"
        },
        {
@@ -4041,6 +4037,10 @@
        {
         "d": "2026-11-19",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-19",
+        "v": "no effect"
        },
        {
         "d": "2026-11-19",
@@ -4969,7 +4969,7 @@
       },
       {
        "t": "2026-11-14",
-       "v": 43
+       "v": 42
       },
       {
        "t": "2026-11-15",
@@ -4989,7 +4989,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 46
+       "v": 54
       }
      ],
      "partial": "2026-11-19",
@@ -5027,7 +5027,7 @@
         4,
         23,
         82,
-        25
+        26
        ]
       },
       {
@@ -5063,7 +5063,7 @@
         5,
         27,
         19,
-        4
+        5
        ]
       },
       {
@@ -5075,7 +5075,7 @@
         3,
         16,
         46,
-        29
+        30
        ]
       },
       {
@@ -6221,7 +6221,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 54
+       "v": 61
       }
      ]
     },
@@ -6333,10 +6333,14 @@
      {
       "d": "2026-11-19",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 3,
+     "at": 4,
      "round": 1
     }
    },
@@ -8309,6 +8313,24 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-makes-calls-for-her",
+   "label": "AGENT MAKES CALLS",
+   "status": "done",
+   "why": "My agent can place phone calls for me and handle the conversation.",
+   "statusLine": "in progress",
+   "caption": "My agent can place phone calls for me and handle the conversation.",
+   "stage": "active",
+   "embed": "pages/mittens-makes-calls-for-her.html",
+   "visibility": "public",
+   "links": [
+    "mittens"
+   ],
+   "parent": "talk-phone-calls",
+   "parked": true,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "portfolio-mittens-scenes",
    "label": "MITTENS SCENES",
    "status": "idle",
@@ -8368,24 +8390,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-makes-calls-for-her",
-   "label": "AGENT MAKES CALLS",
-   "status": "done",
-   "why": "My agent can place phone calls for me and handle the conversation.",
-   "statusLine": "in progress",
-   "caption": "My agent can place phone calls for me and handle the conversation.",
-   "stage": "active",
-   "embed": "pages/mittens-makes-calls-for-her.html",
-   "visibility": "public",
-   "links": [
-    "mittens"
-   ],
-   "parent": "talk-phone-calls",
-   "parked": true,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -9766,6 +9770,10 @@
      {
       "d": "2026-11-13",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -11299,7 +11307,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 41
+       "v": 40
       }
      ]
     },
@@ -11358,6 +11366,10 @@
      },
      {
       "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-19",
       "v": "unmeasured"
      }
     ],
@@ -11460,7 +11472,7 @@
         },
         {
          "t": "2026-11-19",
-         "v": 33
+         "v": 34
         }
        ]
       },
@@ -11502,8 +11514,8 @@
         "v": "unmeasured"
        },
        {
-        "d": "2026-11-18",
-        "v": "unmeasured"
+        "d": "2026-11-19",
+        "v": "no effect"
        }
       ],
       "stage": {
