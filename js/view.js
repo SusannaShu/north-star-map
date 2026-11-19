@@ -98,6 +98,19 @@
             const st = !window.NS_PUBLIC ? d.progress && d.progress.story : d.goalStory || n.goalStory;
             if (st) parts.unshift(storyBlock(st, !!window.NS_PUBLIC, window.NS_PUBLIC ? firstSentence(d.why || n.why || "") : null));
         }
+        if (!window.NS_PUBLIC && window.nsPrepared) {
+            const pb = window.nsPrepared.blockHtml({
+                ...n,
+                ...d,
+                id: id
+            }, {
+                esc: esc,
+                url: window.macUrl || (x => x),
+                label: n.label,
+                nameOf: x => DETAILS[x] && DETAILS[x].label || typeof FULL !== "undefined" && FULL.e[x] && FULL.e[x].label || x
+            });
+            if (pb) parts.unshift(`<div class="vw-pg-row vw-prepared">${pb}</div>`);
+        }
         parts.push(`<div id="vwAgents">${agentStrip(id)}</div>`);
         const hero = [];
         (d.cases || (d.case ? [ d.case ] : [])).forEach(c => hero.push(caseCard(c)));

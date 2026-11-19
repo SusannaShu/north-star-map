@@ -575,7 +575,16 @@ function renderLeafCap() {
     const cut = (s, k) => s.length > k ? s.slice(0, k - 1).replace(/\s+\S*$/, "") + "…" : s;
     const why = txt(d.why || d.caption), sl = txt(d.statusLine);
     const st = e.status === "needs-you" ? "needs-you" : e.status === "working" ? "working" : e.status === "waiting" ? "waiting" : e.status === "queued" ? "queued" : "done";
-    el.innerHTML = `<div class="lc-title"><span class="dot ${st}"></span>${esc(e.label)}</div>${why ? `<p>${esc(cut(why, 220))}</p>` : ""}${sl && sl !== why ? `<div class="lc-meta">${esc(cut(sl, 120))}</div>` : ""}${PUBLIC ? "" : leafGoal(d)}`;
+    const prep = !PUBLIC && window.nsPrepared && d.prepared ? window.nsPrepared.blockHtml({
+        ...d,
+        id: LEAF
+    }, {
+        esc: esc,
+        url: macUrl,
+        label: e.label,
+        max: 3
+    }) : "";
+    el.innerHTML = `<div class="lc-title"><span class="dot ${st}"></span>${esc(e.label)}</div>${prep}${why ? `<p>${esc(cut(why, prep ? 120 : 220))}</p>` : ""}${sl && sl !== why ? `<div class="lc-meta">${esc(cut(sl, 120))}</div>` : ""}${PUBLIC ? "" : leafGoal(d)}`;
     el.hidden = false;
 }
 

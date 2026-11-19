@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-19T16:28:51.025Z",
+ "generatedAt": "2026-11-19T16:44:05.103Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1627,7 +1627,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1734,14 +1734,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
      {
       "d": "2026-11-17",
       "v": "helped"
@@ -2053,6 +2045,14 @@
      {
       "d": "2026-11-19",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -3392,7 +3392,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3643,7 +3643,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -4923,7 +4923,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5095,10 +5095,6 @@
     "tries": [
      {
       "d": "2026-11-16",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-16",
       "v": "unmeasured"
      },
      {
@@ -5408,6 +5404,10 @@
      {
       "d": "2026-11-19",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-19",

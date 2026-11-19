@@ -830,6 +830,11 @@ body.has-crumbs #focus { bottom:0 !important; }
 .leaf-cap { position:fixed; left:16px; bottom:16px; z-index:26; max-width:min(460px, calc(100vw - 32px)); padding:12px 14px; background:var(--bg-glass); backdrop-filter:blur(10px);
   border:1px solid var(--border); border-radius:var(--radius); box-shadow:0 12px 32px rgba(0,0,0,.08); animation:vwIn .35s ease both; }
 .leaf-cap[hidden] { display:none; }
+/* T8424: a person's caption opens with what was prepared for them -- a light block, not a nested card */
+.leaf-cap .card.prepared { margin:8px 0 0; padding:8px 0 0; border:0; border-top:1px solid var(--border); background:none; box-shadow:none; }
+.leaf-cap .card.prepared h4 { font-family:var(--mono); font-size:10.5px; letter-spacing:.4px; text-transform:uppercase; color:var(--text-muted); margin:0 0 4px; }
+.leaf-cap .card.prepared ul { list-style:none; margin:0; padding:0; } .leaf-cap .card.prepared li { font-size:13px; line-height:1.5; }
+.leaf-cap .card.prepared a { color:var(--text); } .leaf-cap .card.prepared p { font-size:12px; margin-top:4px; }
 .leaf-cap .lc-title { font-family:var(--font-heading); font-size:15px; letter-spacing:-.2px; display:flex; align-items:center; gap:8px; }
 .leaf-cap p { font-size:13px; line-height:1.45; color:var(--text-secondary); margin-top:6px; }
 .leaf-cap .lc-meta { font-family:var(--mono); font-size:10.5px; color:var(--text-muted); margin-top:6px; }
@@ -974,14 +979,14 @@ body.saver .leaf-cap, body.still .leaf-cap { display:none !important; }
 <script src="js/ns-stream.js?v=20261022pulse2"></script>
 <script src="js/done-filter.js?v=20261103b"></script>
 <script src="js/dot-view.js?v=20261103b"></script>
-<script src="js/prepared-search.js?v=20261119a"></script>
+<script src="js/prepared-search.js?v=20261119d"></script>
 <script src="js/public-live.js"></script>
-<script src="js/map.js?v=20261119t8424"></script>
+<script src="js/map.js?v=20261119t8424b"></script>
 <script src="js/flow.js?v=20261014lazy"></script>
 <script src="js/public-time.js?v=20261022changes" defer="defer"></script>
 <script src="js/live.js?v=20261102done"></script>
 <script src="js/embed-head.js?v=20261022one"></script>
-<script src="js/view.js?v=20261022onehead"></script>
+<script src="js/view.js?v=20261119t8424b"></script>
 
 <script src="js/tree-core.js?v=20261026card"></script>
 <script src="js/tree-dock.js?v=20261103live"></script>
