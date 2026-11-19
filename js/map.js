@@ -2811,8 +2811,9 @@ function runSearch(q) {
         if (ok) scored.push([ s, n ]);
     }
     scored.sort((a, b) => b[0] - a[0] || typeRank(a[1]) - typeRank(b[1]) || String(a[1].label).localeCompare(String(b[1].label)));
-    SEARCH.all = scored.length;
-    SEARCH.hits = scored.slice(0, 40).map(x => x[1]);
+    const made = !PUBLIC && window.nsPrepared ? window.nsPrepared.hits(DATA, q) : [];
+    SEARCH.all = scored.length + made.length;
+    SEARCH.hits = [ ...made, ...scored.slice(0, 40).map(x => x[1]) ];
     renderHits();
 }
 
@@ -2834,6 +2835,7 @@ function renderHits() {
     }
     const toks = plainLow(SEARCH.q).trim().split(/\s+/).filter(Boolean);
     hitsEl.innerHTML = H.length ? H.slice(0, 12).map((n, i) => {
+        if (n.doc) return `<div class="hit hit-doc${i === SEARCH.sel ? " on" : ""}" role="option" aria-selected="${i === SEARCH.sel}" data-i="${i}" data-id="${esc(n.id)}">\n      <span class="hit-dot">${SVG_PLAN}</span><span class="hit-txt"><span class="hit-path"><b>${esc(n.label)}</b> <i>${esc(n.type)}</i></span><span class="hit-why">${esc(n.where)}</span></span></div>`;
         const path = pathOf(n), last = path.pop();
         const st = n.status === "needs-you" && !PUBLIC ? 'fill="var(--red)"' : n.status === "working" ? 'fill="currentColor"' : n.status === "waiting" ? 'fill="#B7791F"' : n.status === "queued" ? 'fill="none" stroke="currentColor" stroke-dasharray="1.5 2"' : n.stage === "plan" ? null : n.planned || n.status === "planned" ? 'fill="none" stroke="#9A9A9A"' : 'fill="none" stroke="currentColor"';
         let why = "";
@@ -2861,6 +2863,10 @@ function openHit(i) {
     const n = SEARCH.hits[i == null ? SEARCH.sel : i];
     if (!n) return;
     clearSearch(true);
+    if (n.doc) {
+        window.open(macUrl(n.href), "_blank", "noopener");
+        return;
+    }
     openDot(n.id);
 }
 
@@ -3012,6 +3018,15 @@ function openPanel(n, tab) {
     }
     let html = "";
     const PMODE = PUBLIC ? "words" : panelMode();
+    if (!PUBLIC && window.nsPrepared) html += window.nsPrepared.blockHtml(d.prepared || d.docs ? {
+        ...target,
+        ...d
+    } : null, {
+        esc: esc,
+        url: macUrl,
+        label: target.label,
+        nameOf: id => FULL.e[id] && FULL.e[id].label || id
+    });
     if (PMODE === "glance" && window.nsGlance) html += window.nsGlance(glanceOf(target, d));
     {
         const st = PUBLIC ? d.goalStory || target.goalStory : d.progress && d.progress.story;
