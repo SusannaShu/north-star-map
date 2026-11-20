@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T20:01:17.279Z",
+ "generatedAt": "2026-11-20T21:02:07.916Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1725,7 +1725,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 53
+       "v": 54
       }
      ],
      "partial": "2026-11-16",
@@ -1764,7 +1764,7 @@
         1,
         17,
         40,
-        29
+        30
        ]
       },
       {
@@ -2737,7 +2737,7 @@
       },
       {
        "t": "2026-11-20",
-       "v": 40
+       "v": 39
       }
      ]
     },
@@ -3797,15 +3797,7 @@
         },
         {
          "t": "2026-11-20",
-         "v": 2
-        },
-        {
-         "t": "2026-11-20",
          "v": 6
-        },
-        {
-         "t": "2026-11-20",
-         "v": 3
         },
         {
          "t": "2026-11-20",
@@ -3818,6 +3810,14 @@
         {
          "t": "2026-11-20",
          "v": 2
+        },
+        {
+         "t": "2026-11-20",
+         "v": 4
+        },
+        {
+         "t": "2026-11-20",
+         "v": 4
         }
        ]
       },
@@ -4634,7 +4634,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4744,6 +4744,21 @@
       "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "shared-fetchable-agent-context",
+     "label": "SHARED AGENT CONTEXT",
+     "status": "done",
+     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "statusLine": "done · filed with the project",
+     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+     "stage": "done",
+     "embed": "pages/shared-fetchable-agent-context.html",
+     "visibility": "public",
+     "links": [
+      "ns-talk"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -4786,7 +4801,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -4996,7 +5011,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5062,7 +5077,7 @@
       },
       {
        "t": "2026-11-20",
-       "v": 48
+       "v": 55
       }
      ],
      "partial": "2026-11-20",
@@ -5100,7 +5115,7 @@
         4,
         23,
         82,
-        39
+        47
        ]
       },
       {
@@ -5148,7 +5163,7 @@
         3,
         16,
         46,
-        36
+        42
        ]
       },
       {
@@ -5166,14 +5181,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-16",
       "v": "unmeasured"
@@ -5485,6 +5492,14 @@
      {
       "d": "2026-11-20",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -7041,7 +7056,7 @@
   {
    "id": "man-system",
    "label": "SYSTEM MANUAL",
-   "status": "working",
+   "status": "idle",
    "why": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
    "statusLine": "written",
    "caption": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
@@ -10447,7 +10462,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "done",
+   "status": "working",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -11269,7 +11284,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "working",
+   "status": "idle",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
@@ -12510,24 +12525,6 @@
    ],
    "parent": "devhub",
    "parked": false,
-   "children": [],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "shared-fetchable-agent-context",
-   "label": "SHARED AGENT CONTEXT",
-   "status": "done",
-   "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-   "statusLine": "done · filed with the project",
-   "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-   "stage": "done",
-   "embed": "pages/shared-fetchable-agent-context.html",
-   "visibility": "public",
-   "links": [
-    "ns-talk"
-   ],
-   "parent": "context-graph",
-   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
