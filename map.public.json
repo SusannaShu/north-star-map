@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T21:02:07.916Z",
+ "generatedAt": "2026-11-20T21:54:42.731Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1725,7 +1725,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 54
+       "v": 59
       }
      ],
      "partial": "2026-11-16",
@@ -1740,7 +1740,7 @@
         0,
         4,
         24,
-        8
+        9
        ]
       },
       {
@@ -1764,7 +1764,7 @@
         1,
         17,
         40,
-        30
+        32
        ]
       },
       {
@@ -1776,7 +1776,7 @@
         9,
         20,
         51,
-        11
+        13
        ]
       },
       {
@@ -2502,7 +2502,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2625,7 +2625,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -4634,7 +4634,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4801,7 +4801,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -5024,161 +5024,63 @@
      "label": "repeated complaints and catches, per day",
      "points": [
       {
+       "t": "2026-11-06",
+       "v": 4
+      },
+      {
        "t": "2026-11-07",
        "v": 0
       },
       {
-       "t": "2026-11-08",
-       "v": 3
-      },
-      {
        "t": "2026-11-09",
-       "v": 16
+       "v": 2
       },
       {
        "t": "2026-11-10",
-       "v": 25
+       "v": 1
       },
       {
        "t": "2026-11-11",
-       "v": 31
+       "v": 1
       },
       {
        "t": "2026-11-12",
-       "v": 47
+       "v": 35
       },
       {
        "t": "2026-11-13",
-       "v": 32
-      },
-      {
-       "t": "2026-11-14",
-       "v": 42
-      },
-      {
-       "t": "2026-11-15",
-       "v": 98
-      },
-      {
-       "t": "2026-11-16",
        "v": 82
       },
       {
+       "t": "2026-11-14",
+       "v": 84
+      },
+      {
+       "t": "2026-11-15",
+       "v": 109
+      },
+      {
+       "t": "2026-11-16",
+       "v": 61
+      },
+      {
        "t": "2026-11-17",
-       "v": 69
+       "v": 171
       },
       {
        "t": "2026-11-18",
-       "v": 60
+       "v": 93
       },
       {
        "t": "2026-11-19",
-       "v": 57
+       "v": 83
       },
       {
        "t": "2026-11-20",
-       "v": 55
+       "v": 71
       }
      ],
-     "partial": "2026-11-20",
-     "perPoint": [
-      {
-       "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
-       "weekly": [
-        0,
-        0,
-        0,
-        0,
-        4,
-        26,
-        8
-       ]
-      },
-      {
-       "text": "A recursive self-improve loop pushes each goal until it is met: it measures, tries other methods, catches a stall and pivots, and never stops at one fix.",
-       "weekly": [
-        0,
-        0,
-        0,
-        0,
-        1,
-        42,
-        1
-       ]
-      },
-      {
-       "text": "She is out of the loop: one data point, needed only for physical work, money, an access she alone has, or an outward yes.",
-       "weekly": [
-        0,
-        6,
-        9,
-        4,
-        23,
-        82,
-        47
-       ]
-      },
-      {
-       "text": "Every design is grounded: researched beyond web search, learned from what others do well, and run as a measured experiment when evidence is thin.",
-       "weekly": [
-        0,
-        1,
-        0,
-        1,
-        3,
-        39,
-        2
-       ]
-      },
-      {
-       "text": "Her complaints are user feedback: the system finds the cause at the design level and fixes it there, and an overseer catches faults before she does.",
-       "weekly": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        33,
-        16
-       ]
-      },
-      {
-       "text": "The goal, what is going on and what everyone tried are visible on the map, for her and for every agent, so nobody reinvents the wheel.",
-       "weekly": [
-        0,
-        5,
-        6,
-        5,
-        27,
-        19,
-        6
-       ]
-      },
-      {
-       "text": "Every agent retrieves only the context its work needs, knows when it can find it itself and when to ask.",
-       "weekly": [
-        0,
-        0,
-        4,
-        3,
-        16,
-        46,
-        42
-       ]
-      },
-      {
-       "text": "Give it any goal and it improves to that goal; when it is reliable, it is open-sourced to benefit everyone.",
-       "weekly": [
-        0,
-        2,
-        3,
-        2,
-        1,
-        3,
-        1
-       ]
-      }
-     ]
+     "partial": "2026-11-20"
     },
     "tries": [
      {
@@ -10462,7 +10364,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "working",
+   "status": "done",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -10604,6 +10506,14 @@
      {
       "d": "2026-11-20",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
      }
     ],
     "stage": null
