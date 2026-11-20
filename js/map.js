@@ -3185,7 +3185,7 @@ function foldCards(root) {
         const det = document.createElement("details"), sum = document.createElement("summary"), body = document.createElement("div");
         const hot = !!c.querySelector("li.hot") || /^(needs you|blocked)/i.test(h.textContent), n = c.querySelectorAll(":scope > ul > li").length;
         det.className = "card fold" + (hot ? " hot" : "") + (c.classList.contains("code-card") ? " code-card" : "");
-        det.open = hot;
+        det.open = hot || c.classList.contains("open-row");
         const title = h.textContent.replace(/\s+/g, " ").trim();
         det.dataset.fold = /^needs you/i.test(title) ? "needs" : /^working/i.test(title) ? "working" : /^(waiting|next)/i.test(title) ? "waiting" : title.toLowerCase().split(/[^a-z]+/)[0];
         sum.innerHTML = esc(title.replace(/\s*[—·-]\s*\d+$/, "").replace(/ · read now from the repo$/, "")) + (/\d+$/.test(title) ? ` <span class="n">${esc(title.match(/\d+$/)[0])}</span>` : n ? ` <span class="n">${n}</span>` : "");

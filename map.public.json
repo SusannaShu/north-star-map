@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T14:36:02.251Z",
+ "generatedAt": "2026-11-20T15:43:36.934Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1725,7 +1725,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 47
+       "v": 48
       }
      ],
      "partial": "2026-11-16",
@@ -1764,7 +1764,7 @@
         1,
         17,
         40,
-        24
+        25
        ]
       },
       {
@@ -1794,10 +1794,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     },
      {
       "d": "2026-11-18",
       "v": "helped"
@@ -2093,6 +2089,10 @@
      {
       "d": "2026-11-20",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-20",
@@ -3741,14 +3741,6 @@
        "points": [
         {
          "t": "2026-11-19",
-         "v": 2
-        },
-        {
-         "t": "2026-11-19",
-         "v": 3
-        },
-        {
-         "t": "2026-11-19",
          "v": 1
         },
         {
@@ -3809,11 +3801,19 @@
         },
         {
          "t": "2026-11-20",
-         "v": 1
+         "v": 2
         },
         {
          "t": "2026-11-20",
-         "v": 4
+         "v": 2
+        },
+        {
+         "t": "2026-11-20",
+         "v": 2
+        },
+        {
+         "t": "2026-11-20",
+         "v": 5
         },
         {
          "t": "2026-11-20",
@@ -3908,10 +3908,6 @@
        },
        {
         "d": "2026-11-18",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-18",
         "v": "helped"
        },
        {
@@ -4059,10 +4055,6 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
         "d": "2026-11-20",
         "v": "unmeasured"
        },
@@ -4129,6 +4121,14 @@
        {
         "d": "2026-11-20",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
        },
        {
         "d": "2026-11-20",
@@ -5011,7 +5011,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5077,7 +5077,7 @@
       },
       {
        "t": "2026-11-20",
-       "v": 9
+       "v": 26
       }
      ],
      "partial": "2026-11-20",
@@ -5115,7 +5115,7 @@
         4,
         23,
         82,
-        31
+        35
        ]
       },
       {
@@ -5163,7 +5163,7 @@
         3,
         16,
         46,
-        31
+        33
        ]
       },
       {
@@ -8305,6 +8305,65 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "ui-style",
+   "label": "UI STYLE",
+   "status": "idle",
+   "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+   "statusLine": "checked nightly · cleanup ongoing",
+   "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
+   "stage": "active",
+   "embed": "pages/ui-style.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-20",
+       "v": 56
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "northstar",
+   "parked": false,
+   "children": [
+    {
+     "id": "north-star-intro-animation-pop",
+     "label": "INTRO ANIMATION",
+     "status": "done",
+     "why": "The map's intro animation now plays only as a pop-up, not every time.",
+     "statusLine": "in progress",
+     "caption": "The map's intro animation now plays only as a pop-up, not every time.",
+     "stage": "active",
+     "embed": "pages/north-star-intro-animation-pop.html",
+     "visibility": "public",
+     "links": [
+      "ui-style",
+      "northstar"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "portfolio-site",
    "label": "SITE + MEDIA",
    "status": "idle",
@@ -8371,65 +8430,6 @@
      "visibility": "public",
      "links": [
       "portfolio-site"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "ui-style",
-   "label": "UI STYLE",
-   "status": "idle",
-   "why": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-   "statusLine": "checked nightly · cleanup ongoing",
-   "caption": "One look for everything agents make -- black, white and greys, red only for needs you, amber for waiting -- checked by a script.",
-   "stage": "active",
-   "embed": "pages/ui-style.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-20",
-       "v": 56
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     }
-    ],
-    "stage": null
-   },
-   "parent": "northstar",
-   "parked": false,
-   "children": [
-    {
-     "id": "north-star-intro-animation-pop",
-     "label": "INTRO ANIMATION",
-     "status": "done",
-     "why": "The map's intro animation now plays only as a pop-up, not every time.",
-     "statusLine": "in progress",
-     "caption": "The map's intro animation now plays only as a pop-up, not every time.",
-     "stage": "active",
-     "embed": "pages/north-star-intro-animation-pop.html",
-     "visibility": "public",
-     "links": [
-      "ui-style",
-      "northstar"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -11568,12 +11568,12 @@
       },
       "tries": [
        {
-        "d": "2026-11-18",
-        "v": "unmeasured"
+        "d": "2026-11-20",
+        "v": "helped"
        },
        {
         "d": "2026-11-20",
-        "v": "helped"
+        "v": "no effect"
        }
       ],
       "stage": null
