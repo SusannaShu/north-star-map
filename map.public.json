@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T18:08:37.674Z",
+ "generatedAt": "2026-11-20T20:01:17.279Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -250,7 +250,7 @@
         },
         {
          "t": "2026-11-20",
-         "v": 49
+         "v": 48
         }
        ]
       },
@@ -2200,7 +2200,7 @@
       },
       {
        "t": "2026-11-20",
-       "v": 67
+       "v": 66
       }
      ]
     },
@@ -2502,7 +2502,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2625,7 +2625,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3741,10 +3741,6 @@
        "points": [
         {
          "t": "2026-11-20",
-         "v": 0
-        },
-        {
-         "t": "2026-11-20",
          "v": 10
         },
         {
@@ -3818,6 +3814,10 @@
         {
          "t": "2026-11-20",
          "v": 6
+        },
+        {
+         "t": "2026-11-20",
+         "v": 2
         }
        ]
       },
@@ -3936,10 +3936,6 @@
        },
        {
         "d": "2026-11-18",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-18",
         "v": "no effect"
        },
        {
@@ -4113,6 +4109,10 @@
        {
         "d": "2026-11-20",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
        },
        {
         "d": "2026-11-20",
@@ -4744,21 +4744,6 @@
       "action-tree"
      ],
      "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "shared-fetchable-agent-context",
-     "label": "SHARED AGENT CONTEXT",
-     "status": "done",
-     "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-     "statusLine": "done · filed with the project",
-     "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
-     "stage": "done",
-     "embed": "pages/shared-fetchable-agent-context.html",
-     "visibility": "public",
-     "links": [
-      "ns-talk"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -5011,7 +4996,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5077,7 +5062,7 @@
       },
       {
        "t": "2026-11-20",
-       "v": 37
+       "v": 48
       }
      ],
      "partial": "2026-11-20",
@@ -5115,7 +5100,7 @@
         4,
         23,
         82,
-        38
+        39
        ]
       },
       {
@@ -5163,7 +5148,7 @@
         3,
         16,
         46,
-        35
+        36
        ]
       },
       {
@@ -5181,10 +5166,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-16",
       "v": "unmeasured"
@@ -5500,10 +5481,14 @@
      {
       "d": "2026-11-20",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
      }
     ],
     "stage": {
-     "at": 1,
+     "at": 2,
      "round": 7
     }
    },
@@ -7056,7 +7041,7 @@
   {
    "id": "man-system",
    "label": "SYSTEM MANUAL",
-   "status": "idle",
+   "status": "working",
    "why": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
    "statusLine": "written",
    "caption": "How the map's server, the open list, agent switching, self-checks, briefs and video checks all fit together.",
@@ -11284,7 +11269,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "idle",
+   "status": "working",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
@@ -12525,6 +12510,24 @@
    ],
    "parent": "devhub",
    "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "shared-fetchable-agent-context",
+   "label": "SHARED AGENT CONTEXT",
+   "status": "done",
+   "why": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+   "statusLine": "done · filed with the project",
+   "caption": "Any agent can fetch the same shared context, so swapping agents doesn't lose what they know.",
+   "stage": "done",
+   "embed": "pages/shared-fetchable-agent-context.html",
+   "visibility": "public",
+   "links": [
+    "ns-talk"
+   ],
+   "parent": "context-graph",
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
