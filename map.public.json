@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-19T19:07:59.937Z",
+ "generatedAt": "2026-11-20T00:09:36.242Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1627,7 +1627,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -4859,7 +4859,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 56
+       "v": 55
       }
      ]
     },
@@ -4989,7 +4989,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 54
+       "v": 57
       }
      ],
      "partial": "2026-11-19",
@@ -5027,7 +5027,7 @@
         4,
         23,
         82,
-        26
+        28
        ]
       },
       {
@@ -5051,7 +5051,7 @@
         0,
         0,
         33,
-        14
+        15
        ]
       },
       {
@@ -5103,10 +5103,6 @@
      },
      {
       "d": "2026-11-16",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-16",
       "v": "helped"
      },
      {
@@ -5404,6 +5400,10 @@
      {
       "d": "2026-11-19",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-19",
@@ -7328,6 +7328,10 @@
       {
        "t": "2026-11-19",
        "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
       }
      ]
     },
@@ -7387,6 +7391,14 @@
      {
       "d": "2026-11-19",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-19",
@@ -8331,68 +8343,6 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
-   "id": "portfolio-mittens-scenes",
-   "label": "MITTENS SCENES",
-   "status": "idle",
-   "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
-   "statusLine": "ideas · transitions made, not on site",
-   "caption": "I want more varied views in the Mittens chapter of my portfolio:",
-   "stage": "plan",
-   "planned": true,
-   "embed": "pages/portfolio-mittens-scenes.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": null,
-    "tries": [
-     {
-      "d": "2026-11-13",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "unmeasured"
-     }
-    ],
-    "stage": null
-   },
-   "parent": "portfolio",
-   "parked": false,
-   "children": [
-    {
-     "id": "mittens-soft-robot-film-dark",
-     "label": "SOFT ROBOT FILM",
-     "status": "done",
-     "why": "I am making a dark version of the short film about my soft robot companion.",
-     "statusLine": "merged into the scenes",
-     "caption": "I am making a dark version of the short film about my soft robot companion.",
-     "stage": "done",
-     "embed": "pages/mittens-soft-robot-film-dark.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-mittens-scenes",
-      "portfolio"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "mittens-scenes",
-     "label": "MITTENS SCENES",
-     "status": "idle",
-     "why": "This is the working thread for the scenes that show Mittens in action.",
-     "statusLine": "in progress",
-     "caption": "This is the working thread for the scenes that show Mittens in action.",
-     "stage": "active",
-     "embed": "pages/mittens-scenes.html",
-     "visibility": "public",
-     "links": [
-      "portfolio-mittens-scenes"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
    "id": "mittens-vision",
    "label": "THE NEW OPENCLAW",
    "status": "idle",
@@ -8540,6 +8490,68 @@
      "visibility": "public",
      "links": [
       "mittens-vision"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "portfolio-mittens-scenes",
+   "label": "MITTENS SCENES",
+   "status": "idle",
+   "why": "I want more varied views in the Mittens chapter of my portfolio: hikes, changing seasons and a hopeful future, joined by creative transitions. The landscape shots come first, and the character scenes wait until the characters are locked.",
+   "statusLine": "ideas · transitions made, not on site",
+   "caption": "I want more varied views in the Mittens chapter of my portfolio:",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/portfolio-mittens-scenes.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": null,
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "unmeasured"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "portfolio",
+   "parked": false,
+   "children": [
+    {
+     "id": "mittens-soft-robot-film-dark",
+     "label": "SOFT ROBOT FILM",
+     "status": "done",
+     "why": "I am making a dark version of the short film about my soft robot companion.",
+     "statusLine": "merged into the scenes",
+     "caption": "I am making a dark version of the short film about my soft robot companion.",
+     "stage": "done",
+     "embed": "pages/mittens-soft-robot-film-dark.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-mittens-scenes",
+      "portfolio"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "mittens-scenes",
+     "label": "MITTENS SCENES",
+     "status": "idle",
+     "why": "This is the working thread for the scenes that show Mittens in action.",
+     "statusLine": "in progress",
+     "caption": "This is the working thread for the scenes that show Mittens in action.",
+     "stage": "active",
+     "embed": "pages/mittens-scenes.html",
+     "visibility": "public",
+     "links": [
+      "portfolio-mittens-scenes"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -10598,7 +10610,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 3
+       "v": 5
       }
      ]
     },
@@ -11307,7 +11319,7 @@
       },
       {
        "t": "2026-11-19",
-       "v": 40
+       "v": 39
       }
      ]
     },
@@ -11366,6 +11378,10 @@
      },
      {
       "d": "2026-11-18",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-19",
       "v": "unmeasured"
      },
      {

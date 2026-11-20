@@ -1720,7 +1720,7 @@ function avail() {
     }
     if (saverCalOn() && document.body.classList.contains("saver-cal-on")) rx = saverCalW();
     if (STILL) {
-        top = H * .27;
+        top = H * LOCKTOP;
         side = 8;
         const ct = cap && cap.offsetHeight ? cap.getBoundingClientRect().top : H * .72;
         bot = H - ct + 8;
@@ -1862,6 +1862,11 @@ function fitAll() {
 }
 
 const STILL = new URLSearchParams(location.search).get("still") === "1";
+
+const LOCKTOP = (() => {
+    const v = parseFloat(new URLSearchParams(location.search).get("locktop"));
+    return v >= .2 && v <= .5 ? v : .27;
+})();
 
 const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 
