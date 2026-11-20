@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T10:03:22.117Z",
+ "generatedAt": "2026-11-20T14:36:02.251Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1687,7 +1687,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1794,26 +1794,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-18",
-      "v": "helped"
-     },
      {
       "d": "2026-11-18",
       "v": "helped"
@@ -2113,6 +2093,26 @@
      {
       "d": "2026-11-20",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -3741,14 +3741,6 @@
        "points": [
         {
          "t": "2026-11-19",
-         "v": 0
-        },
-        {
-         "t": "2026-11-19",
-         "v": 1
-        },
-        {
-         "t": "2026-11-19",
          "v": 2
         },
         {
@@ -3758,10 +3750,6 @@
         {
          "t": "2026-11-19",
          "v": 1
-        },
-        {
-         "t": "2026-11-19",
-         "v": 3
         },
         {
          "t": "2026-11-20",
@@ -3818,6 +3806,18 @@
         {
          "t": "2026-11-20",
          "v": 0
+        },
+        {
+         "t": "2026-11-20",
+         "v": 1
+        },
+        {
+         "t": "2026-11-20",
+         "v": 4
+        },
+        {
+         "t": "2026-11-20",
+         "v": 2
         }
        ]
       },
@@ -3996,14 +3996,6 @@
        },
        {
         "d": "2026-11-19",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-19",
         "v": "no effect"
        },
        {
@@ -4053,10 +4045,6 @@
        {
         "d": "2026-11-19",
         "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "no effect"
        },
        {
         "d": "2026-11-19",
@@ -4141,6 +4129,18 @@
        {
         "d": "2026-11-20",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -5024,10 +5024,6 @@
      "label": "repeated complaints and catches, per day",
      "points": [
       {
-       "t": "2026-11-06",
-       "v": 5
-      },
-      {
        "t": "2026-11-07",
        "v": 0
       },
@@ -5078,8 +5074,13 @@
       {
        "t": "2026-11-19",
        "v": 57
+      },
+      {
+       "t": "2026-11-20",
+       "v": 9
       }
      ],
+     "partial": "2026-11-20",
      "perPoint": [
       {
        "text": "Every dot and every task carries its goal, found by agents from her own words, code and map -- she never has to say it again.",
@@ -5114,7 +5115,7 @@
         4,
         23,
         82,
-        28
+        31
        ]
       },
       {
@@ -5138,7 +5139,7 @@
         0,
         0,
         33,
-        15
+        16
        ]
       },
       {
@@ -5162,7 +5163,7 @@
         3,
         16,
         46,
-        30
+        31
        ]
       },
       {
@@ -5180,10 +5181,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-16",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-16",
       "v": "unmeasured"
@@ -5495,6 +5492,10 @@
      {
       "d": "2026-11-20",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-20",
@@ -10500,6 +10501,10 @@
       {
        "t": "2026-11-17",
        "v": 15.7
+      },
+      {
+       "t": "2026-11-20",
+       "v": 31
       }
      ]
     },
@@ -10595,6 +10600,10 @@
      {
       "d": "2026-11-19",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "helped"
      }
     ],
     "stage": null

@@ -111,6 +111,18 @@
             });
             if (pb) parts.unshift(`<div class="vw-pg-row vw-prepared">${pb}</div>`);
         }
+        if (!window.NS_PUBLIC && window.nsPrepared && window.nsPrepared.openRowHtml) {
+            const ob = window.nsPrepared.openRowHtml({
+                ...n,
+                ...d,
+                id: id
+            }, {
+                esc: esc,
+                url: window.macUrl || (x => x),
+                nameOf: x => DETAILS[x] && DETAILS[x].label || x
+            });
+            if (ob) parts.unshift(`<div class="vw-pg-row vw-prepared">${ob}</div>`);
+        }
         parts.push(`<div id="vwAgents">${agentStrip(id)}</div>`);
         const hero = [];
         (d.cases || (d.case ? [ d.case ] : [])).forEach(c => hero.push(caseCard(c)));

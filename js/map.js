@@ -575,7 +575,14 @@ function renderLeafCap() {
     const cut = (s, k) => s.length > k ? s.slice(0, k - 1).replace(/\s+\S*$/, "") + "…" : s;
     const why = txt(d.why || d.caption), sl = txt(d.statusLine);
     const st = e.status === "needs-you" ? "needs-you" : e.status === "working" ? "working" : e.status === "waiting" ? "waiting" : e.status === "queued" ? "queued" : "done";
-    const prep = !PUBLIC && window.nsPrepared && d.prepared ? window.nsPrepared.blockHtml({
+    const prep = (!PUBLIC && window.nsPrepared && window.nsPrepared.openRowHtml ? window.nsPrepared.openRowHtml({
+        ...d,
+        id: LEAF
+    }, {
+        esc: esc,
+        url: macUrl,
+        lead: 3
+    }) : "") + (!PUBLIC && window.nsPrepared && d.prepared ? window.nsPrepared.blockHtml({
         ...d,
         id: LEAF
     }, {
@@ -583,7 +590,7 @@ function renderLeafCap() {
         url: macUrl,
         label: e.label,
         max: 3
-    }) : "";
+    }) : "");
     el.innerHTML = `<div class="lc-title"><span class="dot ${st}"></span>${esc(e.label)}</div>${prep}${why ? `<p>${esc(cut(why, prep ? 120 : 220))}</p>` : ""}${sl && sl !== why ? `<div class="lc-meta">${esc(cut(sl, 120))}</div>` : ""}${PUBLIC ? "" : leafGoal(d)}`;
     el.hidden = false;
 }
@@ -3032,6 +3039,14 @@ function openPanel(n, tab) {
     }
     let html = "";
     const PMODE = PUBLIC ? "words" : panelMode();
+    if (!PUBLIC && window.nsPrepared && window.nsPrepared.openRowHtml) html += window.nsPrepared.openRowHtml({
+        ...target,
+        ...d
+    }, {
+        esc: esc,
+        url: macUrl,
+        nameOf: id => FULL.e[id] && FULL.e[id].label || id
+    });
     if (!PUBLIC && window.nsPrepared) html += window.nsPrepared.blockHtml(d.prepared || d.docs ? {
         ...target,
         ...d
