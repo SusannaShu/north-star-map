@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T17:48:51.661Z",
+ "generatedAt": "2026-11-20T18:08:37.674Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1725,7 +1725,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 51
+       "v": 53
       }
      ],
      "partial": "2026-11-16",
@@ -1764,7 +1764,7 @@
         1,
         17,
         40,
-        28
+        29
        ]
       },
       {
@@ -1776,7 +1776,7 @@
         9,
         20,
         51,
-        10
+        11
        ]
       },
       {
@@ -2412,6 +2412,94 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "actuation",
+   "label": "ACTUATION",
+   "status": "idle",
+   "why": "How the soft body moves. Warm Skin v1 breathes with a pump; v2 replaces it with electrofluidic fibre muscles -- silent, no external pump.",
+   "statusLine": "v1 pump · v2 fibres",
+   "caption": "How the soft body moves.",
+   "embed": "pages/actuation.html",
+   "visibility": "public",
+   "parent": "soft-robot",
+   "parked": false,
+   "children": [
+    {
+     "id": "electrofluidic",
+     "label": "ELECTROFLUIDIC MUSCLE",
+     "status": "idle",
+     "why": "Electrofluidic fibre muscles (Science Robotics, 2026): 2 mm fibres driven by solid-state pumps in a sealed loop. Planned for skin v2.",
+     "statusLine": "planned for v2",
+     "caption": "Electrofluidic fibre muscles (Science Robotics, 2026):",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/electrofluidic.html",
+     "visibility": "public",
+     "links": [
+      "robot-skin"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "biohybrid-muscle",
+     "label": "BIOHYBRID MUSCLE",
+     "status": "planned",
+     "why": "Engineered muscle and biohybrid robots: the research direction for the living-muscle line.",
+     "statusLine": "reading list",
+     "caption": "Engineered muscle and biohybrid robots:",
+     "planned": true,
+     "embed": "pages/biohybrid-muscle.html",
+     "visibility": "public",
+     "links": [
+      "muscle-papers"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "wet-lab",
+     "label": "WET LAB",
+     "status": "done",
+     "why": "Where cells can be grown: cleanrooms open to startups at published rates; cell culture needs a sponsor or a commercial wet lab.",
+     "statusLine": "researching access",
+     "caption": "Where cells can be grown:",
+     "stage": "done",
+     "embed": "pages/wet-lab.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "lab-access",
+     "label": "LAB ACCESS",
+     "status": "idle",
+     "why": "Mapping the city's cleanrooms and community labs that could host muscle and actuator work. Most want a company account.",
+     "statusLine": "asking",
+     "caption": "Mapping the city's cleanrooms and community labs that could host muscle and actuator work.",
+     "stage": "active",
+     "embed": "pages/lab-access.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "bench-or-cleanroom",
+     "label": "BENCH OR CLEANROOM?",
+     "status": "idle",
+     "why": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture. Electrohydraulic is bench work, the muscle papers need cell culture, only three need micron fabrication.",
+     "statusLine": "read: bench for the fibre muscle, cell culture for living muscle",
+     "caption": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/bench-or-cleanroom.html",
+     "visibility": "public",
+     "links": [
+      "lab-access",
+      "electrofluidic",
+      "biohybrid-muscle"
+     ],
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "devhub",
    "label": "DEV HUB",
    "status": "idle",
@@ -2528,94 +2616,6 @@
      "links": [
       "code-architecture-tree",
       "northstar"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "actuation",
-   "label": "ACTUATION",
-   "status": "idle",
-   "why": "How the soft body moves. Warm Skin v1 breathes with a pump; v2 replaces it with electrofluidic fibre muscles -- silent, no external pump.",
-   "statusLine": "v1 pump · v2 fibres",
-   "caption": "How the soft body moves.",
-   "embed": "pages/actuation.html",
-   "visibility": "public",
-   "parent": "soft-robot",
-   "parked": false,
-   "children": [
-    {
-     "id": "electrofluidic",
-     "label": "ELECTROFLUIDIC MUSCLE",
-     "status": "idle",
-     "why": "Electrofluidic fibre muscles (Science Robotics, 2026): 2 mm fibres driven by solid-state pumps in a sealed loop. Planned for skin v2.",
-     "statusLine": "planned for v2",
-     "caption": "Electrofluidic fibre muscles (Science Robotics, 2026):",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/electrofluidic.html",
-     "visibility": "public",
-     "links": [
-      "robot-skin"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "biohybrid-muscle",
-     "label": "BIOHYBRID MUSCLE",
-     "status": "planned",
-     "why": "Engineered muscle and biohybrid robots: the research direction for the living-muscle line.",
-     "statusLine": "reading list",
-     "caption": "Engineered muscle and biohybrid robots:",
-     "planned": true,
-     "embed": "pages/biohybrid-muscle.html",
-     "visibility": "public",
-     "links": [
-      "muscle-papers"
-     ],
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "wet-lab",
-     "label": "WET LAB",
-     "status": "done",
-     "why": "Where cells can be grown: cleanrooms open to startups at published rates; cell culture needs a sponsor or a commercial wet lab.",
-     "statusLine": "researching access",
-     "caption": "Where cells can be grown:",
-     "stage": "done",
-     "embed": "pages/wet-lab.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "lab-access",
-     "label": "LAB ACCESS",
-     "status": "idle",
-     "why": "Mapping the city's cleanrooms and community labs that could host muscle and actuator work. Most want a company account.",
-     "statusLine": "asking",
-     "caption": "Mapping the city's cleanrooms and community labs that could host muscle and actuator work.",
-     "stage": "active",
-     "embed": "pages/lab-access.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
-     "id": "bench-or-cleanroom",
-     "label": "BENCH OR CLEANROOM?",
-     "status": "idle",
-     "why": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture. Electrohydraulic is bench work, the muscle papers need cell culture, only three need micron fabrication.",
-     "statusLine": "read: bench for the fibre muscle, cell culture for living muscle",
-     "caption": "Eighteen papers read for two things -- micron-scale fabrication and living-cell culture.",
-     "stage": "plan",
-     "planned": true,
-     "embed": "pages/bench-or-cleanroom.html",
-     "visibility": "public",
-     "links": [
-      "lab-access",
-      "electrofluidic",
-      "biohybrid-muscle"
      ],
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3740,14 +3740,6 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-19",
-         "v": 1
-        },
-        {
-         "t": "2026-11-20",
-         "v": 9
-        },
-        {
          "t": "2026-11-20",
          "v": 0
         },
@@ -3813,11 +3805,19 @@
         },
         {
          "t": "2026-11-20",
-         "v": 5
+         "v": 6
         },
         {
          "t": "2026-11-20",
-         "v": 2
+         "v": 3
+        },
+        {
+         "t": "2026-11-20",
+         "v": 3
+        },
+        {
+         "t": "2026-11-20",
+         "v": 6
         }
        ]
       },
@@ -3984,10 +3984,6 @@
        },
        {
         "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-19",
         "v": "unmeasured"
        },
        {
@@ -4041,10 +4037,6 @@
        {
         "d": "2026-11-19",
         "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "no effect"
        },
        {
         "d": "2026-11-19",
@@ -4121,6 +4113,14 @@
        {
         "d": "2026-11-20",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
        },
        {
         "d": "2026-11-20",
@@ -5077,7 +5077,7 @@
       },
       {
        "t": "2026-11-20",
-       "v": 31
+       "v": 37
       }
      ],
      "partial": "2026-11-20",
@@ -5115,7 +5115,7 @@
         4,
         23,
         82,
-        37
+        38
        ]
       },
       {
@@ -5151,7 +5151,7 @@
         5,
         27,
         19,
-        5
+        6
        ]
       },
       {
@@ -5175,7 +5175,7 @@
         2,
         1,
         3,
-        0
+        1
        ]
       }
      ]
@@ -7845,7 +7845,7 @@
         },
         {
          "t": "2026-11-20",
-         "v": 28
+         "v": 27
         }
        ]
       },
