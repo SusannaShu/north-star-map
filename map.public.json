@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-20T00:09:36.242Z",
+ "generatedAt": "2026-11-20T00:20:21.855Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1627,7 +1627,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
