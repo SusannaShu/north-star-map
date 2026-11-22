@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T22:20:44.289Z",
+ "generatedAt": "2026-11-22T22:27:58.774Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -6876,7 +6876,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7083,7 +7083,7 @@
     {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
-     "status": "working",
+     "status": "idle",
      "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
      "statusLine": "live",
      "caption": "Anything that needs me needs me once:",
@@ -13057,7 +13057,7 @@
   {
    "id": "owner-decides",
    "label": "THE OWNER DECIDES",
-   "status": "working",
+   "status": "idle",
    "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
    "statusLine": "built · being tuned",
    "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
@@ -13075,7 +13075,12 @@
       }
      ]
     },
-    "tries": [],
+    "tries": [
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     }
+    ],
     "stage": null
    },
    "links": [
