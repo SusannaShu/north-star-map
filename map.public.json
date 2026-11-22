@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T21:14:07.228Z",
+ "generatedAt": "2026-11-22T22:20:44.289Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1823,7 +1823,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1861,7 +1861,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 104
+       "v": 106
       }
      ],
      "partial": "2026-11-16",
@@ -1900,7 +1900,7 @@
         1,
         17,
         40,
-        55
+        57
        ]
       },
       {
@@ -4188,10 +4188,6 @@
         },
         {
          "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
          "v": 2
         },
         {
@@ -4220,23 +4216,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 0
-        },
-        {
-         "t": "2026-11-22",
-         "v": 1
-        },
-        {
-         "t": "2026-11-22",
-         "v": 0
-        },
-        {
-         "t": "2026-11-22",
          "v": 2
-        },
-        {
-         "t": "2026-11-22",
-         "v": 0
         },
         {
          "t": "2026-11-22",
@@ -4253,6 +4233,26 @@
         {
          "t": "2026-11-22",
          "v": 1
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 1
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 3
         },
         {
          "t": "2026-11-22",
@@ -4286,10 +4286,6 @@
         "v": "no effect"
        },
        {
-        "d": "2026-11-20",
-        "v": "no effect"
-       },
-       {
         "d": "2026-11-21",
         "v": "helped"
        },
@@ -4503,23 +4499,7 @@
        },
        {
         "d": "2026-11-22",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-22",
         "v": "no effect"
-       },
-       {
-        "d": "2026-11-22",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-22",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-22",
-        "v": "helped"
        },
        {
         "d": "2026-11-22",
@@ -4572,6 +4552,26 @@
        {
         "d": "2026-11-22",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
        },
        {
         "d": "2026-11-22",
@@ -5660,7 +5660,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5726,16 +5726,12 @@
       },
       {
        "t": "2026-11-22",
-       "v": 78
+       "v": 96
       }
      ],
      "partial": "2026-11-22"
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-17",
       "v": "unmeasured"
@@ -6006,47 +6002,51 @@
      },
      {
       "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
       "v": "no effect"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-22",
-      "v": "unmeasured"
      },
      {
       "d": "2026-11-22",
@@ -6381,7 +6381,7 @@
        "points": [
         {
          "t": "2026-11-22",
-         "v": 253
+         "v": 264
         }
        ]
       },
@@ -6876,7 +6876,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7083,7 +7083,7 @@
     {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
-     "status": "idle",
+     "status": "working",
      "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
      "statusLine": "live",
      "caption": "Anything that needs me needs me once:",
@@ -10455,7 +10455,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 253
+       "v": 264
       }
      ]
     },
@@ -10519,7 +10519,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 253
+       "v": 264
       }
      ]
     },
@@ -11473,6 +11473,10 @@
      {
       "d": "2026-11-21",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-22",
@@ -12619,7 +12623,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "working",
+   "status": "idle",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -13053,7 +13057,7 @@
   {
    "id": "owner-decides",
    "label": "THE OWNER DECIDES",
-   "status": "idle",
+   "status": "working",
    "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
    "statusLine": "built · being tuned",
    "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
@@ -13067,7 +13071,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 253
+       "v": 264
       }
      ]
     },
@@ -13257,7 +13261,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 2
+         "v": 3
         }
        ]
       },
@@ -13805,7 +13809,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 51
+       "v": 47
       }
      ]
     },
