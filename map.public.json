@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T07:27:56.566Z",
+ "generatedAt": "2026-11-22T08:13:04.359Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2256,7 +2256,152 @@
     }
    ],
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "rg-verdict-said-filed-project",
+     "label": "FILED IDEA VERDICTS",
+     "status": "idle",
+     "why": "When I file an idea, the assistant tells me right away whether it thinks the idea is worth doing. The goal is that I never have to ask for that verdict.",
+     "statusLine": "live · one miss today",
+     "caption": "When I file an idea, the assistant tells me right away whether it thinks the idea is worth doing.",
+     "stage": "active",
+     "embed": "pages/rg-verdict-said-filed-project.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-20",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 1
+        },
+        {
+         "t": "2026-11-21",
+         "v": 2
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 1
+        },
+        {
+         "t": "2026-11-22",
+         "v": 1
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-20",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "hurt"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "hurt"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "hurt"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-desk-today-pane",
+     "label": "DESK TODAY PANE",
+     "status": "idle",
+     "why": "The today pane on my desk screen now follows the desk's own light or dark theme instead of getting stuck on one.",
+     "statusLine": "fixed · verified live",
+     "caption": "The today pane on my desk screen now follows the desk's own light or dark theme instead of getting stuck on one.",
+     "stage": "done",
+     "embed": "pages/feature-desk-today-pane.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-card-yes-skip-buttons",
+     "label": "CARD YES SKIP BUTTONS",
+     "status": "idle",
+     "why": "Yes-or-no cards in chat now have Yes and Skip buttons, so I can answer without opening the thread.",
+     "statusLine": "built · phone check pending",
+     "caption": "Yes-or-no cards in chat now have Yes and Skip buttons, so I can answer without opening the thread.",
+     "stage": "active",
+     "embed": "pages/feature-card-yes-skip-buttons.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-send-proof-screenshot",
+     "label": "SCREENSHOT AS PROOF",
+     "status": "idle",
+     "why": "When an agent finishes an action, it proves it with a screenshot instead of reading the result back to me. That turns a long check into an instant one.",
+     "statusLine": "built · review pending",
+     "caption": "When an agent finishes an action, it proves it with a screenshot instead of reading the result back to me.",
+     "stage": "active",
+     "embed": "pages/feature-send-proof-screenshot.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-access-check-gate",
+     "label": "ACCESS CHECK GATE",
+     "status": "idle",
+     "why": "Before an agent says it will fix something, it checks that it can actually do it, so the same gap doesn't come back later.",
+     "statusLine": "plan",
+     "caption": "Before an agent says it will fix something, it checks that it can actually do it, so the same gap doesn't come back later.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/feature-access-check-gate.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "case study"
   },
   {
@@ -2630,7 +2775,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2753,7 +2898,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2795,6 +2940,93 @@
      "links": [
       "manual-map"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-gets-accepted-minute-arrives",
+     "label": "INSTANT ACCEPT, TESTED PUSH",
+     "status": "idle",
+     "why": "Incoming work is accepted the moment it arrives, and every push is tested before it counts.",
+     "statusLine": "met · no misses",
+     "caption": "Incoming work is accepted the moment it arrives, and every push is tested before it counts.",
+     "stage": "active",
+     "embed": "pages/rg-gets-accepted-minute-arrives.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-21",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -3912,14 +4144,6 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
-         "t": "2026-11-15",
-         "v": 0
-        },
-        {
          "t": "2026-11-16",
          "v": 0
         },
@@ -3990,6 +4214,14 @@
         {
          "t": "2026-11-22",
          "v": 5
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
         }
        ]
       },
@@ -4000,18 +4232,6 @@
        },
        {
         "d": "2026-11-19",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-19",
         "v": "no effect"
        },
        {
@@ -4313,6 +4533,18 @@
        {
         "d": "2026-11-22",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -4337,6 +4569,101 @@
       "mittens-self-improve",
       "mittens-chat-threads"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-permission-covers-reply-low",
+     "label": "ONE-TIME PERMISSIONS",
+     "status": "idle",
+     "why": "A permission I give in the moment covers only that one reply. Standing rules stay as they were.",
+     "statusLine": "met · no misses",
+     "caption": "A permission I give in the moment covers only that one reply.",
+     "stage": "active",
+     "embed": "pages/rg-permission-covers-reply-low.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-20",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4513,6 +4840,93 @@
       "triggers",
       "man-rules"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-stopped-duplicate-line-dont",
+     "label": "EVIDENCE OVER WORD",
+     "status": "idle",
+     "why": "Agents trust evidence over what I say, and duplicate rules get folded into the ones that already exist.",
+     "statusLine": "met · no misses",
+     "caption": "Agents trust evidence over what I say, and duplicate rules get folded into the ones that already exist.",
+     "stage": "active",
+     "embed": "pages/rg-stopped-duplicate-line-dont.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-21",
+         "v": 1
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-21",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -4794,7 +5208,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "working",
+   "status": "idle",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4965,7 +5379,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "working",
+   "status": "idle",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -5012,6 +5426,18 @@
      "stage": "plan",
      "planned": true,
      "embed": "pages/one-clean-record.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-dot-standing-record",
+     "label": "DOT STANDING RECORD",
+     "status": "idle",
+     "why": "Every dot on the map keeps a running record of its progress, so context is never lost between sessions.",
+     "statusLine": "in progress",
+     "caption": "Every dot on the map keeps a running record of its progress, so context is never lost between sessions.",
+     "stage": "active",
+     "embed": "pages/feature-dot-standing-record.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5261,10 +5687,6 @@
      },
      {
       "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
       "v": "helped"
      },
      {
@@ -5574,6 +5996,10 @@
      {
       "d": "2026-11-22",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -5898,6 +6324,56 @@
       "glasses-mittens",
       "smart-glasses"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-lens-card-auto-hide",
+     "label": "LENS CARD AUTO-HIDE",
+     "status": "idle",
+     "why": "Cards on my glasses display should hide on their own when they're done, without me tapping to dismiss them. The system should see what's on the lens and decide.",
+     "statusLine": "in progress",
+     "caption": "Cards on my glasses display should hide on their own when they're done, without me tapping to dismiss them.",
+     "stage": "active",
+     "embed": "pages/feature-lens-card-auto-hide.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "score",
+       "label": "improve-loop score",
+       "points": [
+        {
+         "t": "2026-11-19",
+         "v": 36
+        },
+        {
+         "t": "2026-11-20",
+         "v": 36
+        },
+        {
+         "t": "2026-11-21",
+         "v": 36
+        },
+        {
+         "t": "2026-11-22",
+         "v": 36
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-19",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-19",
+        "v": "no effect"
+       }
+      ],
+      "stage": {
+       "at": 0,
+       "round": 1
+      }
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -6957,6 +7433,19 @@
       "ns-talk"
      ],
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-auto-record-calls",
+     "label": "AUTO RECORD CALLS",
+     "status": "idle",
+     "why": "When the app notices a video call, it should start recording on its own so nothing gets missed.",
+     "statusLine": "plan",
+     "caption": "When the app notices a video call, it should start recording on its own so nothing gets missed.",
+     "stage": "plan",
+     "planned": true,
+     "embed": "pages/feature-auto-record-calls.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -7656,11 +8145,114 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · recent misses not fixed",
+     "statusLine": "live · most recent misses still open",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-add-today-replay-set",
+     "label": "DAILY REPLAY SET",
+     "status": "idle",
+     "why": "New problems get added to the day's replay tests instead of becoming new rules.",
+     "statusLine": "met · no misses",
+     "caption": "New problems get added to the day's replay tests instead of becoming new rules.",
+     "stage": "active",
+     "embed": "pages/rg-add-today-replay-set.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-19",
+         "v": 0
+        },
+        {
+         "t": "2026-11-20",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-19",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -8150,7 +8742,7 @@
    "label": "ACTION TREE",
    "status": "idle",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
-   "statusLine": "live · stale items repaired daily",
+   "statusLine": "live · some stale items remain",
    "caption": "The one source of truth for what is open:",
    "stage": "active",
    "embed": "pages/action-tree.html",
@@ -8215,6 +8807,93 @@
      "stage": "active",
      "embed": "pages/feature-action-tree-panel.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-clear-owners-own-everything",
+     "label": "OWNERS OWN EVERYTHING",
+     "status": "idle",
+     "why": "Each part of the system has an agent owner that handles everything for it. I hear about it only when it's done or truly needs me.",
+     "statusLine": "met · no misses",
+     "caption": "Each part of the system has an agent owner that handles everything for it.",
+     "stage": "active",
+     "embed": "pages/rg-clear-owners-own-everything.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-21",
+         "v": 3
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-21",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -10158,7 +10837,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 37
+       "v": 36
       }
      ]
     },
@@ -10593,7 +11272,7 @@
   {
    "id": "brain-context-flow",
    "label": "HOW CONTEXT FLOWS",
-   "status": "working",
+   "status": "done",
    "why": "What each agent is given to work with, and how the newest true fact wins.",
    "statusLine": "done · context design in place",
    "caption": "What each agent is given to work with, and how the newest true fact wins.",
@@ -10723,6 +11402,10 @@
      {
       "d": "2026-11-22",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
      }
     ],
     "stage": null
@@ -10796,6 +11479,251 @@
      "stage": "active",
      "embed": "pages/truth-check.html",
      "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-filed-leads-own-episodes",
+     "label": "ASSISTANT LEADS EPISODES",
+     "status": "idle",
+     "why": "The assistant leads its own pieces of work from start to finish instead of waiting on me.",
+     "statusLine": "met · no misses",
+     "caption": "The assistant leads its own pieces of work from start to finish instead of waiting on me.",
+     "stage": "active",
+     "embed": "pages/rg-filed-leads-own-episodes.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-19",
+         "v": 0
+        },
+        {
+         "t": "2026-11-20",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-19",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-question-reaches-goal-context",
+     "label": "ASK ONLY WHEN STUCK",
+     "status": "idle",
+     "why": "A question reaches me only when the goal and context can't answer it.",
+     "statusLine": "live · one miss today",
+     "caption": "A question reaches me only when the goal and context can't answer it.",
+     "stage": "active",
+     "embed": "pages/rg-question-reaches-goal-context.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-22",
+         "v": 1
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-v568-traces-who-wrote",
+     "label": "RULE ORIGIN TRACING",
+     "status": "idle",
+     "why": "The system traces who wrote each rule, when and why, and explains it in plain words.",
+     "statusLine": "met · no misses",
+     "caption": "The system traces who wrote each rule, when and why, and explains it in plain words.",
+     "stage": "active",
+     "embed": "pages/rg-v568-traces-who-wrote.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-19",
+         "v": 0
+        },
+        {
+         "t": "2026-11-20",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-18",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-19",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -11839,6 +12767,68 @@
      "embed": "pages/feature-desk-pane-layout.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-calendar-dark-mode",
+     "label": "CALENDAR DARK MODE",
+     "status": "idle",
+     "why": "The calendar should support dark mode like the rest of the map.",
+     "statusLine": "in progress",
+     "caption": "The calendar should support dark mode like the rest of the map.",
+     "stage": "active",
+     "embed": "pages/feature-calendar-dark-mode.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-live-screen-overseer",
+     "label": "LIVE SCREEN OVERSEER",
+     "status": "idle",
+     "why": "An agent watches my screens live, including the glasses display and phone, and catches problems before I have to.",
+     "statusLine": "in progress",
+     "caption": "An agent watches my screens live, including the glasses display and phone, and catches problems before I have to.",
+     "stage": "active",
+     "embed": "pages/feature-live-screen-overseer.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-22",
+         "v": 42
+        }
+       ]
+      },
+      "tries": [],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-manual-topic-page",
+     "label": "MANUAL TOPIC PAGE",
+     "status": "idle",
+     "why": "A page for each manual topic, improved by the interface watcher when my use shows something is missing.",
+     "statusLine": "in progress",
+     "caption": "A page for each manual topic, improved by the interface watcher when my use shows something is missing.",
+     "stage": "active",
+     "embed": "pages/feature-manual-topic-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-map-page",
+     "label": "MAP PAGE",
+     "status": "idle",
+     "why": "The main map page, improved by the interface watcher when my use shows something is missing.",
+     "statusLine": "in progress",
+     "caption": "The main map page, improved by the interface watcher when my use shows something is missing.",
+     "stage": "active",
+     "embed": "pages/feature-map-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
     }
    ],
    "embedCaption": "what it is · how it works · where it sits"
@@ -11879,7 +12869,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 33.5
+       "v": 33.8
       }
      ]
     },
@@ -12080,7 +13070,7 @@
      "label": "NOTHING WAITS ON ME",
      "status": "idle",
      "why": "No piece of work should stall while waiting for my taste call. The agents decide by a clear standard and keep moving.",
-     "statusLine": "met · none waiting",
+     "statusLine": "not met · a few dots waiting",
      "caption": "No piece of work should stall while waiting for my taste call.",
      "stage": "active",
      "embed": "pages/rg-no-dot-parked-on-her.html",
