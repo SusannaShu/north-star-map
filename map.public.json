@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T14:13:43.460Z",
+ "generatedAt": "2026-11-22T18:22:58.269Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1490,8 +1490,6 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
-     "stage": "plan",
-     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1823,7 +1821,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1861,7 +1859,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 102
+       "v": 103
       }
      ],
      "partial": "2026-11-16",
@@ -1900,7 +1898,7 @@
         1,
         17,
         40,
-        53
+        54
        ]
       },
       {
@@ -1930,10 +1928,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-19",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-19",
       "v": "unmeasured"
@@ -2249,6 +2243,10 @@
      {
       "d": "2026-11-22",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2326,7 +2324,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 0
+         "v": 1
         }
        ]
       },
@@ -2369,7 +2367,7 @@
        },
        {
         "d": "2026-11-22",
-        "v": "no effect"
+        "v": "hurt"
        }
       ],
       "stage": null
@@ -5660,7 +5658,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5726,28 +5724,12 @@
       },
       {
        "t": "2026-11-22",
-       "v": 70
+       "v": 78
       }
      ],
      "partial": "2026-11-22"
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-17",
       "v": "helped"
@@ -6039,6 +6021,22 @@
      {
       "d": "2026-11-22",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-22",
@@ -6381,7 +6379,7 @@
        "points": [
         {
          "t": "2026-11-22",
-         "v": 253
+         "v": 246
         }
        ]
       },
@@ -9367,7 +9365,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 57
+       "v": 56
       }
      ]
     },
@@ -9746,7 +9744,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 78
+       "v": 77
       }
      ]
     },
@@ -10447,7 +10445,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 253
+       "v": 246
       }
      ]
     },
@@ -10511,7 +10509,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 253
+       "v": 246
       }
      ]
     },
@@ -10709,7 +10707,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 39
+       "v": 40
       }
      ]
     },
@@ -10827,7 +10825,7 @@
     "mittens-knows"
    ],
    "parent": "mittens-desktop",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -11465,6 +11463,10 @@
      {
       "d": "2026-11-21",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-22",
@@ -12317,7 +12319,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 39
+       "v": 40
       }
      ]
     },
@@ -12365,7 +12367,7 @@
        "points": [
         {
          "t": "2026-11-22",
-         "v": 39
+         "v": 40
         }
        ]
       },
@@ -13055,7 +13057,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 253
+       "v": 246
       }
      ]
     },
@@ -13245,7 +13247,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 0
+         "v": 1
         }
        ]
       },
@@ -13292,7 +13294,7 @@
        },
        {
         "d": "2026-11-22",
-        "v": "helped"
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -13793,7 +13795,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 55
+       "v": 54
       }
      ]
     },
