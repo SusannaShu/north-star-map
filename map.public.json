@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T10:55:49.942Z",
+ "generatedAt": "2026-11-22T11:59:10.993Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1823,7 +1823,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2484,7 +2484,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 64
+       "v": 63
       }
      ]
     },
@@ -3915,7 +3915,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4166,7 +4166,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "working",
+     "status": "idle",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -4179,64 +4179,44 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-16",
-         "v": 1
-        },
-        {
-         "t": "2026-11-17",
+         "t": "2026-11-21",
          "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 0
-        },
-        {
-         "t": "2026-11-17",
-         "v": 12
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
-        },
-        {
-         "t": "2026-11-18",
-         "v": 13
-        },
-        {
-         "t": "2026-11-18",
-         "v": 0
-        },
-        {
-         "t": "2026-11-19",
-         "v": 0
-        },
-        {
-         "t": "2026-11-19",
-         "v": 12
         },
         {
          "t": "2026-11-21",
          "v": 0
         },
         {
-         "t": "2026-11-22",
+         "t": "2026-11-21",
          "v": 0
         },
         {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 7
+        },
+        {
+         "t": "2026-11-21",
+         "v": 2
+        },
+        {
+         "t": "2026-11-21",
+         "v": 6
+        },
+        {
+         "t": "2026-11-21",
+         "v": 7
+        },
+        {
          "t": "2026-11-22",
-         "v": 24
+         "v": 9
         },
         {
          "t": "2026-11-22",
@@ -4244,7 +4224,15 @@
         },
         {
          "t": "2026-11-22",
-         "v": 5
+         "v": 1
+        },
+        {
+         "t": "2026-11-22",
+         "v": 13
+        },
+        {
+         "t": "2026-11-22",
+         "v": 10
         },
         {
          "t": "2026-11-22",
@@ -4253,6 +4241,18 @@
         {
          "t": "2026-11-22",
          "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 1
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 2
         },
         {
          "t": "2026-11-22",
@@ -4263,34 +4263,6 @@
       "tries": [
        {
         "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-19",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-19",
         "v": "helped"
        },
        {
@@ -4555,7 +4527,39 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "unmeasured"
        },
        {
         "d": "2026-11-22",
@@ -4572,10 +4576,6 @@
        {
         "d": "2026-11-22",
         "v": "no effect"
-       },
-       {
-        "d": "2026-11-22",
-        "v": "helped"
        },
        {
         "d": "2026-11-22",
@@ -5726,7 +5726,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 46
+       "v": 53
       }
      ],
      "partial": "2026-11-22"
