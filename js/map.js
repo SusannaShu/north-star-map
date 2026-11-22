@@ -1729,6 +1729,8 @@ function avail() {
     if (STILL) {
         top = H * LOCKTOP;
         side = 8;
+        const sg = document.getElementById("stillGlance");
+        if (sg && !sg.hidden && sg.offsetHeight) top = sg.getBoundingClientRect().bottom + 10;
         const ct = cap && cap.offsetHeight ? cap.getBoundingClientRect().top : H * .72;
         bot = H - ct + 8;
     }
@@ -4037,7 +4039,7 @@ setInterval(() => {
     const el = document.getElementById("saverSub"), s = situation();
     const full = `<div class="sit-line">${esc(situationLine())}</div>${s.needs.length ? `<ul class="sit-needs">${needsHtml(s.needs, isMobile() ? 8 : 4)}</ul>` : ""}${progressHtml(s, 2)}`;
     const chip = `<button class="sit-chip" id="sitMore" title="what needs you"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2 9.5 3.6 3h8.8L14 9.5V13H2z"/><path d="M2 9.5h3.5l1 1.5h3l1-1.5H14"/></svg>${s.needs.length ? `<b>${s.needs.length}</b> need you` : "all clear"}</button>`;
-    const html = PUBLIC ? `<div class="sit-line">${esc(situationLine())}</div>` : `${chip}<div class="sit-full">${full}</div><div class="sit-wake">tap to wake</div>`;
+    const html = PUBLIC ? `<div class="sit-line">${esc(situationLine())}</div>` : `${glanceHtml(isMobile())}${chip}<div class="sit-full">${full}</div><div class="sit-wake">tap to wake</div>`;
     if (el.dataset.sig !== html) {
         el.dataset.sig = html;
         const open = el.classList.contains("sit-open");
@@ -4342,11 +4344,25 @@ liveConnect();
 
 if (new URLSearchParams(location.search).get("screensaver") === "1") enterSaver();
 
+function glanceHtml(compact) {
+    const g = DATA.situation && DATA.situation.glance;
+    if (!g || !g.lines || PUBLIC) return "";
+    const rows = compact && g.short || g.lines;
+    return `<div class="glance${compact ? " compact" : ""}" id="glance">${rows.map(r => `<div class="gl-row gl-${esc(r.k)}${r.k === "needs" && g.needs && g.needs.n ? " hot" : ""}"><span class="gl-m" aria-hidden="true"></span><span class="gl-h">${esc(r.head)}</span><span class="gl-t">${esc(r.text)}</span></div>`).join("")}</div>`;
+}
+
 function stillCaption() {
     const el = document.getElementById("stillCap");
     if (!el) return;
     const s = situation();
-    const html = `<div class="sit-line">${esc(clipTxt(situationLine(), 170))}</div>${s.needs.length ? `<ul class="sit-needs">${needsHtml(s.needs, 3)}</ul>` : '<div class="sit-line">Nothing is waiting on you.</div>'}`;
+    const g = glanceHtml(true), top = document.getElementById("stillGlance");
+    if (top && top.dataset.sig !== g) {
+        top.dataset.sig = g;
+        top.innerHTML = g;
+        top.hidden = !g;
+        setGravity();
+    }
+    const html = g ? s.needs.length ? `<ul class="sit-needs">${needsHtml(s.needs, 3)}</ul>` : "" : `<div class="sit-line">${esc(clipTxt(situationLine(), 170))}</div>${s.needs.length ? `<ul class="sit-needs">${needsHtml(s.needs, 3)}</ul>` : '<div class="sit-line">Nothing is waiting on you.</div>'}`;
     if (el.dataset.sig !== html) {
         el.dataset.sig = html;
         el.innerHTML = html;
@@ -4354,6 +4370,7 @@ function stillCaption() {
 }
 
 if (STILL) {
+    document.documentElement.style.setProperty("--lock-top", String(LOCKTOP * 100));
     document.body.classList.add("still");
     enterSaver();
     stillCaption();
