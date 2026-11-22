@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T08:51:37.914Z",
+ "generatedAt": "2026-11-22T10:55:49.942Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1823,7 +1823,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -3915,7 +3915,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -4166,7 +4166,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -4179,63 +4179,55 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 7
-        },
-        {
-         "t": "2026-11-21",
-         "v": 2
-        },
-        {
-         "t": "2026-11-21",
-         "v": 6
-        },
-        {
-         "t": "2026-11-21",
-         "v": 7
-        },
-        {
-         "t": "2026-11-22",
-         "v": 9
-        },
-        {
-         "t": "2026-11-22",
-         "v": 7
-        },
-        {
-         "t": "2026-11-22",
+         "t": "2026-11-16",
          "v": 1
         },
         {
-         "t": "2026-11-22",
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 0
+        },
+        {
+         "t": "2026-11-17",
+         "v": 12
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-18",
          "v": 13
         },
         {
-         "t": "2026-11-22",
+         "t": "2026-11-18",
+         "v": 0
+        },
+        {
+         "t": "2026-11-19",
+         "v": 0
+        },
+        {
+         "t": "2026-11-19",
+         "v": 12
+        },
+        {
+         "t": "2026-11-21",
          "v": 0
         },
         {
@@ -4244,7 +4236,15 @@
         },
         {
          "t": "2026-11-22",
-         "v": 1
+         "v": 24
+        },
+        {
+         "t": "2026-11-22",
+         "v": 7
+        },
+        {
+         "t": "2026-11-22",
+         "v": 5
         },
         {
          "t": "2026-11-22",
@@ -4252,7 +4252,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 10
+         "v": 0
         },
         {
          "t": "2026-11-22",
@@ -4267,10 +4267,6 @@
        },
        {
         "d": "2026-11-19",
-        "v": "no effect"
-       },
-       {
-        "d": "2026-11-19",
         "v": "helped"
        },
        {
@@ -4576,6 +4572,10 @@
        {
         "d": "2026-11-22",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
        },
        {
         "d": "2026-11-22",
@@ -6200,6 +6200,44 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "watch-picks",
+   "label": "WATCH PICKS",
+   "status": "idle",
+   "why": "The watch is judged on its picks, not volume: real breakthroughs for my projects, scored and tested, instead of general news.",
+   "statusLine": "being tuned",
+   "caption": "The watch is judged on its picks, not volume:",
+   "stage": "active",
+   "embed": "pages/watch-picks.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-22",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [],
+    "stage": null
+   },
+   "links": [
+    "research-watch",
+    "local-watch",
+    "soft-robot",
+    "smart-glasses",
+    "northstar",
+    "susu-closet",
+    "fashion"
+   ],
+   "parent": "mittens-hw",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "smart-glasses",
    "label": "GLASSES",
    "status": "idle",
@@ -6428,44 +6466,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "watch-picks",
-   "label": "WATCH PICKS",
-   "status": "idle",
-   "why": "The watch is judged on its picks, not volume: real breakthroughs for my projects, scored and tested, instead of general news.",
-   "statusLine": "being tuned",
-   "caption": "The watch is judged on its picks, not volume:",
-   "stage": "active",
-   "embed": "pages/watch-picks.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "values",
-     "label": "measured result",
-     "points": [
-      {
-       "t": "2026-11-22",
-       "v": 0
-      }
-     ]
-    },
-    "tries": [],
-    "stage": null
-   },
-   "links": [
-    "research-watch",
-    "local-watch",
-    "soft-robot",
-    "smart-glasses",
-    "northstar",
-    "susu-closet",
-    "fashion"
-   ],
-   "parent": "mittens-hw",
-   "parked": false,
-   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -8594,7 +8594,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 25
+         "v": 24
         }
        ]
       },
@@ -13141,7 +13141,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 1
+         "v": 0
         }
        ]
       },
