@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T20:29:52.425Z",
+ "generatedAt": "2026-11-22T21:14:07.228Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1861,7 +1861,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 103
+       "v": 104
       }
      ],
      "partial": "2026-11-16",
@@ -1900,7 +1900,7 @@
         1,
         17,
         40,
-        54
+        55
        ]
       },
       {
@@ -2232,10 +2232,6 @@
      },
      {
       "d": "2026-11-22",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-22",
       "v": "helped"
      },
      {
@@ -2249,6 +2245,10 @@
      {
       "d": "2026-11-22",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -4224,10 +4224,6 @@
         },
         {
          "t": "2026-11-22",
-         "v": 0
-        },
-        {
-         "t": "2026-11-22",
          "v": 1
         },
         {
@@ -4257,6 +4253,10 @@
         {
          "t": "2026-11-22",
          "v": 1
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
         }
        ]
       },
@@ -4499,10 +4499,6 @@
        },
        {
         "d": "2026-11-22",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-22",
         "v": "unmeasured"
        },
        {
@@ -4580,6 +4576,10 @@
        {
         "d": "2026-11-22",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -5660,7 +5660,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5732,22 +5732,6 @@
      "partial": "2026-11-22"
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-17",
       "v": "unmeasured"
@@ -6051,6 +6035,22 @@
      {
       "d": "2026-11-22",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -9604,6 +9604,10 @@
         {
          "t": "2026-11-22",
          "v": 6
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
         }
        ]
       },
@@ -9619,6 +9623,10 @@
        {
         "d": "2026-11-22",
         "v": "hurt"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -10904,7 +10912,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 36
+       "v": 35
       }
      ]
     },
@@ -12611,7 +12619,7 @@
   {
    "id": "ui-experience",
    "label": "UI EXPERIENCE",
-   "status": "idle",
+   "status": "working",
    "why": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself. Each finding is filed against the part that draws that screen and checked before and after.",
    "statusLine": "built · self-improving",
    "caption": "An agent watches how I use each screen and feature and keeps improving them, so I don't have to find the gaps myself.",
@@ -13249,7 +13257,7 @@
         },
         {
          "t": "2026-11-22",
-         "v": 1
+         "v": 2
         }
        ]
       },
@@ -13296,7 +13304,7 @@
        },
        {
         "d": "2026-11-22",
-        "v": "no effect"
+        "v": "hurt"
        }
       ],
       "stage": null
@@ -13797,7 +13805,7 @@
      "points": [
       {
        "t": "2026-11-22",
-       "v": 54
+       "v": 51
       }
      ]
     },
