@@ -2822,7 +2822,7 @@ function runSearch(q) {
     const scored = [];
     for (const e of Object.values(FULL.e)) {
         const n = byId[e.id] || e;
-        let s = 0, ok = true;
+        let s = 0, ok = true, name = true;
         for (const t of toks) {
             const v = scoreToken(n, t);
             if (!v) {
@@ -2830,10 +2830,16 @@ function runSearch(q) {
                 break;
             }
             s += v;
+            if (v < 70) name = false;
         }
-        if (ok) scored.push([ s, n ]);
+        if (ok) scored.push([ s, n, name ]);
     }
-    scored.sort((a, b) => b[0] - a[0] || typeRank(a[1]) - typeRank(b[1]) || String(a[1].label).localeCompare(String(b[1].label)));
+    const R = window.nsSearchRank, rk = x => ({
+        s: x[0],
+        id: x[1].id,
+        name: x[2]
+    });
+    scored.sort((a, b) => (R ? R.compare(rk(a), rk(b)) : b[0] - a[0]) || typeRank(a[1]) - typeRank(b[1]) || String(a[1].label).localeCompare(String(b[1].label)));
     const made = !PUBLIC && window.nsPrepared ? window.nsPrepared.hits(DATA, q) : [];
     SEARCH.all = scored.length + made.length;
     SEARCH.hits = [ ...made, ...scored.slice(0, 40).map(x => x[1]) ];
