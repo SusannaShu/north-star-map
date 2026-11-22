@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-22T05:18:57.278Z",
+ "generatedAt": "2026-11-22T06:24:04.557Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -748,7 +748,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
+         "t": "2026-11-22",
          "v": 0.068
         }
        ]
@@ -1627,6 +1627,10 @@
       {
        "t": "2026-11-19",
        "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
       }
      ]
     },
@@ -1730,6 +1734,14 @@
      {
       "d": "2026-11-19",
       "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -2618,7 +2630,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2631,8 +2643,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 58
+       "t": "2026-11-22",
+       "v": 61
       }
      ]
     },
@@ -2741,7 +2753,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -2754,7 +2766,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 35
       }
      ]
@@ -3636,7 +3648,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -3887,7 +3899,7 @@
     {
      "id": "mittens-self-improve",
      "label": "SELF-IMPROVING LOOP",
-     "status": "idle",
+     "status": "working",
      "why": "Every night my assistant looks at where it got things wrong and tries one fix. It keeps the fix only if the next day goes better.",
      "statusLine": "live · learns nightly and from my words",
      "caption": "Every night my assistant looks at where it got things wrong and tries one fix.",
@@ -3899,14 +3911,6 @@
        "kind": "values",
        "label": "measured result",
        "points": [
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
-         "v": 0
-        },
         {
          "t": "2026-11-21",
          "v": 0
@@ -3969,7 +3973,11 @@
         },
         {
          "t": "2026-11-22",
-         "v": 2
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 1
         },
         {
          "t": "2026-11-22",
@@ -3977,7 +3985,11 @@
         },
         {
          "t": "2026-11-22",
-         "v": 8
+         "v": 5
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
         }
        ]
       },
@@ -4248,14 +4260,6 @@
        },
        {
         "d": "2026-11-21",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-21",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-21",
         "v": "no effect"
        },
        {
@@ -4292,6 +4296,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-22",
         "v": "no effect"
        },
        {
@@ -4301,6 +4309,10 @@
        {
         "d": "2026-11-22",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -4345,7 +4357,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 164
       }
      ]
@@ -4782,7 +4794,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -4953,7 +4965,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -5171,7 +5183,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5853,8 +5865,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
-         "v": 299
+         "t": "2026-11-22",
+         "v": 234
         }
        ]
       },
@@ -5907,7 +5919,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 0
       }
      ]
@@ -7389,8 +7401,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
-         "v": 23
+         "t": "2026-11-22",
+         "v": 20
         }
        ]
       },
@@ -7461,7 +7473,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
+         "t": "2026-11-22",
          "v": 6
         }
        ]
@@ -7500,8 +7512,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 3
+       "t": "2026-11-22",
+       "v": 0
       }
      ]
     },
@@ -8149,8 +8161,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 83
+       "t": "2026-11-22",
+       "v": 42
       }
      ]
     },
@@ -8406,8 +8418,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 56
+       "t": "2026-11-22",
+       "v": 57
       }
      ]
     },
@@ -8718,7 +8730,16 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": null,
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-22",
+       "v": 0
+      }
+     ]
+    },
     "tries": [
      {
       "d": "2026-11-13",
@@ -9679,8 +9700,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 299
+       "t": "2026-11-22",
+       "v": 234
       }
      ]
     },
@@ -9743,8 +9764,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 299
+       "t": "2026-11-22",
+       "v": 234
       }
      ]
     },
@@ -9941,8 +9962,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 49
+       "t": "2026-11-22",
+       "v": 39
       }
      ]
     },
@@ -9995,7 +10016,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 1
       }
      ]
@@ -10374,7 +10395,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 2.9
       }
      ]
@@ -10585,7 +10606,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 77.5
       }
      ]
@@ -11224,8 +11245,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 49
+       "t": "2026-11-22",
+       "v": 39
       }
      ]
     },
@@ -11272,8 +11293,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
-         "v": 49
+         "t": "2026-11-22",
+         "v": 39
         }
        ]
       },
@@ -11312,7 +11333,7 @@
   {
    "id": "brain-running",
    "label": "RUNNING THE BRAIN",
-   "status": "idle",
+   "status": "working",
    "why": "The steady pulse, events, worker capacity and keeping everything tidy.",
    "statusLine": "noted this week",
    "caption": "The steady pulse, events, worker capacity and keeping everything tidy.",
@@ -11679,8 +11700,8 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-21",
-         "v": 83
+         "t": "2026-11-22",
+         "v": 42
         }
        ]
       },
@@ -11853,7 +11874,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 33.5
       }
      ]
@@ -11924,8 +11945,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 299
+       "t": "2026-11-22",
+       "v": 234
       }
      ]
     },
@@ -12173,8 +12194,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 83
+       "t": "2026-11-22",
+       "v": 42
       }
      ]
     },
@@ -12364,7 +12385,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
+       "t": "2026-11-22",
        "v": 0.914
       }
      ]
@@ -12646,8 +12667,8 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-21",
-       "v": 61
+       "t": "2026-11-22",
+       "v": 53
       }
      ]
     },
