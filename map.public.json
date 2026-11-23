@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T22:11:40.812Z",
+ "generatedAt": "2026-11-23T23:24:45.924Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1877,7 +1877,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1993,10 +1993,6 @@
      ]
     },
     "tries": [
-     {
-      "d": "2026-11-19",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-19",
       "v": "unmeasured"
@@ -2308,6 +2304,10 @@
      {
       "d": "2026-11-23",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "helped"
      },
      {
       "d": "2026-11-23",
@@ -4286,10 +4286,6 @@
         },
         {
          "t": "2026-11-21",
-         "v": 0
-        },
-        {
-         "t": "2026-11-21",
          "v": 2
         },
         {
@@ -4359,6 +4355,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 1
         }
        ]
       },
@@ -4505,10 +4505,6 @@
        },
        {
         "d": "2026-11-22",
-        "v": "unmeasured"
-       },
-       {
-        "d": "2026-11-22",
         "v": "helped"
        },
        {
@@ -4682,6 +4678,10 @@
        {
         "d": "2026-11-23",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
        }
       ],
       "stage": null
@@ -5848,7 +5848,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 25
+       "v": 27
       }
      ],
      "partial": "2026-11-23"
@@ -7018,7 +7018,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "idle",
+   "status": "working",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -14415,7 +14415,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 1
+       "v": 2
       }
      ]
     },
@@ -15124,7 +15124,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 22
+       "v": 21
       }
      ]
     },
@@ -15179,7 +15179,7 @@
      },
      {
       "d": "2026-11-23",
-      "v": "no effect"
+      "v": "helped"
      }
     ],
     "stage": null
