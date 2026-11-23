@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T03:44:46.908Z",
+ "generatedAt": "2026-11-23T04:41:55.567Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1490,8 +1490,6 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
-     "stage": "plan",
-     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -4232,18 +4230,10 @@
         },
         {
          "t": "2026-11-22",
-         "v": 0
-        },
-        {
-         "t": "2026-11-22",
          "v": 3
         },
         {
          "t": "2026-11-22",
-         "v": 0
-        },
-        {
-         "t": "2026-11-22",
          "v": 2
         },
         {
@@ -4252,7 +4242,15 @@
         },
         {
          "t": "2026-11-23",
-         "v": 2
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 1
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         },
         {
          "t": "2026-11-23",
@@ -4555,15 +4553,7 @@
        },
        {
         "d": "2026-11-22",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-22",
         "v": "no effect"
-       },
-       {
-        "d": "2026-11-22",
-        "v": "helped"
        },
        {
         "d": "2026-11-22",
@@ -4575,7 +4565,15 @@
        },
        {
         "d": "2026-11-23",
+        "v": "helped"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "helped"
        },
        {
         "d": "2026-11-23",
@@ -5660,7 +5658,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5726,7 +5724,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 105
+       "v": 106
       }
      ],
      "partial": "2026-11-22"
@@ -8488,7 +8486,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "working",
+   "status": "idle",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
@@ -8528,7 +8526,7 @@
     {
      "id": "north-star-as-product",
      "label": "NORTH STAR AS PRODUCT",
-     "status": "working",
+     "status": "done",
      "why": "I am thinking through how the map could become a product for other people, not just my own system.",
      "statusLine": "exploring the idea",
      "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
@@ -9367,7 +9365,7 @@
       },
       {
        "t": "2026-11-22",
-       "v": 56
+       "v": 55
       }
      ]
     },
