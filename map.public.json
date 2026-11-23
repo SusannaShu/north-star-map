@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T00:50:06.075Z",
+ "generatedAt": "2026-11-23T01:34:11.339Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1490,6 +1490,8 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
+     "stage": "plan",
+     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1859,7 +1861,7 @@
       },
       {
        "t": "2026-11-16",
-       "v": 106
+       "v": 107
       }
      ],
      "partial": "2026-11-16",
@@ -1898,7 +1900,7 @@
         1,
         17,
         40,
-        57
+        58
        ]
       },
       {
@@ -2784,7 +2786,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2923,7 +2925,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -5257,7 +5259,7 @@
   {
    "id": "context-graph",
    "label": "CONTEXT GRAPH",
-   "status": "idle",
+   "status": "working",
    "why": "Agents get only the context the situation needs: a graph of topics and memories. Memories decay by kind -- rules a year, people three months, tools five weeks, schedules a week.",
    "statusLine": "phase 3 built",
    "caption": "Agents get only the context the situation needs:",
@@ -5428,7 +5430,7 @@
   {
    "id": "brain-architecture",
    "label": "BRAIN ARCHITECTURE",
-   "status": "idle",
+   "status": "working",
    "why": "Swap the model and nothing is lost: the brain -- memory, rules, routines, triggers -- lives in North Star, not in any one agent. A nightly cold-start drill proves it.",
    "statusLine": "done · cold-start drill passes nightly",
    "caption": "Swap the model and nothing is lost:",
@@ -6379,7 +6381,7 @@
        "points": [
         {
          "t": "2026-11-23",
-         "v": 262
+         "v": 259
         }
        ]
       },
@@ -10453,7 +10455,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 262
+       "v": 259
       }
      ]
     },
@@ -10517,7 +10519,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 262
+       "v": 259
       }
      ]
     },
@@ -12418,7 +12420,7 @@
   {
    "id": "brain-running",
    "label": "RUNNING THE BRAIN",
-   "status": "idle",
+   "status": "working",
    "why": "The steady pulse, events, worker capacity and keeping everything tidy.",
    "statusLine": "noted this week",
    "caption": "The steady pulse, events, worker capacity and keeping everything tidy.",
@@ -13069,7 +13071,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 262
+       "v": 259
       }
      ]
     },
