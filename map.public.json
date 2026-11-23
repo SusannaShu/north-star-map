@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T18:10:26.302Z",
+ "generatedAt": "2026-11-23T19:13:17.437Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1534,6 +1534,8 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
+     "stage": "plan",
+     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1877,7 +1879,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "idle",
+   "status": "working",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -1919,7 +1921,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 1
+       "v": 2
       }
      ],
      "partial": "2026-11-23",
@@ -1961,7 +1963,7 @@
         17,
         40,
         58,
-        0
+        1
        ]
       },
       {
@@ -5848,7 +5850,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 18
+       "v": 22
       }
      ],
      "partial": "2026-11-23"
