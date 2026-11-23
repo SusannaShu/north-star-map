@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T19:13:17.437Z",
+ "generatedAt": "2026-11-23T20:20:17.778Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1534,8 +1534,6 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
-     "stage": "plan",
-     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1879,7 +1877,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2880,7 +2878,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 53
+       "v": 47
       }
      ]
     },
@@ -4352,7 +4350,7 @@
         },
         {
          "t": "2026-11-23",
-         "v": 1
+         "v": 0
         },
         {
          "t": "2026-11-23",
@@ -4671,7 +4669,7 @@
        },
        {
         "d": "2026-11-23",
-        "v": "no effect"
+        "v": "helped"
        },
        {
         "d": "2026-11-23",
@@ -5784,7 +5782,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -6517,7 +6515,7 @@
        "points": [
         {
          "t": "2026-11-23",
-         "v": 219
+         "v": 202
         }
        ]
       },
@@ -8090,7 +8088,7 @@
        "points": [
         {
          "t": "2026-11-23",
-         "v": 21
+         "v": 25
         }
        ]
       },
@@ -8201,7 +8199,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 0
+       "v": 2
       }
      ]
     },
@@ -8981,7 +8979,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 106
+       "v": 105
       }
      ]
     },
@@ -9656,7 +9654,16 @@
    "embed": "pages/portfolio-mittens-scenes.html",
    "visibility": "public",
    "goalStory": {
-    "metric": null,
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
     "tries": [
      {
       "d": "2026-11-13",
@@ -9937,7 +9944,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 76
+       "v": 75
       }
      ]
     },
@@ -10638,7 +10645,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 219
+       "v": 202
       }
      ]
     },
@@ -10702,7 +10709,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 219
+       "v": 202
       }
      ]
     },
@@ -10900,7 +10907,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 33
+       "v": 28
       }
      ]
     },
@@ -12544,7 +12551,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 33
+       "v": 28
       }
      ]
     },
@@ -12592,7 +12599,7 @@
        "points": [
         {
          "t": "2026-11-23",
-         "v": 33
+         "v": 28
         }
        ]
       },
@@ -13003,7 +13010,7 @@
        "points": [
         {
          "t": "2026-11-23",
-         "v": 106
+         "v": 105
         }
        ]
       },
@@ -13167,7 +13174,7 @@
        "points": [
         {
          "t": "2026-11-23",
-         "v": 106
+         "v": 105
         }
        ]
       },
@@ -13460,7 +13467,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 219
+       "v": 202
       }
      ]
     },
@@ -13746,7 +13753,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 106
+       "v": 105
       }
      ]
     },
@@ -15281,14 +15288,14 @@
   {
    "id": "feature-podcast-cover-art",
    "label": "PODCAST COVER ART",
-   "status": "dormant",
+   "status": "idle",
    "why": "Cover art for the podcast with the assistant character redrawn smaller, cuter and softer.",
    "statusLine": "in progress",
    "caption": "Cover art for the podcast with the assistant character redrawn smaller, cuter and softer.",
    "stage": "active",
    "embed": "pages/feature-podcast-cover-art.html",
    "visibility": "public",
-   "parked": true,
+   "parked": false,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -15552,7 +15559,7 @@
      "points": [
       {
        "t": "2026-11-23",
-       "v": 47
+       "v": 48
       }
      ]
     },
