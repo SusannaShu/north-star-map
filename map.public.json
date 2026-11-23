@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T05:58:20.080Z",
+ "generatedAt": "2026-11-23T06:15:43.696Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -930,6 +930,136 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "mittens-hw",
+   "label": "WATCH",
+   "status": "idle",
+   "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
+   "statusLine": "running · three digests a day",
+   "caption": "Mittens scrolls so I don't:",
+   "stage": "active",
+   "embed": "pages/mittens-hw.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "score",
+     "label": "improve-loop score",
+     "points": [
+      {
+       "t": "2026-11-19",
+       "v": 37
+      },
+      {
+       "t": "2026-11-20",
+       "v": 37
+      },
+      {
+       "t": "2026-11-21",
+       "v": 37
+      },
+      {
+       "t": "2026-11-22",
+       "v": 37
+      },
+      {
+       "t": "2026-11-23",
+       "v": 37
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-12",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
+   "parked": false,
+   "children": [
+    {
+     "id": "feature-band-gesture-talk",
+     "label": "BAND GESTURE TALK",
+     "status": "idle",
+     "why": "I want simple wrist gestures that reach my assistant when I can't talk out loud or reach my phone.",
+     "statusLine": "designing gestures",
+     "caption": "I want simple wrist gestures that reach my assistant when I can't talk out loud or reach my phone.",
+     "stage": "active",
+     "embed": "pages/feature-band-gesture-talk.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "susu-map",
    "label": "SUSU MAP",
    "status": "idle",
@@ -1137,136 +1267,6 @@
      "caption": "Before I head out, an agent checks how busy a place looks so I can decide whether to go now or later.",
      "stage": "active",
      "embed": "pages/feature-crowd-check.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    }
-   ],
-   "embedCaption": "what it is · how it works · where it sits"
-  },
-  {
-   "id": "mittens-hw",
-   "label": "WATCH",
-   "status": "idle",
-   "why": "Mittens scrolls so I don't: three times a day it reads what is new in tech, robotics and fashion, new podcast episodes and free city events, then sends one message. Free events can become SUSU Map posts.",
-   "statusLine": "running · three digests a day",
-   "caption": "Mittens scrolls so I don't:",
-   "stage": "active",
-   "embed": "pages/mittens-hw.html",
-   "visibility": "public",
-   "goalStory": {
-    "metric": {
-     "kind": "score",
-     "label": "improve-loop score",
-     "points": [
-      {
-       "t": "2026-11-19",
-       "v": 37
-      },
-      {
-       "t": "2026-11-20",
-       "v": 37
-      },
-      {
-       "t": "2026-11-21",
-       "v": 37
-      },
-      {
-       "t": "2026-11-22",
-       "v": 37
-      },
-      {
-       "t": "2026-11-23",
-       "v": 37
-      }
-     ]
-    },
-    "tries": [
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-12",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-13",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-14",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-15",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     }
-    ],
-    "stage": null
-   },
-   "parked": false,
-   "children": [
-    {
-     "id": "feature-band-gesture-talk",
-     "label": "BAND GESTURE TALK",
-     "status": "idle",
-     "why": "I want simple wrist gestures that reach my assistant when I can't talk out loud or reach my phone.",
-     "statusLine": "designing gestures",
-     "caption": "I want simple wrist gestures that reach my assistant when I can't talk out loud or reach my phone.",
-     "stage": "active",
-     "embed": "pages/feature-band-gesture-talk.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -5763,7 +5763,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -8611,7 +8611,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "working",
+   "status": "idle",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
@@ -8651,7 +8651,7 @@
     {
      "id": "north-star-as-product",
      "label": "NORTH STAR AS PRODUCT",
-     "status": "working",
+     "status": "done",
      "why": "I am thinking through how the map could become a product for other people, not just my own system.",
      "statusLine": "exploring the idea",
      "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
