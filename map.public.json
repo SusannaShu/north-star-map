@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T17:08:15.017Z",
+ "generatedAt": "2026-11-23T18:10:26.302Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -166,6 +166,10 @@
      {
       "d": "2026-11-21",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -1530,8 +1534,6 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
-     "stage": "plan",
-     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1875,7 +1877,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -5842,11 +5844,11 @@
       },
       {
        "t": "2026-11-22",
-       "v": 106
+       "v": 105
       },
       {
        "t": "2026-11-23",
-       "v": 15
+       "v": 18
       }
      ],
      "partial": "2026-11-23"
@@ -7016,7 +7018,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7227,7 +7229,7 @@
     {
      "id": "need-her-once",
      "label": "NEED HER ONCE",
-     "status": "working",
+     "status": "idle",
      "why": "Anything that needs me needs me once: a permission, a fact or an answer is kept and reused, never asked again.",
      "statusLine": "live",
      "caption": "Anything that needs me needs me once:",
@@ -9543,7 +9545,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 55
+       "v": 54
       }
      ]
     },
@@ -9775,6 +9777,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -9786,6 +9792,10 @@
        {
         "d": "2026-11-23",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
        },
        {
         "d": "2026-11-23",
@@ -13434,7 +13444,7 @@
   {
    "id": "owner-decides",
    "label": "THE OWNER DECIDES",
-   "status": "working",
+   "status": "idle",
    "why": "Each project's owner agent should make decisions from context, data and the goal instead of asking me. It should only bother me when it truly cannot act.",
    "statusLine": "built · being tuned",
    "caption": "Each project's owner agent should make decisions from context, data and the goal instead of asking me.",
@@ -14392,7 +14402,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 0
+       "v": 1
       }
      ]
     },
@@ -14455,7 +14465,7 @@
      },
      {
       "d": "2026-11-23",
-      "v": "no effect"
+      "v": "hurt"
      }
     ],
     "stage": null
