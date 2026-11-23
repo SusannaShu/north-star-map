@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T20:20:17.778Z",
+ "generatedAt": "2026-11-23T21:07:28.740Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2275,10 +2275,6 @@
      },
      {
       "d": "2026-11-21",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-21",
       "v": "helped"
      },
      {
@@ -2312,6 +2308,10 @@
      {
       "d": "2026-11-23",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -4350,7 +4350,7 @@
         },
         {
          "t": "2026-11-23",
-         "v": 0
+         "v": 1
         },
         {
          "t": "2026-11-23",
@@ -4673,7 +4673,7 @@
        },
        {
         "d": "2026-11-23",
-        "v": "helped"
+        "v": "no effect"
        },
        {
         "d": "2026-11-23",
@@ -5782,7 +5782,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5854,10 +5854,6 @@
      "partial": "2026-11-23"
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-17",
       "v": "unmeasured"
@@ -6160,14 +6156,18 @@
      },
      {
       "d": "2026-11-22",
-      "v": "unmeasured"
+      "v": "helped"
      },
      {
       "d": "2026-11-22",
       "v": "helped"
      },
      {
-      "d": "2026-11-22",
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
       "v": "helped"
      },
      {
@@ -11683,6 +11683,10 @@
      {
       "d": "2026-11-22",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "helped"
      }
     ],
     "stage": null
