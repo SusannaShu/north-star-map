@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T12:33:56.297Z",
+ "generatedAt": "2026-11-23T13:02:19.311Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1526,8 +1526,6 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
-     "stage": "plan",
-     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
