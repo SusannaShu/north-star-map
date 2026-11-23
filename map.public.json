@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T09:31:10.229Z",
+ "generatedAt": "2026-11-23T09:47:08.724Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -15372,6 +15372,8 @@
    "why": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
    "statusLine": "plan attached · code mapped",
    "caption": "Your closet as living inventory, with AI try-on on your own photo -- the personal side of the platform.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/susu-closet.html",
    "visibility": "public",
    "goalStory": {
