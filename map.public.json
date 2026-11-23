@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T06:55:42.864Z",
+ "generatedAt": "2026-11-23T07:48:38.389Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -788,7 +788,7 @@
      "label": "PERSONA BROWSER CHECK",
      "status": "idle",
      "why": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
-     "statusLine": "partly fixed · still verifying",
+     "statusLine": "partly fixed · sign-in still blocked",
      "caption": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
      "stage": "active",
      "embed": "pages/rg-verified-yet-whether-persona.html",
@@ -1329,7 +1329,7 @@
      "label": "REMINDERS KNOW WHAT'S DONE",
      "status": "idle",
      "why": "A reminder should never tell me to do something I already did. I turned this rule into a goal that counts misfires, and the target is none.",
-     "statusLine": "met · no misfires lately",
+     "statusLine": "met · no misses lately",
      "caption": "A reminder should never tell me to do something I already did.",
      "stage": "active",
      "embed": "pages/rg-reminders-match-her-day.html",
@@ -2325,7 +2325,7 @@
      "label": "FILED IDEA VERDICTS",
      "status": "idle",
      "why": "When I file an idea, the assistant tells me right away whether it thinks the idea is worth doing. The goal is that I never have to ask for that verdict.",
-     "statusLine": "live · one miss today",
+     "statusLine": "met · no misses",
      "caption": "When I file an idea, the assistant tells me right away whether it thinks the idea is worth doing.",
      "stage": "active",
      "embed": "pages/rg-verdict-said-filed-project.html",
@@ -4354,10 +4354,6 @@
        },
        {
         "d": "2026-11-20",
-        "v": "helped"
-       },
-       {
-        "d": "2026-11-20",
         "v": "no effect"
        },
        {
@@ -4659,6 +4655,10 @@
        {
         "d": "2026-11-23",
         "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "helped"
        },
        {
         "d": "2026-11-23",
@@ -5829,7 +5829,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 2
+       "v": 3
       }
      ],
      "partial": "2026-11-23"
@@ -6196,6 +6196,18 @@
      "links": [
       "northstar"
      ],
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-priority-by-numbers-t8808-page",
+     "label": "PRIORITY BY NUMBERS",
+     "status": "idle",
+     "why": "A page on my map that ranks what to work on next by measured numbers, not by gut feel.",
+     "statusLine": "built · being refined",
+     "caption": "A page on my map that ranks what to work on next by measured numbers, not by gut feel.",
+     "stage": "active",
+     "embed": "pages/feature-priority-by-numbers-t8808-page.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -8311,7 +8323,7 @@
      "label": "NIGHTLY REFLECTION",
      "status": "idle",
      "why": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
-     "statusLine": "live · most recent misses still open",
+     "statusLine": "live · some misses still open",
      "caption": "After midnight the system reads its own day -- errors, corrections, failed tasks -- writes what went wrong and why, and fixes the safe ones.",
      "stage": "active",
      "embed": "pages/nightly-reflection.html",
@@ -9726,7 +9738,7 @@
      "label": "PROJECT BRIEF PRIORITY",
      "status": "idle",
      "why": "My project brief should follow whatever I am focused on right now and recheck its facts before it speaks.",
-     "statusLine": "rechecks facts · misses left",
+     "statusLine": "rechecks facts · a miss left",
      "caption": "My project brief should follow whatever I am focused on right now and recheck its facts before it speaks.",
      "stage": "active",
      "embed": "pages/rg-project-brief-follows-priority.html",
@@ -9901,7 +9913,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 77
+       "v": 76
       }
      ]
     },
@@ -11839,7 +11851,7 @@
      "label": "ASK ONLY WHEN STUCK",
      "status": "idle",
      "why": "A question reaches me only when the goal and context can't answer it.",
-     "statusLine": "live · one miss today",
+     "statusLine": "met · no misses",
      "caption": "A question reaches me only when the goal and context can't answer it.",
      "stage": "active",
      "embed": "pages/rg-question-reaches-goal-context.html",
@@ -13234,6 +13246,180 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "rg-loop-files-card-work",
+   "label": "NO CARDS FOR SELF-RUN WORK",
+   "status": "idle",
+   "why": "If a loop can finish a task by itself, it should not hand me a card for it. Only things that truly need me reach me, and the target is none of the others.",
+   "statusLine": "active · tracked nightly",
+   "caption": "If a loop can finish a task by itself, it should not hand me a card for it.",
+   "stage": "active",
+   "embed": "pages/rg-loop-files-card-work.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 7
+      },
+      {
+       "t": "2026-11-14",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 1
+      },
+      {
+       "t": "2026-11-16",
+       "v": 4
+      },
+      {
+       "t": "2026-11-17",
+       "v": 4
+      },
+      {
+       "t": "2026-11-18",
+       "v": 8
+      },
+      {
+       "t": "2026-11-19",
+       "v": 8
+      },
+      {
+       "t": "2026-11-20",
+       "v": 1
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 2
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "owner-decides",
    "label": "THE OWNER DECIDES",
    "status": "idle",
@@ -13274,7 +13460,7 @@
      "label": "MY WORDS REACH DOTS",
      "status": "idle",
      "why": "Everything I say about a project should land on the right dot of the map within a day. A rule became a measurable goal that the system checks by itself.",
-     "statusLine": "met · no lines waiting",
+     "statusLine": "nearly met · a few lines waiting",
      "caption": "Everything I say about a project should land on the right dot of the map within a day.",
      "stage": "active",
      "embed": "pages/rg-her-words-reach-goal.html",
@@ -13570,6 +13756,347 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "rg-self-serve-first",
+   "label": "SELF-SERVE FIRST",
+   "status": "idle",
+   "why": "Workers should gather the context and access they need themselves before asking anyone. So far there is a one-page plan.",
+   "statusLine": "plan written · not built",
+   "caption": "Workers should gather the context and access they need themselves before asking anyone.",
+   "stage": "plan",
+   "planned": true,
+   "embed": "pages/rg-self-serve-first.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-13",
+       "v": 0
+      },
+      {
+       "t": "2026-11-14",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-16",
+       "v": 1
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
+      },
+      {
+       "t": "2026-11-19",
+       "v": 1
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 4
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-13",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-13",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-still-reacting-t6153-found",
+   "label": "RULES TAKE EFFECT",
+   "status": "idle",
+   "why": "Once a new rule is saved, the agents should follow it right away instead of repeating the old behavior.",
+   "statusLine": "noted · being checked",
+   "caption": "Once a new rule is saved, the agents should follow it right away instead of repeating the old behavior.",
+   "stage": "active",
+   "embed": "pages/rg-still-reacting-t6153-found.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-14",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-16",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "ux-teaching",
    "label": "TEACHING UX",
    "status": "idle",
@@ -13596,6 +14123,318 @@
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-merges-one-already-there",
+   "label": "RULES MERGE, NOT PILE",
+   "status": "idle",
+   "why": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
+   "statusLine": "noted · in progress",
+   "caption": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
+   "stage": "active",
+   "embed": "pages/rg-merges-one-already-there.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-14",
+       "v": 0
+      },
+      {
+       "t": "2026-11-15",
+       "v": 0
+      },
+      {
+       "t": "2026-11-16",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-14",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-15",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-verdict-said-filed-part",
+   "label": "SAME RECORD GATE",
+   "status": "idle",
+   "why": "My assistant's own actions now pass the same record check as the worker agents.",
+   "statusLine": "built · replay passes",
+   "caption": "My assistant's own actions now pass the same record check as the worker agents.",
+   "stage": "active",
+   "embed": "pages/rg-verdict-said-filed-part.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-16",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 1
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 2
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 1
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-16",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "helped"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -13633,7 +14472,7 @@
    "label": "SHEYOU REPORT SOURCES",
    "status": "done",
    "why": "This is where I keep track of the sources behind a report on SHEYOU.",
-   "statusLine": "done · filed as a rule",
+   "statusLine": "done · sources check in place",
    "caption": "This is where I keep track of the sources behind a report on SHEYOU.",
    "stage": "done",
    "embed": "pages/sheyou-report-sources.html",
@@ -13695,6 +14534,302 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "rg-exception-cache-names-source",
+   "label": "CACHE NAMES SOURCE",
+   "status": "idle",
+   "why": "Answers come from live data. The only exception is a saved copy that names its source and when it was last refreshed.",
+   "statusLine": "noted this week",
+   "caption": "Answers come from live data.",
+   "stage": "active",
+   "embed": "pages/rg-exception-cache-names-source.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-16",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-marking-urgent-system-work",
+   "label": "SYSTEM WORK URGENT",
+   "status": "idle",
+   "why": "Fixes to the system itself get marked urgent so they don't wait behind other work.",
+   "statusLine": "noted this week",
+   "caption": "Fixes to the system itself get marked urgent so they don't wait behind other work.",
+   "stage": "active",
+   "embed": "pages/rg-marking-urgent-system-work.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-16",
+       "v": 0
+      },
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-16",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-17",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "small-models",
    "label": "SMALL LOCAL MODELS",
    "status": "idle",
@@ -13732,6 +14867,388 @@
    ],
    "parent": "ns-talk",
    "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-north-star-loop-budget",
+   "label": "LOOP BUDGET GUARD",
+   "status": "idle",
+   "why": "I turned a rule about how the agent loop handles refusals into a measurable goal that is checked in code until it holds.",
+   "statusLine": "active · goal set",
+   "caption": "I turned a rule about how the agent loop handles refusals into a measurable goal that is checked in code until it holds.",
+   "stage": "active",
+   "embed": "pages/rg-north-star-loop-budget.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-17",
+       "v": 0
+      },
+      {
+       "t": "2026-11-18",
+       "v": 1
+      },
+      {
+       "t": "2026-11-19",
+       "v": 1
+      },
+      {
+       "t": "2026-11-20",
+       "v": 1
+      },
+      {
+       "t": "2026-11-21",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 2
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-22",
+       "v": 2
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-17",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rg-straight-to-data",
+   "label": "PRODUCTS GO TO DATA",
+   "status": "idle",
+   "why": "Each product lists the data it needs and goes to get it from the source instead of asking me. Code tracks the gaps until none are left.",
+   "statusLine": "active · gaps closing",
+   "caption": "Each product lists the data it needs and goes to get it from the source instead of asking me.",
+   "stage": "active",
+   "embed": "pages/rg-straight-to-data.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-18",
+       "v": 23
+      },
+      {
+       "t": "2026-11-19",
+       "v": 22
+      },
+      {
+       "t": "2026-11-20",
+       "v": 22
+      },
+      {
+       "t": "2026-11-21",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-22",
+       "v": 22
+      },
+      {
+       "t": "2026-11-23",
+       "v": 22
+      },
+      {
+       "t": "2026-11-23",
+       "v": 22
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "links": [
+    "man-rules"
+   ],
+   "parent": "owner-decides",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-language-learning-voice",
+   "label": "LANGUAGE LEARNING VOICE",
+   "status": "idle",
+   "why": "Language lessons should sound like a native speaker, not an accented copy. The assistant also listens back to its own speech to catch misreadings that text checks miss.",
+   "statusLine": "paused · waits on robot build",
+   "caption": "Language lessons should sound like a native speaker, not an accented copy.",
+   "stage": "active",
+   "embed": "pages/feature-language-learning-voice.html",
+   "visibility": "public",
+   "parent": "learn-with-mittens",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-band-tap-exit-gesture",
+   "label": "CALL SCREEN AUTO EXIT",
+   "status": "idle",
+   "why": "When I start talking with my assistant on the glasses, it closes the stock call screen by itself so I only ever see our own interface.",
+   "statusLine": "building",
+   "caption": "When I start talking with my assistant on the glasses, it closes the stock call screen by itself so I only ever see our own interface.",
+   "stage": "active",
+   "embed": "pages/feature-band-tap-exit-gesture.html",
+   "visibility": "public",
+   "parent": "smart-glasses",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "rule-goals",
+   "label": "RULES AS GOALS",
+   "status": "idle",
+   "why": "Instead of writing rules, I turn each one into a goal with a number that code keeps working on until it is met. This group holds all of those goals.",
+   "statusLine": "live · kept by code",
+   "caption": "Instead of writing rules, I turn each one into a goal with a number that code keeps working on until it is met.",
+   "stage": "active",
+   "embed": "pages/rule-goals.html",
+   "visibility": "public",
+   "parent": "mittens-digital",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "ui-page-watch",
+   "label": "PAGES THE WATCHER CAUGHT",
+   "status": "idle",
+   "why": "A watcher notices the first time a page lets me down and files it here, unless a project already owns that page.",
+   "statusLine": "live · auto filing",
+   "caption": "A watcher notices the first time a page lets me down and files it here, unless a project already owns that page.",
+   "stage": "active",
+   "embed": "pages/ui-page-watch.html",
+   "visibility": "public",
+   "parent": "ui-experience",
+   "parked": false,
+   "children": [
+    {
+     "id": "feature-map-page",
+     "label": "MAP PAGE",
+     "status": "idle",
+     "why": "The main map page, improved by the interface watcher when my use shows something is missing.",
+     "statusLine": "in progress",
+     "caption": "The main map page, improved by the interface watcher when my use shows something is missing.",
+     "stage": "active",
+     "embed": "pages/feature-map-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature--page",
+     "label": "PAGE FIX",
+     "status": "idle",
+     "why": "My interface watcher opened this when my use of a page showed something missing, so the page gets fixed.",
+     "statusLine": "flagged · fix pending",
+     "caption": "My interface watcher opened this when my use of a page showed something missing, so the page gets fixed.",
+     "stage": "active",
+     "embed": "pages/feature--page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-manual-topic-page",
+     "label": "MANUAL TOPIC PAGE",
+     "status": "idle",
+     "why": "A page for each manual topic, improved by the interface watcher when my use shows something is missing.",
+     "statusLine": "in progress",
+     "caption": "A page for each manual topic, improved by the interface watcher when my use shows something is missing.",
+     "stage": "active",
+     "embed": "pages/feature-manual-topic-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
+   "id": "feature-podcast-cover-art",
+   "label": "PODCAST COVER ART",
+   "status": "dormant",
+   "why": "Cover art for the podcast with the assistant character redrawn smaller, cuter and softer.",
+   "statusLine": "in progress",
+   "caption": "Cover art for the podcast with the assistant character redrawn smaller, cuter and softer.",
+   "stage": "active",
+   "embed": "pages/feature-podcast-cover-art.html",
+   "visibility": "public",
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
