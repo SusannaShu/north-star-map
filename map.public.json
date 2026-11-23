@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-23T05:15:50.873Z",
+ "generatedAt": "2026-11-23T05:58:20.080Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -853,6 +853,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -907,6 +911,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -1398,6 +1406,10 @@
         {
          "t": "2026-11-23",
          "v": 1
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -1497,6 +1509,10 @@
        {
         "d": "2026-11-23",
         "v": "helped"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -1510,6 +1526,8 @@
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
      "statusLine": "installed",
      "caption": "\"Start recording\" on the glasses:",
+     "stage": "plan",
+     "planned": true,
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -1665,6 +1683,10 @@
       {
        "t": "2026-11-22",
        "v": 1
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
       }
      ]
     },
@@ -1776,6 +1798,14 @@
      {
       "d": "2026-11-22",
       "v": "helped"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "hurt"
      }
     ],
     "stage": {
@@ -2344,6 +2374,10 @@
         {
          "t": "2026-11-23",
          "v": 1
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -2387,6 +2421,10 @@
        {
         "d": "2026-11-23",
         "v": "hurt"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "helped"
        }
       ],
       "stage": null
@@ -3040,6 +3078,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -3074,6 +3116,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -4697,6 +4743,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -4735,6 +4785,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -4972,6 +5026,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -5006,6 +5064,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -5701,7 +5763,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5713,10 +5775,6 @@
      "kind": "repeats",
      "label": "repeated complaints and catches, per day",
      "points": [
-      {
-       "t": "2026-11-09",
-       "v": 6
-      },
       {
        "t": "2026-11-10",
        "v": 8
@@ -5768,9 +5826,13 @@
       {
        "t": "2026-11-22",
        "v": 106
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
       }
      ],
-     "partial": "2026-11-22"
+     "partial": "2026-11-23"
     },
     "tries": [
      {
@@ -8314,6 +8376,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -8356,6 +8422,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -8541,7 +8611,7 @@
   {
    "id": "ns-public",
    "label": "NORTH STAR PUBLIC",
-   "status": "idle",
+   "status": "working",
    "why": "Releasing North Star itself: this public map, and the code as a clean open-source repo.",
    "statusLine": "live · launch plan in progress",
    "caption": "Releasing North Star itself:",
@@ -8581,7 +8651,7 @@
     {
      "id": "north-star-as-product",
      "label": "NORTH STAR AS PRODUCT",
-     "status": "done",
+     "status": "working",
      "why": "I am thinking through how the map could become a product for other people, not just my own system.",
      "statusLine": "exploring the idea",
      "caption": "I am thinking through how the map could become a product for other people, not just my own system.",
@@ -8651,7 +8721,7 @@
         },
         {
          "t": "2026-11-23",
-         "v": 23
+         "v": 28
         }
        ]
       },
@@ -8662,6 +8732,10 @@
        },
        {
         "d": "2026-11-16",
+        "v": "unmeasured"
+       },
+       {
+        "d": "2026-11-23",
         "v": "unmeasured"
        }
       ],
@@ -8975,6 +9049,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -9009,6 +9087,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -11691,6 +11773,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -11733,6 +11819,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -11790,6 +11880,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -11820,6 +11914,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
@@ -11893,6 +11991,10 @@
         {
          "t": "2026-11-23",
          "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
         }
        ]
       },
@@ -11939,6 +12041,10 @@
        },
        {
         "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
         "v": "no effect"
        },
        {
