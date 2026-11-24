@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-24T07:04:52.076Z",
+ "generatedAt": "2026-11-24T08:12:16.566Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -776,7 +776,7 @@
      "label": "PERSONA BROWSER CHECK",
      "status": "idle",
      "why": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
-     "statusLine": "partly fixed · sign-in still blocked",
+     "statusLine": "partly fixed · one step blocked",
      "caption": "Each marketing persona should run in its own separate browser, and I want the system to prove that it does.",
      "stage": "active",
      "embed": "pages/rg-verified-yet-whether-persona.html",
@@ -1532,12 +1532,25 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "feature-walking-lens-card",
+     "label": "WALKING LENS CARD",
+     "status": "idle",
+     "why": "I don't check my calendar all the time, so I want a quick card on the glasses while I'm on the move. It shows my day and how the agent moved toward the goal.",
+     "statusLine": "in progress",
+     "caption": "I don't check my calendar all the time, so I want a quick card on the glasses while I'm on the move.",
+     "stage": "active",
+     "embed": "pages/feature-walking-lens-card.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "meeting-notes",
      "label": "MEETING NOTES",
      "status": "idle",
      "why": "\"Start recording\" on the glasses: the phone on the table hears the room, and the note lands on the right dot.",
-     "statusLine": "installed",
+     "statusLine": "built · in use",
      "caption": "\"Start recording\" on the glasses:",
+     "stage": "done",
      "embed": "pages/meeting-notes.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
@@ -2515,6 +2528,18 @@
      "caption": "When an agent finishes an action, it proves it with a screenshot instead of reading the result back to me.",
      "stage": "active",
      "embed": "pages/feature-send-proof-screenshot.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-mittens-voice",
+     "label": "MITTENS VOICE",
+     "status": "idle",
+     "why": "I want the assistant to have its own real voice, not mine. It should sound genderless and borderless, like an ideal future self.",
+     "statusLine": "in progress",
+     "caption": "I want the assistant to have its own real voice, not mine.",
+     "stage": "active",
+     "embed": "pages/feature-mittens-voice.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
@@ -3927,7 +3952,7 @@
       },
       {
        "t": "2026-11-24",
-       "v": 54
+       "v": 52
       }
      ]
     },
@@ -7347,7 +7372,7 @@
      "label": "TALK VOICE",
      "status": "idle",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
-     "statusLine": "natural voices live",
+     "statusLine": "live · new voice samples coming",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "stage": "active",
      "embed": "pages/talk-voice.html",
@@ -9079,7 +9104,7 @@
    "label": "ACTION TREE",
    "status": "idle",
    "why": "The one source of truth for what is open: every agent clocks in on its item, keeps a heartbeat, and closes it with an outcome and evidence.",
-   "statusLine": "live · some stale items remain",
+   "statusLine": "live · a few stale items left",
    "caption": "The one source of truth for what is open:",
    "stage": "active",
    "embed": "pages/action-tree.html",
@@ -9885,7 +9910,7 @@
      "label": "PROJECT BRIEF PRIORITY",
      "status": "idle",
      "why": "My project brief should follow whatever I am focused on right now and recheck its facts before it speaks.",
-     "statusLine": "rechecks facts · a miss left",
+     "statusLine": "met · rechecks live facts",
      "caption": "My project brief should follow whatever I am focused on right now and recheck its facts before it speaks.",
      "stage": "active",
      "embed": "pages/rg-project-brief-follows-priority.html",
@@ -11441,6 +11466,18 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "feature-pendant-auto-recording",
+     "label": "PENDANT AUTO RECORDING",
+     "status": "idle",
+     "why": "I want the pendant to notice on its own when something is worth recording and start by itself. Then I don't have to remember to press anything.",
+     "statusLine": "planned next",
+     "caption": "I want the pendant to notice on its own when something is worth recording and start by itself.",
+     "stage": "active",
+     "embed": "pages/feature-pendant-auto-recording.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "mittens-open",
      "label": "FIRST PENDANT",
      "status": "idle",
@@ -12257,6 +12294,30 @@
       ],
       "stage": null
      },
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-because-pdfs-hold-what",
+     "label": "RULE JUDGE GATE",
+     "status": "idle",
+     "why": "Documents the system makes only keep what passes a judge that checks them against my rules. Anything that fails gets fixed or left out.",
+     "statusLine": "met · no misses",
+     "caption": "Documents the system makes only keep what passes a judge that checks them against my rules.",
+     "stage": "active",
+     "embed": "pages/rg-because-pdfs-hold-what.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "rg-partly-right-judge-catch",
+     "label": "JUDGE CATCHES FAULTS",
+     "status": "idle",
+     "why": "The judge has to catch every fault before I see it, not just some of them. Each miss teaches it what to look for.",
+     "statusLine": "met · no misses",
+     "caption": "The judge has to catch every fault before I see it, not just some of them.",
+     "stage": "active",
+     "embed": "pages/rg-partly-right-judge-catch.html",
+     "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     }
    ],
@@ -13790,7 +13851,7 @@
      "label": "NOTHING WAITS ON ME",
      "status": "idle",
      "why": "No piece of work should stall while waiting for my taste call. The agents decide by a clear standard and keep moving.",
-     "statusLine": "not met · a few dots waiting",
+     "statusLine": "nearly met · one dot waiting",
      "caption": "No piece of work should stall while waiting for my taste call.",
      "stage": "active",
      "embed": "pages/rg-no-dot-parked-on-her.html",
@@ -15440,6 +15501,144 @@
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
+   "id": "rg-build-scheduled-self-audit",
+   "label": "SCHEDULED SELF-AUDIT",
+   "status": "idle",
+   "why": "The system reads its own logs on a schedule and catches problems before I run into them. It fixes what it can by itself.",
+   "statusLine": "built · runs on schedule",
+   "caption": "The system reads its own logs on a schedule and catches problems before I run into them.",
+   "stage": "active",
+   "embed": "pages/rg-build-scheduled-self-audit.html",
+   "visibility": "public",
+   "goalStory": {
+    "metric": {
+     "kind": "values",
+     "label": "measured result",
+     "points": [
+      {
+       "t": "2026-11-18",
+       "v": 0
+      },
+      {
+       "t": "2026-11-19",
+       "v": 0
+      },
+      {
+       "t": "2026-11-20",
+       "v": 0
+      },
+      {
+       "t": "2026-11-21",
+       "v": 1
+      },
+      {
+       "t": "2026-11-22",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-23",
+       "v": 0
+      },
+      {
+       "t": "2026-11-24",
+       "v": 0
+      }
+     ]
+    },
+    "tries": [
+     {
+      "d": "2026-11-18",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-19",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-20",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-21",
+      "v": "hurt"
+     },
+     {
+      "d": "2026-11-22",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-23",
+      "v": "no effect"
+     },
+     {
+      "d": "2026-11-24",
+      "v": "no effect"
+     }
+    ],
+    "stage": null
+   },
+   "parent": "rule-goals",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
+  },
+  {
    "id": "feature-band-tap-exit-gesture",
    "label": "CALL SCREEN AUTO EXIT",
    "status": "idle",
@@ -15466,7 +15665,135 @@
    "visibility": "public",
    "parent": "mittens-digital",
    "parked": false,
-   "children": [],
+   "children": [
+    {
+     "id": "rg-plain-warm-susanna-voice",
+     "label": "PLAIN WARM VOICE",
+     "status": "idle",
+     "why": "Everything the system writes to me or for me should be plain and warm and sound like me. No jargon.",
+     "statusLine": "met · no misses",
+     "caption": "Everything the system writes to me or for me should be plain and warm and sound like me.",
+     "stage": "active",
+     "embed": "pages/rg-plain-warm-susanna-voice.html",
+     "visibility": "public",
+     "goalStory": {
+      "metric": {
+       "kind": "values",
+       "label": "measured result",
+       "points": [
+        {
+         "t": "2026-11-19",
+         "v": 0
+        },
+        {
+         "t": "2026-11-20",
+         "v": 0
+        },
+        {
+         "t": "2026-11-21",
+         "v": 0
+        },
+        {
+         "t": "2026-11-22",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-23",
+         "v": 0
+        },
+        {
+         "t": "2026-11-24",
+         "v": 0
+        }
+       ]
+      },
+      "tries": [
+       {
+        "d": "2026-11-19",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-20",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-21",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-22",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-23",
+        "v": "no effect"
+       },
+       {
+        "d": "2026-11-24",
+        "v": "no effect"
+       }
+      ],
+      "stage": null
+     },
+     "embedCaption": "what it is · how it works · where it sits"
+    }
+   ],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
@@ -15483,6 +15810,18 @@
    "parked": false,
    "children": [
     {
+     "id": "feature-source-audit-t7729-page",
+     "label": "SOURCE AUDIT PAGE",
+     "status": "idle",
+     "why": "A page that shows where each claim came from. The watcher flagged it when using it didn't go smoothly.",
+     "statusLine": "flagged · being improved",
+     "caption": "A page that shows where each claim came from.",
+     "stage": "active",
+     "embed": "pages/feature-source-audit-t7729-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "feature-map-page",
      "label": "MAP PAGE",
      "status": "idle",
@@ -15495,6 +15834,30 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
+     "id": "feature-source-audit-t9428-page",
+     "label": "SOURCE AUDIT PAGE",
+     "status": "idle",
+     "why": "Another page that checks sources. The watcher flagged it after a miss.",
+     "statusLine": "flagged · being improved",
+     "caption": "Another page that checks sources.",
+     "stage": "active",
+     "embed": "pages/feature-source-audit-t9428-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-item-page",
+     "label": "ITEM PAGE",
+     "status": "idle",
+     "why": "The page for a single item. The watcher flagged it when using it didn't go smoothly.",
+     "statusLine": "flagged · being improved",
+     "caption": "The page for a single item.",
+     "stage": "active",
+     "embed": "pages/feature-item-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
      "id": "feature--page",
      "label": "PAGE FIX",
      "status": "idle",
@@ -15503,6 +15866,54 @@
      "caption": "My interface watcher opened this when my use of a page showed something missing, so the page gets fixed.",
      "stage": "active",
      "embed": "pages/feature--page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-agent-compare-page",
+     "label": "AGENT COMPARE PAGE",
+     "status": "idle",
+     "why": "A page that puts agents side by side so I can see which does better. The watcher flagged a miss on it.",
+     "statusLine": "flagged · being improved",
+     "caption": "A page that puts agents side by side so I can see which does better.",
+     "stage": "active",
+     "embed": "pages/feature-agent-compare-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-brain-architecture-page",
+     "label": "BRAIN ARCHITECTURE PAGE",
+     "status": "idle",
+     "why": "A page that shows how the system's thinking parts fit together. The watcher flagged a miss on it.",
+     "statusLine": "flagged · being improved",
+     "caption": "A page that shows how the system's thinking parts fit together.",
+     "stage": "active",
+     "embed": "pages/feature-brain-architecture-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-device-true-preview-page",
+     "label": "DEVICE PREVIEW PAGE",
+     "status": "idle",
+     "why": "A page that shows screens exactly as each device will show them. The watcher flagged a miss on it.",
+     "statusLine": "flagged · being improved",
+     "caption": "A page that shows screens exactly as each device will show them.",
+     "stage": "active",
+     "embed": "pages/feature-device-true-preview-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-finished-since-page",
+     "label": "FINISHED SINCE PAGE",
+     "status": "idle",
+     "why": "A page listing what got done since I last looked. The watcher flagged a miss on it.",
+     "statusLine": "flagged · on hold",
+     "caption": "A page listing what got done since I last looked.",
+     "stage": "active",
+     "embed": "pages/feature-finished-since-page.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -15637,6 +16048,24 @@
    "parked": false,
    "children": [],
    "embedCaption": "case study"
+  },
+  {
+   "id": "rg-two-chasing-same-mic",
+   "label": "ONE FIX PER FAULT",
+   "status": "idle",
+   "why": "Two workers were chasing the same fault at once. Now one owns each problem and the others stand down.",
+   "statusLine": "noted this week",
+   "caption": "Two workers were chasing the same fault at once.",
+   "stage": "active",
+   "embed": "pages/rg-two-chasing-same-mic.html",
+   "visibility": "public",
+   "links": [
+    "brain-context-flow"
+   ],
+   "parent": "brain-context-flow",
+   "parked": false,
+   "children": [],
+   "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "susu-closet",
