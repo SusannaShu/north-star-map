@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-24T06:28:35.875Z",
+ "generatedAt": "2026-11-24T07:04:52.076Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1901,7 +1901,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -2900,7 +2900,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -7110,7 +7110,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7345,7 +7345,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "working",
+     "status": "idle",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "natural voices live",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
@@ -9669,7 +9669,7 @@
       },
       {
        "t": "2026-11-24",
-       "v": 54
+       "v": 53
       }
      ]
     },
