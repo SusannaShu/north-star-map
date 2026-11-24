@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-24T16:27:13.924Z",
+ "generatedAt": "2026-11-24T17:17:49.650Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -14989,7 +14989,7 @@
   {
    "id": "feature-human-like-page-browsing",
    "label": "HUMAN-LIKE BROWSING",
-   "status": "idle",
+   "status": "dormant",
    "why": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
    "statusLine": "idle this week",
    "caption": "When there is no API, my agents should look at a page the way a person does and pick what to click.",
@@ -14997,7 +14997,7 @@
    "embed": "pages/feature-human-like-page-browsing.html",
    "visibility": "public",
    "parent": "man-browsers",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -15536,7 +15536,7 @@
   {
    "id": "rg-straight-to-data",
    "label": "PRODUCTS GO TO DATA",
-   "status": "idle",
+   "status": "dormant",
    "why": "Each product lists the data it needs and goes to get it from the source instead of asking me. Code tracks the gaps until none are left.",
    "statusLine": "active · gaps closing",
    "caption": "Each product lists the data it needs and goes to get it from the source instead of asking me.",
@@ -15670,7 +15670,7 @@
     "man-rules"
    ],
    "parent": "owner-decides",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
