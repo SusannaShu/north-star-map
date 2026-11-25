@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T05:54:12.066Z",
+ "generatedAt": "2026-11-25T06:10:32.301Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -6015,7 +6015,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -7349,7 +7349,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 63
+       "v": 64
       }
      ]
     },
