@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T06:10:32.301Z",
+ "generatedAt": "2026-11-25T17:02:10.538Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -286,7 +286,7 @@
         },
         {
          "t": "2026-11-25",
-         "v": 51
+         "v": 52
         }
        ]
       },
@@ -619,7 +619,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 34
+       "v": 35
       }
      ]
     },
@@ -986,7 +986,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 37
+       "v": 36
       }
      ]
     },
@@ -2010,7 +2010,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 8
+       "v": 11
       }
      ],
      "partial": "2026-11-23",
@@ -2026,7 +2026,7 @@
         4,
         24,
         12,
-        0
+        1
        ]
       },
       {
@@ -2052,7 +2052,7 @@
         17,
         40,
         58,
-        5
+        7
        ]
       },
       {
@@ -2090,18 +2090,6 @@
      },
      {
       "d": "2026-11-19",
-      "v": "no effect"
-     },
-     {
-      "d": "2026-11-19",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-19",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-19",
       "v": "helped"
      },
      {
@@ -2399,6 +2387,18 @@
      {
       "d": "2026-11-24",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "helped"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "helped"
      },
      {
       "d": "2026-11-25",
@@ -3542,7 +3542,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 42
+       "v": 41
       }
      ]
     },
@@ -3803,7 +3803,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 37
+       "v": 36
       }
      ]
     },
@@ -4060,7 +4060,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 50
+       "v": 49
       }
      ]
     },
@@ -5951,7 +5951,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 46
+       "v": 65
       }
      ]
     },
@@ -6015,7 +6015,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -6081,28 +6081,12 @@
       },
       {
        "t": "2026-11-25",
-       "v": 1
+       "v": 2
       }
      ],
      "partial": "2026-11-25"
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-17",
-      "v": "unmeasured"
-     },
      {
       "d": "2026-11-17",
       "v": "unmeasured"
@@ -6372,10 +6356,6 @@
       "v": "helped"
      },
      {
-      "d": "2026-11-22",
-      "v": "helped"
-     },
-     {
       "d": "2026-11-23",
       "v": "helped"
      },
@@ -6406,6 +6386,26 @@
      {
       "d": "2026-11-25",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -9053,7 +9053,7 @@
         },
         {
          "t": "2026-11-25",
-         "v": 28
+         "v": 24
         }
        ]
       },
@@ -9866,7 +9866,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 52
+       "v": 48
       }
      ]
     },
@@ -10272,7 +10272,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 73
+       "v": 75
       }
      ]
     },
@@ -11442,7 +11442,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 30
+       "v": 29
       }
      ]
     },
@@ -11911,7 +11911,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 1
+       "v": 2
       }
      ]
     },
@@ -13509,7 +13509,7 @@
       },
       {
        "t": "2026-11-25",
-       "v": 40
+       "v": 39
       }
      ]
     },
@@ -14654,7 +14654,7 @@
   {
    "id": "rg-still-reacting-t6153-found",
    "label": "RULES TAKE EFFECT",
-   "status": "idle",
+   "status": "dormant",
    "why": "Once a new rule is saved, the agents should follow it right away instead of repeating the old behavior.",
    "statusLine": "noted · being checked",
    "caption": "Once a new rule is saved, the agents should follow it right away instead of repeating the old behavior.",
@@ -14825,14 +14825,14 @@
     "stage": null
    },
    "parent": "rule-goals",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
   {
    "id": "ux-teaching",
    "label": "TEACHING UX",
-   "status": "idle",
+   "status": "dormant",
    "why": "What I see and hear in teaching mode should keep me engaged and help lessons stick. Success means I learn as much as possible.",
    "statusLine": "plan · nothing yet",
    "caption": "What I see and hear in teaching mode should keep me engaged and help lessons stick.",
@@ -14841,7 +14841,7 @@
    "embed": "pages/ux-teaching.html",
    "visibility": "public",
    "parent": "ui-experience",
-   "parked": false,
+   "parked": true,
    "children": [
     {
      "id": "feature-red-study-page-comments",
@@ -14861,7 +14861,7 @@
   {
    "id": "rg-merges-one-already-there",
    "label": "RULES MERGE, NOT PILE",
-   "status": "idle",
+   "status": "dormant",
    "why": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
    "statusLine": "noted · in progress",
    "caption": "A new rule should fold into the one already there rather than sit beside it as a near copy.",
@@ -15036,7 +15036,7 @@
     "stage": null
    },
    "parent": "rule-goals",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -15463,7 +15463,7 @@
   {
    "id": "rg-marking-urgent-system-work",
    "label": "SYSTEM WORK URGENT",
-   "status": "idle",
+   "status": "dormant",
    "why": "Fixes to the system itself get marked urgent so they don't wait behind other work.",
    "statusLine": "noted this week",
    "caption": "Fixes to the system itself get marked urgent so they don't wait behind other work.",
@@ -15622,7 +15622,7 @@
     "stage": null
    },
    "parent": "rule-goals",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -15973,7 +15973,7 @@
   {
    "id": "feature-language-learning-voice",
    "label": "LANGUAGE LEARNING VOICE",
-   "status": "idle",
+   "status": "dormant",
    "why": "Language lessons should sound like a native speaker, not an accented copy. The assistant also listens back to its own speech to catch misreadings that text checks miss.",
    "statusLine": "paused · waits on robot build",
    "caption": "Language lessons should sound like a native speaker, not an accented copy.",
@@ -15981,7 +15981,7 @@
    "embed": "pages/feature-language-learning-voice.html",
    "visibility": "public",
    "parent": "learn-with-mittens",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
@@ -16134,7 +16134,7 @@
   {
    "id": "feature-band-tap-exit-gesture",
    "label": "CALL SCREEN AUTO EXIT",
-   "status": "idle",
+   "status": "dormant",
    "why": "When I start talking with my assistant on the glasses, it closes the stock call screen by itself so I only ever see our own interface.",
    "statusLine": "building",
    "caption": "When I start talking with my assistant on the glasses, it closes the stock call screen by itself so I only ever see our own interface.",
@@ -16142,7 +16142,7 @@
    "embed": "pages/feature-band-tap-exit-gesture.html",
    "visibility": "public",
    "parent": "smart-glasses",
-   "parked": false,
+   "parked": true,
    "children": [],
    "embedCaption": "what it is · how it works · where it sits"
   },
