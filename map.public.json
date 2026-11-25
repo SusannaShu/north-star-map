@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T04:18:46.018Z",
+ "generatedAt": "2026-11-25T04:36:01.902Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -2957,7 +2957,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "working",
+   "status": "idle",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -3100,7 +3100,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -5241,7 +5241,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
@@ -13130,7 +13130,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "working",
+   "status": "idle",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
