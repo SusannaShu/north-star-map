@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T03:27:45.912Z",
+ "generatedAt": "2026-11-25T03:34:42.019Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1932,7 +1932,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -3399,7 +3399,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "working",
+   "status": "idle",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -5923,7 +5923,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "working",
+   "status": "idle",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5989,7 +5989,7 @@
       },
       {
        "t": "2026-11-24",
-       "v": 25
+       "v": 27
       }
      ],
      "partial": "2026-11-24"
@@ -16469,7 +16469,7 @@
   {
    "id": "omi",
    "label": "OMI",
-   "status": "working",
+   "status": "done",
    "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
    "statusLine": "old branch shelved",
    "caption": "Omi is the open-source AI wearable.",
