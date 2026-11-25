@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T03:34:42.019Z",
+ "generatedAt": "2026-11-25T04:18:46.018Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -752,7 +752,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 0.068
         }
        ]
@@ -1551,7 +1551,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 247
         }
        ]
@@ -2565,7 +2565,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 247
         }
        ]
@@ -2957,7 +2957,7 @@
   {
    "id": "devhub",
    "label": "DEV HUB",
-   "status": "idle",
+   "status": "working",
    "why": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
    "statusLine": "live · in regular use",
    "caption": "One place where I type once and agents act across every machine -- the hands of North Star, and its manual.",
@@ -2970,7 +2970,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 52
       }
      ]
@@ -3100,7 +3100,7 @@
   {
    "id": "manual-map",
    "label": "MANUAL MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Where \"how\" lives: the map says what and why, the manual says how across projects, each repo's DEV.md says how for that repo.",
    "statusLine": "live · organized as a graph",
    "caption": "Where \"how\" lives:",
@@ -3113,7 +3113,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 35
       }
      ]
@@ -4966,7 +4966,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 165
       }
      ]
@@ -5241,7 +5241,7 @@
   {
    "id": "man-devices",
    "label": "DEVICES",
-   "status": "idle",
+   "status": "working",
    "why": "How agents use the phones, the glasses and recording.",
    "caption": "How agents use the phones, the glasses and recording.",
    "stage": "active",
@@ -5923,7 +5923,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -6309,11 +6309,11 @@
      },
      {
       "d": "2026-11-25",
-      "v": "no effect"
+      "v": "unmeasured"
      },
      {
       "d": "2026-11-25",
-      "v": "unmeasured"
+      "v": "no effect"
      }
     ],
     "stage": {
@@ -6490,7 +6490,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 0
       }
      ]
@@ -6655,7 +6655,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 247
         }
        ]
@@ -8256,7 +8256,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 21
         }
        ]
@@ -8328,7 +8328,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 6
         }
        ]
@@ -8367,7 +8367,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 0
       }
      ]
@@ -9159,7 +9159,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 105
       }
      ]
@@ -9527,7 +9527,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 56
       }
      ]
@@ -10840,7 +10840,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 247
       }
      ]
@@ -10904,7 +10904,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 247
       }
      ]
@@ -11102,7 +11102,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 22
       }
      ]
@@ -11156,7 +11156,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 1
       }
      ]
@@ -11555,7 +11555,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 2.9
       }
      ]
@@ -11766,7 +11766,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 29.2
       }
      ]
@@ -12964,7 +12964,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 22
       }
      ]
@@ -13012,7 +13012,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 22
         }
        ]
@@ -13130,7 +13130,7 @@
   {
    "id": "man-g-machines",
    "label": "MACHINES + SYSTEM",
-   "status": "idle",
+   "status": "working",
    "why": "How my devices and the system itself fit together.",
    "statusLine": "plans attached · noted this week",
    "caption": "How my devices and the system itself fit together.",
@@ -13427,7 +13427,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 105
         }
        ]
@@ -13591,7 +13591,7 @@
        "label": "measured result",
        "points": [
         {
-         "t": "2026-11-24",
+         "t": "2026-11-25",
          "v": 105
         }
        ]
@@ -13639,7 +13639,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 33.8
       }
      ]
@@ -13892,7 +13892,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 247
       }
      ]
@@ -14194,7 +14194,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 105
       }
      ]
@@ -15382,7 +15382,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 0.908
       }
      ]
@@ -16043,18 +16043,6 @@
      "embedCaption": "what it is · how it works · where it sits"
     },
     {
-     "id": "feature-source-audit-t9428-page",
-     "label": "SOURCE AUDIT PAGE",
-     "status": "idle",
-     "why": "Another page that checks sources. The watcher flagged it after a miss.",
-     "statusLine": "flagged · being improved",
-     "caption": "Another page that checks sources.",
-     "stage": "active",
-     "embed": "pages/feature-source-audit-t9428-page.html",
-     "visibility": "public",
-     "embedCaption": "what it is · how it works · where it sits"
-    },
-    {
      "id": "feature-item-page",
      "label": "ITEM PAGE",
      "status": "idle",
@@ -16063,6 +16051,18 @@
      "caption": "The page for a single item.",
      "stage": "active",
      "embed": "pages/feature-item-page.html",
+     "visibility": "public",
+     "embedCaption": "what it is · how it works · where it sits"
+    },
+    {
+     "id": "feature-source-audit-t9428-page",
+     "label": "SOURCE AUDIT PAGE",
+     "status": "idle",
+     "why": "Another page that checks sources. The watcher flagged it after a miss.",
+     "statusLine": "flagged · being improved",
+     "caption": "Another page that checks sources.",
+     "stage": "active",
+     "embed": "pages/feature-source-audit-t9428-page.html",
      "visibility": "public",
      "embedCaption": "what it is · how it works · where it sits"
     },
@@ -16507,7 +16507,7 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-24",
+       "t": "2026-11-25",
        "v": 52
       }
      ]
