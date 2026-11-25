@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T05:20:28.454Z",
+ "generatedAt": "2026-11-25T05:54:12.066Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1730,36 +1730,28 @@
      "label": "measured result",
      "points": [
       {
-       "t": "2026-11-12",
-       "v": 0.08
-      },
-      {
        "t": "2026-11-13",
-       "v": 0.08
-      },
-      {
-       "t": "2026-11-13",
-       "v": 0.08
+       "v": 0
       },
       {
        "t": "2026-11-15",
-       "v": 0.29
+       "v": 0.69
       },
       {
        "t": "2026-11-16",
-       "v": 0.59
+       "v": 1
       },
       {
        "t": "2026-11-17",
-       "v": 0.85
+       "v": 0
       },
       {
        "t": "2026-11-18",
-       "v": 0.85
+       "v": 0
       },
       {
        "t": "2026-11-19",
-       "v": 0.85
+       "v": 0
       },
       {
        "t": "2026-11-22",
@@ -1767,11 +1759,15 @@
       },
       {
        "t": "2026-11-23",
-       "v": 1
+       "v": 0
       },
       {
        "t": "2026-11-24",
-       "v": 0.69
+       "v": 1
+      },
+      {
+       "t": "2026-11-25",
+       "v": 0.86
       }
      ]
     },
@@ -1899,6 +1895,14 @@
      {
       "d": "2026-11-24",
       "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "helped"
      }
     ],
     "stage": {
@@ -1964,7 +1968,7 @@
   {
    "id": "mittens",
    "label": "MITTENS",
-   "status": "working",
+   "status": "idle",
    "why": "All my bots, digital and physical: an assistant that talks, wearables that see and hear, and a soft robot that holds.",
    "statusLine": "active · being rebuilt",
    "caption": "All my bots, digital and physical:",
@@ -6011,7 +6015,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -7267,7 +7271,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7514,7 +7518,7 @@
     {
      "id": "talk-voice",
      "label": "TALK VOICE",
-     "status": "working",
+     "status": "idle",
      "why": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
      "statusLine": "live · new voice samples coming",
      "caption": "A free local voice for Mittens that sounds human and neutral -- three blends built for a listening test.",
