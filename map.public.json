@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-25T00:54:27.500Z",
+ "generatedAt": "2026-11-25T03:27:45.912Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -142,6 +142,10 @@
      {
       "d": "2026-11-24",
       "v": "no effect"
+     },
+     {
+      "d": "2026-11-25",
+      "v": "unmeasured"
      }
     ],
     "stage": {
@@ -2050,10 +2054,6 @@
      },
      {
       "d": "2026-11-19",
-      "v": "unmeasured"
-     },
-     {
-      "d": "2026-11-19",
       "v": "no effect"
      },
      {
@@ -2362,6 +2362,10 @@
      },
      {
       "d": "2026-11-24",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
       "v": "unmeasured"
      }
     ],
@@ -3395,7 +3399,7 @@
   {
    "id": "wearables",
    "label": "WEARABLES",
-   "status": "idle",
+   "status": "working",
    "why": "The eyes and ears of Mittens, worn all day: a pendant and smart glasses.",
    "statusLine": "weighing pendant and glasses",
    "caption": "The eyes and ears of Mittens, worn all day:",
@@ -4134,7 +4138,7 @@
   {
    "id": "mittens-digital",
    "label": "APP & DEVICES",
-   "status": "working",
+   "status": "idle",
    "why": "The digital half of Mittens: the assistant on the phone and Mac, the agents that act, and Talk -- the voice I think out loud to.",
    "statusLine": "active",
    "caption": "The digital half of Mittens:",
@@ -5919,7 +5923,7 @@
   {
    "id": "northstar",
    "label": "NORTH STAR MAP",
-   "status": "idle",
+   "status": "working",
    "why": "The map itself: every project and every agent, what moved, and what is next. A visual map of a whole life's work, true daily.",
    "statusLine": "active · used every day",
    "caption": "The map itself:",
@@ -5981,20 +5985,16 @@
       },
       {
        "t": "2026-11-23",
-       "v": 48
+       "v": 47
       },
       {
        "t": "2026-11-24",
-       "v": 15
+       "v": 25
       }
      ],
      "partial": "2026-11-24"
     },
     "tries": [
-     {
-      "d": "2026-11-17",
-      "v": "helped"
-     },
      {
       "d": "2026-11-17",
       "v": "unmeasured"
@@ -6304,7 +6304,11 @@
       "v": "unmeasured"
      },
      {
-      "d": "2026-11-24",
+      "d": "2026-11-25",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
       "v": "no effect"
      },
      {
@@ -7167,7 +7171,7 @@
   {
    "id": "ns-talk",
    "label": "TALK & CALLS",
-   "status": "working",
+   "status": "idle",
    "why": "The map keeps itself current. Every channel (texts, email, chats, calls), where I am, the photos I take and each agent's work update the right dot and thread the moment they arrive -- talking to it is one way in, not the only one.",
    "statusLine": "live",
    "caption": "The map keeps itself current.",
@@ -7368,6 +7372,10 @@
      },
      {
       "d": "2026-11-24",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-25",
       "v": "unmeasured"
      }
     ],
@@ -10248,7 +10256,7 @@
   {
    "id": "mittens-app",
    "label": "MITTENS APP",
-   "status": "working",
+   "status": "idle",
    "why": "The assistant on the phone: talks in its own voice, check-ins and a sunrise brief, and passes project thinking to North Star.",
    "statusLine": "new layout built · smarter reminders next",
    "caption": "The assistant on the phone:",
@@ -11298,7 +11306,7 @@
       },
       {
        "t": "2026-11-24",
-       "v": 31
+       "v": 30
       }
      ]
     },
@@ -14104,7 +14112,7 @@
         },
         {
          "t": "2026-11-25",
-         "v": 2
+         "v": 1
         }
        ]
       },
@@ -16461,7 +16469,7 @@
   {
    "id": "omi",
    "label": "OMI",
-   "status": "done",
+   "status": "working",
    "why": "Omi is the open-source AI wearable. A contribution in progress: the desktop home shows what Omi already holds, and the agent runtime falls back instead of exiting.",
    "statusLine": "old branch shelved",
    "caption": "Omi is the open-source AI wearable.",
