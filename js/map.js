@@ -3557,7 +3557,12 @@ async function renderChrome() {
     const workers = h.workers || [];
     const working = h.agentsWorking ?? (DATA.projects || []).filter(p => p.status === "working").length;
     const names = workerNames(workers.filter(x => !x.company), 2);
-    setAgentsInd(working, names, true);
+    const partsOf = R => R && R.tasks.length + R.sessions.length === working ? agentsParts(working, R.tasks.length) : "";
+    setAgentsInd(working, names, true, "", partsOf(AGENT_ROWS));
+    if (working) loadAgentRows().then(R => {
+        const p = partsOf(R);
+        if (p) setAgentsInd(working, names, true, "", p);
+    });
     setUdInd(h.udMini);
     LIVE = {
         working: working,
@@ -3584,11 +3589,17 @@ const MITTENS_PATH = "M13.86.64c1.75.83,1.14,3.05.41,4.52l-2.68,5.37c-.79,1.95-2
 
 const MITTENS_BOT = `<svg class="ico bot" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" class="bot-disc"/><path class="bot-face" transform="translate(5.6 5.3) scale(.86)" d="${MITTENS_PATH}"/></svg>`;
 
-function setAgentsInd(n, names, clickable, queued) {
+function agentsParts(n, tasks) {
+    if (!n) return "";
+    const t = Math.min(tasks, n), s = n - t;
+    return [ t ? `${t} task worker${t === 1 ? "" : "s"}` : "", s ? `${s} Claude session${s === 1 ? "" : "s"} no task owns (your own Claude Code chats, owner sessions)` : "" ].filter(Boolean).join(" + ");
+}
+
+function setAgentsInd(n, names, clickable, queued, parts) {
     const box = document.getElementById("healthChips");
     if (!box) return;
     const talk = PUBLIC ? window.NS_TALK || null : null;
-    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "") + "|" + (talk ? JSON.stringify(talk) : "");
+    const sig = n + "|" + (names || "") + "|" + (clickable ? 1 : 0) + "|" + (queued || "") + "|" + (parts || "") + "|" + (talk ? JSON.stringify(talk) : "");
     if (box.dataset.sig === sig) return;
     box.dataset.sig = sig;
     box.querySelectorAll(".agents-ind:not(.ud-ind)").forEach(el => el.remove());
@@ -3606,8 +3617,8 @@ function setAgentsInd(n, names, clickable, queued) {
     const el = document.createElement(clickable ? "button" : "div");
     el.className = "agents-ind" + (!n ? " off" : "");
     el.id = "agentsChip";
-    const label = `${n} agent${n === 1 ? "" : "s"} working` + (queued ? ` · ${queued}` : "");
-    el.title = clickable ? names ? `${label}: ${names} -- see which agent is doing what` : `${label} -- see which agent is doing what` : label;
+    const label = `${n} working` + (parts ? ` = ${parts}` : "") + (queued ? ` · ${queued}` : "");
+    el.title = clickable ? `${label} -- see each one` : label;
     el.setAttribute("aria-label", clickable ? `${label}, show them` : label);
     const count = n ? `<b>${n}</b><span class="lbl">${names ? "working" : `agent${n === 1 ? "" : "s"} working`}${queued ? ` · ${esc(queued)}` : ""}</span>` : queued ? `<span class="lbl">${esc(queued)}</span>` : "";
     el.innerHTML = `<span class="pulse" aria-hidden="true"></span>${MITTENS_BOT}${count}${names ? `<span class="who">${esc(names)}</span>` : ""}`;
@@ -3677,8 +3688,41 @@ function renderPublicChrome() {
     if (lg) lg.hidden = true;
 }
 
+let AGENT_ROWS = null, AGENT_ROWS_AT = 0;
+
+async function loadAgentRows() {
+    if (AGENT_ROWS && Date.now() - AGENT_ROWS_AT < 8e3) return AGENT_ROWS;
+    try {
+        const r = await api("/api/voice/working?done=0", {
+            cache: "no-store"
+        });
+        if (r.ok) {
+            const j = await r.json();
+            const g = (j.board?.groups || []).find(x => x.key === "working");
+            if (g) {
+                AGENT_ROWS = herWorkingRows(g.rows);
+                AGENT_ROWS_AT = Date.now();
+            }
+        }
+    } catch {}
+    if (AGENT_ROWS && Date.now() - AGENT_ROWS_AT > 6e4) AGENT_ROWS = null;
+    return AGENT_ROWS;
+}
+
+function herWorkingRows(rows) {
+    const hers = (rows || []).filter(r => !/company/i.test(r.machine || ""));
+    const isSession = r => !!r.session && !r.parent;
+    return {
+        tasks: hers.filter(r => !isSession(r)),
+        sessions: hers.filter(isSession)
+    };
+}
+
+window.herWorkingRows = herWorkingRows;
+
 function openAgentsPanel() {
     const w = (LIVE.workers || []).filter(x => !x.company), u = LIVE.udMini;
+    const open0 = panelNode && panelNode.id === "__agents" && panel.classList.contains("open");
     panelNode = {
         id: "__agents",
         parent: "northstar"
@@ -3688,8 +3732,6 @@ function openAgentsPanel() {
     document.getElementById("pTabs").style.display = "none";
     syncPanelW();
     document.getElementById("pTitle").textContent = "Agents working";
-    pStatus.classList.remove("on-demand");
-    document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${w.length ? w.length + " running" : "none running"}</span>`;
     const kind = k => ({
         task: "voice task",
         routine: "routine",
@@ -3697,7 +3739,21 @@ function openAgentsPanel() {
         session: "chat"
     }[k] || k || "agent");
     const mins = s => s == null ? "" : s < 90 ? `${Math.round(s)}s` : s < 5400 ? `${Math.round(s / 60)} min` : `${(s / 3600).toFixed(1)} h`;
-    document.getElementById("pBody").innerHTML = w.length ? w.map(x => `\n    <div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(x.id)}')">\n      <div class="agent-top"><b>${esc(x.label || x.id || "agent")}</b><span class="agent-kind">${esc(kind(x.kind))}${x.elapsedSeconds != null ? ` · ${mins(x.elapsedSeconds)}` : ""}</span></div>\n      <div class="agent-now">${esc(x.now || "working")}</div>\n    </div>`).join("") : '<div class="agent-empty">Nothing is running right now.</div>';
+    const B = AGENT_ROWS;
+    if (B) {
+        const n = B.tasks.length + B.sessions.length;
+        pStatus.classList.remove("on-demand");
+        document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${n ? `${n} working` : "none working"}${B.sessions.length ? ` · ${B.tasks.length} task${B.tasks.length === 1 ? "" : "s"}, ${B.sessions.length} session${B.sessions.length === 1 ? "" : "s"}` : ""}</span>`;
+        const row = (x, k) => `<div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(x.id)}')">\n      <div class="agent-top"><b>${esc(x.title || x.id || "agent")}</b><span class="agent-kind">${esc(k)}${x.machine ? " · " + esc(x.machine) : ""}${x.state && x.state !== "working" ? " · " + esc(x.state) : ""}${x.elapsedSeconds != null ? ` · ${mins(x.elapsedSeconds)}` : ""}</span></div>\n      <div class="agent-now">${esc(x.line || "working")}</div></div>`;
+        document.getElementById("pBody").innerHTML = n ? B.tasks.map(x => row(x, "task")).join("") + (B.sessions.length ? `<div class="ud-sec"><div class="ud-h">CLAUDE SESSIONS NO TASK OWNS</div><div class="agent-now">Your own Claude Code chats and owner sessions; counted in the number, not started by Mittens.</div>${B.sessions.map(x => row(x, "session")).join("")}</div>` : "") : '<div class="agent-empty">Nothing is running right now.</div>';
+    } else {
+        pStatus.classList.remove("on-demand");
+        document.getElementById("pStatus").innerHTML = `<span class="dot"></span><span>${w.length ? w.length + " running" : "none running"}</span>`;
+        document.getElementById("pBody").innerHTML = w.length ? w.map(x => `\n    <div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(x.id)}')">\n      <div class="agent-top"><b>${esc(x.label || x.id || "agent")}</b><span class="agent-kind">${esc(kind(x.kind))}${x.elapsedSeconds != null ? ` · ${mins(x.elapsedSeconds)}` : ""}</span></div>\n      <div class="agent-now">${esc(x.now || "working")}</div>\n    </div>`).join("") : '<div class="agent-empty">Nothing is running right now.</div>';
+    }
+    if (!open0 || !B || Date.now() - AGENT_ROWS_AT >= 8e3) loadAgentRows().then(r => {
+        if (r && r !== B && panelNode && panelNode.id === "__agents" && panel.classList.contains("open")) openAgentsPanel();
+    });
     if (u) document.getElementById("pBody").innerHTML += `<div class="ud-sec"><div class="ud-h">${UD_ICO}UD MINI · company Claude${u.plan ? ` (${esc(u.plan)})` : ""}</div>\n    <div class="agent-now">${esc(udLine(u))}${u.why ? " · " + esc(u.why) : ""}</div>\n    ${(u.jobs || []).map(j => `<div class="agent-row" style="cursor:pointer" onclick="jumpToWorker('${esc(j.id)}')">\n      <div class="agent-top"><b>${esc(j.title || j.id)}</b><span class="agent-kind">${esc(j.id)} · ${j.status === "queued" ? "queued" : esc(mins(j.elapsedSeconds)) + (j.stalled ? ` · stalled, no output ${esc(mins(j.idleSeconds))}` : "")}</span></div>\n      <div class="agent-now">${esc(j.now || "")}${j.dot ? " · " + esc(j.dot) : ""}</div></div>`).join("") || '<div class="agent-empty">Nothing running on the UD mini.</div>'}</div>`;
 }
 
