@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-27T18:51:18.878Z",
+ "generatedAt": "2026-11-28T01:06:03.107Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -294,7 +294,7 @@
         },
         {
          "t": "2026-11-27",
-         "v": 49
+         "v": 48
         }
        ]
       },
@@ -635,7 +635,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 33
+       "v": 32
       }
      ]
     },
@@ -1010,7 +1010,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 32
+       "v": 38
       }
      ]
     },
@@ -1110,12 +1110,10 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "idle",
+   "status": "working",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
-   "stage": "plan",
-   "planned": true,
    "embed": "pages/susu-map.html",
    "visibility": "public",
    "goalStory": {
@@ -2042,7 +2040,7 @@
       },
       {
        "t": "2026-11-23",
-       "v": 14
+       "v": 17
       }
      ],
      "partial": "2026-11-23",
@@ -2084,7 +2082,7 @@
         17,
         40,
         58,
-        8
+        9
        ]
       },
       {
@@ -2097,7 +2095,7 @@
         20,
         51,
         30,
-        3
+        5
        ]
       },
       {
@@ -3598,7 +3596,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 41
+       "v": 40
       }
      ]
     },
@@ -3782,7 +3780,7 @@
   {
    "id": "portfolio",
    "label": "PORTFOLIO",
-   "status": "working",
+   "status": "idle",
    "why": "Where the work shows itself.",
    "statusLine": "live",
    "caption": "Where the work shows itself.",
@@ -4132,7 +4130,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 52
+       "v": 51
       }
      ]
     },
@@ -6911,7 +6909,7 @@
         },
         {
          "t": "2026-11-27",
-         "v": 27
+         "v": 26
         }
        ]
       },
@@ -11219,7 +11217,7 @@
   {
    "id": "susu-daily",
    "label": "DAILY FREE LIST",
-   "status": "idle",
+   "status": "working",
    "why": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post. Nothing goes out until I approve it.",
    "statusLine": "built · posts wait for accounts",
    "caption": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post.",
@@ -11582,7 +11580,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 21
+       "v": 20
       }
      ]
     },
@@ -14594,6 +14592,10 @@
      },
      {
       "d": "2026-11-16",
+      "v": "unmeasured"
+     },
+     {
+      "d": "2026-11-27",
       "v": "unmeasured"
      }
     ],
