@@ -1,7 +1,7 @@
 {
  "public": true,
  "snapshot": true,
- "generatedAt": "2026-11-28T01:06:03.107Z",
+ "generatedAt": "2026-11-28T02:13:28.869Z",
  "hub": {
   "id": "north-star",
   "label": "NORTH STAR",
@@ -1010,7 +1010,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 38
+       "v": 44
       }
      ]
     },
@@ -1110,10 +1110,12 @@
   {
    "id": "susu-map",
    "label": "SUSU MAP",
-   "status": "working",
+   "status": "idle",
    "why": "Community hyper-local resources -- the free city, mapped for everyone.",
    "statusLine": "planned",
    "caption": "Community hyper-local resources -- the free city, mapped for everyone.",
+   "stage": "plan",
+   "planned": true,
    "embed": "pages/susu-map.html",
    "visibility": "public",
    "goalStory": {
@@ -6029,7 +6031,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 61
+       "v": 60
       }
      ]
     },
@@ -7455,7 +7457,7 @@
       },
       {
        "t": "2026-11-27",
-       "v": 64
+       "v": 65
       }
      ]
     },
@@ -11217,7 +11219,7 @@
   {
    "id": "susu-daily",
    "label": "DAILY FREE LIST",
-   "status": "working",
+   "status": "idle",
    "why": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post. Nothing goes out until I approve it.",
    "statusLine": "built · posts wait for accounts",
    "caption": "Every morning my agents pick a few free things to do in the city, pin them on the map and draft a post.",
